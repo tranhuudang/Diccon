@@ -1,0 +1,2 @@
+﻿// khi người dùng gõ sai từ thì hiển thị các pillbox nhỏ để người dùng chọn đúng từ mà họ muốn tìm
+// khi người dùng nhập nhiều chữ quá thì đưa họ qua trình dịch đoạn văn
