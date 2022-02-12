@@ -21,99 +21,37 @@ namespace Diccon
         {
             flowChatBox.HorizontalScroll.Visible = false;
             flowChatBox.HorizontalScroll.Enabled = false;
-            flowChatBox.VerticalScroll.Visible = true;
-            flowChatBox.VerticalScroll.Enabled = true;
             flowChatBox.Padding = new Padding(10, 0, 0,0);
         }
 
         private void sent_Click(object sender, EventArgs e)
         {
-            //Label newLabel = new Label();
-            //newLabel.Text = searchBox.Text;
-            //newLabel.BackColor = Color.Silver;
-            //newLabel.ForeColor = Color.Black;
-            //newLabel.Font= Font = new Font("Microsoft Sans Serif", 16, FontStyle.Bold);
-            //newLabel.Width = 299;
-            //newLabel.TextAlign = ContentAlignment.MiddleLeft;
-            //newLabel.Dock = DockStyle.Left;
-
-            //Panel newPanel = new Panel();
-            //newPanel.Width = 377;
-            //newPanel.Height = 46;
-
-            //newPanel.Controls.Add(newLabel);
-
-            //flowChatBox.Controls.Add(newPanel);
-
-            userMessage(searchBox.Text);
+            userAction user = new userAction();
+            user.userSingleMessage(searchBox.Text,exampleShortText,exampleShortPanel,flowChatBox);
 
 
         }
        
-        void userMessage(string searchText)
-        {
-            int searchText_Len = searchText.Length;
-            Label newLabel = new Label();
-            string processedText = " "+ searchText[0].ToString().ToUpper() + searchText.Substring(1).ToLower();
-            newLabel.Text = processedText;
-            newLabel.BackColor = exampleText.BackColor;
-            newLabel.ForeColor = exampleText.ForeColor;
-            newLabel.Font = exampleText.Font;
-            int calculatedWidth= exampleText.Width + searchText_Len * 7;
-            newLabel.Width = calculatedWidth;
-            newLabel.TextAlign = exampleText.TextAlign;
-            newLabel.Dock = exampleText.Dock;
-
-            Panel newPanel = new Panel();
-            newPanel.Width = examplePanel.Width;
-            newPanel.Height = examplePanel.Height;
-
-            newPanel.Controls.Add(newLabel);
-
-            flowChatBox.Controls.Add(newPanel);
-            flowChatBox.ScrollControlIntoView(newPanel);
-        }
-
-
+    
 
         private void answer_Click(object sender, EventArgs e)
         {
-            botAnswer("sdfsdfjksdhfkjsdhfjkshdkjfhjsdhf");
+            botBehavior bot = new botBehavior();
+            bot.botAnswerLongMessage("to protect someone or something against attack or criticism",exampleAnswerText,exampleAnswerColoredPanel,exampleAnswerPanel,flowChatBox);
         }
 
 
-        void botAnswer(string answerText)
-        {
-
-            Label newLabel = new Label();
-            newLabel.Text = answerText;
-            newLabel.BackColor = exampleAnswerText.BackColor;
-            newLabel.ForeColor = exampleAnswerText.ForeColor;
-            newLabel.Font = exampleAnswerText.Font;
-            newLabel.Width = exampleAnswerText.Width;
-            newLabel.TextAlign = exampleAnswerText.TextAlign;
-            newLabel.Dock = exampleAnswerText.Dock;
-            newLabel.Location = exampleAnswerText.Location;
-
-            Panel newColoredPanel = new Panel();
-            newColoredPanel.Dock = exampleAnswerColoredPanel.Dock;
-            newColoredPanel.BackColor = exampleAnswerColoredPanel.BackColor;
-            newColoredPanel.Width = exampleAnswerColoredPanel.Width;
-            newColoredPanel.Controls.Add(newLabel);
-
-            Panel newAnswerPanel = new Panel();
-            newAnswerPanel.Width = exampleAnswerPanel.Width;
-            newAnswerPanel.Height = exampleAnswerPanel.Height;
-
-            newAnswerPanel.Controls.Add(newColoredPanel);
-
-            flowChatBox.Controls.Add(newAnswerPanel);
-            flowChatBox.ScrollControlIntoView(newAnswerPanel);
-        }
+     
 
         private void flowChatBox_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            userAction user = new userAction();
+            user.userLongMessage(searchBox.Text, exampleAskLongText, exampleAskLongColoredPanel, exampleAskLongPanel, flowChatBox);
         }
     }
 }

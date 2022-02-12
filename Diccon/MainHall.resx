@@ -121,7 +121,7 @@
   <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAAAgxJREFUWEft1z9IVlEcxvG31CQ3SQx0EUKbawgEBw0aLB3EFImGIAiCoIZEBBtE
+        EAAACxABrSO9dQAAAgxJREFUWEft1z9IVlEcxvG31CQ3SQx0EUKbawgEBw0aLB3EFImGIAiCoIZEBBtE
         aaghwsAGB9H+GEpri4M4JUIEJdLU0JKDESipJdr3AQ/8uO/vXu6r930nH/gM7z3nnnPee+85597cIXIW
         j/EVO9jGF4yiFkVNJ35jP8YvtKMoacNfeB1buiotyDQV+A6vQ883lCGzdMHrKMk1ZJbn8DpJ8hSZ5R28
         TpK8RmaZg9dJkhlkluMBHA+gZAPQcjuN+zihAwc56gBO4iFeoVUHvJyDXevvIWQWtvE03iJEnYfj2isa
@@ -132,6 +132,14 @@
         x1UcKRexCK+DOFp49FJah8zSDD3FSR8oWnKf4DyKGu81XXt9yXIL0QHcQEkzDH0N60F7pAOFJ5f7Dw8v
         oku3lUSKAAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="exampleAskLongText.Text" xml:space="preserve">
+    <value>to protect someone or something against attack or criticism
+The general rallied his forces to defend the town.
+Police officers used riot shields to defend themselves.
+A female lion defends her young ferociously.
+In the past, the party would have closed ranks around its leader and defended him loyally.
+Should the church always defend traditional values, or be open to changing them?</value>
   </data>
   <data name="exampleAnswerText.Text" xml:space="preserve">
     <value>to protect someone or something against attack or criticism
