@@ -19,7 +19,11 @@ namespace Diccon
 
         private void mainHall_Load(object sender, EventArgs e)
         {
-            flowChatBox.VerticalScroll.Value = flowChatBox.VerticalScroll.Maximum;
+            flowChatBox.HorizontalScroll.Visible = false;
+            flowChatBox.HorizontalScroll.Enabled = false;
+            flowChatBox.VerticalScroll.Visible = true;
+            flowChatBox.VerticalScroll.Enabled = true;
+            flowChatBox.Padding = new Padding(10, 0, 0,0);
         }
 
         private void sent_Click(object sender, EventArgs e)
@@ -50,7 +54,7 @@ namespace Diccon
         {
             int searchText_Len = searchText.Length;
             Label newLabel = new Label();
-            string processedText = searchText[0].ToString().ToUpper() + searchText.Substring(1).ToLower();
+            string processedText = " "+ searchText[0].ToString().ToUpper() + searchText.Substring(1).ToLower();
             newLabel.Text = processedText;
             newLabel.BackColor = exampleText.BackColor;
             newLabel.ForeColor = exampleText.ForeColor;
@@ -67,6 +71,7 @@ namespace Diccon
             newPanel.Controls.Add(newLabel);
 
             flowChatBox.Controls.Add(newPanel);
+            flowChatBox.ScrollControlIntoView(newPanel);
         }
 
 
@@ -103,6 +108,12 @@ namespace Diccon
             newAnswerPanel.Controls.Add(newColoredPanel);
 
             flowChatBox.Controls.Add(newAnswerPanel);
+            flowChatBox.ScrollControlIntoView(newAnswerPanel);
+        }
+
+        private void flowChatBox_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

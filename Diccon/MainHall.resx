@@ -117,6 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EQAACxEBf2RfkQAAAgxJREFUWEft1z9IVlEcxvG31CQ3SQx0EUKbawgEBw0aLB3EFImGIAiCoIZEBBtE
+        aaghwsAGB9H+GEpri4M4JUIEJdLU0JKDESipJdr3AQ/8uO/vXu6r930nH/gM7z3nnnPee+85597cIXIW
+        j/EVO9jGF4yiFkVNJ35jP8YvtKMoacNfeB1buiotyDQV+A6vQ883lCGzdMHrKMk1ZJbn8DpJ8hSZ5R28
+        TpK8RmaZg9dJkhlkluMBHA+gZAPQcjuN+zihAwc56gBO4iFeoVUHvJyDXevvIWQWtvE03iJEnYfj2isa
+        kJde2AbeIGQCtiyNcYRE/4CW9rx0w1Z6j5C7sGVp3EbIB9gyd8u+DFtpCSE1+ANbnmQD1QjR7mjLLyAv
+        ui+20hZOI2QAtjzJA4ToDWoPoWwXVXCzBttQH0I0K17ClnvGYKPB2PJlxGYStvJnaArZaFCrsPVkBT2w
+        0RX8AVtvCLHROmAriy69lyZ0HGjUASfPYNvSFKxHYj7CnqR7phlSaO7AtiN2asbmEtSpPVG/+xG9HV7K
+        MQJ7vvzEGaTKIKINyCdcxylEUwk9H/pGiJ73D1dQUF4g2lCwiQVo35jCPDT3vbq6ejdxqOgB1Oi9htNY
+        x1UcKRexCK+DOFp49FJah8zSDD3FSR8oWnKf4DyKGu81XXt9yXIL0QHcQEkzDH0N60F7pAOFJ5f7Dw8v
+        oku3lUSKAAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="exampleAnswerText.Text" xml:space="preserve">
     <value>to protect someone or something against attack or criticism
 The general rallied his forces to defend the town.
@@ -124,22 +140,6 @@ Police officers used riot shields to defend themselves.
 A female lion defends her young ferociously.
 In the past, the party would have closed ranks around its leader and defended him loyally.
 Should the church always defend traditional values, or be open to changing them?</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAIMSURBVFhH7dc/SFZRHMbxt9QkN0kMdBFCm2sIBAcNGiwd
-        xBSJhiAIgqCGRAQbRGmoIcLABgfR/hhKa4uDOCVCBCXS1NCSgxEoqSXa9wEP/Ljv717uq/d9Jx/4DO89
-        555z3nvvOefe3CFyFo/xFTvYxheMohZFTSd+Yz/GL7SjKGnDX3gdW7oqLcg0FfgOr0PPN5Qhs3TB6yjJ
-        NWSW5/A6SfIUmeUdvE6SvEZmmYPXSZIZZJbjARwPoGQD0HI7jfs4oQMHOeoATuIhXqFVB7ycg13r7yFk
-        FrbxNN4iRJ2H49orGpCXXtgG3iBkArYsjXGERP+Alva8dMNWeo+Qu7BladxGyAfYMnfLvgxbaQkhNfgD
-        W55kA9UI0e5oyy8gL7ovttIWTiNkALY8yQOE6A1qD6FsF1VwswbbUB9CNCtewpZ7xmCjwdjyZcRmErby
-        Z2gK2WhQq7D1ZAU9sNEV/AFbbwix0TpgK4suvZcmdBxo1AEnz2Db0hSsR2I+wp6ke6YZUmjuwLYjdmrG
-        5hLUqT1Rv/sRvR1eyjECe778xBmkyiCiDcgnXMcpRFMJPR/6Roie9w9XUFBeINpQsIkFaN+Ywjw09726
-        uno3cajoAdTovYbTWMdVHCkXsQivgzhaePRSWofM0gw9xUkfKFpyn+A8ihrvNV17fclyC9EB3EBJMwx9
-        DetBe6QDhSeX+w8PL6JLt5VEigAAAABJRU5ErkJggg==
-</value>
   </data>
   <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
