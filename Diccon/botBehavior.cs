@@ -12,7 +12,7 @@ namespace Diccon
         public void botAnswerLongMessage(string answerText, Label exampleText, Panel exampleColoredPanel, Panel exampleParentPanel, FlowLayoutPanel targetFlowLayout)
         {
 
-            Panel newColoredPanel = new Panel();
+            RoundedPanel newColoredPanel = new RoundedPanel();
             newColoredPanel.Dock = exampleColoredPanel.Dock;
             newColoredPanel.BackColor = exampleColoredPanel.BackColor;
             newColoredPanel.Width = exampleColoredPanel.Width;

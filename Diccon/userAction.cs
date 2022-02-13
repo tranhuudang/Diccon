@@ -13,7 +13,7 @@ namespace Diccon
         public void userLongMessage(string userMessage, Label exampleText, Panel exampleColoredPanel, Panel exampleParentPanel, FlowLayoutPanel targetFlowLayout)
         {
 
-            Panel newColoredPanel = new Panel();
+            RoundedPanel newColoredPanel = new RoundedPanel();
             newColoredPanel.Dock = exampleColoredPanel.Dock;
             newColoredPanel.BackColor = exampleColoredPanel.BackColor;
             newColoredPanel.Width = exampleColoredPanel.Width;
@@ -45,7 +45,7 @@ namespace Diccon
         public void userSingleMessage(string userMessage, Label exampleText,Panel examplePanel, FlowLayoutPanel targetFlowLayout)
         {
             int searchText_Len = userMessage.Length;
-            Label newLabel = new Label();
+            RoundedLabel newLabel = new RoundedLabel();
             string processedText = userMessage[0].ToString().ToUpper() + userMessage.Substring(1).ToLower();
             newLabel.Text = processedText;
             newLabel.BackColor = exampleText.BackColor;

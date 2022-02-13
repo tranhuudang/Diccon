@@ -58,6 +58,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="roundedLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="roundedPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="userAction.cs" />
     <EmbeddedResource Include="MainHall.resx">
       <DependentUpon>MainHall.cs</DependentUpon>
@@ -90,6 +96,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Notes.txt" />
+    <None Include="Resources\search_24.png" />
+    <None Include="Resources\menu_24.png" />
+    <None Include="Resources\smile_24.png" />
+    <None Include="Resources\add_24.png" />
+    <None Include="Resources\4830798_emoji_emoticons_tongue_icon.png" />
+    <None Include="Resources\micro_24.png" />
     <None Include="Resources\volume-24.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

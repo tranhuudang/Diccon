@@ -117,22 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAAAgxJREFUWEft1z9IVlEcxvG31CQ3SQx0EUKbawgEBw0aLB3EFImGIAiCoIZEBBtE
-        aaghwsAGB9H+GEpri4M4JUIEJdLU0JKDESipJdr3AQ/8uO/vXu6r930nH/gM7z3nnnPee+85597cIXIW
-        j/EVO9jGF4yiFkVNJ35jP8YvtKMoacNfeB1buiotyDQV+A6vQ883lCGzdMHrKMk1ZJbn8DpJ8hSZ5R28
-        TpK8RmaZg9dJkhlkluMBHA+gZAPQcjuN+zihAwc56gBO4iFeoVUHvJyDXevvIWQWtvE03iJEnYfj2isa
-        kJde2AbeIGQCtiyNcYRE/4CW9rx0w1Z6j5C7sGVp3EbIB9gyd8u+DFtpCSE1+ANbnmQD1QjR7mjLLyAv
-        ui+20hZOI2QAtjzJA4ToDWoPoWwXVXCzBttQH0I0K17ClnvGYKPB2PJlxGYStvJnaArZaFCrsPVkBT2w
-        0RX8AVtvCLHROmAriy69lyZ0HGjUASfPYNvSFKxHYj7CnqR7phlSaO7AtiN2asbmEtSpPVG/+xG9HV7K
-        MQJ7vvzEGaTKIKINyCdcxylEUwk9H/pGiJ73D1dQUF4g2lCwiQVo35jCPDT3vbq6ejdxqOgB1Oi9htNY
-        x1UcKRexCK+DOFp49FJah8zSDD3FSR8oWnKf4DyKGu81XXt9yXIL0QHcQEkzDH0N60F7pAOFJ5f7Dw8v
-        oku3lUSKAAAAAElFTkSuQmCC
-</value>
-  </data>
   <data name="exampleAskLongText.Text" xml:space="preserve">
     <value>to protect someone or something against attack or criticism
 The general rallied his forces to defend the town.
@@ -148,6 +132,18 @@ Police officers used riot shields to defend themselves.
 A female lion defends her young ferociously.
 In the past, the party would have closed ranks around its leader and defended him loyally.
 Should the church always defend traditional values, or be open to changing them?</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAEUSURBVEhL3dRLagJBFIXhRlEIbsTdGMxr5nrUZAOOHBiS
+        /QRCzGsRYubxP5ALjXW6qlsy8sAHTXGrGupxq7PPEHd4whY/f/StsVuo5qRc4Ru/BV+YonX6eIBbLOce
+        PRRzyuJhgWy0LW5iF5ew0WHl9vzVjDmfsAev2+ImhBHWR2NNbpDkGa44RGbQVXU14RFJPuCKQz1jvMDV
+        id5Jkj1ccTjOBVZwtVoryX/+YIck73DFoZ7SFr0hiXqLKw6RNoe8QRI1LlcculzTayTR41DjchOky0Mb
+        wEZd0U3qYoJs1BXdxDbmKEYtdwm3QI46aat2HVFX1H66xepUU9yWpuiw1LjUW3S39RhF3xrTbWk80HNI
+        VR0AhkwcFJ/eF+cAAAAASUVORK5CYII=
+</value>
   </data>
   <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
