@@ -87,7 +87,7 @@
             // 
             // panel9
             // 
-            this.panel9.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.panel9.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.panel9.Controls.Add(this.pictureBox8);
             this.panel9.Controls.Add(this.pictureBox7);
             this.panel9.Controls.Add(this.label5);
@@ -105,9 +105,9 @@
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label5.Location = new System.Drawing.Point(73, 23);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(72, 25);
+            this.label5.Size = new System.Drawing.Size(84, 25);
             this.label5.TabIndex = 1;
-            this.label5.Text = "Dicon";
+            this.label5.Text = "Diccon";
             // 
             // panel1
             // 
@@ -314,7 +314,7 @@
             // 
             // exampleShortText
             // 
-            this.exampleShortText.BackColor = System.Drawing.Color.Silver;
+            this.exampleShortText.BackColor = System.Drawing.Color.LightGray;
             this.exampleShortText.BorderColor = System.Drawing.Color.White;
             this.exampleShortText.Dock = System.Windows.Forms.DockStyle.Left;
             this.exampleShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -329,7 +329,7 @@
             // 
             // exampleAskLongColoredPanel
             // 
-            this.exampleAskLongColoredPanel.BackColor = System.Drawing.Color.Silver;
+            this.exampleAskLongColoredPanel.BackColor = System.Drawing.Color.LightGray;
             this.exampleAskLongColoredPanel.BorderColor = System.Drawing.Color.White;
             this.exampleAskLongColoredPanel.Controls.Add(this.exampleAskLongText);
             this.exampleAskLongColoredPanel.Dock = System.Windows.Forms.DockStyle.Left;
