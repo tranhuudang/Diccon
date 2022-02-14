@@ -64,6 +64,9 @@
     <Compile Include="roundedPanel.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="roundedTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="userAction.cs" />
     <EmbeddedResource Include="MainHall.resx">
       <DependentUpon>MainHall.cs</DependentUpon>
