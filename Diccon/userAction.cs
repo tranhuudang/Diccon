@@ -19,7 +19,7 @@ namespace Diccon
             newColoredPanel.Width = exampleColoredPanel.Width;
 
 
-            MultiLineLabel newLabel = new MultiLineLabel();
+            multiLineLabel newLabel = new multiLineLabel();
             newLabel.Text = userMessage;
             newLabel.BackColor = exampleText.BackColor;
             newLabel.ForeColor = exampleText.ForeColor;
@@ -51,10 +51,11 @@ namespace Diccon
             newLabel.BackColor = exampleText.BackColor;
             newLabel.ForeColor = exampleText.ForeColor;
             newLabel.Font = exampleText.Font;
-            int calculatedWidth = exampleText.Width + searchText_Len * 7;
+            int calculatedWidth = exampleText.Width + searchText_Len * 5;
             newLabel.Width = calculatedWidth;
             newLabel.TextAlign = exampleText.TextAlign;
             newLabel.Dock = exampleText.Dock;
+            newLabel.Padding= exampleText.Padding;
 
             Panel newPanel = new Panel();
             newPanel.Width = examplePanel.Width;

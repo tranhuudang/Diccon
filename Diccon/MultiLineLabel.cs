@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace Diccon
 {
-    public class MultiLineLabel : System.Windows.Forms.Label
+    public class multiLineLabel : System.Windows.Forms.Label
     {
        
             bool mline = true;

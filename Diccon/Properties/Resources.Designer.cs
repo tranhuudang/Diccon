@@ -63,20 +63,34 @@ namespace Diccon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _4830798_emoji_emoticons_tongue_icon {
+        internal static System.Drawing.Bitmap add_24 {
             get {
-                object obj = ResourceManager.GetObject("4830798_emoji_emoticons_tongue_icon", resourceCulture);
+                object obj = ResourceManager.GetObject("add_24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        ///   Looks up a localized string similar to @•a /ei, ə/
+        ///*  danh từ,  số nhiều as,  a&apos;s
+        ///- (thông tục) loại a, hạng nhất, hạng tốt nhất hạng rất tốt
+        ///=his health is a+ sức khoẻ anh ta vào loại a
+        ///- (âm nhạc) la
+        ///=a sharp+ la thăng
+        ///=a flat+ la giáng
+        ///- người giả định thứ nhất; trường hợp giả định thứ nhất
+        ///=from a to z+ từ đầu đến đuôi, tường tận
+        ///=not to know a from b+ không biết tí gì cả; một chữ bẻ đôi cũng không biết
+        ///*  mạo từ
+        ///- một; một (như kiểu); một (nào đó)
+        ///=a very cold day+ một ngày rất lạnh
+        ///=a dozen+ một tá
+        ///=a few+ một ít
+        ///=all of a size+ tất cả cùn [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static System.Drawing.Bitmap add_24 {
+        internal static string Envi {
             get {
-                object obj = ResourceManager.GetObject("add_24", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                return ResourceManager.GetString("Envi", resourceCulture);
             }
         }
         
@@ -106,6 +120,26 @@ namespace Diccon.Properties {
         internal static System.Drawing.Bitmap ninja_64 {
             get {
                 object obj = ResourceManager.GetObject("ninja_64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap notes_32 {
+            get {
+                object obj = ResourceManager.GetObject("notes_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap recycle_bin_24 {
+            get {
+                object obj = ResourceManager.GetObject("recycle_bin_24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -121,11 +121,17 @@
   <data name="volume-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\volume-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="search_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="smile_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\smile_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="micro_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\micro_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="notes_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\notes_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="add_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\add_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -133,13 +139,13 @@
   <data name="menu_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menu_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="4830798_emoji_emoticons_tongue_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\4830798_emoji_emoticons_tongue_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Envi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Envi.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
   <data name="ninja_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ninja_64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="search_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\search_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="recycle_bin_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\recycle_bin_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

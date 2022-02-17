@@ -1,2 +1,7 @@
 ﻿// khi người dùng gõ sai từ thì hiển thị các pillbox nhỏ để người dùng chọn đúng từ mà họ muốn tìm
 // khi người dùng nhập nhiều chữ quá thì đưa họ qua trình dịch đoạn văn
+// hộp tìm kiếm trên cùng dùng để người dùng tìm những đoạn từ điển trước đây
+// người dùng có thể đánh dấu sao vào đoạn tin mà người dùng muốn (favourite added)
+// cho phép người dùng thêm ghi chú ở mục add
+// kết nối người dùng với đội ngũ tư vấn
+// phòng chatonline cho những người học 

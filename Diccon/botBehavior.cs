@@ -9,41 +9,75 @@ namespace Diccon
 {
     internal class botBehavior
     {
-        public void botAnswerLongMessage(string answerText, Label exampleText, Panel exampleColoredPanel, Panel exampleParentPanel, FlowLayoutPanel targetFlowLayout)
+        string Setting_ShortView= Properties.Settings.Default["shortView"].ToString();
+        public void botAnswerLongMessage(string answerText, RichTextBox exampleRichTextBox, Panel exampleColoredPanel, Panel exampleParentPanel, FlowLayoutPanel targetFlowLayout)
         {
-
+            Panel newAnswerPanel = new Panel();
             RoundedPanel newColoredPanel = new RoundedPanel();
             newColoredPanel.Dock = exampleColoredPanel.Dock;
             newColoredPanel.BackColor = exampleColoredPanel.BackColor;
             newColoredPanel.Width = exampleColoredPanel.Width;
 
 
-            MultiLineLabel newLabel = new MultiLineLabel();
-            newLabel.Text = answerText;
-            newLabel.BackColor = exampleText.BackColor;
-            newLabel.ForeColor = exampleText.ForeColor;
-            newLabel.Font = exampleText.Font;
-            newLabel.Width = exampleText.Width;
-            newLabel.TextAlign = exampleText.TextAlign;
-            newLabel.Dock = exampleText.Dock;
-            newLabel.Location = exampleText.Location;
-            newLabel.AutoSize = true;
+            RichTextBox newRichTextBox = new RichTextBox();
+            if (Setting_ShortView=="True") newRichTextBox.Text = answerText;
+            newRichTextBox.Click += newRichTextBox_ClickToExpand;
+            newRichTextBox.TextChanged += newRichTextBox_TextChanged;
+            newRichTextBox.BackColor = exampleRichTextBox.BackColor;
+            newRichTextBox.ForeColor = exampleRichTextBox.ForeColor;
+            newRichTextBox.Font = exampleRichTextBox.Font;
+            newRichTextBox.Width = exampleRichTextBox.Width;
+            newRichTextBox.Dock = exampleRichTextBox.Dock;
+            newRichTextBox.Location = exampleRichTextBox.Location;
+            newRichTextBox.BorderStyle = BorderStyle.None;
+            newRichTextBox.ScrollBars = RichTextBoxScrollBars.None;
+            newRichTextBox.Cursor = exampleRichTextBox.Cursor;
+           
 
-            newColoredPanel.Controls.Add(newLabel);
-            newLabel.Parent = newColoredPanel;
+            newColoredPanel.Controls.Add(newRichTextBox);
+            newRichTextBox.Parent = newColoredPanel;
 
-            Panel newAnswerPanel = new Panel();
+            
             newAnswerPanel.Width = exampleParentPanel.Width;
-            newAnswerPanel.Height = newLabel.Height + 25;
-
-
+            newAnswerPanel.Height = newRichTextBox.Height + 28;
 
 
             newAnswerPanel.Controls.Add(newColoredPanel);
 
             targetFlowLayout.Controls.Add(newAnswerPanel);
+
+            // these if condition is a way to display short/long message (original from a bug :))) )
+            if (Setting_ShortView == "False") newRichTextBox.Text = answerText;
+
             targetFlowLayout.ScrollControlIntoView(newAnswerPanel);
         }
 
+        private void newRichTextBox_ClickToExpand(object sender, EventArgs e)
+        {
+            RichTextBox textMessage = (sender as RichTextBox);
+            FlowLayoutPanel grandFlowLayout = (textMessage.Parent.Parent.Parent as FlowLayoutPanel);
+            Panel panel = (textMessage.Parent.Parent as Panel);
+            int lineHeight = 20;
+            int lineCount = textMessage.GetLineFromCharIndex(textMessage.TextLength);
+            textMessage.Height = lineHeight * lineCount;
+            textMessage.Parent.Parent.Height = textMessage.Height + 20;
+            grandFlowLayout.ScrollControlIntoView(panel);
+            // refresh to get rid of unrendered design
+            grandFlowLayout.Refresh();
+        }
+
+        private void newRichTextBox_TextChanged(object sender, EventArgs e)
+        {
+            RichTextBox textMessage = (sender as RichTextBox);
+            var parentPanel = textMessage.Parent.Parent;                                                                                                                                                                                                                                                                                                                                                                                                 
+            parentPanel.Visible = false;
+
+            int lineHeight = 20; 
+            int lineCount = textMessage.GetLineFromCharIndex(textMessage.TextLength);
+            textMessage.Height = lineHeight * lineCount;
+            parentPanel.Height= textMessage.Height+20;
+            parentPanel.Visible = true;
+
+        }
     }
 }

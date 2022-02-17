@@ -125,6 +125,18 @@ A female lion defends her young ferociously.
 In the past, the party would have closed ranks around its leader and defended him loyally.
 Should the church always defend traditional values, or be open to changing them?</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="buttonPlay.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DAAACwwBP0AiyAAAARRJREFUSEvd1EtqAkEUheFGUQhuxN0YzGvmetRkA44cGJL9BELMaxFi5vE/kAuN
+        dbqqWzLywAdNcasa6nGrs88Qd3jCFj9/9K2xW6jmpFzhG78FX5iidfp4gFss5x49FHPK4mGBbLQtbmIX
+        l7DRYeX2/NWMOZ+wB6/b4iaEEdZHY01ukOQZrjhEZtBVdTXhEUk+4IpDPWO8wNWJ3kmSPVxxOM4FVnC1
+        WivJf/5ghyTvcMWhntIWvSGJeosrDpE2h7xBEjUuVxy6XNNrJNHjUONyE6TLQxvARl3RTepigmzUFd3E
+        NuYoRi13CbdAjjppq3YdUVfUfrrF6lRT3Jam6LDUuNRbdLf1GEXfGtNtaTzQc0hVHQCGTBwUn94X5wAA
+        AABJRU5ErkJggg==
+</value>
+  </data>
   <data name="exampleAnswerText.Text" xml:space="preserve">
     <value>to protect someone or something against attack or criticism
 The general rallied his forces to defend the town.
@@ -132,18 +144,6 @@ Police officers used riot shields to defend themselves.
 A female lion defends her young ferociously.
 In the past, the party would have closed ranks around its leader and defended him loyally.
 Should the church always defend traditional values, or be open to changing them?</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAEUSURBVEhL3dRLagJBFIXhRlEIbsTdGMxr5nrUZAOOHBiS
-        /QRCzGsRYubxP5ALjXW6qlsy8sAHTXGrGupxq7PPEHd4whY/f/StsVuo5qRc4Ru/BV+YonX6eIBbLOce
-        PRRzyuJhgWy0LW5iF5ew0WHl9vzVjDmfsAev2+ImhBHWR2NNbpDkGa44RGbQVXU14RFJPuCKQz1jvMDV
-        id5Jkj1ccTjOBVZwtVoryX/+YIck73DFoZ7SFr0hiXqLKw6RNoe8QRI1LlcculzTayTR41DjchOky0Mb
-        wEZd0U3qYoJs1BXdxDbmKEYtdwm3QI46aat2HVFX1H66xepUU9yWpuiw1LjUW3S39RhF3xrTbWk80HNI
-        VR0AhkwcFJ/eF+cAAAAASUVORK5CYII=
-</value>
   </data>
   <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
