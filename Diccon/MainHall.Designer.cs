@@ -38,7 +38,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelBottom = new System.Windows.Forms.Panel();
             this.panelAdd = new System.Windows.Forms.Panel();
-            this.roundedLabel9 = new Diccon.RoundedLabel();
+            this.addNote = new Diccon.RoundedLabel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.roundedPanel1 = new Diccon.RoundedPanel();
             this.searchTextBox = new System.Windows.Forms.TextBox();
@@ -65,10 +65,10 @@
             this.roundedLabel5 = new Diccon.RoundedLabel();
             this.roundedLabel1 = new Diccon.RoundedLabel();
             this.roundedLabel3 = new Diccon.RoundedLabel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.roundedPanel2 = new Diccon.RoundedPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.exampleNotePanel = new System.Windows.Forms.Panel();
+            this.exampleNoteColoredPanel = new Diccon.RoundedPanel();
+            this.exampleNoteMenu = new System.Windows.Forms.Label();
+            this.exampleNoteRichTextBox = new System.Windows.Forms.RichTextBox();
             this.panel9.SuspendLayout();
             this.PanelOfFind.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.buttonFind)).BeginInit();
@@ -92,8 +92,8 @@
             this.exampleAnswerPanel.SuspendLayout();
             this.exampleAnswerColoredPanel.SuspendLayout();
             this.panelSuggestFunction.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.roundedPanel2.SuspendLayout();
+            this.exampleNotePanel.SuspendLayout();
+            this.exampleNoteColoredPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel9
@@ -188,26 +188,30 @@
             // 
             // panelAdd
             // 
-            this.panelAdd.Controls.Add(this.roundedLabel9);
+            this.panelAdd.Controls.Add(this.addNote);
             this.panelAdd.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelAdd.Location = new System.Drawing.Point(0, 64);
             this.panelAdd.Name = "panelAdd";
             this.panelAdd.Size = new System.Drawing.Size(407, 86);
             this.panelAdd.TabIndex = 5;
             // 
-            // roundedLabel9
+            // addNote
             // 
-            this.roundedLabel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.roundedLabel9.BorderColor = System.Drawing.Color.White;
-            this.roundedLabel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedLabel9.Image = global::Diccon.Properties.Resources.notes_32;
-            this.roundedLabel9.Location = new System.Drawing.Point(12, 3);
-            this.roundedLabel9.Name = "roundedLabel9";
-            this.roundedLabel9.Radius = 50;
-            this.roundedLabel9.Size = new System.Drawing.Size(75, 71);
-            this.roundedLabel9.TabIndex = 0;
-            this.roundedLabel9.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.roundedLabel9.Thickness = 5F;
+            this.addNote.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.addNote.BorderColor = System.Drawing.Color.White;
+            this.addNote.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.addNote.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addNote.Image = global::Diccon.Properties.Resources.notes_32;
+            this.addNote.Location = new System.Drawing.Point(12, 3);
+            this.addNote.Name = "addNote";
+            this.addNote.Radius = 50;
+            this.addNote.Size = new System.Drawing.Size(75, 71);
+            this.addNote.TabIndex = 0;
+            this.addNote.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.addNote.Thickness = 5F;
+            this.addNote.Click += new System.EventHandler(this.addNote_Click);
+            this.addNote.MouseEnter += new System.EventHandler(this.addNote_MouseEnter);
+            this.addNote.MouseLeave += new System.EventHandler(this.addNote_MouseLeave);
             // 
             // panel1
             // 
@@ -298,7 +302,7 @@
             this.flowChatBox.Controls.Add(this.panel3);
             this.flowChatBox.Controls.Add(this.exampleAnswerPanel);
             this.flowChatBox.Controls.Add(this.panelSuggestFunction);
-            this.flowChatBox.Controls.Add(this.panel5);
+            this.flowChatBox.Controls.Add(this.exampleNotePanel);
             this.flowChatBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowChatBox.Location = new System.Drawing.Point(0, 75);
             this.flowChatBox.Name = "flowChatBox";
@@ -521,50 +525,50 @@
             this.roundedLabel3.Thickness = 5F;
             this.roundedLabel3.Click += new System.EventHandler(this.roundedLabel3_Click);
             // 
-            // panel5
+            // exampleNotePanel
             // 
-            this.panel5.Controls.Add(this.roundedPanel2);
-            this.panel5.Location = new System.Drawing.Point(8, 496);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(367, 236);
-            this.panel5.TabIndex = 5;
+            this.exampleNotePanel.Controls.Add(this.exampleNoteColoredPanel);
+            this.exampleNotePanel.Location = new System.Drawing.Point(8, 496);
+            this.exampleNotePanel.Name = "exampleNotePanel";
+            this.exampleNotePanel.Size = new System.Drawing.Size(367, 236);
+            this.exampleNotePanel.TabIndex = 5;
             // 
-            // roundedPanel2
+            // exampleNoteColoredPanel
             // 
-            this.roundedPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.roundedPanel2.BorderColor = System.Drawing.Color.White;
-            this.roundedPanel2.Controls.Add(this.label1);
-            this.roundedPanel2.Controls.Add(this.richTextBox1);
-            this.roundedPanel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.roundedPanel2.Location = new System.Drawing.Point(0, 0);
-            this.roundedPanel2.Name = "roundedPanel2";
-            this.roundedPanel2.Radius = 20;
-            this.roundedPanel2.Size = new System.Drawing.Size(367, 236);
-            this.roundedPanel2.TabIndex = 0;
-            this.roundedPanel2.Thickness = 5F;
+            this.exampleNoteColoredPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.exampleNoteColoredPanel.BorderColor = System.Drawing.Color.White;
+            this.exampleNoteColoredPanel.Controls.Add(this.exampleNoteMenu);
+            this.exampleNoteColoredPanel.Controls.Add(this.exampleNoteRichTextBox);
+            this.exampleNoteColoredPanel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.exampleNoteColoredPanel.Location = new System.Drawing.Point(0, 0);
+            this.exampleNoteColoredPanel.Name = "exampleNoteColoredPanel";
+            this.exampleNoteColoredPanel.Radius = 20;
+            this.exampleNoteColoredPanel.Size = new System.Drawing.Size(367, 236);
+            this.exampleNoteColoredPanel.TabIndex = 0;
+            this.exampleNoteColoredPanel.Thickness = 5F;
             // 
-            // label1
+            // exampleNoteMenu
             // 
-            this.label1.AutoSize = true;
-            this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(13, 11);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(32, 17);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "●●●";
+            this.exampleNoteMenu.AutoSize = true;
+            this.exampleNoteMenu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.exampleNoteMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exampleNoteMenu.ForeColor = System.Drawing.Color.White;
+            this.exampleNoteMenu.Location = new System.Drawing.Point(13, 11);
+            this.exampleNoteMenu.Name = "exampleNoteMenu";
+            this.exampleNoteMenu.Size = new System.Drawing.Size(32, 17);
+            this.exampleNoteMenu.TabIndex = 1;
+            this.exampleNoteMenu.Text = "●●●";
             // 
-            // richTextBox1
+            // exampleNoteRichTextBox
             // 
-            this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(13, 45);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(341, 177);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "";
+            this.exampleNoteRichTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.exampleNoteRichTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.exampleNoteRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exampleNoteRichTextBox.Location = new System.Drawing.Point(13, 45);
+            this.exampleNoteRichTextBox.Name = "exampleNoteRichTextBox";
+            this.exampleNoteRichTextBox.Size = new System.Drawing.Size(341, 177);
+            this.exampleNoteRichTextBox.TabIndex = 0;
+            this.exampleNoteRichTextBox.Text = "";
             // 
             // mainHall
             // 
@@ -608,9 +612,9 @@
             this.exampleAnswerPanel.ResumeLayout(false);
             this.exampleAnswerColoredPanel.ResumeLayout(false);
             this.panelSuggestFunction.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.roundedPanel2.ResumeLayout(false);
-            this.roundedPanel2.PerformLayout();
+            this.exampleNotePanel.ResumeLayout(false);
+            this.exampleNoteColoredPanel.ResumeLayout(false);
+            this.exampleNoteColoredPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -650,12 +654,12 @@
         private RoundedLabel roundedLabel5;
         private AutoSizeRichTextBox exampleAnswerText;
         private System.Windows.Forms.Panel panelAdd;
-        private RoundedLabel roundedLabel9;
+        private RoundedLabel addNote;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel5;
-        private RoundedPanel roundedPanel2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Panel exampleNotePanel;
+        private RoundedPanel exampleNoteColoredPanel;
+        private System.Windows.Forms.Label exampleNoteMenu;
+        private System.Windows.Forms.RichTextBox exampleNoteRichTextBox;
     }
 }
 

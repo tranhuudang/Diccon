@@ -66,7 +66,36 @@ namespace Diccon
             targetFlowLayout.Controls.Add(newPanel);
             targetFlowLayout.ScrollControlIntoView(newPanel);
         }
+        public void userAddNote(Label exampleMenu, RichTextBox exampleRichtextbox, RoundedPanel coloredPanel, Panel panel, FlowLayoutPanel targetFlowLayout)
+        {
+            Label newMenu= new Label();
+            RichTextBox newRichtextbox = new RichTextBox();
+            RoundedPanel newColoredPanel = new RoundedPanel();
+            Panel newPanel= new Panel();
 
+            newMenu.Location = exampleMenu.Location;
+            newMenu.Text = exampleMenu.Text;
+            newMenu.Font = exampleMenu.Font;
+            newMenu.ForeColor = exampleMenu.ForeColor;
+
+            newRichtextbox.Size = exampleRichtextbox.Size;
+            newRichtextbox.Font = exampleRichtextbox.Font;
+            newRichtextbox.Location = exampleRichtextbox.Location;
+            newRichtextbox.BorderStyle = exampleRichtextbox.BorderStyle;
+            newRichtextbox.BackColor= exampleRichtextbox.BackColor;
+            newRichtextbox.ForeColor=exampleRichtextbox.ForeColor;
+
+            newColoredPanel.Size = coloredPanel.Size;
+            newColoredPanel.BackColor= coloredPanel.BackColor;
+
+            newPanel.Size = panel.Size;
+
+            newColoredPanel.Controls.Add(newMenu);
+            newColoredPanel.Controls.Add(newRichtextbox);
+            newPanel.Controls.Add(newColoredPanel);
+            targetFlowLayout.Controls.Add(newPanel);
+            targetFlowLayout.ScrollControlIntoView(newPanel);
+        }
 
     }
 }

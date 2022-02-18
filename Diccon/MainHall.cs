@@ -196,6 +196,21 @@ namespace Diccon
         {
             panelBottom.Height = dicconProp.bottomPanel_DefaultHeight;
         }
-    }
 
+        private void addNote_Click(object sender, EventArgs e)
+        {
+            user.userAddNote(exampleNoteMenu, exampleNoteRichTextBox, exampleNoteColoredPanel, exampleNotePanel, flowChatBox);
+        }
+
+        private void addNote_MouseEnter(object sender, EventArgs e)
+        {
+            addNote.BackColor = dicconProp.hover_addNote_BackColor;
+        }
+
+        private void addNote_MouseLeave(object sender, EventArgs e)
+        {
+            addNote.BackColor = dicconProp.default_addNote_BackColor;
+        }
+    }
+    
 }
