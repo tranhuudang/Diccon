@@ -112,14 +112,7 @@ namespace Diccon
                         case 0:
                         case 1:
                             user.userSingleMessage(searchTextBox.Text, exampleShortText, exampleShortPanel, flowChatBox);
-                            var timer = new Stopwatch();
-                            timer.Start();
-
                             bot.botAnswerLongMessage(searchMatchWord(searchTextBox.Text), exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
-
-                            timer.Stop();
-                            TimeSpan timeTaken = timer.Elapsed;
-                            MessageBox.Show("Time taken: " + timeTaken.ToString(@"m\:ss\.fff"));
                             break;
 
                         default:
@@ -210,6 +203,15 @@ namespace Diccon
         private void addNote_MouseLeave(object sender, EventArgs e)
         {
             addNote.BackColor = dicconProp.default_addNote_BackColor;
+        }
+
+        private void searchTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // turn of Ding sound after hit Enter
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                e.Handled = true;
+            }
         }
     }
     

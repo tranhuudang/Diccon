@@ -4,4 +4,5 @@
 // người dùng có thể đánh dấu sao vào đoạn tin mà người dùng muốn (favourite added)
 // cho phép người dùng thêm ghi chú ở mục add
 // kết nối người dùng với đội ngũ tư vấn
-// phòng chatonline cho những người học 
+// phòng chat online cho những người học 
+// report những từ chưa có trong từ điển (tự động? không tự động?)
