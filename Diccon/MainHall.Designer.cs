@@ -52,23 +52,25 @@
             this.exampleAskLongPanel = new System.Windows.Forms.Panel();
             this.exampleAskLongColoredPanel = new Diccon.RoundedPanel();
             this.exampleAskLongText = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.roundedPanel3 = new Diccon.RoundedPanel();
-            this.buttonPlay = new System.Windows.Forms.PictureBox();
+            this.examplePlayPanel = new System.Windows.Forms.Panel();
+            this.examplePlayAlignPanel = new System.Windows.Forms.Panel();
+            this.examplePlayColoredPanel = new Diccon.RoundedPanel();
+            this.examplePlayButton = new System.Windows.Forms.PictureBox();
             this.exampleAnswerPanel = new System.Windows.Forms.Panel();
             this.exampleAnswerColoredPanel = new Diccon.RoundedPanel();
-            this.exampleAnswerText = new Diccon.AutoSizeRichTextBox();
+            this.exampleAnswerText = new System.Windows.Forms.RichTextBox();
             this.panelSuggestFunction = new System.Windows.Forms.Panel();
-            this.roundedLabel4 = new Diccon.RoundedLabel();
-            this.roundedLabel2 = new Diccon.RoundedLabel();
-            this.roundedLabel5 = new Diccon.RoundedLabel();
             this.roundedLabel1 = new Diccon.RoundedLabel();
-            this.roundedLabel3 = new Diccon.RoundedLabel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.roundedLabel7 = new Diccon.RoundedLabel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.roundedLabel6 = new Diccon.RoundedLabel();
             this.exampleNotePanel = new System.Windows.Forms.Panel();
             this.exampleNoteColoredPanel = new Diccon.RoundedPanel();
             this.exampleNoteMenu = new System.Windows.Forms.Label();
             this.exampleNoteRichTextBox = new System.Windows.Forms.RichTextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel9.SuspendLayout();
             this.PanelOfFind.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.buttonFind)).BeginInit();
@@ -85,10 +87,10 @@
             this.exampleShortPanel.SuspendLayout();
             this.exampleAskLongPanel.SuspendLayout();
             this.exampleAskLongColoredPanel.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.roundedPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.buttonPlay)).BeginInit();
+            this.examplePlayPanel.SuspendLayout();
+            this.examplePlayAlignPanel.SuspendLayout();
+            this.examplePlayColoredPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.examplePlayButton)).BeginInit();
             this.exampleAnswerPanel.SuspendLayout();
             this.exampleAnswerColoredPanel.SuspendLayout();
             this.panelSuggestFunction.SuspendLayout();
@@ -300,7 +302,7 @@
             this.flowChatBox.AutoScroll = true;
             this.flowChatBox.Controls.Add(this.exampleShortPanel);
             this.flowChatBox.Controls.Add(this.exampleAskLongPanel);
-            this.flowChatBox.Controls.Add(this.panel3);
+            this.flowChatBox.Controls.Add(this.examplePlayPanel);
             this.flowChatBox.Controls.Add(this.exampleAnswerPanel);
             this.flowChatBox.Controls.Add(this.panelSuggestFunction);
             this.flowChatBox.Controls.Add(this.exampleNotePanel);
@@ -318,6 +320,7 @@
             this.exampleShortPanel.Name = "exampleShortPanel";
             this.exampleShortPanel.Size = new System.Drawing.Size(367, 46);
             this.exampleShortPanel.TabIndex = 0;
+            this.exampleShortPanel.Visible = false;
             // 
             // exampleShortText
             // 
@@ -342,6 +345,7 @@
             this.exampleAskLongPanel.Name = "exampleAskLongPanel";
             this.exampleAskLongPanel.Size = new System.Drawing.Size(367, 145);
             this.exampleAskLongPanel.TabIndex = 3;
+            this.exampleAskLongPanel.Visible = false;
             // 
             // exampleAskLongColoredPanel
             // 
@@ -366,45 +370,47 @@
             this.exampleAskLongText.TabIndex = 0;
             this.exampleAskLongText.Text = resources.GetString("exampleAskLongText.Text");
             // 
-            // panel3
+            // examplePlayPanel
             // 
-            this.panel3.Controls.Add(this.panel4);
-            this.panel3.Location = new System.Drawing.Point(8, 211);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(367, 39);
-            this.panel3.TabIndex = 2;
+            this.examplePlayPanel.Controls.Add(this.examplePlayAlignPanel);
+            this.examplePlayPanel.Location = new System.Drawing.Point(8, 211);
+            this.examplePlayPanel.Name = "examplePlayPanel";
+            this.examplePlayPanel.Size = new System.Drawing.Size(367, 39);
+            this.examplePlayPanel.TabIndex = 2;
             // 
-            // panel4
+            // examplePlayAlignPanel
             // 
-            this.panel4.Controls.Add(this.roundedPanel3);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel4.Location = new System.Drawing.Point(67, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(300, 39);
-            this.panel4.TabIndex = 0;
+            this.examplePlayAlignPanel.Controls.Add(this.examplePlayColoredPanel);
+            this.examplePlayAlignPanel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.examplePlayAlignPanel.Location = new System.Drawing.Point(67, 0);
+            this.examplePlayAlignPanel.Name = "examplePlayAlignPanel";
+            this.examplePlayAlignPanel.Size = new System.Drawing.Size(300, 39);
+            this.examplePlayAlignPanel.TabIndex = 0;
+            this.examplePlayAlignPanel.Visible = false;
             // 
-            // roundedPanel3
+            // examplePlayColoredPanel
             // 
-            this.roundedPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.roundedPanel3.BorderColor = System.Drawing.Color.White;
-            this.roundedPanel3.Controls.Add(this.buttonPlay);
-            this.roundedPanel3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.roundedPanel3.Location = new System.Drawing.Point(0, 0);
-            this.roundedPanel3.Name = "roundedPanel3";
-            this.roundedPanel3.Radius = 20;
-            this.roundedPanel3.Size = new System.Drawing.Size(250, 39);
-            this.roundedPanel3.TabIndex = 0;
-            this.roundedPanel3.Thickness = 5F;
+            this.examplePlayColoredPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.examplePlayColoredPanel.BorderColor = System.Drawing.Color.White;
+            this.examplePlayColoredPanel.Controls.Add(this.examplePlayButton);
+            this.examplePlayColoredPanel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.examplePlayColoredPanel.Location = new System.Drawing.Point(0, 0);
+            this.examplePlayColoredPanel.Name = "examplePlayColoredPanel";
+            this.examplePlayColoredPanel.Radius = 20;
+            this.examplePlayColoredPanel.Size = new System.Drawing.Size(250, 39);
+            this.examplePlayColoredPanel.TabIndex = 0;
+            this.examplePlayColoredPanel.Thickness = 5F;
             // 
-            // buttonPlay
+            // examplePlayButton
             // 
-            this.buttonPlay.Image = ((System.Drawing.Image)(resources.GetObject("buttonPlay.Image")));
-            this.buttonPlay.Location = new System.Drawing.Point(12, 7);
-            this.buttonPlay.Name = "buttonPlay";
-            this.buttonPlay.Size = new System.Drawing.Size(24, 24);
-            this.buttonPlay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.buttonPlay.TabIndex = 0;
-            this.buttonPlay.TabStop = false;
+            this.examplePlayButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.examplePlayButton.Image = ((System.Drawing.Image)(resources.GetObject("examplePlayButton.Image")));
+            this.examplePlayButton.Location = new System.Drawing.Point(12, 7);
+            this.examplePlayButton.Name = "examplePlayButton";
+            this.examplePlayButton.Size = new System.Drawing.Size(24, 24);
+            this.examplePlayButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.examplePlayButton.TabIndex = 0;
+            this.examplePlayButton.TabStop = false;
             // 
             // exampleAnswerPanel
             // 
@@ -413,6 +419,7 @@
             this.exampleAnswerPanel.Name = "exampleAnswerPanel";
             this.exampleAnswerPanel.Size = new System.Drawing.Size(367, 148);
             this.exampleAnswerPanel.TabIndex = 1;
+            this.exampleAnswerPanel.Visible = false;
             // 
             // exampleAnswerColoredPanel
             // 
@@ -444,95 +451,101 @@
             // 
             // panelSuggestFunction
             // 
-            this.panelSuggestFunction.Controls.Add(this.roundedLabel4);
-            this.panelSuggestFunction.Controls.Add(this.roundedLabel2);
-            this.panelSuggestFunction.Controls.Add(this.roundedLabel5);
+            this.panelSuggestFunction.Controls.Add(this.label3);
             this.panelSuggestFunction.Controls.Add(this.roundedLabel1);
-            this.panelSuggestFunction.Controls.Add(this.roundedLabel3);
+            this.panelSuggestFunction.Controls.Add(this.label4);
+            this.panelSuggestFunction.Controls.Add(this.roundedLabel7);
+            this.panelSuggestFunction.Controls.Add(this.label2);
+            this.panelSuggestFunction.Controls.Add(this.label1);
+            this.panelSuggestFunction.Controls.Add(this.roundedLabel6);
             this.panelSuggestFunction.Location = new System.Drawing.Point(8, 410);
             this.panelSuggestFunction.Name = "panelSuggestFunction";
-            this.panelSuggestFunction.Size = new System.Drawing.Size(367, 80);
+            this.panelSuggestFunction.Size = new System.Drawing.Size(367, 482);
             this.panelSuggestFunction.TabIndex = 4;
-            this.panelSuggestFunction.Visible = false;
-            // 
-            // roundedLabel4
-            // 
-            this.roundedLabel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.roundedLabel4.BorderColor = System.Drawing.Color.White;
-            this.roundedLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedLabel4.Location = new System.Drawing.Point(263, 0);
-            this.roundedLabel4.Name = "roundedLabel4";
-            this.roundedLabel4.Radius = 20;
-            this.roundedLabel4.Size = new System.Drawing.Size(101, 39);
-            this.roundedLabel4.TabIndex = 2;
-            this.roundedLabel4.Text = "Advisor";
-            this.roundedLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.roundedLabel4.Thickness = 5F;
-            // 
-            // roundedLabel2
-            // 
-            this.roundedLabel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.roundedLabel2.BorderColor = System.Drawing.Color.White;
-            this.roundedLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedLabel2.Location = new System.Drawing.Point(4, 39);
-            this.roundedLabel2.Name = "roundedLabel2";
-            this.roundedLabel2.Radius = 20;
-            this.roundedLabel2.Size = new System.Drawing.Size(228, 39);
-            this.roundedLabel2.TabIndex = 1;
-            this.roundedLabel2.Text = "3000 Essential Words";
-            this.roundedLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.roundedLabel2.Thickness = 5F;
-            // 
-            // roundedLabel5
-            // 
-            this.roundedLabel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.roundedLabel5.BorderColor = System.Drawing.Color.White;
-            this.roundedLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedLabel5.Location = new System.Drawing.Point(238, 39);
-            this.roundedLabel5.Name = "roundedLabel5";
-            this.roundedLabel5.Radius = 20;
-            this.roundedLabel5.Size = new System.Drawing.Size(126, 39);
-            this.roundedLabel5.TabIndex = 0;
-            this.roundedLabel5.Text = "Your notes";
-            this.roundedLabel5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.roundedLabel5.Thickness = 5F;
             // 
             // roundedLabel1
             // 
             this.roundedLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.roundedLabel1.BorderColor = System.Drawing.Color.White;
+            this.roundedLabel1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.roundedLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedLabel1.Location = new System.Drawing.Point(4, 0);
+            this.roundedLabel1.Image = global::Diccon.Properties.Resources.history_32;
+            this.roundedLabel1.Location = new System.Drawing.Point(157, 245);
             this.roundedLabel1.Name = "roundedLabel1";
-            this.roundedLabel1.Radius = 20;
-            this.roundedLabel1.Size = new System.Drawing.Size(133, 39);
-            this.roundedLabel1.TabIndex = 0;
-            this.roundedLabel1.Text = "Grammar";
-            this.roundedLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.roundedLabel1.Radius = 50;
+            this.roundedLabel1.Size = new System.Drawing.Size(75, 71);
+            this.roundedLabel1.TabIndex = 5;
+            this.roundedLabel1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.roundedLabel1.Thickness = 5F;
             // 
-            // roundedLabel3
+            // label4
             // 
-            this.roundedLabel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.roundedLabel3.BorderColor = System.Drawing.Color.White;
-            this.roundedLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedLabel3.Location = new System.Drawing.Point(143, 0);
-            this.roundedLabel3.Name = "roundedLabel3";
-            this.roundedLabel3.Radius = 20;
-            this.roundedLabel3.Size = new System.Drawing.Size(114, 39);
-            this.roundedLabel3.TabIndex = 2;
-            this.roundedLabel3.Text = "Favourite";
-            this.roundedLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.roundedLabel3.Thickness = 5F;
-            this.roundedLabel3.Click += new System.EventHandler(this.roundedLabel3_Click);
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(165, 316);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(58, 20);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "History";
+            // 
+            // roundedLabel7
+            // 
+            this.roundedLabel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.roundedLabel7.BorderColor = System.Drawing.Color.White;
+            this.roundedLabel7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.roundedLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedLabel7.Image = global::Diccon.Properties.Resources.yawa;
+            this.roundedLabel7.Location = new System.Drawing.Point(157, 346);
+            this.roundedLabel7.Name = "roundedLabel7";
+            this.roundedLabel7.Radius = 50;
+            this.roundedLabel7.Size = new System.Drawing.Size(75, 71);
+            this.roundedLabel7.TabIndex = 5;
+            this.roundedLabel7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.roundedLabel7.Thickness = 5F;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(166, 417);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(57, 20);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "YAWA";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(153, 215);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(87, 20);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Your notes";
+            // 
+            // roundedLabel6
+            // 
+            this.roundedLabel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.roundedLabel6.BorderColor = System.Drawing.Color.White;
+            this.roundedLabel6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.roundedLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedLabel6.Image = global::Diccon.Properties.Resources.notes_32;
+            this.roundedLabel6.Location = new System.Drawing.Point(157, 144);
+            this.roundedLabel6.Name = "roundedLabel6";
+            this.roundedLabel6.Radius = 50;
+            this.roundedLabel6.Size = new System.Drawing.Size(75, 71);
+            this.roundedLabel6.TabIndex = 3;
+            this.roundedLabel6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.roundedLabel6.Thickness = 5F;
             // 
             // exampleNotePanel
             // 
             this.exampleNotePanel.Controls.Add(this.exampleNoteColoredPanel);
-            this.exampleNotePanel.Location = new System.Drawing.Point(8, 496);
+            this.exampleNotePanel.Location = new System.Drawing.Point(8, 898);
             this.exampleNotePanel.Name = "exampleNotePanel";
             this.exampleNotePanel.Size = new System.Drawing.Size(367, 236);
             this.exampleNotePanel.TabIndex = 5;
+            this.exampleNotePanel.Visible = false;
             // 
             // exampleNoteColoredPanel
             // 
@@ -571,6 +584,16 @@
             this.exampleNoteRichTextBox.TabIndex = 0;
             this.exampleNoteRichTextBox.Text = "";
             // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(4, 62);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(381, 51);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Hi! Today is a good day.";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // mainHall
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -582,6 +605,8 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panelBottom);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "mainHall";
             this.ShowIcon = false;
             this.Load += new System.EventHandler(this.mainHall_Load);
@@ -605,14 +630,15 @@
             this.exampleShortPanel.ResumeLayout(false);
             this.exampleAskLongPanel.ResumeLayout(false);
             this.exampleAskLongColoredPanel.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.roundedPanel3.ResumeLayout(false);
-            this.roundedPanel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.buttonPlay)).EndInit();
+            this.examplePlayPanel.ResumeLayout(false);
+            this.examplePlayAlignPanel.ResumeLayout(false);
+            this.examplePlayColoredPanel.ResumeLayout(false);
+            this.examplePlayColoredPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.examplePlayButton)).EndInit();
             this.exampleAnswerPanel.ResumeLayout(false);
             this.exampleAnswerColoredPanel.ResumeLayout(false);
             this.panelSuggestFunction.ResumeLayout(false);
+            this.panelSuggestFunction.PerformLayout();
             this.exampleNotePanel.ResumeLayout(false);
             this.exampleNoteColoredPanel.ResumeLayout(false);
             this.exampleNoteColoredPanel.PerformLayout();
@@ -631,8 +657,8 @@
         public System.Windows.Forms.FlowLayoutPanel flowChatBox;
         private System.Windows.Forms.Panel exampleShortPanel;
         private System.Windows.Forms.Panel exampleAnswerPanel;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.PictureBox buttonPlay;
+        private System.Windows.Forms.Panel examplePlayPanel;
+        private System.Windows.Forms.PictureBox examplePlayButton;
         private System.Windows.Forms.Panel exampleAskLongPanel;
         private System.Windows.Forms.Label exampleAskLongText;
         private RoundedPanel roundedPanel1;
@@ -640,20 +666,15 @@
         private System.Windows.Forms.PictureBox buttonAdd;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox buttonFind;
-        private System.Windows.Forms.Panel panel4;
-        private RoundedPanel roundedPanel3;
+        private System.Windows.Forms.Panel examplePlayAlignPanel;
+        private RoundedPanel examplePlayColoredPanel;
         private RoundedPanel exampleAnswerColoredPanel;
         private RoundedLabel exampleShortText;
         private RoundedPanel exampleAskLongColoredPanel;
         private System.Windows.Forms.TextBox tbFind;
         private RoundedPanel PanelOfFind;
         private System.Windows.Forms.Panel panelSuggestFunction;
-        private RoundedLabel roundedLabel3;
-        private RoundedLabel roundedLabel2;
-        private RoundedLabel roundedLabel1;
-        private RoundedLabel roundedLabel4;
-        private RoundedLabel roundedLabel5;
-        private AutoSizeRichTextBox exampleAnswerText;
+        private System.Windows.Forms.RichTextBox exampleAnswerText;
         private System.Windows.Forms.Panel panelAdd;
         private RoundedLabel addNote;
         private System.Windows.Forms.Panel panel1;
@@ -661,6 +682,13 @@
         private RoundedPanel exampleNoteColoredPanel;
         private System.Windows.Forms.Label exampleNoteMenu;
         private System.Windows.Forms.RichTextBox exampleNoteRichTextBox;
+        private RoundedLabel roundedLabel7;
+        private System.Windows.Forms.Label label1;
+        private RoundedLabel roundedLabel6;
+        private System.Windows.Forms.Label label2;
+        private RoundedLabel roundedLabel1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
     }
 }
 

@@ -54,6 +54,9 @@
     <ErrorReport>prompt</ErrorReport>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Ninja2.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -85,9 +88,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AutoSizeRichTextBox.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="botBehavior.cs" />
     <Compile Include="dicconProp.cs" />
     <Compile Include="mainHall.cs">
@@ -141,7 +141,11 @@
     <None Include="Resources\ninja_64.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Ninja.ico" />
+    <Content Include="Ninja2.ico" />
     <Content Include="Notes.txt" />
+    <None Include="Resources\history_32.png" />
+    <None Include="Resources\yawa.png" />
     <None Include="Resources\recycle_bin_24.png" />
     <None Include="Resources\notes_32.png" />
     <None Include="Resources\Envi.txt" />

@@ -112,6 +112,7 @@ namespace Diccon
                         case 0:
                         case 1:
                             user.userSingleMessage(searchTextBox.Text, exampleShortText, exampleShortPanel, flowChatBox);
+                            bot.botSoundMessage(searchTextBox.Text,examplePlayButton,examplePlayColoredPanel, examplePlayAlignPanel,examplePlayPanel,flowChatBox);
                             bot.botAnswerLongMessage(searchMatchWord(searchTextBox.Text), exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
                             break;
 
