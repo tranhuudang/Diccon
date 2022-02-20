@@ -28,14 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainHall));
             this.panel9 = new System.Windows.Forms.Panel();
             this.PanelOfFind = new Diccon.RoundedPanel();
             this.tbFind = new System.Windows.Forms.TextBox();
             this.buttonFind = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.buttonMenu = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.logo = new System.Windows.Forms.PictureBox();
             this.panelBottom = new System.Windows.Forms.Panel();
             this.panelAdd = new System.Windows.Forms.Panel();
             this.addNote = new Diccon.RoundedLabel();
@@ -60,22 +61,37 @@
             this.exampleAnswerColoredPanel = new Diccon.RoundedPanel();
             this.exampleAnswerText = new System.Windows.Forms.RichTextBox();
             this.panelSuggestFunction = new System.Windows.Forms.Panel();
+            this.roundedLabel2 = new Diccon.RoundedLabel();
+            this.label3 = new System.Windows.Forms.Label();
             this.roundedLabel1 = new Diccon.RoundedLabel();
+            this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.roundedLabel7 = new Diccon.RoundedLabel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.roundedLabel6 = new Diccon.RoundedLabel();
+            this.buttonYourNote = new Diccon.RoundedLabel();
             this.exampleNotePanel = new System.Windows.Forms.Panel();
             this.exampleNoteColoredPanel = new Diccon.RoundedPanel();
             this.exampleNoteMenu = new System.Windows.Forms.Label();
             this.exampleNoteRichTextBox = new System.Windows.Forms.RichTextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.contextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.languageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.vietnameseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clearHistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eachSessionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aWeekToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aMonthToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
+            this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
+            this.githubToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel9.SuspendLayout();
             this.PanelOfFind.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.buttonFind)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buttonMenu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.panelBottom.SuspendLayout();
             this.panelAdd.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -96,6 +112,7 @@
             this.panelSuggestFunction.SuspendLayout();
             this.exampleNotePanel.SuspendLayout();
             this.exampleNoteColoredPanel.SuspendLayout();
+            this.contextMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel9
@@ -103,9 +120,9 @@
             this.panel9.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.panel9.Controls.Add(this.PanelOfFind);
             this.panel9.Controls.Add(this.buttonFind);
-            this.panel9.Controls.Add(this.pictureBox7);
+            this.panel9.Controls.Add(this.buttonMenu);
             this.panel9.Controls.Add(this.label5);
-            this.panel9.Controls.Add(this.pictureBox1);
+            this.panel9.Controls.Add(this.logo);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel9.Location = new System.Drawing.Point(0, 0);
             this.panel9.Name = "panel9";
@@ -134,6 +151,7 @@
             this.tbFind.Name = "tbFind";
             this.tbFind.Size = new System.Drawing.Size(113, 19);
             this.tbFind.TabIndex = 8;
+            this.tbFind.Leave += new System.EventHandler(this.tbFind_Leave);
             // 
             // buttonFind
             // 
@@ -145,17 +163,22 @@
             this.buttonFind.TabIndex = 7;
             this.buttonFind.TabStop = false;
             this.buttonFind.Click += new System.EventHandler(this.buttonFind_Click);
+            this.buttonFind.MouseEnter += new System.EventHandler(this.PictureBox_MouseEnter);
+            this.buttonFind.MouseLeave += new System.EventHandler(this.PictureBox_MouseLeave);
             // 
-            // pictureBox7
+            // buttonMenu
             // 
-            this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox7.Image = global::Diccon.Properties.Resources.menu_24;
-            this.pictureBox7.Location = new System.Drawing.Point(372, 23);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox7.TabIndex = 6;
-            this.pictureBox7.TabStop = false;
+            this.buttonMenu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonMenu.Image = global::Diccon.Properties.Resources.menu_24;
+            this.buttonMenu.Location = new System.Drawing.Point(372, 23);
+            this.buttonMenu.Name = "buttonMenu";
+            this.buttonMenu.Size = new System.Drawing.Size(24, 24);
+            this.buttonMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.buttonMenu.TabIndex = 6;
+            this.buttonMenu.TabStop = false;
+            this.buttonMenu.Click += new System.EventHandler(this.menuButton_Click);
+            this.buttonMenu.MouseEnter += new System.EventHandler(this.PictureBox_MouseEnter);
+            this.buttonMenu.MouseLeave += new System.EventHandler(this.PictureBox_MouseLeave);
             // 
             // label5
             // 
@@ -168,15 +191,15 @@
             this.label5.TabIndex = 1;
             this.label5.Text = "Diccon";
             // 
-            // pictureBox1
+            // logo
             // 
-            this.pictureBox1.Image = global::Diccon.Properties.Resources.ninja_64;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.logo.Image = global::Diccon.Properties.Resources.ninja_64;
+            this.logo.Location = new System.Drawing.Point(3, 3);
+            this.logo.Name = "logo";
+            this.logo.Size = new System.Drawing.Size(64, 64);
+            this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.logo.TabIndex = 0;
+            this.logo.TabStop = false;
             // 
             // panelBottom
             // 
@@ -212,8 +235,8 @@
             this.addNote.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.addNote.Thickness = 5F;
             this.addNote.Click += new System.EventHandler(this.addNote_Click);
-            this.addNote.MouseEnter += new System.EventHandler(this.addNote_MouseEnter);
-            this.addNote.MouseLeave += new System.EventHandler(this.addNote_MouseLeave);
+            this.addNote.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
+            this.addNote.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
             // 
             // panel1
             // 
@@ -264,6 +287,8 @@
             this.textFromEmoji.TabIndex = 5;
             this.textFromEmoji.TabStop = false;
             this.textFromEmoji.Click += new System.EventHandler(this.textFromEmoji_Click);
+            this.textFromEmoji.MouseEnter += new System.EventHandler(this.PictureBox_MouseEnter);
+            this.textFromEmoji.MouseLeave += new System.EventHandler(this.PictureBox_MouseLeave);
             // 
             // textFromMic
             // 
@@ -276,6 +301,8 @@
             this.textFromMic.TabIndex = 4;
             this.textFromMic.TabStop = false;
             this.textFromMic.Click += new System.EventHandler(this.textFromMic_Click);
+            this.textFromMic.MouseEnter += new System.EventHandler(this.PictureBox_MouseEnter);
+            this.textFromMic.MouseLeave += new System.EventHandler(this.PictureBox_MouseLeave);
             // 
             // buttonAdd
             // 
@@ -288,6 +315,8 @@
             this.buttonAdd.TabIndex = 6;
             this.buttonAdd.TabStop = false;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
+            this.buttonAdd.MouseEnter += new System.EventHandler(this.PictureBox_MouseEnter);
+            this.buttonAdd.MouseLeave += new System.EventHandler(this.PictureBox_MouseLeave);
             // 
             // panel2
             // 
@@ -451,17 +480,46 @@
             // 
             // panelSuggestFunction
             // 
+            this.panelSuggestFunction.Controls.Add(this.roundedLabel2);
             this.panelSuggestFunction.Controls.Add(this.label3);
             this.panelSuggestFunction.Controls.Add(this.roundedLabel1);
+            this.panelSuggestFunction.Controls.Add(this.label6);
             this.panelSuggestFunction.Controls.Add(this.label4);
             this.panelSuggestFunction.Controls.Add(this.roundedLabel7);
             this.panelSuggestFunction.Controls.Add(this.label2);
             this.panelSuggestFunction.Controls.Add(this.label1);
-            this.panelSuggestFunction.Controls.Add(this.roundedLabel6);
+            this.panelSuggestFunction.Controls.Add(this.buttonYourNote);
             this.panelSuggestFunction.Location = new System.Drawing.Point(8, 410);
             this.panelSuggestFunction.Name = "panelSuggestFunction";
             this.panelSuggestFunction.Size = new System.Drawing.Size(367, 482);
             this.panelSuggestFunction.TabIndex = 4;
+            // 
+            // roundedLabel2
+            // 
+            this.roundedLabel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.roundedLabel2.BorderColor = System.Drawing.Color.White;
+            this.roundedLabel2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.roundedLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedLabel2.Image = global::Diccon.Properties.Resources.coffee_32;
+            this.roundedLabel2.Location = new System.Drawing.Point(206, 261);
+            this.roundedLabel2.Name = "roundedLabel2";
+            this.roundedLabel2.Radius = 50;
+            this.roundedLabel2.Size = new System.Drawing.Size(75, 71);
+            this.roundedLabel2.TabIndex = 7;
+            this.roundedLabel2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.roundedLabel2.Thickness = 5F;
+            this.roundedLabel2.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
+            this.roundedLabel2.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(4, 25);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(381, 94);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Hi! Today is a good day.";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // roundedLabel1
             // 
@@ -470,19 +528,31 @@
             this.roundedLabel1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.roundedLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundedLabel1.Image = global::Diccon.Properties.Resources.history_32;
-            this.roundedLabel1.Location = new System.Drawing.Point(157, 245);
+            this.roundedLabel1.Location = new System.Drawing.Point(107, 261);
             this.roundedLabel1.Name = "roundedLabel1";
             this.roundedLabel1.Radius = 50;
             this.roundedLabel1.Size = new System.Drawing.Size(75, 71);
             this.roundedLabel1.TabIndex = 5;
             this.roundedLabel1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.roundedLabel1.Thickness = 5F;
+            this.roundedLabel1.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
+            this.roundedLabel1.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(213, 332);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(62, 20);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "Donate";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(165, 316);
+            this.label4.Location = new System.Drawing.Point(115, 332);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(58, 20);
             this.label4.TabIndex = 4;
@@ -495,48 +565,52 @@
             this.roundedLabel7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.roundedLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundedLabel7.Image = global::Diccon.Properties.Resources.yawa;
-            this.roundedLabel7.Location = new System.Drawing.Point(157, 346);
+            this.roundedLabel7.Location = new System.Drawing.Point(206, 160);
             this.roundedLabel7.Name = "roundedLabel7";
             this.roundedLabel7.Radius = 50;
             this.roundedLabel7.Size = new System.Drawing.Size(75, 71);
             this.roundedLabel7.TabIndex = 5;
             this.roundedLabel7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.roundedLabel7.Thickness = 5F;
+            this.roundedLabel7.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
+            this.roundedLabel7.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(166, 417);
+            this.label2.Location = new System.Drawing.Point(219, 231);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 20);
+            this.label2.Size = new System.Drawing.Size(49, 20);
             this.label2.TabIndex = 4;
-            this.label2.Text = "YAWA";
+            this.label2.Text = "Yawa";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(153, 215);
+            this.label1.Location = new System.Drawing.Point(103, 231);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(87, 20);
             this.label1.TabIndex = 4;
             this.label1.Text = "Your notes";
             // 
-            // roundedLabel6
+            // buttonYourNote
             // 
-            this.roundedLabel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.roundedLabel6.BorderColor = System.Drawing.Color.White;
-            this.roundedLabel6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.roundedLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedLabel6.Image = global::Diccon.Properties.Resources.notes_32;
-            this.roundedLabel6.Location = new System.Drawing.Point(157, 144);
-            this.roundedLabel6.Name = "roundedLabel6";
-            this.roundedLabel6.Radius = 50;
-            this.roundedLabel6.Size = new System.Drawing.Size(75, 71);
-            this.roundedLabel6.TabIndex = 3;
-            this.roundedLabel6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.roundedLabel6.Thickness = 5F;
+            this.buttonYourNote.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.buttonYourNote.BorderColor = System.Drawing.Color.White;
+            this.buttonYourNote.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonYourNote.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonYourNote.Image = global::Diccon.Properties.Resources.notes_32;
+            this.buttonYourNote.Location = new System.Drawing.Point(107, 160);
+            this.buttonYourNote.Name = "buttonYourNote";
+            this.buttonYourNote.Radius = 50;
+            this.buttonYourNote.Size = new System.Drawing.Size(75, 71);
+            this.buttonYourNote.TabIndex = 3;
+            this.buttonYourNote.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonYourNote.Thickness = 5F;
+            this.buttonYourNote.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
+            this.buttonYourNote.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
             // 
             // exampleNotePanel
             // 
@@ -584,15 +658,99 @@
             this.exampleNoteRichTextBox.TabIndex = 0;
             this.exampleNoteRichTextBox.Text = "";
             // 
-            // label3
+            // contextMenu
             // 
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(4, 62);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(381, 51);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Hi! Today is a good day.";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.contextMenu.DropShadowEnabled = false;
+            this.contextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.languageToolStripMenuItem,
+            this.clearHistoryToolStripMenuItem,
+            this.toolStripMenuItem1,
+            this.settingsToolStripMenuItem,
+            this.toolStripMenuItem2,
+            this.githubToolStripMenuItem,
+            this.aboutToolStripMenuItem});
+            this.contextMenu.Name = "contextMenu";
+            this.contextMenu.Size = new System.Drawing.Size(141, 126);
+            // 
+            // languageToolStripMenuItem
+            // 
+            this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.englishToolStripMenuItem,
+            this.vietnameseToolStripMenuItem});
+            this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
+            this.languageToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.languageToolStripMenuItem.Text = "Language";
+            // 
+            // englishToolStripMenuItem
+            // 
+            this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
+            this.englishToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.englishToolStripMenuItem.Text = "English";
+            // 
+            // vietnameseToolStripMenuItem
+            // 
+            this.vietnameseToolStripMenuItem.Name = "vietnameseToolStripMenuItem";
+            this.vietnameseToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.vietnameseToolStripMenuItem.Text = "Vietnamese";
+            // 
+            // clearHistoryToolStripMenuItem
+            // 
+            this.clearHistoryToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.eachSessionToolStripMenuItem,
+            this.aWeekToolStripMenuItem,
+            this.aMonthToolStripMenuItem});
+            this.clearHistoryToolStripMenuItem.Name = "clearHistoryToolStripMenuItem";
+            this.clearHistoryToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.clearHistoryToolStripMenuItem.Text = "Clear history";
+            // 
+            // eachSessionToolStripMenuItem
+            // 
+            this.eachSessionToolStripMenuItem.Name = "eachSessionToolStripMenuItem";
+            this.eachSessionToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
+            this.eachSessionToolStripMenuItem.Text = "After a day";
+            // 
+            // aWeekToolStripMenuItem
+            // 
+            this.aWeekToolStripMenuItem.Checked = true;
+            this.aWeekToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.aWeekToolStripMenuItem.Name = "aWeekToolStripMenuItem";
+            this.aWeekToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
+            this.aWeekToolStripMenuItem.Text = "A week";
+            this.aWeekToolStripMenuItem.Click += new System.EventHandler(this.aWeekToolStripMenuItem_Click);
+            // 
+            // aMonthToolStripMenuItem
+            // 
+            this.aMonthToolStripMenuItem.Name = "aMonthToolStripMenuItem";
+            this.aMonthToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
+            this.aMonthToolStripMenuItem.Text = "Never";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(137, 6);
+            // 
+            // settingsToolStripMenuItem
+            // 
+            this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.settingsToolStripMenuItem.Text = "Settings";
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(137, 6);
+            // 
+            // githubToolStripMenuItem
+            // 
+            this.githubToolStripMenuItem.Name = "githubToolStripMenuItem";
+            this.githubToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.githubToolStripMenuItem.Text = "Github";
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.aboutToolStripMenuItem.Text = "About";
             // 
             // mainHall
             // 
@@ -615,8 +773,8 @@
             this.PanelOfFind.ResumeLayout(false);
             this.PanelOfFind.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.buttonFind)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buttonMenu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             this.panelBottom.ResumeLayout(false);
             this.panelAdd.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
@@ -642,6 +800,7 @@
             this.exampleNotePanel.ResumeLayout(false);
             this.exampleNoteColoredPanel.ResumeLayout(false);
             this.exampleNoteColoredPanel.PerformLayout();
+            this.contextMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -649,7 +808,7 @@
         #endregion
         private System.Windows.Forms.TextBox searchTextBox;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox logo;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox textFromMic;
         private System.Windows.Forms.Panel panelBottom;
@@ -664,7 +823,7 @@
         private RoundedPanel roundedPanel1;
         private System.Windows.Forms.PictureBox textFromEmoji;
         private System.Windows.Forms.PictureBox buttonAdd;
-        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox buttonMenu;
         private System.Windows.Forms.PictureBox buttonFind;
         private System.Windows.Forms.Panel examplePlayAlignPanel;
         private RoundedPanel examplePlayColoredPanel;
@@ -684,11 +843,26 @@
         private System.Windows.Forms.RichTextBox exampleNoteRichTextBox;
         private RoundedLabel roundedLabel7;
         private System.Windows.Forms.Label label1;
-        private RoundedLabel roundedLabel6;
+        private RoundedLabel buttonYourNote;
         private System.Windows.Forms.Label label2;
         private RoundedLabel roundedLabel1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ContextMenuStrip contextMenu;
+        private System.Windows.Forms.ToolStripMenuItem clearHistoryToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eachSessionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aWeekToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aMonthToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem languageToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem englishToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem vietnameseToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem githubToolStripMenuItem;
+        private RoundedLabel roundedLabel2;
+        private System.Windows.Forms.Label label6;
     }
 }
 

@@ -18,7 +18,6 @@ namespace Diccon
             newColoredPanel.BackColor = exampleColoredPanel.BackColor;
             newColoredPanel.Width = exampleColoredPanel.Width;
 
-
             RichTextBox newRichTextBox = new RichTextBox();
             if (Setting_ShortView == "True") newRichTextBox.Text = answerText;
             newRichTextBox.Click += newRichTextBox_ClickToExpand;
@@ -33,20 +32,17 @@ namespace Diccon
             newRichTextBox.ScrollBars = RichTextBoxScrollBars.None;
             newRichTextBox.Cursor = exampleRichTextBox.Cursor;
 
-
             newColoredPanel.Controls.Add(newRichTextBox);
             newRichTextBox.Parent = newColoredPanel;
 
-
             newAnswerPanel.Width = exampleParentPanel.Width;
             newAnswerPanel.Height = newRichTextBox.Height + 28;
-
 
             newAnswerPanel.Controls.Add(newColoredPanel);
 
             targetFlowLayout.Controls.Add(newAnswerPanel);
 
-            // these if condition is a way to display short/long message (original from a bug :))) )
+            // these if condition is a way to display short and long message when click (original from a bug :))) )
             if (Setting_ShortView == "False") newRichTextBox.Text = answerText;
 
             targetFlowLayout.ScrollControlIntoView(newAnswerPanel);
@@ -79,13 +75,21 @@ namespace Diccon
             parentPanel.Visible = true;
 
         }
+        /// <summary>
+        /// Create a rounded bubble chat with a play button. These parametter bellow is the partern design for function to clone. 
+        /// </summary>
+        /// <param name="textToPlay"></param>
+        /// <param name="examplePlayButton"></param>
+        /// <param name="exampleColoredPanel"></param>
+        /// <param name="examplePlayAlignPanel"></param>
+        /// <param name="examplePanel"></param>
+        /// <param name="targetFlowPanel"></param>
         public void botSoundMessage(String textToPlay,PictureBox examplePlayButton, RoundedPanel exampleColoredPanel, Panel examplePlayAlignPanel, Panel examplePanel, FlowLayoutPanel targetFlowPanel)
         {
             Panel newPanel = new Panel();
             Panel newAlignPanel = new Panel();
             RoundedPanel newColoredPanel = new RoundedPanel();
             PictureBox playButton = new PictureBox();
-
 
             playButton.Location = examplePlayButton.Location;
             playButton.Size= examplePlayButton.Size;
@@ -128,6 +132,23 @@ namespace Diccon
             word.PreWord = text;
             word.SearchWordProcess();
             player.SoundUrl = word.OnlineUrlProcess(area);
+            player.OnlinePlay();
+            if (player.OnlinePlay() == false)
+            {
+                player.MachinePlay(word.OutWord);
+            }
+        }
+        /// <summary>
+        /// Play sound of a given word 
+        /// </summary>
+        /// <param name="text"></param>
+        public void botSoundPlay(string text)
+        {
+            soundRelated player = new soundRelated();
+            wordFunction word = new wordFunction();
+            word.PreWord = text;
+            word.SearchWordProcess();
+            player.SoundUrl = word.OnlineUrlProcess("us"); // set default is us
             player.OnlinePlay();
             if (player.OnlinePlay() == false)
             {

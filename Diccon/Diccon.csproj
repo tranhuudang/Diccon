@@ -141,9 +141,9 @@
     <None Include="Resources\ninja_64.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Ninja.ico" />
     <Content Include="Ninja2.ico" />
     <Content Include="Notes.txt" />
+    <None Include="Resources\coffee_32.png" />
     <None Include="Resources\history_32.png" />
     <None Include="Resources\yawa.png" />
     <None Include="Resources\recycle_bin_24.png" />

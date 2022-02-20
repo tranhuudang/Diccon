@@ -30,55 +30,8 @@ namespace Diccon
             flowChatBox.HorizontalScroll.Visible = false;
             flowChatBox.HorizontalScroll.Enabled = false;
             flowChatBox.Padding = new Padding(10, 0, 0, 0);
-            // download data if not yet dowloaded or loss
-            //if (!Directory.Exists(dicconProp.resource_directory))
-            //{
-            //    Directory.CreateDirectory(dicconProp.resource_directory);
-            //    DownloadData();
-            //}
-            //else
-            //{
-            //    // re-download if not found in resource folder or loss
-            //    if (!File.Exists(dicconProp.envi_data_filename))
-            //    {
-            //        DownloadData();
-            //    }
-            //    else
-            //    {
-
-            //        //TextDataFromResources = File.ReadAllText(dicconProp.envi_data_filename);
-            //        //splitedText = TextDataFromResources.Split("@".ToCharArray());
-
-            //    }
-            //}
-
 
         }
-        //private void DownloadData()
-        //{
-        //    Thread downloadData = new Thread(() =>
-        //    {
-        //        WebClient client = new WebClient();
-        //        client.DownloadFileCompleted += new AsyncCompletedEventHandler(downloadData_DownloadFileCompleted);
-        //        client.DownloadFileAsync(new Uri(dicconProp.envi_data_url), dicconProp.envi_data_filename);
-        //    }
-        //       );
-        //    downloadData.Start();
-
-        //}
-        //void downloadData_DownloadFileCompleted(object sender, AsyncCompletedEventArgs e)
-        //{
-        //    this.BeginInvoke((MethodInvoker)delegate
-        //    {
-
-        //        if (File.Exists(dicconProp.envi_data_filename))
-        //        {
-        //            //TextDataFromResources = File.ReadAllText(dicconProp.envi_data_filename);
-        //        }
-
-        //    });
-        //}
-
 
         private void buttonFind_Click(object sender, EventArgs e)
         {
@@ -112,7 +65,7 @@ namespace Diccon
                         case 0:
                         case 1:
                             user.userSingleMessage(searchTextBox.Text, exampleShortText, exampleShortPanel, flowChatBox);
-                            bot.botSoundMessage(searchTextBox.Text,examplePlayButton,examplePlayColoredPanel, examplePlayAlignPanel,examplePlayPanel,flowChatBox);
+                            bot.botSoundMessage(searchTextBox.Text, examplePlayButton, examplePlayColoredPanel, examplePlayAlignPanel, examplePlayPanel, flowChatBox);
                             bot.botAnswerLongMessage(searchMatchWord(searchTextBox.Text), exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
                             break;
 
@@ -214,6 +167,75 @@ namespace Diccon
                 e.Handled = true;
             }
         }
+
+        private void aWeekToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuButton_Click(object sender, EventArgs e)
+        {
+            
+            int X = Cursor.Position.X - 120;
+            int Y = Cursor.Position.Y + 15;
+            contextMenu.Show(X, Y);
+        }
+        /// <summary>
+        /// Change Red and Green background of Rounded-Label to a darker shade of  color
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void RoundedLabel_MouseEnter(object sender, EventArgs e)
+        {
+            RoundedLabel roundedLabel = (sender as RoundedLabel);
+            int R = roundedLabel.BackColor.R > 50 ? roundedLabel.BackColor.R - 50 : roundedLabel.BackColor.R;
+            int G = roundedLabel.BackColor.G > 50 ? roundedLabel.BackColor.G - 50 : roundedLabel.BackColor.G;
+            int B = roundedLabel.BackColor.B;
+
+            roundedLabel.BackColor = Color.FromArgb(R, G, B);
+        }
+        /// <summary>
+        /// Change Red and Green background of Rounded-Label to a lighter shade of  color
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void RoundedLabel_MouseLeave(object sender, EventArgs e)
+        {
+            RoundedLabel roundedLabel = (sender as RoundedLabel);
+            int R = roundedLabel.BackColor.R < 200 ? roundedLabel.BackColor.R + 50 : roundedLabel.BackColor.R;
+            int G = roundedLabel.BackColor.G < 200 ? roundedLabel.BackColor.G + 50 : roundedLabel.BackColor.G;
+            int B = roundedLabel.BackColor.B;
+
+            roundedLabel.BackColor = Color.FromArgb(R, G, B);
+        }
+        /// <summary>
+        /// Change position of PictureBox to create a illusion that the box is lift up a little bit
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void PictureBox_MouseEnter(object sender, EventArgs e)
+        {
+            PictureBox pictureBox = (sender as PictureBox);
+            int X= pictureBox.Location.X;
+            int Y= pictureBox.Location.Y-2;
+            pictureBox.Location = new Point(X, Y);
+        }
+        /// <summary>
+        /// Change position of PictureBox to create a illusion that the box is push down a little bit
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void PictureBox_MouseLeave(object sender, EventArgs e)
+        {
+            PictureBox pictureBox = (sender as PictureBox);
+            int X = pictureBox.Location.X;
+            int Y = pictureBox.Location.Y + 2;
+            pictureBox.Location = new Point(X, Y);
+        }
+        private void tbFind_Leave(object sender, EventArgs e)
+        {
+            PanelOfFind.Visible = false;
+        }
     }
-    
+
 }

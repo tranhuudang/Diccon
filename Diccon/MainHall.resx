@@ -145,6 +145,9 @@ A female lion defends her young ferociously.
 In the past, the party would have closed ranks around its leader and defended him loyally.
 Should the church always defend traditional values, or be open to changing them?</value>
   </data>
+  <metadata name="contextMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAYAAAAAAAEAIADPNwAAZgAAAICAAAABACAAKAgBADU4AABAQAAAAQAgAChCAABdQAEAMDAAAAEA
