@@ -62,7 +62,7 @@
             this.exampleAnswerText = new System.Windows.Forms.RichTextBox();
             this.panelSuggestFunction = new System.Windows.Forms.Panel();
             this.roundedLabel2 = new Diccon.RoundedLabel();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lbQuotation = new System.Windows.Forms.Label();
             this.roundedLabel1 = new Diccon.RoundedLabel();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -133,7 +133,7 @@
             // 
             // PanelOfFind
             // 
-            this.PanelOfFind.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(235)))), ((int)(((byte)(252)))));
+            this.PanelOfFind.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.PanelOfFind.BorderColor = System.Drawing.Color.MediumSlateBlue;
             this.PanelOfFind.Controls.Add(this.tbFind);
             this.PanelOfFind.Location = new System.Drawing.Point(204, 18);
@@ -146,7 +146,7 @@
             // 
             // tbFind
             // 
-            this.tbFind.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(235)))), ((int)(((byte)(252)))));
+            this.tbFind.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.tbFind.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbFind.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbFind.Location = new System.Drawing.Point(9, 7);
@@ -157,6 +157,7 @@
             // 
             // buttonFind
             // 
+            this.buttonFind.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonFind.Image = global::Diccon.Properties.Resources.search_24;
             this.buttonFind.Location = new System.Drawing.Point(342, 23);
             this.buttonFind.Name = "buttonFind";
@@ -485,7 +486,7 @@
             // panelSuggestFunction
             // 
             this.panelSuggestFunction.Controls.Add(this.roundedLabel2);
-            this.panelSuggestFunction.Controls.Add(this.label3);
+            this.panelSuggestFunction.Controls.Add(this.lbQuotation);
             this.panelSuggestFunction.Controls.Add(this.roundedLabel1);
             this.panelSuggestFunction.Controls.Add(this.label6);
             this.panelSuggestFunction.Controls.Add(this.label4);
@@ -515,15 +516,15 @@
             this.roundedLabel2.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
             this.roundedLabel2.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
             // 
-            // label3
+            // lbQuotation
             // 
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(4, 25);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(381, 94);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Hi! Today is a good day.";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbQuotation.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbQuotation.Location = new System.Drawing.Point(4, 25);
+            this.lbQuotation.Name = "lbQuotation";
+            this.lbQuotation.Size = new System.Drawing.Size(363, 94);
+            this.lbQuotation.TabIndex = 6;
+            this.lbQuotation.Text = "“Don’t wish it were easier; wish you were better.”";
+            this.lbQuotation.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // roundedLabel1
             // 
@@ -683,7 +684,7 @@
             this.englishToolStripMenuItem,
             this.vietnameseToolStripMenuItem});
             this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
-            this.languageToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.languageToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.languageToolStripMenuItem.Text = "Language";
             // 
             // englishToolStripMenuItem
@@ -705,7 +706,7 @@
             this.aWeekToolStripMenuItem,
             this.aMonthToolStripMenuItem});
             this.clearHistoryToolStripMenuItem.Name = "clearHistoryToolStripMenuItem";
-            this.clearHistoryToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.clearHistoryToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.clearHistoryToolStripMenuItem.Text = "Clear history";
             // 
             // eachSessionToolStripMenuItem
@@ -732,29 +733,29 @@
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(137, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(168, 6);
             // 
             // settingsToolStripMenuItem
             // 
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.settingsToolStripMenuItem.Text = "Settings";
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(137, 6);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(168, 6);
             // 
             // githubToolStripMenuItem
             // 
             this.githubToolStripMenuItem.Name = "githubToolStripMenuItem";
-            this.githubToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.githubToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.githubToolStripMenuItem.Text = "Github";
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.aboutToolStripMenuItem.Text = "About";
             // 
             // labelTypeToSearch
@@ -871,7 +872,7 @@
         private System.Windows.Forms.Label label2;
         private RoundedLabel roundedLabel1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lbQuotation;
         private System.Windows.Forms.ContextMenuStrip contextMenu;
         private System.Windows.Forms.ToolStripMenuItem clearHistoryToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eachSessionToolStripMenuItem;

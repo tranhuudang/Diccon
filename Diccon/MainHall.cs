@@ -30,13 +30,19 @@ namespace Diccon
             flowChatBox.HorizontalScroll.Visible = false;
             flowChatBox.HorizontalScroll.Enabled = false;
             flowChatBox.Padding = new Padding(10, 0, 0, 0);
-
+            // Stack up quotation
+            quote quote = new quote();
+            lbQuotation.Text= quote.getQuote("en");
         }
 
         private void buttonFind_Click(object sender, EventArgs e)
         {
             if (PanelOfFind.Visible == true) PanelOfFind.Visible = false;
-            else PanelOfFind.Visible = true;
+            else
+            {
+                PanelOfFind.Visible = true;
+                tbFind.Focus();
+            }
         }
 
         private void textFromMic_Click(object sender, EventArgs e)
