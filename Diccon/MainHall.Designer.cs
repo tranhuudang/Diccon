@@ -87,6 +87,8 @@
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
             this.githubToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.labelTypeToSearch = new System.Windows.Forms.Label();
+            this.checkForUpdatesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel9.SuspendLayout();
             this.PanelOfFind.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.buttonFind)).BeginInit();
@@ -252,6 +254,7 @@
             // 
             this.roundedPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(235)))), ((int)(((byte)(252)))));
             this.roundedPanel1.BorderColor = System.Drawing.Color.White;
+            this.roundedPanel1.Controls.Add(this.labelTypeToSearch);
             this.roundedPanel1.Controls.Add(this.searchTextBox);
             this.roundedPanel1.Controls.Add(this.textFromEmoji);
             this.roundedPanel1.Controls.Add(this.textFromMic);
@@ -275,6 +278,7 @@
             this.searchTextBox.TextChanged += new System.EventHandler(this.searchTextBox_TextChanged);
             this.searchTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.searchTextBox_KeyDown);
             this.searchTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.searchTextBox_KeyPress);
+            this.searchTextBox.Leave += new System.EventHandler(this.searchTextBox_Leave);
             // 
             // textFromEmoji
             // 
@@ -666,11 +670,12 @@
             this.clearHistoryToolStripMenuItem,
             this.toolStripMenuItem1,
             this.settingsToolStripMenuItem,
+            this.checkForUpdatesToolStripMenuItem,
             this.toolStripMenuItem2,
             this.githubToolStripMenuItem,
             this.aboutToolStripMenuItem});
             this.contextMenu.Name = "contextMenu";
-            this.contextMenu.Size = new System.Drawing.Size(141, 126);
+            this.contextMenu.Size = new System.Drawing.Size(172, 148);
             // 
             // languageToolStripMenuItem
             // 
@@ -751,6 +756,25 @@
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.aboutToolStripMenuItem.Text = "About";
+            // 
+            // labelTypeToSearch
+            // 
+            this.labelTypeToSearch.AutoSize = true;
+            this.labelTypeToSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.labelTypeToSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTypeToSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labelTypeToSearch.Location = new System.Drawing.Point(17, 12);
+            this.labelTypeToSearch.Name = "labelTypeToSearch";
+            this.labelTypeToSearch.Size = new System.Drawing.Size(113, 20);
+            this.labelTypeToSearch.TabIndex = 6;
+            this.labelTypeToSearch.Text = "Type to search";
+            this.labelTypeToSearch.Click += new System.EventHandler(this.labelTypeToSearch_Click);
+            // 
+            // checkForUpdatesToolStripMenuItem
+            // 
+            this.checkForUpdatesToolStripMenuItem.Name = "checkForUpdatesToolStripMenuItem";
+            this.checkForUpdatesToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.checkForUpdatesToolStripMenuItem.Text = "Check for Updates";
             // 
             // mainHall
             // 
@@ -863,6 +887,8 @@
         private System.Windows.Forms.ToolStripMenuItem githubToolStripMenuItem;
         private RoundedLabel roundedLabel2;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label labelTypeToSearch;
+        private System.Windows.Forms.ToolStripMenuItem checkForUpdatesToolStripMenuItem;
     }
 }
 

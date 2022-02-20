@@ -123,7 +123,7 @@ namespace Diccon
 
         private void searchTextBox_TextChanged(object sender, EventArgs e)
         {
-
+            labelTypeToSearch.Visible = searchTextBox.Text != "" ? false : true;
         }
 
         private void exampleAnswerText_Layout(object sender, LayoutEventArgs e)
@@ -235,6 +235,16 @@ namespace Diccon
         private void tbFind_Leave(object sender, EventArgs e)
         {
             PanelOfFind.Visible = false;
+        }
+
+        private void searchTextBox_Leave(object sender, EventArgs e)
+        {
+            labelTypeToSearch.Visible = searchTextBox.Text==""?  true:false;
+        }
+
+        private void labelTypeToSearch_Click(object sender, EventArgs e)
+        {
+            searchTextBox.Focus();
         }
     }
 
