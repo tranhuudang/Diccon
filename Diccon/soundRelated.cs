@@ -44,15 +44,19 @@ namespace Diccon
             }
             return true;
         }
-        public bool MachinePlay(string Word)
+        /// <summary>
+        /// Use intergrated SpeechSynthesizer to pronouce the word
+        /// </summary>
+        /// <param name="word"></param>
+        /// <returns></returns>
+        public bool MachinePlay(string word)
         {
-            // Sử dụng máy đọc nếu như file âm thanh online  và offline không sẵn dùng
             try
             {
-                SpeechSynthesizer machineSound = new SpeechSynthesizer(); // cần thêm thư viện System.Speech ở Project- Add Reference
-                machineSound.Volume = 100;  // 0...100 âm lượng
+                SpeechSynthesizer machineSound = new SpeechSynthesizer();
+                machineSound.Volume = 100;  // 0...100 volumn
                 machineSound.Rate = -2;     // -10...10
-                machineSound.SpeakAsync(Word); // phát âm từ
+                machineSound.SpeakAsync(word);
             }
             catch (Exception error)
             {
@@ -61,10 +65,14 @@ namespace Diccon
             }
             return true;
         }
-        public bool OfflinePlay()
+        /// <summary>
+        /// Use to play local file with a given address file
+        /// </summary>
+        /// <returns></returns>
+        public bool OfflinePlay(string path)
         {
             // Phát âm thanh được tải về trong máy
-            player.URL = fileAddress;
+            player.URL = path;
             player.controls.play();
             return false;
         }
@@ -72,7 +80,7 @@ namespace Diccon
         public string SpeechToText(string waitingtime)
         {
             // waiting time format : "00:00:07"
-            string Word = "";
+            string word = "";
             SpeechRecognitionEngine recognizer = new SpeechRecognitionEngine();
             Grammar dictationGrammar = new DictationGrammar();
             recognizer.LoadGrammar(dictationGrammar);
@@ -85,11 +93,11 @@ namespace Diccon
 
                 if (result == null)
                 {
-                    Word = "";
+                    word = "";
                 }
                 else
                 {
-                    Word = result.Text;
+                    word = result.Text;
                 }
 
             }
@@ -102,7 +110,7 @@ namespace Diccon
                 recognizer.UnloadAllGrammars();
                 recognizer.Dispose();
             }
-            return Word;
+            return word;
         }
 
 

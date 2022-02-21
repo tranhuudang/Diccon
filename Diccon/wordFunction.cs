@@ -80,105 +80,15 @@ namespace Diccon
             outWord = outWord.Replace("\n", "").Replace("\r", ""); // delete \n in c#
             return outWord;
         }
-        // Xử lí từ đầu vào thành một cái link âm thanh theo định dạng link của Oxford Dictionary
+        // https://github.com/zeroclubvn/US-Pronunciation/raw/main/A/us/Affected.mp3
         public string OnlineUrlProcess(string UsOrUk)
         {
-
-            string word = "/" + PreWord;
-            string firstLetter = "/" + word.Substring(1, 1);
-            string threeWordNext = "";
-            string fourWordNext = "";
-            string totalWord = "";
-            string usSpeak_tail = "";
-            if (UsOrUk.ToLower() == "uk")
-            {
-
-                // Vì độ dài của tên từ vựng đó khiến link file âm thanh thay đổi nên phải tiến hành xử lí để 
-                // có thể tạo ra link phù hợp với link file.
-                if (PreWord.Length > 4)
-                {
-                    threeWordNext = "/" + word.Substring(1, 3);
-                    fourWordNext = "/" + word.Substring(1, 5);
-
-                }
-                else
-                {
-                    // 1 letter: www.oxfordlearnersdictionaries.com/media/english/us_pron/o/o__/o__us/o__us_1.mp3
-                    // 2 letter: www.oxfordlearnersdictionaries.com/media/english/us_pron/o/on_/on__u/on__us_1_rr.mp3
-                    // 3 letter: www.oxfordlearnersdictionaries.com/media/english/us_pron/t/ten/ten__/ten__us_1.mp3
-                    // 4 letter: www.oxfordlearnersdictionaries.com/media/english/us_pron/f/fou/four_/four__us_1.mp3
-                    if (PreWord.Length == 1)
-                    {
-                        threeWordNext = "/" + PreWord + "__";
-                        fourWordNext = "/" + PreWord + "__gb";
-                    }
-                    if (PreWord.Length == 2)
-                    {
-                        threeWordNext = "/" + PreWord + "_";
-                        fourWordNext = "/" + PreWord + "__g";
-                    }
-                    if (PreWord.Length == 3)
-                    {
-                        threeWordNext = "/" + PreWord;
-                        fourWordNext = "/" + PreWord + "__";
-                    }
-                    if (PreWord.Length == 4)
-                    {
-                        threeWordNext = "/" + PreWord.Substring(0, 3);
-                        fourWordNext = "/" + PreWord + "_";
-                    }
-                }
-
-
-                usSpeak_tail = word + "__gb_1.mp3";
-                totalWord = firstLetter + threeWordNext + fourWordNext + usSpeak_tail;
-                onlineUrlOfUk = "https://www.oxfordlearnersdictionaries.com/media/english/uk_pron" + totalWord;
-                return onlineUrlOfUk;
-            }
-            else
-            {
-
-                // Vì độ dài của tên từ vựng đó khiến link file âm thanh thay đổi nên phải tiến hành xử lí để 
-                // có thể tạo ra link phù hợp với link file.
-                if (PreWord.Length > 4)
-                {
-                    threeWordNext = "/" + word.Substring(1, 3);
-                    fourWordNext = "/" + word.Substring(1, 5);
-
-                }
-                else
-                {
-                    if (PreWord.Length == 1)
-                    {
-                        threeWordNext = "/" + PreWord + "__";
-                        fourWordNext = "/" + PreWord + "__us";
-                    }
-                    if (PreWord.Length == 2)
-                    {
-                        threeWordNext = "/" + PreWord + "_";
-                        fourWordNext = "/" + PreWord + "__u";
-                    }
-                    if (PreWord.Length == 3)
-                    {
-                        threeWordNext = "/" + PreWord;
-                        fourWordNext = "/" + PreWord + "__";
-                    }
-                    if (PreWord.Length == 4)
-                    {
-                        threeWordNext = "/" + PreWord.Substring(0, 3);
-                        fourWordNext = "/" + PreWord + "_";
-                    }
-                }
-
-                //https://www.oxfordlearnersdictionaries.com/media/english/us_pron/t/til/till_/till__us_1.mp3
-                //https://www.oxfordlearnersdictionaries.com/media/english/us_pron/t/til
-                usSpeak_tail = word + "__us_1.mp3";
-                totalWord = firstLetter + threeWordNext + fourWordNext + usSpeak_tail;
-                onlineUrlOfUs = "https://www.oxfordlearnersdictionaries.com/media/english/us_pron" + totalWord;
-                return onlineUrlOfUs;
-            }
-
+            string firstLetter = PreWord.Substring(0, 1).ToUpper();
+            string afterFirstLetter = PreWord.Substring(1);
+            string url = "https://github.com/zeroclubvn/US-Pronunciation/raw/main/" + firstLetter + "/us/" + firstLetter + afterFirstLetter + ".mp3";
+            return url;
         }
+        
         public int countWord(string text)
         {
             string pattern = "[^\\w]";
