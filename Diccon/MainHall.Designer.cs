@@ -42,6 +42,7 @@
             this.addNote = new Diccon.RoundedLabel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.roundedPanel1 = new Diccon.RoundedPanel();
+            this.labelTypeToSearch = new System.Windows.Forms.Label();
             this.searchTextBox = new System.Windows.Forms.TextBox();
             this.textFromEmoji = new System.Windows.Forms.PictureBox();
             this.textFromMic = new System.Windows.Forms.PictureBox();
@@ -84,11 +85,10 @@
             this.aMonthToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.checkForUpdatesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
             this.githubToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.labelTypeToSearch = new System.Windows.Forms.Label();
-            this.checkForUpdatesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel9.SuspendLayout();
             this.PanelOfFind.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.buttonFind)).BeginInit();
@@ -265,6 +265,19 @@
             this.roundedPanel1.Size = new System.Drawing.Size(354, 45);
             this.roundedPanel1.TabIndex = 5;
             this.roundedPanel1.Thickness = 5F;
+            // 
+            // labelTypeToSearch
+            // 
+            this.labelTypeToSearch.AutoSize = true;
+            this.labelTypeToSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.labelTypeToSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTypeToSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labelTypeToSearch.Location = new System.Drawing.Point(17, 12);
+            this.labelTypeToSearch.Name = "labelTypeToSearch";
+            this.labelTypeToSearch.Size = new System.Drawing.Size(113, 20);
+            this.labelTypeToSearch.TabIndex = 6;
+            this.labelTypeToSearch.Text = "Type to search";
+            this.labelTypeToSearch.Click += new System.EventHandler(this.labelTypeToSearch_Click);
             // 
             // searchTextBox
             // 
@@ -496,7 +509,7 @@
             this.panelSuggestFunction.Controls.Add(this.buttonYourNote);
             this.panelSuggestFunction.Location = new System.Drawing.Point(8, 410);
             this.panelSuggestFunction.Name = "panelSuggestFunction";
-            this.panelSuggestFunction.Size = new System.Drawing.Size(367, 482);
+            this.panelSuggestFunction.Size = new System.Drawing.Size(367, 520);
             this.panelSuggestFunction.TabIndex = 4;
             // 
             // roundedLabel2
@@ -620,7 +633,7 @@
             // exampleNotePanel
             // 
             this.exampleNotePanel.Controls.Add(this.exampleNoteColoredPanel);
-            this.exampleNotePanel.Location = new System.Drawing.Point(8, 898);
+            this.exampleNotePanel.Location = new System.Drawing.Point(8, 936);
             this.exampleNotePanel.Name = "exampleNotePanel";
             this.exampleNotePanel.Size = new System.Drawing.Size(367, 236);
             this.exampleNotePanel.TabIndex = 5;
@@ -741,6 +754,12 @@
             this.settingsToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.settingsToolStripMenuItem.Text = "Settings";
             // 
+            // checkForUpdatesToolStripMenuItem
+            // 
+            this.checkForUpdatesToolStripMenuItem.Name = "checkForUpdatesToolStripMenuItem";
+            this.checkForUpdatesToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.checkForUpdatesToolStripMenuItem.Text = "Check for Updates";
+            // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
@@ -757,25 +776,6 @@
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.aboutToolStripMenuItem.Text = "About";
-            // 
-            // labelTypeToSearch
-            // 
-            this.labelTypeToSearch.AutoSize = true;
-            this.labelTypeToSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.labelTypeToSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTypeToSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.labelTypeToSearch.Location = new System.Drawing.Point(17, 12);
-            this.labelTypeToSearch.Name = "labelTypeToSearch";
-            this.labelTypeToSearch.Size = new System.Drawing.Size(113, 20);
-            this.labelTypeToSearch.TabIndex = 6;
-            this.labelTypeToSearch.Text = "Type to search";
-            this.labelTypeToSearch.Click += new System.EventHandler(this.labelTypeToSearch_Click);
-            // 
-            // checkForUpdatesToolStripMenuItem
-            // 
-            this.checkForUpdatesToolStripMenuItem.Name = "checkForUpdatesToolStripMenuItem";
-            this.checkForUpdatesToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
-            this.checkForUpdatesToolStripMenuItem.Text = "Check for Updates";
             // 
             // mainHall
             // 

@@ -194,8 +194,8 @@ namespace Diccon
         private void RoundedLabel_MouseEnter(object sender, EventArgs e)
         {
             RoundedLabel roundedLabel = (sender as RoundedLabel);
-            int R = roundedLabel.BackColor.R > 50 ? roundedLabel.BackColor.R - 50 : roundedLabel.BackColor.R;
-            int G = roundedLabel.BackColor.G > 50 ? roundedLabel.BackColor.G - 50 : roundedLabel.BackColor.G;
+            int R = roundedLabel.BackColor.R >= 50 ? roundedLabel.BackColor.R - 50 : roundedLabel.BackColor.R;
+            int G = roundedLabel.BackColor.G >= 50 ? roundedLabel.BackColor.G - 50 : roundedLabel.BackColor.G;
             int B = roundedLabel.BackColor.B;
 
             roundedLabel.BackColor = Color.FromArgb(R, G, B);
@@ -208,8 +208,8 @@ namespace Diccon
         private void RoundedLabel_MouseLeave(object sender, EventArgs e)
         {
             RoundedLabel roundedLabel = (sender as RoundedLabel);
-            int R = roundedLabel.BackColor.R < 200 ? roundedLabel.BackColor.R + 50 : roundedLabel.BackColor.R;
-            int G = roundedLabel.BackColor.G < 200 ? roundedLabel.BackColor.G + 50 : roundedLabel.BackColor.G;
+            int R = roundedLabel.BackColor.R <= 205 ? roundedLabel.BackColor.R + 50 : roundedLabel.BackColor.R;
+            int G = roundedLabel.BackColor.G <= 205 ? roundedLabel.BackColor.G + 50 : roundedLabel.BackColor.G;
             int B = roundedLabel.BackColor.B;
 
             roundedLabel.BackColor = Color.FromArgb(R, G, B);
