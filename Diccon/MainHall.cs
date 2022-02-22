@@ -11,6 +11,8 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
+using System.Xml;
+using System.Reflection;
 
 namespace Diccon
 {
@@ -262,6 +264,48 @@ namespace Diccon
         private void githubToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Process.Start("https://github.com/zeroclubvn/Diccon");
+        }
+
+        private void checkForUpdatesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                XmlDocument updateFile = new XmlDocument();
+                updateFile.Load(dicconProp.updateInfo + "?" + DateTime.Now.Ticks.ToString());
+                Version netVersion = new Version(updateFile.SelectSingleNode("//currentVersion/version").InnerText);
+                string describe = updateFile.SelectSingleNode("//currentVersion/describe").InnerText;
+                string linkSetup = updateFile.SelectSingleNode("//path").InnerText;
+                Version currentVersion = Assembly.GetExecutingAssembly().GetName().Version;
+                if (netVersion > currentVersion)
+                {
+                    if (MessageBox.Show(dicconProp.updateAvailableMessage, "Update" ,MessageBoxButtons.YesNo,MessageBoxIcon.Information)== DialogResult.Yes)
+                    {
+                        Thread thread = new Thread(() =>
+                        {
+                            WebClient webClient = new WebClient();
+                            webClient.DownloadFileCompleted += WebClient_DownloadFileCompleted;
+                            webClient.DownloadFileAsync(new Uri(linkSetup), dicconProp.setupName);
+                        });
+                    }
+                }
+                else
+                {
+                    MessageBox.Show(dicconProp.noUpdateAvailableMessage, "Update", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Can't connect to the internet!");
+            }
+        }
+
+        private void WebClient_DownloadFileCompleted(object sender, AsyncCompletedEventArgs e)
+        {
+            if (MessageBox.Show(dicconProp.downloadSetupCompleteMessage, "Update", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+            {
+                Process.Start(dicconProp.setupName);
+                this.Close();
+            }
         }
     }
 
