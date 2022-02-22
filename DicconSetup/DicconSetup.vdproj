@@ -1562,6 +1562,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
         "Release"
@@ -5505,15 +5513,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Diccon"
-        "ProductCode" = "8:{65060D52-D033-4FE5-AA5F-5940A2898F4F}"
-        "PackageCode" = "8:{1732DAC5-C35D-4462-9AAC-E04E2F804CCA}"
+        "ProductCode" = "8:{028201AC-1669-4CC5-9871-29BD3FE42DEC}"
+        "PackageCode" = "8:{A8A39261-2C66-4A41-829E-6B203337CE5C}"
         "UpgradeCode" = "8:{A635127C-96F2-4417-BF13-D951E60340A2}"
         "AspNetVersion" = "8:"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.1"
+        "ProductVersion" = "8:1.0.2"
         "Manufacturer" = "8:ZeroClub"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:https://github.com/zeroclubvn/Diccon"
