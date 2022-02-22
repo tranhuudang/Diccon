@@ -489,12 +489,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_9F62DCF98EBD459D9B8A57E92491CC41"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_9FDE4E783430212BA7A6C06F68D11FF4"
         "OwnerKey" = "8:_04F7EB85B51E4D64B9D2332668B71C8A"
         "MsmSig" = "8:_UNDEFINED"
@@ -521,12 +515,6 @@
         {
         "MsmKey" = "8:_A882B1A840DB305149868134ED9E586C"
         "OwnerKey" = "8:_04F7EB85B51E4D64B9D2332668B71C8A"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_A882B1A840DB305149868134ED9E586C"
-        "OwnerKey" = "8:_9F62DCF98EBD459D9B8A57E92491CC41"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -833,12 +821,6 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_04F7EB85B51E4D64B9D2332668B71C8A"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_9F62DCF98EBD459D9B8A57E92491CC41"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -5523,16 +5505,16 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Diccon"
-        "ProductCode" = "8:{1AD65D5D-AB0D-4B73-BE0B-E409B43AF554}"
-        "PackageCode" = "8:{3E218D8C-9057-4486-B515-3B75C14B3BAD}"
+        "ProductCode" = "8:{65060D52-D033-4FE5-AA5F-5940A2898F4F}"
+        "PackageCode" = "8:{1732DAC5-C35D-4462-9AAC-E04E2F804CCA}"
         "UpgradeCode" = "8:{A635127C-96F2-4417-BF13-D951E60340A2}"
         "AspNetVersion" = "8:"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.0"
-        "Manufacturer" = "8:Default Company Name"
+        "ProductVersion" = "8:1.0.1"
+        "Manufacturer" = "8:ZeroClub"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:https://github.com/zeroclubvn/Diccon"
         "Title" = "8:Diccon"
@@ -6122,62 +6104,6 @@
             "OutputConfiguration" = "8:"
             "OutputGroupCanonicalName" = "8:LocalizedResourceDlls"
             "OutputProjectGuid" = "8:{5F592CE8-921C-48A2-AB39-F101957E6276}"
-            "ShowKeyOutput" = "11:TRUE"
-                "ExcludeFilters"
-                {
-                }
-            }
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_9F62DCF98EBD459D9B8A57E92491CC41"
-            {
-            "SourcePath" = "8:..\\Updater\\obj\\Debug\\Updater.exe"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_CB8B887CF08B41FBA9EFE4D8F8E52808"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            "ProjectOutputGroupRegister" = "3:1"
-            "OutputConfiguration" = "8:"
-            "OutputGroupCanonicalName" = "8:Built"
-            "OutputProjectGuid" = "8:{9BBBD0A7-DE9C-4768-A59C-5DB22225B4DC}"
-            "ShowKeyOutput" = "11:TRUE"
-                "ExcludeFilters"
-                {
-                }
-            }
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_AA50E6E823F84B88ADF550928E39838D"
-            {
-            "SourcePath" = "8:"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_CB8B887CF08B41FBA9EFE4D8F8E52808"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            "ProjectOutputGroupRegister" = "3:1"
-            "OutputConfiguration" = "8:"
-            "OutputGroupCanonicalName" = "8:LocalizedResourceDlls"
-            "OutputProjectGuid" = "8:{9BBBD0A7-DE9C-4768-A59C-5DB22225B4DC}"
             "ShowKeyOutput" = "11:TRUE"
                 "ExcludeFilters"
                 {

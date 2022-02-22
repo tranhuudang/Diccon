@@ -278,7 +278,15 @@ namespace Diccon
                 Version currentVersion = Assembly.GetExecutingAssembly().GetName().Version;
                 if (netVersion > currentVersion)
                 {
-                    MessageBox.Show(dicconProp.updateAvailableMessage, "Update" ,MessageBoxButtons.YesNo);
+                    if (MessageBox.Show(dicconProp.updateAvailableMessage, "Update" ,MessageBoxButtons.YesNo,MessageBoxIcon.Information)== DialogResult.Yes)
+                    {
+                        Thread thread = new Thread(() =>
+                        {
+                            WebClient webClient = new WebClient();
+                            webClient.DownloadFileCompleted += WebClient_DownloadFileCompleted;
+                            webClient.DownloadFileAsync(new Uri(linkSetup), dicconProp.setupName);
+                        });
+                    }
                 }
                 else
                 {
@@ -288,6 +296,15 @@ namespace Diccon
             catch (Exception)
             {
                 MessageBox.Show("Can't connect to the internet!");
+            }
+        }
+
+        private void WebClient_DownloadFileCompleted(object sender, AsyncCompletedEventArgs e)
+        {
+            if (MessageBox.Show(dicconProp.downloadSetupCompleteMessage, "Update", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+            {
+                Process.Start(dicconProp.setupName);
+                this.Close();
             }
         }
     }

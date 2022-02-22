@@ -17,8 +17,11 @@ namespace Diccon
         public static Color default_addNote_BackColor = Color.FromArgb(255, 192, 128);
         public static Color hover_addNote_BackColor = Color.FromArgb(242, 203, 164);
         public static string resourcesFolder = @"Resources\";
-        public static string updateAvailableMessage = "";
+        public static string updateAvailableMessage = "New version available! Do you want to download it now?";
         public static string noUpdateAvailableMessage = "You're running the lastest version of Diccon!";
+        public static string updateInfo = "https://raw.githubusercontent.com/zeroclubvn/Diccon/master/Diccon/Setup%20and%20Update/UpdateInfo.xml";
+        public static string downloadSetupCompleteMessage = "Diccon Updater is ready to install new version of Diccon!";
+        public static string setupName = "DicconSetup.msi";
 
     }
 }
