@@ -107,9 +107,29 @@ namespace Diccon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap github_20 {
+            get {
+                object obj = ResourceManager.GetObject("github_20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap history_32 {
             get {
                 object obj = ResourceManager.GetObject("history_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap info_20 {
+            get {
+                object obj = ResourceManager.GetObject("info_20", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -130,6 +150,16 @@ namespace Diccon.Properties {
         internal static System.Drawing.Bitmap micro_24 {
             get {
                 object obj = ResourceManager.GetObject("micro_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ninja_128 {
+            get {
+                object obj = ResourceManager.GetObject("ninja_128", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

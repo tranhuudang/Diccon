@@ -252,6 +252,17 @@ namespace Diccon
         {
             searchTextBox.Focus();
         }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            about about = new about();
+            about.ShowDialog();
+        }
+
+        private void githubToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://github.com/zeroclubvn/Diccon");
+        }
     }
 
 }
