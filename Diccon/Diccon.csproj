@@ -140,6 +140,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Setup and Update\DicconSetup.msi" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
