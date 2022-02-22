@@ -6,43 +6,64 @@ using System.Threading.Tasks;
 using System.Speech.Synthesis;
 using System.Speech.Recognition;
 using System.Windows.Forms;
+using System.Net;
+using System.IO;
+using System.Threading;
 
 namespace Diccon
 {
-    /// <summary>
-    ///  Class xử lí các vấn đề về âm thanh
-    /// </summary>
+
     class soundRelated
     {
-        private string soundUrl;
-        private string fileAddress;
-
-        public string SoundUrl { get => soundUrl; set => soundUrl = value; }
-        public string FileAddress { get => fileAddress; set => fileAddress = value; }
 
         WMPLib.WindowsMediaPlayer player = new WMPLib.WindowsMediaPlayer();
+        string currentWord = "";
 
-        public bool OnlinePlay()
+        /// <summary>
+        /// Use to play local file with a given address file
+        /// </summary>
+        /// <returns></returns>
+        public void OfflinePlay(string word)
         {
-            try
+            if (!Directory.Exists(dicconProp.resourcesFolder))
             {
-
-                if (player.isOnline == true) // indentify 
+                Directory.CreateDirectory(dicconProp.resourcesFolder);
+            }
+            currentWord = word;
+            string path = dicconProp.resourcesFolder + word + ".mp3";
+            FileInfo fileInfo = new FileInfo(path);
+            if (fileInfo.Exists)
+            {
+                if (fileInfo.Length > 0)
                 {
-                    player.URL = soundUrl;
+                    player.URL = path;
                     player.controls.play();
                 }
                 else
-                {
-                    return false;
-                }
+                // Pronouce word by machine if sound track not exist in the internet and the file size is 0KB
+                MachinePlay(word);
             }
-            catch (Exception error)
+            else
             {
-                MessageBox.Show(error.ToString());
-                return false;
+                // Download sound track if not exist in resources folder
+                wordRelated wordProcess = new wordRelated(word);
+                string onlineUrl = wordProcess.OnlineUrlProcess("us");
+                Thread thread = new Thread(() =>
+                {
+
+                    WebClient client = new WebClient();
+                    client.DownloadFileCompleted += Client_DownloadFileCompleted;
+                    client.DownloadFileAsync(new Uri(onlineUrl), path);
+
+                });
+                thread.Start();
+
             }
-            return true;
+        }
+
+        private void Client_DownloadFileCompleted(object sender, System.ComponentModel.AsyncCompletedEventArgs e)
+        {
+            OfflinePlay(currentWord);
         }
         /// <summary>
         /// Use intergrated SpeechSynthesizer to pronouce the word
@@ -65,18 +86,12 @@ namespace Diccon
             }
             return true;
         }
+
         /// <summary>
-        /// Use to play local file with a given address file
+        /// Speech to text function
         /// </summary>
+        /// <param name="waitingtime"></param>
         /// <returns></returns>
-        public bool OfflinePlay(string path)
-        {
-            // Phát âm thanh được tải về trong máy
-            player.URL = path;
-            player.controls.play();
-            return false;
-        }
-        // Speech To Text 
         public string SpeechToText(string waitingtime)
         {
             // waiting time format : "00:00:07"

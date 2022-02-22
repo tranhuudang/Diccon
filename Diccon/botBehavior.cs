@@ -128,15 +128,9 @@ namespace Diccon
         public void botSoundPlay(string text, string area)
         {
             soundRelated player = new soundRelated();
-            wordFunction word = new wordFunction();
-            word.PreWord = text;
+            wordRelated word = new wordRelated(text);
             word.SearchWordProcess();
-            player.SoundUrl = word.OnlineUrlProcess(area);
-            player.OnlinePlay();
-            if (player.OnlinePlay() == false)
-            {
-                player.MachinePlay(word.OutWord);
-            }
+            player.OfflinePlay(word.OutWord);
         }
         /// <summary>
         /// Play sound of a given word 
@@ -145,15 +139,9 @@ namespace Diccon
         public void botSoundPlay(string text)
         {
             soundRelated player = new soundRelated();
-            wordFunction word = new wordFunction();
-            word.PreWord = text;
+            wordRelated word = new wordRelated(text);
             word.SearchWordProcess();
-            player.SoundUrl = word.OnlineUrlProcess("us"); // set default is us
-            player.OnlinePlay();
-            if (player.OnlinePlay() == false)
-            {
-                player.MachinePlay(word.OutWord);
-            }
+            player.OfflinePlay(word.OutWord);
         }
     }
 }

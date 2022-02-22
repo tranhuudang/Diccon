@@ -116,7 +116,7 @@
     </Compile>
     <Compile Include="soundRelated.cs" />
     <Compile Include="userAction.cs" />
-    <Compile Include="wordFunction.cs" />
+    <Compile Include="wordRelated.cs" />
     <EmbeddedResource Include="about.resx">
       <DependentUpon>about.cs</DependentUpon>
     </EmbeddedResource>

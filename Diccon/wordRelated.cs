@@ -9,11 +9,9 @@ using System.Windows.Forms;
 
 namespace Diccon
 {
-    public class wordFunction
+    public class wordRelated
     {
         private string preWord = "none";
-        private string onlineUrlOfUk;
-        private string onlineUrlOfUs;
         //private string offlineAddress="none";
         private string outWord;
         private string preParagraph = " ";
@@ -24,6 +22,13 @@ namespace Diccon
         public string PreParagraph { get => preParagraph; set => preParagraph = value; }
         public string OutParagraph { get => outParagraph; set => outParagraph = value; }
 
+        public wordRelated(string word)
+        {
+            preWord = word;
+        }
+        public wordRelated()
+        {
+        }
         // Xử lí Related Text
         public ArrayList RelatedText(string Word, string[] InputArray)
         {

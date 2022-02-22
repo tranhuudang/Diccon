@@ -63,7 +63,7 @@ namespace Diccon
             {
                 if (searchTextBox.Text.Replace(" ", "") != "")
                 {
-                    wordFunction word = new wordFunction();
+                    wordRelated word = new wordRelated();
                     // if user type in just one word, so the case is we will use userSingMessage instead of userLongMessage
                     int numberOfWord = word.countWord(searchTextBox.Text);
                     switch (numberOfWord)
@@ -93,7 +93,7 @@ namespace Diccon
         {
 
             // xử lí từ ngữ được người dùng nhập vào------------------
-            wordFunction word = new wordFunction();
+            wordRelated word = new wordRelated();
             // Nạp từ vào đối tượng
             word.PreWord = wordsToSearch;
             // Xử lí từ và lấy kết quả
