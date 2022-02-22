@@ -153,6 +153,7 @@
   <ItemGroup>
     <Content Include="Ninja2.ico" />
     <Content Include="Notes.txt" />
+    <Content Include="Setup and Update\UpdateInfo.xml" />
     <None Include="Resources\github_20.png" />
     <None Include="Resources\info_20.png" />
     <None Include="Resources\ninja_128.png" />

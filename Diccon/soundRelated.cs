@@ -47,7 +47,7 @@ namespace Diccon
             {
                 // Download sound track if not exist in resources folder
                 wordRelated wordProcess = new wordRelated(word);
-                string onlineUrl = wordProcess.OnlineUrlProcess("us");
+                string onlineUrl = wordProcess.OnlineUrlPath("us");
                 Thread thread = new Thread(() =>
                 {
 

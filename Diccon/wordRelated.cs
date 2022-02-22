@@ -11,16 +11,11 @@ namespace Diccon
 {
     public class wordRelated
     {
-        private string preWord = "none";
-        //private string offlineAddress="none";
+        private string preWord;
         private string outWord;
-        private string preParagraph = " ";
-        private string outParagraph = " ";
 
         public string PreWord { get => preWord; set => preWord = value; }
         public string OutWord { get => outWord; set => outWord = value; }
-        public string PreParagraph { get => preParagraph; set => preParagraph = value; }
-        public string OutParagraph { get => outParagraph; set => outParagraph = value; }
 
         public wordRelated(string word)
         {
@@ -28,54 +23,6 @@ namespace Diccon
         }
         public wordRelated()
         {
-        }
-        // Xử lí Related Text
-        public ArrayList RelatedText(string Word, string[] InputArray)
-        {
-
-            ArrayList RelatedTextSource = new ArrayList();
-            string[] BunchRelated = null;
-            int arrIndex = 0;
-            int LimitOfList = 0; // limit of list is 28
-            int max = 28;
-            string SearchText = Word + "--";
-            foreach (string text in InputArray)
-            {
-                if (text.Contains(SearchText))
-                {
-                    BunchRelated = InputArray[arrIndex].Substring(SearchText.Length + 1).Split(" ".ToCharArray());
-                    foreach (string textInBunch in BunchRelated)
-                    {
-                        RelatedTextSource.Add(textInBunch);
-                        LimitOfList++;
-                        if (LimitOfList == max) break;
-                    }
-                    return RelatedTextSource;
-
-                }
-                arrIndex++;
-            }
-            return RelatedTextSource;
-
-
-        }
-        // Xử lí đầu ra cho Translate Paragraph
-        public string TranslateParagraphProcess()
-        {
-            try
-            {
-                //translate.google.com/?sl=en&tl=vi&text=english%20is%20a%20language%20in%20the%20world&op=translate
-                // lỗi này đã được bắt và không nhất thiết phải sửa nữa
-                outParagraph = preParagraph.Replace(" ", "%20");
-                outParagraph = "http://translate.google.com/?sl=en&tl=vi&text=" + outParagraph + "&op=translate";
-                return outParagraph;
-            }
-            catch (Exception error)
-            {
-                error.ToString();
-                outParagraph = "http://translate.google.com";
-            }
-            return outParagraph;
         }
         // Xử lí từ đầu vào thành một từ chuẩn cho quá trình tìm kiếm từ trong Database
         public string SearchWordProcess()
@@ -85,9 +32,14 @@ namespace Diccon
             outWord = outWord.Replace("\n", "").Replace("\r", ""); // delete \n in c#
             return outWord;
         }
-        // https://github.com/zeroclubvn/US-Pronunciation/raw/main/A/us/Affected.mp3
-        public string OnlineUrlProcess(string UsOrUk)
+        /// <summary>
+        /// Create link to sound track file of a word in Github
+        /// </summary>
+        /// <param name="UsOrUk"></param>
+        /// <returns></returns>
+        public string OnlineUrlPath(string UsOrUk)
         {
+            // https://github.com/zeroclubvn/US-Pronunciation/raw/main/A/us/Affected.mp3
             string firstLetter = PreWord.Substring(0, 1).ToUpper();
             string afterFirstLetter = PreWord.Substring(1);
             string url = "https://github.com/zeroclubvn/US-Pronunciation/raw/main/" + firstLetter + "/us/" + firstLetter + afterFirstLetter + ".mp3";

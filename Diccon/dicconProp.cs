@@ -17,5 +17,8 @@ namespace Diccon
         public static Color default_addNote_BackColor = Color.FromArgb(255, 192, 128);
         public static Color hover_addNote_BackColor = Color.FromArgb(242, 203, 164);
         public static string resourcesFolder = @"Resources\";
+        public static string updateAvailableMessage = "";
+        public static string noUpdateAvailableMessage = "You're running the lastest version of Diccon!";
+
     }
 }
