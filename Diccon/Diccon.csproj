@@ -102,9 +102,6 @@
     <Compile Include="mainHall.Designer.cs">
       <DependentUpon>mainHall.cs</DependentUpon>
     </Compile>
-    <Compile Include="multiLineLabel.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="quote.cs" />

@@ -19,7 +19,7 @@ namespace Diccon
             newColoredPanel.Width = exampleColoredPanel.Width;
 
 
-            multiLineLabel newLabel = new multiLineLabel();
+            Label newLabel = new Label();
             newLabel.Text = userMessage;
             newLabel.BackColor = exampleText.BackColor;
             newLabel.ForeColor = exampleText.ForeColor;

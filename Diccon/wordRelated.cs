@@ -65,9 +65,5 @@ namespace Diccon
             return count;
         }
 
-        private int CountWordLineOfRichTextBox(RichTextBox richtextbox)
-        {
-            return richtextbox.GetLineFromCharIndex(richtextbox.TextLength);
-        }
     }
 }
