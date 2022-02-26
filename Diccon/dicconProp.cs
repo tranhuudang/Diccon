@@ -12,7 +12,7 @@ namespace Diccon
         public static string TextDataFromResources = Properties.Resources.Envi;
         public static string[] splitedText = TextDataFromResources.Split("@".ToCharArray());
         // botton height use to control the panel when open bottom menu
-        public static int bottomPanel_DefaultHeight = 70;
+        public static int bottomPanel_DefaultHeight = 60;
         public static int bottomPanel_ExpandedHeight = 150;
         public static Color default_addNote_BackColor = Color.FromArgb(255, 192, 128);
         public static Color hover_addNote_BackColor = Color.FromArgb(242, 203, 164);

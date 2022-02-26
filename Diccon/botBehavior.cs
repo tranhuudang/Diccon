@@ -143,5 +143,38 @@ namespace Diccon
             word.SearchWordProcess();
             player.OfflinePlay(word.OutWord);
         }
+        public void botSynonym(string[] synonymList, RoundedLabel exampleItem, FlowLayoutPanel examplePanelHaveSynonyms, FlowLayoutPanel targetFlowLayout)
+        {
+            FlowLayoutPanel panelHaveSynonyms= new FlowLayoutPanel();
+            panelHaveSynonyms.AutoSize = true;
+            panelHaveSynonyms.MaximumSize = panelHaveSynonyms.MaximumSize;
+            panelHaveSynonyms.MinimumSize = panelHaveSynonyms.MinimumSize;
+            panelHaveSynonyms.Size = examplePanelHaveSynonyms.Size;
+            panelHaveSynonyms.Padding = examplePanelHaveSynonyms.Padding;
+
+            targetFlowLayout.Controls.Add(panelHaveSynonyms);
+            foreach(string word in synonymList )
+            {
+               // if (++index >= 10) break;
+                RoundedLabel newLabel = new RoundedLabel();
+                newLabel.BackColor = exampleItem.BackColor;
+                newLabel.ForeColor = exampleItem.ForeColor;
+                newLabel.Padding = exampleItem.Padding;
+                newLabel.Text = word;
+                newLabel.AutoSize = true;
+                newLabel.Font= exampleItem.Font;
+                newLabel.Click += NewLabel_Click;
+
+                panelHaveSynonyms.Controls.Add(newLabel);
+                
+            }
+
+            targetFlowLayout.ScrollControlIntoView(panelHaveSynonyms);
+        }
+
+        private void NewLabel_Click(object sender, EventArgs e)
+        {
+           // (sender as Label).Parent.te;
+        }
     }
 }

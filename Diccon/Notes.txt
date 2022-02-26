@@ -7,3 +7,4 @@
 // phòng chat online cho những người học 
 // report những từ chưa có trong từ điển (tự động? không tự động?)
 // người dùng có thể xem lại được những từ mà mình tra cứu cùng với nghĩa của chúng được lưu trong một file cục bộ
+//https://api.dictionaryapi.dev/media/pronunciations/en/serious-us.mp3
