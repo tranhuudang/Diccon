@@ -39,6 +39,7 @@
             this.logo = new System.Windows.Forms.PictureBox();
             this.panelBottom = new System.Windows.Forms.Panel();
             this.panelAdd = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.addNote = new Diccon.RoundedLabel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.roundedPanel1 = new Diccon.RoundedPanel();
@@ -75,7 +76,10 @@
             this.exampleNoteColoredPanel = new Diccon.RoundedPanel();
             this.exampleNoteMenu = new System.Windows.Forms.Label();
             this.exampleNoteRichTextBox = new System.Windows.Forms.RichTextBox();
+            this.exampleflowLayoutSynonym = new System.Windows.Forms.FlowLayoutPanel();
+            this.exampleItemSynonym = new Diccon.RoundedLabel();
             this.contextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.themeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.languageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vietnameseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -89,7 +93,15 @@
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
             this.githubToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.themeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btSynonym = new Diccon.RoundedLabel();
+            this.suggestionTimer = new System.Windows.Forms.Timer(this.components);
+            this.roundedLabel3 = new Diccon.RoundedLabel();
+            this.roundedLabel4 = new Diccon.RoundedLabel();
+            this.roundedLabel5 = new Diccon.RoundedLabel();
+            this.roundedLabel6 = new Diccon.RoundedLabel();
+            this.roundedLabel8 = new Diccon.RoundedLabel();
+            this.flowSuggestion = new System.Windows.Forms.FlowLayoutPanel();
+            this.instantSearch = new System.Windows.Forms.Label();
             this.panel9.SuspendLayout();
             this.PanelOfFind.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.buttonFind)).BeginInit();
@@ -115,12 +127,15 @@
             this.panelSuggestFunction.SuspendLayout();
             this.exampleNotePanel.SuspendLayout();
             this.exampleNoteColoredPanel.SuspendLayout();
+            this.exampleflowLayoutSynonym.SuspendLayout();
             this.contextMenu.SuspendLayout();
+            this.flowSuggestion.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.panel9.Controls.Add(this.instantSearch);
             this.panel9.Controls.Add(this.PanelOfFind);
             this.panel9.Controls.Add(this.buttonFind);
             this.panel9.Controls.Add(this.buttonMenu);
@@ -210,19 +225,30 @@
             this.panelBottom.Controls.Add(this.panelAdd);
             this.panelBottom.Controls.Add(this.panel1);
             this.panelBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelBottom.Location = new System.Drawing.Point(0, 565);
+            this.panelBottom.Location = new System.Drawing.Point(0, 573);
             this.panelBottom.Name = "panelBottom";
-            this.panelBottom.Size = new System.Drawing.Size(407, 150);
+            this.panelBottom.Size = new System.Drawing.Size(407, 142);
             this.panelBottom.TabIndex = 5;
             // 
             // panelAdd
             // 
+            this.panelAdd.Controls.Add(this.button1);
             this.panelAdd.Controls.Add(this.addNote);
             this.panelAdd.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelAdd.Location = new System.Drawing.Point(0, 64);
+            this.panelAdd.Location = new System.Drawing.Point(0, 56);
             this.panelAdd.Name = "panelAdd";
             this.panelAdd.Size = new System.Drawing.Size(407, 86);
             this.panelAdd.TabIndex = 5;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(211, 11);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // addNote
             // 
@@ -249,7 +275,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(407, 64);
+            this.panel1.Size = new System.Drawing.Size(407, 56);
             this.panel1.TabIndex = 7;
             // 
             // roundedPanel1
@@ -260,7 +286,7 @@
             this.roundedPanel1.Controls.Add(this.searchTextBox);
             this.roundedPanel1.Controls.Add(this.textFromEmoji);
             this.roundedPanel1.Controls.Add(this.textFromMic);
-            this.roundedPanel1.Location = new System.Drawing.Point(39, 13);
+            this.roundedPanel1.Location = new System.Drawing.Point(39, 4);
             this.roundedPanel1.Name = "roundedPanel1";
             this.roundedPanel1.Radius = 20;
             this.roundedPanel1.Size = new System.Drawing.Size(354, 45);
@@ -327,7 +353,7 @@
             // 
             this.buttonAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonAdd.Image = global::Diccon.Properties.Resources.add_24;
-            this.buttonAdd.Location = new System.Drawing.Point(9, 24);
+            this.buttonAdd.Location = new System.Drawing.Point(9, 15);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(24, 24);
             this.buttonAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -348,6 +374,7 @@
             // flowChatBox
             // 
             this.flowChatBox.AutoScroll = true;
+            this.flowChatBox.Controls.Add(this.exampleflowLayoutSynonym);
             this.flowChatBox.Controls.Add(this.exampleShortPanel);
             this.flowChatBox.Controls.Add(this.exampleAskLongPanel);
             this.flowChatBox.Controls.Add(this.examplePlayPanel);
@@ -358,13 +385,13 @@
             this.flowChatBox.Location = new System.Drawing.Point(0, 75);
             this.flowChatBox.Name = "flowChatBox";
             this.flowChatBox.Padding = new System.Windows.Forms.Padding(5);
-            this.flowChatBox.Size = new System.Drawing.Size(407, 490);
+            this.flowChatBox.Size = new System.Drawing.Size(407, 467);
             this.flowChatBox.TabIndex = 8;
             // 
             // exampleShortPanel
             // 
             this.exampleShortPanel.Controls.Add(this.exampleShortText);
-            this.exampleShortPanel.Location = new System.Drawing.Point(8, 8);
+            this.exampleShortPanel.Location = new System.Drawing.Point(8, 194);
             this.exampleShortPanel.Name = "exampleShortPanel";
             this.exampleShortPanel.Size = new System.Drawing.Size(367, 46);
             this.exampleShortPanel.TabIndex = 0;
@@ -389,7 +416,7 @@
             // exampleAskLongPanel
             // 
             this.exampleAskLongPanel.Controls.Add(this.exampleAskLongColoredPanel);
-            this.exampleAskLongPanel.Location = new System.Drawing.Point(8, 60);
+            this.exampleAskLongPanel.Location = new System.Drawing.Point(8, 246);
             this.exampleAskLongPanel.Name = "exampleAskLongPanel";
             this.exampleAskLongPanel.Size = new System.Drawing.Size(367, 145);
             this.exampleAskLongPanel.TabIndex = 3;
@@ -421,7 +448,7 @@
             // examplePlayPanel
             // 
             this.examplePlayPanel.Controls.Add(this.examplePlayAlignPanel);
-            this.examplePlayPanel.Location = new System.Drawing.Point(8, 211);
+            this.examplePlayPanel.Location = new System.Drawing.Point(8, 397);
             this.examplePlayPanel.Name = "examplePlayPanel";
             this.examplePlayPanel.Size = new System.Drawing.Size(367, 39);
             this.examplePlayPanel.TabIndex = 2;
@@ -463,7 +490,7 @@
             // exampleAnswerPanel
             // 
             this.exampleAnswerPanel.Controls.Add(this.exampleAnswerColoredPanel);
-            this.exampleAnswerPanel.Location = new System.Drawing.Point(8, 256);
+            this.exampleAnswerPanel.Location = new System.Drawing.Point(8, 442);
             this.exampleAnswerPanel.Name = "exampleAnswerPanel";
             this.exampleAnswerPanel.Size = new System.Drawing.Size(367, 148);
             this.exampleAnswerPanel.TabIndex = 1;
@@ -484,6 +511,7 @@
             // 
             // exampleAnswerText
             // 
+            this.exampleAnswerText.AutoWordSelection = true;
             this.exampleAnswerText.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.exampleAnswerText.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.exampleAnswerText.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -491,11 +519,12 @@
             this.exampleAnswerText.ForeColor = System.Drawing.SystemColors.Window;
             this.exampleAnswerText.Location = new System.Drawing.Point(10, 15);
             this.exampleAnswerText.Name = "exampleAnswerText";
+            this.exampleAnswerText.ReadOnly = true;
             this.exampleAnswerText.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
             this.exampleAnswerText.Size = new System.Drawing.Size(279, 119);
             this.exampleAnswerText.TabIndex = 1;
-            this.exampleAnswerText.Text = resources.GetString("exampleAnswerText.Text");
-            this.exampleAnswerText.Layout += new System.Windows.Forms.LayoutEventHandler(this.exampleAnswerText_Layout);
+            this.exampleAnswerText.Text = "to protect someone or something against attack or criticism";
+            this.exampleAnswerText.HScroll += new System.EventHandler(this.exampleAnswerText_HScroll);
             // 
             // panelSuggestFunction
             // 
@@ -508,9 +537,9 @@
             this.panelSuggestFunction.Controls.Add(this.label2);
             this.panelSuggestFunction.Controls.Add(this.label1);
             this.panelSuggestFunction.Controls.Add(this.buttonYourNote);
-            this.panelSuggestFunction.Location = new System.Drawing.Point(8, 410);
+            this.panelSuggestFunction.Location = new System.Drawing.Point(8, 596);
             this.panelSuggestFunction.Name = "panelSuggestFunction";
-            this.panelSuggestFunction.Size = new System.Drawing.Size(367, 508);
+            this.panelSuggestFunction.Size = new System.Drawing.Size(367, 468);
             this.panelSuggestFunction.TabIndex = 4;
             // 
             // roundedLabel2
@@ -535,7 +564,7 @@
             this.lbQuotation.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbQuotation.Location = new System.Drawing.Point(4, 25);
             this.lbQuotation.Name = "lbQuotation";
-            this.lbQuotation.Size = new System.Drawing.Size(363, 94);
+            this.lbQuotation.Size = new System.Drawing.Size(360, 94);
             this.lbQuotation.TabIndex = 6;
             this.lbQuotation.Text = "“Don’t wish it were easier; wish you were better.”";
             this.lbQuotation.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -634,7 +663,7 @@
             // exampleNotePanel
             // 
             this.exampleNotePanel.Controls.Add(this.exampleNoteColoredPanel);
-            this.exampleNotePanel.Location = new System.Drawing.Point(8, 924);
+            this.exampleNotePanel.Location = new System.Drawing.Point(8, 1070);
             this.exampleNotePanel.Name = "exampleNotePanel";
             this.exampleNotePanel.Size = new System.Drawing.Size(367, 236);
             this.exampleNotePanel.TabIndex = 5;
@@ -677,6 +706,41 @@
             this.exampleNoteRichTextBox.TabIndex = 0;
             this.exampleNoteRichTextBox.Text = "";
             // 
+            // exampleflowLayoutSynonym
+            // 
+            this.exampleflowLayoutSynonym.AutoSize = true;
+            this.exampleflowLayoutSynonym.Controls.Add(this.exampleItemSynonym);
+            this.exampleflowLayoutSynonym.Controls.Add(this.roundedLabel3);
+            this.exampleflowLayoutSynonym.Controls.Add(this.roundedLabel4);
+            this.exampleflowLayoutSynonym.Controls.Add(this.roundedLabel5);
+            this.exampleflowLayoutSynonym.Controls.Add(this.roundedLabel6);
+            this.exampleflowLayoutSynonym.Controls.Add(this.roundedLabel8);
+            this.exampleflowLayoutSynonym.Location = new System.Drawing.Point(8, 8);
+            this.exampleflowLayoutSynonym.MaximumSize = new System.Drawing.Size(367, 0);
+            this.exampleflowLayoutSynonym.MinimumSize = new System.Drawing.Size(367, 0);
+            this.exampleflowLayoutSynonym.Name = "exampleflowLayoutSynonym";
+            this.exampleflowLayoutSynonym.Padding = new System.Windows.Forms.Padding(62, 0, 0, 0);
+            this.exampleflowLayoutSynonym.Size = new System.Drawing.Size(367, 180);
+            this.exampleflowLayoutSynonym.TabIndex = 6;
+            this.exampleflowLayoutSynonym.Visible = false;
+            // 
+            // exampleItemSynonym
+            // 
+            this.exampleItemSynonym.AutoSize = true;
+            this.exampleItemSynonym.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.exampleItemSynonym.BorderColor = System.Drawing.Color.White;
+            this.exampleItemSynonym.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.exampleItemSynonym.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exampleItemSynonym.Location = new System.Drawing.Point(65, 0);
+            this.exampleItemSynonym.Name = "exampleItemSynonym";
+            this.exampleItemSynonym.Padding = new System.Windows.Forms.Padding(8, 5, 8, 5);
+            this.exampleItemSynonym.Radius = 20;
+            this.exampleItemSynonym.Size = new System.Drawing.Size(155, 30);
+            this.exampleItemSynonym.TabIndex = 1;
+            this.exampleItemSynonym.Text = "Example Synonym";
+            this.exampleItemSynonym.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.exampleItemSynonym.Thickness = 5F;
+            // 
             // contextMenu
             // 
             this.contextMenu.DropShadowEnabled = false;
@@ -691,7 +755,13 @@
             this.githubToolStripMenuItem,
             this.aboutToolStripMenuItem});
             this.contextMenu.Name = "contextMenu";
-            this.contextMenu.Size = new System.Drawing.Size(181, 192);
+            this.contextMenu.Size = new System.Drawing.Size(172, 170);
+            // 
+            // themeToolStripMenuItem
+            // 
+            this.themeToolStripMenuItem.Name = "themeToolStripMenuItem";
+            this.themeToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.themeToolStripMenuItem.Text = "Theme";
             // 
             // languageToolStripMenuItem
             // 
@@ -699,19 +769,19 @@
             this.englishToolStripMenuItem,
             this.vietnameseToolStripMenuItem});
             this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
-            this.languageToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.languageToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.languageToolStripMenuItem.Text = "Language";
             // 
             // englishToolStripMenuItem
             // 
             this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
-            this.englishToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.englishToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.englishToolStripMenuItem.Text = "English";
             // 
             // vietnameseToolStripMenuItem
             // 
             this.vietnameseToolStripMenuItem.Name = "vietnameseToolStripMenuItem";
-            this.vietnameseToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.vietnameseToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.vietnameseToolStripMenuItem.Text = "Vietnamese";
             // 
             // clearHistoryToolStripMenuItem
@@ -721,7 +791,7 @@
             this.aWeekToolStripMenuItem,
             this.aMonthToolStripMenuItem});
             this.clearHistoryToolStripMenuItem.Name = "clearHistoryToolStripMenuItem";
-            this.clearHistoryToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.clearHistoryToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.clearHistoryToolStripMenuItem.Text = "Clear history";
             // 
             // eachSessionToolStripMenuItem
@@ -748,31 +818,31 @@
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(168, 6);
             // 
             // settingsToolStripMenuItem
             // 
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.settingsToolStripMenuItem.Text = "Settings";
             // 
             // checkForUpdatesToolStripMenuItem
             // 
             this.checkForUpdatesToolStripMenuItem.Name = "checkForUpdatesToolStripMenuItem";
-            this.checkForUpdatesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.checkForUpdatesToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.checkForUpdatesToolStripMenuItem.Text = "Check for Updates";
             this.checkForUpdatesToolStripMenuItem.Click += new System.EventHandler(this.checkForUpdatesToolStripMenuItem_Click);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(177, 6);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(168, 6);
             // 
             // githubToolStripMenuItem
             // 
             this.githubToolStripMenuItem.Image = global::Diccon.Properties.Resources.github_20;
             this.githubToolStripMenuItem.Name = "githubToolStripMenuItem";
-            this.githubToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.githubToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.githubToolStripMenuItem.Text = "Github";
             this.githubToolStripMenuItem.Click += new System.EventHandler(this.githubToolStripMenuItem_Click);
             // 
@@ -780,15 +850,138 @@
             // 
             this.aboutToolStripMenuItem.Image = global::Diccon.Properties.Resources.info_20;
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
-            // themeToolStripMenuItem
+            // btSynonym
             // 
-            this.themeToolStripMenuItem.Name = "themeToolStripMenuItem";
-            this.themeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.themeToolStripMenuItem.Text = "Theme";
+            this.btSynonym.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btSynonym.BorderColor = System.Drawing.Color.White;
+            this.btSynonym.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btSynonym.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSynonym.Location = new System.Drawing.Point(3, 0);
+            this.btSynonym.Name = "btSynonym";
+            this.btSynonym.Radius = 20;
+            this.btSynonym.Size = new System.Drawing.Size(100, 28);
+            this.btSynonym.TabIndex = 0;
+            this.btSynonym.Text = "Synonyms";
+            this.btSynonym.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btSynonym.Thickness = 5F;
+            this.btSynonym.Visible = false;
+            this.btSynonym.Click += new System.EventHandler(this.btSynonym_Click);
+            this.btSynonym.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
+            this.btSynonym.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
+            // 
+            // suggestionTimer
+            // 
+            this.suggestionTimer.Interval = 1500;
+            this.suggestionTimer.Tick += new System.EventHandler(this.suggestionTimer_Tick);
+            // 
+            // roundedLabel3
+            // 
+            this.roundedLabel3.AutoSize = true;
+            this.roundedLabel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.roundedLabel3.BorderColor = System.Drawing.Color.White;
+            this.roundedLabel3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.roundedLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedLabel3.Location = new System.Drawing.Point(65, 30);
+            this.roundedLabel3.Name = "roundedLabel3";
+            this.roundedLabel3.Padding = new System.Windows.Forms.Padding(8, 5, 8, 5);
+            this.roundedLabel3.Radius = 20;
+            this.roundedLabel3.Size = new System.Drawing.Size(155, 30);
+            this.roundedLabel3.TabIndex = 2;
+            this.roundedLabel3.Text = "Example Synonym";
+            this.roundedLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.roundedLabel3.Thickness = 5F;
+            // 
+            // roundedLabel4
+            // 
+            this.roundedLabel4.AutoSize = true;
+            this.roundedLabel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.roundedLabel4.BorderColor = System.Drawing.Color.White;
+            this.roundedLabel4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.roundedLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedLabel4.Location = new System.Drawing.Point(65, 60);
+            this.roundedLabel4.Name = "roundedLabel4";
+            this.roundedLabel4.Padding = new System.Windows.Forms.Padding(8, 5, 8, 5);
+            this.roundedLabel4.Radius = 20;
+            this.roundedLabel4.Size = new System.Drawing.Size(155, 30);
+            this.roundedLabel4.TabIndex = 3;
+            this.roundedLabel4.Text = "Example Synonym";
+            this.roundedLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.roundedLabel4.Thickness = 5F;
+            // 
+            // roundedLabel5
+            // 
+            this.roundedLabel5.AutoSize = true;
+            this.roundedLabel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.roundedLabel5.BorderColor = System.Drawing.Color.White;
+            this.roundedLabel5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.roundedLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedLabel5.Location = new System.Drawing.Point(65, 90);
+            this.roundedLabel5.Name = "roundedLabel5";
+            this.roundedLabel5.Padding = new System.Windows.Forms.Padding(8, 5, 8, 5);
+            this.roundedLabel5.Radius = 20;
+            this.roundedLabel5.Size = new System.Drawing.Size(155, 30);
+            this.roundedLabel5.TabIndex = 4;
+            this.roundedLabel5.Text = "Example Synonym";
+            this.roundedLabel5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.roundedLabel5.Thickness = 5F;
+            // 
+            // roundedLabel6
+            // 
+            this.roundedLabel6.AutoSize = true;
+            this.roundedLabel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.roundedLabel6.BorderColor = System.Drawing.Color.White;
+            this.roundedLabel6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.roundedLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedLabel6.Location = new System.Drawing.Point(65, 120);
+            this.roundedLabel6.Name = "roundedLabel6";
+            this.roundedLabel6.Padding = new System.Windows.Forms.Padding(8, 5, 8, 5);
+            this.roundedLabel6.Radius = 20;
+            this.roundedLabel6.Size = new System.Drawing.Size(155, 30);
+            this.roundedLabel6.TabIndex = 5;
+            this.roundedLabel6.Text = "Example Synonym";
+            this.roundedLabel6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.roundedLabel6.Thickness = 5F;
+            // 
+            // roundedLabel8
+            // 
+            this.roundedLabel8.AutoSize = true;
+            this.roundedLabel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.roundedLabel8.BorderColor = System.Drawing.Color.White;
+            this.roundedLabel8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.roundedLabel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedLabel8.Location = new System.Drawing.Point(65, 150);
+            this.roundedLabel8.Name = "roundedLabel8";
+            this.roundedLabel8.Padding = new System.Windows.Forms.Padding(8, 5, 8, 5);
+            this.roundedLabel8.Radius = 20;
+            this.roundedLabel8.Size = new System.Drawing.Size(155, 30);
+            this.roundedLabel8.TabIndex = 6;
+            this.roundedLabel8.Text = "Example Synonym";
+            this.roundedLabel8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.roundedLabel8.Thickness = 5F;
+            // 
+            // flowSuggestion
+            // 
+            this.flowSuggestion.Controls.Add(this.btSynonym);
+            this.flowSuggestion.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.flowSuggestion.Location = new System.Drawing.Point(0, 542);
+            this.flowSuggestion.Name = "flowSuggestion";
+            this.flowSuggestion.Size = new System.Drawing.Size(407, 31);
+            this.flowSuggestion.TabIndex = 9;
+            // 
+            // instantSearch
+            // 
+            this.instantSearch.AutoSize = true;
+            this.instantSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.instantSearch.ForeColor = System.Drawing.Color.Maroon;
+            this.instantSearch.Location = new System.Drawing.Point(75, 3);
+            this.instantSearch.Name = "instantSearch";
+            this.instantSearch.Size = new System.Drawing.Size(109, 16);
+            this.instantSearch.TabIndex = 10;
+            this.instantSearch.Text = "#instantSearch";
             // 
             // mainHall
             // 
@@ -798,6 +991,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(407, 715);
             this.Controls.Add(this.flowChatBox);
+            this.Controls.Add(this.flowSuggestion);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panelBottom);
@@ -824,6 +1018,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textFromMic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonAdd)).EndInit();
             this.flowChatBox.ResumeLayout(false);
+            this.flowChatBox.PerformLayout();
             this.exampleShortPanel.ResumeLayout(false);
             this.exampleAskLongPanel.ResumeLayout(false);
             this.exampleAskLongColoredPanel.ResumeLayout(false);
@@ -839,7 +1034,10 @@
             this.exampleNotePanel.ResumeLayout(false);
             this.exampleNoteColoredPanel.ResumeLayout(false);
             this.exampleNoteColoredPanel.PerformLayout();
+            this.exampleflowLayoutSynonym.ResumeLayout(false);
+            this.exampleflowLayoutSynonym.PerformLayout();
             this.contextMenu.ResumeLayout(false);
+            this.flowSuggestion.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -905,6 +1103,18 @@
         private System.Windows.Forms.Label labelTypeToSearch;
         private System.Windows.Forms.ToolStripMenuItem checkForUpdatesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem themeToolStripMenuItem;
+        private System.Windows.Forms.Button button1;
+        private RoundedLabel btSynonym;
+        private System.Windows.Forms.Timer suggestionTimer;
+        private System.Windows.Forms.FlowLayoutPanel exampleflowLayoutSynonym;
+        private RoundedLabel exampleItemSynonym;
+        private RoundedLabel roundedLabel3;
+        private RoundedLabel roundedLabel4;
+        private RoundedLabel roundedLabel5;
+        private RoundedLabel roundedLabel6;
+        private RoundedLabel roundedLabel8;
+        private System.Windows.Forms.FlowLayoutPanel flowSuggestion;
+        private System.Windows.Forms.Label instantSearch;
     }
 }
 

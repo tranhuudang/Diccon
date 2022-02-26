@@ -18,6 +18,7 @@ namespace Diccon
 {
     public partial class mainHall : Form
     {
+        string currentWord = "";
         botBehavior bot = new botBehavior();
         userAction user = new userAction();
         public mainHall()
@@ -61,32 +62,40 @@ namespace Diccon
 
         private void searchTextBox_KeyDown(object sender, KeyEventArgs e)
         {
+
             if (e.KeyCode == Keys.Enter)
             {
-                if (searchTextBox.Text.Replace(" ", "") != "")
-                {
-                    wordRelated word = new wordRelated();
-                    // if user type in just one word, so the case is we will use userSingMessage instead of userLongMessage
-                    int numberOfWord = word.countWord(searchTextBox.Text);
-                    switch (numberOfWord)
-                    {
-                        case 0:
-                        case 1:
-                            user.userSingleMessage(searchTextBox.Text, exampleShortText, exampleShortPanel, flowChatBox);
-                            bot.botSoundMessage(searchTextBox.Text, examplePlayButton, examplePlayColoredPanel, examplePlayAlignPanel, examplePlayPanel, flowChatBox);
-                            bot.botAnswerLongMessage(searchMatchWord(searchTextBox.Text), exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
-                            break;
-
-                        default:
-                            user.userLongMessage(searchTextBox.Text, exampleAskLongText, exampleAskLongPanel, exampleAskLongPanel, flowChatBox);
-                            break;
-                    }
-                    searchTextBox.Text = "";
-                }
+                currentWord  = searchTextBox.Text.Replace(" ", "");
+                searchAndShow(currentWord);
+                
 
             }
         }
+        void searchAndShow(string searchWord)
+        {
+            if (currentWord != "")
+            {
+                wordRelated word = new wordRelated();
 
+                // if user type in just one word, so the case is we will use userSingMessage instead of userLongMessage
+                int numberOfWord = word.countWord(searchTextBox.Text);
+                switch (numberOfWord)
+                {
+                    case 0:
+                    case 1:
+                        user.userSingleMessage(searchTextBox.Text, exampleShortText, exampleShortPanel, flowChatBox);
+                        bot.botSoundMessage(searchTextBox.Text, examplePlayButton, examplePlayColoredPanel, examplePlayAlignPanel, examplePlayPanel, flowChatBox);
+                        bot.botAnswerLongMessage(searchMatchWord(searchTextBox.Text), exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
+                        suggestionTimer.Enabled = true;
+                        break;
+
+                    default:
+                        user.userLongMessage(searchTextBox.Text, exampleAskLongText, exampleAskLongPanel, exampleAskLongPanel, flowChatBox);
+                        break;
+                }
+                searchTextBox.Text = "";
+            }
+        }
         private void roundedLabel3_Click(object sender, EventArgs e)
         {
 
@@ -132,11 +141,6 @@ namespace Diccon
         private void searchTextBox_TextChanged(object sender, EventArgs e)
         {
             labelTypeToSearch.Visible = searchTextBox.Text != "" ? false : true;
-        }
-
-        private void exampleAnswerText_Layout(object sender, LayoutEventArgs e)
-        {
-
         }
 
         private void buttonAdd_Click(object sender, EventArgs e)
@@ -310,6 +314,42 @@ namespace Diccon
                 Process.Start(dicconProp.setupName);
                 Application.Exit();
             }
+        }
+
+        private void exampleAnswerText_MouseHover(object sender, EventArgs e)
+        {
+
+        }
+
+        private void exampleAnswerText_HScroll(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void suggestionTimer_Tick(object sender, EventArgs e)
+        {
+            string[] synonym = new synonyms().getSynonymsAsync(currentWord);
+            if(synonym.Length == 0)
+            {
+                btSynonym.Visible = false;
+            }
+            else
+            {
+                btSynonym.Visible = true;
+            }
+            suggestionTimer.Enabled =false;
+        }
+
+        private void btSynonym_Click(object sender, EventArgs e)
+        {
+            string[] synonym = new synonyms().getSynonymsAsync(currentWord);
+            bot.botSynonym(synonym, exampleItemSynonym, exampleflowLayoutSynonym,flowChatBox);
+            btSynonym.Visible=false;
         }
     }
 

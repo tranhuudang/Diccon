@@ -137,16 +137,14 @@ Should the church always defend traditional values, or be open to changing them?
         AABJRU5ErkJggg==
 </value>
   </data>
-  <data name="exampleAnswerText.Text" xml:space="preserve">
-    <value>to protect someone or something against attack or criticism
-The general rallied his forces to defend the town.
-Police officers used riot shields to defend themselves.
-A female lion defends her young ferociously.
-In the past, the party would have closed ranks around its leader and defended him loyally.
-Should the church always defend traditional values, or be open to changing them?</value>
-  </data>
   <metadata name="contextMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
+  </metadata>
+  <metadata name="suggestionTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>141, 17</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>32</value>
   </metadata>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
