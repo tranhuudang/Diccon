@@ -22,6 +22,10 @@ namespace Diccon
         public static string updateInfo = "https://raw.githubusercontent.com/zeroclubvn/Diccon/master/Diccon/Setup%20and%20Update/UpdateInfo.xml";
         public static string downloadSetupCompleteMessage = "Diccon Updater is ready to install new version of Diccon!";
         public static string setupName = "DicconSetup.msi";
+        public static string currentWord;
+        public static string currentTranslatedWord;
+        public static int maximumSynonym = 10;
+        public static List<string> currentSynonymList = new List<string>();
 
     }
 }

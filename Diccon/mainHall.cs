@@ -13,14 +13,18 @@ using System.Windows.Forms;
 using System.Diagnostics;
 using System.Xml;
 using System.Reflection;
+using System.Net.Http;
+using System.Net.Http.Headers;
+
+using System.Text.Json.Nodes;
 
 namespace Diccon
 {
     public partial class mainHall : Form
     {
-        string currentWord = "";
         botBehavior bot = new botBehavior();
         userAction user = new userAction();
+       
         public mainHall()
         {
             InitializeComponent();
@@ -65,40 +69,68 @@ namespace Diccon
 
             if (e.KeyCode == Keys.Enter)
             {
-                currentWord  = searchTextBox.Text.Replace(" ", "");
-                searchAndShow(currentWord);
+                dicconProp.currentWord = searchTextBox.Text;
+                searchAndShow(dicconProp.currentWord);
                 
 
             }
         }
-        void searchAndShow(string searchWord)
+        private async Task searchAndShow(string searchWord)
         {
-            if (currentWord != "")
+            if (dicconProp.currentWord != "")
             {
                 wordRelated word = new wordRelated();
 
                 // if user type in just one word, so the case is we will use userSingMessage instead of userLongMessage
                 int numberOfWord = word.countWord(searchTextBox.Text);
-                switch (numberOfWord)
+                if (numberOfWord == 0) { }
+                else if (numberOfWord == 1)
                 {
-                    case 0:
-                    case 1:
-                        user.userSingleMessage(searchTextBox.Text, exampleShortText, exampleShortPanel, flowChatBox);
-                        bot.botSoundMessage(searchTextBox.Text, examplePlayButton, examplePlayColoredPanel, examplePlayAlignPanel, examplePlayPanel, flowChatBox);
-                        bot.botAnswerLongMessage(searchMatchWord(searchTextBox.Text), exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
-                        suggestionTimer.Enabled = true;
-                        break;
 
-                    default:
-                        user.userLongMessage(searchTextBox.Text, exampleAskLongText, exampleAskLongPanel, exampleAskLongPanel, flowChatBox);
-                        break;
+                    user.userSingleMessage(searchTextBox.Text, exampleShortText, exampleShortPanel, flowChatBox);
+                    bot.botSoundMessage(searchTextBox.Text, examplePlayButton, examplePlayColoredPanel, examplePlayAlignPanel, examplePlayPanel, flowChatBox);
+                    bot.botAnswerLongMessage(searchMatchWord(searchTextBox.Text), exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
+                    suggestionTimer.Enabled = true;
                 }
+                else if (numberOfWord > 1)
+                {
+                    user.userLongMessage(searchTextBox.Text, exampleAskLongText, exampleAskLongPanel, exampleAskLongPanel, flowChatBox);
+                    await getTranslatedTextAsync();
+                    bot.botAnswerLongMessage(dicconProp.currentTranslatedWord, exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
+                } 
                 searchTextBox.Text = "";
             }
         }
-        private void roundedLabel3_Click(object sender, EventArgs e)
-        {
 
+        private async Task getTranslatedTextAsync()
+        {
+            var client = new HttpClient();
+            var request = new HttpRequestMessage
+            {
+                Method = HttpMethod.Post,
+                RequestUri = new Uri("https://microsoft-translator-text.p.rapidapi.com/translate?to=vi&api-version=3.0&profanityAction=NoAction&textType=plain&suggestedFrom=en"),
+                Headers ={
+                            { "x-rapidapi-host", "microsoft-translator-text.p.rapidapi.com" },
+                            { "x-rapidapi-key", "a10d63c67cmshd79f69a2d87629ap1e586djsna7cdee48e5de" },
+                         },
+                Content = new StringContent("[\r\n    {\r\n        \"Text\": \"" + dicconProp.currentWord + "\"\r\n    }\r\n]")
+                {
+                    Headers =
+                        {
+                            ContentType = new MediaTypeHeaderValue("application/json")
+                        }
+                }
+            };
+            string body;
+            using (var response = await client.SendAsync(request))
+            {
+                response.EnsureSuccessStatusCode();
+                body = await response.Content.ReadAsStringAsync();
+
+
+            }
+            JsonNode note = JsonNode.Parse(body);
+            dicconProp.currentTranslatedWord = note[0]["translations"][0]["text"].GetValue<string>();
         }
         public string searchMatchWord(string wordsToSearch) // THIS IS FUNCTION TO SEARCH TEXT 
         {
@@ -316,25 +348,17 @@ namespace Diccon
             }
         }
 
-        private void exampleAnswerText_MouseHover(object sender, EventArgs e)
-        {
-
-        }
 
         private void exampleAnswerText_HScroll(object sender, EventArgs e)
         {
            
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private async void suggestionTimer_TickAsync(object sender, EventArgs e)
         {
-            
-        }
-
-        private void suggestionTimer_Tick(object sender, EventArgs e)
-        {
-            string[] synonym = new synonyms().getSynonymsAsync(currentWord);
-            if(synonym.Length == 0)
+            sysnonym sysnonym = new sysnonym();
+            List<string> synonymList = await sysnonym.getSynonymListAsync(dicconProp.currentWord);
+            if (synonymList.Count == 0)
             {
                 btSynonym.Visible = false;
             }
@@ -345,12 +369,14 @@ namespace Diccon
             suggestionTimer.Enabled =false;
         }
 
-        private void btSynonym_Click(object sender, EventArgs e)
+        private async void btSynonym_Click(object sender, EventArgs e)
         {
-            string[] synonym = new synonyms().getSynonymsAsync(currentWord);
-            bot.botSynonym(synonym, exampleItemSynonym, exampleflowLayoutSynonym,flowChatBox);
+            sysnonym sysnonym = new sysnonym();
+            List<string> synonymList = await sysnonym.getSynonymListAsync(dicconProp.currentWord);
+            bot.botSynonym(synonymList, exampleItemSynonym, exampleflowLayoutSynonym, flowChatBox);
             btSynonym.Visible=false;
         }
+
     }
 
 }

@@ -143,7 +143,7 @@ namespace Diccon
             word.SearchWordProcess();
             player.OfflinePlay(word.OutWord);
         }
-        public void botSynonym(string[] synonymList, RoundedLabel exampleItem, FlowLayoutPanel examplePanelHaveSynonyms, FlowLayoutPanel targetFlowLayout)
+        public void botSynonym(List<string> synonymList, RoundedLabel exampleItem, FlowLayoutPanel examplePanelHaveSynonyms, FlowLayoutPanel targetFlowLayout)
         {
             FlowLayoutPanel panelHaveSynonyms= new FlowLayoutPanel();
             panelHaveSynonyms.AutoSize = true;
@@ -174,7 +174,10 @@ namespace Diccon
 
         private void NewLabel_Click(object sender, EventArgs e)
         {
-           // (sender as Label).Parent.te;
+            Label label = (sender as Label);
+            dicconProp.currentWord = label.Text;
+            
         }
+
     }
 }
