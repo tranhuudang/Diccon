@@ -1,22 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
+using System.Diagnostics;
 using System.Drawing;
-using System.IO;
-using System.Linq;
 using System.Net;
-using System.Text;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Reflection;
+using System.Text.Json.Nodes;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Diagnostics;
 using System.Xml;
-using System.Reflection;
-using System.Net.Http;
-using System.Net.Http.Headers;
-
-using System.Text.Json.Nodes;
 
 namespace Diccon
 {
@@ -24,7 +19,7 @@ namespace Diccon
     {
         botBehavior bot = new botBehavior();
         userAction user = new userAction();
-       
+
         public mainHall()
         {
             InitializeComponent();
@@ -39,7 +34,7 @@ namespace Diccon
             flowChatBox.Padding = new Padding(10, 0, 0, 0);
             // Stack up quotation
             quote quote = new quote();
-            lbQuotation.Text= quote.getQuote("en");
+            lbQuotation.Text = quote.getQuote("en");
         }
 
         private void buttonFind_Click(object sender, EventArgs e)
@@ -71,7 +66,7 @@ namespace Diccon
             {
                 dicconProp.currentWord = searchTextBox.Text;
                 searchAndShow(dicconProp.currentWord);
-                
+
 
             }
         }
@@ -97,7 +92,7 @@ namespace Diccon
                     user.userLongMessage(searchTextBox.Text, exampleAskLongText, exampleAskLongPanel, exampleAskLongPanel, flowChatBox);
                     await getTranslatedTextAsync();
                     bot.botAnswerLongMessage(dicconProp.currentTranslatedWord, exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
-                } 
+                }
                 searchTextBox.Text = "";
             }
         }
@@ -219,7 +214,7 @@ namespace Diccon
 
         private void menuButton_Click(object sender, EventArgs e)
         {
-            
+
             int X = Cursor.Position.X - 120;
             int Y = Cursor.Position.Y + 15;
             contextMenu.Show(X, Y);
@@ -260,8 +255,8 @@ namespace Diccon
         private void PictureBox_MouseEnter(object sender, EventArgs e)
         {
             PictureBox pictureBox = (sender as PictureBox);
-            int X= pictureBox.Location.X;
-            int Y= pictureBox.Location.Y-2;
+            int X = pictureBox.Location.X;
+            int Y = pictureBox.Location.Y - 2;
             pictureBox.Location = new Point(X, Y);
         }
         /// <summary>
@@ -283,7 +278,7 @@ namespace Diccon
 
         private void searchTextBox_Leave(object sender, EventArgs e)
         {
-            labelTypeToSearch.Visible = searchTextBox.Text==""?  true:false;
+            labelTypeToSearch.Visible = searchTextBox.Text == "" ? true : false;
         }
 
         private void labelTypeToSearch_Click(object sender, EventArgs e)
@@ -326,7 +321,7 @@ namespace Diccon
                         });
                         thread.Start();
                     }
-                    
+
                 }
                 else
                 {
@@ -351,7 +346,7 @@ namespace Diccon
 
         private void exampleAnswerText_HScroll(object sender, EventArgs e)
         {
-           
+
         }
 
         private async void suggestionTimer_TickAsync(object sender, EventArgs e)
@@ -366,7 +361,7 @@ namespace Diccon
             {
                 btSynonym.Visible = true;
             }
-            suggestionTimer.Enabled =false;
+            suggestionTimer.Enabled = false;
         }
 
         private async void btSynonym_Click(object sender, EventArgs e)
@@ -374,7 +369,7 @@ namespace Diccon
             sysnonym sysnonym = new sysnonym();
             List<string> synonymList = await sysnonym.getSynonymListAsync(dicconProp.currentWord);
             bot.botSynonym(synonymList, exampleItemSynonym, exampleflowLayoutSynonym, flowChatBox);
-            btSynonym.Visible=false;
+            btSynonym.Visible = false;
         }
 
     }

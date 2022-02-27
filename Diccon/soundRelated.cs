@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Speech.Synthesis;
-using System.Speech.Recognition;
-using System.Windows.Forms;
-using System.Net;
 using System.IO;
+using System.Net;
+using System.Speech.Recognition;
+using System.Speech.Synthesis;
 using System.Threading;
+using System.Windows.Forms;
 
 namespace Diccon
 {
@@ -40,8 +36,8 @@ namespace Diccon
                     player.controls.play();
                 }
                 else
-                // Pronouce word by machine if sound track not exist in the internet and the file size is 0KB
-                MachinePlay(word);
+                    // Pronouce word by machine if sound track not exist in the internet and the file size is 0KB
+                    MachinePlay(word);
             }
             else
             {

@@ -1,12 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http;
-using System.Net.Http.Headers;
-using System.Text;
 using System.Text.Json.Nodes;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace Diccon
 {
@@ -17,8 +13,8 @@ namespace Diccon
 
         public async Task<List<string>> getSynonymListAsync(string word)
         {
-            List<string> synonymList= new List<string>();
-           
+            List<string> synonymList = new List<string>();
+
             var client = new HttpClient();
             var request = new HttpRequestMessage
             {

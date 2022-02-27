@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Diccon
 {
@@ -49,13 +45,13 @@ namespace Diccon
         /// <returns></returns>
         public string getQuote(int number, string language)
         {
-            string outQuote= null;
+            string outQuote = null;
             switch (language)
             {
                 case "vi":
                     outQuote = quote_vietnamese[number];
                     break;
-                    case "en":
+                case "en":
                     outQuote = quote_english[number];
                     break;
                 default:
@@ -78,7 +74,7 @@ namespace Diccon
                     outQuote = quote_vietnamese[random.Next(quote_vietnamese.Length)];
                     break;
                 case "en":
-                    outQuote =  quote_english[random.Next(quote_english.Length)];
+                    outQuote = quote_english[random.Next(quote_english.Length)];
                     break;
                 default:
                     break;

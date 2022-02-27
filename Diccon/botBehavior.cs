@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Diccon
@@ -84,7 +81,7 @@ namespace Diccon
         /// <param name="examplePlayAlignPanel"></param>
         /// <param name="examplePanel"></param>
         /// <param name="targetFlowPanel"></param>
-        public void botSoundMessage(String textToPlay,PictureBox examplePlayButton, RoundedPanel exampleColoredPanel, Panel examplePlayAlignPanel, Panel examplePanel, FlowLayoutPanel targetFlowPanel)
+        public void botSoundMessage(String textToPlay, PictureBox examplePlayButton, RoundedPanel exampleColoredPanel, Panel examplePlayAlignPanel, Panel examplePanel, FlowLayoutPanel targetFlowPanel)
         {
             Panel newPanel = new Panel();
             Panel newAlignPanel = new Panel();
@@ -92,7 +89,7 @@ namespace Diccon
             PictureBox playButton = new PictureBox();
 
             playButton.Location = examplePlayButton.Location;
-            playButton.Size= examplePlayButton.Size;
+            playButton.Size = examplePlayButton.Size;
             playButton.Image = examplePlayButton.Image;
             playButton.Tag = textToPlay;
             playButton.Cursor = examplePlayButton.Cursor;
@@ -116,7 +113,7 @@ namespace Diccon
 
         private void PlayButton_Click(object sender, EventArgs e)
         {
-            string text= (sender as PictureBox).Tag.ToString();
+            string text = (sender as PictureBox).Tag.ToString();
             botSoundPlay(text, "us");
         }
 
@@ -145,7 +142,7 @@ namespace Diccon
         }
         public void botSynonym(List<string> synonymList, RoundedLabel exampleItem, FlowLayoutPanel examplePanelHaveSynonyms, FlowLayoutPanel targetFlowLayout)
         {
-            FlowLayoutPanel panelHaveSynonyms= new FlowLayoutPanel();
+            FlowLayoutPanel panelHaveSynonyms = new FlowLayoutPanel();
             panelHaveSynonyms.AutoSize = true;
             panelHaveSynonyms.MaximumSize = panelHaveSynonyms.MaximumSize;
             panelHaveSynonyms.MinimumSize = panelHaveSynonyms.MinimumSize;
@@ -153,20 +150,20 @@ namespace Diccon
             panelHaveSynonyms.Padding = examplePanelHaveSynonyms.Padding;
 
             targetFlowLayout.Controls.Add(panelHaveSynonyms);
-            foreach(string word in synonymList )
+            foreach (string word in synonymList)
             {
-               // if (++index >= 10) break;
+                // if (++index >= 10) break;
                 RoundedLabel newLabel = new RoundedLabel();
                 newLabel.BackColor = exampleItem.BackColor;
                 newLabel.ForeColor = exampleItem.ForeColor;
                 newLabel.Padding = exampleItem.Padding;
                 newLabel.Text = word;
                 newLabel.AutoSize = true;
-                newLabel.Font= exampleItem.Font;
+                newLabel.Font = exampleItem.Font;
                 newLabel.Click += NewLabel_Click;
 
                 panelHaveSynonyms.Controls.Add(newLabel);
-                
+
             }
 
             targetFlowLayout.ScrollControlIntoView(panelHaveSynonyms);
@@ -176,7 +173,7 @@ namespace Diccon
         {
             Label label = (sender as Label);
             dicconProp.currentWord = label.Text;
-            
+
         }
 
     }
