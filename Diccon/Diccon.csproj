@@ -131,6 +131,7 @@
       <DependentUpon>about.cs</DependentUpon>
     </Compile>
     <Compile Include="botBehavior.cs" />
+    <Compile Include="connectivity.cs" />
     <Compile Include="dicconProp.cs" />
     <Compile Include="mainHall.cs">
       <SubType>Form</SubType>

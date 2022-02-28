@@ -22,6 +22,7 @@ namespace Diccon
         public static string currentTranslatedWord;
         public static int maximumSynonym = 10;
         public static List<string> currentSynonymList = new List<string>();
+        public static string connectError = "The service is temporarily down, we'll try to connect it later on.";
 
     }
 }

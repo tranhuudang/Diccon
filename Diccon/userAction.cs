@@ -5,38 +5,73 @@ namespace Diccon
     internal class userAction
     {
 
-        public void userLongMessage(string userMessage, Label exampleText, Panel exampleColoredPanel, Panel exampleParentPanel, FlowLayoutPanel targetFlowLayout)
+        public void userLongMessage(string userMessage, RichTextBox exampleRichTextBox, Panel exampleColoredPanel, Panel exampleParentPanel, FlowLayoutPanel targetFlowLayout)
         {
-
+            Panel newAnswerPanel = new Panel();
             RoundedPanel newColoredPanel = new RoundedPanel();
             newColoredPanel.Dock = exampleColoredPanel.Dock;
             newColoredPanel.BackColor = exampleColoredPanel.BackColor;
             newColoredPanel.Width = exampleColoredPanel.Width;
 
+            RichTextBox newRichTextBox = new RichTextBox();
+            newRichTextBox.Click += NewRichTextBox_Click;
+            newRichTextBox.BackColor = exampleRichTextBox.BackColor;
+            newRichTextBox.ForeColor = exampleRichTextBox.ForeColor;
+            newRichTextBox.Font = exampleRichTextBox.Font;
+            newRichTextBox.Width = exampleRichTextBox.Width;
+            newRichTextBox.Dock = exampleRichTextBox.Dock;
+            newRichTextBox.Location = exampleRichTextBox.Location;
+            newRichTextBox.BorderStyle = BorderStyle.None;
+            newRichTextBox.ScrollBars = RichTextBoxScrollBars.None;
+            newRichTextBox.Cursor = exampleRichTextBox.Cursor;
 
-            Label newLabel = new Label();
-            newLabel.Text = userMessage;
-            newLabel.BackColor = exampleText.BackColor;
-            newLabel.ForeColor = exampleText.ForeColor;
-            newLabel.Font = exampleText.Font;
-            newLabel.Width = exampleText.Width;
-            newLabel.TextAlign = exampleText.TextAlign;
-            newLabel.Dock = exampleText.Dock;
-            newLabel.Location = exampleText.Location;
-            newLabel.AutoSize = true;
+            newRichTextBox.TextChanged += NewRichTextBox_TextChanged;
 
-            newColoredPanel.Controls.Add(newLabel);
-            newLabel.Parent = newColoredPanel;
+            newColoredPanel.Controls.Add(newRichTextBox);
+            newRichTextBox.Parent = newColoredPanel;
 
-            Panel newAnswerPanel = new Panel();
             newAnswerPanel.Width = exampleParentPanel.Width;
-            newAnswerPanel.Height = newLabel.Height + 25;
+            newAnswerPanel.Height = newRichTextBox.Height + 28;
 
             newAnswerPanel.Controls.Add(newColoredPanel);
+            newAnswerPanel.MinimumSize= exampleParentPanel.MinimumSize;
 
             targetFlowLayout.Controls.Add(newAnswerPanel);
+
+            // these if condition is a way to display short and long message when click (original from a bug :))) )
+            newRichTextBox.Text = userMessage;
+
             targetFlowLayout.ScrollControlIntoView(newAnswerPanel);
         }
+
+        private void NewRichTextBox_TextChanged(object sender, System.EventArgs e)
+        {
+            RichTextBox textMessage = (sender as RichTextBox);
+            var parentPanel = textMessage.Parent.Parent;
+            parentPanel.Visible = false;
+
+            int lineHeight = 20;
+            int lineCount = textMessage.GetLineFromCharIndex(textMessage.TextLength);
+            textMessage.Height = lineHeight * lineCount;
+            parentPanel.Height = textMessage.Height + 20;
+            parentPanel.Visible = true; 
+        }
+
+
+        private void NewRichTextBox_Click(object sender, System.EventArgs e)
+        {
+            RichTextBox textMessage = (sender as RichTextBox);
+            FlowLayoutPanel grandFlowLayout = (textMessage.Parent.Parent.Parent as FlowLayoutPanel);
+            Panel panel = (textMessage.Parent.Parent as Panel);
+            int lineHeight = 20;
+            int lineCount = textMessage.GetLineFromCharIndex(textMessage.TextLength);
+            textMessage.Height = lineHeight * lineCount;
+            textMessage.Parent.Parent.Height = textMessage.Height + 20;
+            grandFlowLayout.ScrollControlIntoView(panel);
+            // refresh to get rid of unrendered design
+            grandFlowLayout.Refresh();
+        }
+
         public void userSingleMessage(string userMessage, Label exampleText, Panel examplePanel, FlowLayoutPanel targetFlowLayout)
         {
             int searchText_Len = userMessage.Length;
@@ -46,8 +81,7 @@ namespace Diccon
             newLabel.BackColor = exampleText.BackColor;
             newLabel.ForeColor = exampleText.ForeColor;
             newLabel.Font = exampleText.Font;
-            int calculatedWidth = exampleText.Width + searchText_Len * 5;
-            newLabel.Width = calculatedWidth;
+            newLabel.AutoSize = true;
             newLabel.TextAlign = exampleText.TextAlign;
             newLabel.Dock = exampleText.Dock;
             newLabel.Padding = exampleText.Padding;

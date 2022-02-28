@@ -78,7 +78,9 @@ namespace Diccon
 
                 // if user type in just one word, so the case is we will use userSingMessage instead of userLongMessage
                 int numberOfWord = word.countWord(searchTextBox.Text);
-                if (numberOfWord == 0) { }
+                if (numberOfWord == 0)
+                {
+                }
                 else if (numberOfWord == 1)
                 {
 
@@ -89,44 +91,22 @@ namespace Diccon
                 }
                 else if (numberOfWord > 1)
                 {
-                    user.userLongMessage(searchTextBox.Text, exampleAskLongText, exampleAskLongPanel, exampleAskLongPanel, flowChatBox);
-                    await getTranslatedTextAsync();
-                    bot.botAnswerLongMessage(dicconProp.currentTranslatedWord, exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
+                    bool isOnline = new connectivity().isOnline();
+                    if (isOnline)
+                    {
+                        user.userLongMessage(searchTextBox.Text + "\n", exampleAskLongText, exampleAskLongColoredPanel, exampleAskLongPanel, flowChatBox);
+                        dicconProp.currentTranslatedWord = await bot.getTranslatedTextAsync(dicconProp.currentWord);
+                        bot.botAnswerLongMessage(dicconProp.currentTranslatedWord+"\n", exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
+                    }
+                    else
+                    {
+                        MessageBox.Show(dicconProp.connectError);
+                    }
                 }
                 searchTextBox.Text = "";
             }
         }
 
-        private async Task getTranslatedTextAsync()
-        {
-            var client = new HttpClient();
-            var request = new HttpRequestMessage
-            {
-                Method = HttpMethod.Post,
-                RequestUri = new Uri("https://microsoft-translator-text.p.rapidapi.com/translate?to=vi&api-version=3.0&profanityAction=NoAction&textType=plain&suggestedFrom=en"),
-                Headers ={
-                            { "x-rapidapi-host", "microsoft-translator-text.p.rapidapi.com" },
-                            { "x-rapidapi-key", "a10d63c67cmshd79f69a2d87629ap1e586djsna7cdee48e5de" },
-                         },
-                Content = new StringContent("[\r\n    {\r\n        \"Text\": \"" + dicconProp.currentWord + "\"\r\n    }\r\n]")
-                {
-                    Headers =
-                        {
-                            ContentType = new MediaTypeHeaderValue("application/json")
-                        }
-                }
-            };
-            string body;
-            using (var response = await client.SendAsync(request))
-            {
-                response.EnsureSuccessStatusCode();
-                body = await response.Content.ReadAsStringAsync();
-
-
-            }
-            JsonNode note = JsonNode.Parse(body);
-            dicconProp.currentTranslatedWord = note[0]["translations"][0]["text"].GetValue<string>();
-        }
         public string searchMatchWord(string wordsToSearch) // THIS IS FUNCTION TO SEARCH TEXT 
         {
 
@@ -351,17 +331,21 @@ namespace Diccon
 
         private async void suggestionTimer_TickAsync(object sender, EventArgs e)
         {
-            sysnonym sysnonym = new sysnonym();
-            List<string> synonymList = await sysnonym.getSynonymListAsync(dicconProp.currentWord);
-            if (synonymList.Count == 0)
+            bool isOnline = new connectivity().isOnline();
+            if (isOnline)
             {
-                btSynonym.Visible = false;
-            }
-            else
-            {
-                btSynonym.Visible = true;
+                sysnonym sysnonym = new sysnonym();
+                if (await sysnonym.getSynonymListAsync(dicconProp.currentWord) == null)
+                {
+                    btSynonym.Visible = false;
+                }
+                else
+                {
+                    btSynonym.Visible = true;
+                }
             }
             suggestionTimer.Enabled = false;
+
         }
 
         private async void btSynonym_Click(object sender, EventArgs e)

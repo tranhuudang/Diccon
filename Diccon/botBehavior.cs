@@ -1,5 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Text.Json.Nodes;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Diccon
@@ -174,6 +178,51 @@ namespace Diccon
             Label label = (sender as Label);
             dicconProp.currentWord = label.Text;
 
+        }
+        /// <summary>
+        /// Using Microsoft Translator API to translate string to a translated JSON-formated string.
+        /// Key is hold by RapidAPI website.
+        /// </summary>
+        /// <param name="text"></param>
+        /// <returns></returns>
+        public async Task<string> getTranslatedTextAsync(string text)
+        {
+            var client = new HttpClient();
+            var request = new HttpRequestMessage
+            {
+                Method = HttpMethod.Post,
+                RequestUri = new Uri("https://microsoft-translator-text.p.rapidapi.com/translate?to=vi&api-version=3.0&profanityAction=NoAction&textType=plain&suggestedFrom=en"),
+                Headers ={
+                            { "x-rapidapi-host", "microsoft-translator-text.p.rapidapi.com" },
+                            { "x-rapidapi-key", "a10d63c67cmshd79f69a2d87629ap1e586djsna7cdee48e5de" },
+                         },
+                Content = new StringContent("[\r\n    {\r\n        \"Text\": \"" + text + "\"\r\n    }\r\n]")
+                {
+                    Headers =
+                        {
+                            ContentType = new MediaTypeHeaderValue("application/json")
+                        }
+                }
+            };
+            string body;
+            using (var response = await client.SendAsync(request))
+            {
+                if (response.IsSuccessStatusCode)
+                {
+                    body = await response.Content.ReadAsStringAsync();
+                    JsonNode note = JsonNode.Parse(body);
+                    string translatedWord = note[0]["translations"][0]["text"].GetValue<string>();
+                    return translatedWord;
+                }
+                else
+                {
+                    MessageBox.Show("ok");
+                    return "-1";
+
+                }
+                
+            }
+            
         }
 
     }
