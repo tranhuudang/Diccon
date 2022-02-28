@@ -60,6 +60,7 @@
             this.exampleShortText = new Diccon.RoundedLabel();
             this.exampleAskLongPanel = new System.Windows.Forms.Panel();
             this.exampleAskLongColoredPanel = new Diccon.RoundedPanel();
+            this.exampleAskLongText = new System.Windows.Forms.RichTextBox();
             this.examplePlayPanel = new System.Windows.Forms.Panel();
             this.examplePlayAlignPanel = new System.Windows.Forms.Panel();
             this.examplePlayColoredPanel = new Diccon.RoundedPanel();
@@ -103,7 +104,6 @@
             this.roundedLabel10 = new Diccon.RoundedLabel();
             this.roundedLabel11 = new Diccon.RoundedLabel();
             this.roundedLabel12 = new Diccon.RoundedLabel();
-            this.exampleAskLongText = new System.Windows.Forms.RichTextBox();
             this.panel9.SuspendLayout();
             this.PanelOfFind.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.buttonFind)).BeginInit();
@@ -547,6 +547,22 @@
             this.exampleAskLongColoredPanel.TabIndex = 0;
             this.exampleAskLongColoredPanel.Thickness = 5F;
             // 
+            // exampleAskLongText
+            // 
+            this.exampleAskLongText.AutoWordSelection = true;
+            this.exampleAskLongText.BackColor = System.Drawing.Color.LightGray;
+            this.exampleAskLongText.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.exampleAskLongText.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.exampleAskLongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exampleAskLongText.ForeColor = System.Drawing.Color.Black;
+            this.exampleAskLongText.Location = new System.Drawing.Point(11, 9);
+            this.exampleAskLongText.Name = "exampleAskLongText";
+            this.exampleAskLongText.ReadOnly = true;
+            this.exampleAskLongText.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.exampleAskLongText.Size = new System.Drawing.Size(279, 23);
+            this.exampleAskLongText.TabIndex = 2;
+            this.exampleAskLongText.Text = "to protect someone or something against attack or criticism";
+            // 
             // examplePlayPanel
             // 
             this.examplePlayPanel.Controls.Add(this.examplePlayAlignPanel);
@@ -751,7 +767,7 @@
             this.buttonYourNote.BorderColor = System.Drawing.Color.White;
             this.buttonYourNote.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonYourNote.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonYourNote.Image = global::Diccon.Properties.Resources.notes_32;
+            this.buttonYourNote.Image = global::Diccon.Properties.Resources.note_32;
             this.buttonYourNote.Location = new System.Drawing.Point(107, 160);
             this.buttonYourNote.Name = "buttonYourNote";
             this.buttonYourNote.Radius = 50;
@@ -1033,22 +1049,6 @@
             this.roundedLabel12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.roundedLabel12.Thickness = 5F;
             this.roundedLabel12.Visible = false;
-            // 
-            // exampleAskLongText
-            // 
-            this.exampleAskLongText.AutoWordSelection = true;
-            this.exampleAskLongText.BackColor = System.Drawing.Color.LightGray;
-            this.exampleAskLongText.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.exampleAskLongText.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.exampleAskLongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exampleAskLongText.ForeColor = System.Drawing.Color.Black;
-            this.exampleAskLongText.Location = new System.Drawing.Point(11, 9);
-            this.exampleAskLongText.Name = "exampleAskLongText";
-            this.exampleAskLongText.ReadOnly = true;
-            this.exampleAskLongText.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.exampleAskLongText.Size = new System.Drawing.Size(279, 23);
-            this.exampleAskLongText.TabIndex = 2;
-            this.exampleAskLongText.Text = "to protect someone or something against attack or criticism";
             // 
             // mainHall
             // 

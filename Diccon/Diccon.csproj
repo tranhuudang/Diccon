@@ -133,6 +133,12 @@
     <Compile Include="botBehavior.cs" />
     <Compile Include="connectivity.cs" />
     <Compile Include="dicconProp.cs" />
+    <Compile Include="emoji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="emoji.Designer.cs">
+      <DependentUpon>emoji.cs</DependentUpon>
+    </Compile>
     <Compile Include="mainHall.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,11 +155,20 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="soundRelated.cs" />
+    <Compile Include="SpeechToText.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpeechToText.Designer.cs">
+      <DependentUpon>SpeechToText.cs</DependentUpon>
+    </Compile>
     <Compile Include="sysnonym.cs" />
     <Compile Include="userAction.cs" />
     <Compile Include="wordRelated.cs" />
     <EmbeddedResource Include="about.resx">
       <DependentUpon>about.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="emoji.resx">
+      <DependentUpon>emoji.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mainHall.resx">
       <DependentUpon>mainHall.cs</DependentUpon>
@@ -168,6 +183,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SpeechToText.resx">
+      <DependentUpon>SpeechToText.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="app.manifest" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -190,6 +208,35 @@
   <ItemGroup>
     <Content Include="Ninja2.ico" />
     <Content Include="Notes.txt" />
+    <None Include="Resources\Screenshot 2022-02-28 152046.png" />
+    <None Include="Resources\annoyed.png" />
+    <None Include="Resources\astonished.png" />
+    <None Include="Resources\blind.png" />
+    <None Include="Resources\cry.png" />
+    <None Include="Resources\dead.png" />
+    <None Include="Resources\doubtful.png" />
+    <None Include="Resources\foolish.png" />
+    <None Include="Resources\furious.png" />
+    <None Include="Resources\glued.png" />
+    <None Include="Resources\grumble.png" />
+    <None Include="Resources\laugh.png" />
+    <None Include="Resources\prejudice.png" />
+    <None Include="Resources\reluctant.png" />
+    <None Include="Resources\ridiculous.png" />
+    <None Include="Resources\shady.png" />
+    <None Include="Resources\shame.png" />
+    <None Include="Resources\shocked.png" />
+    <None Include="Resources\silly.png" />
+    <None Include="Resources\sleeping.png" />
+    <None Include="Resources\stuck.png" />
+    <None Include="Resources\surprised.png" />
+    <None Include="Resources\surrender.png" />
+    <None Include="Resources\suspicious.png" />
+    <None Include="Resources\wary.png" />
+    <None Include="Resources\wonder.png" />
+    <None Include="Resources\note_32.png" />
+    <None Include="Resources\close_20.png" />
+    <None Include="Resources\close_16.png" />
     <Content Include="Setup and Update\UpdateInfo.xml" />
     <None Include="Resources\github_20.png" />
     <None Include="Resources\info_20.png" />

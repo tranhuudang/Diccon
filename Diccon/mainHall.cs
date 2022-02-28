@@ -49,23 +49,33 @@ namespace Diccon
 
         private void textFromMic_Click(object sender, EventArgs e)
         {
+            Thread thread = new Thread(()=>
+            {
+                SpeechToText speechToText = new SpeechToText();
+                speechToText.Location = new Point(Cursor.Position.X - speechToText.Width / 2, Cursor.Position.Y - speechToText.Height - 15);
+                speechToText.ShowDialog();
+               
+            });
+            thread.Start();
             soundRelated sound = new soundRelated();
             searchTextBox.Text = sound.SpeechToText("00:00:07");
         }
 
         private void textFromEmoji_Click(object sender, EventArgs e)
         {
-
+            emoji emoji = new emoji();
+            emoji.Location = new Point(Cursor.Position.X-emoji.Width/2,Cursor.Position.Y- emoji.Height-15);
+            emoji.Show();
 
         }
 
-        private void searchTextBox_KeyDown(object sender, KeyEventArgs e)
+        private async void searchTextBox_KeyDown(object sender, KeyEventArgs e)
         {
 
             if (e.KeyCode == Keys.Enter)
             {
                 dicconProp.currentWord = searchTextBox.Text;
-                searchAndShow(dicconProp.currentWord);
+                await searchAndShow(dicconProp.currentWord);
 
 
             }
