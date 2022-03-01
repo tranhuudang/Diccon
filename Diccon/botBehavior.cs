@@ -85,12 +85,13 @@ namespace Diccon
         /// <param name="examplePlayAlignPanel"></param>
         /// <param name="examplePanel"></param>
         /// <param name="targetFlowPanel"></param>
-        public void botSoundMessage(String textToPlay, PictureBox examplePlayButton, RoundedPanel exampleColoredPanel, Panel examplePlayAlignPanel, Panel examplePanel, FlowLayoutPanel targetFlowPanel)
+        public void botSoundMessage(String textToPlay, Label exampleTextHolder, PictureBox examplePlayButton, RoundedPanel exampleColoredPanel, Panel examplePlayAlignPanel, Panel examplePanel, FlowLayoutPanel targetFlowPanel)
         {
             Panel newPanel = new Panel();
             Panel newAlignPanel = new Panel();
             RoundedPanel newColoredPanel = new RoundedPanel();
             PictureBox playButton = new PictureBox();
+            Label textHolder = new Label();
 
             playButton.Location = examplePlayButton.Location;
             playButton.Size = examplePlayButton.Size;
@@ -99,8 +100,20 @@ namespace Diccon
             playButton.Cursor = examplePlayButton.Cursor;
             playButton.Click += PlayButton_Click;
 
-            newColoredPanel.Size = exampleColoredPanel.Size;
+            textHolder.Text = textToPlay;
+            textHolder.Location = exampleTextHolder.Location;
+            textHolder.Font=exampleTextHolder.Font;
+            textHolder.AutoSize = true;
+            // change text color equal to its parent background to invisible it
             newColoredPanel.BackColor = exampleColoredPanel.BackColor;
+            textHolder.ForeColor = newColoredPanel.BackColor;
+
+            newColoredPanel.Controls.Add(playButton);
+            newColoredPanel.Controls.Add(textHolder);
+            // add control before resize panel
+            newColoredPanel.AutoSize = true;
+            newColoredPanel.Size = exampleColoredPanel.Size;
+           
             newColoredPanel.Location = exampleColoredPanel.Location;
 
             newAlignPanel.Dock = examplePlayAlignPanel.Dock;
@@ -108,7 +121,8 @@ namespace Diccon
 
             newPanel.Size = examplePanel.Size;
 
-            newColoredPanel.Controls.Add(playButton);
+
+            newPanel.Refresh();
             newAlignPanel.Controls.Add(newColoredPanel);
             newPanel.Controls.Add(newAlignPanel);
             targetFlowPanel.Controls.Add(newPanel);

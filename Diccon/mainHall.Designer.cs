@@ -104,6 +104,7 @@
             this.roundedLabel10 = new Diccon.RoundedLabel();
             this.roundedLabel11 = new Diccon.RoundedLabel();
             this.roundedLabel12 = new Diccon.RoundedLabel();
+            this.exampleTextHolder = new System.Windows.Forms.Label();
             this.panel9.SuspendLayout();
             this.PanelOfFind.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.buttonFind)).BeginInit();
@@ -583,14 +584,16 @@
             // 
             // examplePlayColoredPanel
             // 
+            this.examplePlayColoredPanel.AutoSize = true;
             this.examplePlayColoredPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.examplePlayColoredPanel.BorderColor = System.Drawing.Color.White;
+            this.examplePlayColoredPanel.Controls.Add(this.exampleTextHolder);
             this.examplePlayColoredPanel.Controls.Add(this.examplePlayButton);
             this.examplePlayColoredPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.examplePlayColoredPanel.Location = new System.Drawing.Point(0, 0);
             this.examplePlayColoredPanel.Name = "examplePlayColoredPanel";
             this.examplePlayColoredPanel.Radius = 20;
-            this.examplePlayColoredPanel.Size = new System.Drawing.Size(250, 39);
+            this.examplePlayColoredPanel.Size = new System.Drawing.Size(135, 39);
             this.examplePlayColoredPanel.TabIndex = 0;
             this.examplePlayColoredPanel.Thickness = 5F;
             // 
@@ -1050,6 +1053,17 @@
             this.roundedLabel12.Thickness = 5F;
             this.roundedLabel12.Visible = false;
             // 
+            // exampleTextHolder
+            // 
+            this.exampleTextHolder.AutoSize = true;
+            this.exampleTextHolder.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exampleTextHolder.Location = new System.Drawing.Point(42, 11);
+            this.exampleTextHolder.Name = "exampleTextHolder";
+            this.exampleTextHolder.Size = new System.Drawing.Size(90, 20);
+            this.exampleTextHolder.TabIndex = 3;
+            this.exampleTextHolder.Text = "Text Holder";
+            this.exampleTextHolder.Visible = false;
+            // 
             // mainHall
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1094,6 +1108,7 @@
             this.exampleAskLongColoredPanel.ResumeLayout(false);
             this.examplePlayPanel.ResumeLayout(false);
             this.examplePlayAlignPanel.ResumeLayout(false);
+            this.examplePlayAlignPanel.PerformLayout();
             this.examplePlayColoredPanel.ResumeLayout(false);
             this.examplePlayColoredPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.examplePlayButton)).EndInit();
@@ -1186,6 +1201,7 @@
         private RoundedLabel roundedLabel11;
         private RoundedLabel roundedLabel12;
         private System.Windows.Forms.RichTextBox exampleAskLongText;
+        private System.Windows.Forms.Label exampleTextHolder;
     }
 }
 
