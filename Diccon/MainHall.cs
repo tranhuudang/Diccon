@@ -1,26 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
+using System.Diagnostics;
 using System.Drawing;
-using System.IO;
-using System.Linq;
 using System.Net;
-using System.Text;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Reflection;
+using System.Text.Json.Nodes;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Diagnostics;
 using System.Xml;
-using System.Reflection;
 
 namespace Diccon
 {
     public partial class mainHall : Form
     {
-        string currentWord = "";
         botBehavior bot = new botBehavior();
         userAction user = new userAction();
+
         public mainHall()
         {
             InitializeComponent();
@@ -35,7 +34,7 @@ namespace Diccon
             flowChatBox.Padding = new Padding(10, 0, 0, 0);
             // Stack up quotation
             quote quote = new quote();
-            lbQuotation.Text= quote.getQuote("en");
+            lbQuotation.Text = quote.getQuote("en");
         }
 
         private void buttonFind_Click(object sender, EventArgs e)
@@ -50,56 +49,74 @@ namespace Diccon
 
         private void textFromMic_Click(object sender, EventArgs e)
         {
+            Thread thread = new Thread(()=>
+            {
+                SpeechToText speechToText = new SpeechToText();
+                speechToText.Location = new Point(Cursor.Position.X - speechToText.Width / 2, Cursor.Position.Y - speechToText.Height - 15);
+                speechToText.ShowDialog();
+               
+            });
+            thread.Start();
             soundRelated sound = new soundRelated();
             searchTextBox.Text = sound.SpeechToText("00:00:07");
         }
 
         private void textFromEmoji_Click(object sender, EventArgs e)
         {
-
+            emoji emoji = new emoji();
+            emoji.Location = new Point(Cursor.Position.X-emoji.Width/2,Cursor.Position.Y- emoji.Height-15);
+            emoji.Show();
 
         }
 
-        private void searchTextBox_KeyDown(object sender, KeyEventArgs e)
+        private async void searchTextBox_KeyDown(object sender, KeyEventArgs e)
         {
 
             if (e.KeyCode == Keys.Enter)
             {
-                currentWord  = searchTextBox.Text.Replace(" ", "");
-                searchAndShow(currentWord);
-                
+                dicconProp.currentWord = searchTextBox.Text;
+                await searchAndShow(dicconProp.currentWord);
+
 
             }
         }
-        void searchAndShow(string searchWord)
+        private async Task searchAndShow(string searchWord)
         {
-            if (currentWord != "")
+            if (dicconProp.currentWord != "")
             {
                 wordRelated word = new wordRelated();
 
                 // if user type in just one word, so the case is we will use userSingMessage instead of userLongMessage
                 int numberOfWord = word.countWord(searchTextBox.Text);
-                switch (numberOfWord)
+                if (numberOfWord == 0)
                 {
-                    case 0:
-                    case 1:
-                        user.userSingleMessage(searchTextBox.Text, exampleShortText, exampleShortPanel, flowChatBox);
-                        bot.botSoundMessage(searchTextBox.Text, examplePlayButton, examplePlayColoredPanel, examplePlayAlignPanel, examplePlayPanel, flowChatBox);
-                        bot.botAnswerLongMessage(searchMatchWord(searchTextBox.Text), exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
-                        suggestionTimer.Enabled = true;
-                        break;
+                }
+                else if (numberOfWord == 1)
+                {
 
-                    default:
-                        user.userLongMessage(searchTextBox.Text, exampleAskLongText, exampleAskLongPanel, exampleAskLongPanel, flowChatBox);
-                        break;
+                    user.userSingleMessage(searchTextBox.Text, exampleShortText, exampleShortPanel, flowChatBox);
+                    bot.botSoundMessage(searchTextBox.Text, exampleTextHolder, examplePlayButton, examplePlayColoredPanel, examplePlayAlignPanel, examplePlayPanel, flowChatBox);
+                    bot.botAnswerLongMessage(searchMatchWord(searchTextBox.Text), exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
+                    suggestionTimer.Enabled = true;
+                }
+                else if (numberOfWord > 1)
+                {
+                    bool isOnline = new connectivity().isOnline();
+                    if (isOnline)
+                    {
+                        user.userLongMessage(searchTextBox.Text + "\n", exampleAskLongText, exampleAskLongColoredPanel, exampleAskLongPanel, flowChatBox);
+                        dicconProp.currentTranslatedWord = await bot.getTranslatedTextAsync(dicconProp.currentWord);
+                        bot.botAnswerLongMessage(dicconProp.currentTranslatedWord+"\n", exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
+                    }
+                    else
+                    {
+                        MessageBox.Show(dicconProp.connectError);
+                    }
                 }
                 searchTextBox.Text = "";
             }
         }
-        private void roundedLabel3_Click(object sender, EventArgs e)
-        {
 
-        }
         public string searchMatchWord(string wordsToSearch) // THIS IS FUNCTION TO SEARCH TEXT 
         {
 
@@ -187,7 +204,7 @@ namespace Diccon
 
         private void menuButton_Click(object sender, EventArgs e)
         {
-            
+
             int X = Cursor.Position.X - 120;
             int Y = Cursor.Position.Y + 15;
             contextMenu.Show(X, Y);
@@ -228,8 +245,8 @@ namespace Diccon
         private void PictureBox_MouseEnter(object sender, EventArgs e)
         {
             PictureBox pictureBox = (sender as PictureBox);
-            int X= pictureBox.Location.X;
-            int Y= pictureBox.Location.Y-2;
+            int X = pictureBox.Location.X;
+            int Y = pictureBox.Location.Y - 2;
             pictureBox.Location = new Point(X, Y);
         }
         /// <summary>
@@ -251,7 +268,7 @@ namespace Diccon
 
         private void searchTextBox_Leave(object sender, EventArgs e)
         {
-            labelTypeToSearch.Visible = searchTextBox.Text==""?  true:false;
+            labelTypeToSearch.Visible = searchTextBox.Text == "" ? true : false;
         }
 
         private void labelTypeToSearch_Click(object sender, EventArgs e)
@@ -294,7 +311,7 @@ namespace Diccon
                         });
                         thread.Start();
                     }
-                    
+
                 }
                 else
                 {
@@ -316,41 +333,39 @@ namespace Diccon
             }
         }
 
-        private void exampleAnswerText_MouseHover(object sender, EventArgs e)
-        {
-
-        }
 
         private void exampleAnswerText_HScroll(object sender, EventArgs e)
         {
-           
+
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private async void suggestionTimer_TickAsync(object sender, EventArgs e)
         {
-            
-        }
-
-        private void suggestionTimer_Tick(object sender, EventArgs e)
-        {
-            string[] synonym = new synonyms().getSynonymsAsync(currentWord);
-            if(synonym.Length == 0)
+            bool isOnline = new connectivity().isOnline();
+            if (isOnline)
             {
-                btSynonym.Visible = false;
+                sysnonym sysnonym = new sysnonym();
+                if (await sysnonym.getSynonymListAsync(dicconProp.currentWord) == null)
+                {
+                    btSynonym.Visible = false;
+                }
+                else
+                {
+                    btSynonym.Visible = true;
+                }
             }
-            else
-            {
-                btSynonym.Visible = true;
-            }
-            suggestionTimer.Enabled =false;
+            suggestionTimer.Enabled = false;
+
         }
 
-        private void btSynonym_Click(object sender, EventArgs e)
+        private async void btSynonym_Click(object sender, EventArgs e)
         {
-            string[] synonym = new synonyms().getSynonymsAsync(currentWord);
-            bot.botSynonym(synonym, exampleItemSynonym, exampleflowLayoutSynonym,flowChatBox);
-            btSynonym.Visible=false;
+            sysnonym sysnonym = new sysnonym();
+            List<string> synonymList = await sysnonym.getSynonymListAsync(dicconProp.currentWord);
+            bot.botSynonym(synonymList, exampleItemSynonym, exampleflowLayoutSynonym, flowChatBox);
+            btSynonym.Visible = false;
         }
+
     }
 
 }

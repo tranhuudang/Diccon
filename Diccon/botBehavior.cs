@@ -11,6 +11,14 @@ namespace Diccon
     internal class botBehavior
     {
         string Setting_ShortView = Properties.Settings.Default["shortView"].ToString();
+        /// <summary>
+        /// Create a bubble message base on the example design pattern
+        /// </summary>
+        /// <param name="answerText"></param>
+        /// <param name="exampleRichTextBox"></param>
+        /// <param name="exampleColoredPanel"></param>
+        /// <param name="exampleParentPanel"></param>
+        /// <param name="targetFlowLayout"></param>
         public void botAnswerLongMessage(string answerText, RichTextBox exampleRichTextBox, Panel exampleColoredPanel, Panel exampleParentPanel, FlowLayoutPanel targetFlowLayout)
         {
             Panel newAnswerPanel = new Panel();
