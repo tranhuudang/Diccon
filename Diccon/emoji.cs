@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using System.IO;
 
 namespace Diccon
 {
@@ -49,6 +50,16 @@ namespace Diccon
         private void emoji_Deactivate(object sender, EventArgs e)
         {
             this.Close();
+        }
+        private void emojiClick(object sender, EventArgs e)
+        {
+            lbEmojiText.Text= (sender as PictureBox).Name;
+            Clipboard.SetText(lbEmojiText.Text);
+        }
+
+        private void btCopy_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(lbEmojiText.Text);
         }
     }
 }

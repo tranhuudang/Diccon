@@ -63,9 +63,9 @@ namespace Diccon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap add_24 {
+        internal static System.Drawing.Bitmap add_circle_24 {
             get {
-                object obj = ResourceManager.GetObject("add_24", resourceCulture);
+                object obj = ResourceManager.GetObject("add_circle_24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,6 +103,26 @@ namespace Diccon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap chat_36 {
+            get {
+                object obj = ResourceManager.GetObject("chat_36", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap clipboard_24 {
+            get {
+                object obj = ResourceManager.GetObject("clipboard_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap close_16 {
             get {
                 object obj = ResourceManager.GetObject("close_16", resourceCulture);
@@ -126,6 +146,26 @@ namespace Diccon.Properties {
         internal static System.Drawing.Bitmap coffee_32 {
             get {
                 object obj = ResourceManager.GetObject("coffee_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap copy_24 {
+            get {
+                object obj = ResourceManager.GetObject("copy_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap copy_white_24 {
+            get {
+                object obj = ResourceManager.GetObject("copy_white_24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -161,6 +201,26 @@ namespace Diccon.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap emoji_24 {
+            get {
+                object obj = ResourceManager.GetObject("emoji_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap emoji_36 {
+            get {
+                object obj = ResourceManager.GetObject("emoji_36", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to @•a /ei, ə/
         ///*  danh từ,  số nhiều as,  a&apos;s
         ///- (thông tục) loại a, hạng nhất, hạng tốt nhất hạng rất tốt
@@ -176,11 +236,21 @@ namespace Diccon.Properties {
         ///=a very cold day+ một ngày rất lạnh
         ///=a dozen+ một tá
         ///=a few+ một ít
-        ///=all of a size+ tất cả cùn [rest of string was truncated]&quot;;.
+        ///=all of a s [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Envi {
             get {
                 return ResourceManager.GetString("Envi", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fluent_search_24 {
+            get {
+                object obj = ResourceManager.GetObject("fluent_search_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -257,6 +327,16 @@ namespace Diccon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap keyboard_voice_24 {
+            get {
+                object obj = ResourceManager.GetObject("keyboard_voice_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap laugh {
             get {
                 object obj = ResourceManager.GetObject("laugh", resourceCulture);
@@ -270,16 +350,6 @@ namespace Diccon.Properties {
         internal static System.Drawing.Bitmap menu_24 {
             get {
                 object obj = ResourceManager.GetObject("menu_24", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap micro_24 {
-            get {
-                object obj = ResourceManager.GetObject("micro_24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -307,19 +377,9 @@ namespace Diccon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap note_32 {
+        internal static System.Drawing.Bitmap note_add_36 {
             get {
-                object obj = ResourceManager.GetObject("note_32", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap notes_32 {
-            get {
-                object obj = ResourceManager.GetObject("notes_32", resourceCulture);
+                object obj = ResourceManager.GetObject("note_add_36", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -330,16 +390,6 @@ namespace Diccon.Properties {
         internal static System.Drawing.Bitmap prejudice {
             get {
                 object obj = ResourceManager.GetObject("prejudice", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap recycle_bin_24 {
-            get {
-                object obj = ResourceManager.GetObject("recycle_bin_24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -367,19 +417,9 @@ namespace Diccon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Screenshot_2022_02_28_152046 {
+        internal static System.Drawing.Bitmap send_24 {
             get {
-                object obj = ResourceManager.GetObject("Screenshot 2022-02-28 152046", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap search_24 {
-            get {
-                object obj = ResourceManager.GetObject("search_24", resourceCulture);
+                object obj = ResourceManager.GetObject("send_24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -437,9 +477,9 @@ namespace Diccon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap smile_24 {
+        internal static System.Drawing.Bitmap stuck {
             get {
-                object obj = ResourceManager.GetObject("smile_24", resourceCulture);
+                object obj = ResourceManager.GetObject("stuck", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -447,9 +487,9 @@ namespace Diccon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap stuck {
+        internal static System.Drawing.Bitmap support_36 {
             get {
-                object obj = ResourceManager.GetObject("stuck", resourceCulture);
+                object obj = ResourceManager.GetObject("support_36", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -487,9 +527,9 @@ namespace Diccon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap volume_24 {
+        internal static System.Drawing.Bitmap timeline_36 {
             get {
-                object obj = ResourceManager.GetObject("volume-24", resourceCulture);
+                object obj = ResourceManager.GetObject("timeline_36", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -517,9 +557,9 @@ namespace Diccon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap yawa {
+        internal static System.Drawing.Bitmap your_note_36 {
             get {
-                object obj = ResourceManager.GetObject("yawa", resourceCulture);
+                object obj = ResourceManager.GetObject("your_note_36", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

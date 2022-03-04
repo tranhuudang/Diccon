@@ -39,13 +39,15 @@
             this.logo = new System.Windows.Forms.PictureBox();
             this.panelBottom = new System.Windows.Forms.Panel();
             this.panelAdd = new System.Windows.Forms.Panel();
+            this.addEmoji = new Diccon.RoundedLabel();
             this.addNote = new Diccon.RoundedLabel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.roundedPanel1 = new Diccon.RoundedPanel();
             this.labelTypeToSearch = new System.Windows.Forms.Label();
             this.searchTextBox = new System.Windows.Forms.TextBox();
-            this.textFromEmoji = new System.Windows.Forms.PictureBox();
+            this.textFromClipboard = new System.Windows.Forms.PictureBox();
             this.textFromMic = new System.Windows.Forms.PictureBox();
+            this.btSend = new System.Windows.Forms.PictureBox();
             this.buttonAdd = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.flowChatBox = new System.Windows.Forms.FlowLayoutPanel();
@@ -64,6 +66,7 @@
             this.examplePlayPanel = new System.Windows.Forms.Panel();
             this.examplePlayAlignPanel = new System.Windows.Forms.Panel();
             this.examplePlayColoredPanel = new Diccon.RoundedPanel();
+            this.exampleTextHolder = new System.Windows.Forms.Label();
             this.examplePlayButton = new System.Windows.Forms.PictureBox();
             this.exampleAnswerPanel = new System.Windows.Forms.Panel();
             this.exampleAnswerColoredPanel = new Diccon.RoundedPanel();
@@ -104,7 +107,7 @@
             this.roundedLabel10 = new Diccon.RoundedLabel();
             this.roundedLabel11 = new Diccon.RoundedLabel();
             this.roundedLabel12 = new Diccon.RoundedLabel();
-            this.exampleTextHolder = new System.Windows.Forms.Label();
+            this.realTimeDetermine = new System.Windows.Forms.Timer(this.components);
             this.panel9.SuspendLayout();
             this.PanelOfFind.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.buttonFind)).BeginInit();
@@ -114,8 +117,9 @@
             this.panelAdd.SuspendLayout();
             this.panel1.SuspendLayout();
             this.roundedPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textFromEmoji)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textFromClipboard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textFromMic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btSend)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonAdd)).BeginInit();
             this.flowChatBox.SuspendLayout();
             this.exampleflowLayoutSynonym.SuspendLayout();
@@ -176,7 +180,7 @@
             // buttonFind
             // 
             this.buttonFind.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonFind.Image = global::Diccon.Properties.Resources.search_24;
+            this.buttonFind.Image = global::Diccon.Properties.Resources.fluent_search_24;
             this.buttonFind.Location = new System.Drawing.Point(342, 23);
             this.buttonFind.Name = "buttonFind";
             this.buttonFind.Size = new System.Drawing.Size(24, 24);
@@ -234,6 +238,7 @@
             // 
             // panelAdd
             // 
+            this.panelAdd.Controls.Add(this.addEmoji);
             this.panelAdd.Controls.Add(this.addNote);
             this.panelAdd.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelAdd.Location = new System.Drawing.Point(0, 56);
@@ -241,13 +246,29 @@
             this.panelAdd.Size = new System.Drawing.Size(407, 86);
             this.panelAdd.TabIndex = 5;
             // 
+            // addEmoji
+            // 
+            this.addEmoji.BackColor = System.Drawing.Color.Silver;
+            this.addEmoji.BorderColor = System.Drawing.Color.White;
+            this.addEmoji.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.addEmoji.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addEmoji.Image = global::Diccon.Properties.Resources.emoji_36;
+            this.addEmoji.Location = new System.Drawing.Point(97, 3);
+            this.addEmoji.Name = "addEmoji";
+            this.addEmoji.Radius = 50;
+            this.addEmoji.Size = new System.Drawing.Size(75, 71);
+            this.addEmoji.TabIndex = 6;
+            this.addEmoji.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.addEmoji.Thickness = 5F;
+            this.addEmoji.Click += new System.EventHandler(this.addEmoji_Click);
+            // 
             // addNote
             // 
-            this.addNote.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.addNote.BackColor = System.Drawing.Color.Silver;
             this.addNote.BorderColor = System.Drawing.Color.White;
             this.addNote.Cursor = System.Windows.Forms.Cursors.Hand;
             this.addNote.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addNote.Image = global::Diccon.Properties.Resources.notes_32;
+            this.addNote.Image = global::Diccon.Properties.Resources.note_add_36;
             this.addNote.Location = new System.Drawing.Point(12, 3);
             this.addNote.Name = "addNote";
             this.addNote.Radius = 50;
@@ -275,8 +296,9 @@
             this.roundedPanel1.BorderColor = System.Drawing.Color.White;
             this.roundedPanel1.Controls.Add(this.labelTypeToSearch);
             this.roundedPanel1.Controls.Add(this.searchTextBox);
-            this.roundedPanel1.Controls.Add(this.textFromEmoji);
+            this.roundedPanel1.Controls.Add(this.textFromClipboard);
             this.roundedPanel1.Controls.Add(this.textFromMic);
+            this.roundedPanel1.Controls.Add(this.btSend);
             this.roundedPanel1.Location = new System.Drawing.Point(39, 4);
             this.roundedPanel1.Name = "roundedPanel1";
             this.roundedPanel1.Radius = 20;
@@ -304,7 +326,7 @@
             this.searchTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchTextBox.Location = new System.Drawing.Point(16, 10);
             this.searchTextBox.Name = "searchTextBox";
-            this.searchTextBox.Size = new System.Drawing.Size(250, 24);
+            this.searchTextBox.Size = new System.Drawing.Size(260, 24);
             this.searchTextBox.TabIndex = 1;
             this.searchTextBox.Click += new System.EventHandler(this.searchTextBox_Click);
             this.searchTextBox.TextChanged += new System.EventHandler(this.searchTextBox_TextChanged);
@@ -312,24 +334,25 @@
             this.searchTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.searchTextBox_KeyPress);
             this.searchTextBox.Leave += new System.EventHandler(this.searchTextBox_Leave);
             // 
-            // textFromEmoji
+            // textFromClipboard
             // 
-            this.textFromEmoji.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.textFromEmoji.Image = global::Diccon.Properties.Resources.smile_24;
-            this.textFromEmoji.Location = new System.Drawing.Point(278, 11);
-            this.textFromEmoji.Name = "textFromEmoji";
-            this.textFromEmoji.Size = new System.Drawing.Size(24, 24);
-            this.textFromEmoji.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.textFromEmoji.TabIndex = 5;
-            this.textFromEmoji.TabStop = false;
-            this.textFromEmoji.Click += new System.EventHandler(this.textFromEmoji_Click);
-            this.textFromEmoji.MouseEnter += new System.EventHandler(this.PictureBox_MouseEnter);
-            this.textFromEmoji.MouseLeave += new System.EventHandler(this.PictureBox_MouseLeave);
+            this.textFromClipboard.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.textFromClipboard.Image = global::Diccon.Properties.Resources.clipboard_24;
+            this.textFromClipboard.Location = new System.Drawing.Point(282, 11);
+            this.textFromClipboard.Name = "textFromClipboard";
+            this.textFromClipboard.Size = new System.Drawing.Size(24, 24);
+            this.textFromClipboard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.textFromClipboard.TabIndex = 5;
+            this.textFromClipboard.TabStop = false;
+            this.textFromClipboard.Visible = false;
+            this.textFromClipboard.Click += new System.EventHandler(this.textFromClipboard_Click);
+            this.textFromClipboard.MouseEnter += new System.EventHandler(this.PictureBox_MouseEnter);
+            this.textFromClipboard.MouseLeave += new System.EventHandler(this.PictureBox_MouseLeave);
             // 
             // textFromMic
             // 
             this.textFromMic.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.textFromMic.Image = global::Diccon.Properties.Resources.micro_24;
+            this.textFromMic.Image = global::Diccon.Properties.Resources.keyboard_voice_24;
             this.textFromMic.Location = new System.Drawing.Point(315, 11);
             this.textFromMic.Name = "textFromMic";
             this.textFromMic.Size = new System.Drawing.Size(24, 24);
@@ -340,10 +363,24 @@
             this.textFromMic.MouseEnter += new System.EventHandler(this.PictureBox_MouseEnter);
             this.textFromMic.MouseLeave += new System.EventHandler(this.PictureBox_MouseLeave);
             // 
+            // btSend
+            // 
+            this.btSend.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btSend.Image = global::Diccon.Properties.Resources.send_24;
+            this.btSend.Location = new System.Drawing.Point(315, 11);
+            this.btSend.Name = "btSend";
+            this.btSend.Size = new System.Drawing.Size(24, 24);
+            this.btSend.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.btSend.TabIndex = 7;
+            this.btSend.TabStop = false;
+            this.btSend.Click += new System.EventHandler(this.btSend_Click);
+            this.btSend.MouseEnter += new System.EventHandler(this.PictureBox_MouseEnter);
+            this.btSend.MouseLeave += new System.EventHandler(this.PictureBox_MouseLeave);
+            // 
             // buttonAdd
             // 
             this.buttonAdd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonAdd.Image = global::Diccon.Properties.Resources.add_24;
+            this.buttonAdd.Image = global::Diccon.Properties.Resources.add_circle_24;
             this.buttonAdd.Location = new System.Drawing.Point(9, 15);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(24, 24);
@@ -597,6 +634,17 @@
             this.examplePlayColoredPanel.TabIndex = 0;
             this.examplePlayColoredPanel.Thickness = 5F;
             // 
+            // exampleTextHolder
+            // 
+            this.exampleTextHolder.AutoSize = true;
+            this.exampleTextHolder.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exampleTextHolder.Location = new System.Drawing.Point(42, 11);
+            this.exampleTextHolder.Name = "exampleTextHolder";
+            this.exampleTextHolder.Size = new System.Drawing.Size(90, 20);
+            this.exampleTextHolder.TabIndex = 3;
+            this.exampleTextHolder.Text = "Text Holder";
+            this.exampleTextHolder.Visible = false;
+            // 
             // examplePlayButton
             // 
             this.examplePlayButton.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -669,7 +717,7 @@
             this.roundedLabel2.BorderColor = System.Drawing.Color.White;
             this.roundedLabel2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.roundedLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedLabel2.Image = global::Diccon.Properties.Resources.coffee_32;
+            this.roundedLabel2.Image = global::Diccon.Properties.Resources.support_36;
             this.roundedLabel2.Location = new System.Drawing.Point(206, 261);
             this.roundedLabel2.Name = "roundedLabel2";
             this.roundedLabel2.Radius = 50;
@@ -696,7 +744,7 @@
             this.roundedLabel1.BorderColor = System.Drawing.Color.White;
             this.roundedLabel1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.roundedLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedLabel1.Image = global::Diccon.Properties.Resources.history_32;
+            this.roundedLabel1.Image = global::Diccon.Properties.Resources.timeline_36;
             this.roundedLabel1.Location = new System.Drawing.Point(107, 261);
             this.roundedLabel1.Name = "roundedLabel1";
             this.roundedLabel1.Radius = 50;
@@ -721,11 +769,11 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(115, 332);
+            this.label4.Location = new System.Drawing.Point(111, 332);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 20);
+            this.label4.Size = new System.Drawing.Size(67, 20);
             this.label4.TabIndex = 4;
-            this.label4.Text = "History";
+            this.label4.Text = "Timeline";
             // 
             // roundedLabel7
             // 
@@ -733,7 +781,7 @@
             this.roundedLabel7.BorderColor = System.Drawing.Color.White;
             this.roundedLabel7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.roundedLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedLabel7.Image = global::Diccon.Properties.Resources.yawa;
+            this.roundedLabel7.Image = global::Diccon.Properties.Resources.chat_36;
             this.roundedLabel7.Location = new System.Drawing.Point(206, 160);
             this.roundedLabel7.Name = "roundedLabel7";
             this.roundedLabel7.Radius = 50;
@@ -770,7 +818,7 @@
             this.buttonYourNote.BorderColor = System.Drawing.Color.White;
             this.buttonYourNote.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonYourNote.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonYourNote.Image = global::Diccon.Properties.Resources.note_32;
+            this.buttonYourNote.Image = global::Diccon.Properties.Resources.your_note_36;
             this.buttonYourNote.Location = new System.Drawing.Point(107, 160);
             this.buttonYourNote.Name = "buttonYourNote";
             this.buttonYourNote.Radius = 50;
@@ -1053,16 +1101,11 @@
             this.roundedLabel12.Thickness = 5F;
             this.roundedLabel12.Visible = false;
             // 
-            // exampleTextHolder
+            // realTimeDetermine
             // 
-            this.exampleTextHolder.AutoSize = true;
-            this.exampleTextHolder.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exampleTextHolder.Location = new System.Drawing.Point(42, 11);
-            this.exampleTextHolder.Name = "exampleTextHolder";
-            this.exampleTextHolder.Size = new System.Drawing.Size(90, 20);
-            this.exampleTextHolder.TabIndex = 3;
-            this.exampleTextHolder.Text = "Text Holder";
-            this.exampleTextHolder.Visible = false;
+            this.realTimeDetermine.Enabled = true;
+            this.realTimeDetermine.Interval = 2000;
+            this.realTimeDetermine.Tick += new System.EventHandler(this.realTimeDetermine_Tick);
             // 
             // mainHall
             // 
@@ -1095,8 +1138,9 @@
             this.panel1.PerformLayout();
             this.roundedPanel1.ResumeLayout(false);
             this.roundedPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textFromEmoji)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textFromClipboard)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textFromMic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btSend)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonAdd)).EndInit();
             this.flowChatBox.ResumeLayout(false);
             this.flowChatBox.PerformLayout();
@@ -1141,7 +1185,6 @@
         private System.Windows.Forms.PictureBox examplePlayButton;
         private System.Windows.Forms.Panel exampleAskLongPanel;
         private RoundedPanel roundedPanel1;
-        private System.Windows.Forms.PictureBox textFromEmoji;
         private System.Windows.Forms.PictureBox buttonAdd;
         private System.Windows.Forms.PictureBox buttonMenu;
         private System.Windows.Forms.PictureBox buttonFind;
@@ -1202,6 +1245,10 @@
         private RoundedLabel roundedLabel12;
         private System.Windows.Forms.RichTextBox exampleAskLongText;
         private System.Windows.Forms.Label exampleTextHolder;
+        private System.Windows.Forms.PictureBox textFromClipboard;
+        private RoundedLabel addEmoji;
+        private System.Windows.Forms.PictureBox btSend;
+        private System.Windows.Forms.Timer realTimeDetermine;
     }
 }
 

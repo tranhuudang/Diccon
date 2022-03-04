@@ -31,52 +31,54 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btClose = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox29 = new System.Windows.Forms.PictureBox();
-            this.pictureBox30 = new System.Windows.Forms.PictureBox();
-            this.pictureBox31 = new System.Windows.Forms.PictureBox();
-            this.pictureBox32 = new System.Windows.Forms.PictureBox();
-            this.pictureBox33 = new System.Windows.Forms.PictureBox();
-            this.pictureBox34 = new System.Windows.Forms.PictureBox();
-            this.pictureBox35 = new System.Windows.Forms.PictureBox();
-            this.pictureBox36 = new System.Windows.Forms.PictureBox();
-            this.pictureBox37 = new System.Windows.Forms.PictureBox();
-            this.pictureBox38 = new System.Windows.Forms.PictureBox();
-            this.pictureBox39 = new System.Windows.Forms.PictureBox();
-            this.pictureBox40 = new System.Windows.Forms.PictureBox();
-            this.pictureBox41 = new System.Windows.Forms.PictureBox();
-            this.pictureBox42 = new System.Windows.Forms.PictureBox();
-            this.pictureBox43 = new System.Windows.Forms.PictureBox();
-            this.pictureBox44 = new System.Windows.Forms.PictureBox();
+            this.laugh = new System.Windows.Forms.PictureBox();
+            this.shame = new System.Windows.Forms.PictureBox();
+            this.silly = new System.Windows.Forms.PictureBox();
+            this.sleeping = new System.Windows.Forms.PictureBox();
+            this.wonder = new System.Windows.Forms.PictureBox();
+            this.astonished = new System.Windows.Forms.PictureBox();
+            this.annoyed = new System.Windows.Forms.PictureBox();
+            this.blind = new System.Windows.Forms.PictureBox();
+            this.cry = new System.Windows.Forms.PictureBox();
+            this.dead = new System.Windows.Forms.PictureBox();
+            this.doubtful = new System.Windows.Forms.PictureBox();
+            this.foolish = new System.Windows.Forms.PictureBox();
+            this.furious = new System.Windows.Forms.PictureBox();
+            this.glued = new System.Windows.Forms.PictureBox();
+            this.grumble = new System.Windows.Forms.PictureBox();
+            this.prejudice = new System.Windows.Forms.PictureBox();
+            this.reluctant = new System.Windows.Forms.PictureBox();
+            this.ridiculous = new System.Windows.Forms.PictureBox();
+            this.shocked = new System.Windows.Forms.PictureBox();
+            this.stuck = new System.Windows.Forms.PictureBox();
+            this.surrender = new System.Windows.Forms.PictureBox();
+            this.wary = new System.Windows.Forms.PictureBox();
+            this.btCopy = new Diccon.RoundedLabel();
+            this.lbEmojiText = new Diccon.RoundedLabel();
             ((System.ComponentModel.ISupportInitialize)(this.btClose)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.laugh)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shame)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.silly)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sleeping)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wonder)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astonished)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.annoyed)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.blind)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cry)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dead)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.doubtful)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.foolish)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.furious)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.glued)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grumble)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prejudice)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reluctant)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ridiculous)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shocked)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stuck)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.surrender)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wary)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -103,318 +105,370 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.pictureBox7);
-            this.panel1.Controls.Add(this.pictureBox8);
-            this.panel1.Controls.Add(this.pictureBox9);
-            this.panel1.Controls.Add(this.pictureBox10);
-            this.panel1.Controls.Add(this.pictureBox11);
-            this.panel1.Controls.Add(this.pictureBox29);
-            this.panel1.Controls.Add(this.pictureBox30);
-            this.panel1.Controls.Add(this.pictureBox31);
-            this.panel1.Controls.Add(this.pictureBox32);
-            this.panel1.Controls.Add(this.pictureBox33);
-            this.panel1.Controls.Add(this.pictureBox34);
-            this.panel1.Controls.Add(this.pictureBox35);
-            this.panel1.Controls.Add(this.pictureBox36);
-            this.panel1.Controls.Add(this.pictureBox37);
-            this.panel1.Controls.Add(this.pictureBox38);
-            this.panel1.Controls.Add(this.pictureBox39);
-            this.panel1.Controls.Add(this.pictureBox40);
-            this.panel1.Controls.Add(this.pictureBox41);
-            this.panel1.Controls.Add(this.pictureBox42);
-            this.panel1.Controls.Add(this.pictureBox43);
-            this.panel1.Controls.Add(this.pictureBox44);
+            this.panel1.Controls.Add(this.laugh);
+            this.panel1.Controls.Add(this.shame);
+            this.panel1.Controls.Add(this.silly);
+            this.panel1.Controls.Add(this.sleeping);
+            this.panel1.Controls.Add(this.wonder);
+            this.panel1.Controls.Add(this.astonished);
+            this.panel1.Controls.Add(this.annoyed);
+            this.panel1.Controls.Add(this.blind);
+            this.panel1.Controls.Add(this.cry);
+            this.panel1.Controls.Add(this.dead);
+            this.panel1.Controls.Add(this.doubtful);
+            this.panel1.Controls.Add(this.foolish);
+            this.panel1.Controls.Add(this.furious);
+            this.panel1.Controls.Add(this.glued);
+            this.panel1.Controls.Add(this.grumble);
+            this.panel1.Controls.Add(this.prejudice);
+            this.panel1.Controls.Add(this.reluctant);
+            this.panel1.Controls.Add(this.ridiculous);
+            this.panel1.Controls.Add(this.shocked);
+            this.panel1.Controls.Add(this.stuck);
+            this.panel1.Controls.Add(this.surrender);
+            this.panel1.Controls.Add(this.wary);
             this.panel1.Location = new System.Drawing.Point(16, 56);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(295, 139);
+            this.panel1.Size = new System.Drawing.Size(295, 119);
             this.panel1.TabIndex = 22;
             // 
-            // pictureBox1
+            // laugh
             // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = global::Diccon.Properties.Resources.laugh;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 27;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.MouseEnter += new System.EventHandler(this.emoji_MouseEnter);
-            this.pictureBox1.MouseLeave += new System.EventHandler(this.emoji_MouseLeave);
+            this.laugh.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.laugh.Image = global::Diccon.Properties.Resources.laugh;
+            this.laugh.Location = new System.Drawing.Point(3, 3);
+            this.laugh.Name = "laugh";
+            this.laugh.Size = new System.Drawing.Size(30, 30);
+            this.laugh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.laugh.TabIndex = 27;
+            this.laugh.TabStop = false;
+            this.laugh.Click += new System.EventHandler(this.emojiClick);
+            this.laugh.MouseEnter += new System.EventHandler(this.emoji_MouseEnter);
+            this.laugh.MouseLeave += new System.EventHandler(this.emoji_MouseLeave);
             // 
-            // pictureBox7
+            // shame
             // 
-            this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox7.Image = global::Diccon.Properties.Resources.shame;
-            this.pictureBox7.Location = new System.Drawing.Point(39, 3);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 28;
-            this.pictureBox7.TabStop = false;
-            this.pictureBox7.MouseEnter += new System.EventHandler(this.emoji_MouseEnter);
-            this.pictureBox7.MouseLeave += new System.EventHandler(this.emoji_MouseLeave);
+            this.shame.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.shame.Image = global::Diccon.Properties.Resources.shame;
+            this.shame.Location = new System.Drawing.Point(39, 3);
+            this.shame.Name = "shame";
+            this.shame.Size = new System.Drawing.Size(30, 30);
+            this.shame.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.shame.TabIndex = 28;
+            this.shame.TabStop = false;
+            this.shame.Click += new System.EventHandler(this.emojiClick);
+            this.shame.MouseEnter += new System.EventHandler(this.emoji_MouseEnter);
+            this.shame.MouseLeave += new System.EventHandler(this.emoji_MouseLeave);
             // 
-            // pictureBox8
+            // silly
             // 
-            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox8.Image = global::Diccon.Properties.Resources.silly;
-            this.pictureBox8.Location = new System.Drawing.Point(75, 3);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 29;
-            this.pictureBox8.TabStop = false;
-            this.pictureBox8.MouseEnter += new System.EventHandler(this.emoji_MouseEnter);
-            this.pictureBox8.MouseLeave += new System.EventHandler(this.emoji_MouseLeave);
+            this.silly.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.silly.Image = global::Diccon.Properties.Resources.silly;
+            this.silly.Location = new System.Drawing.Point(75, 3);
+            this.silly.Name = "silly";
+            this.silly.Size = new System.Drawing.Size(30, 30);
+            this.silly.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.silly.TabIndex = 29;
+            this.silly.TabStop = false;
+            this.silly.Click += new System.EventHandler(this.emojiClick);
+            this.silly.MouseEnter += new System.EventHandler(this.emoji_MouseEnter);
+            this.silly.MouseLeave += new System.EventHandler(this.emoji_MouseLeave);
             // 
-            // pictureBox9
+            // sleeping
             // 
-            this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox9.Image = global::Diccon.Properties.Resources.sleeping;
-            this.pictureBox9.Location = new System.Drawing.Point(111, 3);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 30;
-            this.pictureBox9.TabStop = false;
-            this.pictureBox9.MouseEnter += new System.EventHandler(this.emoji_MouseEnter);
-            this.pictureBox9.MouseLeave += new System.EventHandler(this.emoji_MouseLeave);
+            this.sleeping.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.sleeping.Image = global::Diccon.Properties.Resources.sleeping;
+            this.sleeping.Location = new System.Drawing.Point(111, 3);
+            this.sleeping.Name = "sleeping";
+            this.sleeping.Size = new System.Drawing.Size(30, 30);
+            this.sleeping.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.sleeping.TabIndex = 30;
+            this.sleeping.TabStop = false;
+            this.sleeping.Click += new System.EventHandler(this.emojiClick);
+            this.sleeping.MouseEnter += new System.EventHandler(this.emoji_MouseEnter);
+            this.sleeping.MouseLeave += new System.EventHandler(this.emoji_MouseLeave);
             // 
-            // pictureBox10
+            // wonder
             // 
-            this.pictureBox10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox10.Image = global::Diccon.Properties.Resources.wonder;
-            this.pictureBox10.Location = new System.Drawing.Point(147, 3);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox10.TabIndex = 31;
-            this.pictureBox10.TabStop = false;
-            this.pictureBox10.MouseEnter += new System.EventHandler(this.emoji_MouseEnter);
-            this.pictureBox10.MouseLeave += new System.EventHandler(this.emoji_MouseLeave);
+            this.wonder.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.wonder.Image = global::Diccon.Properties.Resources.wonder;
+            this.wonder.Location = new System.Drawing.Point(147, 3);
+            this.wonder.Name = "wonder";
+            this.wonder.Size = new System.Drawing.Size(30, 30);
+            this.wonder.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.wonder.TabIndex = 31;
+            this.wonder.TabStop = false;
+            this.wonder.Click += new System.EventHandler(this.emojiClick);
+            this.wonder.MouseEnter += new System.EventHandler(this.emoji_MouseEnter);
+            this.wonder.MouseLeave += new System.EventHandler(this.emoji_MouseLeave);
             // 
-            // pictureBox11
+            // astonished
             // 
-            this.pictureBox11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox11.Image = global::Diccon.Properties.Resources.astonished;
-            this.pictureBox11.Location = new System.Drawing.Point(183, 3);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox11.TabIndex = 32;
-            this.pictureBox11.TabStop = false;
-            this.pictureBox11.MouseEnter += new System.EventHandler(this.emoji_MouseEnter);
-            this.pictureBox11.MouseLeave += new System.EventHandler(this.emoji_MouseLeave);
+            this.astonished.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.astonished.Image = global::Diccon.Properties.Resources.astonished;
+            this.astonished.Location = new System.Drawing.Point(183, 3);
+            this.astonished.Name = "astonished";
+            this.astonished.Size = new System.Drawing.Size(30, 30);
+            this.astonished.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.astonished.TabIndex = 32;
+            this.astonished.TabStop = false;
+            this.astonished.Click += new System.EventHandler(this.emojiClick);
+            this.astonished.MouseEnter += new System.EventHandler(this.emoji_MouseEnter);
+            this.astonished.MouseLeave += new System.EventHandler(this.emoji_MouseLeave);
             // 
-            // pictureBox29
+            // annoyed
             // 
-            this.pictureBox29.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox29.Image = global::Diccon.Properties.Resources.annoyed;
-            this.pictureBox29.Location = new System.Drawing.Point(219, 3);
-            this.pictureBox29.Name = "pictureBox29";
-            this.pictureBox29.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox29.TabIndex = 33;
-            this.pictureBox29.TabStop = false;
-            this.pictureBox29.MouseEnter += new System.EventHandler(this.emoji_MouseEnter);
-            this.pictureBox29.MouseLeave += new System.EventHandler(this.emoji_MouseLeave);
+            this.annoyed.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.annoyed.Image = global::Diccon.Properties.Resources.annoyed;
+            this.annoyed.Location = new System.Drawing.Point(219, 3);
+            this.annoyed.Name = "annoyed";
+            this.annoyed.Size = new System.Drawing.Size(30, 30);
+            this.annoyed.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.annoyed.TabIndex = 33;
+            this.annoyed.TabStop = false;
+            this.annoyed.Click += new System.EventHandler(this.emojiClick);
+            this.annoyed.MouseEnter += new System.EventHandler(this.emoji_MouseEnter);
+            this.annoyed.MouseLeave += new System.EventHandler(this.emoji_MouseLeave);
             // 
-            // pictureBox30
+            // blind
             // 
-            this.pictureBox30.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox30.Image = global::Diccon.Properties.Resources.blind;
-            this.pictureBox30.Location = new System.Drawing.Point(255, 3);
-            this.pictureBox30.Name = "pictureBox30";
-            this.pictureBox30.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox30.TabIndex = 34;
-            this.pictureBox30.TabStop = false;
-            this.pictureBox30.MouseEnter += new System.EventHandler(this.emoji_MouseEnter);
-            this.pictureBox30.MouseLeave += new System.EventHandler(this.emoji_MouseLeave);
+            this.blind.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.blind.Image = global::Diccon.Properties.Resources.blind;
+            this.blind.Location = new System.Drawing.Point(255, 3);
+            this.blind.Name = "blind";
+            this.blind.Size = new System.Drawing.Size(30, 30);
+            this.blind.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.blind.TabIndex = 34;
+            this.blind.TabStop = false;
+            this.blind.Click += new System.EventHandler(this.emojiClick);
+            this.blind.MouseEnter += new System.EventHandler(this.emoji_MouseEnter);
+            this.blind.MouseLeave += new System.EventHandler(this.emoji_MouseLeave);
             // 
-            // pictureBox31
+            // cry
             // 
-            this.pictureBox31.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox31.Image = global::Diccon.Properties.Resources.cry;
-            this.pictureBox31.Location = new System.Drawing.Point(3, 39);
-            this.pictureBox31.Name = "pictureBox31";
-            this.pictureBox31.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox31.TabIndex = 35;
-            this.pictureBox31.TabStop = false;
-            this.pictureBox31.MouseEnter += new System.EventHandler(this.emoji_MouseEnter);
-            this.pictureBox31.MouseLeave += new System.EventHandler(this.emoji_MouseLeave);
+            this.cry.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cry.Image = global::Diccon.Properties.Resources.cry;
+            this.cry.Location = new System.Drawing.Point(3, 39);
+            this.cry.Name = "cry";
+            this.cry.Size = new System.Drawing.Size(30, 30);
+            this.cry.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.cry.TabIndex = 35;
+            this.cry.TabStop = false;
+            this.cry.Click += new System.EventHandler(this.emojiClick);
+            this.cry.MouseEnter += new System.EventHandler(this.emoji_MouseEnter);
+            this.cry.MouseLeave += new System.EventHandler(this.emoji_MouseLeave);
             // 
-            // pictureBox32
+            // dead
             // 
-            this.pictureBox32.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox32.Image = global::Diccon.Properties.Resources.dead;
-            this.pictureBox32.Location = new System.Drawing.Point(39, 39);
-            this.pictureBox32.Name = "pictureBox32";
-            this.pictureBox32.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox32.TabIndex = 36;
-            this.pictureBox32.TabStop = false;
-            this.pictureBox32.MouseEnter += new System.EventHandler(this.emoji_MouseEnter);
-            this.pictureBox32.MouseLeave += new System.EventHandler(this.emoji_MouseLeave);
+            this.dead.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dead.Image = global::Diccon.Properties.Resources.dead;
+            this.dead.Location = new System.Drawing.Point(39, 39);
+            this.dead.Name = "dead";
+            this.dead.Size = new System.Drawing.Size(30, 30);
+            this.dead.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.dead.TabIndex = 36;
+            this.dead.TabStop = false;
+            this.dead.Click += new System.EventHandler(this.emojiClick);
+            this.dead.MouseEnter += new System.EventHandler(this.emoji_MouseEnter);
+            this.dead.MouseLeave += new System.EventHandler(this.emoji_MouseLeave);
             // 
-            // pictureBox33
+            // doubtful
             // 
-            this.pictureBox33.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox33.Image = global::Diccon.Properties.Resources.doubtful;
-            this.pictureBox33.Location = new System.Drawing.Point(75, 39);
-            this.pictureBox33.Name = "pictureBox33";
-            this.pictureBox33.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox33.TabIndex = 37;
-            this.pictureBox33.TabStop = false;
-            this.pictureBox33.MouseEnter += new System.EventHandler(this.emoji_MouseEnter);
-            this.pictureBox33.MouseLeave += new System.EventHandler(this.emoji_MouseLeave);
+            this.doubtful.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.doubtful.Image = global::Diccon.Properties.Resources.doubtful;
+            this.doubtful.Location = new System.Drawing.Point(75, 39);
+            this.doubtful.Name = "doubtful";
+            this.doubtful.Size = new System.Drawing.Size(30, 30);
+            this.doubtful.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.doubtful.TabIndex = 37;
+            this.doubtful.TabStop = false;
+            this.doubtful.Click += new System.EventHandler(this.emojiClick);
+            this.doubtful.MouseEnter += new System.EventHandler(this.emoji_MouseEnter);
+            this.doubtful.MouseLeave += new System.EventHandler(this.emoji_MouseLeave);
             // 
-            // pictureBox34
+            // foolish
             // 
-            this.pictureBox34.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox34.Image = global::Diccon.Properties.Resources.foolish;
-            this.pictureBox34.Location = new System.Drawing.Point(111, 39);
-            this.pictureBox34.Name = "pictureBox34";
-            this.pictureBox34.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox34.TabIndex = 38;
-            this.pictureBox34.TabStop = false;
-            this.pictureBox34.MouseEnter += new System.EventHandler(this.emoji_MouseEnter);
-            this.pictureBox34.MouseLeave += new System.EventHandler(this.emoji_MouseLeave);
+            this.foolish.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.foolish.Image = global::Diccon.Properties.Resources.foolish;
+            this.foolish.Location = new System.Drawing.Point(111, 39);
+            this.foolish.Name = "foolish";
+            this.foolish.Size = new System.Drawing.Size(30, 30);
+            this.foolish.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.foolish.TabIndex = 38;
+            this.foolish.TabStop = false;
+            this.foolish.Click += new System.EventHandler(this.emojiClick);
+            this.foolish.MouseEnter += new System.EventHandler(this.emoji_MouseEnter);
+            this.foolish.MouseLeave += new System.EventHandler(this.emoji_MouseLeave);
             // 
-            // pictureBox35
+            // furious
             // 
-            this.pictureBox35.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox35.Image = global::Diccon.Properties.Resources.furious;
-            this.pictureBox35.Location = new System.Drawing.Point(147, 39);
-            this.pictureBox35.Name = "pictureBox35";
-            this.pictureBox35.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox35.TabIndex = 39;
-            this.pictureBox35.TabStop = false;
-            this.pictureBox35.MouseEnter += new System.EventHandler(this.emoji_MouseEnter);
-            this.pictureBox35.MouseLeave += new System.EventHandler(this.emoji_MouseLeave);
+            this.furious.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.furious.Image = global::Diccon.Properties.Resources.furious;
+            this.furious.Location = new System.Drawing.Point(147, 39);
+            this.furious.Name = "furious";
+            this.furious.Size = new System.Drawing.Size(30, 30);
+            this.furious.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.furious.TabIndex = 39;
+            this.furious.TabStop = false;
+            this.furious.Click += new System.EventHandler(this.emojiClick);
+            this.furious.MouseEnter += new System.EventHandler(this.emoji_MouseEnter);
+            this.furious.MouseLeave += new System.EventHandler(this.emoji_MouseLeave);
             // 
-            // pictureBox36
+            // glued
             // 
-            this.pictureBox36.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox36.Image = global::Diccon.Properties.Resources.glued;
-            this.pictureBox36.Location = new System.Drawing.Point(183, 39);
-            this.pictureBox36.Name = "pictureBox36";
-            this.pictureBox36.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox36.TabIndex = 40;
-            this.pictureBox36.TabStop = false;
-            this.pictureBox36.MouseEnter += new System.EventHandler(this.emoji_MouseEnter);
-            this.pictureBox36.MouseLeave += new System.EventHandler(this.emoji_MouseLeave);
+            this.glued.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.glued.Image = global::Diccon.Properties.Resources.glued;
+            this.glued.Location = new System.Drawing.Point(183, 39);
+            this.glued.Name = "glued";
+            this.glued.Size = new System.Drawing.Size(30, 30);
+            this.glued.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.glued.TabIndex = 40;
+            this.glued.TabStop = false;
+            this.glued.Click += new System.EventHandler(this.emojiClick);
+            this.glued.MouseEnter += new System.EventHandler(this.emoji_MouseEnter);
+            this.glued.MouseLeave += new System.EventHandler(this.emoji_MouseLeave);
             // 
-            // pictureBox37
+            // grumble
             // 
-            this.pictureBox37.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox37.Image = global::Diccon.Properties.Resources.grumble;
-            this.pictureBox37.Location = new System.Drawing.Point(219, 39);
-            this.pictureBox37.Name = "pictureBox37";
-            this.pictureBox37.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox37.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox37.TabIndex = 41;
-            this.pictureBox37.TabStop = false;
-            this.pictureBox37.MouseEnter += new System.EventHandler(this.emoji_MouseEnter);
-            this.pictureBox37.MouseLeave += new System.EventHandler(this.emoji_MouseLeave);
+            this.grumble.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.grumble.Image = global::Diccon.Properties.Resources.grumble;
+            this.grumble.Location = new System.Drawing.Point(219, 39);
+            this.grumble.Name = "grumble";
+            this.grumble.Size = new System.Drawing.Size(30, 30);
+            this.grumble.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.grumble.TabIndex = 41;
+            this.grumble.TabStop = false;
+            this.grumble.Click += new System.EventHandler(this.emojiClick);
+            this.grumble.MouseEnter += new System.EventHandler(this.emoji_MouseEnter);
+            this.grumble.MouseLeave += new System.EventHandler(this.emoji_MouseLeave);
             // 
-            // pictureBox38
+            // prejudice
             // 
-            this.pictureBox38.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox38.Image = global::Diccon.Properties.Resources.prejudice;
-            this.pictureBox38.Location = new System.Drawing.Point(255, 39);
-            this.pictureBox38.Name = "pictureBox38";
-            this.pictureBox38.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox38.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox38.TabIndex = 42;
-            this.pictureBox38.TabStop = false;
-            this.pictureBox38.MouseEnter += new System.EventHandler(this.emoji_MouseEnter);
-            this.pictureBox38.MouseLeave += new System.EventHandler(this.emoji_MouseLeave);
+            this.prejudice.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.prejudice.Image = global::Diccon.Properties.Resources.prejudice;
+            this.prejudice.Location = new System.Drawing.Point(255, 39);
+            this.prejudice.Name = "prejudice";
+            this.prejudice.Size = new System.Drawing.Size(30, 30);
+            this.prejudice.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.prejudice.TabIndex = 42;
+            this.prejudice.TabStop = false;
+            this.prejudice.Click += new System.EventHandler(this.emojiClick);
+            this.prejudice.MouseEnter += new System.EventHandler(this.emoji_MouseEnter);
+            this.prejudice.MouseLeave += new System.EventHandler(this.emoji_MouseLeave);
             // 
-            // pictureBox39
+            // reluctant
             // 
-            this.pictureBox39.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox39.Image = global::Diccon.Properties.Resources.reluctant;
-            this.pictureBox39.Location = new System.Drawing.Point(3, 75);
-            this.pictureBox39.Name = "pictureBox39";
-            this.pictureBox39.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox39.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox39.TabIndex = 43;
-            this.pictureBox39.TabStop = false;
-            this.pictureBox39.MouseEnter += new System.EventHandler(this.emoji_MouseEnter);
-            this.pictureBox39.MouseLeave += new System.EventHandler(this.emoji_MouseLeave);
+            this.reluctant.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.reluctant.Image = global::Diccon.Properties.Resources.reluctant;
+            this.reluctant.Location = new System.Drawing.Point(3, 75);
+            this.reluctant.Name = "reluctant";
+            this.reluctant.Size = new System.Drawing.Size(30, 30);
+            this.reluctant.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.reluctant.TabIndex = 43;
+            this.reluctant.TabStop = false;
+            this.reluctant.Click += new System.EventHandler(this.emojiClick);
+            this.reluctant.MouseEnter += new System.EventHandler(this.emoji_MouseEnter);
+            this.reluctant.MouseLeave += new System.EventHandler(this.emoji_MouseLeave);
             // 
-            // pictureBox40
+            // ridiculous
             // 
-            this.pictureBox40.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox40.Image = global::Diccon.Properties.Resources.ridiculous;
-            this.pictureBox40.Location = new System.Drawing.Point(39, 75);
-            this.pictureBox40.Name = "pictureBox40";
-            this.pictureBox40.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox40.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox40.TabIndex = 44;
-            this.pictureBox40.TabStop = false;
-            this.pictureBox40.MouseEnter += new System.EventHandler(this.emoji_MouseEnter);
-            this.pictureBox40.MouseLeave += new System.EventHandler(this.emoji_MouseLeave);
+            this.ridiculous.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ridiculous.Image = global::Diccon.Properties.Resources.ridiculous;
+            this.ridiculous.Location = new System.Drawing.Point(39, 75);
+            this.ridiculous.Name = "ridiculous";
+            this.ridiculous.Size = new System.Drawing.Size(30, 30);
+            this.ridiculous.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ridiculous.TabIndex = 44;
+            this.ridiculous.TabStop = false;
+            this.ridiculous.Click += new System.EventHandler(this.emojiClick);
+            this.ridiculous.MouseEnter += new System.EventHandler(this.emoji_MouseEnter);
+            this.ridiculous.MouseLeave += new System.EventHandler(this.emoji_MouseLeave);
             // 
-            // pictureBox41
+            // shocked
             // 
-            this.pictureBox41.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox41.Image = global::Diccon.Properties.Resources.shocked;
-            this.pictureBox41.Location = new System.Drawing.Point(75, 75);
-            this.pictureBox41.Name = "pictureBox41";
-            this.pictureBox41.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox41.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox41.TabIndex = 45;
-            this.pictureBox41.TabStop = false;
-            this.pictureBox41.MouseEnter += new System.EventHandler(this.emoji_MouseEnter);
-            this.pictureBox41.MouseLeave += new System.EventHandler(this.emoji_MouseLeave);
+            this.shocked.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.shocked.Image = global::Diccon.Properties.Resources.shocked;
+            this.shocked.Location = new System.Drawing.Point(75, 75);
+            this.shocked.Name = "shocked";
+            this.shocked.Size = new System.Drawing.Size(30, 30);
+            this.shocked.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.shocked.TabIndex = 45;
+            this.shocked.TabStop = false;
+            this.shocked.Click += new System.EventHandler(this.emojiClick);
+            this.shocked.MouseEnter += new System.EventHandler(this.emoji_MouseEnter);
+            this.shocked.MouseLeave += new System.EventHandler(this.emoji_MouseLeave);
             // 
-            // pictureBox42
+            // stuck
             // 
-            this.pictureBox42.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox42.Image = global::Diccon.Properties.Resources.stuck;
-            this.pictureBox42.Location = new System.Drawing.Point(111, 75);
-            this.pictureBox42.Name = "pictureBox42";
-            this.pictureBox42.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox42.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox42.TabIndex = 46;
-            this.pictureBox42.TabStop = false;
-            this.pictureBox42.MouseEnter += new System.EventHandler(this.emoji_MouseEnter);
-            this.pictureBox42.MouseLeave += new System.EventHandler(this.emoji_MouseLeave);
+            this.stuck.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.stuck.Image = global::Diccon.Properties.Resources.stuck;
+            this.stuck.Location = new System.Drawing.Point(111, 75);
+            this.stuck.Name = "stuck";
+            this.stuck.Size = new System.Drawing.Size(30, 30);
+            this.stuck.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.stuck.TabIndex = 46;
+            this.stuck.TabStop = false;
+            this.stuck.Click += new System.EventHandler(this.emojiClick);
+            this.stuck.MouseEnter += new System.EventHandler(this.emoji_MouseEnter);
+            this.stuck.MouseLeave += new System.EventHandler(this.emoji_MouseLeave);
             // 
-            // pictureBox43
+            // surrender
             // 
-            this.pictureBox43.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox43.Image = global::Diccon.Properties.Resources.surrender;
-            this.pictureBox43.Location = new System.Drawing.Point(147, 75);
-            this.pictureBox43.Name = "pictureBox43";
-            this.pictureBox43.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox43.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox43.TabIndex = 47;
-            this.pictureBox43.TabStop = false;
-            this.pictureBox43.MouseEnter += new System.EventHandler(this.emoji_MouseEnter);
-            this.pictureBox43.MouseLeave += new System.EventHandler(this.emoji_MouseLeave);
+            this.surrender.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.surrender.Image = global::Diccon.Properties.Resources.surrender;
+            this.surrender.Location = new System.Drawing.Point(147, 75);
+            this.surrender.Name = "surrender";
+            this.surrender.Size = new System.Drawing.Size(30, 30);
+            this.surrender.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.surrender.TabIndex = 47;
+            this.surrender.TabStop = false;
+            this.surrender.Click += new System.EventHandler(this.emojiClick);
+            this.surrender.MouseEnter += new System.EventHandler(this.emoji_MouseEnter);
+            this.surrender.MouseLeave += new System.EventHandler(this.emoji_MouseLeave);
             // 
-            // pictureBox44
+            // wary
             // 
-            this.pictureBox44.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox44.Image = global::Diccon.Properties.Resources.wary;
-            this.pictureBox44.Location = new System.Drawing.Point(183, 75);
-            this.pictureBox44.Name = "pictureBox44";
-            this.pictureBox44.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox44.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox44.TabIndex = 48;
-            this.pictureBox44.TabStop = false;
-            this.pictureBox44.MouseEnter += new System.EventHandler(this.emoji_MouseEnter);
-            this.pictureBox44.MouseLeave += new System.EventHandler(this.emoji_MouseLeave);
+            this.wary.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.wary.Image = global::Diccon.Properties.Resources.wary;
+            this.wary.Location = new System.Drawing.Point(183, 75);
+            this.wary.Name = "wary";
+            this.wary.Size = new System.Drawing.Size(30, 30);
+            this.wary.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.wary.TabIndex = 48;
+            this.wary.TabStop = false;
+            this.wary.Click += new System.EventHandler(this.emojiClick);
+            this.wary.MouseEnter += new System.EventHandler(this.emoji_MouseEnter);
+            this.wary.MouseLeave += new System.EventHandler(this.emoji_MouseLeave);
+            // 
+            // btCopy
+            // 
+            this.btCopy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this.btCopy.BorderColor = System.Drawing.SystemColors.GrayText;
+            this.btCopy.Image = global::Diccon.Properties.Resources.copy_white_24;
+            this.btCopy.Location = new System.Drawing.Point(268, 178);
+            this.btCopy.Name = "btCopy";
+            this.btCopy.Radius = 20;
+            this.btCopy.Size = new System.Drawing.Size(42, 35);
+            this.btCopy.TabIndex = 51;
+            this.btCopy.Thickness = 1F;
+            this.btCopy.Click += new System.EventHandler(this.btCopy_Click);
+            // 
+            // lbEmojiText
+            // 
+            this.lbEmojiText.AutoSize = true;
+            this.lbEmojiText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.lbEmojiText.BorderColor = System.Drawing.SystemColors.GrayText;
+            this.lbEmojiText.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbEmojiText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbEmojiText.Location = new System.Drawing.Point(15, 178);
+            this.lbEmojiText.Name = "lbEmojiText";
+            this.lbEmojiText.Padding = new System.Windows.Forms.Padding(7, 5, 7, 5);
+            this.lbEmojiText.Radius = 20;
+            this.lbEmojiText.Size = new System.Drawing.Size(88, 30);
+            this.lbEmojiText.TabIndex = 49;
+            this.lbEmojiText.Text = "Woo-hoo";
+            this.lbEmojiText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbEmojiText.Thickness = 5F;
             // 
             // emoji
             // 
@@ -422,6 +476,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GrayText;
             this.ClientSize = new System.Drawing.Size(322, 219);
+            this.Controls.Add(this.btCopy);
+            this.Controls.Add(this.lbEmojiText);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btClose);
             this.Controls.Add(this.label1);
@@ -436,28 +492,28 @@
             this.Deactivate += new System.EventHandler(this.emoji_Deactivate);
             ((System.ComponentModel.ISupportInitialize)(this.btClose)).EndInit();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox40)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox41)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox42)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox43)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox44)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.laugh)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shame)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.silly)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sleeping)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wonder)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.astonished)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.annoyed)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.blind)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cry)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dead)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.doubtful)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.foolish)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.furious)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.glued)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grumble)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prejudice)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reluctant)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ridiculous)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shocked)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stuck)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.surrender)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wary)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -467,27 +523,29 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox btClose;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.PictureBox pictureBox11;
-        private System.Windows.Forms.PictureBox pictureBox29;
-        private System.Windows.Forms.PictureBox pictureBox30;
-        private System.Windows.Forms.PictureBox pictureBox31;
-        private System.Windows.Forms.PictureBox pictureBox32;
-        private System.Windows.Forms.PictureBox pictureBox33;
-        private System.Windows.Forms.PictureBox pictureBox34;
-        private System.Windows.Forms.PictureBox pictureBox35;
-        private System.Windows.Forms.PictureBox pictureBox36;
-        private System.Windows.Forms.PictureBox pictureBox37;
-        private System.Windows.Forms.PictureBox pictureBox38;
-        private System.Windows.Forms.PictureBox pictureBox39;
-        private System.Windows.Forms.PictureBox pictureBox40;
-        private System.Windows.Forms.PictureBox pictureBox41;
-        private System.Windows.Forms.PictureBox pictureBox42;
-        private System.Windows.Forms.PictureBox pictureBox43;
-        private System.Windows.Forms.PictureBox pictureBox44;
+        private System.Windows.Forms.PictureBox laugh;
+        private System.Windows.Forms.PictureBox shame;
+        private System.Windows.Forms.PictureBox silly;
+        private System.Windows.Forms.PictureBox sleeping;
+        private System.Windows.Forms.PictureBox wonder;
+        private System.Windows.Forms.PictureBox astonished;
+        private System.Windows.Forms.PictureBox annoyed;
+        private System.Windows.Forms.PictureBox blind;
+        private System.Windows.Forms.PictureBox cry;
+        private System.Windows.Forms.PictureBox dead;
+        private System.Windows.Forms.PictureBox doubtful;
+        private System.Windows.Forms.PictureBox foolish;
+        private System.Windows.Forms.PictureBox furious;
+        private System.Windows.Forms.PictureBox glued;
+        private System.Windows.Forms.PictureBox grumble;
+        private System.Windows.Forms.PictureBox prejudice;
+        private System.Windows.Forms.PictureBox reluctant;
+        private System.Windows.Forms.PictureBox ridiculous;
+        private System.Windows.Forms.PictureBox shocked;
+        private System.Windows.Forms.PictureBox stuck;
+        private System.Windows.Forms.PictureBox surrender;
+        private System.Windows.Forms.PictureBox wary;
+        private RoundedLabel lbEmojiText;
+        private RoundedLabel btCopy;
     }
 }
