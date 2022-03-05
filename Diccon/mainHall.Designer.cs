@@ -261,6 +261,8 @@
             this.addEmoji.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.addEmoji.Thickness = 5F;
             this.addEmoji.Click += new System.EventHandler(this.addEmoji_Click);
+            this.addEmoji.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
+            this.addEmoji.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
             // 
             // addNote
             // 

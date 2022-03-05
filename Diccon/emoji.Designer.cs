@@ -28,8 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.btClose = new System.Windows.Forms.PictureBox();
+            this.roundedPanel1 = new Diccon.RoundedPanel();
+            this.btCopy = new Diccon.RoundedLabel();
+            this.lbEmojiText = new Diccon.RoundedLabel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.laugh = new System.Windows.Forms.PictureBox();
             this.shame = new System.Windows.Forms.PictureBox();
@@ -53,9 +54,8 @@
             this.stuck = new System.Windows.Forms.PictureBox();
             this.surrender = new System.Windows.Forms.PictureBox();
             this.wary = new System.Windows.Forms.PictureBox();
-            this.btCopy = new Diccon.RoundedLabel();
-            this.lbEmojiText = new Diccon.RoundedLabel();
-            ((System.ComponentModel.ISupportInitialize)(this.btClose)).BeginInit();
+            this.label1 = new System.Windows.Forms.Label();
+            this.roundedPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.laugh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.shame)).BeginInit();
@@ -81,27 +81,50 @@
             ((System.ComponentModel.ISupportInitialize)(this.wary)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // roundedPanel1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label1.Location = new System.Drawing.Point(12, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(256, 20);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Express your feeling in a faster way";
+            this.roundedPanel1.BackColor = System.Drawing.Color.White;
+            this.roundedPanel1.BorderColor = System.Drawing.Color.Black;
+            this.roundedPanel1.Controls.Add(this.btCopy);
+            this.roundedPanel1.Controls.Add(this.lbEmojiText);
+            this.roundedPanel1.Controls.Add(this.panel1);
+            this.roundedPanel1.Controls.Add(this.label1);
+            this.roundedPanel1.Location = new System.Drawing.Point(-1, -1);
+            this.roundedPanel1.Name = "roundedPanel1";
+            this.roundedPanel1.Radius = 20;
+            this.roundedPanel1.Size = new System.Drawing.Size(323, 220);
+            this.roundedPanel1.TabIndex = 52;
+            this.roundedPanel1.Thickness = 5F;
             // 
-            // btClose
+            // btCopy
             // 
-            this.btClose.Image = global::Diccon.Properties.Resources.close_16;
-            this.btClose.Location = new System.Drawing.Point(268, 0);
-            this.btClose.Name = "btClose";
-            this.btClose.Size = new System.Drawing.Size(52, 30);
-            this.btClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.btClose.TabIndex = 21;
-            this.btClose.TabStop = false;
-            this.btClose.Click += new System.EventHandler(this.btClose_Click);
+            this.btCopy.BackColor = System.Drawing.Color.Silver;
+            this.btCopy.BorderColor = System.Drawing.Color.White;
+            this.btCopy.Image = global::Diccon.Properties.Resources.copy_24;
+            this.btCopy.Location = new System.Drawing.Point(269, 171);
+            this.btCopy.Name = "btCopy";
+            this.btCopy.Radius = 20;
+            this.btCopy.Size = new System.Drawing.Size(42, 40);
+            this.btCopy.TabIndex = 51;
+            this.btCopy.Thickness = 1F;
+            this.btCopy.Click += new System.EventHandler(this.btCopy_Click);
+            // 
+            // lbEmojiText
+            // 
+            this.lbEmojiText.AutoSize = true;
+            this.lbEmojiText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.lbEmojiText.BorderColor = System.Drawing.Color.White;
+            this.lbEmojiText.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbEmojiText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbEmojiText.Location = new System.Drawing.Point(15, 178);
+            this.lbEmojiText.Name = "lbEmojiText";
+            this.lbEmojiText.Padding = new System.Windows.Forms.Padding(7, 5, 7, 5);
+            this.lbEmojiText.Radius = 20;
+            this.lbEmojiText.Size = new System.Drawing.Size(88, 30);
+            this.lbEmojiText.TabIndex = 49;
+            this.lbEmojiText.Text = "Woo-hoo";
+            this.lbEmojiText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbEmojiText.Thickness = 5F;
             // 
             // panel1
             // 
@@ -127,7 +150,7 @@
             this.panel1.Controls.Add(this.stuck);
             this.panel1.Controls.Add(this.surrender);
             this.panel1.Controls.Add(this.wary);
-            this.panel1.Location = new System.Drawing.Point(16, 56);
+            this.panel1.Location = new System.Drawing.Point(16, 52);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(295, 119);
             this.panel1.TabIndex = 22;
@@ -440,35 +463,16 @@
             this.wary.MouseEnter += new System.EventHandler(this.emoji_MouseEnter);
             this.wary.MouseLeave += new System.EventHandler(this.emoji_MouseLeave);
             // 
-            // btCopy
+            // label1
             // 
-            this.btCopy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.btCopy.BorderColor = System.Drawing.SystemColors.GrayText;
-            this.btCopy.Image = global::Diccon.Properties.Resources.copy_white_24;
-            this.btCopy.Location = new System.Drawing.Point(268, 178);
-            this.btCopy.Name = "btCopy";
-            this.btCopy.Radius = 20;
-            this.btCopy.Size = new System.Drawing.Size(42, 35);
-            this.btCopy.TabIndex = 51;
-            this.btCopy.Thickness = 1F;
-            this.btCopy.Click += new System.EventHandler(this.btCopy_Click);
-            // 
-            // lbEmojiText
-            // 
-            this.lbEmojiText.AutoSize = true;
-            this.lbEmojiText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.lbEmojiText.BorderColor = System.Drawing.SystemColors.GrayText;
-            this.lbEmojiText.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbEmojiText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbEmojiText.Location = new System.Drawing.Point(15, 178);
-            this.lbEmojiText.Name = "lbEmojiText";
-            this.lbEmojiText.Padding = new System.Windows.Forms.Padding(7, 5, 7, 5);
-            this.lbEmojiText.Radius = 20;
-            this.lbEmojiText.Size = new System.Drawing.Size(88, 30);
-            this.lbEmojiText.TabIndex = 49;
-            this.lbEmojiText.Text = "Woo-hoo";
-            this.lbEmojiText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbEmojiText.Thickness = 5F;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(12, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(256, 20);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Express your feeling in a faster way";
             // 
             // emoji
             // 
@@ -476,11 +480,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GrayText;
             this.ClientSize = new System.Drawing.Size(322, 219);
-            this.Controls.Add(this.btCopy);
-            this.Controls.Add(this.lbEmojiText);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btClose);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.roundedPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -490,7 +490,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "emoji";
             this.Deactivate += new System.EventHandler(this.emoji_Deactivate);
-            ((System.ComponentModel.ISupportInitialize)(this.btClose)).EndInit();
+            this.roundedPanel1.ResumeLayout(false);
+            this.roundedPanel1.PerformLayout();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.laugh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.shame)).EndInit();
@@ -515,13 +516,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.surrender)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.wary)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox btClose;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox laugh;
         private System.Windows.Forms.PictureBox shame;
@@ -547,5 +546,6 @@
         private System.Windows.Forms.PictureBox wary;
         private RoundedLabel lbEmojiText;
         private RoundedLabel btCopy;
+        private RoundedPanel roundedPanel1;
     }
 }

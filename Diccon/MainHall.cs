@@ -49,12 +49,12 @@ namespace Diccon
 
         private void textFromMic_Click(object sender, EventArgs e)
         {
-            Thread thread = new Thread(()=>
+            Thread thread = new Thread(() =>
             {
                 SpeechToText speechToText = new SpeechToText();
                 speechToText.Location = new Point(Cursor.Position.X - speechToText.Width / 2, Cursor.Position.Y - speechToText.Height - 15);
                 speechToText.ShowDialog();
-               
+
             });
             thread.Start();
             soundRelated sound = new soundRelated();
@@ -63,9 +63,7 @@ namespace Diccon
 
         private void textFromEmoji_Click(object sender, EventArgs e)
         {
-            emoji emoji = new emoji();
-            emoji.Location = new Point(Cursor.Position.X-emoji.Width/2,Cursor.Position.Y- emoji.Height-15);
-            emoji.Show();
+
 
         }
 
@@ -106,7 +104,7 @@ namespace Diccon
                     {
                         user.userLongMessage(searchTextBox.Text + "\n", exampleAskLongText, exampleAskLongColoredPanel, exampleAskLongPanel, flowChatBox);
                         dicconProp.currentTranslatedWord = await bot.getTranslatedTextAsync(dicconProp.currentWord);
-                        bot.botAnswerLongMessage(dicconProp.currentTranslatedWord+"\n", exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
+                        bot.botAnswerLongMessage(dicconProp.currentTranslatedWord + "\n", exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
                     }
                     else
                     {
@@ -157,7 +155,17 @@ namespace Diccon
 
         private void searchTextBox_TextChanged(object sender, EventArgs e)
         {
-            labelTypeToSearch.Visible = searchTextBox.Text != "" ? false : true;
+            if (searchTextBox.Text == "")
+            {
+                labelTypeToSearch.Visible = true;
+                btSend.SendToBack();
+            }
+            else
+            {
+                labelTypeToSearch.Visible = false;
+                btSend.BringToFront();
+
+            }
         }
 
         private void buttonAdd_Click(object sender, EventArgs e)
@@ -366,6 +374,31 @@ namespace Diccon
             btSynonym.Visible = false;
         }
 
+        private void textFromClipboard_Click(object sender, EventArgs e)
+        {
+            if (Clipboard.ContainsText())
+            {
+                searchTextBox.Text = Clipboard.GetText();
+            }
+        }
+
+        private void addEmoji_Click(object sender, EventArgs e)
+        {
+            emoji emoji = new emoji();
+            emoji.Location = new Point(Cursor.Position.X - emoji.Width / 2, Cursor.Position.Y - emoji.Height - 15);
+            emoji.Show();
+        }
+
+        private async void btSend_Click(object sender, EventArgs e)
+        {
+            dicconProp.currentWord = searchTextBox.Text;
+            await searchAndShow(dicconProp.currentWord);
+        }
+
+        private void realTimeDetermine_Tick(object sender, EventArgs e)
+        {
+            textFromClipboard.Visible = Clipboard.ContainsText() ? true : false;
+        }
     }
 
 }

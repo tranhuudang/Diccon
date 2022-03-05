@@ -35,6 +35,15 @@ namespace Diccon
             "Focus on being productive instead of busy.",
             "Worrying is silly. It’s like wandering around with an umbrella waiting for it to rain.",
             "Impossible is not a fact. It is an opinion.",
+            "Anyone who stops learning is old, whether at twenty or eighty. Anyone who keeps learning stays young.",
+            "The more that you read, the more things you will know. The more that you learn, the more places you’ll go.",
+            "Live as if you were to die tomorrow. Learn as if you were to live forever.",
+            "Being a student is easy. Learning requires actual work.",
+            "The beautiful thing about learning is nobody can take it away from you.",
+            "It is what we know already that often prevents us from learning.",
+            "I am learning all the time. The tombstone will be my diploma.",
+            "Education is the passport to the future, for tomorrow belongs to those who prepare for it today.",
+
         };
         string[] quote_vietnamese = { };
         /// <summary>
