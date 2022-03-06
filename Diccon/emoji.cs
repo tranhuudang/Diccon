@@ -14,21 +14,13 @@ namespace Diccon
 {
     public partial class emoji : Form
     {
-        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
-        private static extern IntPtr CreateRoundRectRgn
-      (
-          int nLeftRect,     // x-coordinate of upper-left corner
-          int nTopRect,      // y-coordinate of upper-left corner
-          int nRightRect,    // x-coordinate of lower-right corner
-          int nBottomRect,   // y-coordinate of lower-right corner
-          int nWidthEllipse, // width of ellipse
-          int nHeightEllipse // height of ellipse
-      );
         public emoji()
         {
             InitializeComponent();
+            /// With dropShadow Class to create a shadow for this form
+            /// 
+            (new Diccon.dropShadow()).ApplyShadows(this);
             this.FormBorderStyle = FormBorderStyle.None;
-            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
         }
 
         private void btClose_Click(object sender, EventArgs e)
@@ -60,6 +52,11 @@ namespace Diccon
         private void btCopy_Click(object sender, EventArgs e)
         {
             Clipboard.SetText(lbEmojiText.Text);
+        }
+
+        private void roundedPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

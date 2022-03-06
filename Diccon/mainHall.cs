@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Drawing;
+using System.Drawing.Drawing2D;
+using System.Drawing.Imaging;
 using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
@@ -20,10 +22,7 @@ namespace Diccon
         botBehavior bot = new botBehavior();
         userAction user = new userAction();
 
-        public mainHall()
-        {
-            InitializeComponent();
-        }
+        
 
         private void mainHall_Load(object sender, EventArgs e)
         {
@@ -398,6 +397,41 @@ namespace Diccon
         private void realTimeDetermine_Tick(object sender, EventArgs e)
         {
             textFromClipboard.Visible = Clipboard.ContainsText() ? true : false;
+        }
+
+
+        List<Control> shadowControls = new List<Control>();
+        Bitmap shadowBmp = null;
+
+        public mainHall()
+        {
+            InitializeComponent();
+        }
+
+        private void mainHall_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        private static void DrawShadowSmooth(GraphicsPath gp, int intensity, int radius, Bitmap dest)
+        {
+            using (Graphics g = Graphics.FromImage(dest))
+            {
+                g.Clear(Color.Transparent);
+                g.CompositingMode = CompositingMode.SourceCopy;
+                double alpha = 0;
+                double astep = 0;
+                double astepstep = (double)intensity / radius / (radius / 2D);
+                for (int thickness = radius; thickness > 0; thickness--)
+                {
+                    using (Pen p = new Pen(Color.FromArgb((int)alpha, 0, 0, 0), thickness))
+                    {
+                        p.LineJoin = LineJoin.Round;
+                        g.DrawPath(p, gp);
+                    }
+                    alpha += astep;
+                    astep += astepstep;
+                }
+            }
         }
     }
 

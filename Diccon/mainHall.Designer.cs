@@ -31,60 +31,29 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainHall));
             this.panel9 = new System.Windows.Forms.Panel();
-            this.PanelOfFind = new Diccon.RoundedPanel();
-            this.tbFind = new System.Windows.Forms.TextBox();
             this.buttonFind = new System.Windows.Forms.PictureBox();
             this.buttonMenu = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.logo = new System.Windows.Forms.PictureBox();
             this.panelBottom = new System.Windows.Forms.Panel();
             this.panelAdd = new System.Windows.Forms.Panel();
-            this.addEmoji = new Diccon.RoundedLabel();
-            this.addNote = new Diccon.RoundedLabel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.roundedPanel1 = new Diccon.RoundedPanel();
-            this.labelTypeToSearch = new System.Windows.Forms.Label();
-            this.searchTextBox = new System.Windows.Forms.TextBox();
-            this.textFromClipboard = new System.Windows.Forms.PictureBox();
-            this.textFromMic = new System.Windows.Forms.PictureBox();
-            this.btSend = new System.Windows.Forms.PictureBox();
             this.buttonAdd = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.flowChatBox = new System.Windows.Forms.FlowLayoutPanel();
             this.exampleflowLayoutSynonym = new System.Windows.Forms.FlowLayoutPanel();
-            this.exampleItemSynonym = new Diccon.RoundedLabel();
-            this.roundedLabel3 = new Diccon.RoundedLabel();
-            this.roundedLabel4 = new Diccon.RoundedLabel();
-            this.roundedLabel5 = new Diccon.RoundedLabel();
-            this.roundedLabel6 = new Diccon.RoundedLabel();
-            this.roundedLabel8 = new Diccon.RoundedLabel();
             this.exampleShortPanel = new System.Windows.Forms.Panel();
-            this.exampleShortText = new Diccon.RoundedLabel();
             this.exampleAskLongPanel = new System.Windows.Forms.Panel();
-            this.exampleAskLongColoredPanel = new Diccon.RoundedPanel();
-            this.exampleAskLongText = new System.Windows.Forms.RichTextBox();
             this.examplePlayPanel = new System.Windows.Forms.Panel();
             this.examplePlayAlignPanel = new System.Windows.Forms.Panel();
-            this.examplePlayColoredPanel = new Diccon.RoundedPanel();
-            this.exampleTextHolder = new System.Windows.Forms.Label();
-            this.examplePlayButton = new System.Windows.Forms.PictureBox();
             this.exampleAnswerPanel = new System.Windows.Forms.Panel();
-            this.exampleAnswerColoredPanel = new Diccon.RoundedPanel();
-            this.exampleAnswerText = new System.Windows.Forms.RichTextBox();
             this.panelSuggestFunction = new System.Windows.Forms.Panel();
-            this.roundedLabel2 = new Diccon.RoundedLabel();
             this.lbQuotation = new System.Windows.Forms.Label();
-            this.roundedLabel1 = new Diccon.RoundedLabel();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.roundedLabel7 = new Diccon.RoundedLabel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.buttonYourNote = new Diccon.RoundedLabel();
             this.exampleNotePanel = new System.Windows.Forms.Panel();
-            this.exampleNoteColoredPanel = new Diccon.RoundedPanel();
-            this.exampleNoteMenu = new System.Windows.Forms.Label();
-            this.exampleNoteRichTextBox = new System.Windows.Forms.RichTextBox();
             this.contextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.themeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.languageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -102,41 +71,72 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.suggestionTimer = new System.Windows.Forms.Timer(this.components);
             this.flowSuggestion = new System.Windows.Forms.FlowLayoutPanel();
+            this.realTimeDetermine = new System.Windows.Forms.Timer(this.components);
+            this.exampleItemSynonym = new Diccon.RoundedLabel();
+            this.roundedLabel3 = new Diccon.RoundedLabel();
+            this.roundedLabel4 = new Diccon.RoundedLabel();
+            this.roundedLabel5 = new Diccon.RoundedLabel();
+            this.roundedLabel6 = new Diccon.RoundedLabel();
+            this.roundedLabel8 = new Diccon.RoundedLabel();
+            this.exampleShortText = new Diccon.RoundedLabel();
+            this.exampleAskLongColoredPanel = new Diccon.RoundedPanel();
+            this.exampleAskLongText = new System.Windows.Forms.RichTextBox();
+            this.examplePlayColoredPanel = new Diccon.RoundedPanel();
+            this.exampleTextHolder = new System.Windows.Forms.Label();
+            this.examplePlayButton = new System.Windows.Forms.PictureBox();
+            this.exampleAnswerColoredPanel = new Diccon.RoundedPanel();
+            this.exampleAnswerText = new System.Windows.Forms.RichTextBox();
+            this.roundedLabel2 = new Diccon.RoundedLabel();
+            this.roundedLabel1 = new Diccon.RoundedLabel();
+            this.roundedLabel7 = new Diccon.RoundedLabel();
+            this.buttonYourNote = new Diccon.RoundedLabel();
+            this.exampleNoteColoredPanel = new Diccon.RoundedPanel();
+            this.exampleNoteMenu = new System.Windows.Forms.Label();
+            this.exampleNoteRichTextBox = new System.Windows.Forms.RichTextBox();
             this.btSynonym = new Diccon.RoundedLabel();
             this.roundedLabel9 = new Diccon.RoundedLabel();
             this.roundedLabel10 = new Diccon.RoundedLabel();
             this.roundedLabel11 = new Diccon.RoundedLabel();
             this.roundedLabel12 = new Diccon.RoundedLabel();
-            this.realTimeDetermine = new System.Windows.Forms.Timer(this.components);
+            this.PanelOfFind = new Diccon.RoundedPanel();
+            this.tbFind = new System.Windows.Forms.TextBox();
+            this.addEmoji = new Diccon.RoundedLabel();
+            this.addNote = new Diccon.RoundedLabel();
+            this.roundedPanel1 = new Diccon.RoundedPanel();
+            this.labelTypeToSearch = new System.Windows.Forms.Label();
+            this.searchTextBox = new System.Windows.Forms.TextBox();
+            this.textFromClipboard = new System.Windows.Forms.PictureBox();
+            this.textFromMic = new System.Windows.Forms.PictureBox();
+            this.btSend = new System.Windows.Forms.PictureBox();
             this.panel9.SuspendLayout();
-            this.PanelOfFind.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.buttonFind)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.panelBottom.SuspendLayout();
             this.panelAdd.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.roundedPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textFromClipboard)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textFromMic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btSend)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonAdd)).BeginInit();
             this.flowChatBox.SuspendLayout();
             this.exampleflowLayoutSynonym.SuspendLayout();
             this.exampleShortPanel.SuspendLayout();
             this.exampleAskLongPanel.SuspendLayout();
-            this.exampleAskLongColoredPanel.SuspendLayout();
             this.examplePlayPanel.SuspendLayout();
             this.examplePlayAlignPanel.SuspendLayout();
-            this.examplePlayColoredPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.examplePlayButton)).BeginInit();
             this.exampleAnswerPanel.SuspendLayout();
-            this.exampleAnswerColoredPanel.SuspendLayout();
             this.panelSuggestFunction.SuspendLayout();
             this.exampleNotePanel.SuspendLayout();
-            this.exampleNoteColoredPanel.SuspendLayout();
             this.contextMenu.SuspendLayout();
             this.flowSuggestion.SuspendLayout();
+            this.exampleAskLongColoredPanel.SuspendLayout();
+            this.examplePlayColoredPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.examplePlayButton)).BeginInit();
+            this.exampleAnswerColoredPanel.SuspendLayout();
+            this.exampleNoteColoredPanel.SuspendLayout();
+            this.PanelOfFind.SuspendLayout();
+            this.roundedPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textFromClipboard)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textFromMic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btSend)).BeginInit();
             this.SuspendLayout();
             // 
             // panel9
@@ -152,30 +152,6 @@
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(407, 70);
             this.panel9.TabIndex = 3;
-            // 
-            // PanelOfFind
-            // 
-            this.PanelOfFind.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.PanelOfFind.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.PanelOfFind.Controls.Add(this.tbFind);
-            this.PanelOfFind.Location = new System.Drawing.Point(204, 18);
-            this.PanelOfFind.Name = "PanelOfFind";
-            this.PanelOfFind.Radius = 20;
-            this.PanelOfFind.Size = new System.Drawing.Size(132, 34);
-            this.PanelOfFind.TabIndex = 9;
-            this.PanelOfFind.Thickness = 5F;
-            this.PanelOfFind.Visible = false;
-            // 
-            // tbFind
-            // 
-            this.tbFind.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.tbFind.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbFind.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbFind.Location = new System.Drawing.Point(9, 7);
-            this.tbFind.Name = "tbFind";
-            this.tbFind.Size = new System.Drawing.Size(113, 19);
-            this.tbFind.TabIndex = 8;
-            this.tbFind.Leave += new System.EventHandler(this.tbFind_Leave);
             // 
             // buttonFind
             // 
@@ -231,7 +207,7 @@
             this.panelBottom.Controls.Add(this.panelAdd);
             this.panelBottom.Controls.Add(this.panel1);
             this.panelBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelBottom.Location = new System.Drawing.Point(0, 573);
+            this.panelBottom.Location = new System.Drawing.Point(0, 520);
             this.panelBottom.Name = "panelBottom";
             this.panelBottom.Size = new System.Drawing.Size(407, 142);
             this.panelBottom.TabIndex = 5;
@@ -246,42 +222,6 @@
             this.panelAdd.Size = new System.Drawing.Size(407, 86);
             this.panelAdd.TabIndex = 5;
             // 
-            // addEmoji
-            // 
-            this.addEmoji.BackColor = System.Drawing.Color.Silver;
-            this.addEmoji.BorderColor = System.Drawing.Color.White;
-            this.addEmoji.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.addEmoji.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addEmoji.Image = global::Diccon.Properties.Resources.emoji_36;
-            this.addEmoji.Location = new System.Drawing.Point(97, 3);
-            this.addEmoji.Name = "addEmoji";
-            this.addEmoji.Radius = 50;
-            this.addEmoji.Size = new System.Drawing.Size(75, 71);
-            this.addEmoji.TabIndex = 6;
-            this.addEmoji.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.addEmoji.Thickness = 5F;
-            this.addEmoji.Click += new System.EventHandler(this.addEmoji_Click);
-            this.addEmoji.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
-            this.addEmoji.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
-            // 
-            // addNote
-            // 
-            this.addNote.BackColor = System.Drawing.Color.Silver;
-            this.addNote.BorderColor = System.Drawing.Color.White;
-            this.addNote.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.addNote.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addNote.Image = global::Diccon.Properties.Resources.note_add_36;
-            this.addNote.Location = new System.Drawing.Point(12, 3);
-            this.addNote.Name = "addNote";
-            this.addNote.Radius = 50;
-            this.addNote.Size = new System.Drawing.Size(75, 71);
-            this.addNote.TabIndex = 0;
-            this.addNote.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.addNote.Thickness = 5F;
-            this.addNote.Click += new System.EventHandler(this.addNote_Click);
-            this.addNote.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
-            this.addNote.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
-            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.roundedPanel1);
@@ -291,93 +231,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(407, 56);
             this.panel1.TabIndex = 7;
-            // 
-            // roundedPanel1
-            // 
-            this.roundedPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(235)))), ((int)(((byte)(252)))));
-            this.roundedPanel1.BorderColor = System.Drawing.Color.White;
-            this.roundedPanel1.Controls.Add(this.labelTypeToSearch);
-            this.roundedPanel1.Controls.Add(this.searchTextBox);
-            this.roundedPanel1.Controls.Add(this.textFromClipboard);
-            this.roundedPanel1.Controls.Add(this.textFromMic);
-            this.roundedPanel1.Controls.Add(this.btSend);
-            this.roundedPanel1.Location = new System.Drawing.Point(39, 4);
-            this.roundedPanel1.Name = "roundedPanel1";
-            this.roundedPanel1.Radius = 20;
-            this.roundedPanel1.Size = new System.Drawing.Size(354, 45);
-            this.roundedPanel1.TabIndex = 5;
-            this.roundedPanel1.Thickness = 5F;
-            // 
-            // labelTypeToSearch
-            // 
-            this.labelTypeToSearch.AutoSize = true;
-            this.labelTypeToSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.labelTypeToSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTypeToSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.labelTypeToSearch.Location = new System.Drawing.Point(17, 12);
-            this.labelTypeToSearch.Name = "labelTypeToSearch";
-            this.labelTypeToSearch.Size = new System.Drawing.Size(113, 20);
-            this.labelTypeToSearch.TabIndex = 6;
-            this.labelTypeToSearch.Text = "Type to search";
-            this.labelTypeToSearch.Click += new System.EventHandler(this.labelTypeToSearch_Click);
-            // 
-            // searchTextBox
-            // 
-            this.searchTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(235)))), ((int)(((byte)(252)))));
-            this.searchTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.searchTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchTextBox.Location = new System.Drawing.Point(16, 10);
-            this.searchTextBox.Name = "searchTextBox";
-            this.searchTextBox.Size = new System.Drawing.Size(260, 24);
-            this.searchTextBox.TabIndex = 1;
-            this.searchTextBox.Click += new System.EventHandler(this.searchTextBox_Click);
-            this.searchTextBox.TextChanged += new System.EventHandler(this.searchTextBox_TextChanged);
-            this.searchTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.searchTextBox_KeyDown);
-            this.searchTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.searchTextBox_KeyPress);
-            this.searchTextBox.Leave += new System.EventHandler(this.searchTextBox_Leave);
-            // 
-            // textFromClipboard
-            // 
-            this.textFromClipboard.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.textFromClipboard.Image = global::Diccon.Properties.Resources.clipboard_24;
-            this.textFromClipboard.Location = new System.Drawing.Point(282, 11);
-            this.textFromClipboard.Name = "textFromClipboard";
-            this.textFromClipboard.Size = new System.Drawing.Size(24, 24);
-            this.textFromClipboard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.textFromClipboard.TabIndex = 5;
-            this.textFromClipboard.TabStop = false;
-            this.textFromClipboard.Visible = false;
-            this.textFromClipboard.Click += new System.EventHandler(this.textFromClipboard_Click);
-            this.textFromClipboard.MouseEnter += new System.EventHandler(this.PictureBox_MouseEnter);
-            this.textFromClipboard.MouseLeave += new System.EventHandler(this.PictureBox_MouseLeave);
-            // 
-            // textFromMic
-            // 
-            this.textFromMic.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.textFromMic.Image = global::Diccon.Properties.Resources.keyboard_voice_24;
-            this.textFromMic.Location = new System.Drawing.Point(315, 11);
-            this.textFromMic.Name = "textFromMic";
-            this.textFromMic.Size = new System.Drawing.Size(24, 24);
-            this.textFromMic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.textFromMic.TabIndex = 4;
-            this.textFromMic.TabStop = false;
-            this.textFromMic.Click += new System.EventHandler(this.textFromMic_Click);
-            this.textFromMic.MouseEnter += new System.EventHandler(this.PictureBox_MouseEnter);
-            this.textFromMic.MouseLeave += new System.EventHandler(this.PictureBox_MouseLeave);
-            // 
-            // btSend
-            // 
-            this.btSend.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btSend.Image = global::Diccon.Properties.Resources.send_24;
-            this.btSend.Location = new System.Drawing.Point(315, 11);
-            this.btSend.Name = "btSend";
-            this.btSend.Size = new System.Drawing.Size(24, 24);
-            this.btSend.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.btSend.TabIndex = 7;
-            this.btSend.TabStop = false;
-            this.btSend.Click += new System.EventHandler(this.btSend_Click);
-            this.btSend.MouseEnter += new System.EventHandler(this.PictureBox_MouseEnter);
-            this.btSend.MouseLeave += new System.EventHandler(this.PictureBox_MouseLeave);
             // 
             // buttonAdd
             // 
@@ -415,7 +268,7 @@
             this.flowChatBox.Location = new System.Drawing.Point(0, 75);
             this.flowChatBox.Name = "flowChatBox";
             this.flowChatBox.Padding = new System.Windows.Forms.Padding(5);
-            this.flowChatBox.Size = new System.Drawing.Size(407, 463);
+            this.flowChatBox.Size = new System.Drawing.Size(407, 410);
             this.flowChatBox.TabIndex = 8;
             // 
             // exampleflowLayoutSynonym
@@ -436,108 +289,6 @@
             this.exampleflowLayoutSynonym.TabIndex = 6;
             this.exampleflowLayoutSynonym.Visible = false;
             // 
-            // exampleItemSynonym
-            // 
-            this.exampleItemSynonym.AutoSize = true;
-            this.exampleItemSynonym.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.exampleItemSynonym.BorderColor = System.Drawing.Color.White;
-            this.exampleItemSynonym.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.exampleItemSynonym.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exampleItemSynonym.Location = new System.Drawing.Point(67, 0);
-            this.exampleItemSynonym.Name = "exampleItemSynonym";
-            this.exampleItemSynonym.Padding = new System.Windows.Forms.Padding(8, 5, 8, 5);
-            this.exampleItemSynonym.Radius = 20;
-            this.exampleItemSynonym.Size = new System.Drawing.Size(155, 30);
-            this.exampleItemSynonym.TabIndex = 1;
-            this.exampleItemSynonym.Text = "Example Synonym";
-            this.exampleItemSynonym.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.exampleItemSynonym.Thickness = 5F;
-            // 
-            // roundedLabel3
-            // 
-            this.roundedLabel3.AutoSize = true;
-            this.roundedLabel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.roundedLabel3.BorderColor = System.Drawing.Color.White;
-            this.roundedLabel3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.roundedLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedLabel3.Location = new System.Drawing.Point(67, 30);
-            this.roundedLabel3.Name = "roundedLabel3";
-            this.roundedLabel3.Padding = new System.Windows.Forms.Padding(8, 5, 8, 5);
-            this.roundedLabel3.Radius = 20;
-            this.roundedLabel3.Size = new System.Drawing.Size(155, 30);
-            this.roundedLabel3.TabIndex = 2;
-            this.roundedLabel3.Text = "Example Synonym";
-            this.roundedLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.roundedLabel3.Thickness = 5F;
-            // 
-            // roundedLabel4
-            // 
-            this.roundedLabel4.AutoSize = true;
-            this.roundedLabel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.roundedLabel4.BorderColor = System.Drawing.Color.White;
-            this.roundedLabel4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.roundedLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedLabel4.Location = new System.Drawing.Point(67, 60);
-            this.roundedLabel4.Name = "roundedLabel4";
-            this.roundedLabel4.Padding = new System.Windows.Forms.Padding(8, 5, 8, 5);
-            this.roundedLabel4.Radius = 20;
-            this.roundedLabel4.Size = new System.Drawing.Size(155, 30);
-            this.roundedLabel4.TabIndex = 3;
-            this.roundedLabel4.Text = "Example Synonym";
-            this.roundedLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.roundedLabel4.Thickness = 5F;
-            // 
-            // roundedLabel5
-            // 
-            this.roundedLabel5.AutoSize = true;
-            this.roundedLabel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.roundedLabel5.BorderColor = System.Drawing.Color.White;
-            this.roundedLabel5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.roundedLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedLabel5.Location = new System.Drawing.Point(67, 90);
-            this.roundedLabel5.Name = "roundedLabel5";
-            this.roundedLabel5.Padding = new System.Windows.Forms.Padding(8, 5, 8, 5);
-            this.roundedLabel5.Radius = 20;
-            this.roundedLabel5.Size = new System.Drawing.Size(155, 30);
-            this.roundedLabel5.TabIndex = 4;
-            this.roundedLabel5.Text = "Example Synonym";
-            this.roundedLabel5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.roundedLabel5.Thickness = 5F;
-            // 
-            // roundedLabel6
-            // 
-            this.roundedLabel6.AutoSize = true;
-            this.roundedLabel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.roundedLabel6.BorderColor = System.Drawing.Color.White;
-            this.roundedLabel6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.roundedLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedLabel6.Location = new System.Drawing.Point(67, 120);
-            this.roundedLabel6.Name = "roundedLabel6";
-            this.roundedLabel6.Padding = new System.Windows.Forms.Padding(8, 5, 8, 5);
-            this.roundedLabel6.Radius = 20;
-            this.roundedLabel6.Size = new System.Drawing.Size(155, 30);
-            this.roundedLabel6.TabIndex = 5;
-            this.roundedLabel6.Text = "Example Synonym";
-            this.roundedLabel6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.roundedLabel6.Thickness = 5F;
-            // 
-            // roundedLabel8
-            // 
-            this.roundedLabel8.AutoSize = true;
-            this.roundedLabel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.roundedLabel8.BorderColor = System.Drawing.Color.White;
-            this.roundedLabel8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.roundedLabel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedLabel8.Location = new System.Drawing.Point(67, 150);
-            this.roundedLabel8.Name = "roundedLabel8";
-            this.roundedLabel8.Padding = new System.Windows.Forms.Padding(8, 5, 8, 5);
-            this.roundedLabel8.Radius = 20;
-            this.roundedLabel8.Size = new System.Drawing.Size(155, 30);
-            this.roundedLabel8.TabIndex = 6;
-            this.roundedLabel8.Text = "Example Synonym";
-            this.roundedLabel8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.roundedLabel8.Thickness = 5F;
-            // 
             // exampleShortPanel
             // 
             this.exampleShortPanel.Controls.Add(this.exampleShortText);
@@ -546,23 +297,6 @@
             this.exampleShortPanel.Size = new System.Drawing.Size(367, 39);
             this.exampleShortPanel.TabIndex = 0;
             this.exampleShortPanel.Visible = false;
-            // 
-            // exampleShortText
-            // 
-            this.exampleShortText.AutoSize = true;
-            this.exampleShortText.BackColor = System.Drawing.Color.LightGray;
-            this.exampleShortText.BorderColor = System.Drawing.Color.White;
-            this.exampleShortText.Dock = System.Windows.Forms.DockStyle.Left;
-            this.exampleShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exampleShortText.Location = new System.Drawing.Point(0, 0);
-            this.exampleShortText.Name = "exampleShortText";
-            this.exampleShortText.Padding = new System.Windows.Forms.Padding(10);
-            this.exampleShortText.Radius = 20;
-            this.exampleShortText.Size = new System.Drawing.Size(100, 40);
-            this.exampleShortText.TabIndex = 1;
-            this.exampleShortText.Text = "Exchange";
-            this.exampleShortText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.exampleShortText.Thickness = 5F;
             // 
             // exampleAskLongPanel
             // 
@@ -573,35 +307,6 @@
             this.exampleAskLongPanel.Size = new System.Drawing.Size(367, 40);
             this.exampleAskLongPanel.TabIndex = 3;
             this.exampleAskLongPanel.Visible = false;
-            // 
-            // exampleAskLongColoredPanel
-            // 
-            this.exampleAskLongColoredPanel.BackColor = System.Drawing.Color.LightGray;
-            this.exampleAskLongColoredPanel.BorderColor = System.Drawing.Color.White;
-            this.exampleAskLongColoredPanel.Controls.Add(this.exampleAskLongText);
-            this.exampleAskLongColoredPanel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.exampleAskLongColoredPanel.Location = new System.Drawing.Point(0, 0);
-            this.exampleAskLongColoredPanel.Name = "exampleAskLongColoredPanel";
-            this.exampleAskLongColoredPanel.Radius = 20;
-            this.exampleAskLongColoredPanel.Size = new System.Drawing.Size(300, 40);
-            this.exampleAskLongColoredPanel.TabIndex = 0;
-            this.exampleAskLongColoredPanel.Thickness = 5F;
-            // 
-            // exampleAskLongText
-            // 
-            this.exampleAskLongText.AutoWordSelection = true;
-            this.exampleAskLongText.BackColor = System.Drawing.Color.LightGray;
-            this.exampleAskLongText.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.exampleAskLongText.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.exampleAskLongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exampleAskLongText.ForeColor = System.Drawing.Color.Black;
-            this.exampleAskLongText.Location = new System.Drawing.Point(11, 9);
-            this.exampleAskLongText.Name = "exampleAskLongText";
-            this.exampleAskLongText.ReadOnly = true;
-            this.exampleAskLongText.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.exampleAskLongText.Size = new System.Drawing.Size(279, 23);
-            this.exampleAskLongText.TabIndex = 2;
-            this.exampleAskLongText.Text = "to protect someone or something against attack or criticism";
             // 
             // examplePlayPanel
             // 
@@ -621,43 +326,6 @@
             this.examplePlayAlignPanel.TabIndex = 0;
             this.examplePlayAlignPanel.Visible = false;
             // 
-            // examplePlayColoredPanel
-            // 
-            this.examplePlayColoredPanel.AutoSize = true;
-            this.examplePlayColoredPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.examplePlayColoredPanel.BorderColor = System.Drawing.Color.White;
-            this.examplePlayColoredPanel.Controls.Add(this.exampleTextHolder);
-            this.examplePlayColoredPanel.Controls.Add(this.examplePlayButton);
-            this.examplePlayColoredPanel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.examplePlayColoredPanel.Location = new System.Drawing.Point(0, 0);
-            this.examplePlayColoredPanel.Name = "examplePlayColoredPanel";
-            this.examplePlayColoredPanel.Radius = 20;
-            this.examplePlayColoredPanel.Size = new System.Drawing.Size(135, 39);
-            this.examplePlayColoredPanel.TabIndex = 0;
-            this.examplePlayColoredPanel.Thickness = 5F;
-            // 
-            // exampleTextHolder
-            // 
-            this.exampleTextHolder.AutoSize = true;
-            this.exampleTextHolder.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exampleTextHolder.Location = new System.Drawing.Point(42, 11);
-            this.exampleTextHolder.Name = "exampleTextHolder";
-            this.exampleTextHolder.Size = new System.Drawing.Size(90, 20);
-            this.exampleTextHolder.TabIndex = 3;
-            this.exampleTextHolder.Text = "Text Holder";
-            this.exampleTextHolder.Visible = false;
-            // 
-            // examplePlayButton
-            // 
-            this.examplePlayButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.examplePlayButton.Image = ((System.Drawing.Image)(resources.GetObject("examplePlayButton.Image")));
-            this.examplePlayButton.Location = new System.Drawing.Point(12, 7);
-            this.examplePlayButton.Name = "examplePlayButton";
-            this.examplePlayButton.Size = new System.Drawing.Size(24, 24);
-            this.examplePlayButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.examplePlayButton.TabIndex = 0;
-            this.examplePlayButton.TabStop = false;
-            // 
             // exampleAnswerPanel
             // 
             this.exampleAnswerPanel.Controls.Add(this.exampleAnswerColoredPanel);
@@ -666,36 +334,6 @@
             this.exampleAnswerPanel.Size = new System.Drawing.Size(367, 155);
             this.exampleAnswerPanel.TabIndex = 1;
             this.exampleAnswerPanel.Visible = false;
-            // 
-            // exampleAnswerColoredPanel
-            // 
-            this.exampleAnswerColoredPanel.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.exampleAnswerColoredPanel.BorderColor = System.Drawing.Color.White;
-            this.exampleAnswerColoredPanel.Controls.Add(this.exampleAnswerText);
-            this.exampleAnswerColoredPanel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.exampleAnswerColoredPanel.Location = new System.Drawing.Point(67, 0);
-            this.exampleAnswerColoredPanel.Name = "exampleAnswerColoredPanel";
-            this.exampleAnswerColoredPanel.Radius = 20;
-            this.exampleAnswerColoredPanel.Size = new System.Drawing.Size(300, 155);
-            this.exampleAnswerColoredPanel.TabIndex = 0;
-            this.exampleAnswerColoredPanel.Thickness = 5F;
-            // 
-            // exampleAnswerText
-            // 
-            this.exampleAnswerText.AutoWordSelection = true;
-            this.exampleAnswerText.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.exampleAnswerText.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.exampleAnswerText.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.exampleAnswerText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exampleAnswerText.ForeColor = System.Drawing.SystemColors.Window;
-            this.exampleAnswerText.Location = new System.Drawing.Point(10, 15);
-            this.exampleAnswerText.Name = "exampleAnswerText";
-            this.exampleAnswerText.ReadOnly = true;
-            this.exampleAnswerText.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.exampleAnswerText.Size = new System.Drawing.Size(279, 127);
-            this.exampleAnswerText.TabIndex = 1;
-            this.exampleAnswerText.Text = "to protect someone or something against attack or criticism";
-            this.exampleAnswerText.HScroll += new System.EventHandler(this.exampleAnswerText_HScroll);
             // 
             // panelSuggestFunction
             // 
@@ -713,23 +351,6 @@
             this.panelSuggestFunction.Size = new System.Drawing.Size(367, 468);
             this.panelSuggestFunction.TabIndex = 4;
             // 
-            // roundedLabel2
-            // 
-            this.roundedLabel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.roundedLabel2.BorderColor = System.Drawing.Color.White;
-            this.roundedLabel2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.roundedLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedLabel2.Image = global::Diccon.Properties.Resources.support_36;
-            this.roundedLabel2.Location = new System.Drawing.Point(206, 261);
-            this.roundedLabel2.Name = "roundedLabel2";
-            this.roundedLabel2.Radius = 50;
-            this.roundedLabel2.Size = new System.Drawing.Size(75, 71);
-            this.roundedLabel2.TabIndex = 7;
-            this.roundedLabel2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.roundedLabel2.Thickness = 5F;
-            this.roundedLabel2.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
-            this.roundedLabel2.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
-            // 
             // lbQuotation
             // 
             this.lbQuotation.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -739,23 +360,6 @@
             this.lbQuotation.TabIndex = 6;
             this.lbQuotation.Text = "“Don’t wish it were easier; wish you were better.”";
             this.lbQuotation.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // roundedLabel1
-            // 
-            this.roundedLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.roundedLabel1.BorderColor = System.Drawing.Color.White;
-            this.roundedLabel1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.roundedLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedLabel1.Image = global::Diccon.Properties.Resources.timeline_36;
-            this.roundedLabel1.Location = new System.Drawing.Point(107, 261);
-            this.roundedLabel1.Name = "roundedLabel1";
-            this.roundedLabel1.Radius = 50;
-            this.roundedLabel1.Size = new System.Drawing.Size(75, 71);
-            this.roundedLabel1.TabIndex = 5;
-            this.roundedLabel1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.roundedLabel1.Thickness = 5F;
-            this.roundedLabel1.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
-            this.roundedLabel1.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
             // 
             // label6
             // 
@@ -777,23 +381,6 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "Timeline";
             // 
-            // roundedLabel7
-            // 
-            this.roundedLabel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.roundedLabel7.BorderColor = System.Drawing.Color.White;
-            this.roundedLabel7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.roundedLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedLabel7.Image = global::Diccon.Properties.Resources.chat_36;
-            this.roundedLabel7.Location = new System.Drawing.Point(206, 160);
-            this.roundedLabel7.Name = "roundedLabel7";
-            this.roundedLabel7.Radius = 50;
-            this.roundedLabel7.Size = new System.Drawing.Size(75, 71);
-            this.roundedLabel7.TabIndex = 5;
-            this.roundedLabel7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.roundedLabel7.Thickness = 5F;
-            this.roundedLabel7.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
-            this.roundedLabel7.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -814,23 +401,6 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Your notes";
             // 
-            // buttonYourNote
-            // 
-            this.buttonYourNote.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.buttonYourNote.BorderColor = System.Drawing.Color.White;
-            this.buttonYourNote.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonYourNote.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonYourNote.Image = global::Diccon.Properties.Resources.your_note_36;
-            this.buttonYourNote.Location = new System.Drawing.Point(107, 160);
-            this.buttonYourNote.Name = "buttonYourNote";
-            this.buttonYourNote.Radius = 50;
-            this.buttonYourNote.Size = new System.Drawing.Size(75, 71);
-            this.buttonYourNote.TabIndex = 3;
-            this.buttonYourNote.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonYourNote.Thickness = 5F;
-            this.buttonYourNote.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
-            this.buttonYourNote.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
-            // 
             // exampleNotePanel
             // 
             this.exampleNotePanel.Controls.Add(this.exampleNoteColoredPanel);
@@ -839,43 +409,6 @@
             this.exampleNotePanel.Size = new System.Drawing.Size(367, 236);
             this.exampleNotePanel.TabIndex = 5;
             this.exampleNotePanel.Visible = false;
-            // 
-            // exampleNoteColoredPanel
-            // 
-            this.exampleNoteColoredPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.exampleNoteColoredPanel.BorderColor = System.Drawing.Color.White;
-            this.exampleNoteColoredPanel.Controls.Add(this.exampleNoteMenu);
-            this.exampleNoteColoredPanel.Controls.Add(this.exampleNoteRichTextBox);
-            this.exampleNoteColoredPanel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.exampleNoteColoredPanel.Location = new System.Drawing.Point(0, 0);
-            this.exampleNoteColoredPanel.Name = "exampleNoteColoredPanel";
-            this.exampleNoteColoredPanel.Radius = 20;
-            this.exampleNoteColoredPanel.Size = new System.Drawing.Size(367, 236);
-            this.exampleNoteColoredPanel.TabIndex = 0;
-            this.exampleNoteColoredPanel.Thickness = 5F;
-            // 
-            // exampleNoteMenu
-            // 
-            this.exampleNoteMenu.AutoSize = true;
-            this.exampleNoteMenu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.exampleNoteMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exampleNoteMenu.ForeColor = System.Drawing.Color.White;
-            this.exampleNoteMenu.Location = new System.Drawing.Point(13, 11);
-            this.exampleNoteMenu.Name = "exampleNoteMenu";
-            this.exampleNoteMenu.Size = new System.Drawing.Size(32, 17);
-            this.exampleNoteMenu.TabIndex = 1;
-            this.exampleNoteMenu.Text = "●●●";
-            // 
-            // exampleNoteRichTextBox
-            // 
-            this.exampleNoteRichTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.exampleNoteRichTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.exampleNoteRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exampleNoteRichTextBox.Location = new System.Drawing.Point(13, 45);
-            this.exampleNoteRichTextBox.Name = "exampleNoteRichTextBox";
-            this.exampleNoteRichTextBox.Size = new System.Drawing.Size(341, 177);
-            this.exampleNoteRichTextBox.TabIndex = 0;
-            this.exampleNoteRichTextBox.Text = "";
             // 
             // contextMenu
             // 
@@ -1004,11 +537,337 @@
             this.flowSuggestion.Controls.Add(this.roundedLabel11);
             this.flowSuggestion.Controls.Add(this.roundedLabel12);
             this.flowSuggestion.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.flowSuggestion.Location = new System.Drawing.Point(0, 538);
+            this.flowSuggestion.Location = new System.Drawing.Point(0, 485);
             this.flowSuggestion.Name = "flowSuggestion";
             this.flowSuggestion.Padding = new System.Windows.Forms.Padding(10, 5, 10, 0);
             this.flowSuggestion.Size = new System.Drawing.Size(407, 35);
             this.flowSuggestion.TabIndex = 9;
+            // 
+            // realTimeDetermine
+            // 
+            this.realTimeDetermine.Enabled = true;
+            this.realTimeDetermine.Interval = 2000;
+            this.realTimeDetermine.Tick += new System.EventHandler(this.realTimeDetermine_Tick);
+            // 
+            // exampleItemSynonym
+            // 
+            this.exampleItemSynonym.AutoSize = true;
+            this.exampleItemSynonym.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.exampleItemSynonym.BorderColor = System.Drawing.Color.White;
+            this.exampleItemSynonym.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.exampleItemSynonym.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exampleItemSynonym.Location = new System.Drawing.Point(67, 0);
+            this.exampleItemSynonym.Name = "exampleItemSynonym";
+            this.exampleItemSynonym.Padding = new System.Windows.Forms.Padding(8, 5, 8, 5);
+            this.exampleItemSynonym.Radius = 20;
+            this.exampleItemSynonym.Size = new System.Drawing.Size(155, 30);
+            this.exampleItemSynonym.TabIndex = 1;
+            this.exampleItemSynonym.Text = "Example Synonym";
+            this.exampleItemSynonym.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.exampleItemSynonym.Thickness = 5F;
+            // 
+            // roundedLabel3
+            // 
+            this.roundedLabel3.AutoSize = true;
+            this.roundedLabel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.roundedLabel3.BorderColor = System.Drawing.Color.White;
+            this.roundedLabel3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.roundedLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedLabel3.Location = new System.Drawing.Point(67, 30);
+            this.roundedLabel3.Name = "roundedLabel3";
+            this.roundedLabel3.Padding = new System.Windows.Forms.Padding(8, 5, 8, 5);
+            this.roundedLabel3.Radius = 20;
+            this.roundedLabel3.Size = new System.Drawing.Size(155, 30);
+            this.roundedLabel3.TabIndex = 2;
+            this.roundedLabel3.Text = "Example Synonym";
+            this.roundedLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.roundedLabel3.Thickness = 5F;
+            // 
+            // roundedLabel4
+            // 
+            this.roundedLabel4.AutoSize = true;
+            this.roundedLabel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.roundedLabel4.BorderColor = System.Drawing.Color.White;
+            this.roundedLabel4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.roundedLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedLabel4.Location = new System.Drawing.Point(67, 60);
+            this.roundedLabel4.Name = "roundedLabel4";
+            this.roundedLabel4.Padding = new System.Windows.Forms.Padding(8, 5, 8, 5);
+            this.roundedLabel4.Radius = 20;
+            this.roundedLabel4.Size = new System.Drawing.Size(155, 30);
+            this.roundedLabel4.TabIndex = 3;
+            this.roundedLabel4.Text = "Example Synonym";
+            this.roundedLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.roundedLabel4.Thickness = 5F;
+            // 
+            // roundedLabel5
+            // 
+            this.roundedLabel5.AutoSize = true;
+            this.roundedLabel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.roundedLabel5.BorderColor = System.Drawing.Color.White;
+            this.roundedLabel5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.roundedLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedLabel5.Location = new System.Drawing.Point(67, 90);
+            this.roundedLabel5.Name = "roundedLabel5";
+            this.roundedLabel5.Padding = new System.Windows.Forms.Padding(8, 5, 8, 5);
+            this.roundedLabel5.Radius = 20;
+            this.roundedLabel5.Size = new System.Drawing.Size(155, 30);
+            this.roundedLabel5.TabIndex = 4;
+            this.roundedLabel5.Text = "Example Synonym";
+            this.roundedLabel5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.roundedLabel5.Thickness = 5F;
+            // 
+            // roundedLabel6
+            // 
+            this.roundedLabel6.AutoSize = true;
+            this.roundedLabel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.roundedLabel6.BorderColor = System.Drawing.Color.White;
+            this.roundedLabel6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.roundedLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedLabel6.Location = new System.Drawing.Point(67, 120);
+            this.roundedLabel6.Name = "roundedLabel6";
+            this.roundedLabel6.Padding = new System.Windows.Forms.Padding(8, 5, 8, 5);
+            this.roundedLabel6.Radius = 20;
+            this.roundedLabel6.Size = new System.Drawing.Size(155, 30);
+            this.roundedLabel6.TabIndex = 5;
+            this.roundedLabel6.Text = "Example Synonym";
+            this.roundedLabel6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.roundedLabel6.Thickness = 5F;
+            // 
+            // roundedLabel8
+            // 
+            this.roundedLabel8.AutoSize = true;
+            this.roundedLabel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.roundedLabel8.BorderColor = System.Drawing.Color.White;
+            this.roundedLabel8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.roundedLabel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedLabel8.Location = new System.Drawing.Point(67, 150);
+            this.roundedLabel8.Name = "roundedLabel8";
+            this.roundedLabel8.Padding = new System.Windows.Forms.Padding(8, 5, 8, 5);
+            this.roundedLabel8.Radius = 20;
+            this.roundedLabel8.Size = new System.Drawing.Size(155, 30);
+            this.roundedLabel8.TabIndex = 6;
+            this.roundedLabel8.Text = "Example Synonym";
+            this.roundedLabel8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.roundedLabel8.Thickness = 5F;
+            // 
+            // exampleShortText
+            // 
+            this.exampleShortText.AutoSize = true;
+            this.exampleShortText.BackColor = System.Drawing.Color.LightGray;
+            this.exampleShortText.BorderColor = System.Drawing.Color.White;
+            this.exampleShortText.Dock = System.Windows.Forms.DockStyle.Left;
+            this.exampleShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exampleShortText.Location = new System.Drawing.Point(0, 0);
+            this.exampleShortText.Name = "exampleShortText";
+            this.exampleShortText.Padding = new System.Windows.Forms.Padding(10);
+            this.exampleShortText.Radius = 20;
+            this.exampleShortText.Size = new System.Drawing.Size(100, 40);
+            this.exampleShortText.TabIndex = 1;
+            this.exampleShortText.Text = "Exchange";
+            this.exampleShortText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.exampleShortText.Thickness = 5F;
+            // 
+            // exampleAskLongColoredPanel
+            // 
+            this.exampleAskLongColoredPanel.BackColor = System.Drawing.Color.LightGray;
+            this.exampleAskLongColoredPanel.BorderColor = System.Drawing.Color.White;
+            this.exampleAskLongColoredPanel.Controls.Add(this.exampleAskLongText);
+            this.exampleAskLongColoredPanel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.exampleAskLongColoredPanel.Location = new System.Drawing.Point(0, 0);
+            this.exampleAskLongColoredPanel.Name = "exampleAskLongColoredPanel";
+            this.exampleAskLongColoredPanel.Radius = 20;
+            this.exampleAskLongColoredPanel.Size = new System.Drawing.Size(300, 40);
+            this.exampleAskLongColoredPanel.TabIndex = 0;
+            this.exampleAskLongColoredPanel.Thickness = 5F;
+            // 
+            // exampleAskLongText
+            // 
+            this.exampleAskLongText.AutoWordSelection = true;
+            this.exampleAskLongText.BackColor = System.Drawing.Color.LightGray;
+            this.exampleAskLongText.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.exampleAskLongText.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.exampleAskLongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exampleAskLongText.ForeColor = System.Drawing.Color.Black;
+            this.exampleAskLongText.Location = new System.Drawing.Point(11, 9);
+            this.exampleAskLongText.Name = "exampleAskLongText";
+            this.exampleAskLongText.ReadOnly = true;
+            this.exampleAskLongText.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.exampleAskLongText.Size = new System.Drawing.Size(279, 23);
+            this.exampleAskLongText.TabIndex = 2;
+            this.exampleAskLongText.Text = "to protect someone or something against attack or criticism";
+            // 
+            // examplePlayColoredPanel
+            // 
+            this.examplePlayColoredPanel.AutoSize = true;
+            this.examplePlayColoredPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.examplePlayColoredPanel.BorderColor = System.Drawing.Color.White;
+            this.examplePlayColoredPanel.Controls.Add(this.exampleTextHolder);
+            this.examplePlayColoredPanel.Controls.Add(this.examplePlayButton);
+            this.examplePlayColoredPanel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.examplePlayColoredPanel.Location = new System.Drawing.Point(0, 0);
+            this.examplePlayColoredPanel.Name = "examplePlayColoredPanel";
+            this.examplePlayColoredPanel.Radius = 20;
+            this.examplePlayColoredPanel.Size = new System.Drawing.Size(135, 39);
+            this.examplePlayColoredPanel.TabIndex = 0;
+            this.examplePlayColoredPanel.Thickness = 5F;
+            // 
+            // exampleTextHolder
+            // 
+            this.exampleTextHolder.AutoSize = true;
+            this.exampleTextHolder.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exampleTextHolder.Location = new System.Drawing.Point(42, 11);
+            this.exampleTextHolder.Name = "exampleTextHolder";
+            this.exampleTextHolder.Size = new System.Drawing.Size(90, 20);
+            this.exampleTextHolder.TabIndex = 3;
+            this.exampleTextHolder.Text = "Text Holder";
+            this.exampleTextHolder.Visible = false;
+            // 
+            // examplePlayButton
+            // 
+            this.examplePlayButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.examplePlayButton.Image = ((System.Drawing.Image)(resources.GetObject("examplePlayButton.Image")));
+            this.examplePlayButton.Location = new System.Drawing.Point(12, 7);
+            this.examplePlayButton.Name = "examplePlayButton";
+            this.examplePlayButton.Size = new System.Drawing.Size(24, 24);
+            this.examplePlayButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.examplePlayButton.TabIndex = 0;
+            this.examplePlayButton.TabStop = false;
+            // 
+            // exampleAnswerColoredPanel
+            // 
+            this.exampleAnswerColoredPanel.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.exampleAnswerColoredPanel.BorderColor = System.Drawing.Color.White;
+            this.exampleAnswerColoredPanel.Controls.Add(this.exampleAnswerText);
+            this.exampleAnswerColoredPanel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.exampleAnswerColoredPanel.Location = new System.Drawing.Point(67, 0);
+            this.exampleAnswerColoredPanel.Name = "exampleAnswerColoredPanel";
+            this.exampleAnswerColoredPanel.Radius = 20;
+            this.exampleAnswerColoredPanel.Size = new System.Drawing.Size(300, 155);
+            this.exampleAnswerColoredPanel.TabIndex = 0;
+            this.exampleAnswerColoredPanel.Thickness = 5F;
+            // 
+            // exampleAnswerText
+            // 
+            this.exampleAnswerText.AutoWordSelection = true;
+            this.exampleAnswerText.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.exampleAnswerText.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.exampleAnswerText.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.exampleAnswerText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exampleAnswerText.ForeColor = System.Drawing.SystemColors.Window;
+            this.exampleAnswerText.Location = new System.Drawing.Point(10, 15);
+            this.exampleAnswerText.Name = "exampleAnswerText";
+            this.exampleAnswerText.ReadOnly = true;
+            this.exampleAnswerText.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.exampleAnswerText.Size = new System.Drawing.Size(279, 127);
+            this.exampleAnswerText.TabIndex = 1;
+            this.exampleAnswerText.Text = "to protect someone or something against attack or criticism";
+            this.exampleAnswerText.HScroll += new System.EventHandler(this.exampleAnswerText_HScroll);
+            // 
+            // roundedLabel2
+            // 
+            this.roundedLabel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.roundedLabel2.BorderColor = System.Drawing.Color.White;
+            this.roundedLabel2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.roundedLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedLabel2.Image = global::Diccon.Properties.Resources.support_36;
+            this.roundedLabel2.Location = new System.Drawing.Point(206, 261);
+            this.roundedLabel2.Name = "roundedLabel2";
+            this.roundedLabel2.Radius = 50;
+            this.roundedLabel2.Size = new System.Drawing.Size(75, 71);
+            this.roundedLabel2.TabIndex = 7;
+            this.roundedLabel2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.roundedLabel2.Thickness = 5F;
+            this.roundedLabel2.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
+            this.roundedLabel2.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
+            // 
+            // roundedLabel1
+            // 
+            this.roundedLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.roundedLabel1.BorderColor = System.Drawing.Color.White;
+            this.roundedLabel1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.roundedLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedLabel1.Image = global::Diccon.Properties.Resources.timeline_36;
+            this.roundedLabel1.Location = new System.Drawing.Point(107, 261);
+            this.roundedLabel1.Name = "roundedLabel1";
+            this.roundedLabel1.Radius = 50;
+            this.roundedLabel1.Size = new System.Drawing.Size(75, 71);
+            this.roundedLabel1.TabIndex = 5;
+            this.roundedLabel1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.roundedLabel1.Thickness = 5F;
+            this.roundedLabel1.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
+            this.roundedLabel1.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
+            // 
+            // roundedLabel7
+            // 
+            this.roundedLabel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.roundedLabel7.BorderColor = System.Drawing.Color.White;
+            this.roundedLabel7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.roundedLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedLabel7.Image = global::Diccon.Properties.Resources.chat_36;
+            this.roundedLabel7.Location = new System.Drawing.Point(206, 160);
+            this.roundedLabel7.Name = "roundedLabel7";
+            this.roundedLabel7.Radius = 50;
+            this.roundedLabel7.Size = new System.Drawing.Size(75, 71);
+            this.roundedLabel7.TabIndex = 5;
+            this.roundedLabel7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.roundedLabel7.Thickness = 5F;
+            this.roundedLabel7.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
+            this.roundedLabel7.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
+            // 
+            // buttonYourNote
+            // 
+            this.buttonYourNote.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.buttonYourNote.BorderColor = System.Drawing.Color.White;
+            this.buttonYourNote.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonYourNote.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonYourNote.Image = global::Diccon.Properties.Resources.your_note_36;
+            this.buttonYourNote.Location = new System.Drawing.Point(107, 160);
+            this.buttonYourNote.Name = "buttonYourNote";
+            this.buttonYourNote.Radius = 50;
+            this.buttonYourNote.Size = new System.Drawing.Size(75, 71);
+            this.buttonYourNote.TabIndex = 3;
+            this.buttonYourNote.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonYourNote.Thickness = 5F;
+            this.buttonYourNote.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
+            this.buttonYourNote.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
+            // 
+            // exampleNoteColoredPanel
+            // 
+            this.exampleNoteColoredPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.exampleNoteColoredPanel.BorderColor = System.Drawing.Color.White;
+            this.exampleNoteColoredPanel.Controls.Add(this.exampleNoteMenu);
+            this.exampleNoteColoredPanel.Controls.Add(this.exampleNoteRichTextBox);
+            this.exampleNoteColoredPanel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.exampleNoteColoredPanel.Location = new System.Drawing.Point(0, 0);
+            this.exampleNoteColoredPanel.Name = "exampleNoteColoredPanel";
+            this.exampleNoteColoredPanel.Radius = 20;
+            this.exampleNoteColoredPanel.Size = new System.Drawing.Size(367, 236);
+            this.exampleNoteColoredPanel.TabIndex = 0;
+            this.exampleNoteColoredPanel.Thickness = 5F;
+            // 
+            // exampleNoteMenu
+            // 
+            this.exampleNoteMenu.AutoSize = true;
+            this.exampleNoteMenu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.exampleNoteMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exampleNoteMenu.ForeColor = System.Drawing.Color.White;
+            this.exampleNoteMenu.Location = new System.Drawing.Point(13, 11);
+            this.exampleNoteMenu.Name = "exampleNoteMenu";
+            this.exampleNoteMenu.Size = new System.Drawing.Size(32, 17);
+            this.exampleNoteMenu.TabIndex = 1;
+            this.exampleNoteMenu.Text = "●●●";
+            // 
+            // exampleNoteRichTextBox
+            // 
+            this.exampleNoteRichTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.exampleNoteRichTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.exampleNoteRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exampleNoteRichTextBox.Location = new System.Drawing.Point(13, 45);
+            this.exampleNoteRichTextBox.Name = "exampleNoteRichTextBox";
+            this.exampleNoteRichTextBox.Size = new System.Drawing.Size(341, 177);
+            this.exampleNoteRichTextBox.TabIndex = 0;
+            this.exampleNoteRichTextBox.Text = "";
             // 
             // btSynonym
             // 
@@ -1103,11 +962,152 @@
             this.roundedLabel12.Thickness = 5F;
             this.roundedLabel12.Visible = false;
             // 
-            // realTimeDetermine
+            // PanelOfFind
             // 
-            this.realTimeDetermine.Enabled = true;
-            this.realTimeDetermine.Interval = 2000;
-            this.realTimeDetermine.Tick += new System.EventHandler(this.realTimeDetermine_Tick);
+            this.PanelOfFind.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.PanelOfFind.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.PanelOfFind.Controls.Add(this.tbFind);
+            this.PanelOfFind.Location = new System.Drawing.Point(204, 18);
+            this.PanelOfFind.Name = "PanelOfFind";
+            this.PanelOfFind.Radius = 20;
+            this.PanelOfFind.Size = new System.Drawing.Size(132, 34);
+            this.PanelOfFind.TabIndex = 9;
+            this.PanelOfFind.Thickness = 5F;
+            this.PanelOfFind.Visible = false;
+            // 
+            // tbFind
+            // 
+            this.tbFind.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.tbFind.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbFind.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbFind.Location = new System.Drawing.Point(9, 7);
+            this.tbFind.Name = "tbFind";
+            this.tbFind.Size = new System.Drawing.Size(113, 19);
+            this.tbFind.TabIndex = 8;
+            this.tbFind.Leave += new System.EventHandler(this.tbFind_Leave);
+            // 
+            // addEmoji
+            // 
+            this.addEmoji.BackColor = System.Drawing.Color.Silver;
+            this.addEmoji.BorderColor = System.Drawing.Color.White;
+            this.addEmoji.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.addEmoji.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addEmoji.Image = global::Diccon.Properties.Resources.emoji_36;
+            this.addEmoji.Location = new System.Drawing.Point(97, 3);
+            this.addEmoji.Name = "addEmoji";
+            this.addEmoji.Radius = 50;
+            this.addEmoji.Size = new System.Drawing.Size(75, 71);
+            this.addEmoji.TabIndex = 6;
+            this.addEmoji.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.addEmoji.Thickness = 5F;
+            this.addEmoji.Click += new System.EventHandler(this.addEmoji_Click);
+            this.addEmoji.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
+            this.addEmoji.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
+            // 
+            // addNote
+            // 
+            this.addNote.BackColor = System.Drawing.Color.Silver;
+            this.addNote.BorderColor = System.Drawing.Color.White;
+            this.addNote.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.addNote.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addNote.Image = global::Diccon.Properties.Resources.note_add_36;
+            this.addNote.Location = new System.Drawing.Point(12, 3);
+            this.addNote.Name = "addNote";
+            this.addNote.Radius = 50;
+            this.addNote.Size = new System.Drawing.Size(75, 71);
+            this.addNote.TabIndex = 0;
+            this.addNote.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.addNote.Thickness = 5F;
+            this.addNote.Click += new System.EventHandler(this.addNote_Click);
+            this.addNote.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
+            this.addNote.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
+            // 
+            // roundedPanel1
+            // 
+            this.roundedPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(235)))), ((int)(((byte)(252)))));
+            this.roundedPanel1.BorderColor = System.Drawing.Color.White;
+            this.roundedPanel1.Controls.Add(this.labelTypeToSearch);
+            this.roundedPanel1.Controls.Add(this.searchTextBox);
+            this.roundedPanel1.Controls.Add(this.textFromClipboard);
+            this.roundedPanel1.Controls.Add(this.textFromMic);
+            this.roundedPanel1.Controls.Add(this.btSend);
+            this.roundedPanel1.Location = new System.Drawing.Point(39, 4);
+            this.roundedPanel1.Name = "roundedPanel1";
+            this.roundedPanel1.Radius = 20;
+            this.roundedPanel1.Size = new System.Drawing.Size(354, 45);
+            this.roundedPanel1.TabIndex = 5;
+            this.roundedPanel1.Thickness = 5F;
+            // 
+            // labelTypeToSearch
+            // 
+            this.labelTypeToSearch.AutoSize = true;
+            this.labelTypeToSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.labelTypeToSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTypeToSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labelTypeToSearch.Location = new System.Drawing.Point(17, 12);
+            this.labelTypeToSearch.Name = "labelTypeToSearch";
+            this.labelTypeToSearch.Size = new System.Drawing.Size(113, 20);
+            this.labelTypeToSearch.TabIndex = 6;
+            this.labelTypeToSearch.Text = "Type to search";
+            this.labelTypeToSearch.Click += new System.EventHandler(this.labelTypeToSearch_Click);
+            // 
+            // searchTextBox
+            // 
+            this.searchTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(235)))), ((int)(((byte)(252)))));
+            this.searchTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.searchTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchTextBox.Location = new System.Drawing.Point(16, 10);
+            this.searchTextBox.Name = "searchTextBox";
+            this.searchTextBox.Size = new System.Drawing.Size(260, 24);
+            this.searchTextBox.TabIndex = 1;
+            this.searchTextBox.Click += new System.EventHandler(this.searchTextBox_Click);
+            this.searchTextBox.TextChanged += new System.EventHandler(this.searchTextBox_TextChanged);
+            this.searchTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.searchTextBox_KeyDown);
+            this.searchTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.searchTextBox_KeyPress);
+            this.searchTextBox.Leave += new System.EventHandler(this.searchTextBox_Leave);
+            // 
+            // textFromClipboard
+            // 
+            this.textFromClipboard.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.textFromClipboard.Image = global::Diccon.Properties.Resources.clipboard_24;
+            this.textFromClipboard.Location = new System.Drawing.Point(282, 11);
+            this.textFromClipboard.Name = "textFromClipboard";
+            this.textFromClipboard.Size = new System.Drawing.Size(24, 24);
+            this.textFromClipboard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.textFromClipboard.TabIndex = 5;
+            this.textFromClipboard.TabStop = false;
+            this.textFromClipboard.Visible = false;
+            this.textFromClipboard.Click += new System.EventHandler(this.textFromClipboard_Click);
+            this.textFromClipboard.MouseEnter += new System.EventHandler(this.PictureBox_MouseEnter);
+            this.textFromClipboard.MouseLeave += new System.EventHandler(this.PictureBox_MouseLeave);
+            // 
+            // textFromMic
+            // 
+            this.textFromMic.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.textFromMic.Image = global::Diccon.Properties.Resources.keyboard_voice_24;
+            this.textFromMic.Location = new System.Drawing.Point(315, 11);
+            this.textFromMic.Name = "textFromMic";
+            this.textFromMic.Size = new System.Drawing.Size(24, 24);
+            this.textFromMic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.textFromMic.TabIndex = 4;
+            this.textFromMic.TabStop = false;
+            this.textFromMic.Click += new System.EventHandler(this.textFromMic_Click);
+            this.textFromMic.MouseEnter += new System.EventHandler(this.PictureBox_MouseEnter);
+            this.textFromMic.MouseLeave += new System.EventHandler(this.PictureBox_MouseLeave);
+            // 
+            // btSend
+            // 
+            this.btSend.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btSend.Image = global::Diccon.Properties.Resources.send_24;
+            this.btSend.Location = new System.Drawing.Point(315, 11);
+            this.btSend.Name = "btSend";
+            this.btSend.Size = new System.Drawing.Size(24, 24);
+            this.btSend.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.btSend.TabIndex = 7;
+            this.btSend.TabStop = false;
+            this.btSend.Click += new System.EventHandler(this.btSend_Click);
+            this.btSend.MouseEnter += new System.EventHandler(this.PictureBox_MouseEnter);
+            this.btSend.MouseLeave += new System.EventHandler(this.PictureBox_MouseLeave);
             // 
             // mainHall
             // 
@@ -1115,22 +1115,20 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(407, 715);
+            this.ClientSize = new System.Drawing.Size(407, 662);
             this.Controls.Add(this.flowChatBox);
             this.Controls.Add(this.flowSuggestion);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panelBottom);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(423, 10000);
             this.Name = "mainHall";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.mainHall_Load);
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
-            this.PanelOfFind.ResumeLayout(false);
-            this.PanelOfFind.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.buttonFind)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonMenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
@@ -1138,11 +1136,6 @@
             this.panelAdd.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.roundedPanel1.ResumeLayout(false);
-            this.roundedPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textFromClipboard)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textFromMic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btSend)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonAdd)).EndInit();
             this.flowChatBox.ResumeLayout(false);
             this.flowChatBox.PerformLayout();
@@ -1151,23 +1144,30 @@
             this.exampleShortPanel.ResumeLayout(false);
             this.exampleShortPanel.PerformLayout();
             this.exampleAskLongPanel.ResumeLayout(false);
-            this.exampleAskLongColoredPanel.ResumeLayout(false);
             this.examplePlayPanel.ResumeLayout(false);
             this.examplePlayAlignPanel.ResumeLayout(false);
             this.examplePlayAlignPanel.PerformLayout();
-            this.examplePlayColoredPanel.ResumeLayout(false);
-            this.examplePlayColoredPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.examplePlayButton)).EndInit();
             this.exampleAnswerPanel.ResumeLayout(false);
-            this.exampleAnswerColoredPanel.ResumeLayout(false);
             this.panelSuggestFunction.ResumeLayout(false);
             this.panelSuggestFunction.PerformLayout();
             this.exampleNotePanel.ResumeLayout(false);
-            this.exampleNoteColoredPanel.ResumeLayout(false);
-            this.exampleNoteColoredPanel.PerformLayout();
             this.contextMenu.ResumeLayout(false);
             this.flowSuggestion.ResumeLayout(false);
             this.flowSuggestion.PerformLayout();
+            this.exampleAskLongColoredPanel.ResumeLayout(false);
+            this.examplePlayColoredPanel.ResumeLayout(false);
+            this.examplePlayColoredPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.examplePlayButton)).EndInit();
+            this.exampleAnswerColoredPanel.ResumeLayout(false);
+            this.exampleNoteColoredPanel.ResumeLayout(false);
+            this.exampleNoteColoredPanel.PerformLayout();
+            this.PanelOfFind.ResumeLayout(false);
+            this.PanelOfFind.PerformLayout();
+            this.roundedPanel1.ResumeLayout(false);
+            this.roundedPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textFromClipboard)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textFromMic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btSend)).EndInit();
             this.ResumeLayout(false);
 
         }

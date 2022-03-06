@@ -84,24 +84,25 @@
             // roundedPanel1
             // 
             this.roundedPanel1.BackColor = System.Drawing.Color.White;
-            this.roundedPanel1.BorderColor = System.Drawing.Color.Black;
+            this.roundedPanel1.BorderColor = System.Drawing.Color.DarkGray;
             this.roundedPanel1.Controls.Add(this.btCopy);
             this.roundedPanel1.Controls.Add(this.lbEmojiText);
             this.roundedPanel1.Controls.Add(this.panel1);
             this.roundedPanel1.Controls.Add(this.label1);
-            this.roundedPanel1.Location = new System.Drawing.Point(-1, -1);
+            this.roundedPanel1.Location = new System.Drawing.Point(0, 0);
             this.roundedPanel1.Name = "roundedPanel1";
-            this.roundedPanel1.Radius = 20;
-            this.roundedPanel1.Size = new System.Drawing.Size(323, 220);
+            this.roundedPanel1.Radius = 1;
+            this.roundedPanel1.Size = new System.Drawing.Size(356, 219);
             this.roundedPanel1.TabIndex = 52;
-            this.roundedPanel1.Thickness = 5F;
+            this.roundedPanel1.Thickness = 1F;
+            this.roundedPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.roundedPanel1_Paint);
             // 
             // btCopy
             // 
             this.btCopy.BackColor = System.Drawing.Color.Silver;
             this.btCopy.BorderColor = System.Drawing.Color.White;
             this.btCopy.Image = global::Diccon.Properties.Resources.copy_24;
-            this.btCopy.Location = new System.Drawing.Point(269, 171);
+            this.btCopy.Location = new System.Drawing.Point(295, 170);
             this.btCopy.Name = "btCopy";
             this.btCopy.Radius = 20;
             this.btCopy.Size = new System.Drawing.Size(42, 40);
@@ -152,7 +153,7 @@
             this.panel1.Controls.Add(this.wary);
             this.panel1.Location = new System.Drawing.Point(16, 52);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(295, 119);
+            this.panel1.Size = new System.Drawing.Size(329, 115);
             this.panel1.TabIndex = 22;
             // 
             // laugh
@@ -439,7 +440,7 @@
             // 
             this.surrender.Cursor = System.Windows.Forms.Cursors.Hand;
             this.surrender.Image = global::Diccon.Properties.Resources.surrender;
-            this.surrender.Location = new System.Drawing.Point(147, 75);
+            this.surrender.Location = new System.Drawing.Point(291, 39);
             this.surrender.Name = "surrender";
             this.surrender.Size = new System.Drawing.Size(30, 30);
             this.surrender.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -453,7 +454,7 @@
             // 
             this.wary.Cursor = System.Windows.Forms.Cursors.Hand;
             this.wary.Image = global::Diccon.Properties.Resources.wary;
-            this.wary.Location = new System.Drawing.Point(183, 75);
+            this.wary.Location = new System.Drawing.Point(291, 3);
             this.wary.Name = "wary";
             this.wary.Size = new System.Drawing.Size(30, 30);
             this.wary.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -479,7 +480,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GrayText;
-            this.ClientSize = new System.Drawing.Size(322, 219);
+            this.ClientSize = new System.Drawing.Size(356, 219);
             this.Controls.Add(this.roundedPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
