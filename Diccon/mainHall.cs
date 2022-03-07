@@ -430,8 +430,13 @@ namespace Diccon
 
         private void btImage_Click(object sender, EventArgs e)
         {
-            bot.botImageAnswer(examplePictureBox, exampleColoredPicturePanel, examplePicturePanel, flowChatBox);
+            bot.botImageAnswer(examplePixabayLogo, examplePictureBox, exampleColoredPicturePanel, examplePicturePanel, flowChatBox);
             btImage.Visible = false;
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 

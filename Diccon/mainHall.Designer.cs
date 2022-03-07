@@ -89,6 +89,7 @@
             this.exampleNoteSave = new System.Windows.Forms.PictureBox();
             this.exampleNoteRichTextBox = new System.Windows.Forms.RichTextBox();
             this.examplePicturePanel = new System.Windows.Forms.Panel();
+            this.examplePixabayLogo = new System.Windows.Forms.PictureBox();
             this.exampleColoredPicturePanel = new Diccon.RoundedPanel();
             this.examplePictureBox = new System.Windows.Forms.PictureBox();
             this.contextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -150,6 +151,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.exampleNoteDelete)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exampleNoteSave)).BeginInit();
             this.examplePicturePanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.examplePixabayLogo)).BeginInit();
             this.exampleColoredPicturePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.examplePictureBox)).BeginInit();
             this.contextMenu.SuspendLayout();
@@ -935,12 +937,25 @@
             // 
             // examplePicturePanel
             // 
+            this.examplePicturePanel.Controls.Add(this.examplePixabayLogo);
             this.examplePicturePanel.Controls.Add(this.exampleColoredPicturePanel);
             this.examplePicturePanel.Location = new System.Drawing.Point(8, 1207);
             this.examplePicturePanel.Name = "examplePicturePanel";
-            this.examplePicturePanel.Size = new System.Drawing.Size(367, 254);
+            this.examplePicturePanel.Size = new System.Drawing.Size(367, 269);
             this.examplePicturePanel.TabIndex = 7;
             this.examplePicturePanel.Visible = false;
+            // 
+            // examplePixabayLogo
+            // 
+            this.examplePixabayLogo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.examplePixabayLogo.Image = global::Diccon.Properties.Resources.pixabay_logo;
+            this.examplePixabayLogo.Location = new System.Drawing.Point(283, 250);
+            this.examplePixabayLogo.Name = "examplePixabayLogo";
+            this.examplePixabayLogo.Size = new System.Drawing.Size(70, 14);
+            this.examplePixabayLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.examplePixabayLogo.TabIndex = 1;
+            this.examplePixabayLogo.TabStop = false;
+            this.examplePixabayLogo.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // exampleColoredPicturePanel
             // 
@@ -1080,7 +1095,7 @@
             // 
             // suggestionTimer
             // 
-            this.suggestionTimer.Interval = 500;
+            this.suggestionTimer.Interval = 1000;
             this.suggestionTimer.Tick += new System.EventHandler(this.suggestionTimer_TickAsync);
             // 
             // flowSuggestion
@@ -1292,6 +1307,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.exampleNoteDelete)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.exampleNoteSave)).EndInit();
             this.examplePicturePanel.ResumeLayout(false);
+            this.examplePicturePanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.examplePixabayLogo)).EndInit();
             this.exampleColoredPicturePanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.examplePictureBox)).EndInit();
             this.contextMenu.ResumeLayout(false);
@@ -1392,6 +1409,7 @@
         private System.Windows.Forms.Panel examplePicturePanel;
         private RoundedPanel exampleColoredPicturePanel;
         private System.Windows.Forms.PictureBox examplePictureBox;
+        private System.Windows.Forms.PictureBox examplePixabayLogo;
     }
 }
 

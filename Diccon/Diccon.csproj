@@ -258,6 +258,10 @@
     <None Include="Resources\delete_24.png" />
     <None Include="Resources\apple.jpg" />
     <None Include="Resources\expand_white_24.png" />
+    <None Include="Resources\pixabay_small.jpg" />
+    <None Include="Resources\pixabay_png_small.png" />
+    <None Include="Resources\pixabay_png.png" />
+    <None Include="Resources\pixabay_logo.png" />
     <Content Include="Setup and Update\UpdateInfo.xml" />
     <None Include="Resources\github_20.png" />
     <None Include="Resources\info_20.png" />

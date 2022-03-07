@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text.Json.Nodes;
@@ -248,12 +249,21 @@ namespace Diccon
         }
 
 
-        public async void botImageAnswer(PictureBox examplePictureBox, RoundedPanel exampleColoredPanel, Panel examplePanel, FlowLayoutPanel targetFlowLayout)
+        public async void botImageAnswer(PictureBox examplePixabayLogo,  PictureBox examplePictureBox, RoundedPanel exampleColoredPanel, Panel examplePanel, FlowLayoutPanel targetFlowLayout)
         {
             PictureBox pictureBox = new PictureBox();
             RoundedPanel roundedPanel = new RoundedPanel();
+            PictureBox pixabayLogo = new PictureBox();
             Panel panel = new Panel();
             imageRelated img = new imageRelated();
+
+
+
+            pixabayLogo.Image = examplePixabayLogo.Image;
+            pixabayLogo.Location=examplePixabayLogo.Location;
+            pixabayLogo.Size=examplePixabayLogo.Size;
+            pixabayLogo.Click += PixabayLogo_Click;
+            pixabayLogo.Cursor = examplePixabayLogo.Cursor;
 
             pictureBox.Size= examplePictureBox.Size;
             pictureBox.Location = examplePictureBox.Location;
@@ -267,9 +277,11 @@ namespace Diccon
 
             pictureBox.ImageLocation = await img.getImageUrl(dicconProp.currentWord);
             pictureBox.Click += PictureBox_Click;
+            pictureBox.Tag = dicconProp.currentWord;
 
             roundedPanel.Controls.Add(pictureBox);
 
+            panel.Controls.Add(pixabayLogo);
             panel.Controls.Add(roundedPanel);
 
             panel.Visible = true;
@@ -281,10 +293,16 @@ namespace Diccon
             targetFlowLayout.ScrollControlIntoView(panel);
         }
 
+        private void PixabayLogo_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://www.pixabay.com");
+        }
+
         private async void PictureBox_Click(object sender, EventArgs e)
         {
+
             imageRelated img = new imageRelated();
-            (sender as PictureBox).ImageLocation = await img.getImageUrl(dicconProp.currentWord);
+            (sender as PictureBox).ImageLocation = await img.getImageUrl((sender as PictureBox).Tag.ToString());
         }
     }
 }
