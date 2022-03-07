@@ -399,6 +399,10 @@ namespace Diccon
         private void realTimeDetermine_Tick(object sender, EventArgs e)
         {
             textFromClipboard.Visible = Clipboard.ContainsText() ? true : false;
+            if(Clipboard.GetText().Length<10)
+            {
+                labelTypeToSearch.Text=Clipboard.GetText()+ " in Clipboard";
+            }
         }
 
         public mainHall()

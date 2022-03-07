@@ -181,6 +181,7 @@ namespace Diccon
                 // if (++index >= 10) break;
                 RoundedLabel newLabel = new RoundedLabel();
                 newLabel.BackColor = exampleItem.BackColor;
+                newLabel.Cursor = exampleItem.Cursor;
                 newLabel.ForeColor = exampleItem.ForeColor;
                 newLabel.Padding = exampleItem.Padding;
                 newLabel.Text = word;
@@ -197,8 +198,7 @@ namespace Diccon
 
         private void NewLabel_Click(object sender, EventArgs e)
         {
-            Label label = (sender as Label);
-            dicconProp.currentWord = label.Text;
+            Clipboard.SetText((sender as RoundedLabel).Text);
 
         }
         /// <summary>

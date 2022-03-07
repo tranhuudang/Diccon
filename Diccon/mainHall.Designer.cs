@@ -219,7 +219,7 @@
             this.panelBottom.Controls.Add(this.panelAdd);
             this.panelBottom.Controls.Add(this.panel1);
             this.panelBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelBottom.Location = new System.Drawing.Point(0, 520);
+            this.panelBottom.Location = new System.Drawing.Point(0, 574);
             this.panelBottom.Name = "panelBottom";
             this.panelBottom.Size = new System.Drawing.Size(407, 142);
             this.panelBottom.TabIndex = 5;
@@ -280,7 +280,7 @@
             this.flowChatBox.Location = new System.Drawing.Point(0, 75);
             this.flowChatBox.Name = "flowChatBox";
             this.flowChatBox.Padding = new System.Windows.Forms.Padding(5);
-            this.flowChatBox.Size = new System.Drawing.Size(407, 410);
+            this.flowChatBox.Size = new System.Drawing.Size(407, 464);
             this.flowChatBox.TabIndex = 8;
             // 
             // exampleflowLayoutSynonym
@@ -297,7 +297,7 @@
             this.exampleflowLayoutSynonym.MinimumSize = new System.Drawing.Size(367, 0);
             this.exampleflowLayoutSynonym.Name = "exampleflowLayoutSynonym";
             this.exampleflowLayoutSynonym.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
-            this.exampleflowLayoutSynonym.Size = new System.Drawing.Size(367, 0);
+            this.exampleflowLayoutSynonym.Size = new System.Drawing.Size(367, 180);
             this.exampleflowLayoutSynonym.TabIndex = 6;
             this.exampleflowLayoutSynonym.Visible = false;
             // 
@@ -549,7 +549,7 @@
             this.flowSuggestion.Controls.Add(this.roundedLabel11);
             this.flowSuggestion.Controls.Add(this.roundedLabel12);
             this.flowSuggestion.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.flowSuggestion.Location = new System.Drawing.Point(0, 485);
+            this.flowSuggestion.Location = new System.Drawing.Point(0, 539);
             this.flowSuggestion.Name = "flowSuggestion";
             this.flowSuggestion.Padding = new System.Windows.Forms.Padding(10, 5, 10, 0);
             this.flowSuggestion.Size = new System.Drawing.Size(407, 35);
@@ -558,7 +558,7 @@
             // realTimeDetermine
             // 
             this.realTimeDetermine.Enabled = true;
-            this.realTimeDetermine.Interval = 2000;
+            this.realTimeDetermine.Interval = 1000;
             this.realTimeDetermine.Tick += new System.EventHandler(this.realTimeDetermine_Tick);
             // 
             // contextMenuNote
@@ -1126,7 +1126,7 @@
             this.labelTypeToSearch.AutoSize = true;
             this.labelTypeToSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.labelTypeToSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTypeToSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labelTypeToSearch.ForeColor = System.Drawing.Color.Gray;
             this.labelTypeToSearch.Location = new System.Drawing.Point(17, 12);
             this.labelTypeToSearch.Name = "labelTypeToSearch";
             this.labelTypeToSearch.Size = new System.Drawing.Size(113, 20);
@@ -1198,7 +1198,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(407, 662);
+            this.ClientSize = new System.Drawing.Size(407, 716);
             this.Controls.Add(this.flowChatBox);
             this.Controls.Add(this.flowSuggestion);
             this.Controls.Add(this.panel2);
