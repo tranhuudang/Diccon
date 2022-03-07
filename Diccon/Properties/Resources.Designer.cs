@@ -143,6 +143,16 @@ namespace Diccon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap close_24 {
+            get {
+                object obj = ResourceManager.GetObject("close_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap coffee_32 {
             get {
                 object obj = ResourceManager.GetObject("coffee_32", resourceCulture);
@@ -186,6 +196,16 @@ namespace Diccon.Properties {
         internal static System.Drawing.Bitmap dead {
             get {
                 object obj = ResourceManager.GetObject("dead", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap delete_24 {
+            get {
+                object obj = ResourceManager.GetObject("delete_24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -410,6 +430,16 @@ namespace Diccon.Properties {
         internal static System.Drawing.Bitmap ridiculous {
             get {
                 object obj = ResourceManager.GetObject("ridiculous", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap save_24 {
+            get {
+                object obj = ResourceManager.GetObject("save_24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

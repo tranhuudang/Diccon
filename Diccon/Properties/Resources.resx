@@ -118,9 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="copy_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\copy_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="coffee_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\coffee_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -141,9 +138,6 @@
   </data>
   <data name="keyboard_voice_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\keyboard_voice_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="surrender" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\surrender.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ninja_128" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ninja_128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,14 +166,20 @@
   <data name="clipboard_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\clipboard_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="blind" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\blind.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="close_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\close_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="copy_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\copy_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="surprised" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\surprised.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ridiculous" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ridiculous.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="fluent_search_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fluent_search_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="close_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\close_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="astonished" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\astonished.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -190,26 +190,26 @@
   <data name="shocked" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\shocked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="furious" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\furious.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Envi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Envi.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
-  <data name="silly" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\silly.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="wary" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\wary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="history_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\history_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="annoyed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\annoyed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="timeline_36" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\timeline_36.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="furious" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\furious.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="stuck" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\stuck.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="your_note_36" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\your_note_36.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="silly" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\silly.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="glued" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\glued.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -223,6 +223,9 @@
   <data name="wonder" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\wonder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="blind" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\blind.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="emoji_36" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\emoji_36.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -235,8 +238,8 @@
   <data name="ninja_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ninja_64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="stuck" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\stuck.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="copy_white_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\copy_white_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="close_20" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\close_20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -247,22 +250,28 @@
   <data name="shady" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\shady.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="surprised" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\surprised.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="history_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\history_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ridiculous" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ridiculous.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="timeline_36" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\timeline_36.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sleeping" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sleeping.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="close_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\close_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="save_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\save_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="surrender" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\surrender.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="prejudice" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\prejudice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="copy_white_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\copy_white_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="delete_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\delete_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

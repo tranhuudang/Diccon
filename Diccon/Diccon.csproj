@@ -252,6 +252,9 @@
     <None Include="Resources\send_24.png" />
     <None Include="Resources\copy_24.png" />
     <None Include="Resources\copy_white_24.png" />
+    <None Include="Resources\save_24.png" />
+    <None Include="Resources\close_24.png" />
+    <None Include="Resources\delete_24.png" />
     <Content Include="Setup and Update\UpdateInfo.xml" />
     <None Include="Resources\github_20.png" />
     <None Include="Resources\info_20.png" />

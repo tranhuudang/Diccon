@@ -72,6 +72,11 @@
             this.suggestionTimer = new System.Windows.Forms.Timer(this.components);
             this.flowSuggestion = new System.Windows.Forms.FlowLayoutPanel();
             this.realTimeDetermine = new System.Windows.Forms.Timer(this.components);
+            this.contextMenuNote = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addToFavouriteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.e = new System.Windows.Forms.ToolStripSeparator();
+            this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exampleItemSynonym = new Diccon.RoundedLabel();
             this.roundedLabel3 = new Diccon.RoundedLabel();
             this.roundedLabel4 = new Diccon.RoundedLabel();
@@ -91,7 +96,10 @@
             this.roundedLabel7 = new Diccon.RoundedLabel();
             this.buttonYourNote = new Diccon.RoundedLabel();
             this.exampleNoteColoredPanel = new Diccon.RoundedPanel();
-            this.exampleNoteMenu = new System.Windows.Forms.Label();
+            this.exampleNoteTitle = new System.Windows.Forms.TextBox();
+            this.exampleNoteClose = new System.Windows.Forms.PictureBox();
+            this.exampleNoteDelete = new System.Windows.Forms.PictureBox();
+            this.exampleNoteSave = new System.Windows.Forms.PictureBox();
             this.exampleNoteRichTextBox = new System.Windows.Forms.RichTextBox();
             this.btSynonym = new Diccon.RoundedLabel();
             this.roundedLabel9 = new Diccon.RoundedLabel();
@@ -127,11 +135,15 @@
             this.exampleNotePanel.SuspendLayout();
             this.contextMenu.SuspendLayout();
             this.flowSuggestion.SuspendLayout();
+            this.contextMenuNote.SuspendLayout();
             this.exampleAskLongColoredPanel.SuspendLayout();
             this.examplePlayColoredPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.examplePlayButton)).BeginInit();
             this.exampleAnswerColoredPanel.SuspendLayout();
             this.exampleNoteColoredPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.exampleNoteClose)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.exampleNoteDelete)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.exampleNoteSave)).BeginInit();
             this.PanelOfFind.SuspendLayout();
             this.roundedPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textFromClipboard)).BeginInit();
@@ -285,7 +297,7 @@
             this.exampleflowLayoutSynonym.MinimumSize = new System.Drawing.Size(367, 0);
             this.exampleflowLayoutSynonym.Name = "exampleflowLayoutSynonym";
             this.exampleflowLayoutSynonym.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
-            this.exampleflowLayoutSynonym.Size = new System.Drawing.Size(367, 180);
+            this.exampleflowLayoutSynonym.Size = new System.Drawing.Size(367, 0);
             this.exampleflowLayoutSynonym.TabIndex = 6;
             this.exampleflowLayoutSynonym.Visible = false;
             // 
@@ -548,6 +560,40 @@
             this.realTimeDetermine.Enabled = true;
             this.realTimeDetermine.Interval = 2000;
             this.realTimeDetermine.Tick += new System.EventHandler(this.realTimeDetermine_Tick);
+            // 
+            // contextMenuNote
+            // 
+            this.contextMenuNote.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.saveToolStripMenuItem,
+            this.addToFavouriteToolStripMenuItem,
+            this.e,
+            this.closeToolStripMenuItem});
+            this.contextMenuNote.Name = "contextMenuNote";
+            this.contextMenuNote.Size = new System.Drawing.Size(161, 76);
+            // 
+            // saveToolStripMenuItem
+            // 
+            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.saveToolStripMenuItem.Text = "Save";
+            // 
+            // addToFavouriteToolStripMenuItem
+            // 
+            this.addToFavouriteToolStripMenuItem.Name = "addToFavouriteToolStripMenuItem";
+            this.addToFavouriteToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.addToFavouriteToolStripMenuItem.Text = "Add to favourite";
+            // 
+            // e
+            // 
+            this.e.Name = "e";
+            this.e.Size = new System.Drawing.Size(157, 6);
+            // 
+            // closeToolStripMenuItem
+            // 
+            this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.closeToolStripMenuItem.Text = "Close";
+            this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
             // 
             // exampleItemSynonym
             // 
@@ -836,7 +882,10 @@
             // 
             this.exampleNoteColoredPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.exampleNoteColoredPanel.BorderColor = System.Drawing.Color.White;
-            this.exampleNoteColoredPanel.Controls.Add(this.exampleNoteMenu);
+            this.exampleNoteColoredPanel.Controls.Add(this.exampleNoteTitle);
+            this.exampleNoteColoredPanel.Controls.Add(this.exampleNoteClose);
+            this.exampleNoteColoredPanel.Controls.Add(this.exampleNoteDelete);
+            this.exampleNoteColoredPanel.Controls.Add(this.exampleNoteSave);
             this.exampleNoteColoredPanel.Controls.Add(this.exampleNoteRichTextBox);
             this.exampleNoteColoredPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.exampleNoteColoredPanel.Location = new System.Drawing.Point(0, 0);
@@ -846,17 +895,51 @@
             this.exampleNoteColoredPanel.TabIndex = 0;
             this.exampleNoteColoredPanel.Thickness = 5F;
             // 
-            // exampleNoteMenu
+            // exampleNoteTitle
             // 
-            this.exampleNoteMenu.AutoSize = true;
-            this.exampleNoteMenu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.exampleNoteMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exampleNoteMenu.ForeColor = System.Drawing.Color.White;
-            this.exampleNoteMenu.Location = new System.Drawing.Point(13, 11);
-            this.exampleNoteMenu.Name = "exampleNoteMenu";
-            this.exampleNoteMenu.Size = new System.Drawing.Size(32, 17);
-            this.exampleNoteMenu.TabIndex = 1;
-            this.exampleNoteMenu.Text = "●●●";
+            this.exampleNoteTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.exampleNoteTitle.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.exampleNoteTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exampleNoteTitle.ForeColor = System.Drawing.Color.DimGray;
+            this.exampleNoteTitle.Location = new System.Drawing.Point(105, 19);
+            this.exampleNoteTitle.Name = "exampleNoteTitle";
+            this.exampleNoteTitle.Size = new System.Drawing.Size(168, 15);
+            this.exampleNoteTitle.TabIndex = 3;
+            this.exampleNoteTitle.Text = "untitled";
+            this.exampleNoteTitle.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // exampleNoteClose
+            // 
+            this.exampleNoteClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.exampleNoteClose.Image = global::Diccon.Properties.Resources.close_24;
+            this.exampleNoteClose.Location = new System.Drawing.Point(330, 15);
+            this.exampleNoteClose.Name = "exampleNoteClose";
+            this.exampleNoteClose.Size = new System.Drawing.Size(24, 24);
+            this.exampleNoteClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.exampleNoteClose.TabIndex = 2;
+            this.exampleNoteClose.TabStop = false;
+            // 
+            // exampleNoteDelete
+            // 
+            this.exampleNoteDelete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.exampleNoteDelete.Image = global::Diccon.Properties.Resources.delete_24;
+            this.exampleNoteDelete.Location = new System.Drawing.Point(43, 15);
+            this.exampleNoteDelete.Name = "exampleNoteDelete";
+            this.exampleNoteDelete.Size = new System.Drawing.Size(24, 24);
+            this.exampleNoteDelete.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.exampleNoteDelete.TabIndex = 2;
+            this.exampleNoteDelete.TabStop = false;
+            // 
+            // exampleNoteSave
+            // 
+            this.exampleNoteSave.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.exampleNoteSave.Image = global::Diccon.Properties.Resources.save_24;
+            this.exampleNoteSave.Location = new System.Drawing.Point(13, 15);
+            this.exampleNoteSave.Name = "exampleNoteSave";
+            this.exampleNoteSave.Size = new System.Drawing.Size(24, 24);
+            this.exampleNoteSave.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.exampleNoteSave.TabIndex = 2;
+            this.exampleNoteSave.TabStop = false;
             // 
             // exampleNoteRichTextBox
             // 
@@ -1154,6 +1237,7 @@
             this.contextMenu.ResumeLayout(false);
             this.flowSuggestion.ResumeLayout(false);
             this.flowSuggestion.PerformLayout();
+            this.contextMenuNote.ResumeLayout(false);
             this.exampleAskLongColoredPanel.ResumeLayout(false);
             this.examplePlayColoredPanel.ResumeLayout(false);
             this.examplePlayColoredPanel.PerformLayout();
@@ -1161,6 +1245,9 @@
             this.exampleAnswerColoredPanel.ResumeLayout(false);
             this.exampleNoteColoredPanel.ResumeLayout(false);
             this.exampleNoteColoredPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.exampleNoteClose)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.exampleNoteDelete)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.exampleNoteSave)).EndInit();
             this.PanelOfFind.ResumeLayout(false);
             this.PanelOfFind.PerformLayout();
             this.roundedPanel1.ResumeLayout(false);
@@ -1204,7 +1291,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel exampleNotePanel;
         private RoundedPanel exampleNoteColoredPanel;
-        private System.Windows.Forms.Label exampleNoteMenu;
         private System.Windows.Forms.RichTextBox exampleNoteRichTextBox;
         private RoundedLabel roundedLabel7;
         private System.Windows.Forms.Label label1;
@@ -1251,6 +1337,15 @@
         private RoundedLabel addEmoji;
         private System.Windows.Forms.PictureBox btSend;
         private System.Windows.Forms.Timer realTimeDetermine;
+        private System.Windows.Forms.ContextMenuStrip contextMenuNote;
+        private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addToFavouriteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator e;
+        private System.Windows.Forms.ToolStripMenuItem closeToolStripMenuItem;
+        private System.Windows.Forms.PictureBox exampleNoteClose;
+        private System.Windows.Forms.PictureBox exampleNoteSave;
+        private System.Windows.Forms.PictureBox exampleNoteDelete;
+        private System.Windows.Forms.TextBox exampleNoteTitle;
     }
 }
 
