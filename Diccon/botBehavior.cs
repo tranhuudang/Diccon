@@ -247,5 +247,44 @@ namespace Diccon
             
         }
 
+
+        public async void botImageAnswer(PictureBox examplePictureBox, RoundedPanel exampleColoredPanel, Panel examplePanel, FlowLayoutPanel targetFlowLayout)
+        {
+            PictureBox pictureBox = new PictureBox();
+            RoundedPanel roundedPanel = new RoundedPanel();
+            Panel panel = new Panel();
+            imageRelated img = new imageRelated();
+
+            pictureBox.Size= examplePictureBox.Size;
+            pictureBox.Location = examplePictureBox.Location;
+            pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+
+            roundedPanel.Size = exampleColoredPanel.Size;
+            roundedPanel.Location = exampleColoredPanel.Location;   
+            roundedPanel.BackColor= exampleColoredPanel.BackColor;
+
+            panel.Size = examplePanel.Size;
+
+            pictureBox.ImageLocation = await img.getImageUrl(dicconProp.currentWord);
+            pictureBox.Click += PictureBox_Click;
+
+            roundedPanel.Controls.Add(pictureBox);
+
+            panel.Controls.Add(roundedPanel);
+
+            panel.Visible = true;
+
+            targetFlowLayout.Controls.Add(panel);
+
+
+
+            targetFlowLayout.ScrollControlIntoView(panel);
+        }
+
+        private async void PictureBox_Click(object sender, EventArgs e)
+        {
+            imageRelated img = new imageRelated();
+            (sender as PictureBox).ImageLocation = await img.getImageUrl(dicconProp.currentWord);
+        }
     }
 }

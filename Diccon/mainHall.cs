@@ -347,7 +347,11 @@ namespace Diccon
         {
 
         }
-
+        /// <summary>
+        /// Suggest timer run when key down is triggered in search box
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private async void suggestionTimer_TickAsync(object sender, EventArgs e)
         {
             bool isOnline = new connectivity().isOnline();
@@ -362,6 +366,16 @@ namespace Diccon
                 {
                     btSynonym.Visible = true;
                 }
+                imageRelated image = new imageRelated();
+                if ( await image.getImageUrl(dicconProp.currentWord) == "none")
+                {
+                    btImage.Visible = false;
+                }
+                else
+                {
+                    btImage.Visible = true;
+                }
+
             }
             suggestionTimer.Enabled = false;
 
@@ -399,12 +413,11 @@ namespace Diccon
         private void realTimeDetermine_Tick(object sender, EventArgs e)
         {
             textFromClipboard.Visible = Clipboard.ContainsText() ? true : false;
-            if(Clipboard.GetText().Length<10)
+            if(Clipboard.GetText().Length<18)
             {
-                labelTypeToSearch.Text=Clipboard.GetText()+ " in Clipboard";
+                labelTypeToSearch.Text="\""+Clipboard.GetText()+ "\" is in Clipboard";
             }
         }
-
         public mainHall()
         {
             InitializeComponent();
@@ -413,6 +426,12 @@ namespace Diccon
         private void closeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show((sender as ToolStripMenuItem).Owner.TopLevelControl.Name);
+        }
+
+        private void btImage_Click(object sender, EventArgs e)
+        {
+            bot.botImageAnswer(examplePictureBox, exampleColoredPicturePanel, examplePicturePanel, flowChatBox);
+            btImage.Visible = false;
         }
     }
 

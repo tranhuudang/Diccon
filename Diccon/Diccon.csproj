@@ -140,6 +140,7 @@
     <Compile Include="emoji.Designer.cs">
       <DependentUpon>emoji.cs</DependentUpon>
     </Compile>
+    <Compile Include="imageRelated.cs" />
     <Compile Include="mainHall.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -255,6 +256,8 @@
     <None Include="Resources\save_24.png" />
     <None Include="Resources\close_24.png" />
     <None Include="Resources\delete_24.png" />
+    <None Include="Resources\apple.jpg" />
+    <None Include="Resources\expand_white_24.png" />
     <Content Include="Setup and Update\UpdateInfo.xml" />
     <None Include="Resources\github_20.png" />
     <None Include="Resources\info_20.png" />

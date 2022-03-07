@@ -25,6 +25,7 @@ namespace Diccon
         public static string connectError = "The service is temporarily down, we'll try to connect it later on.";
         public static int listenTimeInNumber = 7;
         public static string listenTimeInString = "00:00:07";
+        public static string currentImageLink = "none";
 
     }
 }

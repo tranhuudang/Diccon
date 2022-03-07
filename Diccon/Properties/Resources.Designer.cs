@@ -83,6 +83,16 @@ namespace Diccon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap apple {
+            get {
+                object obj = ResourceManager.GetObject("apple", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap astonished {
             get {
                 object obj = ResourceManager.GetObject("astonished", resourceCulture);
@@ -261,6 +271,16 @@ namespace Diccon.Properties {
         internal static string Envi {
             get {
                 return ResourceManager.GetString("Envi", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap expand_white_24 {
+            get {
+                object obj = ResourceManager.GetObject("expand_white_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
