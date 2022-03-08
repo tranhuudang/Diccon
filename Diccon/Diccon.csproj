@@ -156,6 +156,9 @@
     <Compile Include="roundedPanel.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="roundedPicturebox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="soundRelated.cs" />
     <Compile Include="SpeechToText.cs">
       <SubType>Form</SubType>

@@ -26,6 +26,7 @@ namespace Diccon
         public static int listenTimeInNumber = 7;
         public static string listenTimeInString = "00:00:07";
         public static string currentImageLink = "none";
+        public static bool isFromPixabay= true;
 
     }
 }

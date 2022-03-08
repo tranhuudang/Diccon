@@ -27,26 +27,42 @@ namespace Diccon
                         },
             };
             string body;
-            using (var response = await client.SendAsync(request))
+            try
             {
-                if(response.IsSuccessStatusCode)
+                using (var response = await client.SendAsync(request))
                 {
-                    body = await response.Content.ReadAsStringAsync();
-                    JsonNode JsonResponse = JsonNode.Parse(body);
-
-                    for (int i = 0; i < dicconProp.maximumSynonym; i++)
+                    if (response.IsSuccessStatusCode)
                     {
-                        synonymList.Add(JsonResponse["data"]["synonyms"][i][0].GetValue<string>());
-                    }
-                    return synonymList;
-                }
-               else
-                {
-                    return null;
-                }
+                        body = await response.Content.ReadAsStringAsync();
+                        JsonNode JsonResponse = JsonNode.Parse(body);
 
+                        for (int i = 0; i < dicconProp.maximumSynonym; i++)
+                        {
+                            try
+                            {
+                                synonymList.Add(JsonResponse["data"]["synonyms"][i][0].GetValue<string>());
+                            }
+                            catch (Exception)
+                            {
+
+                            }
+
+                        }
+                        return synonymList;
+                    }
+                    else
+                    {
+                        return null;
+                    }
+
+                }
             }
-            
+            catch (Exception)
+            {
+                return null;
+            }
+
+
         }
     }
 }

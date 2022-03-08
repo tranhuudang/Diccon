@@ -19,6 +19,16 @@ namespace Diccon
             imageIndex= random.Next(0, 3);
             string rawContent;
             string imageUrl="none";
+            // https://github.com/ZeroClubOfficial/English-Through-Pictures/raw/main/A/alarm.jpg
+            string imageTestLink = "https://github.com/ZeroClubOfficial/English-Through-Pictures/raw/main/" + word.Substring(0, 1).ToUpper() + "/" + word + ".jpg";
+            connectivity connect = new connectivity();
+            var alive = await connect.isWebsiteAlive(new Uri(imageTestLink));
+            if (alive  == true)
+            {
+                dicconProp.isFromPixabay = false;
+                return imageTestLink;
+            }
+            else
             try
             {
                 HttpClient client = new HttpClient();
@@ -34,7 +44,8 @@ namespace Diccon
                     }
 
                 }
-                return imageUrl;
+                    dicconProp.isFromPixabay = true;
+                    return imageUrl;
             }
             catch (Exception)
             {

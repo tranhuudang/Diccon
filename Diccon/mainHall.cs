@@ -357,6 +357,7 @@ namespace Diccon
             bool isOnline = new connectivity().isOnline();
             if (isOnline)
             {
+                suggestionTimer.Enabled = false;
                 sysnonym sysnonym = new sysnonym();
                 if (await sysnonym.getSynonymListAsync(dicconProp.currentWord) == null)
                 {
@@ -377,16 +378,17 @@ namespace Diccon
                 }
 
             }
-            suggestionTimer.Enabled = false;
+            
 
         }
 
         private async void btSynonym_Click(object sender, EventArgs e)
         {
+            btSynonym.Visible = false;
             sysnonym sysnonym = new sysnonym();
             List<string> synonymList = await sysnonym.getSynonymListAsync(dicconProp.currentWord);
             bot.botSynonym(synonymList, exampleItemSynonym, exampleflowLayoutSynonym, flowChatBox);
-            btSynonym.Visible = false;
+            
         }
 
         private void textFromClipboard_Click(object sender, EventArgs e)
@@ -412,8 +414,9 @@ namespace Diccon
 
         private void realTimeDetermine_Tick(object sender, EventArgs e)
         {
+            string textInClipboard = Clipboard.GetText();
             textFromClipboard.Visible = Clipboard.ContainsText() ? true : false;
-            if(Clipboard.GetText().Length<18)
+            if((textInClipboard.Length<18)&&(textInClipboard.Length>0))
             {
                 labelTypeToSearch.Text="\""+Clipboard.GetText()+ "\" is in Clipboard";
             }
@@ -430,8 +433,9 @@ namespace Diccon
 
         private void btImage_Click(object sender, EventArgs e)
         {
-            bot.botImageAnswer(examplePixabayLogo, examplePictureBox, exampleColoredPicturePanel, examplePicturePanel, flowChatBox);
             btImage.Visible = false;
+            bot.botImageAnswer(examplePixabayLogo, examplePictureBox, exampleColoredPicturePanel, examplePicturePanel, flowChatBox);
+            
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

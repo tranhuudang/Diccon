@@ -249,29 +249,30 @@ namespace Diccon
         }
 
 
-        public async void botImageAnswer(PictureBox examplePixabayLogo,  PictureBox examplePictureBox, RoundedPanel exampleColoredPanel, Panel examplePanel, FlowLayoutPanel targetFlowLayout)
+        public async void botImageAnswer(PictureBox examplePixabayLogo, RoundedPictureBox examplePictureBox, RoundedPanel exampleColoredPanel, Panel examplePanel, FlowLayoutPanel targetFlowLayout)
         {
-            PictureBox pictureBox = new PictureBox();
+            RoundedPictureBox pictureBox = new RoundedPictureBox();
             RoundedPanel roundedPanel = new RoundedPanel();
             PictureBox pixabayLogo = new PictureBox();
             Panel panel = new Panel();
             imageRelated img = new imageRelated();
-
-
 
             pixabayLogo.Image = examplePixabayLogo.Image;
             pixabayLogo.Location=examplePixabayLogo.Location;
             pixabayLogo.Size=examplePixabayLogo.Size;
             pixabayLogo.Click += PixabayLogo_Click;
             pixabayLogo.Cursor = examplePixabayLogo.Cursor;
-
-            pictureBox.Size= examplePictureBox.Size;
-            pictureBox.Location = examplePictureBox.Location;
-            pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
-
+            pixabayLogo.Visible = dicconProp.isFromPixabay;
+            
             roundedPanel.Size = exampleColoredPanel.Size;
             roundedPanel.Location = exampleColoredPanel.Location;   
             roundedPanel.BackColor= exampleColoredPanel.BackColor;
+
+            pictureBox.Size = examplePictureBox.Size;
+            pictureBox.Location = examplePictureBox.Location;
+            pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox.BorderColor = roundedPanel.BackColor;
+            pictureBox.BackColor = examplePictureBox.BackColor;
 
             panel.Size = examplePanel.Size;
 
@@ -287,8 +288,6 @@ namespace Diccon
             panel.Visible = true;
 
             targetFlowLayout.Controls.Add(panel);
-
-
 
             targetFlowLayout.ScrollControlIntoView(panel);
         }
