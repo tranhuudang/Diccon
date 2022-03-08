@@ -18,9 +18,9 @@
 
 * Cảm ơn bạn đã dành thời gian đọc qua phần giới thiệu ứng dụng, chúc bạn một ngày nhiều niềm vui, may mắn. Cảm ơn bạn vì đã tin tưởng sử dụng ứng dụng và đồng hành cùng mình trong suốt quãng thời gian qua.  
 
-## Requirements
+## Yêu cầu phần cứng
 
-* _Windows 8 or higher._
+* _Windows 8 hoặc hơn._
 
 ## Tải về
 
