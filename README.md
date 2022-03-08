@@ -10,7 +10,7 @@
 
 ## Giới thiệu
 
-* Diccon là một dự án nhỏ của mình với mong muốn tạo ra một ứng dụng tra cứu từ điển đẹp đẽ và màu mè 🏆🥇 
+* Diccon là một dự án nhỏ với mong muốn tạo ra một ứng dụng tra cứu từ điển đẹp đẽ và dễ sử dụng 🏆🥇 
 
 * Mình rất vui khi có thể cùng mọi người chung tay xây dựng dự án này, vì bản thân mình cũng là một người học tiếng Anh, một vài tính năng trong ứng dụng cũng là những gì mình thấy nó thực sự cần thiết trong việc học của mình. Mang nó vào bên trong ứng dụng, mình mong rằng nó giúp ích được cho các bạn, đặc biệt là những bạn yêu thích tiếng Anh hay đang nỗ lực để cải thiện vốn ngôn từ của mình.
 
