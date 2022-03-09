@@ -93,6 +93,16 @@ namespace Diccon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap back_36 {
+            get {
+                object obj = ResourceManager.GetObject("back_36", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap blind {
             get {
                 object obj = ResourceManager.GetObject("blind", resourceCulture);
@@ -206,6 +216,16 @@ namespace Diccon.Properties {
         internal static System.Drawing.Bitmap delete_24 {
             get {
                 object obj = ResourceManager.GetObject("delete_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dictionary_36 {
+            get {
+                object obj = ResourceManager.GetObject("dictionary_36", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

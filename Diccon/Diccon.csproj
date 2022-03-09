@@ -130,6 +130,12 @@
     <Compile Include="about.Designer.cs">
       <DependentUpon>about.cs</DependentUpon>
     </Compile>
+    <Compile Include="appFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="appFrame.Designer.cs">
+      <DependentUpon>appFrame.cs</DependentUpon>
+    </Compile>
     <Compile Include="botBehavior.cs" />
     <Compile Include="connectivity.cs" />
     <Compile Include="dicconProp.cs" />
@@ -141,11 +147,11 @@
       <DependentUpon>emoji.cs</DependentUpon>
     </Compile>
     <Compile Include="imageRelated.cs" />
-    <Compile Include="mainHall.cs">
+    <Compile Include="dictionary.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="mainHall.Designer.cs">
-      <DependentUpon>mainHall.cs</DependentUpon>
+    <Compile Include="dictionary.Designer.cs">
+      <DependentUpon>dictionary.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -172,11 +178,14 @@
     <EmbeddedResource Include="about.resx">
       <DependentUpon>about.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="appFrame.resx">
+      <DependentUpon>appFrame.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="emoji.resx">
       <DependentUpon>emoji.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="mainHall.resx">
-      <DependentUpon>mainHall.cs</DependentUpon>
+    <EmbeddedResource Include="dictionary.resx">
+      <DependentUpon>dictionary.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -265,6 +274,8 @@
     <None Include="Resources\pixabay_png_small.png" />
     <None Include="Resources\pixabay_png.png" />
     <None Include="Resources\pixabay_logo.png" />
+    <None Include="Resources\dictionary_36.png" />
+    <None Include="Resources\back_36.png" />
     <Content Include="Setup and Update\UpdateInfo.xml" />
     <None Include="Resources\github_20.png" />
     <None Include="Resources\info_20.png" />

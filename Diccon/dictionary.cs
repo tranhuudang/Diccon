@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Drawing;
+using System.Drawing.Drawing2D;
+using System.Drawing.Imaging;
 using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
@@ -15,15 +17,12 @@ using System.Xml;
 
 namespace Diccon
 {
-    public partial class mainHall : Form
+    public partial class dictionary : Form
     {
         botBehavior bot = new botBehavior();
         userAction user = new userAction();
 
-        public mainHall()
-        {
-            InitializeComponent();
-        }
+        
 
         private void mainHall_Load(object sender, EventArgs e)
         {
@@ -32,19 +31,12 @@ namespace Diccon
             flowChatBox.HorizontalScroll.Visible = false;
             flowChatBox.HorizontalScroll.Enabled = false;
             flowChatBox.Padding = new Padding(10, 0, 0, 0);
-            // Stack up quotation
-            quote quote = new quote();
-            lbQuotation.Text = quote.getQuote("en");
+            
         }
 
         private void buttonFind_Click(object sender, EventArgs e)
         {
-            if (PanelOfFind.Visible == true) PanelOfFind.Visible = false;
-            else
-            {
-                PanelOfFind.Visible = true;
-                tbFind.Focus();
-            }
+           
         }
 
         private void textFromMic_Click(object sender, EventArgs e)
@@ -147,11 +139,11 @@ namespace Diccon
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            panelSuggestFunction.Visible = true;
-            flowChatBox.Controls.SetChildIndex(panelSuggestFunction, flowChatBox.Controls.Count);
-        }
+        //private void button1_Click(object sender, EventArgs e)
+        //{
+        //    panelSuggestFunction.Visible = true;
+        //    flowChatBox.Controls.SetChildIndex(panelSuggestFunction, flowChatBox.Controls.Count);
+        //}
 
         private void searchTextBox_TextChanged(object sender, EventArgs e)
         {
@@ -183,7 +175,9 @@ namespace Diccon
 
         private void addNote_Click(object sender, EventArgs e)
         {
-            user.userAddNote(exampleNoteMenu, exampleNoteRichTextBox, exampleNoteColoredPanel, exampleNotePanel, flowChatBox);
+            user.userAddNote(exampleNoteSave,exampleNoteDelete,exampleNoteClose, exampleNoteRichTextBox, exampleNoteColoredPanel, exampleNotePanel, flowChatBox);
+            // hide the tool box
+            panelBottom.Height = dicconProp.bottomPanel_DefaultHeight;
         }
 
         private void addNote_MouseEnter(object sender, EventArgs e)
@@ -271,7 +265,7 @@ namespace Diccon
         }
         private void tbFind_Leave(object sender, EventArgs e)
         {
-            PanelOfFind.Visible = false;
+           
         }
 
         private void searchTextBox_Leave(object sender, EventArgs e)
@@ -346,12 +340,17 @@ namespace Diccon
         {
 
         }
-
+        /// <summary>
+        /// Suggest timer run when key down is triggered in search box
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private async void suggestionTimer_TickAsync(object sender, EventArgs e)
         {
             bool isOnline = new connectivity().isOnline();
             if (isOnline)
             {
+                suggestionTimer.Enabled = false;
                 sysnonym sysnonym = new sysnonym();
                 if (await sysnonym.getSynonymListAsync(dicconProp.currentWord) == null)
                 {
@@ -361,17 +360,28 @@ namespace Diccon
                 {
                     btSynonym.Visible = true;
                 }
+                imageRelated image = new imageRelated();
+                if ( await image.getImageUrl(dicconProp.currentWord) == "none")
+                {
+                    btImage.Visible = false;
+                }
+                else
+                {
+                    btImage.Visible = true;
+                }
+
             }
-            suggestionTimer.Enabled = false;
+            
 
         }
 
         private async void btSynonym_Click(object sender, EventArgs e)
         {
+            btSynonym.Visible = false;
             sysnonym sysnonym = new sysnonym();
             List<string> synonymList = await sysnonym.getSynonymListAsync(dicconProp.currentWord);
             bot.botSynonym(synonymList, exampleItemSynonym, exampleflowLayoutSynonym, flowChatBox);
-            btSynonym.Visible = false;
+            
         }
 
         private void textFromClipboard_Click(object sender, EventArgs e)
@@ -397,7 +407,33 @@ namespace Diccon
 
         private void realTimeDetermine_Tick(object sender, EventArgs e)
         {
+            string textInClipboard = Clipboard.GetText();
             textFromClipboard.Visible = Clipboard.ContainsText() ? true : false;
+            if((textInClipboard.Length<18)&&(textInClipboard.Length>0))
+            {
+                labelTypeToSearch.Text="\""+Clipboard.GetText()+ "\" is in Clipboard";
+            }
+        }
+        public dictionary()
+        {
+            InitializeComponent();
+        }
+
+        private void closeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show((sender as ToolStripMenuItem).Owner.TopLevelControl.Name);
+        }
+
+        private void btImage_Click(object sender, EventArgs e)
+        {
+            btImage.Visible = false;
+            bot.botImageAnswer(examplePixabayLogo, examplePictureBox, exampleColoredPicturePanel, examplePicturePanel, flowChatBox);
+            
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 

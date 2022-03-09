@@ -46,7 +46,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(68, 59);
+            this.label1.Location = new System.Drawing.Point(68, 214);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(45, 13);
             this.label1.TabIndex = 0;
@@ -55,7 +55,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(68, 80);
+            this.label2.Location = new System.Drawing.Point(68, 235);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 13);
             this.label2.TabIndex = 1;
@@ -64,7 +64,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(68, 101);
+            this.label3.Location = new System.Drawing.Point(68, 256);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(41, 13);
             this.label3.TabIndex = 1;
@@ -73,7 +73,7 @@
             // lbVersion
             // 
             this.lbVersion.AutoSize = true;
-            this.lbVersion.Location = new System.Drawing.Point(126, 59);
+            this.lbVersion.Location = new System.Drawing.Point(126, 214);
             this.lbVersion.Name = "lbVersion";
             this.lbVersion.Size = new System.Drawing.Size(50, 13);
             this.lbVersion.TabIndex = 0;
@@ -82,7 +82,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(126, 101);
+            this.label5.Location = new System.Drawing.Point(126, 256);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(81, 13);
             this.label5.TabIndex = 1;
@@ -91,7 +91,7 @@
             // gitHubLink
             // 
             this.gitHubLink.AutoSize = true;
-            this.gitHubLink.Location = new System.Drawing.Point(126, 80);
+            this.gitHubLink.Location = new System.Drawing.Point(126, 235);
             this.gitHubLink.Name = "gitHubLink";
             this.gitHubLink.Size = new System.Drawing.Size(98, 13);
             this.gitHubLink.TabIndex = 2;
@@ -102,7 +102,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Diccon.Properties.Resources.ninja_128;
-            this.pictureBox1.Location = new System.Drawing.Point(306, 9);
+            this.pictureBox1.Location = new System.Drawing.Point(141, 28);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(128, 128);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -111,18 +111,18 @@
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(12, 9);
+            this.label4.Location = new System.Drawing.Point(12, 159);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(121, 37);
+            this.label4.Size = new System.Drawing.Size(383, 37);
             this.label4.TabIndex = 0;
             this.label4.Text = "Diccon";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(68, 122);
+            this.label6.Location = new System.Drawing.Point(68, 277);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(35, 13);
             this.label6.TabIndex = 1;
@@ -131,7 +131,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(126, 122);
+            this.label7.Location = new System.Drawing.Point(126, 277);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(143, 13);
             this.label7.TabIndex = 1;
@@ -140,9 +140,9 @@
             // label8
             // 
             this.label8.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label8.Location = new System.Drawing.Point(12, 160);
+            this.label8.Location = new System.Drawing.Point(12, 315);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(435, 45);
+            this.label8.Size = new System.Drawing.Size(383, 63);
             this.label8.TabIndex = 4;
             this.label8.Text = resources.GetString("label8.Text");
             // 
@@ -150,7 +150,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(446, 216);
+            this.ClientSize = new System.Drawing.Size(407, 387);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.gitHubLink);

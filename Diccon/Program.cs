@@ -13,7 +13,7 @@ namespace Diccon
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new mainHall());
+            Application.Run(new appFrame());
         }
     }
 }
