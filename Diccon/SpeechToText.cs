@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Diccon
@@ -32,13 +25,13 @@ namespace Diccon
 
         private void SpeechToText_Load(object sender, EventArgs e)
         {
-            lbMessage.Dock= DockStyle.Fill;
+            lbMessage.Dock = DockStyle.Fill;
         }
 
         private void timerAutoClose_Tick(object sender, EventArgs e)
         {
-           
-            if (count==3)
+
+            if (count == 3)
             {
                 lbMessage.Text = "Keep talking";
             }
@@ -46,7 +39,7 @@ namespace Diccon
             {
                 lbMessage.Text = "Analyzing..";
             }
-            if (count++ >=7)
+            if (count++ >= 7)
             {
                 timerAutoClose.Stop();
                 this.Close();

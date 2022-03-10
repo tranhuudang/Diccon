@@ -15,7 +15,7 @@ namespace Diccon
         public static string resourcesFolder = @"Resources\";
         public static string updateAvailableMessage = "New version available! Do you want to download it now?";
         public static string noUpdateAvailableMessage = "You're running the lastest version of Diccon!";
-        public static string updateInfo = "https://raw.githubusercontent.com/zeroclubvn/Diccon/master/Diccon/Setup%20and%20Update/UpdateInfo.xml";
+        public static string updateInfo = "https://raw.githubusercontent.com/tranhuudang/Diccon/master/Diccon/Setup%20and%20Update/UpdateInfo.xml";
         public static string downloadSetupCompleteMessage = "Diccon Updater is ready to install new version of Diccon!";
         public static string setupName = "DicconSetup.msi";
         public static string currentWord;
@@ -26,7 +26,8 @@ namespace Diccon
         public static int listenTimeInNumber = 7;
         public static string listenTimeInString = "00:00:07";
         public static string currentImageLink = "none";
-        public static bool isFromPixabay= true;
+        public static bool isFromPixabay = true;
+        public static string internetError = "Unfortunately, we can't connect to the internet at the moment!";
 
     }
 }

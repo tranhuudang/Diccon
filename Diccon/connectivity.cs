@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http;
 using System.Net.NetworkInformation;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Diccon
@@ -29,13 +26,18 @@ namespace Diccon
         }
         public async Task<bool> isWebsiteAlive(Uri url)
         {
-            HttpClient client = new HttpClient();
-            var checkingResponse = await client.GetAsync(url);
-            if (checkingResponse.IsSuccessStatusCode)
+            if (isOnline())
             {
-                return true;
+                HttpClient client = new HttpClient();
+                var checkingResponse = await client.GetAsync(url);
+                if (checkingResponse.IsSuccessStatusCode)
+                {
+                    return true;
+                }
+                return false;
             }
             return false;
+
         }
     }
 }

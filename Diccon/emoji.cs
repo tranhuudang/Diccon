@@ -1,14 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Runtime.InteropServices;
-using System.IO;
 
 namespace Diccon
 {
@@ -30,7 +22,7 @@ namespace Diccon
         private void emoji_MouseEnter(object sender, EventArgs e)
         {
             PictureBox target = (sender as PictureBox);
-            target.Size= new Size(target.Width+2, target.Height+2);
+            target.Size = new Size(target.Width + 2, target.Height + 2);
         }
 
         private void emoji_MouseLeave(object sender, EventArgs e)
@@ -45,7 +37,7 @@ namespace Diccon
         }
         private void emojiClick(object sender, EventArgs e)
         {
-            lbEmojiText.Text= (sender as PictureBox).Name;
+            lbEmojiText.Text = (sender as PictureBox).Name;
             Clipboard.SetText(lbEmojiText.Text);
         }
 

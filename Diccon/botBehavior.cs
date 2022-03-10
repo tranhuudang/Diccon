@@ -111,7 +111,7 @@ namespace Diccon
 
             textHolder.Text = textToPlay;
             textHolder.Location = exampleTextHolder.Location;
-            textHolder.Font=exampleTextHolder.Font;
+            textHolder.Font = exampleTextHolder.Font;
             textHolder.AutoSize = true;
             // change text color equal to its parent background to invisible it
             newColoredPanel.BackColor = exampleColoredPanel.BackColor;
@@ -122,7 +122,7 @@ namespace Diccon
             // add control before resize panel
             newColoredPanel.AutoSize = true;
             newColoredPanel.Size = exampleColoredPanel.Size;
-           
+
             newColoredPanel.Location = exampleColoredPanel.Location;
 
             newAlignPanel.Dock = examplePlayAlignPanel.Dock;
@@ -210,42 +210,50 @@ namespace Diccon
         /// <returns></returns>
         public async Task<string> getTranslatedTextAsync(string text)
         {
-            var client = new HttpClient();
-            var request = new HttpRequestMessage
+            try
             {
-                Method = HttpMethod.Post,
-                RequestUri = new Uri("https://microsoft-translator-text.p.rapidapi.com/translate?to=vi&api-version=3.0&profanityAction=NoAction&textType=plain&suggestedFrom=en"),
-                Headers ={
+                var client = new HttpClient();
+                var request = new HttpRequestMessage
+                {
+                    Method = HttpMethod.Post,
+                    RequestUri = new Uri("https://microsoft-translator-text.p.rapidapi.com/translate?to=vi&api-version=3.0&profanityAction=NoAction&textType=plain&suggestedFrom=en"),
+                    Headers ={
                             { "x-rapidapi-host", "microsoft-translator-text.p.rapidapi.com" },
                             { "x-rapidapi-key", "a10d63c67cmshd79f69a2d87629ap1e586djsna7cdee48e5de" },
                          },
-                Content = new StringContent("[\r\n    {\r\n        \"Text\": \"" + text + "\"\r\n    }\r\n]")
-                {
-                    Headers =
+                    Content = new StringContent("[\r\n    {\r\n        \"Text\": \"" + text + "\"\r\n    }\r\n]")
+                    {
+                        Headers =
                         {
                             ContentType = new MediaTypeHeaderValue("application/json")
                         }
-                }
-            };
-            string body;
-            using (var response = await client.SendAsync(request))
-            {
-                if (response.IsSuccessStatusCode)
+                    }
+                };
+                string body;
+                using (var response = await client.SendAsync(request))
                 {
-                    body = await response.Content.ReadAsStringAsync();
-                    JsonNode note = JsonNode.Parse(body);
-                    string translatedWord = note[0]["translations"][0]["text"].GetValue<string>();
-                    return translatedWord;
-                }
-                else
-                {
-                    MessageBox.Show("ok");
-                    return "-1";
+                    if (response.IsSuccessStatusCode)
+                    {
+                        body = await response.Content.ReadAsStringAsync();
+                        JsonNode note = JsonNode.Parse(body);
+                        string translatedWord = note[0]["translations"][0]["text"].GetValue<string>();
+                        return translatedWord;
+                    }
+                    else
+                    {
+
+                        return dicconProp.internetError;
+
+                    }
 
                 }
-                
             }
-            
+            catch (Exception)
+            {
+                return dicconProp.internetError;
+            }
+
+
         }
 
 
@@ -258,15 +266,15 @@ namespace Diccon
             imageRelated img = new imageRelated();
 
             pixabayLogo.Image = examplePixabayLogo.Image;
-            pixabayLogo.Location=examplePixabayLogo.Location;
-            pixabayLogo.Size=examplePixabayLogo.Size;
+            pixabayLogo.Location = examplePixabayLogo.Location;
+            pixabayLogo.Size = examplePixabayLogo.Size;
             pixabayLogo.Click += PixabayLogo_Click;
             pixabayLogo.Cursor = examplePixabayLogo.Cursor;
             pixabayLogo.Visible = dicconProp.isFromPixabay;
-            
+
             roundedPanel.Size = exampleColoredPanel.Size;
-            roundedPanel.Location = exampleColoredPanel.Location;   
-            roundedPanel.BackColor= exampleColoredPanel.BackColor;
+            roundedPanel.Location = exampleColoredPanel.Location;
+            roundedPanel.BackColor = exampleColoredPanel.BackColor;
 
             pictureBox.Size = examplePictureBox.Size;
             pictureBox.Location = examplePictureBox.Location;

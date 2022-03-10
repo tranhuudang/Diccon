@@ -142,6 +142,7 @@
             this.label8.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label8.Location = new System.Drawing.Point(12, 315);
             this.label8.Name = "label8";
+            this.label8.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
             this.label8.Size = new System.Drawing.Size(383, 63);
             this.label8.TabIndex = 4;
             this.label8.Text = resources.GetString("label8.Text");
@@ -150,6 +151,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(407, 387);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.pictureBox1);

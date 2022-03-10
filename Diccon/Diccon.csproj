@@ -153,6 +153,12 @@
     <Compile Include="dictionary.Designer.cs">
       <DependentUpon>dictionary.cs</DependentUpon>
     </Compile>
+    <Compile Include="noteItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="noteItem.Designer.cs">
+      <DependentUpon>noteItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="quote.cs" />
@@ -186,6 +192,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="dictionary.resx">
       <DependentUpon>dictionary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="noteItem.resx">
+      <DependentUpon>noteItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -276,6 +285,7 @@
     <None Include="Resources\pixabay_logo.png" />
     <None Include="Resources\dictionary_36.png" />
     <None Include="Resources\back_36.png" />
+    <None Include="Resources\back_24.png" />
     <Content Include="Setup and Update\UpdateInfo.xml" />
     <None Include="Resources\github_20.png" />
     <None Include="Resources\info_20.png" />

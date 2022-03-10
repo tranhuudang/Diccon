@@ -1,12 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+using System.Diagnostics;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Net;
+using System.Reflection;
+using System.Threading;
 using System.Windows.Forms;
+using System.Xml;
 
 namespace Diccon
 {
@@ -14,6 +13,7 @@ namespace Diccon
     {
         Form currentForm = null;
         Form dictionaryForm = null;
+        Form aboutForm = null;
         public appFrame()
         {
             InitializeComponent();
@@ -98,7 +98,7 @@ namespace Diccon
         {
             if (dictionaryForm != null)
             {
-                
+
                 openForm(dictionaryForm);
             }
             else
@@ -109,8 +109,8 @@ namespace Diccon
         }
         private void openForm(Form targetForm)
         {
-            logo.Image = Properties.Resources.back_36;
-            if (currentForm!= null)
+            logo.Image = Properties.Resources.back_24;
+            if (currentForm != null)
             {
                 currentForm.Hide();
                 panelHome.Visible = false;
@@ -137,10 +137,79 @@ namespace Diccon
         private void logo_Click(object sender, EventArgs e)
         {
             logo.Image = Properties.Resources.ninja_64;
-            if( currentForm!=null)
+            if (currentForm != null)
             {
                 currentForm.Hide();
                 panelHome.Visible = true;
+            }
+        }
+
+        private void buttonMenu_Click(object sender, EventArgs e)
+        {
+            int X = Cursor.Position.X - 120;
+            int Y = Cursor.Position.Y + 15;
+            contextMenu.Show(X, Y);
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (aboutForm != null)
+            {
+
+                openForm(aboutForm);
+            }
+            else
+            {
+                aboutForm = new about();
+                openForm(aboutForm);
+            }
+
+        }
+
+        private void checkForUpdatesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                XmlDocument updateFile = new XmlDocument();
+                updateFile.Load(dicconProp.updateInfo + "?" + DateTime.Now.Ticks.ToString());
+                Version netVersion = new Version(updateFile.SelectSingleNode("//currentVersion/version").InnerText);
+                string describe = updateFile.SelectSingleNode("//currentVersion/describe").InnerText;
+                string linkSetup = updateFile.SelectSingleNode("//path").InnerText;
+                Version currentVersion = Assembly.GetExecutingAssembly().GetName().Version;
+                if (netVersion > currentVersion)
+                {
+
+                    if (MessageBox.Show(dicconProp.updateAvailableMessage, "Update", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+                    {
+                        Thread thread = new Thread(() =>
+                        {
+
+                            WebClient webClient = new WebClient();
+                            webClient.DownloadFileCompleted += WebClient_DownloadFileCompleted;
+                            webClient.DownloadFileAsync(new Uri(linkSetup), dicconProp.setupName);
+                        });
+                        thread.Start();
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show(dicconProp.noUpdateAvailableMessage, "Update", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Can't connect to the internet!");
+            }
+        }
+
+
+        private void WebClient_DownloadFileCompleted(object sender, System.ComponentModel.AsyncCompletedEventArgs e)
+        {
+            if (MessageBox.Show(dicconProp.downloadSetupCompleteMessage, "Update", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+            {
+                Process.Start(dicconProp.setupName);
+                Application.Exit();
             }
         }
     }

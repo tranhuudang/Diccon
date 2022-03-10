@@ -3,13 +3,8 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Drawing;
-using System.Drawing.Drawing2D;
-using System.Drawing.Imaging;
 using System.Net;
-using System.Net.Http;
-using System.Net.Http.Headers;
 using System.Reflection;
-using System.Text.Json.Nodes;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -22,7 +17,7 @@ namespace Diccon
         botBehavior bot = new botBehavior();
         userAction user = new userAction();
 
-        
+
 
         private void mainHall_Load(object sender, EventArgs e)
         {
@@ -31,12 +26,12 @@ namespace Diccon
             flowChatBox.HorizontalScroll.Visible = false;
             flowChatBox.HorizontalScroll.Enabled = false;
             flowChatBox.Padding = new Padding(10, 0, 0, 0);
-            
+
         }
 
         private void buttonFind_Click(object sender, EventArgs e)
         {
-           
+
         }
 
         private void textFromMic_Click(object sender, EventArgs e)
@@ -175,7 +170,7 @@ namespace Diccon
 
         private void addNote_Click(object sender, EventArgs e)
         {
-            user.userAddNote(exampleNoteSave,exampleNoteDelete,exampleNoteClose, exampleNoteRichTextBox, exampleNoteColoredPanel, exampleNotePanel, flowChatBox);
+            user.userAddNote(exampleNoteSave, exampleNoteDelete, exampleNoteClose, exampleNoteRichTextBox, exampleNoteColoredPanel, exampleNotePanel, flowChatBox);
             // hide the tool box
             panelBottom.Height = dicconProp.bottomPanel_DefaultHeight;
         }
@@ -207,9 +202,7 @@ namespace Diccon
         private void menuButton_Click(object sender, EventArgs e)
         {
 
-            int X = Cursor.Position.X - 120;
-            int Y = Cursor.Position.Y + 15;
-            contextMenu.Show(X, Y);
+
         }
         /// <summary>
         /// Change Red and Green background of Rounded-Label to a darker shade of  color
@@ -265,7 +258,7 @@ namespace Diccon
         }
         private void tbFind_Leave(object sender, EventArgs e)
         {
-           
+
         }
 
         private void searchTextBox_Leave(object sender, EventArgs e)
@@ -291,49 +284,10 @@ namespace Diccon
 
         private void checkForUpdatesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            try
-            {
-                XmlDocument updateFile = new XmlDocument();
-                updateFile.Load(dicconProp.updateInfo + "?" + DateTime.Now.Ticks.ToString());
-                Version netVersion = new Version(updateFile.SelectSingleNode("//currentVersion/version").InnerText);
-                string describe = updateFile.SelectSingleNode("//currentVersion/describe").InnerText;
-                string linkSetup = updateFile.SelectSingleNode("//path").InnerText;
-                Version currentVersion = Assembly.GetExecutingAssembly().GetName().Version;
-                if (netVersion > currentVersion)
-                {
-
-                    if (MessageBox.Show(dicconProp.updateAvailableMessage, "Update", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
-                    {
-                        Thread thread = new Thread(() =>
-                        {
-
-                            WebClient webClient = new WebClient();
-                            webClient.DownloadFileCompleted += WebClient_DownloadFileCompleted;
-                            webClient.DownloadFileAsync(new Uri(linkSetup), dicconProp.setupName);
-                        });
-                        thread.Start();
-                    }
-
-                }
-                else
-                {
-                    MessageBox.Show(dicconProp.noUpdateAvailableMessage, "Update", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Can't connect to the internet!");
-            }
+            
         }
 
-        private void WebClient_DownloadFileCompleted(object sender, AsyncCompletedEventArgs e)
-        {
-            if (MessageBox.Show(dicconProp.downloadSetupCompleteMessage, "Update", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
-            {
-                Process.Start(dicconProp.setupName);
-                Application.Exit();
-            }
-        }
+       
 
 
         private void exampleAnswerText_HScroll(object sender, EventArgs e)
@@ -361,7 +315,7 @@ namespace Diccon
                     btSynonym.Visible = true;
                 }
                 imageRelated image = new imageRelated();
-                if ( await image.getImageUrl(dicconProp.currentWord) == "none")
+                if (await image.getImageUrl(dicconProp.currentWord) == "none")
                 {
                     btImage.Visible = false;
                 }
@@ -371,7 +325,7 @@ namespace Diccon
                 }
 
             }
-            
+
 
         }
 
@@ -381,7 +335,7 @@ namespace Diccon
             sysnonym sysnonym = new sysnonym();
             List<string> synonymList = await sysnonym.getSynonymListAsync(dicconProp.currentWord);
             bot.botSynonym(synonymList, exampleItemSynonym, exampleflowLayoutSynonym, flowChatBox);
-            
+
         }
 
         private void textFromClipboard_Click(object sender, EventArgs e)
@@ -409,9 +363,9 @@ namespace Diccon
         {
             string textInClipboard = Clipboard.GetText();
             textFromClipboard.Visible = Clipboard.ContainsText() ? true : false;
-            if((textInClipboard.Length<18)&&(textInClipboard.Length>0))
+            if ((textInClipboard.Length < 18) && (textInClipboard.Length > 0))
             {
-                labelTypeToSearch.Text="\""+Clipboard.GetText()+ "\" is in Clipboard";
+                labelTypeToSearch.Text = "\"" + Clipboard.GetText() + "\" is in Clipboard";
             }
         }
         public dictionary()
@@ -428,7 +382,7 @@ namespace Diccon
         {
             btImage.Visible = false;
             bot.botImageAnswer(examplePixabayLogo, examplePictureBox, exampleColoredPicturePanel, examplePicturePanel, flowChatBox);
-            
+
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

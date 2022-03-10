@@ -1,21 +1,20 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
+using System.IO;
+using System.Linq;
 using System.Windows.Forms;
 using System.Xml;
-using System.Text;
-using System.IO;
 using System.Xml.Linq;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace Diccon
 {
     class userNote
     {
 
-        public string title= "untitled";
+        public string title = "untitled";
         public string content;
-        public bool favourite= false;
+        public bool favourite = false;
     }
     internal class userAction
     {
@@ -56,7 +55,7 @@ namespace Diccon
             newAnswerPanel.Height = newRichTextBox.Height + 28;
 
             newAnswerPanel.Controls.Add(newColoredPanel);
-            newAnswerPanel.MinimumSize= exampleParentPanel.MinimumSize;
+            newAnswerPanel.MinimumSize = exampleParentPanel.MinimumSize;
 
             targetFlowLayout.Controls.Add(newAnswerPanel);
 
@@ -80,7 +79,7 @@ namespace Diccon
             int lineCount = textMessage.GetLineFromCharIndex(textMessage.TextLength);
             textMessage.Height = lineHeight * lineCount;
             parentPanel.Height = textMessage.Height + 20;
-            parentPanel.Visible = true; 
+            parentPanel.Visible = true;
         }
 
         /// <summary>
@@ -101,7 +100,7 @@ namespace Diccon
             // refresh to get rid of unrendered design
             grandFlowLayout.Refresh();
         }
-        
+
         public void userSingleMessage(string userMessage, Label exampleText, Panel examplePanel, FlowLayoutPanel targetFlowLayout)
         {
             int searchText_Len = userMessage.Length;
@@ -137,9 +136,9 @@ namespace Diccon
             newPanel.Tag = note;
 
             btSave.Image = exampleNoteSave.Image;
-            btSave.Location= exampleNoteSave.Location;
-            btSave.Size= exampleNoteSave.Size;
-            btSave.Cursor= exampleNoteSave.Cursor;
+            btSave.Location = exampleNoteSave.Location;
+            btSave.Size = exampleNoteSave.Size;
+            btSave.Cursor = exampleNoteSave.Cursor;
             btSave.MouseEnter += PictureBox_MouseEnter;
             btSave.MouseLeave += PictureBox_MouseLeave;
             btSave.Click += BtSave_Click;
@@ -191,7 +190,7 @@ namespace Diccon
         private void BtSave_Click(object sender, EventArgs e)
         {
             object parentPanelTag = (sender as PictureBox).Parent.Parent.Tag;
-            userNote noteInTag= (userNote)parentPanelTag;
+            userNote noteInTag = (userNote)parentPanelTag;
             saveAsXml(noteInTag);
         }
         private void saveAsXml(userNote noteInTag)
@@ -221,7 +220,7 @@ namespace Diccon
                    new XElement("favourite", noteInTag.favourite)));
                 xDocument.Save("Note.xml");
             }
-            
+
         }
         private void noteInXml(string title, string content, bool favourite, XmlWriter xml)
         {

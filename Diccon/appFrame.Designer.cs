@@ -30,26 +30,26 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.PanelOfFind = new Diccon.RoundedPanel();
+            this.tbFind = new System.Windows.Forms.TextBox();
             this.buttonFind = new System.Windows.Forms.PictureBox();
             this.buttonMenu = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.logo = new System.Windows.Forms.PictureBox();
             this.playGroundPanel = new System.Windows.Forms.Panel();
             this.panelHome = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.roundedLabel2 = new Diccon.RoundedLabel();
             this.lbQuotation = new System.Windows.Forms.Label();
+            this.btDictionary = new Diccon.RoundedLabel();
+            this.roundedLabel1 = new Diccon.RoundedLabel();
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.roundedLabel7 = new Diccon.RoundedLabel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.roundedLabel2 = new Diccon.RoundedLabel();
-            this.btDictionary = new Diccon.RoundedLabel();
-            this.roundedLabel1 = new Diccon.RoundedLabel();
-            this.roundedLabel7 = new Diccon.RoundedLabel();
             this.buttonYourNote = new Diccon.RoundedLabel();
-            this.PanelOfFind = new Diccon.RoundedPanel();
-            this.tbFind = new System.Windows.Forms.TextBox();
             this.contextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.themeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.languageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -66,12 +66,12 @@
             this.githubToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel9.SuspendLayout();
+            this.PanelOfFind.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.buttonFind)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.playGroundPanel.SuspendLayout();
             this.panelHome.SuspendLayout();
-            this.PanelOfFind.SuspendLayout();
             this.contextMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -89,6 +89,30 @@
             this.panel9.Size = new System.Drawing.Size(407, 70);
             this.panel9.TabIndex = 5;
             // 
+            // PanelOfFind
+            // 
+            this.PanelOfFind.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.PanelOfFind.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.PanelOfFind.Controls.Add(this.tbFind);
+            this.PanelOfFind.Location = new System.Drawing.Point(204, 18);
+            this.PanelOfFind.Name = "PanelOfFind";
+            this.PanelOfFind.Radius = 20;
+            this.PanelOfFind.Size = new System.Drawing.Size(132, 34);
+            this.PanelOfFind.TabIndex = 9;
+            this.PanelOfFind.Thickness = 5F;
+            this.PanelOfFind.Visible = false;
+            // 
+            // tbFind
+            // 
+            this.tbFind.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.tbFind.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbFind.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbFind.Location = new System.Drawing.Point(9, 7);
+            this.tbFind.Name = "tbFind";
+            this.tbFind.Size = new System.Drawing.Size(113, 19);
+            this.tbFind.TabIndex = 8;
+            this.tbFind.Leave += new System.EventHandler(this.tbFind_Leave);
+            // 
             // buttonFind
             // 
             this.buttonFind.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -99,6 +123,7 @@
             this.buttonFind.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.buttonFind.TabIndex = 7;
             this.buttonFind.TabStop = false;
+            this.buttonFind.Visible = false;
             this.buttonFind.Click += new System.EventHandler(this.buttonFind_Click);
             this.buttonFind.MouseEnter += new System.EventHandler(this.PictureBox_MouseEnter);
             this.buttonFind.MouseLeave += new System.EventHandler(this.PictureBox_MouseLeave);
@@ -113,6 +138,7 @@
             this.buttonMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.buttonMenu.TabIndex = 6;
             this.buttonMenu.TabStop = false;
+            this.buttonMenu.Click += new System.EventHandler(this.buttonMenu_Click);
             this.buttonMenu.MouseEnter += new System.EventHandler(this.PictureBox_MouseEnter);
             this.buttonMenu.MouseLeave += new System.EventHandler(this.PictureBox_MouseLeave);
             // 
@@ -170,66 +196,6 @@
             this.panelHome.Size = new System.Drawing.Size(407, 622);
             this.panelHome.TabIndex = 6;
             // 
-            // lbQuotation
-            // 
-            this.lbQuotation.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbQuotation.Location = new System.Drawing.Point(4, 25);
-            this.lbQuotation.Name = "lbQuotation";
-            this.lbQuotation.Size = new System.Drawing.Size(400, 94);
-            this.lbQuotation.TabIndex = 6;
-            this.lbQuotation.Text = "“Don’t wish it were easier; wish you were better.”";
-            this.lbQuotation.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(77, 240);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 20);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Dictionary";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(177, 341);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(62, 20);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "Donate";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(84, 343);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 20);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Timeline";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(183, 240);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 20);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Yawa";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(257, 240);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 20);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Your notes";
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -248,7 +214,7 @@
             this.roundedLabel2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.roundedLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundedLabel2.Image = global::Diccon.Properties.Resources.support_36;
-            this.roundedLabel2.Location = new System.Drawing.Point(170, 270);
+            this.roundedLabel2.Location = new System.Drawing.Point(170, 308);
             this.roundedLabel2.Name = "roundedLabel2";
             this.roundedLabel2.Radius = 50;
             this.roundedLabel2.Size = new System.Drawing.Size(75, 71);
@@ -258,6 +224,16 @@
             this.roundedLabel2.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
             this.roundedLabel2.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
             // 
+            // lbQuotation
+            // 
+            this.lbQuotation.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbQuotation.Location = new System.Drawing.Point(4, 44);
+            this.lbQuotation.Name = "lbQuotation";
+            this.lbQuotation.Size = new System.Drawing.Size(400, 94);
+            this.lbQuotation.TabIndex = 6;
+            this.lbQuotation.Text = "“Don’t wish it were easier; wish you were better.”";
+            this.lbQuotation.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // btDictionary
             // 
             this.btDictionary.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
@@ -265,7 +241,7 @@
             this.btDictionary.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btDictionary.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btDictionary.Image = global::Diccon.Properties.Resources.dictionary_36;
-            this.btDictionary.Location = new System.Drawing.Point(79, 169);
+            this.btDictionary.Location = new System.Drawing.Point(79, 207);
             this.btDictionary.Name = "btDictionary";
             this.btDictionary.Radius = 50;
             this.btDictionary.Size = new System.Drawing.Size(75, 71);
@@ -283,7 +259,7 @@
             this.roundedLabel1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.roundedLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundedLabel1.Image = global::Diccon.Properties.Resources.timeline_36;
-            this.roundedLabel1.Location = new System.Drawing.Point(79, 270);
+            this.roundedLabel1.Location = new System.Drawing.Point(79, 308);
             this.roundedLabel1.Name = "roundedLabel1";
             this.roundedLabel1.Radius = 50;
             this.roundedLabel1.Size = new System.Drawing.Size(75, 71);
@@ -293,6 +269,36 @@
             this.roundedLabel1.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
             this.roundedLabel1.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(77, 278);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(79, 20);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Dictionary";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(177, 379);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(62, 20);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "Donate";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(84, 381);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(67, 20);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Timeline";
+            // 
             // roundedLabel7
             // 
             this.roundedLabel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
@@ -300,7 +306,7 @@
             this.roundedLabel7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.roundedLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundedLabel7.Image = global::Diccon.Properties.Resources.chat_36;
-            this.roundedLabel7.Location = new System.Drawing.Point(170, 169);
+            this.roundedLabel7.Location = new System.Drawing.Point(170, 207);
             this.roundedLabel7.Name = "roundedLabel7";
             this.roundedLabel7.Radius = 50;
             this.roundedLabel7.Size = new System.Drawing.Size(75, 71);
@@ -310,6 +316,26 @@
             this.roundedLabel7.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
             this.roundedLabel7.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(183, 278);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(49, 20);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Yawa";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(257, 278);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(87, 20);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Your notes";
+            // 
             // buttonYourNote
             // 
             this.buttonYourNote.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
@@ -317,7 +343,7 @@
             this.buttonYourNote.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonYourNote.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonYourNote.Image = global::Diccon.Properties.Resources.your_note_36;
-            this.buttonYourNote.Location = new System.Drawing.Point(261, 169);
+            this.buttonYourNote.Location = new System.Drawing.Point(261, 207);
             this.buttonYourNote.Name = "buttonYourNote";
             this.buttonYourNote.Radius = 50;
             this.buttonYourNote.Size = new System.Drawing.Size(75, 71);
@@ -326,30 +352,6 @@
             this.buttonYourNote.Thickness = 5F;
             this.buttonYourNote.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
             this.buttonYourNote.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
-            // 
-            // PanelOfFind
-            // 
-            this.PanelOfFind.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.PanelOfFind.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.PanelOfFind.Controls.Add(this.tbFind);
-            this.PanelOfFind.Location = new System.Drawing.Point(204, 18);
-            this.PanelOfFind.Name = "PanelOfFind";
-            this.PanelOfFind.Radius = 20;
-            this.PanelOfFind.Size = new System.Drawing.Size(132, 34);
-            this.PanelOfFind.TabIndex = 9;
-            this.PanelOfFind.Thickness = 5F;
-            this.PanelOfFind.Visible = false;
-            // 
-            // tbFind
-            // 
-            this.tbFind.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.tbFind.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbFind.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbFind.Location = new System.Drawing.Point(9, 7);
-            this.tbFind.Name = "tbFind";
-            this.tbFind.Size = new System.Drawing.Size(113, 19);
-            this.tbFind.TabIndex = 8;
-            this.tbFind.Leave += new System.EventHandler(this.tbFind_Leave);
             // 
             // contextMenu
             // 
@@ -370,7 +372,7 @@
             // themeToolStripMenuItem
             // 
             this.themeToolStripMenuItem.Name = "themeToolStripMenuItem";
-            this.themeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.themeToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.themeToolStripMenuItem.Text = "Theme";
             // 
             // languageToolStripMenuItem
@@ -379,7 +381,7 @@
             this.englishToolStripMenuItem,
             this.vietnameseToolStripMenuItem});
             this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
-            this.languageToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.languageToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.languageToolStripMenuItem.Text = "Language";
             // 
             // englishToolStripMenuItem
@@ -401,7 +403,7 @@
             this.aWeekToolStripMenuItem,
             this.aMonthToolStripMenuItem});
             this.clearHistoryToolStripMenuItem.Name = "clearHistoryToolStripMenuItem";
-            this.clearHistoryToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.clearHistoryToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.clearHistoryToolStripMenuItem.Text = "Clear history";
             // 
             // eachSessionToolStripMenuItem
@@ -427,12 +429,12 @@
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(168, 6);
             // 
             // settingsToolStripMenuItem
             // 
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.settingsToolStripMenuItem.Text = "Settings";
             // 
             // checkForUpdatesToolStripMenuItem
@@ -440,30 +442,33 @@
             this.checkForUpdatesToolStripMenuItem.Name = "checkForUpdatesToolStripMenuItem";
             this.checkForUpdatesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.checkForUpdatesToolStripMenuItem.Text = "Check for Updates";
+            this.checkForUpdatesToolStripMenuItem.Click += new System.EventHandler(this.checkForUpdatesToolStripMenuItem_Click);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(177, 6);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(168, 6);
             // 
             // githubToolStripMenuItem
             // 
             this.githubToolStripMenuItem.Image = global::Diccon.Properties.Resources.github_20;
             this.githubToolStripMenuItem.Name = "githubToolStripMenuItem";
-            this.githubToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.githubToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.githubToolStripMenuItem.Text = "Github";
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Image = global::Diccon.Properties.Resources.info_20;
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // appFrame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(407, 692);
             this.Controls.Add(this.playGroundPanel);
             this.Controls.Add(this.panel9);
@@ -473,14 +478,14 @@
             this.Load += new System.EventHandler(this.AppFrame_Load);
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
+            this.PanelOfFind.ResumeLayout(false);
+            this.PanelOfFind.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.buttonFind)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonMenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             this.playGroundPanel.ResumeLayout(false);
             this.panelHome.ResumeLayout(false);
             this.panelHome.PerformLayout();
-            this.PanelOfFind.ResumeLayout(false);
-            this.PanelOfFind.PerformLayout();
             this.contextMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
