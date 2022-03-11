@@ -367,7 +367,7 @@
             this.githubToolStripMenuItem,
             this.aboutToolStripMenuItem});
             this.contextMenu.Name = "contextMenu";
-            this.contextMenu.Size = new System.Drawing.Size(181, 192);
+            this.contextMenu.Size = new System.Drawing.Size(172, 170);
             // 
             // themeToolStripMenuItem
             // 
@@ -474,6 +474,7 @@
             this.Controls.Add(this.panel9);
             this.MaximumSize = new System.Drawing.Size(423, 10000);
             this.Name = "appFrame";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Diccon";
             this.Load += new System.EventHandler(this.AppFrame_Load);
             this.panel9.ResumeLayout(false);

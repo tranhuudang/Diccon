@@ -62,6 +62,9 @@
             this.exampleTextHolder = new System.Windows.Forms.Label();
             this.examplePlayButton = new System.Windows.Forms.PictureBox();
             this.exampleAnswerPanel = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.roundedPanel2 = new Diccon.RoundedPanel();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.exampleAnswerColoredPanel = new Diccon.RoundedPanel();
             this.exampleAnswerText = new System.Windows.Forms.RichTextBox();
             this.exampleNotePanel = new System.Windows.Forms.Panel();
@@ -106,6 +109,8 @@
             this.examplePlayColoredPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.examplePlayButton)).BeginInit();
             this.exampleAnswerPanel.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.roundedPanel2.SuspendLayout();
             this.exampleAnswerColoredPanel.SuspendLayout();
             this.exampleNotePanel.SuspendLayout();
             this.exampleNoteColoredPanel.SuspendLayout();
@@ -305,6 +310,7 @@
             this.flowChatBox.Controls.Add(this.exampleAnswerPanel);
             this.flowChatBox.Controls.Add(this.exampleNotePanel);
             this.flowChatBox.Controls.Add(this.examplePicturePanel);
+            this.flowChatBox.Controls.Add(this.panel3);
             this.flowChatBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowChatBox.Location = new System.Drawing.Point(0, 5);
             this.flowChatBox.Name = "flowChatBox";
@@ -560,6 +566,43 @@
             this.exampleAnswerPanel.Size = new System.Drawing.Size(367, 155);
             this.exampleAnswerPanel.TabIndex = 1;
             this.exampleAnswerPanel.Visible = false;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.roundedPanel2);
+            this.panel3.Location = new System.Drawing.Point(8, 1008);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(367, 189);
+            this.panel3.TabIndex = 2;
+            // 
+            // roundedPanel2
+            // 
+            this.roundedPanel2.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.roundedPanel2.BorderColor = System.Drawing.Color.White;
+            this.roundedPanel2.Controls.Add(this.richTextBox1);
+            this.roundedPanel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.roundedPanel2.Location = new System.Drawing.Point(67, 0);
+            this.roundedPanel2.Name = "roundedPanel2";
+            this.roundedPanel2.Radius = 20;
+            this.roundedPanel2.Size = new System.Drawing.Size(300, 189);
+            this.roundedPanel2.TabIndex = 0;
+            this.roundedPanel2.Thickness = 5F;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.AutoWordSelection = true;
+            this.richTextBox1.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox1.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox1.ForeColor = System.Drawing.SystemColors.Window;
+            this.richTextBox1.Location = new System.Drawing.Point(10, 15);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.ReadOnly = true;
+            this.richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.richTextBox1.Size = new System.Drawing.Size(279, 159);
+            this.richTextBox1.TabIndex = 1;
+            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
             // exampleAnswerColoredPanel
             // 
@@ -919,6 +962,8 @@
             this.examplePlayColoredPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.examplePlayButton)).EndInit();
             this.exampleAnswerPanel.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.roundedPanel2.ResumeLayout(false);
             this.exampleAnswerColoredPanel.ResumeLayout(false);
             this.exampleNotePanel.ResumeLayout(false);
             this.exampleNoteColoredPanel.ResumeLayout(false);
@@ -997,6 +1042,9 @@
         private RoundedPanel exampleColoredPicturePanel;
         private System.Windows.Forms.PictureBox examplePixabayLogo;
         private RoundedPictureBox examplePictureBox;
+        private System.Windows.Forms.Panel panel3;
+        private RoundedPanel roundedPanel2;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }
 
