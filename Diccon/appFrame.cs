@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Diccon.Pages;
+using System;
 using System.Diagnostics;
 using System.Drawing;
 using System.Net;
@@ -14,6 +15,7 @@ namespace Diccon
         Form currentForm = null;
         Form dictionaryForm = null;
         Form aboutForm = null;
+        donate donateForm = null;
         public appFrame()
         {
             InitializeComponent();
@@ -21,9 +23,19 @@ namespace Diccon
 
         private void AppFrame_Load(object sender, EventArgs e)
         {
-            // Stack up quotation
-            quote quote = new quote();
-            lbQuotation.Text = quote.getQuote("en");
+            switch (Properties.Settings.Default["staredForm"])
+            {
+                case "dictionary":
+                    dictionaryForm = new dictionary();
+                    openForm(dictionaryForm);
+                    break;
+                default:
+                    // Stack up quotation
+                    quote quote = new quote();
+                    lbQuotation.Text = quote.getQuote("en");
+                    break;
+            }
+           
         }
 
         /// <summary>
@@ -79,21 +91,6 @@ namespace Diccon
             pictureBox.Location = new Point(X, Y);
         }
 
-        private void buttonFind_Click(object sender, EventArgs e)
-        {
-            if (PanelOfFind.Visible == true) PanelOfFind.Visible = false;
-            else
-            {
-                PanelOfFind.Visible = true;
-                tbFind.Focus();
-            }
-        }
-
-        private void tbFind_Leave(object sender, EventArgs e)
-        {
-            PanelOfFind.Visible = false;
-        }
-
         private void btDictionary_Click(object sender, EventArgs e)
         {
             if (dictionaryForm != null)
@@ -109,7 +106,18 @@ namespace Diccon
         }
         private void openForm(Form targetForm)
         {
+            string titleName = targetForm.Name[0].ToString().ToUpper() + targetForm.Name.Substring(1).ToLower();
+            title.Text = titleName;
             logo.Image = Properties.Resources.back_24;
+            if (Properties.Settings.Default["staredForm"].ToString()==targetForm.Name.ToLower())
+            {
+                btStar.Image = Properties.Resources.full_star_24;
+            }
+            else
+            {
+                btStar.Image = Properties.Resources.blank_star_24;
+            }
+            btStar.Visible = true;
             if (currentForm != null)
             {
                 currentForm.Hide();
@@ -136,6 +144,8 @@ namespace Diccon
 
         private void logo_Click(object sender, EventArgs e)
         {
+            btStar.Visible = false;
+            title.Text = "Diccon";
             logo.Image = Properties.Resources.ninja_64;
             if (currentForm != null)
             {
@@ -210,6 +220,47 @@ namespace Diccon
             {
                 Process.Start(dicconProp.setupName);
                 Application.Exit();
+            }
+        }
+
+        private void playGroundPanel_ControlAdded(object sender, ControlEventArgs e)
+        {
+          
+        }
+
+        private void btStar_Click(object sender, EventArgs e)
+        {
+            if (btStar.Image == Properties.Resources.blank_star_24)
+            {
+                btStar.Image = Properties.Resources.full_star_24;
+                Properties.Settings.Default["staredForm"] = title.Text.ToLower();
+            }
+            else
+            {
+                btStar.Image = Properties.Resources.blank_star_24;
+                Properties.Settings.Default["staredForm"] = "default";
+            }
+
+        }
+
+        private void appFrame_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Properties.Settings.Default.Save();
+        }
+
+        private void btDonate_Click(object sender, EventArgs e)
+        {
+            
+
+            if (donateForm != null)
+            {
+
+                openForm(donateForm);
+            }
+            else
+            {
+                donateForm = new donate();
+                openForm(donateForm);
             }
         }
     }

@@ -113,6 +113,16 @@ namespace Diccon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap blank_star_24 {
+            get {
+                object obj = ResourceManager.GetObject("blank_star_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap blind {
             get {
                 object obj = ResourceManager.GetObject("blind", resourceCulture);
@@ -327,6 +337,16 @@ namespace Diccon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap full_star_24 {
+            get {
+                object obj = ResourceManager.GetObject("full_star_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap furious {
             get {
                 object obj = ResourceManager.GetObject("furious", resourceCulture);
@@ -370,6 +390,16 @@ namespace Diccon.Properties {
         internal static System.Drawing.Bitmap history_32 {
             get {
                 object obj = ResourceManager.GetObject("history_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IMG_Sacombank_png {
+            get {
+                object obj = ResourceManager.GetObject("IMG_Sacombank.png", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -610,6 +640,16 @@ namespace Diccon.Properties {
         internal static System.Drawing.Bitmap timeline_36 {
             get {
                 object obj = ResourceManager.GetObject("timeline_36", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap translate_36 {
+            get {
+                object obj = ResourceManager.GetObject("translate_36", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

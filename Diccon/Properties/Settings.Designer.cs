@@ -34,5 +34,17 @@ namespace Diccon.Properties {
                 this["shortView"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("default")]
+        public string staredForm {
+            get {
+                return ((string)(this["staredForm"]));
+            }
+            set {
+                this["staredForm"] = value;
+            }
+        }
     }
 }
