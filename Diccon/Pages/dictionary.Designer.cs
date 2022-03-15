@@ -936,6 +936,7 @@
             this.Name = "dictionary";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Dictionary";
             this.Load += new System.EventHandler(this.mainHall_Load);
             this.panelBottom.ResumeLayout(false);
             this.panelAdd.ResumeLayout(false);

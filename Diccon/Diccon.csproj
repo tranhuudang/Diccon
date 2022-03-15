@@ -82,6 +82,9 @@
     <GenerateManifests>false</GenerateManifests>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=5.15.4.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.5.15.4\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.6.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
@@ -178,12 +181,6 @@
     <Compile Include="Pages\dictionary.Designer.cs">
       <DependentUpon>dictionary.cs</DependentUpon>
     </Compile>
-    <Compile Include="noteItem.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="noteItem.Designer.cs">
-      <DependentUpon>noteItem.cs</DependentUpon>
-    </Compile>
     <Compile Include="Pages\donate.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -223,9 +220,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\dictionary.resx">
       <DependentUpon>dictionary.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="noteItem.resx">
-      <DependentUpon>noteItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\donate.resx">
       <DependentUpon>donate.cs</DependentUpon>

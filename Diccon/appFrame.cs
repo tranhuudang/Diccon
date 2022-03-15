@@ -1,4 +1,5 @@
 ﻿using Diccon.Pages;
+using FontAwesome.Sharp;
 using System;
 using System.Diagnostics;
 using System.Drawing;
@@ -12,10 +13,13 @@ namespace Diccon
 {
     public partial class appFrame : Form
     {
+
         Form currentForm = null;
         Form dictionaryForm = null;
         Form aboutForm = null;
         donate donateForm = null;
+
+        
         public appFrame()
         {
             InitializeComponent();
@@ -25,7 +29,7 @@ namespace Diccon
         {
             switch (Properties.Settings.Default["staredForm"])
             {
-                case "dictionary":
+                case "Dictionary":
                     dictionaryForm = new dictionary();
                     openForm(dictionaryForm);
                     break;
@@ -106,16 +110,18 @@ namespace Diccon
         }
         private void openForm(Form targetForm)
         {
-            string titleName = targetForm.Name[0].ToString().ToUpper() + targetForm.Name.Substring(1).ToLower();
+            string titleName = targetForm.Text;
             title.Text = titleName;
             logo.Image = Properties.Resources.back_24;
-            if (Properties.Settings.Default["staredForm"].ToString()==targetForm.Name.ToLower())
+            if (Properties.Settings.Default["staredForm"].ToString()==targetForm.Text)
             {
-                btStar.Image = Properties.Resources.full_star_24;
+                btStar.IconColor = Color.Gold;
+                btStar.IconFont = IconFont.Solid;
             }
             else
             {
-                btStar.Image = Properties.Resources.blank_star_24;
+                btStar.IconColor = Color.Black;
+                btStar.IconFont = IconFont.Regular;
             }
             btStar.Visible = true;
             if (currentForm != null)
@@ -230,15 +236,21 @@ namespace Diccon
 
         private void btStar_Click(object sender, EventArgs e)
         {
-            if (btStar.Image == Properties.Resources.blank_star_24)
+            string staredForm = Properties.Settings.Default["staredForm"].ToString();
+            if (staredForm=="default")
             {
-                btStar.Image = Properties.Resources.full_star_24;
-                Properties.Settings.Default["staredForm"] = title.Text.ToLower();
+                btStar.IconColor = Color.Gold;
+                btStar.IconFont =IconFont.Solid;
+                Properties.Settings.Default["staredForm"] = title.Text;
+                Properties.Settings.Default.Save();
             }
             else
             {
-                btStar.Image = Properties.Resources.blank_star_24;
+                btStar.IconColor = Color.Black;
+                btStar.IconFont = IconFont.Regular;
                 Properties.Settings.Default["staredForm"] = "default";
+                Properties.Settings.Default.Save();
+
             }
 
         }
