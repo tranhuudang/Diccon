@@ -982,12 +982,6 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_7DBDADF826E466178D675CFF7B50EBB0"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_04F7EB85B51E4D64B9D2332668B71C8A"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -1775,6 +1769,12 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_55F531F629FA1145E8B005BB3C9F60A5"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_7DBDADF826E466178D675CFF7B50EBB0"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -6071,15 +6071,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Diccon"
-        "ProductCode" = "8:{6A438C86-4C52-4F58-90BD-997A371886E5}"
-        "PackageCode" = "8:{F275E78C-725B-4592-8E8C-370C5587E659}"
+        "ProductCode" = "8:{A461358D-C9A4-4A95-8640-3733F7C1E92F}"
+        "PackageCode" = "8:{542ED761-D80C-47C7-8621-4DF9BD17F929}"
         "UpgradeCode" = "8:{A635127C-96F2-4417-BF13-D951E60340A2}"
         "AspNetVersion" = "8:"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.4"
+        "ProductVersion" = "8:1.0.5"
         "Manufacturer" = "8:ZeroClub"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:https://github.com/zeroclubvn/Diccon"

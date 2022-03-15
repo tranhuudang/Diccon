@@ -40,13 +40,18 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.btUpdate = new System.Windows.Forms.Button();
+            this.downloadPercent = new System.Windows.Forms.ProgressBar();
+            this.panelUpdate = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelUpdate.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(68, 240);
+            this.label1.Location = new System.Drawing.Point(68, 230);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(45, 13);
             this.label1.TabIndex = 0;
@@ -55,7 +60,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(68, 261);
+            this.label2.Location = new System.Drawing.Point(68, 251);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 13);
             this.label2.TabIndex = 1;
@@ -64,7 +69,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(68, 282);
+            this.label3.Location = new System.Drawing.Point(68, 272);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(41, 13);
             this.label3.TabIndex = 1;
@@ -73,7 +78,7 @@
             // lbVersion
             // 
             this.lbVersion.AutoSize = true;
-            this.lbVersion.Location = new System.Drawing.Point(126, 240);
+            this.lbVersion.Location = new System.Drawing.Point(126, 230);
             this.lbVersion.Name = "lbVersion";
             this.lbVersion.Size = new System.Drawing.Size(50, 13);
             this.lbVersion.TabIndex = 0;
@@ -82,7 +87,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(126, 282);
+            this.label5.Location = new System.Drawing.Point(126, 272);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(81, 13);
             this.label5.TabIndex = 1;
@@ -91,7 +96,7 @@
             // gitHubLink
             // 
             this.gitHubLink.AutoSize = true;
-            this.gitHubLink.Location = new System.Drawing.Point(126, 261);
+            this.gitHubLink.Location = new System.Drawing.Point(126, 251);
             this.gitHubLink.Name = "gitHubLink";
             this.gitHubLink.Size = new System.Drawing.Size(98, 13);
             this.gitHubLink.TabIndex = 2;
@@ -122,7 +127,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(68, 303);
+            this.label6.Location = new System.Drawing.Point(68, 293);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(35, 13);
             this.label6.TabIndex = 1;
@@ -131,7 +136,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(126, 303);
+            this.label7.Location = new System.Drawing.Point(126, 293);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(143, 13);
             this.label7.TabIndex = 1;
@@ -139,20 +144,60 @@
             // 
             // label8
             // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label8.Location = new System.Drawing.Point(12, 382);
+            this.label8.Location = new System.Drawing.Point(12, 498);
             this.label8.Name = "label8";
             this.label8.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
             this.label8.Size = new System.Drawing.Size(383, 63);
             this.label8.TabIndex = 4;
             this.label8.Text = resources.GetString("label8.Text");
             // 
+            // btUpdate
+            // 
+            this.btUpdate.Location = new System.Drawing.Point(141, 334);
+            this.btUpdate.Name = "btUpdate";
+            this.btUpdate.Size = new System.Drawing.Size(128, 23);
+            this.btUpdate.TabIndex = 5;
+            this.btUpdate.Text = "Check for Updates";
+            this.btUpdate.UseVisualStyleBackColor = true;
+            this.btUpdate.Click += new System.EventHandler(this.btUpdate_Click);
+            // 
+            // downloadPercent
+            // 
+            this.downloadPercent.Location = new System.Drawing.Point(138, 4);
+            this.downloadPercent.Name = "downloadPercent";
+            this.downloadPercent.Size = new System.Drawing.Size(103, 23);
+            this.downloadPercent.TabIndex = 6;
+            // 
+            // panelUpdate
+            // 
+            this.panelUpdate.Controls.Add(this.label9);
+            this.panelUpdate.Controls.Add(this.downloadPercent);
+            this.panelUpdate.Location = new System.Drawing.Point(15, 381);
+            this.panelUpdate.Name = "panelUpdate";
+            this.panelUpdate.Size = new System.Drawing.Size(379, 82);
+            this.panelUpdate.TabIndex = 7;
+            this.panelUpdate.Visible = false;
+            // 
+            // label9
+            // 
+            this.label9.Location = new System.Drawing.Point(5, 30);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(371, 23);
+            this.label9.TabIndex = 7;
+            this.label9.Text = "Downloading..";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // about
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(407, 500);
+            this.ClientSize = new System.Drawing.Size(407, 570);
+            this.Controls.Add(this.panelUpdate);
+            this.Controls.Add(this.btUpdate);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.gitHubLink);
@@ -170,6 +215,7 @@
             this.Text = "About";
             this.Load += new System.EventHandler(this.about_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panelUpdate.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -188,5 +234,9 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button btUpdate;
+        private System.Windows.Forms.ProgressBar downloadPercent;
+        private System.Windows.Forms.Panel panelUpdate;
+        private System.Windows.Forms.Label label9;
     }
 }

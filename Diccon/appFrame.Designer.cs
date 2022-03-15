@@ -437,10 +437,10 @@
             this.btStar.IconChar = FontAwesome.Sharp.IconChar.Star;
             this.btStar.IconColor = System.Drawing.Color.Black;
             this.btStar.IconFont = FontAwesome.Sharp.IconFont.Regular;
-            this.btStar.IconSize = 27;
+            this.btStar.IconSize = 28;
             this.btStar.Location = new System.Drawing.Point(339, 23);
             this.btStar.Name = "btStar";
-            this.btStar.Size = new System.Drawing.Size(27, 27);
+            this.btStar.Size = new System.Drawing.Size(28, 28);
             this.btStar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btStar.TabIndex = 8;
             this.btStar.TabStop = false;

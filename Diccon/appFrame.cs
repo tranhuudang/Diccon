@@ -110,20 +110,31 @@ namespace Diccon
         }
         private void openForm(Form targetForm)
         {
-            string titleName = targetForm.Text;
-            title.Text = titleName;
+            btStar.Visible = false;
+            string formName = targetForm.Text;
+            title.Text = formName;
+            string[] pagesName = { "Dictionary", "Yawa", "Notes", "Timeline" };
             logo.Image = Properties.Resources.back_24;
-            if (Properties.Settings.Default["staredForm"].ToString()==targetForm.Text)
+            ///Star button
+            foreach (string item in pagesName)
             {
-                btStar.IconColor = Color.Gold;
-                btStar.IconFont = IconFont.Solid;
+                if(formName==item)
+                {
+                    if (Properties.Settings.Default["staredForm"].ToString() == targetForm.Text)
+                    {
+                        btStar.IconColor = Color.Gold;
+                        btStar.IconFont = IconFont.Solid;
+                    }
+                    else
+                    {
+                        btStar.IconColor = Color.Black;
+                        btStar.IconFont = IconFont.Regular;
+                    }
+                    btStar.Visible = true;
+                    break;
+                }
             }
-            else
-            {
-                btStar.IconColor = Color.Black;
-                btStar.IconFont = IconFont.Regular;
-            }
-            btStar.Visible = true;
+            ///
             if (currentForm != null)
             {
                 currentForm.Hide();
