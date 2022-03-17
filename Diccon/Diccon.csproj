@@ -152,6 +152,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\timeLineItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\timeLineItem.Designer.cs">
+      <DependentUpon>timeLineItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pages\about.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -187,6 +193,12 @@
     <Compile Include="Pages\donate.Designer.cs">
       <DependentUpon>donate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pages\timeline.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\timeline.Designer.cs">
+      <DependentUpon>timeline.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pages\yawa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -215,6 +227,9 @@
     <Compile Include="Classes\sysnonym.cs" />
     <Compile Include="Classes\userAction.cs" />
     <Compile Include="Classes\wordRelated.cs" />
+    <EmbeddedResource Include="Controls\timeLineItem.resx">
+      <DependentUpon>timeLineItem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pages\about.resx">
       <DependentUpon>about.cs</DependentUpon>
     </EmbeddedResource>
@@ -229,6 +244,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\donate.resx">
       <DependentUpon>donate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\timeline.resx">
+      <DependentUpon>timeline.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\yawa.resx">
       <DependentUpon>yawa.cs</DependentUpon>

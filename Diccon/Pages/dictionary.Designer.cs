@@ -40,7 +40,6 @@
             this.searchTextBox = new System.Windows.Forms.TextBox();
             this.textFromClipboard = new System.Windows.Forms.PictureBox();
             this.textFromMic = new System.Windows.Forms.PictureBox();
-            this.btSend = new System.Windows.Forms.PictureBox();
             this.buttonAdd = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.flowChatBox = new System.Windows.Forms.FlowLayoutPanel();
@@ -91,13 +90,13 @@
             this.addToFavouriteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.e = new System.Windows.Forms.ToolStripSeparator();
             this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btSend = new FontAwesome.Sharp.IconPictureBox();
             this.panelBottom.SuspendLayout();
             this.panelAdd.SuspendLayout();
             this.panel1.SuspendLayout();
             this.roundedPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textFromClipboard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textFromMic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btSend)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonAdd)).BeginInit();
             this.flowChatBox.SuspendLayout();
             this.exampleflowLayoutSynonym.SuspendLayout();
@@ -123,6 +122,7 @@
             this.roundedPanel2.SuspendLayout();
             this.flowSuggestion.SuspendLayout();
             this.contextMenuNote.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btSend)).BeginInit();
             this.SuspendLayout();
             // 
             // panelBottom
@@ -254,7 +254,7 @@
             // 
             this.textFromMic.Cursor = System.Windows.Forms.Cursors.Hand;
             this.textFromMic.Image = global::Diccon.Properties.Resources.keyboard_voice_24;
-            this.textFromMic.Location = new System.Drawing.Point(315, 11);
+            this.textFromMic.Location = new System.Drawing.Point(314, 11);
             this.textFromMic.Name = "textFromMic";
             this.textFromMic.Size = new System.Drawing.Size(24, 24);
             this.textFromMic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -263,20 +263,6 @@
             this.textFromMic.Click += new System.EventHandler(this.textFromMic_Click);
             this.textFromMic.MouseEnter += new System.EventHandler(this.PictureBox_MouseEnter);
             this.textFromMic.MouseLeave += new System.EventHandler(this.PictureBox_MouseLeave);
-            // 
-            // btSend
-            // 
-            this.btSend.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btSend.Image = global::Diccon.Properties.Resources.send_24;
-            this.btSend.Location = new System.Drawing.Point(315, 11);
-            this.btSend.Name = "btSend";
-            this.btSend.Size = new System.Drawing.Size(24, 24);
-            this.btSend.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.btSend.TabIndex = 7;
-            this.btSend.TabStop = false;
-            this.btSend.Click += new System.EventHandler(this.btSend_Click);
-            this.btSend.MouseEnter += new System.EventHandler(this.PictureBox_MouseEnter);
-            this.btSend.MouseLeave += new System.EventHandler(this.PictureBox_MouseLeave);
             // 
             // buttonAdd
             // 
@@ -920,6 +906,24 @@
             this.closeToolStripMenuItem.Text = "Close";
             this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
             // 
+            // btSend
+            // 
+            this.btSend.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(235)))), ((int)(((byte)(252)))));
+            this.btSend.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btSend.ForeColor = System.Drawing.Color.Black;
+            this.btSend.IconChar = FontAwesome.Sharp.IconChar.PaperPlane;
+            this.btSend.IconColor = System.Drawing.Color.Black;
+            this.btSend.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btSend.IconSize = 27;
+            this.btSend.Location = new System.Drawing.Point(314, 11);
+            this.btSend.Name = "btSend";
+            this.btSend.Size = new System.Drawing.Size(27, 27);
+            this.btSend.TabIndex = 7;
+            this.btSend.TabStop = false;
+            this.btSend.Click += new System.EventHandler(this.btSend_Click);
+            this.btSend.MouseEnter += new System.EventHandler(this.PictureBox_MouseEnter);
+            this.btSend.MouseLeave += new System.EventHandler(this.PictureBox_MouseLeave);
+            // 
             // dictionary
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -946,7 +950,6 @@
             this.roundedPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textFromClipboard)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textFromMic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btSend)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonAdd)).EndInit();
             this.flowChatBox.ResumeLayout(false);
             this.flowChatBox.PerformLayout();
@@ -980,6 +983,7 @@
             this.flowSuggestion.ResumeLayout(false);
             this.flowSuggestion.PerformLayout();
             this.contextMenuNote.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btSend)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1028,7 +1032,6 @@
         private System.Windows.Forms.Label exampleTextHolder;
         private System.Windows.Forms.PictureBox textFromClipboard;
         private RoundedLabel addEmoji;
-        private System.Windows.Forms.PictureBox btSend;
         private System.Windows.Forms.Timer realTimeDetermine;
         private System.Windows.Forms.ContextMenuStrip contextMenuNote;
         private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
@@ -1046,6 +1049,7 @@
         private System.Windows.Forms.Panel panel3;
         private RoundedPanel roundedPanel2;
         private System.Windows.Forms.RichTextBox richTextBox1;
+        private FontAwesome.Sharp.IconPictureBox btSend;
     }
 }
 

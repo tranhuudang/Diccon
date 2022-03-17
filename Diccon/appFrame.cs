@@ -17,7 +17,8 @@ namespace Diccon
         Form currentForm = null;
         Form dictionaryForm = null;
         Form aboutForm = null;
-        donate donateForm = null;
+        Form donateForm = null;
+        Form timelineForm = null;
 
         
         public appFrame()
@@ -285,6 +286,25 @@ namespace Diccon
                 donateForm = new donate();
                 openForm(donateForm);
             }
+        }
+
+        private void btTimeline_Click(object sender, EventArgs e)
+        {
+            if (timelineForm != null)
+            {
+
+                openForm(timelineForm);
+            }
+            else
+            {
+                timelineForm = new timeline();
+                openForm(timelineForm);
+            }
+        }
+
+        private void buttonYourNote_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

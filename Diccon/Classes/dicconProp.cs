@@ -28,6 +28,9 @@ namespace Diccon
         public static string currentImageLink = "none";
         public static bool isFromPixabay = true;
         public static string internetError = "Unfortunately, we can't connect to the internet at the moment!";
+        public static char saparateCharactorInHistory='#';
+        public static string historyFileName= "History.ini";
+
 
     }
 }

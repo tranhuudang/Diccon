@@ -37,9 +37,9 @@ namespace Diccon
                 Version currentVersion = Assembly.GetExecutingAssembly().GetName().Version;
                 if (netVersion > currentVersion)
                 {
-                    panelUpdate.Visible = true;
                     if (MessageBox.Show(dicconProp.updateAvailableMessage, "Update", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
                     {
+                        panelUpdate.Visible = true;
                         Thread thread = new Thread(() =>
                         {
 
@@ -76,11 +76,8 @@ namespace Diccon
 
         private void WebClient_DownloadFileCompleted(object sender, System.ComponentModel.AsyncCompletedEventArgs e)
         {
-            if (MessageBox.Show(dicconProp.downloadSetupCompleteMessage, "Update", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
-            {
                 Process.Start(dicconProp.setupName);
                 Application.Exit();
-            }
         }
     }
 }

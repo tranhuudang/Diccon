@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Net;
 using System.Reflection;
 using System.Threading;
@@ -78,7 +79,9 @@ namespace Diccon
                 }
                 else if (numberOfWord == 1)
                 {
-
+                    // add word to history file
+                    addHistory(searchTextBox.Text);
+                    // display message 
                     user.userSingleMessage(searchTextBox.Text, exampleShortText, exampleShortPanel, flowChatBox);
                     bot.botSoundMessage(searchTextBox.Text, exampleTextHolder, examplePlayButton, examplePlayColoredPanel, examplePlayAlignPanel, examplePlayPanel, flowChatBox);
                     bot.botAnswerLongMessage(searchMatchWord(searchTextBox.Text), exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
@@ -89,6 +92,9 @@ namespace Diccon
                     bool isOnline = new connectivity().isOnline();
                     if (isOnline)
                     {
+                        // add word to history file
+                        addHistory(searchTextBox.Text);
+                        // display message
                         user.userLongMessage(searchTextBox.Text + "\n", exampleAskLongText, exampleAskLongColoredPanel, exampleAskLongPanel, flowChatBox);
                         dicconProp.currentTranslatedWord = await bot.getTranslatedTextAsync(dicconProp.currentWord);
                         bot.botAnswerLongMessage(dicconProp.currentTranslatedWord + "\n", exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
@@ -101,7 +107,22 @@ namespace Diccon
                 searchTextBox.Text = "";
             }
         }
-
+        private void addHistory(string word)
+        {
+            if(!File.Exists(dicconProp.historyFileName))
+            {
+                StreamWriter history = new StreamWriter(dicconProp.historyFileName);
+                history.WriteLine(word);
+                history.Close();
+            }
+            else
+            {
+                StreamWriter history = new StreamWriter(dicconProp.historyFileName,true);
+                history.WriteLine(dicconProp.saparateCharactorInHistory);
+                history.WriteLine(word);
+                history.Close();
+            }
+        }
         public string searchMatchWord(string wordsToSearch) // THIS IS FUNCTION TO SEARCH TEXT 
         {
 
