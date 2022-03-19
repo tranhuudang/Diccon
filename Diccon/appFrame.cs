@@ -34,6 +34,10 @@ namespace Diccon
                     dictionaryForm = new dictionary();
                     openForm(dictionaryForm);
                     break;
+                case "Timeline":
+                    timelineForm = new timeline();
+                    openForm(timelineForm);
+                    break;
                 default:
                     // Stack up quotation
                     quote quote = new quote();

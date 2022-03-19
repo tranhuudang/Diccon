@@ -345,6 +345,7 @@
     <None Include="Resources\blank_star_24.png" />
     <None Include="Resources\full_star_24.png" />
     <None Include="Resources\IMG_Sacombank.png.jpg" />
+    <None Include="Resources\donate_background.jpeg" />
     <Content Include="Setup and Update\UpdateInfo.xml" />
     <None Include="Resources\github_20.png" />
     <None Include="Resources\info_20.png" />

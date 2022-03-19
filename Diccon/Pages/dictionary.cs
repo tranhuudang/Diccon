@@ -30,10 +30,6 @@ namespace Diccon
 
         }
 
-        private void buttonFind_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void textFromMic_Click(object sender, EventArgs e)
         {
@@ -49,11 +45,6 @@ namespace Diccon
             searchTextBox.Text = sound.SpeechToText("00:00:07");
         }
 
-        private void textFromEmoji_Click(object sender, EventArgs e)
-        {
-
-
-        }
 
         private async void searchTextBox_KeyDown(object sender, KeyEventArgs e)
         {
@@ -112,14 +103,14 @@ namespace Diccon
             if(!File.Exists(dicconProp.historyFileName))
             {
                 StreamWriter history = new StreamWriter(dicconProp.historyFileName);
-                history.WriteLine(word);
+                history.Write(word);
                 history.Close();
             }
             else
             {
                 StreamWriter history = new StreamWriter(dicconProp.historyFileName,true);
-                history.WriteLine(dicconProp.saparateCharactorInHistory);
-                history.WriteLine(word);
+                history.Write(dicconProp.saparateCharactorInHistory);
+                history.Write(word);
                 history.Close();
             }
         }

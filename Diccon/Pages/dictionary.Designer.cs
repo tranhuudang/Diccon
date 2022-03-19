@@ -32,96 +32,96 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dictionary));
             this.panelBottom = new System.Windows.Forms.Panel();
             this.panelAdd = new System.Windows.Forms.Panel();
-            this.addEmoji = new Diccon.RoundedLabel();
-            this.addNote = new Diccon.RoundedLabel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.roundedPanel1 = new Diccon.RoundedPanel();
-            this.labelTypeToSearch = new System.Windows.Forms.Label();
-            this.searchTextBox = new System.Windows.Forms.TextBox();
-            this.textFromClipboard = new System.Windows.Forms.PictureBox();
-            this.textFromMic = new System.Windows.Forms.PictureBox();
             this.buttonAdd = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.flowChatBox = new System.Windows.Forms.FlowLayoutPanel();
             this.exampleflowLayoutSynonym = new System.Windows.Forms.FlowLayoutPanel();
-            this.exampleItemSynonym = new Diccon.RoundedLabel();
-            this.roundedLabel3 = new Diccon.RoundedLabel();
-            this.roundedLabel4 = new Diccon.RoundedLabel();
-            this.roundedLabel5 = new Diccon.RoundedLabel();
-            this.roundedLabel6 = new Diccon.RoundedLabel();
-            this.roundedLabel8 = new Diccon.RoundedLabel();
             this.exampleShortPanel = new System.Windows.Forms.Panel();
-            this.exampleShortText = new Diccon.RoundedLabel();
             this.exampleAskLongPanel = new System.Windows.Forms.Panel();
-            this.exampleAskLongColoredPanel = new Diccon.RoundedPanel();
-            this.exampleAskLongText = new System.Windows.Forms.RichTextBox();
             this.examplePlayPanel = new System.Windows.Forms.Panel();
             this.examplePlayAlignPanel = new System.Windows.Forms.Panel();
-            this.examplePlayColoredPanel = new Diccon.RoundedPanel();
-            this.exampleTextHolder = new System.Windows.Forms.Label();
-            this.examplePlayButton = new System.Windows.Forms.PictureBox();
             this.exampleAnswerPanel = new System.Windows.Forms.Panel();
-            this.exampleAnswerColoredPanel = new Diccon.RoundedPanel();
-            this.exampleAnswerText = new System.Windows.Forms.RichTextBox();
             this.exampleNotePanel = new System.Windows.Forms.Panel();
-            this.exampleNoteColoredPanel = new Diccon.RoundedPanel();
-            this.exampleNoteTitle = new System.Windows.Forms.TextBox();
-            this.exampleNoteClose = new System.Windows.Forms.PictureBox();
-            this.exampleNoteDelete = new System.Windows.Forms.PictureBox();
-            this.exampleNoteSave = new System.Windows.Forms.PictureBox();
-            this.exampleNoteRichTextBox = new System.Windows.Forms.RichTextBox();
             this.examplePicturePanel = new System.Windows.Forms.Panel();
             this.examplePixabayLogo = new System.Windows.Forms.PictureBox();
-            this.exampleColoredPicturePanel = new Diccon.RoundedPanel();
-            this.examplePictureBox = new Diccon.RoundedPictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.roundedPanel2 = new Diccon.RoundedPanel();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.suggestionTimer = new System.Windows.Forms.Timer(this.components);
             this.flowSuggestion = new System.Windows.Forms.FlowLayoutPanel();
-            this.btSynonym = new Diccon.RoundedLabel();
-            this.roundedLabel9 = new Diccon.RoundedLabel();
-            this.roundedLabel10 = new Diccon.RoundedLabel();
-            this.btImage = new Diccon.RoundedLabel();
-            this.roundedLabel12 = new Diccon.RoundedLabel();
             this.realTimeDetermine = new System.Windows.Forms.Timer(this.components);
             this.contextMenuNote = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addToFavouriteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.e = new System.Windows.Forms.ToolStripSeparator();
             this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exampleItemSynonym = new Diccon.RoundedLabel();
+            this.roundedLabel3 = new Diccon.RoundedLabel();
+            this.roundedLabel4 = new Diccon.RoundedLabel();
+            this.roundedLabel5 = new Diccon.RoundedLabel();
+            this.roundedLabel6 = new Diccon.RoundedLabel();
+            this.roundedLabel8 = new Diccon.RoundedLabel();
+            this.exampleShortText = new Diccon.RoundedLabel();
+            this.exampleAskLongColoredPanel = new Diccon.RoundedPanel();
+            this.exampleAskLongText = new System.Windows.Forms.RichTextBox();
+            this.examplePlayColoredPanel = new Diccon.RoundedPanel();
+            this.exampleTextHolder = new System.Windows.Forms.Label();
+            this.examplePlayButton = new System.Windows.Forms.PictureBox();
+            this.exampleAnswerColoredPanel = new Diccon.RoundedPanel();
+            this.exampleAnswerText = new System.Windows.Forms.RichTextBox();
+            this.exampleNoteColoredPanel = new Diccon.RoundedPanel();
+            this.exampleNoteTitle = new System.Windows.Forms.TextBox();
+            this.exampleNoteClose = new System.Windows.Forms.PictureBox();
+            this.exampleNoteDelete = new System.Windows.Forms.PictureBox();
+            this.exampleNoteSave = new System.Windows.Forms.PictureBox();
+            this.exampleNoteRichTextBox = new System.Windows.Forms.RichTextBox();
+            this.exampleColoredPicturePanel = new Diccon.RoundedPanel();
+            this.examplePictureBox = new Diccon.RoundedPictureBox();
+            this.roundedPanel2 = new Diccon.RoundedPanel();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.btSynonym = new Diccon.RoundedLabel();
+            this.roundedLabel9 = new Diccon.RoundedLabel();
+            this.roundedLabel10 = new Diccon.RoundedLabel();
+            this.btImage = new Diccon.RoundedLabel();
+            this.roundedLabel12 = new Diccon.RoundedLabel();
+            this.addEmoji = new Diccon.RoundedLabel();
+            this.addNote = new Diccon.RoundedLabel();
+            this.roundedPanel1 = new Diccon.RoundedPanel();
+            this.labelTypeToSearch = new System.Windows.Forms.Label();
+            this.searchTextBox = new System.Windows.Forms.TextBox();
+            this.textFromClipboard = new System.Windows.Forms.PictureBox();
+            this.textFromMic = new System.Windows.Forms.PictureBox();
             this.btSend = new FontAwesome.Sharp.IconPictureBox();
             this.panelBottom.SuspendLayout();
             this.panelAdd.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.roundedPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textFromClipboard)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textFromMic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonAdd)).BeginInit();
             this.flowChatBox.SuspendLayout();
             this.exampleflowLayoutSynonym.SuspendLayout();
             this.exampleShortPanel.SuspendLayout();
             this.exampleAskLongPanel.SuspendLayout();
-            this.exampleAskLongColoredPanel.SuspendLayout();
             this.examplePlayPanel.SuspendLayout();
             this.examplePlayAlignPanel.SuspendLayout();
+            this.exampleAnswerPanel.SuspendLayout();
+            this.exampleNotePanel.SuspendLayout();
+            this.examplePicturePanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.examplePixabayLogo)).BeginInit();
+            this.panel3.SuspendLayout();
+            this.flowSuggestion.SuspendLayout();
+            this.contextMenuNote.SuspendLayout();
+            this.exampleAskLongColoredPanel.SuspendLayout();
             this.examplePlayColoredPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.examplePlayButton)).BeginInit();
-            this.exampleAnswerPanel.SuspendLayout();
             this.exampleAnswerColoredPanel.SuspendLayout();
-            this.exampleNotePanel.SuspendLayout();
             this.exampleNoteColoredPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.exampleNoteClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exampleNoteDelete)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exampleNoteSave)).BeginInit();
-            this.examplePicturePanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.examplePixabayLogo)).BeginInit();
             this.exampleColoredPicturePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.examplePictureBox)).BeginInit();
-            this.panel3.SuspendLayout();
             this.roundedPanel2.SuspendLayout();
-            this.flowSuggestion.SuspendLayout();
-            this.contextMenuNote.SuspendLayout();
+            this.roundedPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textFromClipboard)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textFromMic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btSend)).BeginInit();
             this.SuspendLayout();
             // 
@@ -130,7 +130,7 @@
             this.panelBottom.Controls.Add(this.panelAdd);
             this.panelBottom.Controls.Add(this.panel1);
             this.panelBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelBottom.Location = new System.Drawing.Point(0, 489);
+            this.panelBottom.Location = new System.Drawing.Point(0, 529);
             this.panelBottom.Name = "panelBottom";
             this.panelBottom.Size = new System.Drawing.Size(407, 142);
             this.panelBottom.TabIndex = 5;
@@ -145,42 +145,6 @@
             this.panelAdd.Size = new System.Drawing.Size(407, 86);
             this.panelAdd.TabIndex = 5;
             // 
-            // addEmoji
-            // 
-            this.addEmoji.BackColor = System.Drawing.Color.Silver;
-            this.addEmoji.BorderColor = System.Drawing.Color.White;
-            this.addEmoji.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.addEmoji.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addEmoji.Image = global::Diccon.Properties.Resources.emoji_36;
-            this.addEmoji.Location = new System.Drawing.Point(97, 3);
-            this.addEmoji.Name = "addEmoji";
-            this.addEmoji.Radius = 50;
-            this.addEmoji.Size = new System.Drawing.Size(75, 71);
-            this.addEmoji.TabIndex = 6;
-            this.addEmoji.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.addEmoji.Thickness = 5F;
-            this.addEmoji.Click += new System.EventHandler(this.addEmoji_Click);
-            this.addEmoji.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
-            this.addEmoji.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
-            // 
-            // addNote
-            // 
-            this.addNote.BackColor = System.Drawing.Color.Silver;
-            this.addNote.BorderColor = System.Drawing.Color.White;
-            this.addNote.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.addNote.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addNote.Image = global::Diccon.Properties.Resources.note_add_36;
-            this.addNote.Location = new System.Drawing.Point(12, 3);
-            this.addNote.Name = "addNote";
-            this.addNote.Radius = 50;
-            this.addNote.Size = new System.Drawing.Size(75, 71);
-            this.addNote.TabIndex = 0;
-            this.addNote.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.addNote.Thickness = 5F;
-            this.addNote.Click += new System.EventHandler(this.addNote_Click);
-            this.addNote.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
-            this.addNote.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
-            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.roundedPanel1);
@@ -190,79 +154,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(407, 56);
             this.panel1.TabIndex = 7;
-            // 
-            // roundedPanel1
-            // 
-            this.roundedPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(235)))), ((int)(((byte)(252)))));
-            this.roundedPanel1.BorderColor = System.Drawing.Color.White;
-            this.roundedPanel1.Controls.Add(this.labelTypeToSearch);
-            this.roundedPanel1.Controls.Add(this.searchTextBox);
-            this.roundedPanel1.Controls.Add(this.textFromClipboard);
-            this.roundedPanel1.Controls.Add(this.textFromMic);
-            this.roundedPanel1.Controls.Add(this.btSend);
-            this.roundedPanel1.Location = new System.Drawing.Point(39, 4);
-            this.roundedPanel1.Name = "roundedPanel1";
-            this.roundedPanel1.Radius = 20;
-            this.roundedPanel1.Size = new System.Drawing.Size(354, 45);
-            this.roundedPanel1.TabIndex = 5;
-            this.roundedPanel1.Thickness = 5F;
-            // 
-            // labelTypeToSearch
-            // 
-            this.labelTypeToSearch.AutoSize = true;
-            this.labelTypeToSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.labelTypeToSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTypeToSearch.ForeColor = System.Drawing.Color.Gray;
-            this.labelTypeToSearch.Location = new System.Drawing.Point(17, 12);
-            this.labelTypeToSearch.Name = "labelTypeToSearch";
-            this.labelTypeToSearch.Size = new System.Drawing.Size(113, 20);
-            this.labelTypeToSearch.TabIndex = 6;
-            this.labelTypeToSearch.Text = "Type to search";
-            this.labelTypeToSearch.Click += new System.EventHandler(this.labelTypeToSearch_Click);
-            // 
-            // searchTextBox
-            // 
-            this.searchTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(235)))), ((int)(((byte)(252)))));
-            this.searchTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.searchTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchTextBox.Location = new System.Drawing.Point(16, 10);
-            this.searchTextBox.Name = "searchTextBox";
-            this.searchTextBox.Size = new System.Drawing.Size(260, 24);
-            this.searchTextBox.TabIndex = 1;
-            this.searchTextBox.Click += new System.EventHandler(this.searchTextBox_Click);
-            this.searchTextBox.TextChanged += new System.EventHandler(this.searchTextBox_TextChanged);
-            this.searchTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.searchTextBox_KeyDown);
-            this.searchTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.searchTextBox_KeyPress);
-            this.searchTextBox.Leave += new System.EventHandler(this.searchTextBox_Leave);
-            // 
-            // textFromClipboard
-            // 
-            this.textFromClipboard.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.textFromClipboard.Image = global::Diccon.Properties.Resources.clipboard_24;
-            this.textFromClipboard.Location = new System.Drawing.Point(282, 11);
-            this.textFromClipboard.Name = "textFromClipboard";
-            this.textFromClipboard.Size = new System.Drawing.Size(24, 24);
-            this.textFromClipboard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.textFromClipboard.TabIndex = 5;
-            this.textFromClipboard.TabStop = false;
-            this.textFromClipboard.Visible = false;
-            this.textFromClipboard.Click += new System.EventHandler(this.textFromClipboard_Click);
-            this.textFromClipboard.MouseEnter += new System.EventHandler(this.PictureBox_MouseEnter);
-            this.textFromClipboard.MouseLeave += new System.EventHandler(this.PictureBox_MouseLeave);
-            // 
-            // textFromMic
-            // 
-            this.textFromMic.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.textFromMic.Image = global::Diccon.Properties.Resources.keyboard_voice_24;
-            this.textFromMic.Location = new System.Drawing.Point(314, 11);
-            this.textFromMic.Name = "textFromMic";
-            this.textFromMic.Size = new System.Drawing.Size(24, 24);
-            this.textFromMic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.textFromMic.TabIndex = 4;
-            this.textFromMic.TabStop = false;
-            this.textFromMic.Click += new System.EventHandler(this.textFromMic_Click);
-            this.textFromMic.MouseEnter += new System.EventHandler(this.PictureBox_MouseEnter);
-            this.textFromMic.MouseLeave += new System.EventHandler(this.PictureBox_MouseLeave);
             // 
             // buttonAdd
             // 
@@ -301,7 +192,7 @@
             this.flowChatBox.Location = new System.Drawing.Point(0, 5);
             this.flowChatBox.Name = "flowChatBox";
             this.flowChatBox.Padding = new System.Windows.Forms.Padding(5);
-            this.flowChatBox.Size = new System.Drawing.Size(407, 449);
+            this.flowChatBox.Size = new System.Drawing.Size(407, 489);
             this.flowChatBox.TabIndex = 8;
             // 
             // exampleflowLayoutSynonym
@@ -321,6 +212,151 @@
             this.exampleflowLayoutSynonym.Size = new System.Drawing.Size(367, 180);
             this.exampleflowLayoutSynonym.TabIndex = 6;
             this.exampleflowLayoutSynonym.Visible = false;
+            // 
+            // exampleShortPanel
+            // 
+            this.exampleShortPanel.Controls.Add(this.exampleShortText);
+            this.exampleShortPanel.Location = new System.Drawing.Point(8, 194);
+            this.exampleShortPanel.Name = "exampleShortPanel";
+            this.exampleShortPanel.Size = new System.Drawing.Size(367, 39);
+            this.exampleShortPanel.TabIndex = 0;
+            this.exampleShortPanel.Visible = false;
+            // 
+            // exampleAskLongPanel
+            // 
+            this.exampleAskLongPanel.Controls.Add(this.exampleAskLongColoredPanel);
+            this.exampleAskLongPanel.Location = new System.Drawing.Point(8, 239);
+            this.exampleAskLongPanel.MinimumSize = new System.Drawing.Size(0, 40);
+            this.exampleAskLongPanel.Name = "exampleAskLongPanel";
+            this.exampleAskLongPanel.Size = new System.Drawing.Size(367, 40);
+            this.exampleAskLongPanel.TabIndex = 3;
+            this.exampleAskLongPanel.Visible = false;
+            // 
+            // examplePlayPanel
+            // 
+            this.examplePlayPanel.Controls.Add(this.examplePlayAlignPanel);
+            this.examplePlayPanel.Location = new System.Drawing.Point(8, 285);
+            this.examplePlayPanel.Name = "examplePlayPanel";
+            this.examplePlayPanel.Size = new System.Drawing.Size(367, 39);
+            this.examplePlayPanel.TabIndex = 2;
+            // 
+            // examplePlayAlignPanel
+            // 
+            this.examplePlayAlignPanel.Controls.Add(this.examplePlayColoredPanel);
+            this.examplePlayAlignPanel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.examplePlayAlignPanel.Location = new System.Drawing.Point(67, 0);
+            this.examplePlayAlignPanel.Name = "examplePlayAlignPanel";
+            this.examplePlayAlignPanel.Size = new System.Drawing.Size(300, 39);
+            this.examplePlayAlignPanel.TabIndex = 0;
+            this.examplePlayAlignPanel.Visible = false;
+            // 
+            // exampleAnswerPanel
+            // 
+            this.exampleAnswerPanel.Controls.Add(this.exampleAnswerColoredPanel);
+            this.exampleAnswerPanel.Location = new System.Drawing.Point(8, 330);
+            this.exampleAnswerPanel.Name = "exampleAnswerPanel";
+            this.exampleAnswerPanel.Size = new System.Drawing.Size(367, 155);
+            this.exampleAnswerPanel.TabIndex = 1;
+            this.exampleAnswerPanel.Visible = false;
+            // 
+            // exampleNotePanel
+            // 
+            this.exampleNotePanel.Controls.Add(this.exampleNoteColoredPanel);
+            this.exampleNotePanel.Location = new System.Drawing.Point(8, 491);
+            this.exampleNotePanel.Name = "exampleNotePanel";
+            this.exampleNotePanel.Size = new System.Drawing.Size(367, 236);
+            this.exampleNotePanel.TabIndex = 5;
+            this.exampleNotePanel.Visible = false;
+            // 
+            // examplePicturePanel
+            // 
+            this.examplePicturePanel.Controls.Add(this.examplePixabayLogo);
+            this.examplePicturePanel.Controls.Add(this.exampleColoredPicturePanel);
+            this.examplePicturePanel.Location = new System.Drawing.Point(8, 733);
+            this.examplePicturePanel.Name = "examplePicturePanel";
+            this.examplePicturePanel.Size = new System.Drawing.Size(367, 269);
+            this.examplePicturePanel.TabIndex = 7;
+            this.examplePicturePanel.Visible = false;
+            // 
+            // examplePixabayLogo
+            // 
+            this.examplePixabayLogo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.examplePixabayLogo.Image = global::Diccon.Properties.Resources.pixabay_logo;
+            this.examplePixabayLogo.Location = new System.Drawing.Point(283, 250);
+            this.examplePixabayLogo.Name = "examplePixabayLogo";
+            this.examplePixabayLogo.Size = new System.Drawing.Size(70, 14);
+            this.examplePixabayLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.examplePixabayLogo.TabIndex = 1;
+            this.examplePixabayLogo.TabStop = false;
+            this.examplePixabayLogo.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.roundedPanel2);
+            this.panel3.Location = new System.Drawing.Point(8, 1008);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(367, 189);
+            this.panel3.TabIndex = 2;
+            // 
+            // suggestionTimer
+            // 
+            this.suggestionTimer.Interval = 1000;
+            this.suggestionTimer.Tick += new System.EventHandler(this.suggestionTimer_TickAsync);
+            // 
+            // flowSuggestion
+            // 
+            this.flowSuggestion.AutoScroll = true;
+            this.flowSuggestion.Controls.Add(this.btSynonym);
+            this.flowSuggestion.Controls.Add(this.roundedLabel9);
+            this.flowSuggestion.Controls.Add(this.roundedLabel10);
+            this.flowSuggestion.Controls.Add(this.btImage);
+            this.flowSuggestion.Controls.Add(this.roundedLabel12);
+            this.flowSuggestion.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.flowSuggestion.Location = new System.Drawing.Point(0, 494);
+            this.flowSuggestion.Name = "flowSuggestion";
+            this.flowSuggestion.Padding = new System.Windows.Forms.Padding(10, 5, 10, 0);
+            this.flowSuggestion.Size = new System.Drawing.Size(407, 35);
+            this.flowSuggestion.TabIndex = 9;
+            // 
+            // realTimeDetermine
+            // 
+            this.realTimeDetermine.Enabled = true;
+            this.realTimeDetermine.Interval = 1000;
+            this.realTimeDetermine.Tick += new System.EventHandler(this.realTimeDetermine_Tick);
+            // 
+            // contextMenuNote
+            // 
+            this.contextMenuNote.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.saveToolStripMenuItem,
+            this.addToFavouriteToolStripMenuItem,
+            this.e,
+            this.closeToolStripMenuItem});
+            this.contextMenuNote.Name = "contextMenuNote";
+            this.contextMenuNote.Size = new System.Drawing.Size(161, 76);
+            // 
+            // saveToolStripMenuItem
+            // 
+            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.saveToolStripMenuItem.Text = "Save";
+            // 
+            // addToFavouriteToolStripMenuItem
+            // 
+            this.addToFavouriteToolStripMenuItem.Name = "addToFavouriteToolStripMenuItem";
+            this.addToFavouriteToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.addToFavouriteToolStripMenuItem.Text = "Add to favourite";
+            // 
+            // e
+            // 
+            this.e.Name = "e";
+            this.e.Size = new System.Drawing.Size(157, 6);
+            // 
+            // closeToolStripMenuItem
+            // 
+            this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.closeToolStripMenuItem.Text = "Close";
+            this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
             // 
             // exampleItemSynonym
             // 
@@ -424,15 +460,6 @@
             this.roundedLabel8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.roundedLabel8.Thickness = 5F;
             // 
-            // exampleShortPanel
-            // 
-            this.exampleShortPanel.Controls.Add(this.exampleShortText);
-            this.exampleShortPanel.Location = new System.Drawing.Point(8, 194);
-            this.exampleShortPanel.Name = "exampleShortPanel";
-            this.exampleShortPanel.Size = new System.Drawing.Size(367, 39);
-            this.exampleShortPanel.TabIndex = 0;
-            this.exampleShortPanel.Visible = false;
-            // 
             // exampleShortText
             // 
             this.exampleShortText.AutoSize = true;
@@ -449,16 +476,6 @@
             this.exampleShortText.Text = "Exchange";
             this.exampleShortText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.exampleShortText.Thickness = 5F;
-            // 
-            // exampleAskLongPanel
-            // 
-            this.exampleAskLongPanel.Controls.Add(this.exampleAskLongColoredPanel);
-            this.exampleAskLongPanel.Location = new System.Drawing.Point(8, 239);
-            this.exampleAskLongPanel.MinimumSize = new System.Drawing.Size(0, 40);
-            this.exampleAskLongPanel.Name = "exampleAskLongPanel";
-            this.exampleAskLongPanel.Size = new System.Drawing.Size(367, 40);
-            this.exampleAskLongPanel.TabIndex = 3;
-            this.exampleAskLongPanel.Visible = false;
             // 
             // exampleAskLongColoredPanel
             // 
@@ -488,24 +505,6 @@
             this.exampleAskLongText.Size = new System.Drawing.Size(279, 23);
             this.exampleAskLongText.TabIndex = 2;
             this.exampleAskLongText.Text = "to protect someone or something against attack or criticism";
-            // 
-            // examplePlayPanel
-            // 
-            this.examplePlayPanel.Controls.Add(this.examplePlayAlignPanel);
-            this.examplePlayPanel.Location = new System.Drawing.Point(8, 285);
-            this.examplePlayPanel.Name = "examplePlayPanel";
-            this.examplePlayPanel.Size = new System.Drawing.Size(367, 39);
-            this.examplePlayPanel.TabIndex = 2;
-            // 
-            // examplePlayAlignPanel
-            // 
-            this.examplePlayAlignPanel.Controls.Add(this.examplePlayColoredPanel);
-            this.examplePlayAlignPanel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.examplePlayAlignPanel.Location = new System.Drawing.Point(67, 0);
-            this.examplePlayAlignPanel.Name = "examplePlayAlignPanel";
-            this.examplePlayAlignPanel.Size = new System.Drawing.Size(300, 39);
-            this.examplePlayAlignPanel.TabIndex = 0;
-            this.examplePlayAlignPanel.Visible = false;
             // 
             // examplePlayColoredPanel
             // 
@@ -544,15 +543,6 @@
             this.examplePlayButton.TabIndex = 0;
             this.examplePlayButton.TabStop = false;
             // 
-            // exampleAnswerPanel
-            // 
-            this.exampleAnswerPanel.Controls.Add(this.exampleAnswerColoredPanel);
-            this.exampleAnswerPanel.Location = new System.Drawing.Point(8, 330);
-            this.exampleAnswerPanel.Name = "exampleAnswerPanel";
-            this.exampleAnswerPanel.Size = new System.Drawing.Size(367, 155);
-            this.exampleAnswerPanel.TabIndex = 1;
-            this.exampleAnswerPanel.Visible = false;
-            // 
             // exampleAnswerColoredPanel
             // 
             this.exampleAnswerColoredPanel.BackColor = System.Drawing.Color.MediumSlateBlue;
@@ -582,15 +572,6 @@
             this.exampleAnswerText.TabIndex = 1;
             this.exampleAnswerText.Text = "to protect someone or something against attack or criticism";
             this.exampleAnswerText.HScroll += new System.EventHandler(this.exampleAnswerText_HScroll);
-            // 
-            // exampleNotePanel
-            // 
-            this.exampleNotePanel.Controls.Add(this.exampleNoteColoredPanel);
-            this.exampleNotePanel.Location = new System.Drawing.Point(8, 491);
-            this.exampleNotePanel.Name = "exampleNotePanel";
-            this.exampleNotePanel.Size = new System.Drawing.Size(367, 236);
-            this.exampleNotePanel.TabIndex = 5;
-            this.exampleNotePanel.Visible = false;
             // 
             // exampleNoteColoredPanel
             // 
@@ -666,28 +647,6 @@
             this.exampleNoteRichTextBox.TabIndex = 0;
             this.exampleNoteRichTextBox.Text = "";
             // 
-            // examplePicturePanel
-            // 
-            this.examplePicturePanel.Controls.Add(this.examplePixabayLogo);
-            this.examplePicturePanel.Controls.Add(this.exampleColoredPicturePanel);
-            this.examplePicturePanel.Location = new System.Drawing.Point(8, 733);
-            this.examplePicturePanel.Name = "examplePicturePanel";
-            this.examplePicturePanel.Size = new System.Drawing.Size(367, 269);
-            this.examplePicturePanel.TabIndex = 7;
-            this.examplePicturePanel.Visible = false;
-            // 
-            // examplePixabayLogo
-            // 
-            this.examplePixabayLogo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.examplePixabayLogo.Image = global::Diccon.Properties.Resources.pixabay_logo;
-            this.examplePixabayLogo.Location = new System.Drawing.Point(283, 250);
-            this.examplePixabayLogo.Name = "examplePixabayLogo";
-            this.examplePixabayLogo.Size = new System.Drawing.Size(70, 14);
-            this.examplePixabayLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.examplePixabayLogo.TabIndex = 1;
-            this.examplePixabayLogo.TabStop = false;
-            this.examplePixabayLogo.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // exampleColoredPicturePanel
             // 
             this.exampleColoredPicturePanel.BackColor = System.Drawing.Color.MediumSlateBlue;
@@ -714,14 +673,6 @@
             this.examplePictureBox.TabIndex = 1;
             this.examplePictureBox.TabStop = false;
             this.examplePictureBox.Thickness = 5F;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.roundedPanel2);
-            this.panel3.Location = new System.Drawing.Point(8, 1008);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(367, 189);
-            this.panel3.TabIndex = 2;
             // 
             // roundedPanel2
             // 
@@ -751,26 +702,6 @@
             this.richTextBox1.Size = new System.Drawing.Size(279, 159);
             this.richTextBox1.TabIndex = 1;
             this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
-            // 
-            // suggestionTimer
-            // 
-            this.suggestionTimer.Interval = 1000;
-            this.suggestionTimer.Tick += new System.EventHandler(this.suggestionTimer_TickAsync);
-            // 
-            // flowSuggestion
-            // 
-            this.flowSuggestion.AutoScroll = true;
-            this.flowSuggestion.Controls.Add(this.btSynonym);
-            this.flowSuggestion.Controls.Add(this.roundedLabel9);
-            this.flowSuggestion.Controls.Add(this.roundedLabel10);
-            this.flowSuggestion.Controls.Add(this.btImage);
-            this.flowSuggestion.Controls.Add(this.roundedLabel12);
-            this.flowSuggestion.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.flowSuggestion.Location = new System.Drawing.Point(0, 454);
-            this.flowSuggestion.Name = "flowSuggestion";
-            this.flowSuggestion.Padding = new System.Windows.Forms.Padding(10, 5, 10, 0);
-            this.flowSuggestion.Size = new System.Drawing.Size(407, 35);
-            this.flowSuggestion.TabIndex = 9;
             // 
             // btSynonym
             // 
@@ -866,45 +797,114 @@
             this.roundedLabel12.Thickness = 5F;
             this.roundedLabel12.Visible = false;
             // 
-            // realTimeDetermine
+            // addEmoji
             // 
-            this.realTimeDetermine.Enabled = true;
-            this.realTimeDetermine.Interval = 1000;
-            this.realTimeDetermine.Tick += new System.EventHandler(this.realTimeDetermine_Tick);
+            this.addEmoji.BackColor = System.Drawing.Color.Silver;
+            this.addEmoji.BorderColor = System.Drawing.Color.White;
+            this.addEmoji.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.addEmoji.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addEmoji.Image = global::Diccon.Properties.Resources.emoji_36;
+            this.addEmoji.Location = new System.Drawing.Point(97, 3);
+            this.addEmoji.Name = "addEmoji";
+            this.addEmoji.Radius = 50;
+            this.addEmoji.Size = new System.Drawing.Size(75, 71);
+            this.addEmoji.TabIndex = 6;
+            this.addEmoji.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.addEmoji.Thickness = 5F;
+            this.addEmoji.Click += new System.EventHandler(this.addEmoji_Click);
+            this.addEmoji.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
+            this.addEmoji.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
             // 
-            // contextMenuNote
+            // addNote
             // 
-            this.contextMenuNote.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.saveToolStripMenuItem,
-            this.addToFavouriteToolStripMenuItem,
-            this.e,
-            this.closeToolStripMenuItem});
-            this.contextMenuNote.Name = "contextMenuNote";
-            this.contextMenuNote.Size = new System.Drawing.Size(161, 76);
+            this.addNote.BackColor = System.Drawing.Color.Silver;
+            this.addNote.BorderColor = System.Drawing.Color.White;
+            this.addNote.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.addNote.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addNote.Image = global::Diccon.Properties.Resources.note_add_36;
+            this.addNote.Location = new System.Drawing.Point(12, 3);
+            this.addNote.Name = "addNote";
+            this.addNote.Radius = 50;
+            this.addNote.Size = new System.Drawing.Size(75, 71);
+            this.addNote.TabIndex = 0;
+            this.addNote.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.addNote.Thickness = 5F;
+            this.addNote.Click += new System.EventHandler(this.addNote_Click);
+            this.addNote.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
+            this.addNote.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
             // 
-            // saveToolStripMenuItem
+            // roundedPanel1
             // 
-            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
-            this.saveToolStripMenuItem.Text = "Save";
+            this.roundedPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(235)))), ((int)(((byte)(252)))));
+            this.roundedPanel1.BorderColor = System.Drawing.Color.White;
+            this.roundedPanel1.Controls.Add(this.labelTypeToSearch);
+            this.roundedPanel1.Controls.Add(this.searchTextBox);
+            this.roundedPanel1.Controls.Add(this.textFromClipboard);
+            this.roundedPanel1.Controls.Add(this.textFromMic);
+            this.roundedPanel1.Controls.Add(this.btSend);
+            this.roundedPanel1.Location = new System.Drawing.Point(39, 4);
+            this.roundedPanel1.Name = "roundedPanel1";
+            this.roundedPanel1.Radius = 20;
+            this.roundedPanel1.Size = new System.Drawing.Size(354, 45);
+            this.roundedPanel1.TabIndex = 5;
+            this.roundedPanel1.Thickness = 5F;
             // 
-            // addToFavouriteToolStripMenuItem
+            // labelTypeToSearch
             // 
-            this.addToFavouriteToolStripMenuItem.Name = "addToFavouriteToolStripMenuItem";
-            this.addToFavouriteToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
-            this.addToFavouriteToolStripMenuItem.Text = "Add to favourite";
+            this.labelTypeToSearch.AutoSize = true;
+            this.labelTypeToSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.labelTypeToSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTypeToSearch.ForeColor = System.Drawing.Color.Gray;
+            this.labelTypeToSearch.Location = new System.Drawing.Point(17, 12);
+            this.labelTypeToSearch.Name = "labelTypeToSearch";
+            this.labelTypeToSearch.Size = new System.Drawing.Size(113, 20);
+            this.labelTypeToSearch.TabIndex = 6;
+            this.labelTypeToSearch.Text = "Type to search";
+            this.labelTypeToSearch.Click += new System.EventHandler(this.labelTypeToSearch_Click);
             // 
-            // e
+            // searchTextBox
             // 
-            this.e.Name = "e";
-            this.e.Size = new System.Drawing.Size(157, 6);
+            this.searchTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(235)))), ((int)(((byte)(252)))));
+            this.searchTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.searchTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchTextBox.Location = new System.Drawing.Point(16, 10);
+            this.searchTextBox.Name = "searchTextBox";
+            this.searchTextBox.Size = new System.Drawing.Size(260, 24);
+            this.searchTextBox.TabIndex = 1;
+            this.searchTextBox.Click += new System.EventHandler(this.searchTextBox_Click);
+            this.searchTextBox.TextChanged += new System.EventHandler(this.searchTextBox_TextChanged);
+            this.searchTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.searchTextBox_KeyDown);
+            this.searchTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.searchTextBox_KeyPress);
+            this.searchTextBox.Leave += new System.EventHandler(this.searchTextBox_Leave);
             // 
-            // closeToolStripMenuItem
+            // textFromClipboard
             // 
-            this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            this.closeToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
-            this.closeToolStripMenuItem.Text = "Close";
-            this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
+            this.textFromClipboard.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.textFromClipboard.Image = global::Diccon.Properties.Resources.clipboard_24;
+            this.textFromClipboard.Location = new System.Drawing.Point(282, 11);
+            this.textFromClipboard.Name = "textFromClipboard";
+            this.textFromClipboard.Size = new System.Drawing.Size(24, 24);
+            this.textFromClipboard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.textFromClipboard.TabIndex = 5;
+            this.textFromClipboard.TabStop = false;
+            this.textFromClipboard.Visible = false;
+            this.textFromClipboard.Click += new System.EventHandler(this.textFromClipboard_Click);
+            this.textFromClipboard.MouseEnter += new System.EventHandler(this.PictureBox_MouseEnter);
+            this.textFromClipboard.MouseLeave += new System.EventHandler(this.PictureBox_MouseLeave);
+            // 
+            // textFromMic
+            // 
+            this.textFromMic.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.textFromMic.Image = global::Diccon.Properties.Resources.keyboard_voice_24;
+            this.textFromMic.Location = new System.Drawing.Point(314, 11);
+            this.textFromMic.Name = "textFromMic";
+            this.textFromMic.Size = new System.Drawing.Size(24, 24);
+            this.textFromMic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.textFromMic.TabIndex = 4;
+            this.textFromMic.TabStop = false;
+            this.textFromMic.Click += new System.EventHandler(this.textFromMic_Click);
+            this.textFromMic.MouseEnter += new System.EventHandler(this.PictureBox_MouseEnter);
+            this.textFromMic.MouseLeave += new System.EventHandler(this.PictureBox_MouseLeave);
             // 
             // btSend
             // 
@@ -930,7 +930,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(407, 631);
+            this.ClientSize = new System.Drawing.Size(407, 671);
             this.Controls.Add(this.flowChatBox);
             this.Controls.Add(this.flowSuggestion);
             this.Controls.Add(this.panel2);
@@ -946,10 +946,6 @@
             this.panelAdd.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.roundedPanel1.ResumeLayout(false);
-            this.roundedPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textFromClipboard)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textFromMic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonAdd)).EndInit();
             this.flowChatBox.ResumeLayout(false);
             this.flowChatBox.PerformLayout();
@@ -958,31 +954,35 @@
             this.exampleShortPanel.ResumeLayout(false);
             this.exampleShortPanel.PerformLayout();
             this.exampleAskLongPanel.ResumeLayout(false);
-            this.exampleAskLongColoredPanel.ResumeLayout(false);
             this.examplePlayPanel.ResumeLayout(false);
             this.examplePlayAlignPanel.ResumeLayout(false);
             this.examplePlayAlignPanel.PerformLayout();
+            this.exampleAnswerPanel.ResumeLayout(false);
+            this.exampleNotePanel.ResumeLayout(false);
+            this.examplePicturePanel.ResumeLayout(false);
+            this.examplePicturePanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.examplePixabayLogo)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.flowSuggestion.ResumeLayout(false);
+            this.flowSuggestion.PerformLayout();
+            this.contextMenuNote.ResumeLayout(false);
+            this.exampleAskLongColoredPanel.ResumeLayout(false);
             this.examplePlayColoredPanel.ResumeLayout(false);
             this.examplePlayColoredPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.examplePlayButton)).EndInit();
-            this.exampleAnswerPanel.ResumeLayout(false);
             this.exampleAnswerColoredPanel.ResumeLayout(false);
-            this.exampleNotePanel.ResumeLayout(false);
             this.exampleNoteColoredPanel.ResumeLayout(false);
             this.exampleNoteColoredPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.exampleNoteClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.exampleNoteDelete)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.exampleNoteSave)).EndInit();
-            this.examplePicturePanel.ResumeLayout(false);
-            this.examplePicturePanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.examplePixabayLogo)).EndInit();
             this.exampleColoredPicturePanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.examplePictureBox)).EndInit();
-            this.panel3.ResumeLayout(false);
             this.roundedPanel2.ResumeLayout(false);
-            this.flowSuggestion.ResumeLayout(false);
-            this.flowSuggestion.PerformLayout();
-            this.contextMenuNote.ResumeLayout(false);
+            this.roundedPanel1.ResumeLayout(false);
+            this.roundedPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textFromClipboard)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textFromMic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btSend)).EndInit();
             this.ResumeLayout(false);
 
