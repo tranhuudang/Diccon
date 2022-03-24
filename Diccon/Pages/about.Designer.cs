@@ -40,10 +40,10 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.btUpdate = new System.Windows.Forms.Button();
             this.downloadPercent = new System.Windows.Forms.ProgressBar();
             this.panelUpdate = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
+            this.btUpdates = new Diccon.RoundedLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelUpdate.SuspendLayout();
             this.SuspendLayout();
@@ -154,16 +154,6 @@
             this.label8.TabIndex = 4;
             this.label8.Text = resources.GetString("label8.Text");
             // 
-            // btUpdate
-            // 
-            this.btUpdate.Location = new System.Drawing.Point(141, 334);
-            this.btUpdate.Name = "btUpdate";
-            this.btUpdate.Size = new System.Drawing.Size(128, 23);
-            this.btUpdate.TabIndex = 5;
-            this.btUpdate.Text = "Check for Updates";
-            this.btUpdate.UseVisualStyleBackColor = true;
-            this.btUpdate.Click += new System.EventHandler(this.btUpdate_Click);
-            // 
             // downloadPercent
             // 
             this.downloadPercent.Location = new System.Drawing.Point(138, 4);
@@ -190,14 +180,34 @@
             this.label9.Text = "Downloading..";
             this.label9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // btUpdates
+            // 
+            this.btUpdates.AutoSize = true;
+            this.btUpdates.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btUpdates.BorderColor = System.Drawing.Color.White;
+            this.btUpdates.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btUpdates.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btUpdates.ForeColor = System.Drawing.Color.White;
+            this.btUpdates.Location = new System.Drawing.Point(125, 328);
+            this.btUpdates.Name = "btUpdates";
+            this.btUpdates.Padding = new System.Windows.Forms.Padding(7);
+            this.btUpdates.Radius = 20;
+            this.btUpdates.Size = new System.Drawing.Size(156, 34);
+            this.btUpdates.TabIndex = 8;
+            this.btUpdates.Text = "Check for Updates";
+            this.btUpdates.Thickness = 5F;
+            this.btUpdates.Click += new System.EventHandler(this.btUpdates_Click);
+            this.btUpdates.MouseEnter += new System.EventHandler(this.btUpdates_MouseEnter);
+            this.btUpdates.MouseLeave += new System.EventHandler(this.btUpdates_MouseLeave);
+            // 
             // about
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(407, 570);
+            this.Controls.Add(this.btUpdates);
             this.Controls.Add(this.panelUpdate);
-            this.Controls.Add(this.btUpdate);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.gitHubLink);
@@ -234,9 +244,9 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button btUpdate;
         private System.Windows.Forms.ProgressBar downloadPercent;
         private System.Windows.Forms.Panel panelUpdate;
         private System.Windows.Forms.Label label9;
+        private RoundedLabel btUpdates;
     }
 }

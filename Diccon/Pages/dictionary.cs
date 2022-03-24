@@ -206,67 +206,21 @@ namespace Diccon
             }
         }
 
-        private void aWeekToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void menuButton_Click(object sender, EventArgs e)
-        {
-
-
-        }
-        /// <summary>
-        /// Change Red and Green background of Rounded-Label to a darker shade of  color
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private void RoundedLabel_MouseEnter(object sender, EventArgs e)
         {
-            RoundedLabel roundedLabel = (sender as RoundedLabel);
-            int R = roundedLabel.BackColor.R >= 50 ? roundedLabel.BackColor.R - 50 : roundedLabel.BackColor.R;
-            int G = roundedLabel.BackColor.G >= 50 ? roundedLabel.BackColor.G - 50 : roundedLabel.BackColor.G;
-            int B = roundedLabel.BackColor.B;
-
-            roundedLabel.BackColor = Color.FromArgb(R, G, B);
+            dicconProp.RoundedLabel_MouseEnter(sender, e);
         }
-        /// <summary>
-        /// Change Red and Green background of Rounded-Label to a lighter shade of  color
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private void RoundedLabel_MouseLeave(object sender, EventArgs e)
         {
-            RoundedLabel roundedLabel = (sender as RoundedLabel);
-            int R = roundedLabel.BackColor.R <= 205 ? roundedLabel.BackColor.R + 50 : roundedLabel.BackColor.R;
-            int G = roundedLabel.BackColor.G <= 205 ? roundedLabel.BackColor.G + 50 : roundedLabel.BackColor.G;
-            int B = roundedLabel.BackColor.B;
-
-            roundedLabel.BackColor = Color.FromArgb(R, G, B);
+            dicconProp.RoundedLabel_MouseLeave(sender, e);
         }
-        /// <summary>
-        /// Change position of PictureBox to create a illusion that the box is lift up a little bit
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private void PictureBox_MouseEnter(object sender, EventArgs e)
         {
-            PictureBox pictureBox = (sender as PictureBox);
-            int X = pictureBox.Location.X;
-            int Y = pictureBox.Location.Y - 2;
-            pictureBox.Location = new Point(X, Y);
+            dicconProp.PictureBox_MouseEnter(sender, e);
         }
-        /// <summary>
-        /// Change position of PictureBox to create a illusion that the box is push down a little bit
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private void PictureBox_MouseLeave(object sender, EventArgs e)
         {
-            PictureBox pictureBox = (sender as PictureBox);
-            int X = pictureBox.Location.X;
-            int Y = pictureBox.Location.Y + 2;
-            pictureBox.Location = new Point(X, Y);
+            dicconProp.PictureBox_MouseLeave(sender, e);
         }
         private void tbFind_Leave(object sender, EventArgs e)
         {

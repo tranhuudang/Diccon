@@ -24,8 +24,31 @@ namespace Diccon
         {
             lbVersion.Text = Application.ProductVersion.ToString();
         }
+      
 
         private void btUpdate_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void WebClient_DownloadProgressChanged(object sender, DownloadProgressChangedEventArgs e)
+        {
+            this.BeginInvoke((MethodInvoker)delegate
+            {
+                double bytesIn = double.Parse(e.BytesReceived.ToString());
+                double totalBytes = double.Parse(e.TotalBytesToReceive.ToString());
+                double percentage = bytesIn / totalBytes * 100;
+                downloadPercent.Value = int.Parse(Math.Truncate(percentage).ToString());
+            });
+        }
+
+        private void WebClient_DownloadFileCompleted(object sender, System.ComponentModel.AsyncCompletedEventArgs e)
+        {
+                Process.Start(dicconProp.setupName);
+                Application.Exit();
+        }
+
+        private void btUpdates_Click(object sender, EventArgs e)
         {
             try
             {
@@ -63,21 +86,14 @@ namespace Diccon
             }
         }
 
-        private void WebClient_DownloadProgressChanged(object sender, DownloadProgressChangedEventArgs e)
+        private void btUpdates_MouseEnter(object sender, EventArgs e)
         {
-            this.BeginInvoke((MethodInvoker)delegate
-            {
-                double bytesIn = double.Parse(e.BytesReceived.ToString());
-                double totalBytes = double.Parse(e.TotalBytesToReceive.ToString());
-                double percentage = bytesIn / totalBytes * 100;
-                downloadPercent.Value = int.Parse(Math.Truncate(percentage).ToString());
-            });
+            dicconProp.RoundedLabel_MouseEnter(sender,e);
         }
 
-        private void WebClient_DownloadFileCompleted(object sender, System.ComponentModel.AsyncCompletedEventArgs e)
+        private void btUpdates_MouseLeave(object sender, EventArgs e)
         {
-                Process.Start(dicconProp.setupName);
-                Application.Exit();
+            dicconProp.RoundedLabel_MouseLeave(sender, e);
         }
     }
 }

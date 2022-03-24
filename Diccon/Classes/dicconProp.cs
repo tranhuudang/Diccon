@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
+using System.Windows.Forms;
 
 namespace Diccon
 {
@@ -31,6 +33,52 @@ namespace Diccon
         public static char saparateCharactorInHistory='#';
         public static string historyFileName= "History.ini";
 
+        /// <summary>
+        /// Change Red and Green background of Rounded-Label to a darker shade of  color
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public static void RoundedLabel_MouseEnter(object sender, EventArgs e)
+        {
+            RoundedLabel roundedLabel = (sender as RoundedLabel);
+            int R = roundedLabel.BackColor.R >= 50 ? roundedLabel.BackColor.R - 50 : roundedLabel.BackColor.R;
+            int G = roundedLabel.BackColor.G >= 50 ? roundedLabel.BackColor.G - 50 : roundedLabel.BackColor.G;
+            int B = roundedLabel.BackColor.B;
 
+            roundedLabel.BackColor = Color.FromArgb(R, G, B);
+        }
+        /// <summary>
+        /// Change Red and Green background of Rounded-Label to a lighter shade of  color
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public static void RoundedLabel_MouseLeave(object sender, EventArgs e)
+        {
+            RoundedLabel roundedLabel = (sender as RoundedLabel);
+            int R = roundedLabel.BackColor.R <= 205 ? roundedLabel.BackColor.R + 50 : roundedLabel.BackColor.R;
+            int G = roundedLabel.BackColor.G <= 205 ? roundedLabel.BackColor.G + 50 : roundedLabel.BackColor.G;
+            int B = roundedLabel.BackColor.B;
+
+            roundedLabel.BackColor = Color.FromArgb(R, G, B);
+        }
+        public static void PictureBox_MouseEnter(object sender, EventArgs e)
+        {
+            PictureBox pictureBox = (sender as PictureBox);
+            int X = pictureBox.Location.X;
+            int Y = pictureBox.Location.Y - 2;
+            pictureBox.Location = new Point(X, Y);
+        }
+        /// <summary>
+        /// Change position of PictureBox to create a illusion that the box is push down a little bit
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public static void PictureBox_MouseLeave(object sender, EventArgs e)
+        {
+            PictureBox pictureBox = (sender as PictureBox);
+            int X = pictureBox.Location.X;
+            int Y = pictureBox.Location.Y + 2;
+            pictureBox.Location = new Point(X, Y);
+        }
     }
 }

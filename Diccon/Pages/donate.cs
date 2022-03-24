@@ -22,33 +22,18 @@ namespace Diccon.Pages
             panelQr.Visible = true;
             btOpenQr.Visible = false;
         }
-        /// <summary>
-        /// Change Red and Green background of Rounded-Label to a darker shade of  color
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private void RoundedLabel_MouseEnter(object sender, EventArgs e)
         {
-            RoundedLabel roundedLabel = (sender as RoundedLabel);
-            int R = roundedLabel.BackColor.R >= 50 ? roundedLabel.BackColor.R - 50 : roundedLabel.BackColor.R;
-            int G = roundedLabel.BackColor.G >= 50 ? roundedLabel.BackColor.G - 50 : roundedLabel.BackColor.G;
-            int B = roundedLabel.BackColor.B;
-
-            roundedLabel.BackColor = Color.FromArgb(R, G, B);
+            dicconProp.RoundedLabel_MouseEnter(sender, e);
         }
-        /// <summary>
-        /// Change Red and Green background of Rounded-Label to a lighter shade of  color
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private void RoundedLabel_MouseLeave(object sender, EventArgs e)
         {
-            RoundedLabel roundedLabel = (sender as RoundedLabel);
-            int R = roundedLabel.BackColor.R <= 205 ? roundedLabel.BackColor.R + 50 : roundedLabel.BackColor.R;
-            int G = roundedLabel.BackColor.G <= 205 ? roundedLabel.BackColor.G + 50 : roundedLabel.BackColor.G;
-            int B = roundedLabel.BackColor.B;
+            dicconProp.RoundedLabel_MouseLeave(sender, e);
+        }
 
-            roundedLabel.BackColor = Color.FromArgb(R, G, B);
+        private void donate_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

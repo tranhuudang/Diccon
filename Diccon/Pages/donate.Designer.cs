@@ -137,6 +137,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "donate";
             this.Text = "Donate";
+            this.Load += new System.EventHandler(this.donate_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panelQr.ResumeLayout(false);
