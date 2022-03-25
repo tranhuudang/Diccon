@@ -76,5 +76,10 @@ namespace Diccon.Pages
         {
             timeline_Load(null, null);
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+               
+        }
     }
 }
