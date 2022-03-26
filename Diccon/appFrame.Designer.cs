@@ -296,6 +296,7 @@
             this.roundedLabel7.TabIndex = 5;
             this.roundedLabel7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.roundedLabel7.Thickness = 5F;
+            this.roundedLabel7.Click += new System.EventHandler(this.roundedLabel7_Click);
             this.roundedLabel7.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
             this.roundedLabel7.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
             // 

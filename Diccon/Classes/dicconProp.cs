@@ -32,6 +32,7 @@ namespace Diccon
         public static string internetError = "Unfortunately, we can't connect to the internet at the moment!";
         public static char saparateCharactorInHistory='#';
         public static string historyFileName= "History.ini";
+        public static string noteFilePath=@"Note.xml";
 
         /// <summary>
         /// Change Red and Green background of Rounded-Label to a darker shade of  color

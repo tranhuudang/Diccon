@@ -19,7 +19,7 @@ namespace Diccon
         Form aboutForm = null;
         Form donateForm = null;
         Form timelineForm = null;
-
+        Form noteForm = null;
         
         public appFrame()
         {
@@ -178,7 +178,7 @@ namespace Diccon
 
         private void buttonMenu_Click(object sender, EventArgs e)
         {
-            int X = Cursor.Position.X - 120;
+            int X = Cursor.Position.X - 155;
             int Y = Cursor.Position.Y + 15;
             contextMenu.Show(X, Y);
         }
@@ -309,6 +309,21 @@ namespace Diccon
         private void buttonYourNote_Click(object sender, EventArgs e)
         {
 
+            if (noteForm != null)
+            {
+
+                openForm(noteForm);
+            }
+            else
+            {
+                noteForm = new notes();
+                openForm(noteForm);
+            }
+        }
+
+        private void roundedLabel7_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("This function is coming soon.");
         }
     }
 }
