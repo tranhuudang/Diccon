@@ -24,7 +24,7 @@ namespace Diccon.Pages
         private void notes_Load(object sender, EventArgs e)
         {
             flowPlayground.HorizontalScroll.Visible = false;
-
+            flowPlayground.Controls.Clear();
             List<noteObject> listNote= getNoteInNoteFile();
             foreach (noteObject note in listNote)
             {
@@ -62,6 +62,11 @@ namespace Diccon.Pages
                 throw;
             }
             return list;
+        }
+
+        private void btRefresh_Click(object sender, EventArgs e)
+        {
+            notes_Load(null, null);
         }
     }
     class noteObject
