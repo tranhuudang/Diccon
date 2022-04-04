@@ -857,6 +857,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dictionary";
             this.Load += new System.EventHandler(this.mainHall_Load);
+            this.VisibleChanged += new System.EventHandler(this.dictionary_VisibleChanged);
             this.panelBottom.ResumeLayout(false);
             this.panelAdd.ResumeLayout(false);
             this.panel1.ResumeLayout(false);

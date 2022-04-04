@@ -33,6 +33,7 @@ namespace Diccon
         public static char saparateCharactorInHistory='#';
         public static string historyFileName= "History.ini";
         public static string noteFilePath=@"Note.xml";
+        public static string wordFromTimeline = "";
 
         /// <summary>
         /// Change Red and Green background of Rounded-Label to a darker shade of  color

@@ -325,5 +325,13 @@ namespace Diccon
         {
             MessageBox.Show("This function is coming soon.");
         }
+
+        private void timeLineDetector_Tick(object sender, EventArgs e)
+        {
+            if(dicconProp.wordFromTimeline!="")
+            {
+                btDictionary_Click(null,null);
+            }
+        }
     }
 }

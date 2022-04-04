@@ -64,6 +64,7 @@
             this.githubToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.timeLineDetector = new System.Windows.Forms.Timer(this.components);
             this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btStar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
@@ -454,6 +455,12 @@
             this.notifyIcon1.Text = "notifyIcon1";
             this.notifyIcon1.Visible = true;
             // 
+            // timeLineDetector
+            // 
+            this.timeLineDetector.Enabled = true;
+            this.timeLineDetector.Interval = 500;
+            this.timeLineDetector.Tick += new System.EventHandler(this.timeLineDetector_Tick);
+            // 
             // appFrame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -518,5 +525,6 @@
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
         private FontAwesome.Sharp.IconPictureBox btStar;
+        private System.Windows.Forms.Timer timeLineDetector;
     }
 }

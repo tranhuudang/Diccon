@@ -80,5 +80,15 @@ namespace Diccon.Pages
         {
             loadUpTimeline();
         }
+
+        private void listHistory_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            dicconProp.wordFromTimeline = listHistory.SelectedItem.ToString();
+        }
+
+        private void doubleClickDetector_Tick(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

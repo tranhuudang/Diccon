@@ -356,6 +356,16 @@ namespace Diccon
         {
 
         }
+
+        private void dictionary_VisibleChanged(object sender, EventArgs e)
+        {
+            if (dicconProp.wordFromTimeline != "")
+            {
+                searchTextBox.Text = dicconProp.wordFromTimeline.Trim();
+                dicconProp.wordFromTimeline = "";
+            }
+            
+        }
     }
 
 }
