@@ -58,7 +58,6 @@
             this.roundedLabel3 = new Diccon.RoundedLabel();
             this.exampleShortText = new Diccon.RoundedLabel();
             this.exampleAskLongColoredPanel = new Diccon.RoundedPanel();
-            this.exampleAskLongText = new System.Windows.Forms.RichTextBox();
             this.examplePlayColoredPanel = new Diccon.RoundedPanel();
             this.exampleTextHolder = new System.Windows.Forms.Label();
             this.examplePlayButton = new System.Windows.Forms.PictureBox();
@@ -87,6 +86,7 @@
             this.textFromClipboard = new System.Windows.Forms.PictureBox();
             this.textFromMic = new System.Windows.Forms.PictureBox();
             this.btSend = new FontAwesome.Sharp.IconPictureBox();
+            this.exampleAskLongText = new System.Windows.Forms.Label();
             this.panelBottom.SuspendLayout();
             this.panelAdd.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -413,22 +413,6 @@
             this.exampleAskLongColoredPanel.Size = new System.Drawing.Size(300, 40);
             this.exampleAskLongColoredPanel.TabIndex = 0;
             this.exampleAskLongColoredPanel.Thickness = 5F;
-            // 
-            // exampleAskLongText
-            // 
-            this.exampleAskLongText.AutoWordSelection = true;
-            this.exampleAskLongText.BackColor = System.Drawing.Color.LightGray;
-            this.exampleAskLongText.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.exampleAskLongText.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.exampleAskLongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exampleAskLongText.ForeColor = System.Drawing.Color.Black;
-            this.exampleAskLongText.Location = new System.Drawing.Point(11, 9);
-            this.exampleAskLongText.Name = "exampleAskLongText";
-            this.exampleAskLongText.ReadOnly = true;
-            this.exampleAskLongText.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.exampleAskLongText.Size = new System.Drawing.Size(279, 23);
-            this.exampleAskLongText.TabIndex = 2;
-            this.exampleAskLongText.Text = "to protect someone or something against attack or criticism";
             // 
             // examplePlayColoredPanel
             // 
@@ -844,6 +828,17 @@
             this.btSend.MouseEnter += new System.EventHandler(this.PictureBox_MouseEnter);
             this.btSend.MouseLeave += new System.EventHandler(this.PictureBox_MouseLeave);
             // 
+            // exampleAskLongText
+            // 
+            this.exampleAskLongText.AutoSize = true;
+            this.exampleAskLongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exampleAskLongText.Location = new System.Drawing.Point(9, 9);
+            this.exampleAskLongText.MaximumSize = new System.Drawing.Size(279, 10000);
+            this.exampleAskLongText.Name = "exampleAskLongText";
+            this.exampleAskLongText.Size = new System.Drawing.Size(51, 20);
+            this.exampleAskLongText.TabIndex = 0;
+            this.exampleAskLongText.Text = "label1";
+            // 
             // dictionary
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -887,6 +882,7 @@
             this.flowSuggestion.PerformLayout();
             this.contextMenuNote.ResumeLayout(false);
             this.exampleAskLongColoredPanel.ResumeLayout(false);
+            this.exampleAskLongColoredPanel.PerformLayout();
             this.examplePlayColoredPanel.ResumeLayout(false);
             this.examplePlayColoredPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.examplePlayButton)).EndInit();
@@ -944,7 +940,6 @@
         private RoundedLabel roundedLabel10;
         private RoundedLabel btImage;
         private RoundedLabel roundedLabel12;
-        private System.Windows.Forms.RichTextBox exampleAskLongText;
         private System.Windows.Forms.Label exampleTextHolder;
         private System.Windows.Forms.PictureBox textFromClipboard;
         private RoundedLabel addEmoji;
@@ -967,6 +962,7 @@
         private System.Windows.Forms.RichTextBox richTextBox1;
         private FontAwesome.Sharp.IconPictureBox btSend;
         private System.Windows.Forms.Label exampleAnswerText;
+        private System.Windows.Forms.Label exampleAskLongText;
     }
 }
 
