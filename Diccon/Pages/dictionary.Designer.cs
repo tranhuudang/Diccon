@@ -72,7 +72,6 @@
             this.exampleColoredPicturePanel = new Diccon.RoundedPanel();
             this.examplePictureBox = new Diccon.RoundedPictureBox();
             this.roundedPanel2 = new Diccon.RoundedPanel();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.btSynonym = new Diccon.RoundedLabel();
             this.roundedLabel9 = new Diccon.RoundedLabel();
             this.roundedLabel10 = new Diccon.RoundedLabel();
@@ -87,6 +86,9 @@
             this.textFromMic = new System.Windows.Forms.PictureBox();
             this.btSend = new FontAwesome.Sharp.IconPictureBox();
             this.exampleAskLongText = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.issueLink = new System.Windows.Forms.LinkLabel();
             this.panelBottom.SuspendLayout();
             this.panelAdd.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -582,7 +584,9 @@
             // 
             this.roundedPanel2.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.roundedPanel2.BorderColor = System.Drawing.Color.White;
-            this.roundedPanel2.Controls.Add(this.richTextBox1);
+            this.roundedPanel2.Controls.Add(this.issueLink);
+            this.roundedPanel2.Controls.Add(this.label2);
+            this.roundedPanel2.Controls.Add(this.label1);
             this.roundedPanel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.roundedPanel2.Location = new System.Drawing.Point(67, 0);
             this.roundedPanel2.Name = "roundedPanel2";
@@ -590,22 +594,6 @@
             this.roundedPanel2.Size = new System.Drawing.Size(300, 189);
             this.roundedPanel2.TabIndex = 0;
             this.roundedPanel2.Thickness = 5F;
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.AutoWordSelection = true;
-            this.richTextBox1.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox1.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.ForeColor = System.Drawing.SystemColors.Window;
-            this.richTextBox1.Location = new System.Drawing.Point(10, 15);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBox1.Size = new System.Drawing.Size(279, 159);
-            this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
             // btSynonym
             // 
@@ -839,6 +827,41 @@
             this.exampleAskLongText.TabIndex = 0;
             this.exampleAskLongText.Text = "label1";
             // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(8, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(287, 62);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "If you think that we missing translation for a word. We recommend you to report i" +
+    "t in this page bellow.";
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(8, 115);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(287, 62);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "It\'s will definitely help our app develops and becomes more reliability in the ne" +
+    "xt update. ";
+            // 
+            // issueLink
+            // 
+            this.issueLink.ActiveLinkColor = System.Drawing.Color.White;
+            this.issueLink.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.issueLink.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.issueLink.Location = new System.Drawing.Point(8, 74);
+            this.issueLink.Name = "issueLink";
+            this.issueLink.Size = new System.Drawing.Size(283, 41);
+            this.issueLink.TabIndex = 1;
+            this.issueLink.TabStop = true;
+            this.issueLink.Text = "https://github.com/tranhuudang/Diccon/issues";
+            this.issueLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.issueLink_LinkClicked);
+            // 
             // dictionary
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -960,10 +983,12 @@
         private RoundedPictureBox examplePictureBox;
         private System.Windows.Forms.Panel panel3;
         private RoundedPanel roundedPanel2;
-        private System.Windows.Forms.RichTextBox richTextBox1;
         private FontAwesome.Sharp.IconPictureBox btSend;
         private System.Windows.Forms.Label exampleAnswerText;
         private System.Windows.Forms.Label exampleAskLongText;
+        private System.Windows.Forms.LinkLabel issueLink;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }
 

@@ -366,6 +366,11 @@ namespace Diccon
             }
             
         }
+
+        private void issueLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://github.com/tranhuudang/Diccon/issues");
+        }
     }
 
 }

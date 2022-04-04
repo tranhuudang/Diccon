@@ -609,6 +609,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_A34EC821A7726595B6C5BF80F837D71B"
+        "OwnerKey" = "8:_04F7EB85B51E4D64B9D2332668B71C8A"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_A3C6B15451CB73504F3B113ADF598362"
         "OwnerKey" = "8:_04F7EB85B51E4D64B9D2332668B71C8A"
         "MsmSig" = "8:_UNDEFINED"
@@ -1121,6 +1127,12 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_A5FB1A910902C62CD936F49800DBDFAA"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_A34EC821A7726595B6C5BF80F837D71B"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -4372,6 +4384,37 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_A34EC821A7726595B6C5BF80F837D71B"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:FontAwesome.Sharp, Version=5.15.4.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_A34EC821A7726595B6C5BF80F837D71B"
+                    {
+                    "Name" = "8:FontAwesome.Sharp.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:FontAwesome.Sharp.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_CB8B887CF08B41FBA9EFE4D8F8E52808"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_A3C6B15451CB73504F3B113ADF598362"
             {
             "AssemblyRegister" = "3:1"
@@ -6071,15 +6114,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Diccon"
-        "ProductCode" = "8:{A461358D-C9A4-4A95-8640-3733F7C1E92F}"
-        "PackageCode" = "8:{542ED761-D80C-47C7-8621-4DF9BD17F929}"
+        "ProductCode" = "8:{A836711A-5E29-4A01-979B-6DDCBEDA7EDE}"
+        "PackageCode" = "8:{A203050A-A74F-4035-A18F-149996778FE4}"
         "UpgradeCode" = "8:{A635127C-96F2-4417-BF13-D951E60340A2}"
         "AspNetVersion" = "8:"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.5"
+        "ProductVersion" = "8:1.0.6"
         "Manufacturer" = "8:ZeroClub"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:https://github.com/zeroclubvn/Diccon"
