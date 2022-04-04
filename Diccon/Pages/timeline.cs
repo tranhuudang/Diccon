@@ -20,20 +20,23 @@ namespace Diccon.Pages
 
         private void timeline_Load(object sender, EventArgs e)
         {
-            List<string> listItem= new List<string>();
+
+            loadUpTimeline();
+        }
+        private void loadUpTimeline()
+        {
+            List<string> listItem = new List<string>();
             if (File.Exists(dicconProp.historyFileName))
             {
                 string[] contents = File.ReadAllText(dicconProp.historyFileName).Split(dicconProp.saparateCharactorInHistory);
                 foreach (var item in contents)
                 {
-                    listItem.Add("      "+item);
+                    listItem.Add("      " + item);
                 }
                 listItem.Reverse();
                 listHistory.DataSource = listItem;
             }
-            
         }
-
         private void listHistory_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -67,19 +70,15 @@ namespace Diccon.Pages
             e.DrawFocusRectangle();
         }
 
-        private void timeline_Enter(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void btRefresh_Click(object sender, EventArgs e)
-        {
-            timeline_Load(null, null);
-        }
-
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
                
+        }
+
+
+        private void timeline_VisibleChanged(object sender, EventArgs e)
+        {
+            loadUpTimeline();
         }
     }
 }

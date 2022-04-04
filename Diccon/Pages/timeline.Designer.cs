@@ -32,11 +32,9 @@
             this.listHistory = new System.Windows.Forms.ListBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btRefresh = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.panelList.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btRefresh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,29 +77,12 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.iconPictureBox1);
-            this.panel1.Controls.Add(this.btRefresh);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 624);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(407, 38);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // btRefresh
-            // 
-            this.btRefresh.BackColor = System.Drawing.Color.White;
-            this.btRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btRefresh.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btRefresh.IconChar = FontAwesome.Sharp.IconChar.Sync;
-            this.btRefresh.IconColor = System.Drawing.SystemColors.ControlText;
-            this.btRefresh.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btRefresh.IconSize = 27;
-            this.btRefresh.Location = new System.Drawing.Point(12, 6);
-            this.btRefresh.Name = "btRefresh";
-            this.btRefresh.Size = new System.Drawing.Size(27, 27);
-            this.btRefresh.TabIndex = 0;
-            this.btRefresh.TabStop = false;
-            this.btRefresh.Click += new System.EventHandler(this.btRefresh_Click);
             // 
             // iconPictureBox1
             // 
@@ -127,10 +108,9 @@
             this.Name = "timeline";
             this.Text = "Timeline";
             this.Load += new System.EventHandler(this.timeline_Load);
-            this.Enter += new System.EventHandler(this.timeline_Enter);
+            this.VisibleChanged += new System.EventHandler(this.timeline_VisibleChanged);
             this.panelList.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btRefresh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -140,7 +120,6 @@
         private System.Windows.Forms.Panel panelList;
         private System.Windows.Forms.ListBox listHistory;
         private System.Windows.Forms.Panel panel1;
-        private FontAwesome.Sharp.IconPictureBox btRefresh;
         private System.Windows.Forms.Panel panel2;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
     }

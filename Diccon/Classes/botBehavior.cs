@@ -51,11 +51,15 @@ namespace Diccon
 
         private void NewLabel_Click1(object sender, EventArgs e)
         {
+
             Label lb = (sender as Label);
+            FlowLayoutPanel grandFlowLayout = (lb.Parent.Parent.Parent as FlowLayoutPanel);
             lb.AutoSize = true;
             lb.Parent.Height = lb.Height+20;
             lb.Parent.Parent.Height = lb.Height + 20;
             lb.Cursor = Cursors.Default;
+            // refresh to get rid of unrendered design
+            grandFlowLayout.Refresh();
         }
 
         private void NewRichTextBox_MouseHover(object sender, EventArgs e)
