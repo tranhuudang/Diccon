@@ -20,7 +20,7 @@ namespace Diccon
         /// <param name="exampleColoredPanel"></param>
         /// <param name="exampleParentPanel"></param>
         /// <param name="targetFlowLayout"></param>
-        public void botAnswerLongMessage(string answerText, RichTextBox exampleRichTextBox, Panel exampleColoredPanel, Panel exampleParentPanel, FlowLayoutPanel targetFlowLayout)
+        public void botAnswerLongMessage(string answerText, Label exampleLabel /*RichTextBox exampleRichTextBox*/, Panel exampleColoredPanel, Panel exampleParentPanel, FlowLayoutPanel targetFlowLayout)
         {
             Panel newAnswerPanel = new Panel();
             RoundedPanel newColoredPanel = new RoundedPanel();
@@ -28,34 +28,39 @@ namespace Diccon
             newColoredPanel.BackColor = exampleColoredPanel.BackColor;
             newColoredPanel.Width = exampleColoredPanel.Width;
 
-            RichTextBox newRichTextBox = new RichTextBox();
-            if (Setting_ShortView == "True") newRichTextBox.Text = answerText;
-            newRichTextBox.Click += newRichTextBox_ClickToExpand;
-            newRichTextBox.TextChanged += newRichTextBox_TextChanged;
-            newRichTextBox.BackColor = exampleRichTextBox.BackColor;
-            newRichTextBox.ForeColor = exampleRichTextBox.ForeColor;
-            newRichTextBox.Font = exampleRichTextBox.Font;
-            newRichTextBox.Width = exampleRichTextBox.Width;
-            newRichTextBox.Dock = exampleRichTextBox.Dock;
-            newRichTextBox.Location = exampleRichTextBox.Location;
-            newRichTextBox.BorderStyle = BorderStyle.None;
-            newRichTextBox.ScrollBars = RichTextBoxScrollBars.None;
-            newRichTextBox.Cursor = exampleRichTextBox.Cursor;
-
-            newColoredPanel.Controls.Add(newRichTextBox);
-            newRichTextBox.Parent = newColoredPanel;
+            Label newLabel= new Label();
+            newLabel.Text = answerText;
+            newLabel.MaximumSize = exampleLabel.MaximumSize;
+            newLabel.Location = exampleLabel.Location;
+            newLabel.AutoSize = false;
+            newLabel.Height= newColoredPanel.Height- 20;
+            newLabel.Width = exampleLabel.MaximumSize.Width;
+            newLabel.Font = exampleLabel.Font;
+            newLabel.ForeColor= exampleLabel.ForeColor;
+            newLabel.Click += NewLabel_Click1;
+            newLabel.Cursor = Cursors.Hand;
+            newColoredPanel.Controls.Add(newLabel);
+            newLabel.Parent = newColoredPanel;
 
             newAnswerPanel.Width = exampleParentPanel.Width;
-            newAnswerPanel.Height = newRichTextBox.Height + 28;
-
             newAnswerPanel.Controls.Add(newColoredPanel);
 
             targetFlowLayout.Controls.Add(newAnswerPanel);
-
-            // these if condition is a way to display short and long message when click (original from a bug :))) )
-            if (Setting_ShortView == "False") newRichTextBox.Text = answerText;
-
             targetFlowLayout.ScrollControlIntoView(newAnswerPanel);
+        }
+
+        private void NewLabel_Click1(object sender, EventArgs e)
+        {
+            Label lb = (sender as Label);
+            lb.AutoSize = true;
+            lb.Parent.Height = lb.Height+20;
+            lb.Parent.Parent.Height = lb.Height + 20;
+            lb.Cursor = Cursors.Default;
+        }
+
+        private void NewRichTextBox_MouseHover(object sender, EventArgs e)
+        {
+            (sender as RichTextBox).SelectNextControl((sender as RichTextBox).Parent.Parent.Parent, true,true,true,true);
         }
 
         private void newRichTextBox_ClickToExpand(object sender, EventArgs e)

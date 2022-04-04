@@ -22,6 +22,7 @@ namespace Diccon
 
         private void mainHall_Load(object sender, EventArgs e)
         {
+            
             panelBottom.Height = dicconProp.bottomPanel_DefaultHeight;
             // setup flowchatbox to only show vertical scrollbar
             flowChatBox.HorizontalScroll.Visible = false;
