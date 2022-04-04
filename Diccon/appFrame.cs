@@ -333,5 +333,10 @@ namespace Diccon
                 btDictionary_Click(null,null);
             }
         }
+
+        private void githubToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://github.com/tranhuudang");
+        }
     }
 }

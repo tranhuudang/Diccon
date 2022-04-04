@@ -290,6 +290,8 @@ namespace Diccon
             pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox.BorderColor = roundedPanel.BackColor;
             pictureBox.BackColor = examplePictureBox.BackColor;
+            pictureBox.ErrorImage = examplePictureBox.ErrorImage;
+            pictureBox.InitialImage= examplePictureBox.InitialImage;
 
             panel.Size = examplePanel.Size;
 

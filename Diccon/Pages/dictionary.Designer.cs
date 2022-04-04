@@ -569,7 +569,9 @@
             // 
             this.examplePictureBox.BackColor = System.Drawing.Color.White;
             this.examplePictureBox.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.examplePictureBox.ErrorImage = global::Diccon.Properties.Resources.doubtful;
             this.examplePictureBox.Image = ((System.Drawing.Image)(resources.GetObject("examplePictureBox.Image")));
+            this.examplePictureBox.InitialImage = global::Diccon.Properties.Resources.reluctant;
             this.examplePictureBox.Location = new System.Drawing.Point(5, 5);
             this.examplePictureBox.MaximumSize = new System.Drawing.Size(357, 238);
             this.examplePictureBox.Name = "examplePictureBox";

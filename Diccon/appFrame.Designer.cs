@@ -53,10 +53,6 @@
             this.languageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vietnameseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clearHistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eachSessionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aWeekToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aMonthToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.checkForUpdatesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -166,10 +162,10 @@
             this.panelHome.Controls.Add(this.label3);
             this.panelHome.Controls.Add(this.label6);
             this.panelHome.Controls.Add(this.label4);
-            this.panelHome.Controls.Add(this.roundedLabel7);
             this.panelHome.Controls.Add(this.label2);
             this.panelHome.Controls.Add(this.label1);
             this.panelHome.Controls.Add(this.buttonYourNote);
+            this.panelHome.Controls.Add(this.roundedLabel7);
             this.panelHome.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelHome.Location = new System.Drawing.Point(0, 0);
             this.panelHome.Name = "panelHome";
@@ -242,7 +238,7 @@
             this.btTimeline.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btTimeline.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btTimeline.Image = global::Diccon.Properties.Resources.timeline_36;
-            this.btTimeline.Location = new System.Drawing.Point(79, 308);
+            this.btTimeline.Location = new System.Drawing.Point(170, 207);
             this.btTimeline.Name = "btTimeline";
             this.btTimeline.Radius = 50;
             this.btTimeline.Size = new System.Drawing.Size(75, 71);
@@ -277,7 +273,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(84, 381);
+            this.label4.Location = new System.Drawing.Point(175, 278);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(67, 20);
             this.label4.TabIndex = 4;
@@ -290,7 +286,7 @@
             this.roundedLabel7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.roundedLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundedLabel7.Image = global::Diccon.Properties.Resources.chat_36;
-            this.roundedLabel7.Location = new System.Drawing.Point(170, 207);
+            this.roundedLabel7.Location = new System.Drawing.Point(261, 207);
             this.roundedLabel7.Name = "roundedLabel7";
             this.roundedLabel7.Radius = 50;
             this.roundedLabel7.Size = new System.Drawing.Size(75, 71);
@@ -305,16 +301,16 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(183, 278);
+            this.label2.Location = new System.Drawing.Point(257, 279);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 20);
+            this.label2.Size = new System.Drawing.Size(88, 20);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Yawa";
+            this.label2.Text = "Community";
             // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(257, 278);
+            this.label1.Location = new System.Drawing.Point(75, 381);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(84, 21);
             this.label1.TabIndex = 4;
@@ -328,7 +324,7 @@
             this.buttonYourNote.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonYourNote.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonYourNote.Image = global::Diccon.Properties.Resources.your_note_36;
-            this.buttonYourNote.Location = new System.Drawing.Point(261, 207);
+            this.buttonYourNote.Location = new System.Drawing.Point(79, 310);
             this.buttonYourNote.Name = "buttonYourNote";
             this.buttonYourNote.Radius = 50;
             this.buttonYourNote.Size = new System.Drawing.Size(75, 71);
@@ -345,7 +341,6 @@
             this.contextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.themeToolStripMenuItem,
             this.languageToolStripMenuItem,
-            this.clearHistoryToolStripMenuItem,
             this.toolStripMenuItem1,
             this.settingsToolStripMenuItem,
             this.checkForUpdatesToolStripMenuItem,
@@ -353,7 +348,7 @@
             this.githubToolStripMenuItem,
             this.aboutToolStripMenuItem});
             this.contextMenu.Name = "contextMenu";
-            this.contextMenu.Size = new System.Drawing.Size(172, 170);
+            this.contextMenu.Size = new System.Drawing.Size(172, 148);
             // 
             // themeToolStripMenuItem
             // 
@@ -372,8 +367,10 @@
             // 
             // englishToolStripMenuItem
             // 
+            this.englishToolStripMenuItem.Checked = true;
+            this.englishToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
-            this.englishToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.englishToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.englishToolStripMenuItem.Text = "English";
             // 
             // vietnameseToolStripMenuItem
@@ -381,36 +378,6 @@
             this.vietnameseToolStripMenuItem.Name = "vietnameseToolStripMenuItem";
             this.vietnameseToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.vietnameseToolStripMenuItem.Text = "Vietnamese";
-            // 
-            // clearHistoryToolStripMenuItem
-            // 
-            this.clearHistoryToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.eachSessionToolStripMenuItem,
-            this.aWeekToolStripMenuItem,
-            this.aMonthToolStripMenuItem});
-            this.clearHistoryToolStripMenuItem.Name = "clearHistoryToolStripMenuItem";
-            this.clearHistoryToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
-            this.clearHistoryToolStripMenuItem.Text = "Clear history";
-            // 
-            // eachSessionToolStripMenuItem
-            // 
-            this.eachSessionToolStripMenuItem.Name = "eachSessionToolStripMenuItem";
-            this.eachSessionToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
-            this.eachSessionToolStripMenuItem.Text = "After a day";
-            // 
-            // aWeekToolStripMenuItem
-            // 
-            this.aWeekToolStripMenuItem.Checked = true;
-            this.aWeekToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.aWeekToolStripMenuItem.Name = "aWeekToolStripMenuItem";
-            this.aWeekToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
-            this.aWeekToolStripMenuItem.Text = "A week";
-            // 
-            // aMonthToolStripMenuItem
-            // 
-            this.aMonthToolStripMenuItem.Name = "aMonthToolStripMenuItem";
-            this.aMonthToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
-            this.aMonthToolStripMenuItem.Text = "Never";
             // 
             // toolStripMenuItem1
             // 
@@ -439,8 +406,9 @@
             // 
             this.githubToolStripMenuItem.Image = global::Diccon.Properties.Resources.github_20;
             this.githubToolStripMenuItem.Name = "githubToolStripMenuItem";
-            this.githubToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.githubToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.githubToolStripMenuItem.Text = "Github";
+            this.githubToolStripMenuItem.Click += new System.EventHandler(this.githubToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 
@@ -513,10 +481,6 @@
         private System.Windows.Forms.ToolStripMenuItem languageToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem englishToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem vietnameseToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem clearHistoryToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem eachSessionToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aWeekToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aMonthToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem checkForUpdatesToolStripMenuItem;
