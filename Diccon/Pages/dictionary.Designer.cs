@@ -150,10 +150,10 @@
             this.addEmoji.Cursor = System.Windows.Forms.Cursors.Hand;
             this.addEmoji.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addEmoji.Image = global::Diccon.Properties.Resources.emoji_36;
-            this.addEmoji.Location = new System.Drawing.Point(97, 3);
+            this.addEmoji.Location = new System.Drawing.Point(89, 5);
             this.addEmoji.Name = "addEmoji";
             this.addEmoji.Radius = 50;
-            this.addEmoji.Size = new System.Drawing.Size(75, 71);
+            this.addEmoji.Size = new System.Drawing.Size(67, 62);
             this.addEmoji.TabIndex = 6;
             this.addEmoji.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.addEmoji.Thickness = 5F;
@@ -168,10 +168,10 @@
             this.addNote.Cursor = System.Windows.Forms.Cursors.Hand;
             this.addNote.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addNote.Image = global::Diccon.Properties.Resources.note_add_36;
-            this.addNote.Location = new System.Drawing.Point(12, 3);
+            this.addNote.Location = new System.Drawing.Point(12, 5);
             this.addNote.Name = "addNote";
             this.addNote.Radius = 50;
-            this.addNote.Size = new System.Drawing.Size(75, 71);
+            this.addNote.Size = new System.Drawing.Size(67, 62);
             this.addNote.TabIndex = 0;
             this.addNote.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.addNote.Thickness = 5F;

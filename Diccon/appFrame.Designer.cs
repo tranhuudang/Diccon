@@ -195,7 +195,7 @@
             this.btDonate.Location = new System.Drawing.Point(142, 291);
             this.btDonate.Name = "btDonate";
             this.btDonate.Radius = 50;
-            this.btDonate.Size = new System.Drawing.Size(75, 71);
+            this.btDonate.Size = new System.Drawing.Size(73, 69);
             this.btDonate.TabIndex = 7;
             this.btDonate.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btDonate.Thickness = 5F;
@@ -226,7 +226,7 @@
             this.btDictionary.Location = new System.Drawing.Point(51, 190);
             this.btDictionary.Name = "btDictionary";
             this.btDictionary.Radius = 50;
-            this.btDictionary.Size = new System.Drawing.Size(75, 71);
+            this.btDictionary.Size = new System.Drawing.Size(73, 69);
             this.btDictionary.TabIndex = 5;
             this.btDictionary.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btDictionary.Thickness = 5F;
@@ -245,7 +245,7 @@
             this.btTimeline.Location = new System.Drawing.Point(142, 190);
             this.btTimeline.Name = "btTimeline";
             this.btTimeline.Radius = 50;
-            this.btTimeline.Size = new System.Drawing.Size(75, 71);
+            this.btTimeline.Size = new System.Drawing.Size(73, 69);
             this.btTimeline.TabIndex = 5;
             this.btTimeline.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btTimeline.Thickness = 5F;
@@ -319,7 +319,7 @@
             this.buttonYourNote.Location = new System.Drawing.Point(51, 293);
             this.buttonYourNote.Name = "buttonYourNote";
             this.buttonYourNote.Radius = 50;
-            this.buttonYourNote.Size = new System.Drawing.Size(75, 71);
+            this.buttonYourNote.Size = new System.Drawing.Size(73, 69);
             this.buttonYourNote.TabIndex = 3;
             this.buttonYourNote.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.buttonYourNote.Thickness = 5F;
@@ -338,7 +338,7 @@
             this.roundedLabel7.Location = new System.Drawing.Point(233, 190);
             this.roundedLabel7.Name = "roundedLabel7";
             this.roundedLabel7.Radius = 50;
-            this.roundedLabel7.Size = new System.Drawing.Size(75, 71);
+            this.roundedLabel7.Size = new System.Drawing.Size(73, 69);
             this.roundedLabel7.TabIndex = 5;
             this.roundedLabel7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.roundedLabel7.Thickness = 5F;
