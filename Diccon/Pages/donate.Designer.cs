@@ -45,24 +45,25 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.btOpenQr);
-            this.panel1.Controls.Add(this.panelQr);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.panelQr);
+            this.panel1.Controls.Add(this.btOpenQr);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(407, 635);
+            this.panel1.Size = new System.Drawing.Size(339, 511);
             this.panel1.TabIndex = 1;
             // 
             // btOpenQr
             // 
+            this.btOpenQr.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btOpenQr.AutoSize = true;
             this.btOpenQr.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.btOpenQr.BorderColor = System.Drawing.Color.White;
             this.btOpenQr.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btOpenQr.ForeColor = System.Drawing.Color.White;
-            this.btOpenQr.Location = new System.Drawing.Point(109, 382);
+            this.btOpenQr.Location = new System.Drawing.Point(78, 314);
             this.btOpenQr.Name = "btOpenQr";
             this.btOpenQr.Padding = new System.Windows.Forms.Padding(7);
             this.btOpenQr.Radius = 20;
@@ -78,10 +79,9 @@
             // 
             this.panelQr.Controls.Add(this.comboBox1);
             this.panelQr.Controls.Add(this.pictureBox1);
-            this.panelQr.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelQr.Location = new System.Drawing.Point(0, 368);
+            this.panelQr.Location = new System.Drawing.Point(0, 299);
             this.panelQr.Name = "panelQr";
-            this.panelQr.Size = new System.Drawing.Size(407, 267);
+            this.panelQr.Size = new System.Drawing.Size(339, 212);
             this.panelQr.TabIndex = 4;
             this.panelQr.Visible = false;
             // 
@@ -90,7 +90,7 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Saccombank Pay"});
-            this.comboBox1.Location = new System.Drawing.Point(274, 12);
+            this.comboBox1.Location = new System.Drawing.Point(206, 10);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 2;
@@ -100,9 +100,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Image = global::Diccon.Properties.Resources.IMG_Sacombank_png;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 39);
+            this.pictureBox1.Location = new System.Drawing.Point(82, 37);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(383, 163);
+            this.pictureBox1.Size = new System.Drawing.Size(173, 163);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -113,7 +113,7 @@
             this.pictureBox2.Image = global::Diccon.Properties.Resources.donate_background;
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(407, 244);
+            this.pictureBox2.Size = new System.Drawing.Size(339, 167);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
@@ -123,9 +123,9 @@
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 247);
+            this.label1.Location = new System.Drawing.Point(12, 170);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(383, 135);
+            this.label1.Size = new System.Drawing.Size(315, 126);
             this.label1.TabIndex = 0;
             this.label1.Text = resources.GetString("label1.Text");
             // 
@@ -133,8 +133,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(407, 635);
+            this.ClientSize = new System.Drawing.Size(339, 511);
             this.Controls.Add(this.panel1);
+            this.MinimumSize = new System.Drawing.Size(355, 550);
             this.Name = "donate";
             this.Text = "Donate";
             this.Load += new System.EventHandler(this.donate_Load);

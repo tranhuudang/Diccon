@@ -44,10 +44,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.roundedLabel7 = new Diccon.RoundedLabel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.buttonYourNote = new Diccon.RoundedLabel();
+            this.roundedLabel7 = new Diccon.RoundedLabel();
             this.contextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.themeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.languageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -79,11 +79,12 @@
             this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel9.Location = new System.Drawing.Point(0, 0);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(407, 70);
+            this.panel9.Size = new System.Drawing.Size(355, 70);
             this.panel9.TabIndex = 5;
             // 
             // btStar
             // 
+            this.btStar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btStar.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.btStar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btStar.ForeColor = System.Drawing.Color.Black;
@@ -91,7 +92,7 @@
             this.btStar.IconColor = System.Drawing.Color.Black;
             this.btStar.IconFont = FontAwesome.Sharp.IconFont.Regular;
             this.btStar.IconSize = 28;
-            this.btStar.Location = new System.Drawing.Point(339, 23);
+            this.btStar.Location = new System.Drawing.Point(295, 21);
             this.btStar.Name = "btStar";
             this.btStar.Size = new System.Drawing.Size(28, 28);
             this.btStar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -118,9 +119,10 @@
             // 
             // buttonMenu
             // 
+            this.buttonMenu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonMenu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonMenu.Image = global::Diccon.Properties.Resources.menu_24;
-            this.buttonMenu.Location = new System.Drawing.Point(372, 23);
+            this.buttonMenu.Location = new System.Drawing.Point(328, 21);
             this.buttonMenu.Name = "buttonMenu";
             this.buttonMenu.Size = new System.Drawing.Size(24, 24);
             this.buttonMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -147,7 +149,7 @@
             this.playGroundPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.playGroundPanel.Location = new System.Drawing.Point(0, 70);
             this.playGroundPanel.Name = "playGroundPanel";
-            this.playGroundPanel.Size = new System.Drawing.Size(407, 622);
+            this.playGroundPanel.Size = new System.Drawing.Size(355, 550);
             this.playGroundPanel.TabIndex = 6;
             this.playGroundPanel.ControlAdded += new System.Windows.Forms.ControlEventHandler(this.playGroundPanel_ControlAdded);
             // 
@@ -168,17 +170,15 @@
             this.panelHome.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelHome.Location = new System.Drawing.Point(0, 0);
             this.panelHome.Name = "panelHome";
-            this.panelHome.Size = new System.Drawing.Size(407, 622);
+            this.panelHome.Size = new System.Drawing.Size(355, 550);
             this.panelHome.TabIndex = 6;
             // 
             // label7
             // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.AutoSize = true;
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.DarkGray;
-            this.label7.Location = new System.Drawing.Point(173, 580);
+            this.label7.Location = new System.Drawing.Point(142, 512);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(72, 20);
             this.label7.TabIndex = 8;
@@ -186,12 +186,13 @@
             // 
             // btDonate
             // 
+            this.btDonate.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btDonate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btDonate.BorderColor = System.Drawing.Color.White;
             this.btDonate.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btDonate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btDonate.Image = global::Diccon.Properties.Resources.support_36;
-            this.btDonate.Location = new System.Drawing.Point(170, 308);
+            this.btDonate.Location = new System.Drawing.Point(142, 291);
             this.btDonate.Name = "btDonate";
             this.btDonate.Radius = 50;
             this.btDonate.Size = new System.Drawing.Size(75, 71);
@@ -204,22 +205,25 @@
             // 
             // lbQuotation
             // 
+            this.lbQuotation.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lbQuotation.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbQuotation.Location = new System.Drawing.Point(4, 44);
+            this.lbQuotation.Location = new System.Drawing.Point(12, 44);
             this.lbQuotation.Name = "lbQuotation";
-            this.lbQuotation.Size = new System.Drawing.Size(400, 94);
+            this.lbQuotation.Size = new System.Drawing.Size(331, 94);
             this.lbQuotation.TabIndex = 6;
             this.lbQuotation.Text = "“Don’t wish it were easier; wish you were better.”";
             this.lbQuotation.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btDictionary
             // 
+            this.btDictionary.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btDictionary.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btDictionary.BorderColor = System.Drawing.Color.White;
             this.btDictionary.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btDictionary.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btDictionary.Image = global::Diccon.Properties.Resources.translate_36;
-            this.btDictionary.Location = new System.Drawing.Point(79, 207);
+            this.btDictionary.Location = new System.Drawing.Point(51, 190);
             this.btDictionary.Name = "btDictionary";
             this.btDictionary.Radius = 50;
             this.btDictionary.Size = new System.Drawing.Size(75, 71);
@@ -232,12 +236,13 @@
             // 
             // btTimeline
             // 
+            this.btTimeline.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btTimeline.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btTimeline.BorderColor = System.Drawing.Color.White;
             this.btTimeline.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btTimeline.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btTimeline.Image = global::Diccon.Properties.Resources.timeline_36;
-            this.btTimeline.Location = new System.Drawing.Point(170, 207);
+            this.btTimeline.Location = new System.Drawing.Point(142, 190);
             this.btTimeline.Name = "btTimeline";
             this.btTimeline.Radius = 50;
             this.btTimeline.Size = new System.Drawing.Size(75, 71);
@@ -250,9 +255,10 @@
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(77, 278);
+            this.label3.Location = new System.Drawing.Point(49, 261);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(79, 20);
             this.label3.TabIndex = 4;
@@ -260,9 +266,10 @@
             // 
             // label6
             // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(178, 381);
+            this.label6.Location = new System.Drawing.Point(150, 364);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(62, 20);
             this.label6.TabIndex = 4;
@@ -270,37 +277,21 @@
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(175, 278);
+            this.label4.Location = new System.Drawing.Point(147, 261);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(67, 20);
             this.label4.TabIndex = 4;
             this.label4.Text = "Timeline";
             // 
-            // roundedLabel7
-            // 
-            this.roundedLabel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.roundedLabel7.BorderColor = System.Drawing.Color.White;
-            this.roundedLabel7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.roundedLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedLabel7.Image = global::Diccon.Properties.Resources.chat_36;
-            this.roundedLabel7.Location = new System.Drawing.Point(261, 207);
-            this.roundedLabel7.Name = "roundedLabel7";
-            this.roundedLabel7.Radius = 50;
-            this.roundedLabel7.Size = new System.Drawing.Size(75, 71);
-            this.roundedLabel7.TabIndex = 5;
-            this.roundedLabel7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.roundedLabel7.Thickness = 5F;
-            this.roundedLabel7.Click += new System.EventHandler(this.roundedLabel7_Click);
-            this.roundedLabel7.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
-            this.roundedLabel7.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
-            // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(257, 279);
+            this.label2.Location = new System.Drawing.Point(229, 262);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(88, 20);
             this.label2.TabIndex = 4;
@@ -308,8 +299,9 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(75, 381);
+            this.label1.Location = new System.Drawing.Point(47, 364);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(84, 21);
             this.label1.TabIndex = 4;
@@ -318,12 +310,13 @@
             // 
             // buttonYourNote
             // 
+            this.buttonYourNote.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.buttonYourNote.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.buttonYourNote.BorderColor = System.Drawing.Color.White;
             this.buttonYourNote.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonYourNote.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonYourNote.Image = global::Diccon.Properties.Resources.your_note_36;
-            this.buttonYourNote.Location = new System.Drawing.Point(79, 310);
+            this.buttonYourNote.Location = new System.Drawing.Point(51, 293);
             this.buttonYourNote.Name = "buttonYourNote";
             this.buttonYourNote.Radius = 50;
             this.buttonYourNote.Size = new System.Drawing.Size(75, 71);
@@ -333,6 +326,25 @@
             this.buttonYourNote.Click += new System.EventHandler(this.buttonYourNote_Click);
             this.buttonYourNote.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
             this.buttonYourNote.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
+            // 
+            // roundedLabel7
+            // 
+            this.roundedLabel7.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.roundedLabel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.roundedLabel7.BorderColor = System.Drawing.Color.White;
+            this.roundedLabel7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.roundedLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundedLabel7.Image = global::Diccon.Properties.Resources.chat_36;
+            this.roundedLabel7.Location = new System.Drawing.Point(233, 190);
+            this.roundedLabel7.Name = "roundedLabel7";
+            this.roundedLabel7.Radius = 50;
+            this.roundedLabel7.Size = new System.Drawing.Size(75, 71);
+            this.roundedLabel7.TabIndex = 5;
+            this.roundedLabel7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.roundedLabel7.Thickness = 5F;
+            this.roundedLabel7.Click += new System.EventHandler(this.roundedLabel7_Click);
+            this.roundedLabel7.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
+            this.roundedLabel7.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
             // 
             // contextMenu
             // 
@@ -346,7 +358,7 @@
             this.githubToolStripMenuItem,
             this.aboutToolStripMenuItem});
             this.contextMenu.Name = "contextMenu";
-            this.contextMenu.Size = new System.Drawing.Size(181, 148);
+            this.contextMenu.Size = new System.Drawing.Size(172, 126);
             // 
             // themeToolStripMenuItem
             // 
@@ -368,7 +380,7 @@
             this.englishToolStripMenuItem.Checked = true;
             this.englishToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
-            this.englishToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.englishToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.englishToolStripMenuItem.Text = "English";
             // 
             // vietnameseToolStripMenuItem
@@ -398,7 +410,7 @@
             // 
             this.githubToolStripMenuItem.Image = global::Diccon.Properties.Resources.github_20;
             this.githubToolStripMenuItem.Name = "githubToolStripMenuItem";
-            this.githubToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.githubToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.githubToolStripMenuItem.Text = "Github";
             this.githubToolStripMenuItem.Click += new System.EventHandler(this.githubToolStripMenuItem_Click);
             // 
@@ -426,10 +438,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(407, 692);
+            this.ClientSize = new System.Drawing.Size(355, 620);
             this.Controls.Add(this.playGroundPanel);
             this.Controls.Add(this.panel9);
             this.MaximumSize = new System.Drawing.Size(423, 10000);
+            this.MinimumSize = new System.Drawing.Size(371, 659);
             this.Name = "appFrame";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
