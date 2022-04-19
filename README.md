@@ -16,7 +16,13 @@
 
 * Tính ra là mình vừa học vừa làm, cứ học được điều gì hay ho mình lại áp dụng vào cái ứng dụng này để nó tốt hơn. Vì còn non tay nên vẫn còn quá trời lỗi trong ứng dụng luôn. Các bạn dùng mà ngộ nhỡ gặp lỗi nào thì cho mình biết với. Mình sẽ tìm cách sửa và hoàn thiện trong thời gian nhanh nhất có thể. 🚩
 
-* Cảm ơn bạn đã dành thời gian đọc qua phần giới thiệu ứng dụng, chúc bạn một ngày nhiều niềm vui, may mắn. Cảm ơn bạn vì đã tin tưởng sử dụng ứng dụng và đồng hành cùng mình trong suốt quãng thời gian qua.  
+* Cảm ơn bạn đã dành thời gian đọc qua phần giới thiệu ứng dụng, chúc bạn một ngày nhiều niềm vui, may mắn. Cảm ơn bạn vì đã tin tưởng sử dụng ứng dụng và đồng hành cùng mình trong suốt quãng thời gian qua. 
+
+## Hình ảnh
+
+<p align="center">
+  <img width="500" align="center" src="https://github.com/tranhuudang/Diccon/raw/master/sample/sample.png?raw=true">
+</p>
 
 ## Yêu cầu phần cứng
 
