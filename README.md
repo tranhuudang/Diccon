@@ -21,7 +21,7 @@
 ## Hình ảnh
 
 <p align="center">
-  <img width="500" align="center" src="https://github.com/tranhuudang/Diccon/raw/master/sample/sample.png?raw=true">
+  <img width="900" align="center" src="https://github.com/tranhuudang/Diccon/raw/master/sample/sample.png?raw=true">
 </p>
 
 ## Yêu cầu phần cứng
