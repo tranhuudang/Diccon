@@ -23,16 +23,25 @@ namespace Diccon.Pages
 
         private void notes_Load(object sender, EventArgs e)
         {
-            flowPlayground.HorizontalScroll.Visible = false;
-            flowPlayground.Controls.Clear();
-            List<noteObject> listNote= getNoteInNoteFile();
-            foreach (noteObject note in listNote)
+            try
             {
-                noteItems newItem= new noteItems();
-                newItem.tbTitle.Text = note.Name;
-                newItem.richContent.Text = note.Content;
-                flowPlayground.Controls.Add(newItem);
+                flowPlayground.HorizontalScroll.Visible = false;
+                flowPlayground.Controls.Clear();
+                List<noteObject> listNote = getNoteInNoteFile();
+                foreach (noteObject note in listNote)
+                {
+                    noteItems newItem = new noteItems();
+                    newItem.tbTitle.Text = note.Name;
+                    newItem.richContent.Text = note.Content;
+                    flowPlayground.Controls.Add(newItem);
+                }
             }
+            catch (Exception)
+            {
+
+                
+            }
+           
 
         }
 
@@ -59,7 +68,6 @@ namespace Diccon.Pages
             catch (Exception)
             {
                 return null;
-                throw;
             }
             return list;
         }

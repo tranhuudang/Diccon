@@ -37,6 +37,7 @@
             this.ClientSize = new System.Drawing.Size(407, 635);
             this.Name = "yawa";
             this.Text = "Yawa";
+            this.Load += new System.EventHandler(this.yawa_Load);
             this.ResumeLayout(false);
 
         }

@@ -17,7 +17,7 @@ namespace Diccon
 
         private void gitHubLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start("https://github.com/zeroclubvn/Diccon");
+            Process.Start(dicconProp.githubProjectPath);
         }
 
         private void about_Load(object sender, EventArgs e)

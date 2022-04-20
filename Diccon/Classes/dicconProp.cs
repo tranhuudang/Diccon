@@ -7,6 +7,8 @@ namespace Diccon
 {
     static class dicconProp
     {
+        public static string applicationDataPath =Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+        public static string dicconApplicationDataPath = applicationDataPath + @"\Diccon";
         public static string TextDataFromResources = Properties.Resources.Envi;
         public static string[] splitedText = TextDataFromResources.Split("@".ToCharArray());
         // botton height use to control the panel when open bottom menu
@@ -14,12 +16,12 @@ namespace Diccon
         public static int bottomPanel_ExpandedHeight = 150;
         public static Color default_addNote_BackColor = Color.FromArgb(255, 192, 128);
         public static Color hover_addNote_BackColor = Color.FromArgb(242, 203, 164);
-        public static string resourcesFolder = @"Resources\";
+        public static string resourcesFolder = dicconApplicationDataPath + @"\Resources\";
         public static string updateAvailableMessage = "New version available! Do you want to download it now?";
         public static string noUpdateAvailableMessage = "You're running the lastest version of Diccon!";
         public static string updateInfo = "https://raw.githubusercontent.com/tranhuudang/Diccon/master/Diccon/Setup%20and%20Update/UpdateInfo.xml";
         public static string downloadSetupCompleteMessage = "Diccon Updater is ready to install new version of Diccon!";
-        public static string setupName = "DicconSetup.msi";
+        public static string setupName = dicconApplicationDataPath+ @"\DicconSetup.msi";
         public static string currentWord;
         public static string currentTranslatedWord;
         public static int maximumSynonym = 10;
@@ -31,9 +33,12 @@ namespace Diccon
         public static bool isFromPixabay = true;
         public static string internetError = "Unfortunately, we can't connect to the internet at the moment!";
         public static char saparateCharactorInHistory='#';
-        public static string historyFileName= "History.ini";
-        public static string noteFilePath=@"Note.xml";
+        public static string historyFileName = dicconApplicationDataPath + @"\History.ini";
+        public static string noteFilePath = dicconApplicationDataPath + @"\Note.xml";
         public static string wordFromTimeline = "";
+        public static string githubPath = "https://github.com/tranhuudang";
+        public static string githubProjectPath = "https://github.com/zeroclubvn/Diccon";
+        public static string githubIssuesPath = "https://github.com/tranhuudang/Diccon/issues";
 
         /// <summary>
         /// Change Red and Green background of Rounded-Label to a darker shade of  color

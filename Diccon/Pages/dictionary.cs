@@ -43,7 +43,7 @@ namespace Diccon
             });
             thread.Start();
             soundRelated sound = new soundRelated();
-            searchTextBox.Text = sound.SpeechToText("00:00:07");
+            searchTextBox.Text = sound.SpeechToText(dicconProp.listenTimeInString);
         }
 
 
@@ -369,7 +369,7 @@ namespace Diccon
 
         private void issueLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start("https://github.com/tranhuudang/Diccon/issues");
+            Process.Start(dicconProp.githubIssuesPath);
         }
     }
 

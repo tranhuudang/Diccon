@@ -16,5 +16,10 @@ namespace Diccon.Pages
         {
             InitializeComponent();
         }
+
+        private void yawa_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

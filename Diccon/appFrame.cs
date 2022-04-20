@@ -3,6 +3,7 @@ using FontAwesome.Sharp;
 using System;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Net;
 using System.Reflection;
 using System.Runtime.InteropServices;
@@ -80,6 +81,12 @@ namespace Diccon
 
         private void AppFrame_Load(object sender, EventArgs e)
         {
+            //Determine data folder existen in ApplicationData
+            if (!Directory.Exists(dicconProp.dicconApplicationDataPath))
+            {
+                Directory.CreateDirectory(dicconProp.dicconApplicationDataPath);
+            };
+            //
             switch (GetWindowsScreenScalingFactor())
             {
                 case 100: // 100% scaling
@@ -403,7 +410,7 @@ namespace Diccon
 
         private void githubToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Process.Start("https://github.com/tranhuudang");
+            Process.Start(dicconProp.githubPath);
         }
     }
 }
