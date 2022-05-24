@@ -311,14 +311,14 @@
             // 
             this.flowChatBox.AutoScroll = true;
             this.flowChatBox.BackColor = System.Drawing.Color.White;
+            this.flowChatBox.Controls.Add(this.exampleAnswerPanel);
+            this.flowChatBox.Controls.Add(this.panel3);
             this.flowChatBox.Controls.Add(this.exampleflowLayoutSynonym);
             this.flowChatBox.Controls.Add(this.exampleShortPanel);
             this.flowChatBox.Controls.Add(this.exampleAskLongPanel);
             this.flowChatBox.Controls.Add(this.examplePlayPanel);
-            this.flowChatBox.Controls.Add(this.exampleAnswerPanel);
             this.flowChatBox.Controls.Add(this.exampleNotePanel);
             this.flowChatBox.Controls.Add(this.examplePicturePanel);
-            this.flowChatBox.Controls.Add(this.panel3);
             this.flowChatBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowChatBox.Location = new System.Drawing.Point(0, 5);
             this.flowChatBox.Name = "flowChatBox";
@@ -331,7 +331,7 @@
             this.exampleflowLayoutSynonym.AutoSize = true;
             this.exampleflowLayoutSynonym.Controls.Add(this.exampleItemSynonym);
             this.exampleflowLayoutSynonym.Controls.Add(this.roundedLabel3);
-            this.exampleflowLayoutSynonym.Location = new System.Drawing.Point(8, 8);
+            this.exampleflowLayoutSynonym.Location = new System.Drawing.Point(8, 404);
             this.exampleflowLayoutSynonym.MaximumSize = new System.Drawing.Size(367, 0);
             this.exampleflowLayoutSynonym.MinimumSize = new System.Drawing.Size(304, 0);
             this.exampleflowLayoutSynonym.Name = "exampleflowLayoutSynonym";
@@ -377,7 +377,7 @@
             // exampleShortPanel
             // 
             this.exampleShortPanel.Controls.Add(this.exampleShortText);
-            this.exampleShortPanel.Location = new System.Drawing.Point(8, 74);
+            this.exampleShortPanel.Location = new System.Drawing.Point(8, 470);
             this.exampleShortPanel.Name = "exampleShortPanel";
             this.exampleShortPanel.Size = new System.Drawing.Size(313, 39);
             this.exampleShortPanel.TabIndex = 0;
@@ -403,7 +403,7 @@
             // exampleAskLongPanel
             // 
             this.exampleAskLongPanel.Controls.Add(this.exampleAskLongColoredPanel);
-            this.exampleAskLongPanel.Location = new System.Drawing.Point(8, 119);
+            this.exampleAskLongPanel.Location = new System.Drawing.Point(8, 515);
             this.exampleAskLongPanel.MinimumSize = new System.Drawing.Size(0, 40);
             this.exampleAskLongPanel.Name = "exampleAskLongPanel";
             this.exampleAskLongPanel.Size = new System.Drawing.Size(313, 40);
@@ -437,7 +437,7 @@
             // examplePlayPanel
             // 
             this.examplePlayPanel.Controls.Add(this.examplePlayAlignPanel);
-            this.examplePlayPanel.Location = new System.Drawing.Point(8, 165);
+            this.examplePlayPanel.Location = new System.Drawing.Point(8, 561);
             this.examplePlayPanel.Name = "examplePlayPanel";
             this.examplePlayPanel.Size = new System.Drawing.Size(313, 39);
             this.examplePlayPanel.TabIndex = 2;
@@ -492,7 +492,7 @@
             // exampleAnswerPanel
             // 
             this.exampleAnswerPanel.Controls.Add(this.exampleAnswerColoredPanel);
-            this.exampleAnswerPanel.Location = new System.Drawing.Point(8, 210);
+            this.exampleAnswerPanel.Location = new System.Drawing.Point(8, 8);
             this.exampleAnswerPanel.Name = "exampleAnswerPanel";
             this.exampleAnswerPanel.Size = new System.Drawing.Size(313, 155);
             this.exampleAnswerPanel.TabIndex = 1;
@@ -504,10 +504,10 @@
             this.exampleAnswerColoredPanel.BorderColor = System.Drawing.Color.White;
             this.exampleAnswerColoredPanel.Controls.Add(this.exampleAnswerText);
             this.exampleAnswerColoredPanel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.exampleAnswerColoredPanel.Location = new System.Drawing.Point(56, 0);
+            this.exampleAnswerColoredPanel.Location = new System.Drawing.Point(49, 0);
             this.exampleAnswerColoredPanel.Name = "exampleAnswerColoredPanel";
             this.exampleAnswerColoredPanel.Radius = 20;
-            this.exampleAnswerColoredPanel.Size = new System.Drawing.Size(257, 155);
+            this.exampleAnswerColoredPanel.Size = new System.Drawing.Size(264, 155);
             this.exampleAnswerColoredPanel.TabIndex = 0;
             this.exampleAnswerColoredPanel.Thickness = 5F;
             // 
@@ -527,7 +527,7 @@
             // exampleNotePanel
             // 
             this.exampleNotePanel.Controls.Add(this.exampleNoteColoredPanel);
-            this.exampleNotePanel.Location = new System.Drawing.Point(8, 371);
+            this.exampleNotePanel.Location = new System.Drawing.Point(8, 606);
             this.exampleNotePanel.Name = "exampleNotePanel";
             this.exampleNotePanel.Size = new System.Drawing.Size(313, 236);
             this.exampleNotePanel.TabIndex = 5;
@@ -614,7 +614,7 @@
             // 
             this.examplePicturePanel.Controls.Add(this.examplePixabayLogo);
             this.examplePicturePanel.Controls.Add(this.exampleColoredPicturePanel);
-            this.examplePicturePanel.Location = new System.Drawing.Point(8, 613);
+            this.examplePicturePanel.Location = new System.Drawing.Point(8, 848);
             this.examplePicturePanel.Name = "examplePicturePanel";
             this.examplePicturePanel.Size = new System.Drawing.Size(316, 269);
             this.examplePicturePanel.TabIndex = 7;
@@ -666,7 +666,7 @@
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.Controls.Add(this.roundedPanel2);
-            this.panel3.Location = new System.Drawing.Point(8, 888);
+            this.panel3.Location = new System.Drawing.Point(8, 169);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(316, 229);
             this.panel3.TabIndex = 2;

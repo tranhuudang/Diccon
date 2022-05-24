@@ -10,6 +10,8 @@ using System.Runtime.InteropServices;
 using System.Threading;
 using System.Windows.Forms;
 using System.Xml;
+using WK.Libraries.WTL;
+using static WK.Libraries.WTL.ThemeListener;
 
 namespace Diccon
 {
@@ -118,8 +120,19 @@ namespace Diccon
                     lbQuotation.Text = quote.getQuote("en");
                     break;
             }
-           
+
+            topPanel.BackColor = dicconProp.AccentColor;
+            btDictionary.BackColor = dicconProp.SecondaryColor;
+            btDonate.BackColor = dicconProp.SecondaryColor;
+            btTimeline.BackColor = dicconProp.SecondaryColor;
+            btNotes.BackColor = dicconProp.SecondaryColor;
+            btCommunity.BackColor = dicconProp.SecondaryColor;
         }
+
+
+
+
+       
 
         /// <summary>
         /// Change Red and Green background of Rounded-Label to a darker shade of  color
@@ -128,12 +141,7 @@ namespace Diccon
         /// <param name="e"></param>
         private void RoundedLabel_MouseEnter(object sender, EventArgs e)
         {
-            RoundedLabel roundedLabel = (sender as RoundedLabel);
-            int R = roundedLabel.BackColor.R >= 50 ? roundedLabel.BackColor.R - 50 : roundedLabel.BackColor.R;
-            int G = roundedLabel.BackColor.G >= 50 ? roundedLabel.BackColor.G - 50 : roundedLabel.BackColor.G;
-            int B = roundedLabel.BackColor.B;
-
-            roundedLabel.BackColor = Color.FromArgb(R, G, B);
+            dicconProp.RoundedLabel_MouseEnter(sender, e);
         }
         /// <summary>
         /// Change Red and Green background of Rounded-Label to a lighter shade of  color
@@ -142,12 +150,7 @@ namespace Diccon
         /// <param name="e"></param>
         private void RoundedLabel_MouseLeave(object sender, EventArgs e)
         {
-            RoundedLabel roundedLabel = (sender as RoundedLabel);
-            int R = roundedLabel.BackColor.R <= 205 ? roundedLabel.BackColor.R + 50 : roundedLabel.BackColor.R;
-            int G = roundedLabel.BackColor.G <= 205 ? roundedLabel.BackColor.G + 50 : roundedLabel.BackColor.G;
-            int B = roundedLabel.BackColor.B;
-
-            roundedLabel.BackColor = Color.FromArgb(R, G, B);
+            dicconProp.RoundedLabel_MouseLeave(sender, e);
         }
         /// <summary>
         /// Change position of PictureBox to create a illusion that the box is lift up a little bit

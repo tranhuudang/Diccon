@@ -33,7 +33,7 @@ namespace Diccon.Pages
 
         private void donate_Load(object sender, EventArgs e)
         {
-
+            btOpenQr.BackColor = dicconProp.ColorA150;
         }
     }
 }

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.panel9 = new System.Windows.Forms.Panel();
+            this.topPanel = new System.Windows.Forms.Panel();
             this.btStar = new FontAwesome.Sharp.IconPictureBox();
             this.logo = new System.Windows.Forms.PictureBox();
             this.buttonMenu = new System.Windows.Forms.PictureBox();
@@ -37,17 +37,12 @@
             this.playGroundPanel = new System.Windows.Forms.Panel();
             this.panelHome = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
-            this.btDonate = new Diccon.RoundedLabel();
             this.lbQuotation = new System.Windows.Forms.Label();
-            this.btDictionary = new Diccon.RoundedLabel();
-            this.btTimeline = new Diccon.RoundedLabel();
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.buttonYourNote = new Diccon.RoundedLabel();
-            this.roundedLabel7 = new Diccon.RoundedLabel();
             this.contextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.themeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.languageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -60,7 +55,12 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.timeLineDetector = new System.Windows.Forms.Timer(this.components);
-            this.panel9.SuspendLayout();
+            this.btDonate = new Diccon.RoundedLabel();
+            this.btDictionary = new Diccon.RoundedLabel();
+            this.btTimeline = new Diccon.RoundedLabel();
+            this.btNotes = new Diccon.RoundedLabel();
+            this.btCommunity = new Diccon.RoundedLabel();
+            this.topPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btStar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonMenu)).BeginInit();
@@ -69,18 +69,18 @@
             this.contextMenu.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel9
+            // topPanel
             // 
-            this.panel9.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.panel9.Controls.Add(this.btStar);
-            this.panel9.Controls.Add(this.logo);
-            this.panel9.Controls.Add(this.buttonMenu);
-            this.panel9.Controls.Add(this.title);
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel9.Location = new System.Drawing.Point(0, 0);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(355, 70);
-            this.panel9.TabIndex = 5;
+            this.topPanel.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.topPanel.Controls.Add(this.btStar);
+            this.topPanel.Controls.Add(this.logo);
+            this.topPanel.Controls.Add(this.buttonMenu);
+            this.topPanel.Controls.Add(this.title);
+            this.topPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.topPanel.Location = new System.Drawing.Point(0, 0);
+            this.topPanel.Name = "topPanel";
+            this.topPanel.Size = new System.Drawing.Size(355, 70);
+            this.topPanel.TabIndex = 5;
             // 
             // btStar
             // 
@@ -155,6 +155,7 @@
             // 
             // panelHome
             // 
+            this.panelHome.BackColor = System.Drawing.Color.White;
             this.panelHome.Controls.Add(this.label7);
             this.panelHome.Controls.Add(this.btDonate);
             this.panelHome.Controls.Add(this.lbQuotation);
@@ -165,8 +166,8 @@
             this.panelHome.Controls.Add(this.label4);
             this.panelHome.Controls.Add(this.label2);
             this.panelHome.Controls.Add(this.label1);
-            this.panelHome.Controls.Add(this.buttonYourNote);
-            this.panelHome.Controls.Add(this.roundedLabel7);
+            this.panelHome.Controls.Add(this.btNotes);
+            this.panelHome.Controls.Add(this.btCommunity);
             this.panelHome.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelHome.Location = new System.Drawing.Point(0, 0);
             this.panelHome.Name = "panelHome";
@@ -184,25 +185,6 @@
             this.label7.TabIndex = 8;
             this.label7.Text = "ZeroClub";
             // 
-            // btDonate
-            // 
-            this.btDonate.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btDonate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btDonate.BorderColor = System.Drawing.Color.White;
-            this.btDonate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btDonate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btDonate.Image = global::Diccon.Properties.Resources.support_36;
-            this.btDonate.Location = new System.Drawing.Point(142, 291);
-            this.btDonate.Name = "btDonate";
-            this.btDonate.Radius = 50;
-            this.btDonate.Size = new System.Drawing.Size(73, 69);
-            this.btDonate.TabIndex = 7;
-            this.btDonate.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btDonate.Thickness = 5F;
-            this.btDonate.Click += new System.EventHandler(this.btDonate_Click);
-            this.btDonate.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
-            this.btDonate.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
-            // 
             // lbQuotation
             // 
             this.lbQuotation.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -214,44 +196,6 @@
             this.lbQuotation.TabIndex = 6;
             this.lbQuotation.Text = "“Don’t wish it were easier; wish you were better.”";
             this.lbQuotation.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btDictionary
-            // 
-            this.btDictionary.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btDictionary.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btDictionary.BorderColor = System.Drawing.Color.White;
-            this.btDictionary.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btDictionary.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btDictionary.Image = global::Diccon.Properties.Resources.translate_36;
-            this.btDictionary.Location = new System.Drawing.Point(51, 190);
-            this.btDictionary.Name = "btDictionary";
-            this.btDictionary.Radius = 50;
-            this.btDictionary.Size = new System.Drawing.Size(73, 69);
-            this.btDictionary.TabIndex = 5;
-            this.btDictionary.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btDictionary.Thickness = 5F;
-            this.btDictionary.Click += new System.EventHandler(this.btDictionary_Click);
-            this.btDictionary.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
-            this.btDictionary.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
-            // 
-            // btTimeline
-            // 
-            this.btTimeline.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btTimeline.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btTimeline.BorderColor = System.Drawing.Color.White;
-            this.btTimeline.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btTimeline.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btTimeline.Image = global::Diccon.Properties.Resources.timeline_36;
-            this.btTimeline.Location = new System.Drawing.Point(142, 190);
-            this.btTimeline.Name = "btTimeline";
-            this.btTimeline.Radius = 50;
-            this.btTimeline.Size = new System.Drawing.Size(73, 69);
-            this.btTimeline.TabIndex = 5;
-            this.btTimeline.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btTimeline.Thickness = 5F;
-            this.btTimeline.Click += new System.EventHandler(this.btTimeline_Click);
-            this.btTimeline.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
-            this.btTimeline.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
             // 
             // label3
             // 
@@ -307,44 +251,6 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Notes";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // buttonYourNote
-            // 
-            this.buttonYourNote.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.buttonYourNote.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.buttonYourNote.BorderColor = System.Drawing.Color.White;
-            this.buttonYourNote.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonYourNote.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonYourNote.Image = global::Diccon.Properties.Resources.your_note_36;
-            this.buttonYourNote.Location = new System.Drawing.Point(51, 293);
-            this.buttonYourNote.Name = "buttonYourNote";
-            this.buttonYourNote.Radius = 50;
-            this.buttonYourNote.Size = new System.Drawing.Size(73, 69);
-            this.buttonYourNote.TabIndex = 3;
-            this.buttonYourNote.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonYourNote.Thickness = 5F;
-            this.buttonYourNote.Click += new System.EventHandler(this.buttonYourNote_Click);
-            this.buttonYourNote.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
-            this.buttonYourNote.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
-            // 
-            // roundedLabel7
-            // 
-            this.roundedLabel7.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.roundedLabel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.roundedLabel7.BorderColor = System.Drawing.Color.White;
-            this.roundedLabel7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.roundedLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedLabel7.Image = global::Diccon.Properties.Resources.chat_36;
-            this.roundedLabel7.Location = new System.Drawing.Point(233, 190);
-            this.roundedLabel7.Name = "roundedLabel7";
-            this.roundedLabel7.Radius = 50;
-            this.roundedLabel7.Size = new System.Drawing.Size(73, 69);
-            this.roundedLabel7.TabIndex = 5;
-            this.roundedLabel7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.roundedLabel7.Thickness = 5F;
-            this.roundedLabel7.Click += new System.EventHandler(this.roundedLabel7_Click);
-            this.roundedLabel7.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
-            this.roundedLabel7.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
             // 
             // contextMenu
             // 
@@ -433,6 +339,101 @@
             this.timeLineDetector.Interval = 500;
             this.timeLineDetector.Tick += new System.EventHandler(this.timeLineDetector_Tick);
             // 
+            // btDonate
+            // 
+            this.btDonate.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btDonate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btDonate.BorderColor = System.Drawing.Color.White;
+            this.btDonate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btDonate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btDonate.Image = global::Diccon.Properties.Resources.support_36;
+            this.btDonate.Location = new System.Drawing.Point(142, 291);
+            this.btDonate.Name = "btDonate";
+            this.btDonate.Radius = 50;
+            this.btDonate.Size = new System.Drawing.Size(73, 69);
+            this.btDonate.TabIndex = 7;
+            this.btDonate.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btDonate.Thickness = 5F;
+            this.btDonate.Click += new System.EventHandler(this.btDonate_Click);
+            this.btDonate.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
+            this.btDonate.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
+            // 
+            // btDictionary
+            // 
+            this.btDictionary.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btDictionary.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btDictionary.BorderColor = System.Drawing.Color.White;
+            this.btDictionary.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btDictionary.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btDictionary.Image = global::Diccon.Properties.Resources.translate_36;
+            this.btDictionary.Location = new System.Drawing.Point(51, 190);
+            this.btDictionary.Name = "btDictionary";
+            this.btDictionary.Radius = 50;
+            this.btDictionary.Size = new System.Drawing.Size(73, 69);
+            this.btDictionary.TabIndex = 5;
+            this.btDictionary.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btDictionary.Thickness = 5F;
+            this.btDictionary.Click += new System.EventHandler(this.btDictionary_Click);
+            this.btDictionary.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
+            this.btDictionary.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
+            // 
+            // btTimeline
+            // 
+            this.btTimeline.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btTimeline.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btTimeline.BorderColor = System.Drawing.Color.White;
+            this.btTimeline.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btTimeline.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btTimeline.Image = global::Diccon.Properties.Resources.timeline_36;
+            this.btTimeline.Location = new System.Drawing.Point(142, 190);
+            this.btTimeline.Name = "btTimeline";
+            this.btTimeline.Radius = 50;
+            this.btTimeline.Size = new System.Drawing.Size(73, 69);
+            this.btTimeline.TabIndex = 5;
+            this.btTimeline.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btTimeline.Thickness = 5F;
+            this.btTimeline.Click += new System.EventHandler(this.btTimeline_Click);
+            this.btTimeline.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
+            this.btTimeline.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
+            // 
+            // btNotes
+            // 
+            this.btNotes.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btNotes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btNotes.BorderColor = System.Drawing.Color.White;
+            this.btNotes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btNotes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btNotes.Image = global::Diccon.Properties.Resources.your_note_36;
+            this.btNotes.Location = new System.Drawing.Point(51, 293);
+            this.btNotes.Name = "btNotes";
+            this.btNotes.Radius = 50;
+            this.btNotes.Size = new System.Drawing.Size(73, 69);
+            this.btNotes.TabIndex = 3;
+            this.btNotes.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btNotes.Thickness = 5F;
+            this.btNotes.Click += new System.EventHandler(this.buttonYourNote_Click);
+            this.btNotes.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
+            this.btNotes.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
+            // 
+            // btCommunity
+            // 
+            this.btCommunity.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btCommunity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btCommunity.BorderColor = System.Drawing.Color.White;
+            this.btCommunity.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btCommunity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btCommunity.Image = global::Diccon.Properties.Resources.chat_36;
+            this.btCommunity.Location = new System.Drawing.Point(233, 190);
+            this.btCommunity.Name = "btCommunity";
+            this.btCommunity.Radius = 50;
+            this.btCommunity.Size = new System.Drawing.Size(73, 69);
+            this.btCommunity.TabIndex = 5;
+            this.btCommunity.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btCommunity.Thickness = 5F;
+            this.btCommunity.Click += new System.EventHandler(this.roundedLabel7_Click);
+            this.btCommunity.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
+            this.btCommunity.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
+            // 
             // appFrame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -440,7 +441,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(355, 620);
             this.Controls.Add(this.playGroundPanel);
-            this.Controls.Add(this.panel9);
+            this.Controls.Add(this.topPanel);
             this.MaximumSize = new System.Drawing.Size(423, 10000);
             this.MinimumSize = new System.Drawing.Size(371, 659);
             this.Name = "appFrame";
@@ -448,8 +449,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.appFrame_FormClosing);
             this.Load += new System.EventHandler(this.AppFrame_Load);
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
+            this.topPanel.ResumeLayout(false);
+            this.topPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btStar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonMenu)).EndInit();
@@ -463,7 +464,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel topPanel;
         private System.Windows.Forms.PictureBox buttonMenu;
         private System.Windows.Forms.Label title;
         private System.Windows.Forms.PictureBox logo;
@@ -476,10 +477,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
-        private RoundedLabel roundedLabel7;
+        private RoundedLabel btCommunity;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private RoundedLabel buttonYourNote;
+        private RoundedLabel btNotes;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ContextMenuStrip contextMenu;
         private System.Windows.Forms.ToolStripMenuItem themeToolStripMenuItem;

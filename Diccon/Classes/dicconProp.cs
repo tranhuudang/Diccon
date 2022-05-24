@@ -2,11 +2,25 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
+using WK.Libraries.WTL;
 
 namespace Diccon
 {
     static class dicconProp
     {
+        
+        public static int A = ThemeListener.AccentColor.A;
+        public static int R = ThemeListener.AccentColor.R;
+        public static int G = ThemeListener.AccentColor.G;
+        public static int B = ThemeListener.AccentColor.B;
+        public static Color AccentColor = ThemeListener.AccentColor;
+        public static Color SecondaryColor = Color.FromArgb(A-180,R,G,B);
+        public static Color ColorA25 = Color.FromArgb(25,R,G,B);
+        public static Color ColorA50 = Color.FromArgb(50,R,G,B);
+        public static Color ColorA100 = Color.FromArgb(100,R,G,B);
+        public static Color ColorA150 = Color.FromArgb(150,R,G,B);
+        public static Color ColorA200 = Color.FromArgb(200,R,G,B);
+        //public static Color ForeColor = ThemeListener.
         public static string applicationDataPath =Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
         public static string dicconApplicationDataPath = applicationDataPath + @"\Diccon";
         public static string TextDataFromResources = Properties.Resources.Envi;
@@ -48,11 +62,12 @@ namespace Diccon
         public static void RoundedLabel_MouseEnter(object sender, EventArgs e)
         {
             RoundedLabel roundedLabel = (sender as RoundedLabel);
-            int R = roundedLabel.BackColor.R >= 50 ? roundedLabel.BackColor.R - 50 : roundedLabel.BackColor.R;
-            int G = roundedLabel.BackColor.G >= 50 ? roundedLabel.BackColor.G - 50 : roundedLabel.BackColor.G;
+            int A = roundedLabel.BackColor.A + 100;
+            int R = roundedLabel.BackColor.R;
+            int G = roundedLabel.BackColor.G;
             int B = roundedLabel.BackColor.B;
 
-            roundedLabel.BackColor = Color.FromArgb(R, G, B);
+            roundedLabel.BackColor = Color.FromArgb(A, R, G, B);
         }
         /// <summary>
         /// Change Red and Green background of Rounded-Label to a lighter shade of  color
@@ -62,11 +77,13 @@ namespace Diccon
         public static void RoundedLabel_MouseLeave(object sender, EventArgs e)
         {
             RoundedLabel roundedLabel = (sender as RoundedLabel);
-            int R = roundedLabel.BackColor.R <= 205 ? roundedLabel.BackColor.R + 50 : roundedLabel.BackColor.R;
-            int G = roundedLabel.BackColor.G <= 205 ? roundedLabel.BackColor.G + 50 : roundedLabel.BackColor.G;
+            int A =roundedLabel.BackColor.A - 100;
+            int R = roundedLabel.BackColor.R;
+            int G = roundedLabel.BackColor.G;
             int B = roundedLabel.BackColor.B;
 
-            roundedLabel.BackColor = Color.FromArgb(R, G, B);
+            roundedLabel.BackColor = Color.FromArgb(A, R, G, B);
+            
         }
         public static void PictureBox_MouseEnter(object sender, EventArgs e)
         {
