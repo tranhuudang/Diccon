@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace Diccon
 {
-    public partial class SpeechToText : Form
+    public partial class speechToText : Form
     {
         int count = 0;
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
@@ -17,7 +17,7 @@ namespace Diccon
           int nWidthEllipse, // width of ellipse
           int nHeightEllipse // height of ellipse
       );
-        public SpeechToText()
+        public speechToText()
         {
             InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));

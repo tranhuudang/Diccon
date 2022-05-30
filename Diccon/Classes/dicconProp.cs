@@ -14,12 +14,14 @@ namespace Diccon
         public static int G = ThemeListener.AccentColor.G;
         public static int B = ThemeListener.AccentColor.B;
         public static Color AccentColor = ThemeListener.AccentColor;
-        public static Color SecondaryColor = Color.FromArgb(A-180,R,G,B);
-        public static Color ColorA25 = Color.FromArgb(25,R,G,B);
-        public static Color ColorA50 = Color.FromArgb(50,R,G,B);
-        public static Color ColorA100 = Color.FromArgb(100,R,G,B);
-        public static Color ColorA150 = Color.FromArgb(150,R,G,B);
-        public static Color ColorA200 = Color.FromArgb(200,R,G,B);
+        // higher is lighter 0.9 ligher than 0.1
+        public static Color ColorA9 = Color.FromArgb((int)(R + (0.9 * (255 - R))), (int)(G + Math.Floor(0.9 * (255 - G))), (int)(B + Math.Floor(0.9 * (255 - B))));
+        public static Color ColorA8 = Color.FromArgb((int)(R + (0.8 * (255 - R))), (int)(G + Math.Floor(0.8 * (255 - G))), (int)(B + Math.Floor(0.8 * (255 - B))));
+        public static Color ColorA7 = Color.FromArgb((int)(R + (0.7 * (255 - R))), (int)(G + Math.Floor(0.7 * (255 - G))), (int)(B + Math.Floor(0.7 * (255 - B))));
+        public static Color ColorA5 = Color.FromArgb((int)(R + (0.5 * (255 - R))), (int)(G + Math.Floor(0.5 * (255 - G))), (int)(B + Math.Floor(0.5 * (255 - B))));
+        public static Color ColorA3 = Color.FromArgb((int)(R + (0.3 * (255 - R))), (int)(G + Math.Floor(0.3 * (255 - G))), (int)(B + Math.Floor(0.3 * (255 - B))));
+        public static Color ColorA1 = Color.FromArgb((int)(R + (0.1 * (255 - R))), (int)(G + Math.Floor(0.1 * (255 - G))), (int)(B + Math.Floor(0.1 * (255 - B))));
+
         //public static Color ForeColor = ThemeListener.
         public static string applicationDataPath =Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
         public static string dicconApplicationDataPath = applicationDataPath + @"\Diccon";
@@ -53,6 +55,8 @@ namespace Diccon
         public static string githubPath = "https://github.com/tranhuudang";
         public static string githubProjectPath = "https://github.com/zeroclubvn/Diccon";
         public static string githubIssuesPath = "https://github.com/tranhuudang/Diccon/issues";
+        public static string enableFlashClipboard = Properties.Settings.Default["FlashClipboard"].ToString();
+
 
         /// <summary>
         /// Change Red and Green background of Rounded-Label to a darker shade of  color
@@ -61,13 +65,20 @@ namespace Diccon
         /// <param name="e"></param>
         public static void RoundedLabel_MouseEnter(object sender, EventArgs e)
         {
-            RoundedLabel roundedLabel = (sender as RoundedLabel);
-            int A = roundedLabel.BackColor.A + 100;
-            int R = roundedLabel.BackColor.R;
-            int G = roundedLabel.BackColor.G;
-            int B = roundedLabel.BackColor.B;
+            try
+            {
+                RoundedLabel roundedLabel = (sender as RoundedLabel);
+                int A = roundedLabel.BackColor.A<=100 ? roundedLabel.BackColor.A + 100: roundedLabel.BackColor.A;
+                int R = roundedLabel.BackColor.R;
+                int G = roundedLabel.BackColor.G;
+                int B = roundedLabel.BackColor.B;
 
-            roundedLabel.BackColor = Color.FromArgb(A, R, G, B);
+                roundedLabel.BackColor = ColorA9;
+            }
+            catch (Exception)
+            {
+            }
+           
         }
         /// <summary>
         /// Change Red and Green background of Rounded-Label to a lighter shade of  color
@@ -76,13 +87,21 @@ namespace Diccon
         /// <param name="e"></param>
         public static void RoundedLabel_MouseLeave(object sender, EventArgs e)
         {
-            RoundedLabel roundedLabel = (sender as RoundedLabel);
-            int A =roundedLabel.BackColor.A - 100;
-            int R = roundedLabel.BackColor.R;
-            int G = roundedLabel.BackColor.G;
-            int B = roundedLabel.BackColor.B;
+            try
+            {
+                RoundedLabel roundedLabel = (sender as RoundedLabel);
+                int A = roundedLabel.BackColor.A>100? roundedLabel.BackColor.A-100: roundedLabel.BackColor.A;
+                int R = roundedLabel.BackColor.R;
+                int G = roundedLabel.BackColor.G;
+                int B = roundedLabel.BackColor.B;
 
-            roundedLabel.BackColor = Color.FromArgb(A, R, G, B);
+                roundedLabel.BackColor = ColorA8;
+            }
+            catch (Exception)
+            {
+
+            }
+            
             
         }
         public static void PictureBox_MouseEnter(object sender, EventArgs e)

@@ -22,21 +22,35 @@ namespace Diccon
 
         private void mainHall_Load(object sender, EventArgs e)
         {
-            
+
+            ///////  T   H   E   M   E  ///////////////
+            panelNotice.BackColor = dicconProp.ColorA3;
+            exampleAnswerColoredPanel.BackColor = dicconProp.ColorA3;
+            exampleItemSynonym.BackColor = dicconProp.ColorA5;
+            examplePlayColoredPanel.BackColor = dicconProp.ColorA5;
+            btSynonym.BackColor = dicconProp.ColorA8;
+            btImage.BackColor = dicconProp.ColorA8;
+            addEmoji.BackColor= dicconProp.ColorA8;
+            addNote.BackColor= dicconProp.ColorA8;
+            examplePictureBox.BackColor = dicconProp.ColorA7;
+            roundedPanel1.BackColor = dicconProp.ColorA9;
+            searchTextBox.BackColor = dicconProp.ColorA9;
+
+            ///////////////////////////////////////////
             panelBottom.Height = dicconProp.bottomPanel_DefaultHeight;
             // setup flowchatbox to only show vertical scrollbar
             flowChatBox.HorizontalScroll.Visible = false;
             flowChatBox.HorizontalScroll.Enabled = false;
             flowChatBox.Padding = new Padding(10, 0, 0, 0);
+            
 
         }
-
 
         private void textFromMic_Click(object sender, EventArgs e)
         {
             Thread thread = new Thread(() =>
             {
-                SpeechToText speechToText = new SpeechToText();
+                speechToText speechToText = new speechToText();
                 speechToText.Location = new Point(Cursor.Position.X - speechToText.Width / 2, Cursor.Position.Y - speechToText.Height - 15);
                 speechToText.ShowDialog();
 
@@ -364,9 +378,9 @@ namespace Diccon
                 searchTextBox.Text = dicconProp.wordFromTimeline.Trim();
                 dicconProp.wordFromTimeline = "";
             }
-            
+            //enable event to listen to clipboard changes if enable
+            realTimeDetermine.Enabled = dicconProp.enableFlashClipboard == "True" ? true : false;
         }
-
         private void issueLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Process.Start(dicconProp.githubIssuesPath);

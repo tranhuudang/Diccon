@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Drawing;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text.Json.Nodes;
@@ -119,12 +120,14 @@ namespace Diccon
             playButton.Click += PlayButton_Click;
 
             textHolder.Text = textToPlay;
+
             textHolder.Location = exampleTextHolder.Location;
             textHolder.Font = exampleTextHolder.Font;
             textHolder.AutoSize = true;
             // change text color equal to its parent background to invisible it
             newColoredPanel.BackColor = exampleColoredPanel.BackColor;
             textHolder.ForeColor = newColoredPanel.BackColor;
+
 
             newColoredPanel.Controls.Add(playButton);
             newColoredPanel.Controls.Add(textHolder);

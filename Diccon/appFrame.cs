@@ -24,7 +24,7 @@ namespace Diccon
         Form donateForm = null;
         Form timelineForm = null;
         Form noteForm = null;
-        
+        Form settingForm = null;
         public appFrame()
         {
             InitializeComponent();
@@ -120,19 +120,22 @@ namespace Diccon
                     lbQuotation.Text = quote.getQuote("en");
                     break;
             }
+           
 
             topPanel.BackColor = dicconProp.AccentColor;
-            btDictionary.BackColor = dicconProp.SecondaryColor;
-            btDonate.BackColor = dicconProp.SecondaryColor;
-            btTimeline.BackColor = dicconProp.SecondaryColor;
-            btNotes.BackColor = dicconProp.SecondaryColor;
-            btCommunity.BackColor = dicconProp.SecondaryColor;
+            btDictionary.BackColor = dicconProp.ColorA8;
+            btDonate.BackColor = dicconProp.ColorA8;
+            btTimeline.BackColor = dicconProp.ColorA8;
+            btNotes.BackColor = dicconProp.ColorA8;
+            btCommunity.BackColor = dicconProp.ColorA8;
         }
 
-
-
-
        
+
+
+
+
+
 
         /// <summary>
         /// Change Red and Green background of Rounded-Label to a darker shade of  color
@@ -414,6 +417,27 @@ namespace Diccon
         private void githubToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Process.Start(dicconProp.githubPath);
+        }
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void settingsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+
+            if (settingForm != null)
+            {
+
+                openForm(settingForm);
+            }
+            else
+            {
+                settingForm = new settings();
+                openForm(settingForm);
+            }
         }
     }
 }

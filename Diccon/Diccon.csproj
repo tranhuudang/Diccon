@@ -101,6 +101,8 @@
       <HintPath>..\packages\System.Collections.Immutable.1.3.1\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
     <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
     </Reference>
@@ -233,15 +235,21 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Classes\soundRelated.cs" />
-    <Compile Include="Pages\SpeechToText.cs">
+    <Compile Include="Pages\speechToText.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pages\SpeechToText.Designer.cs">
-      <DependentUpon>SpeechToText.cs</DependentUpon>
+    <Compile Include="Pages\speechToText.Designer.cs">
+      <DependentUpon>speechToText.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\sysnonym.cs" />
     <Compile Include="Classes\userAction.cs" />
     <Compile Include="Classes\wordRelated.cs" />
+    <Compile Include="Pages\settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\settings.Designer.cs">
+      <DependentUpon>settings.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Controls\noteItems.resx">
       <DependentUpon>noteItems.cs</DependentUpon>
     </EmbeddedResource>
@@ -266,6 +274,9 @@
     <EmbeddedResource Include="Pages\notes.resx">
       <DependentUpon>notes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pages\settings.resx">
+      <DependentUpon>settings.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pages\timeline.resx">
       <DependentUpon>timeline.cs</DependentUpon>
     </EmbeddedResource>
@@ -282,8 +293,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Pages\SpeechToText.resx">
-      <DependentUpon>SpeechToText.cs</DependentUpon>
+    <EmbeddedResource Include="Pages\speechToText.resx">
+      <DependentUpon>speechToText.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.manifest" />
     <None Include="packages.config" />

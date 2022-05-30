@@ -1,6 +1,6 @@
 ﻿namespace Diccon
 {
-    partial class SpeechToText
+    partial class speechToText
     {
         /// <summary>
         /// Required designer variable.

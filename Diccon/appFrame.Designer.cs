@@ -37,12 +37,17 @@
             this.playGroundPanel = new System.Windows.Forms.Panel();
             this.panelHome = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
+            this.btDonate = new Diccon.RoundedLabel();
             this.lbQuotation = new System.Windows.Forms.Label();
+            this.btDictionary = new Diccon.RoundedLabel();
+            this.btTimeline = new Diccon.RoundedLabel();
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btNotes = new Diccon.RoundedLabel();
+            this.btCommunity = new Diccon.RoundedLabel();
             this.contextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.themeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.languageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -55,11 +60,8 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.timeLineDetector = new System.Windows.Forms.Timer(this.components);
-            this.btDonate = new Diccon.RoundedLabel();
-            this.btDictionary = new Diccon.RoundedLabel();
-            this.btTimeline = new Diccon.RoundedLabel();
-            this.btNotes = new Diccon.RoundedLabel();
-            this.btCommunity = new Diccon.RoundedLabel();
+            this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripSeparator();
             this.topPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btStar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
@@ -185,6 +187,25 @@
             this.label7.TabIndex = 8;
             this.label7.Text = "ZeroClub";
             // 
+            // btDonate
+            // 
+            this.btDonate.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btDonate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btDonate.BorderColor = System.Drawing.Color.White;
+            this.btDonate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btDonate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btDonate.Image = global::Diccon.Properties.Resources.support_36;
+            this.btDonate.Location = new System.Drawing.Point(142, 291);
+            this.btDonate.Name = "btDonate";
+            this.btDonate.Radius = 50;
+            this.btDonate.Size = new System.Drawing.Size(73, 69);
+            this.btDonate.TabIndex = 7;
+            this.btDonate.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btDonate.Thickness = 5F;
+            this.btDonate.Click += new System.EventHandler(this.btDonate_Click);
+            this.btDonate.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
+            this.btDonate.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
+            // 
             // lbQuotation
             // 
             this.lbQuotation.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -196,6 +217,44 @@
             this.lbQuotation.TabIndex = 6;
             this.lbQuotation.Text = "“Don’t wish it were easier; wish you were better.”";
             this.lbQuotation.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btDictionary
+            // 
+            this.btDictionary.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btDictionary.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btDictionary.BorderColor = System.Drawing.Color.White;
+            this.btDictionary.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btDictionary.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btDictionary.Image = global::Diccon.Properties.Resources.translate_36;
+            this.btDictionary.Location = new System.Drawing.Point(51, 190);
+            this.btDictionary.Name = "btDictionary";
+            this.btDictionary.Radius = 50;
+            this.btDictionary.Size = new System.Drawing.Size(73, 69);
+            this.btDictionary.TabIndex = 5;
+            this.btDictionary.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btDictionary.Thickness = 5F;
+            this.btDictionary.Click += new System.EventHandler(this.btDictionary_Click);
+            this.btDictionary.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
+            this.btDictionary.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
+            // 
+            // btTimeline
+            // 
+            this.btTimeline.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btTimeline.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btTimeline.BorderColor = System.Drawing.Color.White;
+            this.btTimeline.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btTimeline.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btTimeline.Image = global::Diccon.Properties.Resources.timeline_36;
+            this.btTimeline.Location = new System.Drawing.Point(142, 190);
+            this.btTimeline.Name = "btTimeline";
+            this.btTimeline.Radius = 50;
+            this.btTimeline.Size = new System.Drawing.Size(73, 69);
+            this.btTimeline.TabIndex = 5;
+            this.btTimeline.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btTimeline.Thickness = 5F;
+            this.btTimeline.Click += new System.EventHandler(this.btTimeline_Click);
+            this.btTimeline.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
+            this.btTimeline.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
             // 
             // label3
             // 
@@ -252,150 +311,6 @@
             this.label1.Text = "Notes";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // contextMenu
-            // 
-            this.contextMenu.DropShadowEnabled = false;
-            this.contextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.themeToolStripMenuItem,
-            this.languageToolStripMenuItem,
-            this.toolStripMenuItem1,
-            this.checkForUpdatesToolStripMenuItem,
-            this.toolStripMenuItem2,
-            this.githubToolStripMenuItem,
-            this.aboutToolStripMenuItem});
-            this.contextMenu.Name = "contextMenu";
-            this.contextMenu.Size = new System.Drawing.Size(172, 126);
-            // 
-            // themeToolStripMenuItem
-            // 
-            this.themeToolStripMenuItem.Name = "themeToolStripMenuItem";
-            this.themeToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
-            this.themeToolStripMenuItem.Text = "Theme";
-            // 
-            // languageToolStripMenuItem
-            // 
-            this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.englishToolStripMenuItem,
-            this.vietnameseToolStripMenuItem});
-            this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
-            this.languageToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
-            this.languageToolStripMenuItem.Text = "Language";
-            // 
-            // englishToolStripMenuItem
-            // 
-            this.englishToolStripMenuItem.Checked = true;
-            this.englishToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
-            this.englishToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
-            this.englishToolStripMenuItem.Text = "English";
-            // 
-            // vietnameseToolStripMenuItem
-            // 
-            this.vietnameseToolStripMenuItem.Name = "vietnameseToolStripMenuItem";
-            this.vietnameseToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
-            this.vietnameseToolStripMenuItem.Text = "Vietnamese";
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(168, 6);
-            // 
-            // checkForUpdatesToolStripMenuItem
-            // 
-            this.checkForUpdatesToolStripMenuItem.Name = "checkForUpdatesToolStripMenuItem";
-            this.checkForUpdatesToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
-            this.checkForUpdatesToolStripMenuItem.Text = "Check for Updates";
-            this.checkForUpdatesToolStripMenuItem.Click += new System.EventHandler(this.checkForUpdatesToolStripMenuItem_Click);
-            // 
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(168, 6);
-            // 
-            // githubToolStripMenuItem
-            // 
-            this.githubToolStripMenuItem.Image = global::Diccon.Properties.Resources.github_20;
-            this.githubToolStripMenuItem.Name = "githubToolStripMenuItem";
-            this.githubToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
-            this.githubToolStripMenuItem.Text = "Github";
-            this.githubToolStripMenuItem.Click += new System.EventHandler(this.githubToolStripMenuItem_Click);
-            // 
-            // aboutToolStripMenuItem
-            // 
-            this.aboutToolStripMenuItem.Image = global::Diccon.Properties.Resources.info_20;
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
-            this.aboutToolStripMenuItem.Text = "About";
-            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
-            // 
-            // notifyIcon1
-            // 
-            this.notifyIcon1.Text = "notifyIcon1";
-            this.notifyIcon1.Visible = true;
-            // 
-            // timeLineDetector
-            // 
-            this.timeLineDetector.Enabled = true;
-            this.timeLineDetector.Interval = 500;
-            this.timeLineDetector.Tick += new System.EventHandler(this.timeLineDetector_Tick);
-            // 
-            // btDonate
-            // 
-            this.btDonate.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btDonate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btDonate.BorderColor = System.Drawing.Color.White;
-            this.btDonate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btDonate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btDonate.Image = global::Diccon.Properties.Resources.support_36;
-            this.btDonate.Location = new System.Drawing.Point(142, 291);
-            this.btDonate.Name = "btDonate";
-            this.btDonate.Radius = 50;
-            this.btDonate.Size = new System.Drawing.Size(73, 69);
-            this.btDonate.TabIndex = 7;
-            this.btDonate.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btDonate.Thickness = 5F;
-            this.btDonate.Click += new System.EventHandler(this.btDonate_Click);
-            this.btDonate.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
-            this.btDonate.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
-            // 
-            // btDictionary
-            // 
-            this.btDictionary.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btDictionary.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btDictionary.BorderColor = System.Drawing.Color.White;
-            this.btDictionary.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btDictionary.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btDictionary.Image = global::Diccon.Properties.Resources.translate_36;
-            this.btDictionary.Location = new System.Drawing.Point(51, 190);
-            this.btDictionary.Name = "btDictionary";
-            this.btDictionary.Radius = 50;
-            this.btDictionary.Size = new System.Drawing.Size(73, 69);
-            this.btDictionary.TabIndex = 5;
-            this.btDictionary.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btDictionary.Thickness = 5F;
-            this.btDictionary.Click += new System.EventHandler(this.btDictionary_Click);
-            this.btDictionary.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
-            this.btDictionary.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
-            // 
-            // btTimeline
-            // 
-            this.btTimeline.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btTimeline.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btTimeline.BorderColor = System.Drawing.Color.White;
-            this.btTimeline.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btTimeline.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btTimeline.Image = global::Diccon.Properties.Resources.timeline_36;
-            this.btTimeline.Location = new System.Drawing.Point(142, 190);
-            this.btTimeline.Name = "btTimeline";
-            this.btTimeline.Radius = 50;
-            this.btTimeline.Size = new System.Drawing.Size(73, 69);
-            this.btTimeline.TabIndex = 5;
-            this.btTimeline.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btTimeline.Thickness = 5F;
-            this.btTimeline.Click += new System.EventHandler(this.btTimeline_Click);
-            this.btTimeline.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
-            this.btTimeline.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
-            // 
             // btNotes
             // 
             this.btNotes.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -433,6 +348,107 @@
             this.btCommunity.Click += new System.EventHandler(this.roundedLabel7_Click);
             this.btCommunity.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
             this.btCommunity.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
+            // 
+            // contextMenu
+            // 
+            this.contextMenu.DropShadowEnabled = false;
+            this.contextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.themeToolStripMenuItem,
+            this.languageToolStripMenuItem,
+            this.toolStripMenuItem1,
+            this.settingsToolStripMenuItem,
+            this.checkForUpdatesToolStripMenuItem,
+            this.toolStripMenuItem2,
+            this.githubToolStripMenuItem,
+            this.toolStripMenuItem3,
+            this.aboutToolStripMenuItem});
+            this.contextMenu.Name = "contextMenu";
+            this.contextMenu.Size = new System.Drawing.Size(181, 176);
+            // 
+            // themeToolStripMenuItem
+            // 
+            this.themeToolStripMenuItem.Name = "themeToolStripMenuItem";
+            this.themeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.themeToolStripMenuItem.Text = "Theme";
+            // 
+            // languageToolStripMenuItem
+            // 
+            this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.englishToolStripMenuItem,
+            this.vietnameseToolStripMenuItem});
+            this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
+            this.languageToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.languageToolStripMenuItem.Text = "Language";
+            // 
+            // englishToolStripMenuItem
+            // 
+            this.englishToolStripMenuItem.Checked = true;
+            this.englishToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
+            this.englishToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.englishToolStripMenuItem.Text = "English";
+            // 
+            // vietnameseToolStripMenuItem
+            // 
+            this.vietnameseToolStripMenuItem.Name = "vietnameseToolStripMenuItem";
+            this.vietnameseToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.vietnameseToolStripMenuItem.Text = "Vietnamese";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(177, 6);
+            // 
+            // checkForUpdatesToolStripMenuItem
+            // 
+            this.checkForUpdatesToolStripMenuItem.Name = "checkForUpdatesToolStripMenuItem";
+            this.checkForUpdatesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.checkForUpdatesToolStripMenuItem.Text = "Check for Updates";
+            this.checkForUpdatesToolStripMenuItem.Click += new System.EventHandler(this.checkForUpdatesToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(177, 6);
+            // 
+            // githubToolStripMenuItem
+            // 
+            this.githubToolStripMenuItem.Image = global::Diccon.Properties.Resources.github_20;
+            this.githubToolStripMenuItem.Name = "githubToolStripMenuItem";
+            this.githubToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.githubToolStripMenuItem.Text = "Github";
+            this.githubToolStripMenuItem.Click += new System.EventHandler(this.githubToolStripMenuItem_Click);
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Image = global::Diccon.Properties.Resources.info_20;
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            // 
+            // notifyIcon1
+            // 
+            this.notifyIcon1.Text = "notifyIcon1";
+            this.notifyIcon1.Visible = true;
+            // 
+            // timeLineDetector
+            // 
+            this.timeLineDetector.Enabled = true;
+            this.timeLineDetector.Interval = 500;
+            this.timeLineDetector.Tick += new System.EventHandler(this.timeLineDetector_Tick);
+            // 
+            // settingsToolStripMenuItem
+            // 
+            this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.settingsToolStripMenuItem.Text = "Settings";
+            this.settingsToolStripMenuItem.Click += new System.EventHandler(this.settingsToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(177, 6);
             // 
             // appFrame
             // 
@@ -495,5 +511,7 @@
         private System.Windows.Forms.NotifyIcon notifyIcon1;
         private FontAwesome.Sharp.IconPictureBox btStar;
         private System.Windows.Forms.Timer timeLineDetector;
+        private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem3;
     }
 }

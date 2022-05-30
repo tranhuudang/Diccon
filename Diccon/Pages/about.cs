@@ -22,6 +22,7 @@ namespace Diccon
 
         private void about_Load(object sender, EventArgs e)
         {
+            btUpdates.BackColor = dicconProp.ColorA5;
             lbVersion.Text = Application.ProductVersion.ToString();
         }
       

@@ -44,6 +44,14 @@
             this.buttonAdd = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.flowChatBox = new System.Windows.Forms.FlowLayoutPanel();
+            this.exampleAnswerPanel = new System.Windows.Forms.Panel();
+            this.exampleAnswerColoredPanel = new Diccon.RoundedPanel();
+            this.exampleAnswerText = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panelNotice = new Diccon.RoundedPanel();
+            this.issueLink = new System.Windows.Forms.LinkLabel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.exampleflowLayoutSynonym = new System.Windows.Forms.FlowLayoutPanel();
             this.exampleItemSynonym = new Diccon.RoundedLabel();
             this.roundedLabel3 = new Diccon.RoundedLabel();
@@ -57,9 +65,6 @@
             this.examplePlayColoredPanel = new Diccon.RoundedPanel();
             this.exampleTextHolder = new System.Windows.Forms.Label();
             this.examplePlayButton = new System.Windows.Forms.PictureBox();
-            this.exampleAnswerPanel = new System.Windows.Forms.Panel();
-            this.exampleAnswerColoredPanel = new Diccon.RoundedPanel();
-            this.exampleAnswerText = new System.Windows.Forms.Label();
             this.exampleNotePanel = new System.Windows.Forms.Panel();
             this.exampleNoteColoredPanel = new Diccon.RoundedPanel();
             this.exampleNoteTitle = new System.Windows.Forms.TextBox();
@@ -71,11 +76,6 @@
             this.examplePixabayLogo = new System.Windows.Forms.PictureBox();
             this.exampleColoredPicturePanel = new Diccon.RoundedPanel();
             this.examplePictureBox = new Diccon.RoundedPictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.roundedPanel2 = new Diccon.RoundedPanel();
-            this.issueLink = new System.Windows.Forms.LinkLabel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.suggestionTimer = new System.Windows.Forms.Timer(this.components);
             this.flowSuggestion = new System.Windows.Forms.FlowLayoutPanel();
             this.btSynonym = new Diccon.RoundedLabel();
@@ -98,6 +98,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.btSend)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonAdd)).BeginInit();
             this.flowChatBox.SuspendLayout();
+            this.exampleAnswerPanel.SuspendLayout();
+            this.exampleAnswerColoredPanel.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panelNotice.SuspendLayout();
             this.exampleflowLayoutSynonym.SuspendLayout();
             this.exampleShortPanel.SuspendLayout();
             this.exampleAskLongPanel.SuspendLayout();
@@ -106,8 +110,6 @@
             this.examplePlayAlignPanel.SuspendLayout();
             this.examplePlayColoredPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.examplePlayButton)).BeginInit();
-            this.exampleAnswerPanel.SuspendLayout();
-            this.exampleAnswerColoredPanel.SuspendLayout();
             this.exampleNotePanel.SuspendLayout();
             this.exampleNoteColoredPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.exampleNoteClose)).BeginInit();
@@ -117,8 +119,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.examplePixabayLogo)).BeginInit();
             this.exampleColoredPicturePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.examplePictureBox)).BeginInit();
-            this.panel3.SuspendLayout();
-            this.roundedPanel2.SuspendLayout();
             this.flowSuggestion.SuspendLayout();
             this.contextMenuNote.SuspendLayout();
             this.SuspendLayout();
@@ -225,6 +225,7 @@
             this.searchTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(235)))), ((int)(((byte)(252)))));
             this.searchTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.searchTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchTextBox.ForeColor = System.Drawing.Color.Black;
             this.searchTextBox.Location = new System.Drawing.Point(16, 10);
             this.searchTextBox.Name = "searchTextBox";
             this.searchTextBox.Size = new System.Drawing.Size(192, 24);
@@ -326,6 +327,101 @@
             this.flowChatBox.Size = new System.Drawing.Size(339, 478);
             this.flowChatBox.TabIndex = 8;
             // 
+            // exampleAnswerPanel
+            // 
+            this.exampleAnswerPanel.Controls.Add(this.exampleAnswerColoredPanel);
+            this.exampleAnswerPanel.Location = new System.Drawing.Point(8, 8);
+            this.exampleAnswerPanel.Name = "exampleAnswerPanel";
+            this.exampleAnswerPanel.Size = new System.Drawing.Size(313, 155);
+            this.exampleAnswerPanel.TabIndex = 1;
+            this.exampleAnswerPanel.Visible = false;
+            // 
+            // exampleAnswerColoredPanel
+            // 
+            this.exampleAnswerColoredPanel.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.exampleAnswerColoredPanel.BorderColor = System.Drawing.Color.White;
+            this.exampleAnswerColoredPanel.Controls.Add(this.exampleAnswerText);
+            this.exampleAnswerColoredPanel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.exampleAnswerColoredPanel.Location = new System.Drawing.Point(49, 0);
+            this.exampleAnswerColoredPanel.Name = "exampleAnswerColoredPanel";
+            this.exampleAnswerColoredPanel.Radius = 20;
+            this.exampleAnswerColoredPanel.Size = new System.Drawing.Size(264, 155);
+            this.exampleAnswerColoredPanel.TabIndex = 0;
+            this.exampleAnswerColoredPanel.Thickness = 5F;
+            // 
+            // exampleAnswerText
+            // 
+            this.exampleAnswerText.AutoSize = true;
+            this.exampleAnswerText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exampleAnswerText.ForeColor = System.Drawing.Color.White;
+            this.exampleAnswerText.Location = new System.Drawing.Point(9, 8);
+            this.exampleAnswerText.MaximumSize = new System.Drawing.Size(237, 2000);
+            this.exampleAnswerText.Name = "exampleAnswerText";
+            this.exampleAnswerText.Size = new System.Drawing.Size(235, 60);
+            this.exampleAnswerText.TabIndex = 0;
+            this.exampleAnswerText.Text = "label1 label1 label1 label1 label1 label1 label1 label1 label1 label1 label1 labe" +
+    "l1 ";
+            // 
+            // panel3
+            // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel3.Controls.Add(this.panelNotice);
+            this.panel3.Location = new System.Drawing.Point(8, 169);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(316, 229);
+            this.panel3.TabIndex = 2;
+            // 
+            // panelNotice
+            // 
+            this.panelNotice.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelNotice.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.panelNotice.BorderColor = System.Drawing.Color.White;
+            this.panelNotice.Controls.Add(this.issueLink);
+            this.panelNotice.Controls.Add(this.label2);
+            this.panelNotice.Controls.Add(this.label1);
+            this.panelNotice.Location = new System.Drawing.Point(49, 0);
+            this.panelNotice.Name = "panelNotice";
+            this.panelNotice.Radius = 20;
+            this.panelNotice.Size = new System.Drawing.Size(264, 221);
+            this.panelNotice.TabIndex = 0;
+            this.panelNotice.Thickness = 5F;
+            // 
+            // issueLink
+            // 
+            this.issueLink.ActiveLinkColor = System.Drawing.Color.White;
+            this.issueLink.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.issueLink.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.issueLink.Location = new System.Drawing.Point(8, 92);
+            this.issueLink.Name = "issueLink";
+            this.issueLink.Size = new System.Drawing.Size(244, 41);
+            this.issueLink.TabIndex = 1;
+            this.issueLink.TabStop = true;
+            this.issueLink.Text = "https://github.com/tranhuudang/Diccon/issues";
+            this.issueLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.issueLink_LinkClicked);
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(8, 133);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(244, 67);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "It\'s will definitely help our app develops and becomes more reliability in the ne" +
+    "xt update. ";
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(8, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(244, 80);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "If you think that we missing translation for a word. We recommend you to report i" +
+    "t in this page bellow.";
+            // 
             // exampleflowLayoutSynonym
             // 
             this.exampleflowLayoutSynonym.AutoSize = true;
@@ -335,7 +431,7 @@
             this.exampleflowLayoutSynonym.MaximumSize = new System.Drawing.Size(367, 0);
             this.exampleflowLayoutSynonym.MinimumSize = new System.Drawing.Size(304, 0);
             this.exampleflowLayoutSynonym.Name = "exampleflowLayoutSynonym";
-            this.exampleflowLayoutSynonym.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
+            this.exampleflowLayoutSynonym.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
             this.exampleflowLayoutSynonym.Size = new System.Drawing.Size(304, 60);
             this.exampleflowLayoutSynonym.TabIndex = 6;
             this.exampleflowLayoutSynonym.Visible = false;
@@ -347,7 +443,7 @@
             this.exampleItemSynonym.BorderColor = System.Drawing.Color.White;
             this.exampleItemSynonym.Cursor = System.Windows.Forms.Cursors.Hand;
             this.exampleItemSynonym.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exampleItemSynonym.Location = new System.Drawing.Point(67, 0);
+            this.exampleItemSynonym.Location = new System.Drawing.Point(48, 0);
             this.exampleItemSynonym.Name = "exampleItemSynonym";
             this.exampleItemSynonym.Padding = new System.Windows.Forms.Padding(8, 5, 8, 5);
             this.exampleItemSynonym.Radius = 20;
@@ -364,7 +460,7 @@
             this.roundedLabel3.BorderColor = System.Drawing.Color.White;
             this.roundedLabel3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.roundedLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundedLabel3.Location = new System.Drawing.Point(67, 30);
+            this.roundedLabel3.Location = new System.Drawing.Point(48, 30);
             this.roundedLabel3.Name = "roundedLabel3";
             this.roundedLabel3.Padding = new System.Windows.Forms.Padding(8, 5, 8, 5);
             this.roundedLabel3.Radius = 20;
@@ -446,9 +542,9 @@
             // 
             this.examplePlayAlignPanel.Controls.Add(this.examplePlayColoredPanel);
             this.examplePlayAlignPanel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.examplePlayAlignPanel.Location = new System.Drawing.Point(56, 0);
+            this.examplePlayAlignPanel.Location = new System.Drawing.Point(49, 0);
             this.examplePlayAlignPanel.Name = "examplePlayAlignPanel";
-            this.examplePlayAlignPanel.Size = new System.Drawing.Size(257, 39);
+            this.examplePlayAlignPanel.Size = new System.Drawing.Size(264, 39);
             this.examplePlayAlignPanel.TabIndex = 0;
             this.examplePlayAlignPanel.Visible = false;
             // 
@@ -488,41 +584,6 @@
             this.examplePlayButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.examplePlayButton.TabIndex = 0;
             this.examplePlayButton.TabStop = false;
-            // 
-            // exampleAnswerPanel
-            // 
-            this.exampleAnswerPanel.Controls.Add(this.exampleAnswerColoredPanel);
-            this.exampleAnswerPanel.Location = new System.Drawing.Point(8, 8);
-            this.exampleAnswerPanel.Name = "exampleAnswerPanel";
-            this.exampleAnswerPanel.Size = new System.Drawing.Size(313, 155);
-            this.exampleAnswerPanel.TabIndex = 1;
-            this.exampleAnswerPanel.Visible = false;
-            // 
-            // exampleAnswerColoredPanel
-            // 
-            this.exampleAnswerColoredPanel.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.exampleAnswerColoredPanel.BorderColor = System.Drawing.Color.White;
-            this.exampleAnswerColoredPanel.Controls.Add(this.exampleAnswerText);
-            this.exampleAnswerColoredPanel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.exampleAnswerColoredPanel.Location = new System.Drawing.Point(49, 0);
-            this.exampleAnswerColoredPanel.Name = "exampleAnswerColoredPanel";
-            this.exampleAnswerColoredPanel.Radius = 20;
-            this.exampleAnswerColoredPanel.Size = new System.Drawing.Size(264, 155);
-            this.exampleAnswerColoredPanel.TabIndex = 0;
-            this.exampleAnswerColoredPanel.Thickness = 5F;
-            // 
-            // exampleAnswerText
-            // 
-            this.exampleAnswerText.AutoSize = true;
-            this.exampleAnswerText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exampleAnswerText.ForeColor = System.Drawing.Color.White;
-            this.exampleAnswerText.Location = new System.Drawing.Point(9, 8);
-            this.exampleAnswerText.MaximumSize = new System.Drawing.Size(217, 2000);
-            this.exampleAnswerText.Name = "exampleAnswerText";
-            this.exampleAnswerText.Size = new System.Drawing.Size(193, 60);
-            this.exampleAnswerText.TabIndex = 0;
-            this.exampleAnswerText.Text = "label1 label1 label1 label1 label1 label1 label1 label1 label1 label1 label1 labe" +
-    "l1 ";
             // 
             // exampleNotePanel
             // 
@@ -660,66 +721,6 @@
             this.examplePictureBox.TabIndex = 1;
             this.examplePictureBox.TabStop = false;
             this.examplePictureBox.Thickness = 5F;
-            // 
-            // panel3
-            // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel3.Controls.Add(this.roundedPanel2);
-            this.panel3.Location = new System.Drawing.Point(8, 169);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(316, 229);
-            this.panel3.TabIndex = 2;
-            // 
-            // roundedPanel2
-            // 
-            this.roundedPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.roundedPanel2.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.roundedPanel2.BorderColor = System.Drawing.Color.White;
-            this.roundedPanel2.Controls.Add(this.issueLink);
-            this.roundedPanel2.Controls.Add(this.label2);
-            this.roundedPanel2.Controls.Add(this.label1);
-            this.roundedPanel2.Location = new System.Drawing.Point(49, 0);
-            this.roundedPanel2.Name = "roundedPanel2";
-            this.roundedPanel2.Radius = 20;
-            this.roundedPanel2.Size = new System.Drawing.Size(264, 221);
-            this.roundedPanel2.TabIndex = 0;
-            this.roundedPanel2.Thickness = 5F;
-            // 
-            // issueLink
-            // 
-            this.issueLink.ActiveLinkColor = System.Drawing.Color.White;
-            this.issueLink.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.issueLink.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.issueLink.Location = new System.Drawing.Point(8, 92);
-            this.issueLink.Name = "issueLink";
-            this.issueLink.Size = new System.Drawing.Size(244, 41);
-            this.issueLink.TabIndex = 1;
-            this.issueLink.TabStop = true;
-            this.issueLink.Text = "https://github.com/tranhuudang/Diccon/issues";
-            this.issueLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.issueLink_LinkClicked);
-            // 
-            // label2
-            // 
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(8, 133);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(244, 67);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "It\'s will definitely help our app develops and becomes more reliability in the ne" +
-    "xt update. ";
-            // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(8, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(244, 80);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "If you think that we missing translation for a word. We recommend you to report i" +
-    "t in this page bellow.";
             // 
             // suggestionTimer
             // 
@@ -908,6 +909,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.buttonAdd)).EndInit();
             this.flowChatBox.ResumeLayout(false);
             this.flowChatBox.PerformLayout();
+            this.exampleAnswerPanel.ResumeLayout(false);
+            this.exampleAnswerColoredPanel.ResumeLayout(false);
+            this.exampleAnswerColoredPanel.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panelNotice.ResumeLayout(false);
             this.exampleflowLayoutSynonym.ResumeLayout(false);
             this.exampleflowLayoutSynonym.PerformLayout();
             this.exampleShortPanel.ResumeLayout(false);
@@ -921,9 +927,6 @@
             this.examplePlayColoredPanel.ResumeLayout(false);
             this.examplePlayColoredPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.examplePlayButton)).EndInit();
-            this.exampleAnswerPanel.ResumeLayout(false);
-            this.exampleAnswerColoredPanel.ResumeLayout(false);
-            this.exampleAnswerColoredPanel.PerformLayout();
             this.exampleNotePanel.ResumeLayout(false);
             this.exampleNoteColoredPanel.ResumeLayout(false);
             this.exampleNoteColoredPanel.PerformLayout();
@@ -935,8 +938,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.examplePixabayLogo)).EndInit();
             this.exampleColoredPicturePanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.examplePictureBox)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.roundedPanel2.ResumeLayout(false);
             this.flowSuggestion.ResumeLayout(false);
             this.flowSuggestion.PerformLayout();
             this.contextMenuNote.ResumeLayout(false);
@@ -997,7 +998,7 @@
         private System.Windows.Forms.PictureBox examplePixabayLogo;
         private RoundedPictureBox examplePictureBox;
         private System.Windows.Forms.Panel panel3;
-        private RoundedPanel roundedPanel2;
+        private RoundedPanel panelNotice;
         private FontAwesome.Sharp.IconPictureBox btSend;
         private System.Windows.Forms.Label exampleAnswerText;
         private System.Windows.Forms.Label exampleAskLongText;
