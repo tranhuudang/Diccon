@@ -117,7 +117,7 @@
             this.btOpenQr.BorderColor = System.Drawing.Color.White;
             this.btOpenQr.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btOpenQr.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btOpenQr.ForeColor = System.Drawing.Color.White;
+            this.btOpenQr.ForeColor = System.Drawing.Color.Black;
             this.btOpenQr.Location = new System.Drawing.Point(78, 314);
             this.btOpenQr.Name = "btOpenQr";
             this.btOpenQr.Padding = new System.Windows.Forms.Padding(7);

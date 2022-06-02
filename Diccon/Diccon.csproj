@@ -70,7 +70,7 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Ninja2.ico</ApplicationIcon>
+    <ApplicationIcon>diccon.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationManifest>app.manifest</ApplicationManifest>
@@ -316,6 +316,7 @@
     <None Include="Resources\ninja_64.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="diccon.ico" />
     <Content Include="Ninja2.ico" />
     <Content Include="Notes.txt" />
     <None Include="Resources\Screenshot 2022-02-28 152046.png" />
@@ -378,6 +379,9 @@
     <None Include="Resources\full_star_24.png" />
     <None Include="Resources\IMG_Sacombank.png.jpg" />
     <None Include="Resources\donate_background.jpeg" />
+    <None Include="Resources\diccon_64.png" />
+    <None Include="Resources\diccon_32.png" />
+    <None Include="Resources\diccon_32_2.png" />
     <Content Include="Setup and Update\UpdateInfo.xml" />
     <None Include="Resources\github_20.png" />
     <None Include="Resources\info_20.png" />
