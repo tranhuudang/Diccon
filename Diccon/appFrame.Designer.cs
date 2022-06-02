@@ -65,6 +65,8 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.timeLineDetector = new System.Windows.Forms.Timer(this.components);
+            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            this.topControlPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.topPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btStar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
@@ -72,14 +74,15 @@
             this.playGroundPanel.SuspendLayout();
             this.panelHome.SuspendLayout();
             this.contextMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
+            this.topControlPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // topPanel
             // 
             this.topPanel.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.topPanel.Controls.Add(this.btStar);
+            this.topPanel.Controls.Add(this.topControlPanel);
             this.topPanel.Controls.Add(this.logo);
-            this.topPanel.Controls.Add(this.buttonMenu);
             this.topPanel.Controls.Add(this.title);
             this.topPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.topPanel.Location = new System.Drawing.Point(0, 0);
@@ -90,14 +93,14 @@
             // btStar
             // 
             this.btStar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btStar.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btStar.BackColor = System.Drawing.Color.Transparent;
             this.btStar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btStar.ForeColor = System.Drawing.Color.Black;
             this.btStar.IconChar = FontAwesome.Sharp.IconChar.Star;
             this.btStar.IconColor = System.Drawing.Color.Black;
             this.btStar.IconFont = FontAwesome.Sharp.IconFont.Regular;
             this.btStar.IconSize = 28;
-            this.btStar.Location = new System.Drawing.Point(295, 21);
+            this.btStar.Location = new System.Drawing.Point(30, 3);
             this.btStar.Name = "btStar";
             this.btStar.Size = new System.Drawing.Size(28, 28);
             this.btStar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -127,10 +130,10 @@
             this.buttonMenu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonMenu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonMenu.Image = global::Diccon.Properties.Resources.menu_24;
-            this.buttonMenu.Location = new System.Drawing.Point(328, 21);
+            this.buttonMenu.Location = new System.Drawing.Point(98, 3);
             this.buttonMenu.Name = "buttonMenu";
-            this.buttonMenu.Size = new System.Drawing.Size(24, 24);
-            this.buttonMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.buttonMenu.Size = new System.Drawing.Size(22, 24);
+            this.buttonMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.buttonMenu.TabIndex = 6;
             this.buttonMenu.TabStop = false;
             this.buttonMenu.Click += new System.EventHandler(this.buttonMenu_Click);
@@ -466,6 +469,34 @@
             this.timeLineDetector.Interval = 500;
             this.timeLineDetector.Tick += new System.EventHandler(this.timeLineDetector_Tick);
             // 
+            // iconPictureBox1
+            // 
+            this.iconPictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.iconPictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.iconPictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconPictureBox1.ForeColor = System.Drawing.Color.Black;
+            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Bell;
+            this.iconPictureBox1.IconColor = System.Drawing.Color.Black;
+            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Regular;
+            this.iconPictureBox1.IconSize = 28;
+            this.iconPictureBox1.Location = new System.Drawing.Point(64, 3);
+            this.iconPictureBox1.Name = "iconPictureBox1";
+            this.iconPictureBox1.Size = new System.Drawing.Size(28, 28);
+            this.iconPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.iconPictureBox1.TabIndex = 9;
+            this.iconPictureBox1.TabStop = false;
+            // 
+            // topControlPanel
+            // 
+            this.topControlPanel.Controls.Add(this.buttonMenu);
+            this.topControlPanel.Controls.Add(this.iconPictureBox1);
+            this.topControlPanel.Controls.Add(this.btStar);
+            this.topControlPanel.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
+            this.topControlPanel.Location = new System.Drawing.Point(229, 17);
+            this.topControlPanel.Name = "topControlPanel";
+            this.topControlPanel.Size = new System.Drawing.Size(123, 34);
+            this.topControlPanel.TabIndex = 10;
+            // 
             // appFrame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -483,7 +514,6 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.appFrame_FormClosing);
             this.Load += new System.EventHandler(this.AppFrame_Load);
             this.topPanel.ResumeLayout(false);
-            this.topPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btStar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonMenu)).EndInit();
@@ -491,6 +521,8 @@
             this.panelHome.ResumeLayout(false);
             this.panelHome.PerformLayout();
             this.contextMenu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
+            this.topControlPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -532,5 +564,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem logInWithGoogleToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem4;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
+        private System.Windows.Forms.FlowLayoutPanel topControlPanel;
     }
 }

@@ -25,6 +25,7 @@ namespace Diccon
         Form timelineForm = null;
         Form noteForm = null;
         Form settingForm = null;
+        Form yawaForm = null;
         public appFrame()
         {
             InitializeComponent();
@@ -123,6 +124,7 @@ namespace Diccon
            
 
             topPanel.BackColor = dicconProp.AccentColor;
+            topControlPanel.BackColor = dicconProp.AccentColor;
             btDictionary.BackColor = dicconProp.ColorA8;
             btDonate.BackColor = dicconProp.ColorA8;
             btTimeline.BackColor = dicconProp.ColorA8;
@@ -403,7 +405,16 @@ namespace Diccon
 
         private void roundedLabel7_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("This function is coming soon.");
+            if (yawaForm != null)
+            {
+
+                openForm(yawaForm);
+            }
+            else
+            {
+                yawaForm = new yawa();
+                openForm(yawaForm);
+            }
         }
 
         private void timeLineDetector_Tick(object sender, EventArgs e)
