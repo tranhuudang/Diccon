@@ -4,6 +4,7 @@ using System;
 using System.Diagnostics;
 using System.Drawing;
 using System.IO;
+using System.Media;
 using System.Net;
 using System.Reflection;
 using System.Runtime.InteropServices;
@@ -449,6 +450,13 @@ namespace Diccon
                 settingForm = new settings();
                 openForm(settingForm);
             }
+        }
+
+        private void notificationDetector_Tick(object sender, EventArgs e)
+        {
+            SoundPlayer soundPlayer = new SoundPlayer(Properties.Resources.alert_wav);
+            soundPlayer.Play();
+            notificationDetector.Enabled = false;
         }
     }
 }
