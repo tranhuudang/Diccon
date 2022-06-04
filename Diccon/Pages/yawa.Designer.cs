@@ -34,36 +34,35 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btInstantAsk = new Diccon.RoundedLabel();
-            this.panelOfRichQuestion = new Diccon.RoundedPanel();
-            this.richQuestion = new System.Windows.Forms.RichTextBox();
+            this.panelOfRichQuestion_1 = new Diccon.RoundedPanel();
+            this.richQuestion_1 = new System.Windows.Forms.RichTextBox();
             this.notice = new System.Windows.Forms.Label();
             this.countWord = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btAsk = new Diccon.RoundedLabel();
-            this.btHistory = new FontAwesome.Sharp.IconPictureBox();
             this.panelPrevious = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panelAnswer = new System.Windows.Forms.Panel();
-            this.roundedPanel2 = new Diccon.RoundedPanel();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.panelOfRichAnswer = new Diccon.RoundedPanel();
+            this.richAnswer = new System.Windows.Forms.RichTextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.roundedPanel1 = new Diccon.RoundedPanel();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.panelOfRichQuestion_2 = new Diccon.RoundedPanel();
+            this.richQuestion_2 = new System.Windows.Forms.RichTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panelGlobal = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.btPrevious = new Diccon.RoundedLabel();
+            this.btAskPanel = new Diccon.RoundedLabel();
+            this.btAnswer = new Diccon.RoundedLabel();
             this.btPeople = new Diccon.RoundedLabel();
-            this.btRecent = new Diccon.RoundedLabel();
+            this.btPrevious = new Diccon.RoundedLabel();
             this.panelMain.SuspendLayout();
-            this.panelOfRichQuestion.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btHistory)).BeginInit();
+            this.panelOfRichQuestion_1.SuspendLayout();
             this.panelPrevious.SuspendLayout();
             this.panelAnswer.SuspendLayout();
-            this.roundedPanel2.SuspendLayout();
-            this.roundedPanel1.SuspendLayout();
+            this.panelOfRichAnswer.SuspendLayout();
+            this.panelOfRichQuestion_2.SuspendLayout();
             this.panelGlobal.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -73,7 +72,7 @@
             this.panelMain.Controls.Add(this.label5);
             this.panelMain.Controls.Add(this.label4);
             this.panelMain.Controls.Add(this.btInstantAsk);
-            this.panelMain.Controls.Add(this.panelOfRichQuestion);
+            this.panelMain.Controls.Add(this.panelOfRichQuestion_1);
             this.panelMain.Controls.Add(this.notice);
             this.panelMain.Controls.Add(this.countWord);
             this.panelMain.Controls.Add(this.label1);
@@ -126,29 +125,29 @@
             this.btInstantAsk.MouseEnter += new System.EventHandler(this.btRecent_MouseEnter);
             this.btInstantAsk.MouseLeave += new System.EventHandler(this.btRecent_MouseLeave);
             // 
-            // panelOfRichQuestion
+            // panelOfRichQuestion_1
             // 
-            this.panelOfRichQuestion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.panelOfRichQuestion.BorderColor = System.Drawing.Color.White;
-            this.panelOfRichQuestion.Controls.Add(this.richQuestion);
-            this.panelOfRichQuestion.Location = new System.Drawing.Point(12, 119);
-            this.panelOfRichQuestion.Name = "panelOfRichQuestion";
-            this.panelOfRichQuestion.Radius = 20;
-            this.panelOfRichQuestion.Size = new System.Drawing.Size(330, 216);
-            this.panelOfRichQuestion.TabIndex = 13;
-            this.panelOfRichQuestion.Thickness = 5F;
+            this.panelOfRichQuestion_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.panelOfRichQuestion_1.BorderColor = System.Drawing.Color.White;
+            this.panelOfRichQuestion_1.Controls.Add(this.richQuestion_1);
+            this.panelOfRichQuestion_1.Location = new System.Drawing.Point(12, 119);
+            this.panelOfRichQuestion_1.Name = "panelOfRichQuestion_1";
+            this.panelOfRichQuestion_1.Radius = 20;
+            this.panelOfRichQuestion_1.Size = new System.Drawing.Size(330, 216);
+            this.panelOfRichQuestion_1.TabIndex = 13;
+            this.panelOfRichQuestion_1.Thickness = 5F;
             // 
-            // richQuestion
+            // richQuestion_1
             // 
-            this.richQuestion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.richQuestion.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richQuestion.Location = new System.Drawing.Point(10, 12);
-            this.richQuestion.MaxLength = 500;
-            this.richQuestion.Name = "richQuestion";
-            this.richQuestion.Size = new System.Drawing.Size(309, 190);
-            this.richQuestion.TabIndex = 0;
-            this.richQuestion.Text = resources.GetString("richQuestion.Text");
-            this.richQuestion.TextChanged += new System.EventHandler(this.richQuestion_TextChanged);
+            this.richQuestion_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.richQuestion_1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richQuestion_1.Location = new System.Drawing.Point(10, 12);
+            this.richQuestion_1.MaxLength = 500;
+            this.richQuestion_1.Name = "richQuestion_1";
+            this.richQuestion_1.Size = new System.Drawing.Size(309, 190);
+            this.richQuestion_1.TabIndex = 0;
+            this.richQuestion_1.Text = resources.GetString("richQuestion_1.Text");
+            this.richQuestion_1.TextChanged += new System.EventHandler(this.richQuestion_TextChanged);
             // 
             // notice
             // 
@@ -203,30 +202,12 @@
             this.btAsk.MouseEnter += new System.EventHandler(this.btRecent_MouseEnter);
             this.btAsk.MouseLeave += new System.EventHandler(this.btRecent_MouseLeave);
             // 
-            // btHistory
-            // 
-            this.btHistory.BackColor = System.Drawing.Color.White;
-            this.btHistory.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btHistory.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btHistory.IconChar = FontAwesome.Sharp.IconChar.Home;
-            this.btHistory.IconColor = System.Drawing.SystemColors.ControlText;
-            this.btHistory.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btHistory.IconSize = 28;
-            this.btHistory.Location = new System.Drawing.Point(3, 3);
-            this.btHistory.Name = "btHistory";
-            this.btHistory.Size = new System.Drawing.Size(28, 28);
-            this.btHistory.TabIndex = 14;
-            this.btHistory.TabStop = false;
-            this.btHistory.UseGdi = true;
-            this.btHistory.MouseEnter += new System.EventHandler(this.btGlobal_MouseEnter);
-            this.btHistory.MouseLeave += new System.EventHandler(this.btGlobal_MouseLeave);
-            // 
             // panelPrevious
             // 
             this.panelPrevious.Controls.Add(this.label2);
-            this.panelPrevious.Location = new System.Drawing.Point(361, 1);
+            this.panelPrevious.Location = new System.Drawing.Point(361, 38);
             this.panelPrevious.Name = "panelPrevious";
-            this.panelPrevious.Size = new System.Drawing.Size(355, 550);
+            this.panelPrevious.Size = new System.Drawing.Size(355, 513);
             this.panelPrevious.TabIndex = 1;
             // 
             // label2
@@ -242,78 +223,78 @@
             // 
             // panelAnswer
             // 
-            this.panelAnswer.Controls.Add(this.roundedPanel2);
+            this.panelAnswer.Controls.Add(this.panelOfRichAnswer);
             this.panelAnswer.Controls.Add(this.label7);
-            this.panelAnswer.Controls.Add(this.roundedPanel1);
+            this.panelAnswer.Controls.Add(this.panelOfRichQuestion_2);
             this.panelAnswer.Controls.Add(this.label3);
-            this.panelAnswer.Location = new System.Drawing.Point(722, 1);
+            this.panelAnswer.Location = new System.Drawing.Point(722, 38);
             this.panelAnswer.Name = "panelAnswer";
-            this.panelAnswer.Size = new System.Drawing.Size(355, 550);
+            this.panelAnswer.Size = new System.Drawing.Size(355, 513);
             this.panelAnswer.TabIndex = 2;
             // 
-            // roundedPanel2
+            // panelOfRichAnswer
             // 
-            this.roundedPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.roundedPanel2.BorderColor = System.Drawing.Color.White;
-            this.roundedPanel2.Controls.Add(this.richTextBox2);
-            this.roundedPanel2.Location = new System.Drawing.Point(14, 267);
-            this.roundedPanel2.Name = "roundedPanel2";
-            this.roundedPanel2.Radius = 20;
-            this.roundedPanel2.Size = new System.Drawing.Size(330, 271);
-            this.roundedPanel2.TabIndex = 15;
-            this.roundedPanel2.Thickness = 5F;
+            this.panelOfRichAnswer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.panelOfRichAnswer.BorderColor = System.Drawing.Color.White;
+            this.panelOfRichAnswer.Controls.Add(this.richAnswer);
+            this.panelOfRichAnswer.Location = new System.Drawing.Point(12, 216);
+            this.panelOfRichAnswer.Name = "panelOfRichAnswer";
+            this.panelOfRichAnswer.Radius = 20;
+            this.panelOfRichAnswer.Size = new System.Drawing.Size(330, 271);
+            this.panelOfRichAnswer.TabIndex = 15;
+            this.panelOfRichAnswer.Thickness = 5F;
             // 
-            // richTextBox2
+            // richAnswer
             // 
-            this.richTextBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox2.Location = new System.Drawing.Point(10, 12);
-            this.richTextBox2.MaxLength = 500;
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(309, 246);
-            this.richTextBox2.TabIndex = 0;
-            this.richTextBox2.Text = resources.GetString("richTextBox2.Text");
+            this.richAnswer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.richAnswer.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richAnswer.Location = new System.Drawing.Point(10, 12);
+            this.richAnswer.MaxLength = 500;
+            this.richAnswer.Name = "richAnswer";
+            this.richAnswer.Size = new System.Drawing.Size(309, 246);
+            this.richAnswer.TabIndex = 0;
+            this.richAnswer.Text = resources.GetString("richAnswer.Text");
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.DarkGray;
-            this.label7.Location = new System.Drawing.Point(11, 248);
+            this.label7.Location = new System.Drawing.Point(9, 197);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(51, 16);
             this.label7.TabIndex = 14;
             this.label7.Text = "Answer";
             // 
-            // roundedPanel1
+            // panelOfRichQuestion_2
             // 
-            this.roundedPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.roundedPanel1.BorderColor = System.Drawing.Color.White;
-            this.roundedPanel1.Controls.Add(this.richTextBox1);
-            this.roundedPanel1.Location = new System.Drawing.Point(14, 29);
-            this.roundedPanel1.Name = "roundedPanel1";
-            this.roundedPanel1.Radius = 20;
-            this.roundedPanel1.Size = new System.Drawing.Size(330, 216);
-            this.roundedPanel1.TabIndex = 15;
-            this.roundedPanel1.Thickness = 5F;
+            this.panelOfRichQuestion_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.panelOfRichQuestion_2.BorderColor = System.Drawing.Color.White;
+            this.panelOfRichQuestion_2.Controls.Add(this.richQuestion_2);
+            this.panelOfRichQuestion_2.Location = new System.Drawing.Point(12, 27);
+            this.panelOfRichQuestion_2.Name = "panelOfRichQuestion_2";
+            this.panelOfRichQuestion_2.Radius = 20;
+            this.panelOfRichQuestion_2.Size = new System.Drawing.Size(330, 167);
+            this.panelOfRichQuestion_2.TabIndex = 15;
+            this.panelOfRichQuestion_2.Thickness = 5F;
             // 
-            // richTextBox1
+            // richQuestion_2
             // 
-            this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox1.Location = new System.Drawing.Point(10, 12);
-            this.richTextBox1.MaxLength = 500;
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(309, 190);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
+            this.richQuestion_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.richQuestion_2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richQuestion_2.Location = new System.Drawing.Point(10, 13);
+            this.richQuestion_2.MaxLength = 500;
+            this.richQuestion_2.Name = "richQuestion_2";
+            this.richQuestion_2.Size = new System.Drawing.Size(309, 141);
+            this.richQuestion_2.TabIndex = 0;
+            this.richQuestion_2.Text = resources.GetString("richQuestion_2.Text");
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.DarkGray;
-            this.label3.Location = new System.Drawing.Point(11, 10);
+            this.label3.Location = new System.Drawing.Point(9, 8);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(89, 16);
             this.label3.TabIndex = 14;
@@ -322,9 +303,9 @@
             // panelGlobal
             // 
             this.panelGlobal.Controls.Add(this.label6);
-            this.panelGlobal.Location = new System.Drawing.Point(1083, 1);
+            this.panelGlobal.Location = new System.Drawing.Point(1083, 38);
             this.panelGlobal.Name = "panelGlobal";
-            this.panelGlobal.Size = new System.Drawing.Size(355, 550);
+            this.panelGlobal.Size = new System.Drawing.Size(355, 513);
             this.panelGlobal.TabIndex = 3;
             // 
             // label6
@@ -340,21 +321,79 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.btHistory);
-            this.flowLayoutPanel1.Controls.Add(this.btPrevious);
+            this.flowLayoutPanel1.Controls.Add(this.btAskPanel);
+            this.flowLayoutPanel1.Controls.Add(this.btAnswer);
             this.flowLayoutPanel1.Controls.Add(this.btPeople);
-            this.flowLayoutPanel1.Controls.Add(this.btRecent);
+            this.flowLayoutPanel1.Controls.Add(this.btPrevious);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 1);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(339, 35);
             this.flowLayoutPanel1.TabIndex = 4;
+            this.flowLayoutPanel1.WrapContents = false;
+            // 
+            // btAskPanel
+            // 
+            this.btAskPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btAskPanel.BorderColor = System.Drawing.Color.White;
+            this.btAskPanel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btAskPanel.ForeColor = System.Drawing.Color.White;
+            this.btAskPanel.Location = new System.Drawing.Point(3, 0);
+            this.btAskPanel.Name = "btAskPanel";
+            this.btAskPanel.Radius = 20;
+            this.btAskPanel.Size = new System.Drawing.Size(57, 34);
+            this.btAskPanel.TabIndex = 20;
+            this.btAskPanel.Text = "Ask";
+            this.btAskPanel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btAskPanel.Thickness = 5F;
+            this.btAskPanel.Visible = false;
+            this.btAskPanel.Click += new System.EventHandler(this.btAskPanel_Click);
+            this.btAskPanel.MouseEnter += new System.EventHandler(this.btAskPanel_MouseEnter);
+            this.btAskPanel.MouseLeave += new System.EventHandler(this.btAskPanel_MouseLeave);
+            // 
+            // btAnswer
+            // 
+            this.btAnswer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btAnswer.BorderColor = System.Drawing.Color.White;
+            this.btAnswer.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btAnswer.ForeColor = System.Drawing.Color.White;
+            this.btAnswer.Location = new System.Drawing.Point(66, 0);
+            this.btAnswer.Name = "btAnswer";
+            this.btAnswer.Radius = 20;
+            this.btAnswer.Size = new System.Drawing.Size(73, 34);
+            this.btAnswer.TabIndex = 19;
+            this.btAnswer.Text = "Answer";
+            this.btAnswer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btAnswer.Thickness = 5F;
+            this.btAnswer.Click += new System.EventHandler(this.btRecent_Click);
+            this.btAnswer.MouseEnter += new System.EventHandler(this.btAskPanel_MouseEnter);
+            this.btAnswer.MouseLeave += new System.EventHandler(this.btAskPanel_MouseLeave);
+            // 
+            // btPeople
+            // 
+            this.btPeople.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btPeople.BorderColor = System.Drawing.Color.White;
+            this.btPeople.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btPeople.Enabled = false;
+            this.btPeople.ForeColor = System.Drawing.Color.White;
+            this.btPeople.Location = new System.Drawing.Point(145, 0);
+            this.btPeople.Name = "btPeople";
+            this.btPeople.Radius = 20;
+            this.btPeople.Size = new System.Drawing.Size(73, 34);
+            this.btPeople.TabIndex = 18;
+            this.btPeople.Text = "People";
+            this.btPeople.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btPeople.Thickness = 5F;
+            this.btPeople.MouseEnter += new System.EventHandler(this.btAskPanel_MouseEnter);
+            this.btPeople.MouseLeave += new System.EventHandler(this.btAskPanel_MouseLeave);
             // 
             // btPrevious
             // 
             this.btPrevious.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btPrevious.BorderColor = System.Drawing.Color.White;
             this.btPrevious.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btPrevious.Location = new System.Drawing.Point(37, 0);
+            this.btPrevious.Enabled = false;
+            this.btPrevious.ForeColor = System.Drawing.Color.White;
+            this.btPrevious.Location = new System.Drawing.Point(224, 0);
             this.btPrevious.Name = "btPrevious";
             this.btPrevious.Radius = 20;
             this.btPrevious.Size = new System.Drawing.Size(85, 34);
@@ -362,40 +401,8 @@
             this.btPrevious.Text = "Previous";
             this.btPrevious.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btPrevious.Thickness = 5F;
-            this.btPrevious.MouseEnter += new System.EventHandler(this.btRecent_MouseEnter);
-            this.btPrevious.MouseLeave += new System.EventHandler(this.btRecent_MouseLeave);
-            // 
-            // btPeople
-            // 
-            this.btPeople.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btPeople.BorderColor = System.Drawing.Color.White;
-            this.btPeople.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btPeople.Location = new System.Drawing.Point(128, 0);
-            this.btPeople.Name = "btPeople";
-            this.btPeople.Radius = 20;
-            this.btPeople.Size = new System.Drawing.Size(82, 34);
-            this.btPeople.TabIndex = 18;
-            this.btPeople.Text = "People";
-            this.btPeople.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btPeople.Thickness = 5F;
-            this.btPeople.MouseEnter += new System.EventHandler(this.btRecent_MouseEnter);
-            this.btPeople.MouseLeave += new System.EventHandler(this.btRecent_MouseLeave);
-            // 
-            // btRecent
-            // 
-            this.btRecent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btRecent.BorderColor = System.Drawing.Color.White;
-            this.btRecent.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btRecent.Location = new System.Drawing.Point(216, 0);
-            this.btRecent.Name = "btRecent";
-            this.btRecent.Radius = 20;
-            this.btRecent.Size = new System.Drawing.Size(73, 34);
-            this.btRecent.TabIndex = 19;
-            this.btRecent.Text = "Recent";
-            this.btRecent.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btRecent.Thickness = 5F;
-            this.btRecent.MouseEnter += new System.EventHandler(this.btRecent_MouseEnter);
-            this.btRecent.MouseLeave += new System.EventHandler(this.btRecent_MouseLeave);
+            this.btPrevious.MouseEnter += new System.EventHandler(this.btAskPanel_MouseEnter);
+            this.btPrevious.MouseLeave += new System.EventHandler(this.btAskPanel_MouseLeave);
             // 
             // yawa
             // 
@@ -416,13 +423,12 @@
             this.Load += new System.EventHandler(this.yawa_Load);
             this.panelMain.ResumeLayout(false);
             this.panelMain.PerformLayout();
-            this.panelOfRichQuestion.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btHistory)).EndInit();
+            this.panelOfRichQuestion_1.ResumeLayout(false);
             this.panelPrevious.ResumeLayout(false);
             this.panelAnswer.ResumeLayout(false);
             this.panelAnswer.PerformLayout();
-            this.roundedPanel2.ResumeLayout(false);
-            this.roundedPanel1.ResumeLayout(false);
+            this.panelOfRichAnswer.ResumeLayout(false);
+            this.panelOfRichQuestion_2.ResumeLayout(false);
             this.panelGlobal.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -432,7 +438,7 @@
         #endregion
 
         private System.Windows.Forms.Panel panelMain;
-        private System.Windows.Forms.RichTextBox richQuestion;
+        private System.Windows.Forms.RichTextBox richQuestion_1;
         private System.Windows.Forms.Panel panelPrevious;
         private RoundedLabel btAsk;
         private System.Windows.Forms.Label label1;
@@ -440,23 +446,23 @@
         private System.Windows.Forms.Label notice;
         private System.Windows.Forms.Label countWord;
         private System.Windows.Forms.Timer timer1;
-        private RoundedPanel panelOfRichQuestion;
-        private FontAwesome.Sharp.IconPictureBox btHistory;
+        private RoundedPanel panelOfRichQuestion_1;
         private RoundedLabel btInstantAsk;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panelGlobal;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label6;
-        private RoundedPanel roundedPanel2;
-        private System.Windows.Forms.RichTextBox richTextBox2;
+        private RoundedPanel panelOfRichAnswer;
+        private System.Windows.Forms.RichTextBox richAnswer;
         private System.Windows.Forms.Label label7;
-        private RoundedPanel roundedPanel1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private RoundedPanel panelOfRichQuestion_2;
+        private System.Windows.Forms.RichTextBox richQuestion_2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private RoundedLabel btPrevious;
         private RoundedLabel btPeople;
-        private RoundedLabel btRecent;
+        private RoundedLabel btAnswer;
+        private RoundedLabel btAskPanel;
     }
 }

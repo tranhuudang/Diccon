@@ -104,6 +104,52 @@ namespace Diccon
             
             
         }
+        /// <summary>
+        /// Change Red and Green background of Rounded-Label to a darker shade of  color
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public static void RoundedLabel_Darker_MouseEnter(object sender, EventArgs e)
+        {
+            try
+            {
+                RoundedLabel roundedLabel = (sender as RoundedLabel);
+                int A = roundedLabel.BackColor.A <= 100 ? roundedLabel.BackColor.A + 100 : roundedLabel.BackColor.A;
+                int R = roundedLabel.BackColor.R;
+                int G = roundedLabel.BackColor.G;
+                int B = roundedLabel.BackColor.B;
+
+                roundedLabel.BackColor = ColorA5;
+            }
+            catch (Exception)
+            {
+            }
+
+        }
+        /// <summary>
+        /// Change Red and Green background of Rounded-Label to a lighter shade of  color
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public static void RoundedLabel_Darker_MouseLeave(object sender, EventArgs e)
+        {
+            try
+            {
+                RoundedLabel roundedLabel = (sender as RoundedLabel);
+                int A = roundedLabel.BackColor.A > 100 ? roundedLabel.BackColor.A - 100 : roundedLabel.BackColor.A;
+                int R = roundedLabel.BackColor.R;
+                int G = roundedLabel.BackColor.G;
+                int B = roundedLabel.BackColor.B;
+
+                roundedLabel.BackColor = ColorA3;
+            }
+            catch (Exception)
+            {
+
+            }
+
+
+        }
         public static void PictureBox_MouseEnter(object sender, EventArgs e)
         {
             PictureBox pictureBox = (sender as PictureBox);

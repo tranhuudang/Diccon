@@ -382,8 +382,8 @@
     <None Include="Resources\diccon_64.png" />
     <None Include="Resources\diccon_32.png" />
     <None Include="Resources\diccon_32_2.png" />
-    <None Include="Resources\alert.mp3" />
     <None Include="Resources\alert_wav.wav" />
+    <None Include="Resources\diccon_128.png" />
     <Content Include="Setup and Update\UpdateInfo.xml" />
     <None Include="Resources\github_20.png" />
     <None Include="Resources\info_20.png" />

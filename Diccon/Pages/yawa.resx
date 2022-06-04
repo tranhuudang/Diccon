@@ -117,13 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="richQuestion.Text" xml:space="preserve">
+  <data name="richQuestion_1.Text" xml:space="preserve">
     <value>Tôi không hiểu tại sao mọi câu hỏi đều được trả lời một cách nhanh chóng như vậy và liệu nó có phải là lí do chính khiến cho chương trình thu hút được nhiều người dùng trong những năm gần đây và thực sự đang tạo ra được một cuộc cách mạng mới trong việc sử dụng máy tính. Chúng tôi đã sử dụng chương trình được một thời gian và cảm thấy đây là một chương trình thực sự hữu ích trong cộng đồng những người học ngoại ngữ nói riêng và mọi người sử dụng máy tính nói chung.</value>
   </data>
-  <data name="richTextBox2.Text" xml:space="preserve">
+  <data name="richAnswer.Text" xml:space="preserve">
     <value>Tôi không hiểu tại sao mọi câu hỏi đều được trả lời một cách nhanh chóng như vậy và liệu nó có phải là lí do chính khiến cho chương trình thu hút được nhiều người dùng trong những năm gần đây và thực sự đang tạo ra được một cuộc cách mạng mới trong việc sử dụng máy tính. Chúng tôi đã sử dụng chương trình được một thời gian và cảm thấy đây là một chương trình thực sự hữu ích trong cộng đồng những người học ngoại ngữ nói riêng và mọi người sử dụng máy tính nói chung.</value>
   </data>
-  <data name="richTextBox1.Text" xml:space="preserve">
+  <data name="richQuestion_2.Text" xml:space="preserve">
     <value>Tôi không hiểu tại sao mọi câu hỏi đều được trả lời một cách nhanh chóng như vậy và liệu nó có phải là lí do chính khiến cho chương trình thu hút được nhiều người dùng trong những năm gần đây và thực sự đang tạo ra được một cuộc cách mạng mới trong việc sử dụng máy tính. Chúng tôi đã sử dụng chương trình được một thời gian và cảm thấy đây là một chương trình thực sự hữu ích trong cộng đồng những người học ngoại ngữ nói riêng và mọi người sử dụng máy tính nói chung.</value>
   </data>
   <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">

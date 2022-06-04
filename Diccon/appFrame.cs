@@ -251,7 +251,7 @@ namespace Diccon
         {
             btStar.Visible = false;
             title.Text = "Diccon";
-            logo.Image = Properties.Resources.ninja_64;
+            logo.Image = Properties.Resources.diccon_32_2;
             if (currentForm != null)
             {
                 currentForm.Hide();
