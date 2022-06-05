@@ -10,6 +10,7 @@ using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Threading;
 using System.Windows.Forms;
+using QuoteBank;
 using System.Xml;
 using WK.Libraries.WTL;
 using static WK.Libraries.WTL.ThemeListener;
@@ -27,6 +28,7 @@ namespace Diccon
         Form noteForm = null;
         Form settingForm = null;
         Form yawaForm = null;
+        Form loginForm = null;
         public appFrame()
         {
             InitializeComponent();
@@ -118,8 +120,8 @@ namespace Diccon
                     break;
                 default:
                     // Stack up quotation
-                    quote quote = new quote();
-                    lbQuotation.Text = quote.getQuote("en");
+                    Quotes quotes = new Quotes();
+                    lbQuotation.Text = quotes.getQuote("en-US");
                     break;
             }
            
@@ -283,38 +285,15 @@ namespace Diccon
 
         private void checkForUpdatesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            try
+            if (aboutForm != null)
             {
-                XmlDocument updateFile = new XmlDocument();
-                updateFile.Load(dicconProp.updateInfo + "?" + DateTime.Now.Ticks.ToString());
-                Version netVersion = new Version(updateFile.SelectSingleNode("//currentVersion/version").InnerText);
-                string describe = updateFile.SelectSingleNode("//currentVersion/describe").InnerText;
-                string linkSetup = updateFile.SelectSingleNode("//path").InnerText;
-                Version currentVersion = Assembly.GetExecutingAssembly().GetName().Version;
-                if (netVersion > currentVersion)
-                {
 
-                    if (MessageBox.Show(dicconProp.updateAvailableMessage, "Update", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
-                    {
-                        Thread thread = new Thread(() =>
-                        {
-
-                            WebClient webClient = new WebClient();
-                            webClient.DownloadFileCompleted += WebClient_DownloadFileCompleted;
-                            webClient.DownloadFileAsync(new Uri(linkSetup), dicconProp.setupName);
-                        });
-                        thread.Start();
-                    }
-
-                }
-                else
-                {
-                    MessageBox.Show(dicconProp.noUpdateAvailableMessage, "Update", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
+                openForm(aboutForm);
             }
-            catch (Exception)
+            else
             {
-                MessageBox.Show("Can't connect to the internet!");
+                aboutForm = new about();
+                openForm(aboutForm);
             }
         }
 
@@ -457,6 +436,20 @@ namespace Diccon
             SoundPlayer soundPlayer = new SoundPlayer(Properties.Resources.alert_wav);
             soundPlayer.Play();
             notificationDetector.Enabled = false;
+        }
+
+        private void logInWithGoogleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (loginForm != null)
+            {
+
+                openForm(loginForm);
+            }
+            else
+            {
+                loginForm = new login();
+                openForm(loginForm);
+            }
         }
     }
 }
