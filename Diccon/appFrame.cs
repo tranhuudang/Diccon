@@ -124,6 +124,11 @@ namespace Diccon
                     lbQuotation.Text = quotes.getQuote("en-US");
                     break;
             }
+            if (Properties.Settings.Default["userID"].ToString() != "none")
+            {
+                accountToolStripMenuItem.Visible = true;
+                logInWithGoogleToolStripMenuItem.Visible = false;
+            }
            
 
             topPanel.BackColor = dicconProp.AccentColor;

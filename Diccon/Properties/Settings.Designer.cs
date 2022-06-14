@@ -58,5 +58,29 @@ namespace Diccon.Properties {
                 this["flashClipboard"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("none")]
+        public string userName {
+            get {
+                return ((string)(this["userName"]));
+            }
+            set {
+                this["userName"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("none")]
+        public string userID {
+            get {
+                return ((string)(this["userID"]));
+            }
+            set {
+                this["userID"] = value;
+            }
+        }
     }
 }

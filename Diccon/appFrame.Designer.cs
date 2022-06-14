@@ -68,6 +68,7 @@
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.timeLineDetector = new System.Windows.Forms.Timer(this.components);
             this.notificationDetector = new System.Windows.Forms.Timer(this.components);
+            this.accountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.topPanel.SuspendLayout();
             this.topControlPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.buttonMenu)).BeginInit();
@@ -388,6 +389,7 @@
             // 
             this.contextMenu.DropShadowEnabled = false;
             this.contextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.accountToolStripMenuItem,
             this.logInWithGoogleToolStripMenuItem,
             this.toolStripMenuItem4,
             this.themeToolStripMenuItem,
@@ -400,7 +402,7 @@
             this.toolStripMenuItem3,
             this.aboutToolStripMenuItem});
             this.contextMenu.Name = "contextMenu";
-            this.contextMenu.Size = new System.Drawing.Size(181, 204);
+            this.contextMenu.Size = new System.Drawing.Size(172, 204);
             // 
             // logInWithGoogleToolStripMenuItem
             // 
@@ -504,6 +506,13 @@
             this.notificationDetector.Interval = 5000;
             this.notificationDetector.Tick += new System.EventHandler(this.notificationDetector_Tick);
             // 
+            // accountToolStripMenuItem
+            // 
+            this.accountToolStripMenuItem.Name = "accountToolStripMenuItem";
+            this.accountToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.accountToolStripMenuItem.Text = "Manage Account";
+            this.accountToolStripMenuItem.Visible = false;
+            // 
             // appFrame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -574,5 +583,6 @@
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private System.Windows.Forms.FlowLayoutPanel topControlPanel;
         private System.Windows.Forms.Timer notificationDetector;
+        private System.Windows.Forms.ToolStripMenuItem accountToolStripMenuItem;
     }
 }
