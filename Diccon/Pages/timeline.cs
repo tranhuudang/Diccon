@@ -34,7 +34,8 @@ namespace Diccon.Pages
                     listItem.Add("      " + item);
                 }
                 listItem.Reverse();
-                listHistory.DataSource = listItem;
+                List<string>filterdList= listItem.Distinct().ToList();
+                listHistory.DataSource = filterdList;
             }
         }
         private void listHistory_SelectedIndexChanged(object sender, EventArgs e)

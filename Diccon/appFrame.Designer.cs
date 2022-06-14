@@ -69,6 +69,7 @@
             this.timeLineDetector = new System.Windows.Forms.Timer(this.components);
             this.notificationDetector = new System.Windows.Forms.Timer(this.components);
             this.accountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.backUpSyncToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.topPanel.SuspendLayout();
             this.topControlPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.buttonMenu)).BeginInit();
@@ -390,6 +391,7 @@
             this.contextMenu.DropShadowEnabled = false;
             this.contextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.accountToolStripMenuItem,
+            this.backUpSyncToolStripMenuItem,
             this.logInWithGoogleToolStripMenuItem,
             this.toolStripMenuItem4,
             this.themeToolStripMenuItem,
@@ -402,7 +404,7 @@
             this.toolStripMenuItem3,
             this.aboutToolStripMenuItem});
             this.contextMenu.Name = "contextMenu";
-            this.contextMenu.Size = new System.Drawing.Size(172, 204);
+            this.contextMenu.Size = new System.Drawing.Size(181, 248);
             // 
             // logInWithGoogleToolStripMenuItem
             // 
@@ -509,9 +511,18 @@
             // accountToolStripMenuItem
             // 
             this.accountToolStripMenuItem.Name = "accountToolStripMenuItem";
-            this.accountToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.accountToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.accountToolStripMenuItem.Text = "Manage Account";
             this.accountToolStripMenuItem.Visible = false;
+            this.accountToolStripMenuItem.Click += new System.EventHandler(this.accountToolStripMenuItem_Click);
+            // 
+            // backUpSyncToolStripMenuItem
+            // 
+            this.backUpSyncToolStripMenuItem.Name = "backUpSyncToolStripMenuItem";
+            this.backUpSyncToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.backUpSyncToolStripMenuItem.Text = "Back up && sync";
+            this.backUpSyncToolStripMenuItem.Visible = false;
+            this.backUpSyncToolStripMenuItem.Click += new System.EventHandler(this.backUpSyncToolStripMenuItem_Click);
             // 
             // appFrame
             // 
@@ -584,5 +595,6 @@
         private System.Windows.Forms.FlowLayoutPanel topControlPanel;
         private System.Windows.Forms.Timer notificationDetector;
         private System.Windows.Forms.ToolStripMenuItem accountToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem backUpSyncToolStripMenuItem;
     }
 }

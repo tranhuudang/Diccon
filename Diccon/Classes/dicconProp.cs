@@ -30,6 +30,9 @@ namespace Diccon
         // botton height use to control the panel when open bottom menu
         public static int bottomPanel_DefaultHeight = 60;
         public static int bottomPanel_ExpandedHeight = 150;
+        public static string backupError = "A error occur during Back up & Sync process. Try again or contact to us for help";
+        public static string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=ZeroClubOne;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+
         public static Color default_addNote_BackColor = Color.FromArgb(255, 192, 128);
         public static Color hover_addNote_BackColor = Color.FromArgb(242, 203, 164);
         public static string resourcesFolder = dicconApplicationDataPath + @"\Resources\";
@@ -56,6 +59,7 @@ namespace Diccon
         public static string githubProjectPath = "https://github.com/zeroclubvn/Diccon";
         public static string githubIssuesPath = "https://github.com/tranhuudang/Diccon/issues";
         public static string enableFlashClipboard = Properties.Settings.Default["FlashClipboard"].ToString();
+        public static string userID = Properties.Settings.Default["userID"].ToString();
 
 
         /// <summary>

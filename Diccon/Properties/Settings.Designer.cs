@@ -62,12 +62,12 @@ namespace Diccon.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("none")]
-        public string userName {
+        public string userEmail {
             get {
-                return ((string)(this["userName"]));
+                return ((string)(this["userEmail"]));
             }
             set {
-                this["userName"] = value;
+                this["userEmail"] = value;
             }
         }
         

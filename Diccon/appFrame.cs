@@ -14,6 +14,10 @@ using QuoteBank;
 using System.Xml;
 using WK.Libraries.WTL;
 using static WK.Libraries.WTL.ThemeListener;
+using System.Data.SqlClient;
+using System.Data;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Diccon
 {
@@ -127,6 +131,7 @@ namespace Diccon
             if (Properties.Settings.Default["userID"].ToString() != "none")
             {
                 accountToolStripMenuItem.Visible = true;
+                backUpSyncToolStripMenuItem.Visible = true;
                 logInWithGoogleToolStripMenuItem.Visible = false;
             }
            
@@ -455,6 +460,94 @@ namespace Diccon
                 loginForm = new login();
                 openForm(loginForm);
             }
+        }
+
+        private void accountToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (loginForm != null)
+            {
+
+                openForm(loginForm);
+            }
+            else
+            {
+                loginForm = new login();
+                openForm(loginForm);
+            }
+        }
+
+        private void backUpSyncToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string timelineLocalContents = "";
+            string timelineOnlineContents = "";
+            connectivity connectivity = new connectivity();
+            if (connectivity.isOnline()) {
+                try
+                {
+                    if (File.Exists(dicconProp.historyFileName))
+                    {
+                        // Get both local and online data together, and then mix them up, filter out doulicate and push online and local
+                        timelineLocalContents = File.ReadAllText(dicconProp.historyFileName);
+                        SqlConnection sqlConnection = new SqlConnection(dicconProp.connectionString);
+                        sqlConnection.Open();
+                        string getOnlineQueryString = @"Select Timeline from dbo.DicconResources where Id="+dicconProp.userID;
+                        DataTable dataTable = new DataTable();
+                        SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(getOnlineQueryString,sqlConnection);
+                        sqlDataAdapter.Fill(dataTable);
+                        timelineOnlineContents = dataTable.Rows[0][0].ToString();
+                        // Combine two string
+                        string combinedContents = timelineLocalContents +"#"+ timelineOnlineContents;
+                        string[] rawList= combinedContents.Split('#');
+                        List<string> rawList_1 = new List<string>();
+                        foreach (var item in rawList)
+                        {
+                            rawList_1.Add(item.ToString());
+                        }
+                        // Remove doublicate by Distinct() function in LINQ
+                        List<string> rawList_2 = rawList_1.Distinct().ToList();
+                        string outList = string.Join("#", rawList_2);
+                        // Update new data to online disk
+                        string updateQueryString = "UPDATE dbo.DicconResources  SET Timeline = '" + outList + "' Where Id=" +dicconProp.userID;
+                        SqlCommand sqlCommand = new SqlCommand(updateQueryString, sqlConnection);
+                        sqlCommand.ExecuteNonQuery();
+                        sqlConnection.Close();
+                        // Update new data to local disk
+                        StreamWriter history = new StreamWriter(dicconProp.historyFileName);
+                        history.Write(outList);
+                        history.Close();
+                    }
+                    else
+                    {
+                        // If local file not exist, we get online data and write it to local
+                        SqlConnection sqlConnection = new SqlConnection(dicconProp.connectionString);
+                        sqlConnection.Open();
+                        string getOnlineQueryString = @"Select Timeline from dbo.DicconResources where Id=" + dicconProp.userID;
+                        DataTable dataTable = new DataTable();
+                        SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(getOnlineQueryString, sqlConnection);
+                        sqlDataAdapter.Fill(dataTable);
+                        timelineOnlineContents = dataTable.Rows[0][1].ToString();
+                        sqlConnection.Close();
+                        // Update new data to local disk
+                        StreamWriter history = new StreamWriter(dicconProp.historyFileName);
+                        history.Write(timelineOnlineContents);
+                        history.Close();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    //MessageBox.Show(ex.Message);
+                    MessageBox.Show(dicconProp.backupError);
+    
+
+            }
+
+            }
+            else
+            {
+                MessageBox.Show(dicconProp.internetError);
+            }
+           
+            
         }
     }
 }
