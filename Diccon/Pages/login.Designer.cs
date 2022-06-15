@@ -30,7 +30,7 @@
         {
             this.label7 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.btCreateAccount = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.lbNotice = new System.Windows.Forms.Label();
@@ -38,15 +38,30 @@
             this.manageAccountText = new System.Windows.Forms.Label();
             this.panelLogin = new System.Windows.Forms.Panel();
             this.panelManage = new System.Windows.Forms.Panel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.panelCreateAccount = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.createText = new System.Windows.Forms.Label();
+            this.roundedPanel6 = new Diccon.RoundedPanel();
+            this.createPass_2 = new System.Windows.Forms.TextBox();
+            this.roundedPanel7 = new Diccon.RoundedPanel();
+            this.createPass_1 = new System.Windows.Forms.TextBox();
+            this.btCreateNow = new Diccon.RoundedLabel();
+            this.roundedPanel8 = new Diccon.RoundedPanel();
+            this.createEmail = new System.Windows.Forms.TextBox();
+            this.btDeleteLocal = new Diccon.RoundedLabel();
+            this.btDeleteOnline = new Diccon.RoundedLabel();
             this.roundedPanel5 = new Diccon.RoundedPanel();
             this.editPass_2 = new System.Windows.Forms.TextBox();
             this.roundedPanel4 = new Diccon.RoundedPanel();
             this.editPass_1 = new System.Windows.Forms.TextBox();
-            this.btDeleteOnline = new Diccon.RoundedLabel();
-            this.btDeleteLocal = new Diccon.RoundedLabel();
             this.btSave = new Diccon.RoundedLabel();
             this.btLogOut = new Diccon.RoundedLabel();
             this.roundedPanel3 = new Diccon.RoundedPanel();
@@ -56,15 +71,18 @@
             this.roundedPanel1 = new Diccon.RoundedPanel();
             this.tbEmail = new System.Windows.Forms.TextBox();
             this.btLogin = new Diccon.RoundedLabel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panelLogin.SuspendLayout();
             this.panelManage.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.panelCreateAccount.SuspendLayout();
+            this.roundedPanel6.SuspendLayout();
+            this.roundedPanel7.SuspendLayout();
+            this.roundedPanel8.SuspendLayout();
             this.roundedPanel5.SuspendLayout();
             this.roundedPanel4.SuspendLayout();
             this.roundedPanel3.SuspendLayout();
             this.roundedPanel2.SuspendLayout();
             this.roundedPanel1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label7
@@ -92,16 +110,17 @@
             this.label2.TabIndex = 12;
             this.label2.Text = "Forget your password?";
             // 
-            // label3
+            // btCreateAccount
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(93, 280);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(142, 16);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "Create new account";
+            this.btCreateAccount.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btCreateAccount.AutoSize = true;
+            this.btCreateAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btCreateAccount.Location = new System.Drawing.Point(93, 280);
+            this.btCreateAccount.Name = "btCreateAccount";
+            this.btCreateAccount.Size = new System.Drawing.Size(142, 16);
+            this.btCreateAccount.TabIndex = 12;
+            this.btCreateAccount.Text = "Create new account";
+            this.btCreateAccount.Click += new System.EventHandler(this.btCreateAccount_Click);
             // 
             // label4
             // 
@@ -161,12 +180,13 @@
             // 
             // panelLogin
             // 
+            this.panelLogin.Controls.Add(this.createText);
             this.panelLogin.Controls.Add(this.manageAccountText);
             this.panelLogin.Controls.Add(this.loginText);
             this.panelLogin.Controls.Add(this.roundedPanel2);
             this.panelLogin.Controls.Add(this.roundedPanel1);
             this.panelLogin.Controls.Add(this.btLogin);
-            this.panelLogin.Controls.Add(this.label3);
+            this.panelLogin.Controls.Add(this.btCreateAccount);
             this.panelLogin.Controls.Add(this.label5);
             this.panelLogin.Controls.Add(this.label4);
             this.panelLogin.Controls.Add(this.lbNotice);
@@ -188,10 +208,21 @@
             this.panelManage.Controls.Add(this.roundedPanel3);
             this.panelManage.Controls.Add(this.label9);
             this.panelManage.Controls.Add(this.label8);
-            this.panelManage.Location = new System.Drawing.Point(360, 0);
+            this.panelManage.Location = new System.Drawing.Point(344, 0);
             this.panelManage.Name = "panelManage";
             this.panelManage.Size = new System.Drawing.Size(357, 511);
             this.panelManage.TabIndex = 18;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.btDeleteLocal);
+            this.groupBox1.Controls.Add(this.btDeleteOnline);
+            this.groupBox1.Location = new System.Drawing.Point(34, 283);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(290, 121);
+            this.groupBox1.TabIndex = 16;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "User Data";
             // 
             // label1
             // 
@@ -227,6 +258,231 @@
             this.label8.Size = new System.Drawing.Size(116, 16);
             this.label8.TabIndex = 12;
             this.label8.Text = "Change password";
+            // 
+            // panelCreateAccount
+            // 
+            this.panelCreateAccount.Controls.Add(this.label12);
+            this.panelCreateAccount.Controls.Add(this.label11);
+            this.panelCreateAccount.Controls.Add(this.label3);
+            this.panelCreateAccount.Controls.Add(this.roundedPanel6);
+            this.panelCreateAccount.Controls.Add(this.roundedPanel7);
+            this.panelCreateAccount.Controls.Add(this.btCreateNow);
+            this.panelCreateAccount.Controls.Add(this.roundedPanel8);
+            this.panelCreateAccount.Controls.Add(this.label6);
+            this.panelCreateAccount.Controls.Add(this.label10);
+            this.panelCreateAccount.Location = new System.Drawing.Point(707, 0);
+            this.panelCreateAccount.Name = "panelCreateAccount";
+            this.panelCreateAccount.Size = new System.Drawing.Size(357, 511);
+            this.panelCreateAccount.TabIndex = 19;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.DarkGray;
+            this.label3.Location = new System.Drawing.Point(123, 471);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(108, 31);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "ZeroClub";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Gray;
+            this.label6.Location = new System.Drawing.Point(31, 67);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(41, 16);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Email";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Gray;
+            this.label10.Location = new System.Drawing.Point(28, 127);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(116, 16);
+            this.label10.TabIndex = 12;
+            this.label10.Text = "Change password";
+            // 
+            // label11
+            // 
+            this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Gray;
+            this.label11.Location = new System.Drawing.Point(28, 436);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(241, 16);
+            this.label11.TabIndex = 17;
+            this.label11.Text = "Terms && Conditions and Privacy Policy.";
+            // 
+            // label12
+            // 
+            this.label12.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Gray;
+            this.label12.Location = new System.Drawing.Point(28, 418);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(77, 16);
+            this.label12.TabIndex = 17;
+            this.label12.Text = "Need help?";
+            // 
+            // createText
+            // 
+            this.createText.AutoSize = true;
+            this.createText.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.createText.Location = new System.Drawing.Point(18, 404);
+            this.createText.Name = "createText";
+            this.createText.Size = new System.Drawing.Size(57, 20);
+            this.createText.TabIndex = 16;
+            this.createText.Text = "Create";
+            this.createText.Visible = false;
+            // 
+            // roundedPanel6
+            // 
+            this.roundedPanel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.roundedPanel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.roundedPanel6.BorderColor = System.Drawing.Color.White;
+            this.roundedPanel6.Controls.Add(this.createPass_2);
+            this.roundedPanel6.Location = new System.Drawing.Point(34, 190);
+            this.roundedPanel6.Name = "roundedPanel6";
+            this.roundedPanel6.Radius = 20;
+            this.roundedPanel6.Size = new System.Drawing.Size(290, 38);
+            this.roundedPanel6.TabIndex = 15;
+            this.roundedPanel6.Thickness = 5F;
+            // 
+            // createPass_2
+            // 
+            this.createPass_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.createPass_2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.createPass_2.Location = new System.Drawing.Point(16, 9);
+            this.createPass_2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.createPass_2.Name = "createPass_2";
+            this.createPass_2.Size = new System.Drawing.Size(257, 19);
+            this.createPass_2.TabIndex = 2;
+            this.createPass_2.TextChanged += new System.EventHandler(this.createEmail_TextChanged);
+            // 
+            // roundedPanel7
+            // 
+            this.roundedPanel7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.roundedPanel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.roundedPanel7.BorderColor = System.Drawing.Color.White;
+            this.roundedPanel7.Controls.Add(this.createPass_1);
+            this.roundedPanel7.Location = new System.Drawing.Point(34, 146);
+            this.roundedPanel7.Name = "roundedPanel7";
+            this.roundedPanel7.Radius = 20;
+            this.roundedPanel7.Size = new System.Drawing.Size(290, 38);
+            this.roundedPanel7.TabIndex = 15;
+            this.roundedPanel7.Thickness = 5F;
+            // 
+            // createPass_1
+            // 
+            this.createPass_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.createPass_1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.createPass_1.Location = new System.Drawing.Point(16, 9);
+            this.createPass_1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.createPass_1.Name = "createPass_1";
+            this.createPass_1.Size = new System.Drawing.Size(257, 19);
+            this.createPass_1.TabIndex = 1;
+            this.createPass_1.TextChanged += new System.EventHandler(this.createEmail_TextChanged);
+            // 
+            // btCreateNow
+            // 
+            this.btCreateNow.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btCreateNow.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btCreateNow.BorderColor = System.Drawing.Color.White;
+            this.btCreateNow.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btCreateNow.Enabled = false;
+            this.btCreateNow.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btCreateNow.ForeColor = System.Drawing.Color.Black;
+            this.btCreateNow.Location = new System.Drawing.Point(87, 240);
+            this.btCreateNow.Name = "btCreateNow";
+            this.btCreateNow.Padding = new System.Windows.Forms.Padding(7);
+            this.btCreateNow.Radius = 20;
+            this.btCreateNow.Size = new System.Drawing.Size(189, 34);
+            this.btCreateNow.TabIndex = 13;
+            this.btCreateNow.Text = "Create new account";
+            this.btCreateNow.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btCreateNow.Thickness = 5F;
+            this.btCreateNow.Click += new System.EventHandler(this.btCreateNow_Click);
+            // 
+            // roundedPanel8
+            // 
+            this.roundedPanel8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.roundedPanel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.roundedPanel8.BorderColor = System.Drawing.Color.White;
+            this.roundedPanel8.Controls.Add(this.createEmail);
+            this.roundedPanel8.Location = new System.Drawing.Point(34, 86);
+            this.roundedPanel8.Name = "roundedPanel8";
+            this.roundedPanel8.Radius = 20;
+            this.roundedPanel8.Size = new System.Drawing.Size(290, 38);
+            this.roundedPanel8.TabIndex = 14;
+            this.roundedPanel8.Thickness = 5F;
+            // 
+            // createEmail
+            // 
+            this.createEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.createEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.createEmail.Location = new System.Drawing.Point(16, 9);
+            this.createEmail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.createEmail.Name = "createEmail";
+            this.createEmail.Size = new System.Drawing.Size(257, 19);
+            this.createEmail.TabIndex = 0;
+            this.createEmail.TextChanged += new System.EventHandler(this.createEmail_TextChanged);
+            // 
+            // btDeleteLocal
+            // 
+            this.btDeleteLocal.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btDeleteLocal.AutoSize = true;
+            this.btDeleteLocal.BackColor = System.Drawing.Color.Gray;
+            this.btDeleteLocal.BorderColor = System.Drawing.Color.White;
+            this.btDeleteLocal.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btDeleteLocal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btDeleteLocal.ForeColor = System.Drawing.Color.Black;
+            this.btDeleteLocal.Location = new System.Drawing.Point(6, 25);
+            this.btDeleteLocal.Name = "btDeleteLocal";
+            this.btDeleteLocal.Padding = new System.Windows.Forms.Padding(7);
+            this.btDeleteLocal.Radius = 20;
+            this.btDeleteLocal.Size = new System.Drawing.Size(154, 34);
+            this.btDeleteLocal.TabIndex = 13;
+            this.btDeleteLocal.Text = "Remove local data";
+            this.btDeleteLocal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btDeleteLocal.Thickness = 5F;
+            this.btDeleteLocal.Click += new System.EventHandler(this.btLogin_Click);
+            this.btDeleteLocal.MouseEnter += new System.EventHandler(this.btLogin_MouseEnter);
+            this.btDeleteLocal.MouseLeave += new System.EventHandler(this.btLogin_MouseLeave);
+            // 
+            // btDeleteOnline
+            // 
+            this.btDeleteOnline.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btDeleteOnline.AutoSize = true;
+            this.btDeleteOnline.BackColor = System.Drawing.Color.Gray;
+            this.btDeleteOnline.BorderColor = System.Drawing.Color.White;
+            this.btDeleteOnline.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btDeleteOnline.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btDeleteOnline.ForeColor = System.Drawing.Color.Black;
+            this.btDeleteOnline.Location = new System.Drawing.Point(6, 59);
+            this.btDeleteOnline.Name = "btDeleteOnline";
+            this.btDeleteOnline.Padding = new System.Windows.Forms.Padding(7);
+            this.btDeleteOnline.Radius = 20;
+            this.btDeleteOnline.Size = new System.Drawing.Size(164, 34);
+            this.btDeleteOnline.TabIndex = 13;
+            this.btDeleteOnline.Text = "Remove online data";
+            this.btDeleteOnline.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btDeleteOnline.Thickness = 5F;
+            this.btDeleteOnline.Click += new System.EventHandler(this.btLogin_Click);
+            this.btDeleteOnline.MouseEnter += new System.EventHandler(this.btLogin_MouseEnter);
+            this.btDeleteOnline.MouseLeave += new System.EventHandler(this.btLogin_MouseLeave);
             // 
             // roundedPanel5
             // 
@@ -277,50 +533,6 @@
             this.editPass_1.Size = new System.Drawing.Size(257, 19);
             this.editPass_1.TabIndex = 0;
             this.editPass_1.TextChanged += new System.EventHandler(this.editEmail_TextChanged);
-            // 
-            // btDeleteOnline
-            // 
-            this.btDeleteOnline.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btDeleteOnline.AutoSize = true;
-            this.btDeleteOnline.BackColor = System.Drawing.Color.Gray;
-            this.btDeleteOnline.BorderColor = System.Drawing.Color.White;
-            this.btDeleteOnline.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btDeleteOnline.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btDeleteOnline.ForeColor = System.Drawing.Color.Black;
-            this.btDeleteOnline.Location = new System.Drawing.Point(6, 59);
-            this.btDeleteOnline.Name = "btDeleteOnline";
-            this.btDeleteOnline.Padding = new System.Windows.Forms.Padding(7);
-            this.btDeleteOnline.Radius = 20;
-            this.btDeleteOnline.Size = new System.Drawing.Size(164, 34);
-            this.btDeleteOnline.TabIndex = 13;
-            this.btDeleteOnline.Text = "Remove online data";
-            this.btDeleteOnline.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btDeleteOnline.Thickness = 5F;
-            this.btDeleteOnline.Click += new System.EventHandler(this.btLogin_Click);
-            this.btDeleteOnline.MouseEnter += new System.EventHandler(this.btLogin_MouseEnter);
-            this.btDeleteOnline.MouseLeave += new System.EventHandler(this.btLogin_MouseLeave);
-            // 
-            // btDeleteLocal
-            // 
-            this.btDeleteLocal.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btDeleteLocal.AutoSize = true;
-            this.btDeleteLocal.BackColor = System.Drawing.Color.Gray;
-            this.btDeleteLocal.BorderColor = System.Drawing.Color.White;
-            this.btDeleteLocal.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btDeleteLocal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btDeleteLocal.ForeColor = System.Drawing.Color.Black;
-            this.btDeleteLocal.Location = new System.Drawing.Point(6, 25);
-            this.btDeleteLocal.Name = "btDeleteLocal";
-            this.btDeleteLocal.Padding = new System.Windows.Forms.Padding(7);
-            this.btDeleteLocal.Radius = 20;
-            this.btDeleteLocal.Size = new System.Drawing.Size(154, 34);
-            this.btDeleteLocal.TabIndex = 13;
-            this.btDeleteLocal.Text = "Remove local data";
-            this.btDeleteLocal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btDeleteLocal.Thickness = 5F;
-            this.btDeleteLocal.Click += new System.EventHandler(this.btLogin_Click);
-            this.btDeleteLocal.MouseEnter += new System.EventHandler(this.btLogin_MouseEnter);
-            this.btDeleteLocal.MouseLeave += new System.EventHandler(this.btLogin_MouseLeave);
             // 
             // btSave
             // 
@@ -460,23 +672,13 @@
             this.btLogin.MouseEnter += new System.EventHandler(this.btLogin_MouseEnter);
             this.btLogin.MouseLeave += new System.EventHandler(this.btLogin_MouseLeave);
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.btDeleteLocal);
-            this.groupBox1.Controls.Add(this.btDeleteOnline);
-            this.groupBox1.Location = new System.Drawing.Point(34, 283);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(290, 121);
-            this.groupBox1.TabIndex = 16;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "User Data";
-            // 
             // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(743, 511);
+            this.ClientSize = new System.Drawing.Size(1070, 511);
+            this.Controls.Add(this.panelCreateAccount);
             this.Controls.Add(this.panelManage);
             this.Controls.Add(this.panelLogin);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -489,6 +691,16 @@
             this.panelLogin.PerformLayout();
             this.panelManage.ResumeLayout(false);
             this.panelManage.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.panelCreateAccount.ResumeLayout(false);
+            this.panelCreateAccount.PerformLayout();
+            this.roundedPanel6.ResumeLayout(false);
+            this.roundedPanel6.PerformLayout();
+            this.roundedPanel7.ResumeLayout(false);
+            this.roundedPanel7.PerformLayout();
+            this.roundedPanel8.ResumeLayout(false);
+            this.roundedPanel8.PerformLayout();
             this.roundedPanel5.ResumeLayout(false);
             this.roundedPanel5.PerformLayout();
             this.roundedPanel4.ResumeLayout(false);
@@ -499,8 +711,6 @@
             this.roundedPanel2.PerformLayout();
             this.roundedPanel1.ResumeLayout(false);
             this.roundedPanel1.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -510,7 +720,7 @@
         private System.Windows.Forms.TextBox tbEmail;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label btCreateAccount;
         private RoundedLabel btLogin;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
@@ -536,5 +746,19 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Panel panelCreateAccount;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label3;
+        private RoundedPanel roundedPanel6;
+        private System.Windows.Forms.TextBox createPass_2;
+        private RoundedPanel roundedPanel7;
+        private System.Windows.Forms.TextBox createPass_1;
+        private RoundedLabel btCreateNow;
+        private RoundedPanel roundedPanel8;
+        private System.Windows.Forms.TextBox createEmail;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label createText;
     }
 }

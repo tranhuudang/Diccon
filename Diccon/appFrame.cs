@@ -490,7 +490,7 @@ namespace Diccon
                         timelineLocalContents = File.ReadAllText(dicconProp.historyFileName);
                         SqlConnection sqlConnection = new SqlConnection(dicconProp.connectionString);
                         sqlConnection.Open();
-                        string getOnlineQueryString = @"Select Timeline from dbo.DicconResources where Id="+dicconProp.userID;
+                        string getOnlineQueryString = @"Select Timeline from dbo.DicconUser where Id="+dicconProp.userID;
                         DataTable dataTable = new DataTable();
                         SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(getOnlineQueryString,sqlConnection);
                         sqlDataAdapter.Fill(dataTable);
@@ -507,7 +507,7 @@ namespace Diccon
                         List<string> rawList_2 = rawList_1.Distinct().ToList();
                         string outList = string.Join("#", rawList_2);
                         // Update new data to online disk
-                        string updateQueryString = "UPDATE dbo.DicconResources  SET Timeline = '" + outList + "' Where Id=" +dicconProp.userID;
+                        string updateQueryString = "UPDATE dbo.DicconUser  SET Timeline = '" + outList + "' Where Id=" +dicconProp.userID;
                         SqlCommand sqlCommand = new SqlCommand(updateQueryString, sqlConnection);
                         sqlCommand.ExecuteNonQuery();
                         sqlConnection.Close();

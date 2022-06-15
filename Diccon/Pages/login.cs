@@ -21,8 +21,9 @@ namespace Diccon.Pages
 
         private void btLogin_Click(object sender, EventArgs e)
         {
+            string encryptPass = new SHA256Encrypt(tbPassword.Text.Trim()).Hash();
             SqlConnection sqlConnection = new SqlConnection(dicconProp.connectionString);
-            string queryString= "Select * from dbo.DicconLogin where Email='"+tbEmail.Text.Trim()+"' and Password='"+tbPassword.Text.Trim()+"'";
+            string queryString= "Select * from dbo.DicconUser where Email='"+tbEmail.Text.Trim()+"' and Password='"+ encryptPass + "'";
             SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(queryString, sqlConnection);
             DataTable dataTable = new DataTable();
             sqlDataAdapter.Fill(dataTable);
@@ -77,6 +78,7 @@ namespace Diccon.Pages
             {
                 this.Text = manageAccountText.Text;
                 panelLogin.Visible = false;
+                panelCreateAccount.Visible = false;
                 panelManage.Visible = true;
                 panelManage.Dock = DockStyle.Fill;
                 panelManage.BringToFront();
@@ -86,6 +88,7 @@ namespace Diccon.Pages
             {
                 this.Text = loginText.Text;
                 panelManage.Visible = false;
+                panelCreateAccount.Visible = false;
                 panelLogin.Visible = true;
                 panelLogin.Dock = DockStyle.Fill;
                 panelLogin.BringToFront();
@@ -120,6 +123,39 @@ namespace Diccon.Pages
         private void btLogin_MouseLeave(object sender, EventArgs e)
         {
             dicconProp.RoundedLabel_MouseLeave(sender, e);
+        }
+
+        private void btCreateAccount_Click(object sender, EventArgs e)
+        {
+            this.Text = createText.Text;
+            panelManage.Visible = false;
+            panelLogin.Visible = false;
+            panelCreateAccount.Visible = true;
+            panelCreateAccount.Dock = DockStyle.Fill;
+            panelCreateAccount.BringToFront();
+        }
+
+        private void createEmail_TextChanged(object sender, EventArgs e)
+        {
+            if ((createEmail.Text.Contains("@") && createEmail.Text.Contains(".")) && (createPass_1.Text.Length >= 8 && createPass_1.Text == createPass_2.Text))
+            {
+                btCreateNow.Enabled = true;
+            }
+            else
+            {
+                btCreateNow.Enabled = false;
+            }
+        }
+
+        private void btCreateNow_Click(object sender, EventArgs e)
+        {
+            string encryptPass = new SHA256Encrypt(createPass_1.Text.Trim()).Hash();
+            SqlConnection sqlConnection = new SqlConnection(dicconProp.connectionString);
+            sqlConnection.Open();
+            string queryString = "Insert into dbo.DicconUser(Email, Password) values ('"+createEmail.Text+"','"+encryptPass+"')";
+            SqlCommand sqlCommand = new SqlCommand(queryString, sqlConnection);
+            sqlCommand.ExecuteNonQuery();
+            sqlConnection.Close();
         }
     }
 }
