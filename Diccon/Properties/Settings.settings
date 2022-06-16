@@ -17,5 +17,8 @@
     <Setting Name="userID" Type="System.String" Scope="User">
       <Value Profile="(Default)">none</Value>
     </Setting>
+    <Setting Name="language" Type="System.String" Scope="User">
+      <Value Profile="(Default)">english</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

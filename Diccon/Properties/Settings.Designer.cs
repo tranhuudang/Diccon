@@ -82,5 +82,17 @@ namespace Diccon.Properties {
                 this["userID"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("english")]
+        public string language {
+            get {
+                return ((string)(this["language"]));
+            }
+            set {
+                this["language"] = value;
+            }
+        }
     }
 }

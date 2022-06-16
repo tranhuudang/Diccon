@@ -117,16 +117,757 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1448, 551</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btAsk.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelOfRichQuestion_1.Parent" xml:space="preserve">
+    <value>panelMain</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>panelAnswer</value>
+  </data>
+  <data name="panelOfRichQuestion_2.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="btPeople.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="btInstantAsk.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="btAsk.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="btAskPanel.Text" xml:space="preserve">
+    <value>Ask</value>
+  </data>
+  <data name="&gt;&gt;richQuestion_2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 20</value>
+  </data>
+  <data name="&gt;&gt;panelMain.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="&gt;&gt;richAnswer.Parent" xml:space="preserve">
+    <value>panelOfRichAnswer</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btInstantAsk.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 7, 7, 7</value>
+  </data>
+  <data name="&gt;&gt;richQuestion_2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;btPrevious.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 39</value>
+  </data>
+  <data name="btAskPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;btAskPanel.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="panelOfRichQuestion_1.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="panelAnswer.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btAskPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 0</value>
+  </data>
+  <data name="btInstantAsk.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="richQuestion_1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="panelGlobal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1083, 38</value>
+  </data>
+  <data name="&gt;&gt;btAsk.Parent" xml:space="preserve">
+    <value>panelMain</value>
+  </data>
+  <data name="notice.Text" xml:space="preserve">
+    <value>Your question will be answed within 2 to 15 minutes. We'll send you a notification when your answer is ready.</value>
+  </data>
+  <data name="&gt;&gt;panelAnswer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;notice.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btInstantAsk.Name" xml:space="preserve">
+    <value>btInstantAsk</value>
+  </data>
+  <data name="panelOfRichQuestion_2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 27</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="btAnswer.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="countWord.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="btAnswer.Text" xml:space="preserve">
+    <value>Answer</value>
+  </data>
+  <data name="btPrevious.Text" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="&gt;&gt;btAskPanel.Type" xml:space="preserve">
+    <value>Diccon.RoundedLabel, Diccon, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>panelAnswer</value>
+  </data>
+  <data name="btAskPanel.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;btAsk.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;btPeople.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="notice.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;notice.Name" xml:space="preserve">
+    <value>notice</value>
+  </data>
+  <data name="panelOfRichQuestion_2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>330, 167</value>
+  </data>
+  <data name="btAskPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 34</value>
+  </data>
+  <data name="&gt;&gt;panelGlobal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="richAnswer.MaxLength" type="System.Int32, mscorlib">
+    <value>500</value>
+  </data>
+  <data name="&gt;&gt;btInstantAsk.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="flowLayoutPanel1.WrapContents" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Your question</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>yawa</value>
+  </data>
+  <data name="notice.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 372</value>
+  </data>
+  <data name="btAnswer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 34</value>
+  </data>
+  <data name="&gt;&gt;richQuestion_2.Name" xml:space="preserve">
+    <value>richQuestion_2</value>
+  </data>
+  <data name="&gt;&gt;btInstantAsk.Type" xml:space="preserve">
+    <value>Diccon.RoundedLabel, Diccon, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="richQuestion_2.MaxLength" type="System.Int32, mscorlib">
+    <value>500</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Free: 100 left</value>
+  </data>
+  <data name="panelGlobal.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="panelGlobal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>355, 513</value>
+  </data>
+  <data name="&gt;&gt;btPeople.Name" xml:space="preserve">
+    <value>btPeople</value>
+  </data>
+  <data name="btInstantAsk.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 338</value>
+  </data>
+  <data name="&gt;&gt;panelAnswer.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;notice.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="flowLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 8</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Your question</value>
+  </data>
+  <data name="&gt;&gt;panelOfRichQuestion_2.Parent" xml:space="preserve">
+    <value>panelAnswer</value>
+  </data>
+  <data name="&gt;&gt;panelPrevious.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btAsk.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 34</value>
+  </data>
+  <data name="richAnswer.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btPrevious.Location" type="System.Drawing.Point, System.Drawing">
+    <value>224, 0</value>
+  </data>
+  <data name="btAsk.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 338</value>
+  </data>
+  <data name="panelOfRichQuestion_1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>330, 216</value>
+  </data>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="panelOfRichAnswer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 216</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 16</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;panelPrevious.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;panelOfRichAnswer.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btAnswer.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;panelGlobal.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label5.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;panelPrevious.Name" xml:space="preserve">
+    <value>panelPrevious</value>
+  </data>
+  <data name="notice.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Answer</value>
+  </data>
+  <data name="countWord.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="btAsk.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 7, 7, 7</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;panelOfRichQuestion_1.Type" xml:space="preserve">
+    <value>Diccon.RoundedPanel, Diccon, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="panelPrevious.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btAnswer.Name" xml:space="preserve">
+    <value>btAnswer</value>
+  </data>
+  <data name="&gt;&gt;panelOfRichAnswer.Name" xml:space="preserve">
+    <value>panelOfRichAnswer</value>
+  </data>
+  <data name="&gt;&gt;btAskPanel.Name" xml:space="preserve">
+    <value>btAskPanel</value>
+  </data>
+  <data name="btInstantAsk.Text" xml:space="preserve">
+    <value>Instant Ask</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="countWord.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;panelOfRichAnswer.Type" xml:space="preserve">
+    <value>Diccon.RoundedPanel, Diccon, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="richQuestion_1.MaxLength" type="System.Int32, mscorlib">
+    <value>500</value>
+  </data>
+  <data name="&gt;&gt;timer1.Name" xml:space="preserve">
+    <value>timer1</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="btAsk.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;btPeople.Type" xml:space="preserve">
+    <value>Diccon.RoundedLabel, Diccon, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="btPeople.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>panelPrevious</value>
+  </data>
+  <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>9, 20</value>
+  </data>
+  <data name="&gt;&gt;panelMain.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;countWord.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>371, 590</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btAsk.Name" xml:space="preserve">
+    <value>btAsk</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Community</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Instant Ask: 10 left</value>
+  </data>
+  <data name="label4.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;notice.Parent" xml:space="preserve">
+    <value>panelMain</value>
+  </data>
+  <data name="&gt;&gt;btPrevious.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="richAnswer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 12</value>
+  </data>
+  <data name="btInstantAsk.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="richQuestion_1.Text" xml:space="preserve">
     <value>Tôi không hiểu tại sao mọi câu hỏi đều được trả lời một cách nhanh chóng như vậy và liệu nó có phải là lí do chính khiến cho chương trình thu hút được nhiều người dùng trong những năm gần đây và thực sự đang tạo ra được một cuộc cách mạng mới trong việc sử dụng máy tính. Chúng tôi đã sử dụng chương trình được một thời gian và cảm thấy đây là một chương trình thực sự hữu ích trong cộng đồng những người học ngoại ngữ nói riêng và mọi người sử dụng máy tính nói chung.</value>
+  </data>
+  <data name="countWord.Location" type="System.Drawing.Point, System.Drawing">
+    <value>272, 338</value>
+  </data>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btPeople.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 34</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="flowLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>339, 35</value>
+  </data>
+  <data name="&gt;&gt;btAnswer.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>panelMain</value>
+  </data>
+  <data name="&gt;&gt;richAnswer.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panelAnswer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;richAnswer.Name" xml:space="preserve">
+    <value>richAnswer</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;richAnswer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btInstantAsk.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="panelAnswer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>355, 513</value>
+  </data>
+  <data name="richQuestion_1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>309, 190</value>
+  </data>
+  <data name="label6.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 20</value>
+  </data>
+  <data name="&gt;&gt;panelOfRichQuestion_2.Name" xml:space="preserve">
+    <value>panelOfRichQuestion_2</value>
+  </data>
+  <data name="&gt;&gt;panelGlobal.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;richQuestion_1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panelPrevious.Size" type="System.Drawing.Size, System.Drawing">
+    <value>355, 513</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 8</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelMain.Name" xml:space="preserve">
+    <value>panelMain</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>panelGlobal</value>
+  </data>
+  <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="&gt;&gt;panelGlobal.Name" xml:space="preserve">
+    <value>panelGlobal</value>
+  </data>
+  <data name="notice.Size" type="System.Drawing.Size, System.Drawing">
+    <value>330, 105</value>
+  </data>
+  <data name="&gt;&gt;panelOfRichQuestion_2.Type" xml:space="preserve">
+    <value>Diccon.RoundedPanel, Diccon, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>panelMain</value>
+  </data>
+  <data name="btAsk.Text" xml:space="preserve">
+    <value>Ask</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;btAsk.Type" xml:space="preserve">
+    <value>Diccon.RoundedLabel, Diccon, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="btPeople.Text" xml:space="preserve">
+    <value>People</value>
+  </data>
+  <data name="&gt;&gt;btAskPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;richQuestion_1.Name" xml:space="preserve">
+    <value>richQuestion_1</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>panelMain</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 197</value>
+  </data>
+  <data name="countWord.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 34</value>
+  </data>
+  <data name="&gt;&gt;panelOfRichQuestion_1.Name" xml:space="preserve">
+    <value>panelOfRichQuestion_1</value>
+  </data>
+  <data name="&gt;&gt;richQuestion_2.Parent" xml:space="preserve">
+    <value>panelOfRichQuestion_2</value>
+  </data>
+  <data name="&gt;&gt;panelMain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 100</value>
+  </data>
+  <data name="btInstantAsk.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="btPrevious.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 34</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="countWord.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>68, 28</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 28</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="panelMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>355, 513</value>
+  </data>
+  <data name="&gt;&gt;btAnswer.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="btAnswer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>66, 0</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 20</value>
+  </data>
+  <data name="richQuestion_2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;richQuestion_1.Parent" xml:space="preserve">
+    <value>panelOfRichQuestion_1</value>
+  </data>
+  <data name="&gt;&gt;btPrevious.Name" xml:space="preserve">
+    <value>btPrevious</value>
+  </data>
+  <data name="richQuestion_2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 13</value>
+  </data>
+  <data name="&gt;&gt;countWord.Parent" xml:space="preserve">
+    <value>panelMain</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;countWord.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btPeople.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>previous</value>
+  </data>
+  <data name="btAskPanel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="richQuestion_2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>309, 141</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelOfRichAnswer.Parent" xml:space="preserve">
+    <value>panelAnswer</value>
+  </data>
+  <data name="&gt;&gt;countWord.Name" xml:space="preserve">
+    <value>countWord</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>global</value>
+  </data>
+  <data name="panelAnswer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>722, 38</value>
+  </data>
+  <data name="&gt;&gt;timer1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel1.Name" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;panelOfRichQuestion_2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 20</value>
+  </data>
+  <data name="&gt;&gt;panelAnswer.Name" xml:space="preserve">
+    <value>panelAnswer</value>
+  </data>
+  <data name="btPrevious.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="btPrevious.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="richAnswer.Text" xml:space="preserve">
     <value>Tôi không hiểu tại sao mọi câu hỏi đều được trả lời một cách nhanh chóng như vậy và liệu nó có phải là lí do chính khiến cho chương trình thu hút được nhiều người dùng trong những năm gần đây và thực sự đang tạo ra được một cuộc cách mạng mới trong việc sử dụng máy tính. Chúng tôi đã sử dụng chương trình được một thời gian và cảm thấy đây là một chương trình thực sự hữu ích trong cộng đồng những người học ngoại ngữ nói riêng và mọi người sử dụng máy tính nói chung.</value>
   </data>
+  <data name="&gt;&gt;btAnswer.Type" xml:space="preserve">
+    <value>Diccon.RoundedLabel, Diccon, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 16</value>
+  </data>
+  <data name="panelOfRichAnswer.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="panelOfRichQuestion_1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 119</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btPeople.Location" type="System.Drawing.Point, System.Drawing">
+    <value>145, 0</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="richQuestion_2.Text" xml:space="preserve">
     <value>Tôi không hiểu tại sao mọi câu hỏi đều được trả lời một cách nhanh chóng như vậy và liệu nó có phải là lí do chính khiến cho chương trình thu hút được nhiều người dùng trong những năm gần đây và thực sự đang tạo ra được một cuộc cách mạng mới trong việc sử dụng máy tính. Chúng tôi đã sử dụng chương trình được một thời gian và cảm thấy đây là một chương trình thực sự hữu ích trong cộng đồng những người học ngoại ngữ nói riêng và mọi người sử dụng máy tính nói chung.</value>
   </data>
+  <data name="&gt;&gt;panelOfRichQuestion_1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btInstantAsk.Parent" xml:space="preserve">
+    <value>panelMain</value>
+  </data>
+  <data name="panelMain.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 16</value>
+  </data>
+  <data name="panelOfRichAnswer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>330, 271</value>
+  </data>
+  <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="richAnswer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>309, 246</value>
+  </data>
+  <data name="btAsk.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="richQuestion_1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 12</value>
+  </data>
+  <data name="panelPrevious.Location" type="System.Drawing.Point, System.Drawing">
+    <value>361, 38</value>
+  </data>
+  <data name="panelMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 38</value>
+  </data>
+  <data name="btPeople.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;richQuestion_1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btPrevious.Type" xml:space="preserve">
+    <value>Diccon.RoundedLabel, Diccon, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="btInstantAsk.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 34</value>
+  </data>
+  <data name="countWord.Text" xml:space="preserve">
+    <value>500/500</value>
+  </data>
+  <data name="&gt;&gt;panelPrevious.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btPrevious.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="flowLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 1</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
   <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
   </metadata>
 </root>

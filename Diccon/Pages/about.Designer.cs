@@ -50,166 +50,90 @@
             // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(59, 230);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Version:";
             // 
             // label2
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(59, 251);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Github:";
             // 
             // label3
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(59, 272);
+            resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 13);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Author:";
             // 
             // lbVersion
             // 
-            this.lbVersion.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lbVersion.AutoSize = true;
-            this.lbVersion.Location = new System.Drawing.Point(117, 230);
+            resources.ApplyResources(this.lbVersion, "lbVersion");
             this.lbVersion.Name = "lbVersion";
-            this.lbVersion.Size = new System.Drawing.Size(50, 13);
-            this.lbVersion.TabIndex = 0;
-            this.lbVersion.Text = "lbVersion";
             // 
             // label5
             // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(117, 272);
+            resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(81, 13);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Tran Huu Dang";
             // 
             // gitHubLink
             // 
-            this.gitHubLink.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.gitHubLink.AutoSize = true;
-            this.gitHubLink.Location = new System.Drawing.Point(117, 251);
+            resources.ApplyResources(this.gitHubLink, "gitHubLink");
             this.gitHubLink.Name = "gitHubLink";
-            this.gitHubLink.Size = new System.Drawing.Size(98, 13);
-            this.gitHubLink.TabIndex = 2;
             this.gitHubLink.TabStop = true;
-            this.gitHubLink.Text = "zeroclubvn\\Diccon";
             this.gitHubLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.gitHubLink_LinkClicked);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Image = global::Diccon.Properties.Resources.diccon_128;
-            this.pictureBox1.Location = new System.Drawing.Point(132, 28);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(114, 128);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
             // label4
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(3, 159);
+            resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(383, 46);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Diccon";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label6
             // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(59, 293);
+            resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 13);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Email:";
             // 
             // label7
             // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(117, 293);
+            resources.ApplyResources(this.label7, "label7");
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(143, 13);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "tranhuudang127@gmail.com";
             // 
             // label8
             // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.label8, "label8");
             this.label8.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label8.Location = new System.Drawing.Point(12, 498);
             this.label8.Name = "label8";
-            this.label8.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
-            this.label8.Size = new System.Drawing.Size(365, 63);
-            this.label8.TabIndex = 4;
-            this.label8.Text = resources.GetString("label8.Text");
             // 
             // downloadPercent
             // 
-            this.downloadPercent.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.downloadPercent.Location = new System.Drawing.Point(128, 4);
+            resources.ApplyResources(this.downloadPercent, "downloadPercent");
             this.downloadPercent.Name = "downloadPercent";
-            this.downloadPercent.Size = new System.Drawing.Size(103, 23);
-            this.downloadPercent.TabIndex = 6;
             // 
             // panelUpdate
             // 
-            this.panelUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.panelUpdate, "panelUpdate");
             this.panelUpdate.Controls.Add(this.label9);
             this.panelUpdate.Controls.Add(this.downloadPercent);
-            this.panelUpdate.Location = new System.Drawing.Point(15, 381);
             this.panelUpdate.Name = "panelUpdate";
-            this.panelUpdate.Size = new System.Drawing.Size(361, 82);
-            this.panelUpdate.TabIndex = 7;
-            this.panelUpdate.Visible = false;
             // 
             // label9
             // 
-            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label9.Location = new System.Drawing.Point(5, 30);
+            resources.ApplyResources(this.label9, "label9");
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(352, 23);
-            this.label9.TabIndex = 7;
-            this.label9.Text = "Downloading..";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btUpdates
             // 
-            this.btUpdates.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btUpdates.AutoSize = true;
+            resources.ApplyResources(this.btUpdates, "btUpdates");
             this.btUpdates.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.btUpdates.BorderColor = System.Drawing.Color.White;
             this.btUpdates.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btUpdates.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btUpdates.ForeColor = System.Drawing.Color.Black;
-            this.btUpdates.Location = new System.Drawing.Point(116, 328);
             this.btUpdates.Name = "btUpdates";
-            this.btUpdates.Padding = new System.Windows.Forms.Padding(7);
             this.btUpdates.Radius = 20;
-            this.btUpdates.Size = new System.Drawing.Size(156, 34);
-            this.btUpdates.TabIndex = 8;
-            this.btUpdates.Text = "Check for Updates";
             this.btUpdates.Thickness = 5F;
             this.btUpdates.Click += new System.EventHandler(this.btUpdates_Click);
             this.btUpdates.MouseEnter += new System.EventHandler(this.btUpdates_MouseEnter);
@@ -217,10 +141,9 @@
             // 
             // about
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(389, 570);
             this.Controls.Add(this.btUpdates);
             this.Controls.Add(this.panelUpdate);
             this.Controls.Add(this.label8);
@@ -236,8 +159,6 @@
             this.Controls.Add(this.label1);
             this.Name = "about";
             this.ShowIcon = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "About";
             this.Load += new System.EventHandler(this.about_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelUpdate.ResumeLayout(false);

@@ -18,7 +18,7 @@ namespace Diccon
         }
         public string Hash()
         {
-            int intValue = _salt; // user ID will go here as salt
+            int intValue = _salt; // pepper
             byte[] intBytes = BitConverter.GetBytes(intValue);
             if (BitConverter.IsLittleEndian)
                 Array.Reverse(intBytes);

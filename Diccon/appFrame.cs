@@ -35,9 +35,21 @@ namespace Diccon
         Form loginForm = null;
         public appFrame()
         {
+            switch (Properties.Settings.Default["language"])
+
+            {
+                case "english":
+                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en-US");
+                    break;
+                case "vietnamese":
+                    Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("vi-VI");
+                    break;
+                default:
+                    break;
+            }
             InitializeComponent();
         }
-        // Giảm kích thước font chữ
+        // Reduce font size to match the resolution
         public void SetAllControlsFont(Control.ControlCollection ctrls, int minusFontSize)
         {
             foreach (Control ctrl in ctrls)
@@ -49,7 +61,7 @@ namespace Diccon
 
             }
         }
-        // Xóa nhòe chữ cho scale trên 100
+        // reduce noise in scale larger than 100%
         [System.Runtime.InteropServices.DllImport("user32.dll")]
         private static extern bool SetProcessDPIAware();
         // #####################################################################################################
@@ -91,6 +103,24 @@ namespace Diccon
 
         private void AppFrame_Load(object sender, EventArgs e)
         {
+            // Stack up quotation
+            Quotes quotes = new Quotes();
+            switch (Properties.Settings.Default["language"])
+            {
+                
+                case "english":
+                    englishToolStripMenuItem.Checked = true;
+                    vietnameseToolStripMenuItem.Checked = false;
+                    lbQuotation.Text = quotes.getQuote("en-US");
+                    break;
+                case "vietnamese":
+                    englishToolStripMenuItem.Checked = false;
+                    vietnameseToolStripMenuItem.Checked = true;
+                    lbQuotation.Text = quotes.getQuote("vi-VI");
+                    break;
+                default:
+                    break;
+            }
             //Determine data folder existen in ApplicationData
             if (!Directory.Exists(dicconProp.dicconApplicationDataPath))
             {
@@ -123,9 +153,7 @@ namespace Diccon
                     openForm(timelineForm);
                     break;
                 default:
-                    // Stack up quotation
-                    Quotes quotes = new Quotes();
-                    lbQuotation.Text = quotes.getQuote("en-US");
+                   
                     break;
             }
             if (Properties.Settings.Default["userID"].ToString() != "none")
@@ -488,12 +516,9 @@ namespace Diccon
                     {
                         // Get both local and online data together, and then mix them up, filter out doulicate and push online and local
                         timelineLocalContents = File.ReadAllText(dicconProp.historyFileName);
-                        SqlConnection sqlConnection = new SqlConnection(dicconProp.connectionString);
-                        sqlConnection.Open();
                         string getOnlineQueryString = @"Select Timeline from dbo.DicconUser where Id="+dicconProp.userID;
-                        DataTable dataTable = new DataTable();
-                        SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(getOnlineQueryString,sqlConnection);
-                        sqlDataAdapter.Fill(dataTable);
+                        SQLHandler sqlHandler = new SQLHandler();
+                        DataTable dataTable = sqlHandler.Select(getOnlineQueryString);
                         timelineOnlineContents = dataTable.Rows[0][0].ToString();
                         // Combine two string
                         string combinedContents = timelineLocalContents +"#"+ timelineOnlineContents;
@@ -508,9 +533,7 @@ namespace Diccon
                         string outList = string.Join("#", rawList_2);
                         // Update new data to online disk
                         string updateQueryString = "UPDATE dbo.DicconUser  SET Timeline = '" + outList + "' Where Id=" +dicconProp.userID;
-                        SqlCommand sqlCommand = new SqlCommand(updateQueryString, sqlConnection);
-                        sqlCommand.ExecuteNonQuery();
-                        sqlConnection.Close();
+                        sqlHandler.Update(updateQueryString);
                         // Update new data to local disk
                         StreamWriter history = new StreamWriter(dicconProp.historyFileName);
                         history.Write(outList);
@@ -519,23 +542,18 @@ namespace Diccon
                     else
                     {
                         // If local file not exist, we get online data and write it to local
-                        SqlConnection sqlConnection = new SqlConnection(dicconProp.connectionString);
-                        sqlConnection.Open();
                         string getOnlineQueryString = @"Select Timeline from dbo.DicconResources where Id=" + dicconProp.userID;
-                        DataTable dataTable = new DataTable();
-                        SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(getOnlineQueryString, sqlConnection);
-                        sqlDataAdapter.Fill(dataTable);
+                        SQLHandler sqlHandler = new SQLHandler();
+                        DataTable dataTable = sqlHandler.Select(getOnlineQueryString);
                         timelineOnlineContents = dataTable.Rows[0][1].ToString();
-                        sqlConnection.Close();
                         // Update new data to local disk
                         StreamWriter history = new StreamWriter(dicconProp.historyFileName);
                         history.Write(timelineOnlineContents);
                         history.Close();
                     }
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
-                    //MessageBox.Show(ex.Message);
                     MessageBox.Show(dicconProp.backupError);
     
 
@@ -548,6 +566,20 @@ namespace Diccon
             }
            
             
+        }
+
+        private void englishToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Properties.Settings.Default["language"] = "english";
+            Properties.Settings.Default.Save();
+            Application.Restart();
+        }
+
+        private void vietnameseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Properties.Settings.Default["language"] = "vietnamese";
+            Properties.Settings.Default.Save();
+            Application.Restart();
         }
     }
 }

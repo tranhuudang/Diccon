@@ -117,4 +117,685 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;laugh.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;glued.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;shame.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;wonder.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;annoyed.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;foolish.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;shocked.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;prejudice.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="wary.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="&gt;&gt;foolish.Name" xml:space="preserve">
+    <value>foolish</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="astonished.Location" type="System.Drawing.Point, System.Drawing">
+    <value>183, 3</value>
+  </data>
+  <data name="&gt;&gt;dead.Name" xml:space="preserve">
+    <value>dead</value>
+  </data>
+  <data name="&gt;&gt;dead.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="annoyed.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="&gt;&gt;stuck.Name" xml:space="preserve">
+    <value>stuck</value>
+  </data>
+  <data name="annoyed.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="reluctant.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="shocked.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="foolish.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="&gt;&gt;doubtful.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;wary.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;glued.Name" xml:space="preserve">
+    <value>glued</value>
+  </data>
+  <data name="&gt;&gt;laugh.Name" xml:space="preserve">
+    <value>laugh</value>
+  </data>
+  <data name="&gt;&gt;reluctant.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sleeping.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;doubtful.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="laugh.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="&gt;&gt;silly.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;foolish.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="astonished.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="&gt;&gt;foolish.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;lbEmojiText.Parent" xml:space="preserve">
+    <value>roundedPanel1</value>
+  </data>
+  <data name="&gt;&gt;astonished.Name" xml:space="preserve">
+    <value>astonished</value>
+  </data>
+  <data name="blind.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>roundedPanel1</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;shocked.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;grumble.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;cry.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="foolish.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 39</value>
+  </data>
+  <data name="&gt;&gt;astonished.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbEmojiText.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;cry.Name" xml:space="preserve">
+    <value>cry</value>
+  </data>
+  <data name="shame.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="glued.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="furious.Location" type="System.Drawing.Point, System.Drawing">
+    <value>147, 39</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 52</value>
+  </data>
+  <data name="btCopy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 40</value>
+  </data>
+  <data name="&gt;&gt;reluctant.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;wary.Name" xml:space="preserve">
+    <value>wary</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>emoji</value>
+  </data>
+  <data name="doubtful.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="doubtful.Location" type="System.Drawing.Point, System.Drawing">
+    <value>75, 39</value>
+  </data>
+  <data name="furious.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="&gt;&gt;grumble.Name" xml:space="preserve">
+    <value>grumble</value>
+  </data>
+  <data name="&gt;&gt;cry.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="dead.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="&gt;&gt;sleeping.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="sleeping.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;wonder.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="grumble.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="&gt;&gt;shame.Name" xml:space="preserve">
+    <value>shame</value>
+  </data>
+  <data name="&gt;&gt;shocked.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="cry.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>Manual</value>
+  </data>
+  <data name="silly.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="dead.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="&gt;&gt;wary.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 20</value>
+  </data>
+  <data name="grumble.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="dead.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>356, 219</value>
+  </data>
+  <data name="&gt;&gt;reluctant.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>256, 20</value>
+  </data>
+  <data name="stuck.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 75</value>
+  </data>
+  <data name="&gt;&gt;sleeping.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="grumble.Location" type="System.Drawing.Point, System.Drawing">
+    <value>219, 39</value>
+  </data>
+  <data name="btCopy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>295, 170</value>
+  </data>
+  <data name="lbEmojiText.Text" xml:space="preserve">
+    <value>Woo-hoo</value>
+  </data>
+  <data name="wonder.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;dead.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;surrender.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;roundedPanel1.Type" xml:space="preserve">
+    <value>Diccon.RoundedPanel, Diccon, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;shocked.Name" xml:space="preserve">
+    <value>shocked</value>
+  </data>
+  <data name="&gt;&gt;wonder.Name" xml:space="preserve">
+    <value>wonder</value>
+  </data>
+  <data name="lbEmojiText.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="shame.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="lbEmojiText.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbEmojiText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 178</value>
+  </data>
+  <data name="cry.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="laugh.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;laugh.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="doubtful.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="shame.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;lbEmojiText.Type" xml:space="preserve">
+    <value>Diccon.RoundedLabel, Diccon, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;roundedPanel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;doubtful.Name" xml:space="preserve">
+    <value>doubtful</value>
+  </data>
+  <data name="roundedPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>356, 219</value>
+  </data>
+  <data name="ridiculous.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="lbEmojiText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 30</value>
+  </data>
+  <data name="&gt;&gt;cry.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grumble.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="btCopy.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>emoji</value>
+  </data>
+  <data name="&gt;&gt;furious.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="wary.TabIndex" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
+  <data name="stuck.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="stuck.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="&gt;&gt;blind.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;wary.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="lbEmojiText.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 5, 7, 5</value>
+  </data>
+  <data name="&gt;&gt;sleeping.Name" xml:space="preserve">
+    <value>sleeping</value>
+  </data>
+  <data name="laugh.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="lbEmojiText.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="sleeping.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="&gt;&gt;stuck.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="prejudice.Location" type="System.Drawing.Point, System.Drawing">
+    <value>255, 39</value>
+  </data>
+  <data name="astonished.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="glued.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>roundedPanel1</value>
+  </data>
+  <data name="&gt;&gt;btCopy.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="reluctant.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="&gt;&gt;stuck.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="foolish.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="furious.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="&gt;&gt;blind.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;doubtful.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="foolish.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="&gt;&gt;btCopy.Type" xml:space="preserve">
+    <value>Diccon.RoundedLabel, Diccon, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;silly.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;shame.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="wary.Location" type="System.Drawing.Point, System.Drawing">
+    <value>291, 3</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>329, 115</value>
+  </data>
+  <data name="blind.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="&gt;&gt;shame.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="sleeping.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="blind.Location" type="System.Drawing.Point, System.Drawing">
+    <value>255, 3</value>
+  </data>
+  <data name="&gt;&gt;glued.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;ridiculous.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="ridiculous.Location" type="System.Drawing.Point, System.Drawing">
+    <value>39, 75</value>
+  </data>
+  <data name="&gt;&gt;blind.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="silly.Location" type="System.Drawing.Point, System.Drawing">
+    <value>75, 3</value>
+  </data>
+  <data name="&gt;&gt;furious.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="annoyed.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="&gt;&gt;ridiculous.Name" xml:space="preserve">
+    <value>ridiculous</value>
+  </data>
+  <data name="laugh.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="&gt;&gt;astonished.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="doubtful.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="reluctant.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;laugh.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="shame.Location" type="System.Drawing.Point, System.Drawing">
+    <value>39, 3</value>
+  </data>
+  <data name="&gt;&gt;prejudice.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="surrender.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="astonished.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="&gt;&gt;prejudice.Name" xml:space="preserve">
+    <value>prejudice</value>
+  </data>
+  <data name="&gt;&gt;silly.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="blind.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="stuck.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
+  </data>
+  <data name="&gt;&gt;annoyed.Name" xml:space="preserve">
+    <value>annoyed</value>
+  </data>
+  <data name="glued.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="&gt;&gt;blind.Name" xml:space="preserve">
+    <value>blind</value>
+  </data>
+  <data name="&gt;&gt;silly.Name" xml:space="preserve">
+    <value>silly</value>
+  </data>
+  <data name="surrender.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
+  </data>
+  <data name="dead.Location" type="System.Drawing.Point, System.Drawing">
+    <value>39, 39</value>
+  </data>
+  <data name="&gt;&gt;annoyed.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="furious.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="&gt;&gt;glued.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="surrender.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="ridiculous.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="&gt;&gt;furious.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="annoyed.Location" type="System.Drawing.Point, System.Drawing">
+    <value>219, 3</value>
+  </data>
+  <data name="silly.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;roundedPanel1.Name" xml:space="preserve">
+    <value>roundedPanel1</value>
+  </data>
+  <data name="prejudice.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="&gt;&gt;stuck.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="grumble.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="wonder.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Express your feeling in a faster way</value>
+  </data>
+  <data name="shocked.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="&gt;&gt;astonished.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="lbEmojiText.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="shocked.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="&gt;&gt;surrender.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="sleeping.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 3</value>
+  </data>
+  <data name="prejudice.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="&gt;&gt;furious.Name" xml:space="preserve">
+    <value>furious</value>
+  </data>
+  <data name="&gt;&gt;ridiculous.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;btCopy.Name" xml:space="preserve">
+    <value>btCopy</value>
+  </data>
+  <data name="&gt;&gt;ridiculous.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grumble.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btCopy.Parent" xml:space="preserve">
+    <value>roundedPanel1</value>
+  </data>
+  <data name="&gt;&gt;dead.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="glued.Location" type="System.Drawing.Point, System.Drawing">
+    <value>183, 39</value>
+  </data>
+  <data name="cry.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="roundedPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>52</value>
+  </data>
+  <data name="&gt;&gt;lbEmojiText.Name" xml:space="preserve">
+    <value>lbEmojiText</value>
+  </data>
+  <data name="wary.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="&gt;&gt;annoyed.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;wonder.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="silly.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="&gt;&gt;prejudice.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="ridiculous.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="&gt;&gt;reluctant.Name" xml:space="preserve">
+    <value>reluctant</value>
+  </data>
+  <data name="shocked.Location" type="System.Drawing.Point, System.Drawing">
+    <value>75, 75</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="roundedPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="prejudice.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="reluctant.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 75</value>
+  </data>
+  <data name="wonder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>147, 3</value>
+  </data>
+  <data name="surrender.Location" type="System.Drawing.Point, System.Drawing">
+    <value>291, 39</value>
+  </data>
+  <data name="wonder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="cry.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 39</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;roundedPanel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;surrender.Name" xml:space="preserve">
+    <value>surrender</value>
+  </data>
+  <data name="&gt;&gt;surrender.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>

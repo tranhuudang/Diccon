@@ -53,12 +53,12 @@ namespace Diccon.Pages
 
         private void btGlobal_MouseEnter(object sender, EventArgs e)
         {
-            dicconProp.PictureBox_MouseEnter(sender, e);
+            dicconProp.Control_MouseEnter(sender, e);
         }
 
         private void btGlobal_MouseLeave(object sender, EventArgs e)
         {
-            dicconProp.PictureBox_MouseLeave(sender, e);
+            dicconProp.Control_MouseLeave(sender, e);
         }
         private void btRecent_MouseEnter(object sender, EventArgs e)
         {

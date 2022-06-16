@@ -22,12 +22,9 @@ namespace Diccon.Pages
         private void btLogin_Click(object sender, EventArgs e)
         {
             string encryptPass = new SHA256Encrypt(tbPassword.Text.Trim()).Hash();
-            SqlConnection sqlConnection = new SqlConnection(dicconProp.connectionString);
-            string queryString= "Select * from dbo.DicconUser where Email='"+tbEmail.Text.Trim()+"' and Password='"+ encryptPass + "'";
-            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(queryString, sqlConnection);
-            DataTable dataTable = new DataTable();
-            sqlDataAdapter.Fill(dataTable);
-            sqlConnection.Close();
+            string queryString = "Select * from dbo.DicconUser where Email='" + tbEmail.Text.Trim() + "' and Password='" + encryptPass + "'";
+            SQLHandler sqlHandler = new SQLHandler();
+            DataTable dataTable = sqlHandler.Select(queryString);
             if (dataTable.Rows.Count >=1)
             {
                 //dataTable.Rows[0][0]-Id
@@ -61,18 +58,24 @@ namespace Diccon.Pages
             btLogin.BackColor = dicconProp.ColorA8;
             btLogOut.BackColor = dicconProp.ColorA8;
             btSave.BackColor = dicconProp.ColorA8;
-            btDeleteLocal.BackColor = dicconProp.ColorA8;
-            btDeleteOnline.BackColor = dicconProp.ColorA8;
+            btBack.BackColor = dicconProp.ColorA8;
+            btCreateNow.BackColor = dicconProp.ColorA8;
             roundedPanel1.BackColor = dicconProp.ColorA9;
             roundedPanel2.BackColor = dicconProp.ColorA9;
             roundedPanel3.BackColor = dicconProp.ColorA9;
             roundedPanel4.BackColor = dicconProp.ColorA9;
             roundedPanel5.BackColor = dicconProp.ColorA9;
+            roundedPanel6.BackColor = dicconProp.ColorA9;
+            roundedPanel7.BackColor = dicconProp.ColorA9;
+            roundedPanel8.BackColor = dicconProp.ColorA9;
             tbEmail.BackColor = dicconProp.ColorA9;
             tbPassword.BackColor = dicconProp.ColorA9;
             editEmail.BackColor = dicconProp.ColorA9;
             editPass_1.BackColor = dicconProp.ColorA9;
             editPass_2.BackColor = dicconProp.ColorA9;
+            createEmail.BackColor = dicconProp.ColorA9;
+            createPass_1.BackColor=dicconProp.ColorA9;
+            createPass_2.BackColor = dicconProp.ColorA9;
            
             if (Properties.Settings.Default["userID"].ToString() != "none")
             {
@@ -150,12 +153,52 @@ namespace Diccon.Pages
         private void btCreateNow_Click(object sender, EventArgs e)
         {
             string encryptPass = new SHA256Encrypt(createPass_1.Text.Trim()).Hash();
-            SqlConnection sqlConnection = new SqlConnection(dicconProp.connectionString);
-            sqlConnection.Open();
             string queryString = "Insert into dbo.DicconUser(Email, Password) values ('"+createEmail.Text+"','"+encryptPass+"')";
-            SqlCommand sqlCommand = new SqlCommand(queryString, sqlConnection);
-            sqlCommand.ExecuteNonQuery();
-            sqlConnection.Close();
+            SQLHandler sql = new SQLHandler();
+            sql.Insert(queryString);
+            // Close create form and open login form
+            this.Text = loginText.Text;
+            panelManage.Visible = false;
+            panelCreateAccount.Visible = false;
+            panelLogin.Visible = true;
+            panelLogin.Dock = DockStyle.Fill;
+            panelLogin.BringToFront();
+        }
+
+        private void btBack_Click(object sender, EventArgs e)
+        {
+            this.Text = loginText.Text;
+            panelManage.Visible = false;
+            panelCreateAccount.Visible = false;
+            panelLogin.Visible = true;
+            panelLogin.Dock = DockStyle.Fill;
+            panelLogin.BringToFront();
+        }
+
+        private void btCreateAccount_MouseEnter(object sender, EventArgs e)
+        {
+            dicconProp.Control_MouseEnter(sender, e);
+        }
+
+        private void btCreateAccount_MouseLeave(object sender, EventArgs e)
+        {
+            dicconProp.Control_MouseLeave(sender, e);
+        }
+
+        private void login_SizeChanged(object sender, EventArgs e)
+        {
+            this.Refresh();
+        }
+
+        private void btDeleteOnline_Click(object sender, EventArgs e)
+        {
+
+            if (MessageBox.Show("Do you want to delete your online data?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+                string updateQueryString = "UPDATE dbo.DicconUser  SET Resources = NULL, Timeline = NULL, QA = NULL, FreeAsk = NULL, PayAsk = NULL  Where Id=" + dicconProp.userID;
+                SQLHandler sql = new SQLHandler();
+                sql.Update(updateQueryString);
+            }
         }
     }
 }

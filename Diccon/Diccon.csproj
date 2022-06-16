@@ -265,6 +265,12 @@
     <Compile Include="Pages\settings.Designer.cs">
       <DependentUpon>settings.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="appFrame.vi-VN.resx">
+      <DependentUpon>appFrame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="appFrame.vi.resx">
+      <DependentUpon>appFrame.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\noteItems.resx">
       <DependentUpon>noteItems.cs</DependentUpon>
     </EmbeddedResource>
@@ -277,6 +283,15 @@
     <EmbeddedResource Include="appFrame.resx">
       <DependentUpon>appFrame.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pages\about.vi.resx">
+      <DependentUpon>about.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\dictionary.vi.resx">
+      <DependentUpon>dictionary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\donate.vi.resx">
+      <DependentUpon>donate.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pages\emoji.resx">
       <DependentUpon>emoji.cs</DependentUpon>
     </EmbeddedResource>
@@ -286,7 +301,13 @@
     <EmbeddedResource Include="Pages\donate.resx">
       <DependentUpon>donate.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pages\emoji.vi.resx">
+      <DependentUpon>emoji.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pages\login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\login.vi.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\notes.resx">
@@ -298,7 +319,13 @@
     <EmbeddedResource Include="Pages\timeline.resx">
       <DependentUpon>timeline.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pages\timeline.vi.resx">
+      <DependentUpon>timeline.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pages\yawa.resx">
+      <DependentUpon>yawa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\yawa.vi.resx">
       <DependentUpon>yawa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -315,6 +342,7 @@
       <DependentUpon>speechToText.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.manifest" />
+    <Compile Include="Classes\SQLHandler.cs" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

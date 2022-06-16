@@ -231,11 +231,11 @@ namespace Diccon
         }
         private void PictureBox_MouseEnter(object sender, EventArgs e)
         {
-            dicconProp.PictureBox_MouseEnter(sender, e);
+            dicconProp.Control_MouseEnter(sender, e);
         }
         private void PictureBox_MouseLeave(object sender, EventArgs e)
         {
-            dicconProp.PictureBox_MouseLeave(sender, e);
+            dicconProp.Control_MouseLeave(sender, e);
         }
         private void tbFind_Leave(object sender, EventArgs e)
         {
