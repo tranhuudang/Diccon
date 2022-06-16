@@ -39,6 +39,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_0B0E3AA0D072B6B46102DF24B91FA2CA"
+        "OwnerKey" = "8:_47DAF1F24D184872A1F8B518C93A1710"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_0C5BAA8FE6265C05AC5C870363290301"
         "OwnerKey" = "8:_47DAF1F24D184872A1F8B518C93A1710"
         "MsmSig" = "8:_UNDEFINED"
@@ -994,12 +1000,6 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_ED9DE966B942A0B644D7302D34B187A4"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_47DAF1F24D184872A1F8B518C93A1710"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -1091,6 +1091,12 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_341520906391584CC7CA064D7C8F39B5"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_0B0E3AA0D072B6B46102DF24B91FA2CA"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -1801,6 +1807,12 @@
         "OwnerKey" = "8:_8403CC9F40AA81A645B91527CFA1FF72"
         "MsmSig" = "8:_UNDEFINED"
         }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_ED9DE966B942A0B644D7302D34B187A4"
+        "MsmSig" = "8:_UNDEFINED"
+        }
     }
     "Configurations"
     {
@@ -1819,6 +1831,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
         "Release"
         {
@@ -1835,6 +1855,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -1971,6 +1999,37 @@
                     }
                 }
             "SourcePath" = "8:System.Threading.Overlapped.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_F98A2CC3884C4A5CAC2EE97EBFA5A0C7"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_0B0E3AA0D072B6B46102DF24B91FA2CA"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:QuoteBank, Version=1.0.7.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_0B0E3AA0D072B6B46102DF24B91FA2CA"
+                    {
+                    "Name" = "8:QuoteBank.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:QuoteBank.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_F98A2CC3884C4A5CAC2EE97EBFA5A0C7"
@@ -6125,15 +6184,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Diccon"
-        "ProductCode" = "8:{715D2360-E843-4E9A-9166-8F7209EFF375}"
-        "PackageCode" = "8:{6D495C45-460D-4181-AD8A-611EC4A5B39E}"
+        "ProductCode" = "8:{53EDB3C2-58B2-479D-9D94-4AAC63DE0A38}"
+        "PackageCode" = "8:{F467E684-8312-4ABD-81FA-96C40F2E098A}"
         "UpgradeCode" = "8:{C3EC954D-584A-4601-9060-9EB3A8F54986}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:5.0.1"
+        "ProductVersion" = "8:6.0.0"
         "Manufacturer" = "8:ZeroClub"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:https://www.zeroclub.one"
@@ -6675,7 +6734,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_47DAF1F24D184872A1F8B518C93A1710"
             {
-            "SourcePath" = "8:..\\Diccon\\obj\\x64\\Debug\\Diccon.exe"
+            "SourcePath" = "8:..\\Diccon\\obj\\Debug\\Diccon.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_F98A2CC3884C4A5CAC2EE97EBFA5A0C7"
