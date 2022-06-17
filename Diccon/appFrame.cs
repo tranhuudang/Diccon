@@ -423,15 +423,22 @@ namespace Diccon
 
         private void roundedLabel7_Click(object sender, EventArgs e)
         {
-            if (yawaForm != null)
+            if (Properties.Settings.Default["userID"].ToString() != "none")
             {
+                if (yawaForm != null)
+                {
 
-                openForm(yawaForm);
+                    openForm(yawaForm);
+                }
+                else
+                {
+                    yawaForm = new yawa();
+                    openForm(yawaForm);
+                }
             }
             else
             {
-                yawaForm = new yawa();
-                openForm(yawaForm);
+                MessageBox.Show(dicconProp.loginRequest);
             }
         }
 

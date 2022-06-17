@@ -60,6 +60,7 @@ namespace Diccon
         public static string githubIssuesPath = "https://github.com/tranhuudang/Diccon/issues";
         public static string enableFlashClipboard = Properties.Settings.Default["FlashClipboard"].ToString();
         public static string userID = Properties.Settings.Default["userID"].ToString();
+        public static string loginRequest = "You're not logged in yet. Please login or register a new account to use this function. ";
 
 
         /// <summary>

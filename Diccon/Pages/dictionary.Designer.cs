@@ -125,24 +125,24 @@
             // 
             // panelBottom
             // 
-            resources.ApplyResources(this.panelBottom, "panelBottom");
             this.panelBottom.Controls.Add(this.panelAdd);
             this.panelBottom.Controls.Add(this.panel1);
+            resources.ApplyResources(this.panelBottom, "panelBottom");
             this.panelBottom.Name = "panelBottom";
             // 
             // panelAdd
             // 
-            resources.ApplyResources(this.panelAdd, "panelAdd");
             this.panelAdd.Controls.Add(this.addEmoji);
             this.panelAdd.Controls.Add(this.addNote);
+            resources.ApplyResources(this.panelAdd, "panelAdd");
             this.panelAdd.Name = "panelAdd";
             // 
             // addEmoji
             // 
-            resources.ApplyResources(this.addEmoji, "addEmoji");
             this.addEmoji.BackColor = System.Drawing.Color.Silver;
             this.addEmoji.BorderColor = System.Drawing.Color.White;
             this.addEmoji.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.addEmoji, "addEmoji");
             this.addEmoji.Image = global::Diccon.Properties.Resources.emoji_36;
             this.addEmoji.Name = "addEmoji";
             this.addEmoji.Radius = 50;
@@ -153,10 +153,10 @@
             // 
             // addNote
             // 
-            resources.ApplyResources(this.addNote, "addNote");
             this.addNote.BackColor = System.Drawing.Color.Silver;
             this.addNote.BorderColor = System.Drawing.Color.White;
             this.addNote.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.addNote, "addNote");
             this.addNote.Image = global::Diccon.Properties.Resources.note_add_36;
             this.addNote.Name = "addNote";
             this.addNote.Radius = 50;
@@ -167,9 +167,9 @@
             // 
             // panel1
             // 
-            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Controls.Add(this.roundedPanel1);
             this.panel1.Controls.Add(this.buttonAdd);
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
             // roundedPanel1
@@ -247,9 +247,9 @@
             // 
             // buttonAdd
             // 
-            resources.ApplyResources(this.buttonAdd, "buttonAdd");
             this.buttonAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonAdd.Image = global::Diccon.Properties.Resources.add_circle_24;
+            resources.ApplyResources(this.buttonAdd, "buttonAdd");
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.TabStop = false;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
@@ -277,16 +277,16 @@
             // 
             // exampleAnswerPanel
             // 
-            resources.ApplyResources(this.exampleAnswerPanel, "exampleAnswerPanel");
             this.exampleAnswerPanel.Controls.Add(this.exampleAnswerColoredPanel);
+            resources.ApplyResources(this.exampleAnswerPanel, "exampleAnswerPanel");
             this.exampleAnswerPanel.Name = "exampleAnswerPanel";
             // 
             // exampleAnswerColoredPanel
             // 
-            resources.ApplyResources(this.exampleAnswerColoredPanel, "exampleAnswerColoredPanel");
             this.exampleAnswerColoredPanel.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.exampleAnswerColoredPanel.BorderColor = System.Drawing.Color.White;
             this.exampleAnswerColoredPanel.Controls.Add(this.exampleAnswerText);
+            resources.ApplyResources(this.exampleAnswerColoredPanel, "exampleAnswerColoredPanel");
             this.exampleAnswerColoredPanel.Name = "exampleAnswerColoredPanel";
             this.exampleAnswerColoredPanel.Radius = 20;
             this.exampleAnswerColoredPanel.Thickness = 5F;
@@ -317,8 +317,8 @@
             // 
             // issueLink
             // 
-            resources.ApplyResources(this.issueLink, "issueLink");
             this.issueLink.ActiveLinkColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.issueLink, "issueLink");
             this.issueLink.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.issueLink.Name = "issueLink";
             this.issueLink.TabStop = true;
@@ -365,8 +365,8 @@
             // 
             // exampleShortPanel
             // 
-            resources.ApplyResources(this.exampleShortPanel, "exampleShortPanel");
             this.exampleShortPanel.Controls.Add(this.exampleShortText);
+            resources.ApplyResources(this.exampleShortPanel, "exampleShortPanel");
             this.exampleShortPanel.Name = "exampleShortPanel";
             // 
             // exampleShortText
@@ -380,16 +380,16 @@
             // 
             // exampleAskLongPanel
             // 
-            resources.ApplyResources(this.exampleAskLongPanel, "exampleAskLongPanel");
             this.exampleAskLongPanel.Controls.Add(this.exampleAskLongColoredPanel);
+            resources.ApplyResources(this.exampleAskLongPanel, "exampleAskLongPanel");
             this.exampleAskLongPanel.Name = "exampleAskLongPanel";
             // 
             // exampleAskLongColoredPanel
             // 
-            resources.ApplyResources(this.exampleAskLongColoredPanel, "exampleAskLongColoredPanel");
             this.exampleAskLongColoredPanel.BackColor = System.Drawing.Color.LightGray;
             this.exampleAskLongColoredPanel.BorderColor = System.Drawing.Color.White;
             this.exampleAskLongColoredPanel.Controls.Add(this.exampleAskLongText);
+            resources.ApplyResources(this.exampleAskLongColoredPanel, "exampleAskLongColoredPanel");
             this.exampleAskLongColoredPanel.Name = "exampleAskLongColoredPanel";
             this.exampleAskLongColoredPanel.Radius = 20;
             this.exampleAskLongColoredPanel.Thickness = 5F;
@@ -401,14 +401,14 @@
             // 
             // examplePlayPanel
             // 
-            resources.ApplyResources(this.examplePlayPanel, "examplePlayPanel");
             this.examplePlayPanel.Controls.Add(this.examplePlayAlignPanel);
+            resources.ApplyResources(this.examplePlayPanel, "examplePlayPanel");
             this.examplePlayPanel.Name = "examplePlayPanel";
             // 
             // examplePlayAlignPanel
             // 
-            resources.ApplyResources(this.examplePlayAlignPanel, "examplePlayAlignPanel");
             this.examplePlayAlignPanel.Controls.Add(this.examplePlayColoredPanel);
+            resources.ApplyResources(this.examplePlayAlignPanel, "examplePlayAlignPanel");
             this.examplePlayAlignPanel.Name = "examplePlayAlignPanel";
             // 
             // examplePlayColoredPanel
@@ -429,20 +429,19 @@
             // 
             // examplePlayButton
             // 
-            resources.ApplyResources(this.examplePlayButton, "examplePlayButton");
             this.examplePlayButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.examplePlayButton, "examplePlayButton");
             this.examplePlayButton.Name = "examplePlayButton";
             this.examplePlayButton.TabStop = false;
             // 
             // exampleNotePanel
             // 
-            resources.ApplyResources(this.exampleNotePanel, "exampleNotePanel");
             this.exampleNotePanel.Controls.Add(this.exampleNoteColoredPanel);
+            resources.ApplyResources(this.exampleNotePanel, "exampleNotePanel");
             this.exampleNotePanel.Name = "exampleNotePanel";
             // 
             // exampleNoteColoredPanel
             // 
-            resources.ApplyResources(this.exampleNoteColoredPanel, "exampleNoteColoredPanel");
             this.exampleNoteColoredPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.exampleNoteColoredPanel.BorderColor = System.Drawing.Color.White;
             this.exampleNoteColoredPanel.Controls.Add(this.exampleNoteTitle);
@@ -450,15 +449,16 @@
             this.exampleNoteColoredPanel.Controls.Add(this.exampleNoteDelete);
             this.exampleNoteColoredPanel.Controls.Add(this.exampleNoteSave);
             this.exampleNoteColoredPanel.Controls.Add(this.exampleNoteRichTextBox);
+            resources.ApplyResources(this.exampleNoteColoredPanel, "exampleNoteColoredPanel");
             this.exampleNoteColoredPanel.Name = "exampleNoteColoredPanel";
             this.exampleNoteColoredPanel.Radius = 20;
             this.exampleNoteColoredPanel.Thickness = 5F;
             // 
             // exampleNoteTitle
             // 
-            resources.ApplyResources(this.exampleNoteTitle, "exampleNoteTitle");
             this.exampleNoteTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.exampleNoteTitle.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.exampleNoteTitle, "exampleNoteTitle");
             this.exampleNoteTitle.ForeColor = System.Drawing.Color.DimGray;
             this.exampleNoteTitle.Name = "exampleNoteTitle";
             // 
@@ -472,17 +472,17 @@
             // 
             // exampleNoteDelete
             // 
-            resources.ApplyResources(this.exampleNoteDelete, "exampleNoteDelete");
             this.exampleNoteDelete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.exampleNoteDelete.Image = global::Diccon.Properties.Resources.delete_24;
+            resources.ApplyResources(this.exampleNoteDelete, "exampleNoteDelete");
             this.exampleNoteDelete.Name = "exampleNoteDelete";
             this.exampleNoteDelete.TabStop = false;
             // 
             // exampleNoteSave
             // 
-            resources.ApplyResources(this.exampleNoteSave, "exampleNoteSave");
             this.exampleNoteSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.exampleNoteSave.Image = global::Diccon.Properties.Resources.save_24;
+            resources.ApplyResources(this.exampleNoteSave, "exampleNoteSave");
             this.exampleNoteSave.Name = "exampleNoteSave";
             this.exampleNoteSave.TabStop = false;
             // 
@@ -495,36 +495,36 @@
             // 
             // examplePicturePanel
             // 
-            resources.ApplyResources(this.examplePicturePanel, "examplePicturePanel");
             this.examplePicturePanel.Controls.Add(this.examplePixabayLogo);
             this.examplePicturePanel.Controls.Add(this.exampleColoredPicturePanel);
+            resources.ApplyResources(this.examplePicturePanel, "examplePicturePanel");
             this.examplePicturePanel.Name = "examplePicturePanel";
             // 
             // examplePixabayLogo
             // 
-            resources.ApplyResources(this.examplePixabayLogo, "examplePixabayLogo");
             this.examplePixabayLogo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.examplePixabayLogo.Image = global::Diccon.Properties.Resources.pixabay_logo;
+            resources.ApplyResources(this.examplePixabayLogo, "examplePixabayLogo");
             this.examplePixabayLogo.Name = "examplePixabayLogo";
             this.examplePixabayLogo.TabStop = false;
             this.examplePixabayLogo.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // exampleColoredPicturePanel
             // 
-            resources.ApplyResources(this.exampleColoredPicturePanel, "exampleColoredPicturePanel");
             this.exampleColoredPicturePanel.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.exampleColoredPicturePanel.BorderColor = System.Drawing.Color.White;
             this.exampleColoredPicturePanel.Controls.Add(this.examplePictureBox);
+            resources.ApplyResources(this.exampleColoredPicturePanel, "exampleColoredPicturePanel");
             this.exampleColoredPicturePanel.Name = "exampleColoredPicturePanel";
             this.exampleColoredPicturePanel.Radius = 20;
             this.exampleColoredPicturePanel.Thickness = 5F;
             // 
             // examplePictureBox
             // 
-            resources.ApplyResources(this.examplePictureBox, "examplePictureBox");
             this.examplePictureBox.BackColor = System.Drawing.Color.White;
             this.examplePictureBox.BorderColor = System.Drawing.Color.MediumSlateBlue;
             this.examplePictureBox.ErrorImage = global::Diccon.Properties.Resources.doubtful;
+            resources.ApplyResources(this.examplePictureBox, "examplePictureBox");
             this.examplePictureBox.InitialImage = global::Diccon.Properties.Resources.reluctant;
             this.examplePictureBox.Name = "examplePictureBox";
             this.examplePictureBox.Radius = 20;
@@ -608,33 +608,33 @@
             // 
             // contextMenuNote
             // 
-            resources.ApplyResources(this.contextMenuNote, "contextMenuNote");
             this.contextMenuNote.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.saveToolStripMenuItem,
             this.addToFavouriteToolStripMenuItem,
             this.e,
             this.closeToolStripMenuItem});
             this.contextMenuNote.Name = "contextMenuNote";
+            resources.ApplyResources(this.contextMenuNote, "contextMenuNote");
             // 
             // saveToolStripMenuItem
             // 
-            resources.ApplyResources(this.saveToolStripMenuItem, "saveToolStripMenuItem");
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
+            resources.ApplyResources(this.saveToolStripMenuItem, "saveToolStripMenuItem");
             // 
             // addToFavouriteToolStripMenuItem
             // 
-            resources.ApplyResources(this.addToFavouriteToolStripMenuItem, "addToFavouriteToolStripMenuItem");
             this.addToFavouriteToolStripMenuItem.Name = "addToFavouriteToolStripMenuItem";
+            resources.ApplyResources(this.addToFavouriteToolStripMenuItem, "addToFavouriteToolStripMenuItem");
             // 
             // e
             // 
-            resources.ApplyResources(this.e, "e");
             this.e.Name = "e";
+            resources.ApplyResources(this.e, "e");
             // 
             // closeToolStripMenuItem
             // 
-            resources.ApplyResources(this.closeToolStripMenuItem, "closeToolStripMenuItem");
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
+            resources.ApplyResources(this.closeToolStripMenuItem, "closeToolStripMenuItem");
             this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
             // 
             // dictionary
