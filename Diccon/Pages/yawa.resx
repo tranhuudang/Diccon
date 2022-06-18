@@ -121,6 +121,10 @@
   <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 28</value>
   </data>
@@ -152,6 +156,9 @@
   <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
+  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 8</value>
   </data>
@@ -179,7 +186,6 @@
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btInstantAsk.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
   </data>
@@ -188,6 +194,9 @@
   </data>
   <data name="btInstantAsk.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="btInstantAsk.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="btInstantAsk.Location" type="System.Drawing.Point, System.Drawing">
     <value>83, 338</value>
@@ -211,7 +220,7 @@
     <value>btInstantAsk</value>
   </data>
   <data name="&gt;&gt;btInstantAsk.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=6.0.1.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btInstantAsk.Parent" xml:space="preserve">
     <value>panelAsk</value>
@@ -259,13 +268,16 @@
     <value>panelOfRichQuestion_1</value>
   </data>
   <data name="&gt;&gt;panelOfRichQuestion_1.Type" xml:space="preserve">
-    <value>Diccon.RoundedPanel, Diccon, Version=6.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedPanel, Diccon, Version=6.0.1.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;panelOfRichQuestion_1.Parent" xml:space="preserve">
     <value>panelAsk</value>
   </data>
   <data name="&gt;&gt;panelOfRichQuestion_1.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="notice.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="notice.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 372</value>
@@ -296,6 +308,9 @@
   </data>
   <data name="countWord.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="countWord.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="countWord.Location" type="System.Drawing.Point, System.Drawing">
     <value>272, 338</value>
@@ -333,6 +348,9 @@
   <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 100</value>
   </data>
@@ -366,6 +384,9 @@
   <data name="btAsk.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
+  <data name="btAsk.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="btAsk.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 338</value>
   </data>
@@ -388,7 +409,7 @@
     <value>btAsk</value>
   </data>
   <data name="&gt;&gt;btAsk.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=6.0.1.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btAsk.Parent" xml:space="preserve">
     <value>panelAsk</value>
@@ -496,7 +517,7 @@
     <value>yourPanel</value>
   </data>
   <data name="&gt;&gt;yourPanel.Type" xml:space="preserve">
-    <value>Diccon.RoundedPanel, Diccon, Version=6.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedPanel, Diccon, Version=6.0.1.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;yourPanel.Parent" xml:space="preserve">
     <value>flowYours</value>
@@ -604,7 +625,7 @@
     <value>exampleAnswerColoredPanel</value>
   </data>
   <data name="&gt;&gt;exampleAnswerColoredPanel.Type" xml:space="preserve">
-    <value>Diccon.RoundedPanel, Diccon, Version=6.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedPanel, Diccon, Version=6.0.1.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;exampleAnswerColoredPanel.Parent" xml:space="preserve">
     <value>exampleAnswerPanel</value>
@@ -688,7 +709,7 @@
     <value>exampleAskLongColoredPanel</value>
   </data>
   <data name="&gt;&gt;exampleAskLongColoredPanel.Type" xml:space="preserve">
-    <value>Diccon.RoundedPanel, Diccon, Version=6.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedPanel, Diccon, Version=6.0.1.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;exampleAskLongColoredPanel.Parent" xml:space="preserve">
     <value>exampleAskLongPanel</value>
@@ -886,7 +907,7 @@
     <value>roundedPanelChatBox</value>
   </data>
   <data name="&gt;&gt;roundedPanelChatBox.Type" xml:space="preserve">
-    <value>Diccon.RoundedPanel, Diccon, Version=6.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedPanel, Diccon, Version=6.0.1.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;roundedPanelChatBox.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -947,6 +968,9 @@
   </data>
   <data name="globalExampleDatetime.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="globalExampleDatetime.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="globalExampleDatetime.Location" type="System.Drawing.Point, System.Drawing">
     <value>14, 82</value>
@@ -1015,7 +1039,7 @@
     <value>globalExamplePanel</value>
   </data>
   <data name="&gt;&gt;globalExamplePanel.Type" xml:space="preserve">
-    <value>Diccon.RoundedPanel, Diccon, Version=6.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedPanel, Diccon, Version=6.0.1.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;globalExamplePanel.Parent" xml:space="preserve">
     <value>globalFlowPanel</value>
@@ -1071,6 +1095,9 @@
   <data name="btAskTop.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="btAskTop.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="btAskTop.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
   </data>
@@ -1096,7 +1123,7 @@
     <value>btAskTop</value>
   </data>
   <data name="&gt;&gt;btAskTop.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=6.0.1.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btAskTop.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
@@ -1106,6 +1133,9 @@
   </data>
   <data name="btPeopleTop.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="btPeopleTop.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="btPeopleTop.Location" type="System.Drawing.Point, System.Drawing">
     <value>65, 0</value>
@@ -1129,7 +1159,7 @@
     <value>btPeopleTop</value>
   </data>
   <data name="&gt;&gt;btPeopleTop.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=6.0.1.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btPeopleTop.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
@@ -1165,7 +1195,7 @@
     <value>btYoursTop</value>
   </data>
   <data name="&gt;&gt;btYoursTop.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=6.0.1.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btYoursTop.Parent" xml:space="preserve">
     <value>flowLayoutPanel1</value>
@@ -1197,31 +1227,25 @@
   <data name="&gt;&gt;flowLayoutPanel1.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="btReload.Location" type="System.Drawing.Point, System.Drawing">
-    <value>315, 3</value>
+  <data name="panelMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 38</value>
   </data>
-  <data name="btReload.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
+  <data name="panelMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>355, 513</value>
   </data>
-  <data name="btReload.Size" type="System.Drawing.Size, System.Drawing">
-    <value>28, 28</value>
+  <data name="panelMain.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
   </data>
-  <data name="btReload.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>CenterImage</value>
+  <data name="&gt;&gt;panelMain.Name" xml:space="preserve">
+    <value>panelMain</value>
   </data>
-  <data name="btReload.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
+  <data name="&gt;&gt;panelMain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btReload.Name" xml:space="preserve">
-    <value>btReload</value>
+  <data name="&gt;&gt;panelMain.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="&gt;&gt;btReload.Type" xml:space="preserve">
-    <value>Diccon.RoundedIcon, Diccon, Version=6.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;btReload.Parent" xml:space="preserve">
-    <value>panelTop</value>
-  </data>
-  <data name="&gt;&gt;btReload.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;panelMain.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="btReloadYours.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
@@ -1246,7 +1270,7 @@
     <value>btReloadYours</value>
   </data>
   <data name="&gt;&gt;btReloadYours.Type" xml:space="preserve">
-    <value>Diccon.RoundedIcon, Diccon, Version=6.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedIcon, Diccon, Version=6.0.1.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btReloadYours.Parent" xml:space="preserve">
     <value>panelTop</value>
@@ -1254,25 +1278,34 @@
   <data name="&gt;&gt;btReloadYours.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="panelMain.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 38</value>
+  <data name="btReload.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="panelMain.Size" type="System.Drawing.Size, System.Drawing">
-    <value>355, 513</value>
+  <data name="btReload.Location" type="System.Drawing.Point, System.Drawing">
+    <value>315, 3</value>
   </data>
-  <data name="panelMain.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
+  <data name="btReload.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
-  <data name="&gt;&gt;panelMain.Name" xml:space="preserve">
-    <value>panelMain</value>
+  <data name="btReload.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 28</value>
   </data>
-  <data name="&gt;&gt;panelMain.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="btReload.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>CenterImage</value>
   </data>
-  <data name="&gt;&gt;panelMain.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="btReload.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
   </data>
-  <data name="&gt;&gt;panelMain.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btReload.Name" xml:space="preserve">
+    <value>btReload</value>
+  </data>
+  <data name="&gt;&gt;btReload.Type" xml:space="preserve">
+    <value>Diccon.RoundedIcon, Diccon, Version=6.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btReload.Parent" xml:space="preserve">
+    <value>panelTop</value>
+  </data>
+  <data name="&gt;&gt;btReload.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="panelTop.Location" type="System.Drawing.Point, System.Drawing">

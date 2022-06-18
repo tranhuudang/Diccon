@@ -35,7 +35,7 @@ namespace Diccon.Pages
             richQuestion.BackColor = dicconProp.ColorA9;
             globalExamplePanel.BackColor = dicconProp.ColorA9;
             panelOfRichQuestion_1.BackColor = dicconProp.ColorA9;
-            exampleAnswerColoredPanel.BackColor= dicconProp.ColorA3;
+            exampleAnswerColoredPanel.BackColor = dicconProp.ColorA3;
             answer_textBox.BackColor = dicconProp.ColorA9;
             roundedPanelChatBox.BackColor = dicconProp.ColorA9;
             /// load Global first 
@@ -110,7 +110,7 @@ namespace Diccon.Pages
 
         private void btAsk_Click(object sender, EventArgs e)
         {
-            
+
             SQLHandler sqlHandler = new SQLHandler();
             sqlHandler.Insert("Insert into dbo.DicconAsking(Question, AskUserId, AskDate) values(N'" + richQuestion.Text + "','" + dicconProp.userID + "','" + DateTime.Today + "')");
             richQuestion.Text = "";
@@ -122,14 +122,14 @@ namespace Diccon.Pages
         {
             globalFlowPanel.Controls.Clear();
             DataTable dataTable = sqlHandler.Select("Select Question, Id, AskDate from dbo.DicconAsking");
-            for (int index = dataTable.Rows.Count-1; index >= 0 ; index--)
+            for (int index = dataTable.Rows.Count - 1; index >= 0; index--)
             {
                 RoundedPanel roundedPanel = new RoundedPanel();
                 roundedPanel.Size = globalExamplePanel.Size;
                 roundedPanel.BackColor = globalExamplePanel.BackColor;
                 Label label = new Label();
                 label.Text = dataTable.Rows[index][0].ToString();
-                label.Tag= dataTable.Rows[index][1].ToString();
+                label.Tag = dataTable.Rows[index][1].ToString();
                 label.ForeColor = globalExamplePanel.ForeColor;
                 label.Size = globalExampleAsk.Size;
                 label.Cursor = Cursors.Hand;
@@ -138,45 +138,45 @@ namespace Diccon.Pages
                 label.Location = globalExampleAsk.Location;
                 globalFlowPanel.Controls.Add(roundedPanel);
             }
-            
+
         }
-        List<string> listLoadedMessage = new List<string>();
+        string listLoadedMessage ;
         private void GoToAnswer_Click(object sender, EventArgs e)
         {
             TopControlSwitch("answerBox");
             openPanel(panelAnswer);
             ///
             /// Sample Answer from SQL: #đây là câu trả lời#?Đây là câu hỏi#?đây là câu hỏi kế#đây là câu trả lời
-            DataTable dataTable =sqlHandler.Select("Select Answer, AskUserId from dbo.DicconAsking where Id="+(sender as Label).Tag.ToString());
+            DataTable dataTable = sqlHandler.Select("Select Answer, AskUserId from dbo.DicconAsking where Id=" + (sender as Label).Tag.ToString());
             if (currentAnswerString != dataTable.Rows[0][0].ToString())
             {
                 // clear flowchatbox for a new bunch of conversasion
                 flowChatBox.Controls.Clear();
-                currentAnswerString=dataTable.Rows[0][0].ToString();
+                currentAnswerString = dataTable.Rows[0][0].ToString();
                 string[] strings = dataTable.Rows[0][0].ToString().Split('#');
                 currentQuestionUserID = dataTable.Rows[0][1].ToString();
                 currentQuestionID = (sender as Label).Tag.ToString();
 
                 foreach (var item in strings)
                 {
-                    listLoadedMessage.Add(item);
-                    if(item.StartsWith("?"))
+                    listLoadedMessage+=item;
+                    if (item.StartsWith("?"))
                     {
 
                         user.userLongMessage(item.Substring(1), exampleAskLongText, exampleAskLongColoredPanel, exampleAskLongPanel, flowChatBox);
                     }
-                    else if(item !="")
+                    else if (item != "")
                     {
                         bot.botAnswerLongMessage(item, exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
                     }
                 }
             }
         }
-        
-        
+
+
         private void ReloadInChat()
         {
-            
+
             /// Sample Answer from SQL: #đây là câu trả lời#?Đây là câu hỏi#?đây là câu hỏi kế#đây là câu trả lời
             DataTable dataTable = sqlHandler.Select("Select Answer from dbo.DicconAsking where Id=" + currentQuestionID);
             if (currentAnswerString != dataTable.Rows[0][0].ToString())
@@ -188,15 +188,17 @@ namespace Diccon.Pages
                 foreach (var item in strings)
                 {
                     if(!listLoadedMessage.Contains(item))
-                    if (item.StartsWith("?"))
-                    {
-                        user.userLongMessage(item.Substring(1), exampleAskLongText, exampleAskLongColoredPanel, exampleAskLongPanel, flowChatBox);
-                    }
-                    else if (item != "")
-                    {
-                        bot.botAnswerLongMessage(item, exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
-                    }
+                        if (item.StartsWith("?"))
+                        {
+                            user.userLongMessage(item.Substring(1), exampleAskLongText, exampleAskLongColoredPanel, exampleAskLongPanel, flowChatBox);
+                        }
+                        else if ((item != "")&&(!item.StartsWith("?")))
+                        {
+                            bot.botAnswerLongMessage(item, exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
+                            
+                        }
                 }
+
             }
         }
 
@@ -231,7 +233,8 @@ namespace Diccon.Pages
 
         private void btAskTop_Click(object sender, EventArgs e)
         {
-            
+            listLoadedMessage = "";
+
             TopControlSwitch("btAskTop");
             openPanel(panelAsk);
             btReload_Click(null, null);
@@ -240,6 +243,9 @@ namespace Diccon.Pages
 
         private void btPeopleTop_Click(object sender, EventArgs e)
         {
+            listLoadedMessage = "";
+
+
             TopControlSwitch("btPeopleTop");
             openPanel(panelGlobal);
             btReload_Click(null, null);
@@ -248,6 +254,9 @@ namespace Diccon.Pages
 
         private void btYoursTop_Click(object sender, EventArgs e)
         {
+            listLoadedMessage = "";
+
+
             TopControlSwitch("btYoursTop");
             openPanel(panelYours);
             btReloadYours_Click(null, null);
@@ -274,16 +283,16 @@ namespace Diccon.Pages
 
             if (e.KeyCode == Keys.Enter)
             {
-               
+
                 if (dicconProp.userID == currentQuestionUserID)
                 {
-                    user.userLongMessage(answer_textBox.Text, exampleAskLongText, exampleAskLongColoredPanel, exampleAskLongPanel, flowChatBox);
-                    sqlHandler.Update("Update dbo.DicconAsking Set Answer=N'" + currentAnswerString + "#?" + answer_textBox.Text+"' where Id="+currentQuestionID);
-                    
+                    //user.userLongMessage(answer_textBox.Text, exampleAskLongText, exampleAskLongColoredPanel, exampleAskLongPanel, flowChatBox);
+                    sqlHandler.Update("Update dbo.DicconAsking Set Answer=N'" + currentAnswerString + "#?" + answer_textBox.Text + "' where Id=" + currentQuestionID);
+
                 }
                 else
                 {
-                    bot.botAnswerLongMessage(answer_textBox.Text, exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
+                    //bot.botAnswerLongMessage(answer_textBox.Text, exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
                     sqlHandler.Update("Update dbo.DicconAsking Set Answer=N'" + currentAnswerString + "#" + answer_textBox.Text + "' where Id=" + currentQuestionID);
 
                 }
@@ -294,7 +303,7 @@ namespace Diccon.Pages
 
         private void answer_textBox_TextChanged(object sender, EventArgs e)
         {
-            if(answer_textBox.Text.Length > 0)
+            if (answer_textBox.Text.Length > 0)
             {
                 answer_TextHolder.Visible = false;
             }
@@ -313,7 +322,7 @@ namespace Diccon.Pages
         {
             flowYours.Controls.Clear();
             DataTable yourDatatable = sqlHandler.Select("Select Question, Id from dbo.DicconAsking where AskUserId=" + dicconProp.userID);
-            for (int index = yourDatatable.Rows.Count-1; index >= 0; index--)
+            for (int index = yourDatatable.Rows.Count - 1; index >= 0; index--)
             {
                 RoundedPanel roundedPanel = new RoundedPanel();
                 roundedPanel.Size = yourPanel.Size;
@@ -338,6 +347,26 @@ namespace Diccon.Pages
 
         private void flowChatBox_VisibleChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void newMessageChecker_Tick(object sender, EventArgs e)
+        {
+            //ReloadInChat();
+        }
+
+        private void flowYours_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void flowYours_Enter(object sender, EventArgs e)
+        {
+        }
+
+        private void flowYours_ControlAdded(object sender, ControlEventArgs e)
+        {
+
 
         }
     }
