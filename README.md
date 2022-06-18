@@ -1,16 +1,16 @@
 <p align="center">
-  <img width="128" align="center" src="https://github.com/tranhuudang/Diccon/raw/master/Diccon/Resources/ninja_128.png?raw=true">
+  <img width="128" align="center" src="https://github.com/tranhuudang/Diccon/raw/master/Diccon/Resources/diccon_128.png?raw=true">
 </p>
 <h1 align="center">
   Diccon
 </h1>
 <p align="center">
-  <b>Từ điển cũng phải thú vị chứ!</b>
+  <b>Từ điển tương tác</b>
 </p>
 
 ## Giới thiệu
 
-* Diccon là một dự án nhỏ với mong muốn tạo ra một ứng dụng tra cứu từ điển đẹp đẽ và dễ sử dụng 🏆🥇 
+* Diccon là một dự án nhỏ với mong muốn tạo ra một ứng dụng tra cứu từ điển đẹp đẽ và có được sự kết nối giữa những người học với nhau.🏆🥇 
 
 * Mình rất vui khi có thể cùng mọi người chung tay xây dựng dự án này, vì bản thân mình cũng là một người học tiếng Anh, một vài tính năng trong ứng dụng cũng là những gì mình thấy nó thực sự cần thiết trong việc học của mình. Mang nó vào bên trong ứng dụng, mình mong rằng nó giúp ích được cho các bạn, đặc biệt là những bạn yêu thích tiếng Anh hay đang nỗ lực để cải thiện vốn ngôn từ của mình.
 
@@ -35,4 +35,4 @@
 
 ## Liên hệ
 
-* 📨 Mọi người có tin nhắn góp ý riêng hoặc điều gì muốn chia sẻ có thể gửi thư qua địa chỉ email [Dang Tran Huu](mailto:tranhuudang127@gmail.com) hoặc Zalo: 084390394 🎊.
+* 📨 Mọi người có tin nhắn góp ý hoặc điều gì muốn chia sẻ có thể gửi thư qua địa chỉ email [Dang Tran Huu](mailto:tranhuudang127@gmail.com) hoặc Zalo: 084390394 🎊.
