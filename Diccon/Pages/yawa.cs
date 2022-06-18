@@ -143,6 +143,8 @@ namespace Diccon.Pages
         string listLoadedMessage ;
         private void GoToAnswer_Click(object sender, EventArgs e)
         {
+            newMessageChecker.Interval = 5000;
+            newMessageChecker.Enabled = true;
             TopControlSwitch("answerBox");
             openPanel(panelAnswer);
             ///
@@ -176,30 +178,37 @@ namespace Diccon.Pages
 
         private void ReloadInChat()
         {
-
-            /// Sample Answer from SQL: #đây là câu trả lời#?Đây là câu hỏi#?đây là câu hỏi kế#đây là câu trả lời
-            DataTable dataTable = sqlHandler.Select("Select Answer from dbo.DicconAsking where Id=" + currentQuestionID);
-            if (currentAnswerString != dataTable.Rows[0][0].ToString())
+            try
             {
-                // clear flowchatbox for a new bunch of conversasion
-                //flowChatBox.Controls.Clear();
-                currentAnswerString = dataTable.Rows[0][0].ToString();
-                string[] strings = dataTable.Rows[0][0].ToString().Split('#');
-                foreach (var item in strings)
+                /// Sample Answer from SQL: #đây là câu trả lời#?Đây là câu hỏi#?đây là câu hỏi kế#đây là câu trả lời
+                DataTable dataTable = sqlHandler.Select("Select Answer from dbo.DicconAsking where Id=" + currentQuestionID);
+                if (currentAnswerString != dataTable.Rows[0][0].ToString())
                 {
-                    if(!listLoadedMessage.Contains(item))
-                        if (item.StartsWith("?"))
-                        {
-                            user.userLongMessage(item.Substring(1), exampleAskLongText, exampleAskLongColoredPanel, exampleAskLongPanel, flowChatBox);
-                        }
-                        else if ((item != "")&&(!item.StartsWith("?")))
-                        {
-                            bot.botAnswerLongMessage(item, exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
-                            
-                        }
+                    // clear flowchatbox for a new bunch of conversasion
+                    //flowChatBox.Controls.Clear();
+                    currentAnswerString = dataTable.Rows[0][0].ToString();
+                    string[] strings = dataTable.Rows[0][0].ToString().Split('#');
+                    foreach (var item in strings)
+                    {
+                        if (!listLoadedMessage.Contains(item))
+                            if (item.StartsWith("?"))
+                            {
+                                user.userLongMessage(item.Substring(1), exampleAskLongText, exampleAskLongColoredPanel, exampleAskLongPanel, flowChatBox);
+                            }
+                            else if ((item != "") && (!item.StartsWith("?")))
+                            {
+                                bot.botAnswerLongMessage(item, exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
+
+                            }
+                    }
+
                 }
+            }
+            catch (Exception)
+            {
 
             }
+            
         }
 
         private void TopControlSwitch(string controlName)
@@ -352,7 +361,7 @@ namespace Diccon.Pages
 
         private void newMessageChecker_Tick(object sender, EventArgs e)
         {
-            //ReloadInChat();
+            ReloadInChat();
         }
 
         private void flowYours_Paint(object sender, PaintEventArgs e)
