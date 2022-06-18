@@ -59,7 +59,6 @@
             this.answer_textBox = new System.Windows.Forms.TextBox();
             this.textFromClipboard = new System.Windows.Forms.PictureBox();
             this.btSend = new FontAwesome.Sharp.IconPictureBox();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panelGlobal = new System.Windows.Forms.Panel();
             this.globalFlowPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.globalExamplePanel = new Diccon.RoundedPanel();
@@ -73,6 +72,7 @@
             this.btReloadYours = new Diccon.RoundedIcon();
             this.panelMain = new System.Windows.Forms.Panel();
             this.panelTop = new System.Windows.Forms.Panel();
+            this.newMessageChecker = new System.Windows.Forms.Timer(this.components);
             this.panelAsk.SuspendLayout();
             this.panelOfRichQuestion_1.SuspendLayout();
             this.panelYours.SuspendLayout();
@@ -232,6 +232,8 @@
             this.flowChatBox.Controls.Add(this.exampleAnswerPanel);
             this.flowChatBox.Controls.Add(this.exampleAskLongPanel);
             this.flowChatBox.Name = "flowChatBox";
+            this.flowChatBox.VisibleChanged += new System.EventHandler(this.flowChatBox_VisibleChanged);
+            this.flowChatBox.Paint += new System.Windows.Forms.PaintEventHandler(this.flowChatBox_Paint);
             // 
             // exampleAnswerPanel
             // 
@@ -473,6 +475,10 @@
             resources.ApplyResources(this.panelTop, "panelTop");
             this.panelTop.Name = "panelTop";
             // 
+            // newMessageChecker
+            // 
+            this.newMessageChecker.Interval = 3000;
+            // 
             // yawa
             // 
             resources.ApplyResources(this, "$this");
@@ -529,7 +535,6 @@
         private System.Windows.Forms.Panel panelAnswer;
         private System.Windows.Forms.Label notice;
         private System.Windows.Forms.Label countWord;
-        private System.Windows.Forms.Timer timer1;
         private RoundedPanel panelOfRichQuestion_1;
         private RoundedLabel btInstantAsk;
         private System.Windows.Forms.Label label5;
@@ -564,5 +569,6 @@
         private RoundedIcon btReloadYours;
         private System.Windows.Forms.Panel panelMain;
         private System.Windows.Forms.Panel panelTop;
+        private System.Windows.Forms.Timer newMessageChecker;
     }
 }

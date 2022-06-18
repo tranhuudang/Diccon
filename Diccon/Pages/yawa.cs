@@ -140,7 +140,7 @@ namespace Diccon.Pages
             }
             
         }
-
+        List<string> listLoadedMessage = new List<string>();
         private void GoToAnswer_Click(object sender, EventArgs e)
         {
             TopControlSwitch("answerBox");
@@ -159,8 +159,10 @@ namespace Diccon.Pages
 
                 foreach (var item in strings)
                 {
+                    listLoadedMessage.Add(item);
                     if(item.StartsWith("?"))
                     {
+
                         user.userLongMessage(item.Substring(1), exampleAskLongText, exampleAskLongColoredPanel, exampleAskLongPanel, flowChatBox);
                     }
                     else if(item !="")
@@ -170,22 +172,22 @@ namespace Diccon.Pages
                 }
             }
         }
-
+        
+        
         private void ReloadInChat()
         {
-            TopControlSwitch("answerBox");
-            openPanel(panelAnswer);
-            ///
+            
             /// Sample Answer from SQL: #đây là câu trả lời#?Đây là câu hỏi#?đây là câu hỏi kế#đây là câu trả lời
             DataTable dataTable = sqlHandler.Select("Select Answer from dbo.DicconAsking where Id=" + currentQuestionID);
             if (currentAnswerString != dataTable.Rows[0][0].ToString())
             {
                 // clear flowchatbox for a new bunch of conversasion
-                flowChatBox.Controls.Clear();
+                //flowChatBox.Controls.Clear();
                 currentAnswerString = dataTable.Rows[0][0].ToString();
                 string[] strings = dataTable.Rows[0][0].ToString().Split('#');
                 foreach (var item in strings)
                 {
+                    if(!listLoadedMessage.Contains(item))
                     if (item.StartsWith("?"))
                     {
                         user.userLongMessage(item.Substring(1), exampleAskLongText, exampleAskLongColoredPanel, exampleAskLongPanel, flowChatBox);
@@ -327,6 +329,16 @@ namespace Diccon.Pages
                 label.Location = yourLabel.Location;
                 flowYours.Controls.Add(roundedPanel);
             }
+        }
+
+        private void flowChatBox_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void flowChatBox_VisibleChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -39,6 +39,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_09F2B60C3CE0019EC102541847D0A9B9"
+        "OwnerKey" = "8:_47DAF1F24D184872A1F8B518C93A1710"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_0B0E3AA0D072B6B46102DF24B91FA2CA"
         "OwnerKey" = "8:_47DAF1F24D184872A1F8B518C93A1710"
         "MsmSig" = "8:_UNDEFINED"
@@ -945,6 +951,18 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_F6D45954DBB64A07C44A427E91A1A764"
+        "OwnerKey" = "8:_47DAF1F24D184872A1F8B518C93A1710"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_F6D45954DBB64A07C44A427E91A1A764"
+        "OwnerKey" = "8:_09F2B60C3CE0019EC102541847D0A9B9"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_F738F1CA422045E42EE0FC729C9F9C1E"
         "OwnerKey" = "8:_47DAF1F24D184872A1F8B518C93A1710"
         "MsmSig" = "8:_UNDEFINED"
@@ -1115,6 +1133,18 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_206C9634FACD8B09E5DEADA39D68A99B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_09F2B60C3CE0019EC102541847D0A9B9"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_F6D45954DBB64A07C44A427E91A1A764"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -1838,6 +1868,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
         "Release"
@@ -1862,6 +1900,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
     }
@@ -1999,6 +2045,37 @@
                     }
                 }
             "SourcePath" = "8:System.Threading.Overlapped.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_F98A2CC3884C4A5CAC2EE97EBFA5A0C7"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_09F2B60C3CE0019EC102541847D0A9B9"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:Microsoft.AspNetCore.Cryptography.KeyDerivation, Version=6.0.6.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_09F2B60C3CE0019EC102541847D0A9B9"
+                    {
+                    "Name" = "8:Microsoft.AspNetCore.Cryptography.KeyDerivation.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:Microsoft.AspNetCore.Cryptography.KeyDerivation.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_F98A2CC3884C4A5CAC2EE97EBFA5A0C7"
@@ -5880,6 +5957,37 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_F6D45954DBB64A07C44A427E91A1A764"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:Microsoft.AspNetCore.Cryptography.Internal, Version=6.0.6.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_F6D45954DBB64A07C44A427E91A1A764"
+                    {
+                    "Name" = "8:Microsoft.AspNetCore.Cryptography.Internal.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:Microsoft.AspNetCore.Cryptography.Internal.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_F98A2CC3884C4A5CAC2EE97EBFA5A0C7"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_F738F1CA422045E42EE0FC729C9F9C1E"
             {
             "AssemblyRegister" = "3:1"
@@ -6184,15 +6292,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Diccon"
-        "ProductCode" = "8:{53EDB3C2-58B2-479D-9D94-4AAC63DE0A38}"
-        "PackageCode" = "8:{F467E684-8312-4ABD-81FA-96C40F2E098A}"
+        "ProductCode" = "8:{30BAB336-F87C-41FD-9348-BFEB90B991E7}"
+        "PackageCode" = "8:{729A1AED-2103-493B-8F9A-E798F899F4D6}"
         "UpgradeCode" = "8:{C3EC954D-584A-4601-9060-9EB3A8F54986}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:6.0.0"
+        "ProductVersion" = "8:6.0.1"
         "Manufacturer" = "8:ZeroClub"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:https://www.zeroclub.one"
