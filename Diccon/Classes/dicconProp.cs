@@ -118,7 +118,7 @@ namespace Diccon
         {
             try
             {
-                RoundedLabel roundedLabel = (sender as RoundedLabel);
+                Control roundedLabel = (sender as Control);
                 int A = roundedLabel.BackColor.A <= 100 ? roundedLabel.BackColor.A + 100 : roundedLabel.BackColor.A;
                 int R = roundedLabel.BackColor.R;
                 int G = roundedLabel.BackColor.G;
@@ -140,7 +140,7 @@ namespace Diccon
         {
             try
             {
-                RoundedLabel roundedLabel = (sender as RoundedLabel);
+                Control roundedLabel = (sender as Control);
                 int A = roundedLabel.BackColor.A > 100 ? roundedLabel.BackColor.A - 100 : roundedLabel.BackColor.A;
                 int R = roundedLabel.BackColor.R;
                 int G = roundedLabel.BackColor.G;

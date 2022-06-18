@@ -360,6 +360,9 @@
   <data name="btAsk.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
   </data>
+  <data name="btAsk.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="btAsk.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
@@ -412,36 +415,117 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panelMain.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
-  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="flowYours.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="yourTime.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="yourTime.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>68, 28</value>
+  <data name="yourTime.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 20</value>
+  <data name="yourTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 82</value>
   </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
+  <data name="yourTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 16</value>
   </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>previous</value>
+  <data name="yourTime.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
   </data>
-  <data name="label2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
+  <data name="yourTime.Text" xml:space="preserve">
+    <value>datetime</value>
   </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
+  <data name="&gt;&gt;yourTime.Name" xml:space="preserve">
+    <value>yourTime</value>
   </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+  <data name="&gt;&gt;yourTime.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;yourTime.Parent" xml:space="preserve">
+    <value>yourPanel</value>
+  </data>
+  <data name="&gt;&gt;yourTime.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="yourLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="yourLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="yourLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 13</value>
+  </data>
+  <data name="yourLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>306, 69</value>
+  </data>
+  <data name="yourLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="yourLabel.Text" xml:space="preserve">
+    <value>global</value>
+  </data>
+  <data name="&gt;&gt;yourLabel.Name" xml:space="preserve">
+    <value>yourLabel</value>
+  </data>
+  <data name="&gt;&gt;yourLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;yourLabel.Parent" xml:space="preserve">
+    <value>yourPanel</value>
+  </data>
+  <data name="&gt;&gt;yourLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="yourPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="yourPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>333, 110</value>
+  </data>
+  <data name="yourPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;yourPanel.Name" xml:space="preserve">
+    <value>yourPanel</value>
+  </data>
+  <data name="&gt;&gt;yourPanel.Type" xml:space="preserve">
+    <value>Diccon.RoundedPanel, Diccon, Version=6.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;yourPanel.Parent" xml:space="preserve">
+    <value>flowYours</value>
+  </data>
+  <data name="&gt;&gt;yourPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="flowYours.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="flowYours.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="flowYours.Size" type="System.Drawing.Size, System.Drawing">
+    <value>355, 513</value>
+  </data>
+  <data name="flowYours.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;flowYours.Name" xml:space="preserve">
+    <value>flowYours</value>
+  </data>
+  <data name="&gt;&gt;flowYours.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;flowYours.Parent" xml:space="preserve">
     <value>panelYours</value>
   </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;flowYours.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="panelYours.Location" type="System.Drawing.Point, System.Drawing">
@@ -463,7 +547,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panelYours.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="flowChatBox.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -853,7 +937,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panelAnswer.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -985,13 +1069,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panelGlobal.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
+  </data>
+  <data name="btAskTop.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="btAskTop.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 0</value>
   </data>
+  <data name="btAskTop.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 7, 10, 7</value>
+  </data>
   <data name="btAskTop.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 34</value>
+    <value>56, 34</value>
   </data>
   <data name="btAskTop.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
@@ -1017,11 +1107,17 @@
   <data name="&gt;&gt;btAskTop.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="btPeopleTop.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="btPeopleTop.Location" type="System.Drawing.Point, System.Drawing">
-    <value>66, 0</value>
+    <value>65, 0</value>
+  </data>
+  <data name="btPeopleTop.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 7, 10, 7</value>
   </data>
   <data name="btPeopleTop.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 34</value>
+    <value>75, 34</value>
   </data>
   <data name="btPeopleTop.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -1044,20 +1140,26 @@
   <data name="&gt;&gt;btPeopleTop.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="btYoursTop.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="btYoursTop.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="btYoursTop.Location" type="System.Drawing.Point, System.Drawing">
-    <value>145, 0</value>
+    <value>146, 0</value>
+  </data>
+  <data name="btYoursTop.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 7, 10, 7</value>
   </data>
   <data name="btYoursTop.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 34</value>
+    <value>128, 34</value>
   </data>
   <data name="btYoursTop.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
   </data>
   <data name="btYoursTop.Text" xml:space="preserve">
-    <value>Yours</value>
+    <value>Your question</value>
   </data>
   <data name="btYoursTop.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
@@ -1078,7 +1180,7 @@
     <value>0, 1</value>
   </data>
   <data name="flowLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>318, 35</value>
+    <value>309, 35</value>
   </data>
   <data name="flowLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -1096,31 +1198,64 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;flowLayoutPanel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btReload.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+    <value>2</value>
   </data>
   <data name="btReload.Location" type="System.Drawing.Point, System.Drawing">
-    <value>321, 3</value>
+    <value>315, 4</value>
+  </data>
+  <data name="btReload.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
   <data name="btReload.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 32</value>
+    <value>28, 28</value>
+  </data>
+  <data name="btReload.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>CenterImage</value>
   </data>
   <data name="btReload.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
+    <value>18</value>
   </data>
   <data name="&gt;&gt;btReload.Name" xml:space="preserve">
     <value>btReload</value>
   </data>
   <data name="&gt;&gt;btReload.Type" xml:space="preserve">
-    <value>FontAwesome.Sharp.IconPictureBox, FontAwesome.Sharp, Version=5.15.4.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
+    <value>Diccon.RoundedIcon, Diccon, Version=6.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btReload.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btReload.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>1</value>
+  </data>
+  <data name="btReloadYours.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btReloadYours.Location" type="System.Drawing.Point, System.Drawing">
+    <value>315, 4</value>
+  </data>
+  <data name="btReloadYours.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="btReloadYours.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 28</value>
+  </data>
+  <data name="btReloadYours.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>CenterImage</value>
+  </data>
+  <data name="btReloadYours.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;btReloadYours.Name" xml:space="preserve">
+    <value>btReloadYours</value>
+  </data>
+  <data name="&gt;&gt;btReloadYours.Type" xml:space="preserve">
+    <value>Diccon.RoundedIcon, Diccon, Version=6.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btReloadYours.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btReloadYours.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

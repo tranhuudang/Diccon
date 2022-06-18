@@ -200,5 +200,13 @@ namespace Diccon.Pages
                 sql.Update(updateQueryString);
             }
         }
+
+        private void tbPassword_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode== Keys.Enter)
+            {
+                btLogin_Click(null, null);
+            }    
+        }
     }
 }

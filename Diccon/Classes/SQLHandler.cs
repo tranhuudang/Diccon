@@ -19,12 +19,12 @@ namespace Diccon
 
 			if (connectivity.isOnline())
 			{
-				SqlConnection _sqlConnection = new SqlConnection(dicconProp.connectionString);
-				_sqlConnection.Open();
+				SqlConnection sqlConnection = new SqlConnection(dicconProp.connectionString);
+				sqlConnection.Open();
 
-				SqlCommand cmd = new SqlCommand(updateQuery, _sqlConnection);
+				SqlCommand cmd = new SqlCommand(updateQuery, sqlConnection);
 				cmd.ExecuteNonQuery();
-				_sqlConnection.Close();
+				sqlConnection.Close();
 			}
 			else
 			{
@@ -41,9 +41,9 @@ namespace Diccon
 			DataTable dataTable = new DataTable();
 			if (connectivity.isOnline())
 			{
-				SqlConnection _sqlConnection = new SqlConnection(dicconProp.connectionString);
-				_sqlConnection.Open();
-				SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(selectQuery, _sqlConnection);
+				SqlConnection sqlConnection = new SqlConnection(dicconProp.connectionString);
+				sqlConnection.Open();
+				SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(selectQuery, sqlConnection);
 				sqlDataAdapter.Fill(dataTable);
 				return dataTable;
 			}
@@ -57,11 +57,11 @@ namespace Diccon
 		{
 			if (connectivity.isOnline())
 			{
-				SqlConnection _sqlConnection = new SqlConnection(dicconProp.connectionString);
-				_sqlConnection.Open();
-				SqlCommand cmd = new SqlCommand(insertString, _sqlConnection);
+				SqlConnection sqlConnection = new SqlConnection(dicconProp.connectionString);
+				sqlConnection.Open();
+				SqlCommand cmd = new SqlCommand(insertString, sqlConnection);
 				cmd.ExecuteNonQuery();
-				_sqlConnection.Close();
+				sqlConnection.Close();
 			}
 			else
 			{

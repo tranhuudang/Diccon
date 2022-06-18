@@ -143,7 +143,6 @@
             // 
             // panelLogin
             // 
-            resources.ApplyResources(this.panelLogin, "panelLogin");
             this.panelLogin.Controls.Add(this.createText);
             this.panelLogin.Controls.Add(this.manageAccountText);
             this.panelLogin.Controls.Add(this.loginText);
@@ -156,6 +155,7 @@
             this.panelLogin.Controls.Add(this.lbNotice);
             this.panelLogin.Controls.Add(this.label2);
             this.panelLogin.Controls.Add(this.label7);
+            resources.ApplyResources(this.panelLogin, "panelLogin");
             this.panelLogin.Name = "panelLogin";
             // 
             // createText
@@ -176,11 +176,12 @@
             // 
             // tbPassword
             // 
-            resources.ApplyResources(this.tbPassword, "tbPassword");
             this.tbPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.tbPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.tbPassword, "tbPassword");
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.TextChanged += new System.EventHandler(this.tbPassword_TextChanged);
+            this.tbPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbPassword_KeyDown);
             // 
             // roundedPanel1
             // 
@@ -194,9 +195,9 @@
             // 
             // tbEmail
             // 
-            resources.ApplyResources(this.tbEmail, "tbEmail");
             this.tbEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.tbEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.tbEmail, "tbEmail");
             this.tbEmail.Name = "tbEmail";
             this.tbEmail.TextChanged += new System.EventHandler(this.tbEmail_TextChanged);
             // 
@@ -216,7 +217,6 @@
             // 
             // panelManage
             // 
-            resources.ApplyResources(this.panelManage, "panelManage");
             this.panelManage.Controls.Add(this.groupBox1);
             this.panelManage.Controls.Add(this.label1);
             this.panelManage.Controls.Add(this.roundedPanel5);
@@ -226,6 +226,7 @@
             this.panelManage.Controls.Add(this.label9);
             this.panelManage.Controls.Add(this.label8);
             this.panelManage.Controls.Add(this.roundedPanel4);
+            resources.ApplyResources(this.panelManage, "panelManage");
             this.panelManage.Name = "panelManage";
             // 
             // groupBox1
@@ -267,8 +268,8 @@
             // 
             // label12
             // 
-            resources.ApplyResources(this.label12, "label12");
             this.label12.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.label12, "label12");
             this.label12.ForeColor = System.Drawing.Color.Gray;
             this.label12.Name = "label12";
             // 
@@ -305,10 +306,10 @@
             // 
             // btSave
             // 
-            resources.ApplyResources(this.btSave, "btSave");
             this.btSave.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.btSave.BorderColor = System.Drawing.Color.White;
             this.btSave.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.btSave, "btSave");
             this.btSave.ForeColor = System.Drawing.Color.Black;
             this.btSave.Name = "btSave";
             this.btSave.Radius = 20;
@@ -381,7 +382,6 @@
             // 
             // panelCreateAccount
             // 
-            resources.ApplyResources(this.panelCreateAccount, "panelCreateAccount");
             this.panelCreateAccount.Controls.Add(this.btBack);
             this.panelCreateAccount.Controls.Add(this.btHelp);
             this.panelCreateAccount.Controls.Add(this.btTerm);
@@ -392,14 +392,15 @@
             this.panelCreateAccount.Controls.Add(this.roundedPanel8);
             this.panelCreateAccount.Controls.Add(this.label6);
             this.panelCreateAccount.Controls.Add(this.label10);
+            resources.ApplyResources(this.panelCreateAccount, "panelCreateAccount");
             this.panelCreateAccount.Name = "panelCreateAccount";
             // 
             // btBack
             // 
-            resources.ApplyResources(this.btBack, "btBack");
             this.btBack.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.btBack.BorderColor = System.Drawing.Color.White;
             this.btBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.btBack, "btBack");
             this.btBack.ForeColor = System.Drawing.Color.Black;
             this.btBack.Name = "btBack";
             this.btBack.Radius = 20;
@@ -444,9 +445,9 @@
             // 
             // createPass_2
             // 
-            resources.ApplyResources(this.createPass_2, "createPass_2");
             this.createPass_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.createPass_2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.createPass_2, "createPass_2");
             this.createPass_2.Name = "createPass_2";
             this.createPass_2.TextChanged += new System.EventHandler(this.createEmail_TextChanged);
             // 
