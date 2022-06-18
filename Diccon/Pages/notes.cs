@@ -23,9 +23,10 @@ namespace Diccon.Pages
 
         private void notes_Load(object sender, EventArgs e)
         {
+
             try
             {
-                flowPlayground.HorizontalScroll.Visible = false;
+                flowPlayground.HorizontalScroll.Visible = true;
                 flowPlayground.Controls.Clear();
                 List<noteObject> listNote = getNoteInNoteFile();
                 foreach (noteObject note in listNote)

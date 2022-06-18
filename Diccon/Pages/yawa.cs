@@ -26,7 +26,7 @@ namespace Diccon.Pages
 
         private void yawa_Load(object sender, EventArgs e)
         {
-
+            //panelMain.Dock = DockStyle.Fill;
             btAsk.BackColor = dicconProp.ColorA8;
             btInstantAsk.BackColor = dicconProp.ColorA8;
             btPeopleTop.BackColor = dicconProp.ColorA3;
@@ -36,6 +36,8 @@ namespace Diccon.Pages
             globalExamplePanel.BackColor = dicconProp.ColorA9;
             panelOfRichQuestion_1.BackColor = dicconProp.ColorA9;
             exampleAnswerColoredPanel.BackColor= dicconProp.ColorA3;
+            answer_textBox.BackColor = dicconProp.ColorA9;
+            roundedPanelChatBox.BackColor = dicconProp.ColorA9;
             /// load Global first 
             btPeopleTop_Click(null, null);
         }
@@ -108,22 +110,13 @@ namespace Diccon.Pages
 
         private void btAsk_Click(object sender, EventArgs e)
         {
+            
             SQLHandler sqlHandler = new SQLHandler();
             sqlHandler.Insert("Insert into dbo.DicconAsking(Question, AskUserId, AskDate) values(N'" + richQuestion.Text + "','" + dicconProp.userID + "','" + DateTime.Today + "')");
+            richQuestion.Text = "";
+            btPeopleTop_Click(null, null);
         }
 
-        private void globalRefresher_Tick(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btPeople_Click(object sender, EventArgs e)
-        {
-
-            ///
-            openPanel(panelGlobal);
-            btReload_Click(null, null);
-        }
 
         private void btReload_Click(object sender, EventArgs e)
         {
@@ -236,8 +229,11 @@ namespace Diccon.Pages
 
         private void btAskTop_Click(object sender, EventArgs e)
         {
+            
             TopControlSwitch("btAskTop");
-            currentPanel.Visible = false;
+            openPanel(panelAsk);
+            btReload_Click(null, null);
+            btReload.BringToFront();
         }
 
         private void btPeopleTop_Click(object sender, EventArgs e)

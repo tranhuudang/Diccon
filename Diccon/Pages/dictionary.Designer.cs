@@ -485,6 +485,7 @@
             resources.ApplyResources(this.exampleNoteSave, "exampleNoteSave");
             this.exampleNoteSave.Name = "exampleNoteSave";
             this.exampleNoteSave.TabStop = false;
+            this.exampleNoteSave.Click += new System.EventHandler(this.exampleNoteSave_Click);
             // 
             // exampleNoteRichTextBox
             // 

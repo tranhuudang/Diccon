@@ -385,6 +385,11 @@ namespace Diccon
         {
             Process.Start(dicconProp.githubIssuesPath);
         }
+
+        private void exampleNoteSave_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

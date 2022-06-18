@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(yawa));
-            this.panelMain = new System.Windows.Forms.Panel();
+            this.panelAsk = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btInstantAsk = new Diccon.RoundedLabel();
@@ -54,7 +54,7 @@
             this.exampleAskLongColoredPanel = new Diccon.RoundedPanel();
             this.exampleAskLongText = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.roundedPanel1 = new Diccon.RoundedPanel();
+            this.roundedPanelChatBox = new Diccon.RoundedPanel();
             this.answer_TextHolder = new System.Windows.Forms.Label();
             this.answer_textBox = new System.Windows.Forms.TextBox();
             this.textFromClipboard = new System.Windows.Forms.PictureBox();
@@ -71,7 +71,9 @@
             this.btYoursTop = new Diccon.RoundedLabel();
             this.btReload = new Diccon.RoundedIcon();
             this.btReloadYours = new Diccon.RoundedIcon();
-            this.panelMain.SuspendLayout();
+            this.panelMain = new System.Windows.Forms.Panel();
+            this.panelTop = new System.Windows.Forms.Panel();
+            this.panelAsk.SuspendLayout();
             this.panelOfRichQuestion_1.SuspendLayout();
             this.panelYours.SuspendLayout();
             this.flowYours.SuspendLayout();
@@ -83,7 +85,7 @@
             this.exampleAskLongPanel.SuspendLayout();
             this.exampleAskLongColoredPanel.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.roundedPanel1.SuspendLayout();
+            this.roundedPanelChatBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textFromClipboard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btSend)).BeginInit();
             this.panelGlobal.SuspendLayout();
@@ -92,20 +94,21 @@
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btReload)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btReloadYours)).BeginInit();
+            this.panelTop.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panelMain
+            // panelAsk
             // 
-            this.panelMain.Controls.Add(this.label5);
-            this.panelMain.Controls.Add(this.label4);
-            this.panelMain.Controls.Add(this.btInstantAsk);
-            this.panelMain.Controls.Add(this.panelOfRichQuestion_1);
-            this.panelMain.Controls.Add(this.notice);
-            this.panelMain.Controls.Add(this.countWord);
-            this.panelMain.Controls.Add(this.label1);
-            this.panelMain.Controls.Add(this.btAsk);
-            resources.ApplyResources(this.panelMain, "panelMain");
-            this.panelMain.Name = "panelMain";
+            this.panelAsk.Controls.Add(this.label5);
+            this.panelAsk.Controls.Add(this.label4);
+            this.panelAsk.Controls.Add(this.btInstantAsk);
+            this.panelAsk.Controls.Add(this.panelOfRichQuestion_1);
+            this.panelAsk.Controls.Add(this.notice);
+            this.panelAsk.Controls.Add(this.countWord);
+            this.panelAsk.Controls.Add(this.label1);
+            this.panelAsk.Controls.Add(this.btAsk);
+            resources.ApplyResources(this.panelAsk, "panelAsk");
+            this.panelAsk.Name = "panelAsk";
             // 
             // label5
             // 
@@ -275,26 +278,27 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.roundedPanel1);
+            this.panel1.Controls.Add(this.roundedPanelChatBox);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
-            // roundedPanel1
+            // roundedPanelChatBox
             // 
-            resources.ApplyResources(this.roundedPanel1, "roundedPanel1");
-            this.roundedPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(235)))), ((int)(((byte)(252)))));
-            this.roundedPanel1.BorderColor = System.Drawing.Color.White;
-            this.roundedPanel1.Controls.Add(this.answer_TextHolder);
-            this.roundedPanel1.Controls.Add(this.answer_textBox);
-            this.roundedPanel1.Controls.Add(this.textFromClipboard);
-            this.roundedPanel1.Controls.Add(this.btSend);
-            this.roundedPanel1.Name = "roundedPanel1";
-            this.roundedPanel1.Radius = 20;
-            this.roundedPanel1.Thickness = 5F;
+            resources.ApplyResources(this.roundedPanelChatBox, "roundedPanelChatBox");
+            this.roundedPanelChatBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(235)))), ((int)(((byte)(252)))));
+            this.roundedPanelChatBox.BorderColor = System.Drawing.Color.White;
+            this.roundedPanelChatBox.Controls.Add(this.answer_TextHolder);
+            this.roundedPanelChatBox.Controls.Add(this.answer_textBox);
+            this.roundedPanelChatBox.Controls.Add(this.textFromClipboard);
+            this.roundedPanelChatBox.Controls.Add(this.btSend);
+            this.roundedPanelChatBox.Name = "roundedPanelChatBox";
+            this.roundedPanelChatBox.Radius = 20;
+            this.roundedPanelChatBox.Thickness = 5F;
             // 
             // answer_TextHolder
             // 
             resources.ApplyResources(this.answer_TextHolder, "answer_TextHolder");
+            this.answer_TextHolder.BackColor = System.Drawing.Color.Transparent;
             this.answer_TextHolder.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.answer_TextHolder.ForeColor = System.Drawing.Color.Gray;
             this.answer_TextHolder.Name = "answer_TextHolder";
@@ -456,22 +460,34 @@
             this.btReloadYours.MouseEnter += new System.EventHandler(this.btReload_MouseEnter);
             this.btReloadYours.MouseLeave += new System.EventHandler(this.btReload_MouseLeave);
             // 
+            // panelMain
+            // 
+            resources.ApplyResources(this.panelMain, "panelMain");
+            this.panelMain.Name = "panelMain";
+            // 
+            // panelTop
+            // 
+            this.panelTop.Controls.Add(this.btReloadYours);
+            this.panelTop.Controls.Add(this.btReload);
+            this.panelTop.Controls.Add(this.flowLayoutPanel1);
+            resources.ApplyResources(this.panelTop, "panelTop");
+            this.panelTop.Name = "panelTop";
+            // 
             // yawa
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.btReloadYours);
-            this.Controls.Add(this.btReload);
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.panelTop);
+            this.Controls.Add(this.panelMain);
+            this.Controls.Add(this.panelAsk);
             this.Controls.Add(this.panelGlobal);
             this.Controls.Add(this.panelAnswer);
             this.Controls.Add(this.panelYours);
-            this.Controls.Add(this.panelMain);
             this.Name = "yawa";
             this.Load += new System.EventHandler(this.yawa_Load);
-            this.panelMain.ResumeLayout(false);
-            this.panelMain.PerformLayout();
+            this.panelAsk.ResumeLayout(false);
+            this.panelAsk.PerformLayout();
             this.panelOfRichQuestion_1.ResumeLayout(false);
             this.panelYours.ResumeLayout(false);
             this.flowYours.ResumeLayout(false);
@@ -486,8 +502,8 @@
             this.exampleAskLongColoredPanel.ResumeLayout(false);
             this.exampleAskLongColoredPanel.PerformLayout();
             this.panel1.ResumeLayout(false);
-            this.roundedPanel1.ResumeLayout(false);
-            this.roundedPanel1.PerformLayout();
+            this.roundedPanelChatBox.ResumeLayout(false);
+            this.roundedPanelChatBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textFromClipboard)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btSend)).EndInit();
             this.panelGlobal.ResumeLayout(false);
@@ -498,13 +514,14 @@
             this.flowLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btReload)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btReloadYours)).EndInit();
+            this.panelTop.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panelMain;
+        private System.Windows.Forms.Panel panelAsk;
         private System.Windows.Forms.RichTextBox richQuestion;
         private System.Windows.Forms.Panel panelYours;
         private RoundedLabel btAsk;
@@ -527,7 +544,7 @@
         private System.Windows.Forms.Label globalExampleDatetime;
         private RoundedLabel btYoursTop;
         private System.Windows.Forms.Panel panel1;
-        private RoundedPanel roundedPanel1;
+        private RoundedPanel roundedPanelChatBox;
         private System.Windows.Forms.Label answer_TextHolder;
         private System.Windows.Forms.TextBox answer_textBox;
         private System.Windows.Forms.PictureBox textFromClipboard;
@@ -545,5 +562,7 @@
         private System.Windows.Forms.Label yourTime;
         private System.Windows.Forms.Label yourLabel;
         private RoundedIcon btReloadYours;
+        private System.Windows.Forms.Panel panelMain;
+        private System.Windows.Forms.Panel panelTop;
     }
 }

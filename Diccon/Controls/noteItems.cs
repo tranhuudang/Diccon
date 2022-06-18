@@ -30,9 +30,8 @@ namespace Diccon.Controls
 
         private void btMenu_Click(object sender, EventArgs e)
         {
-            btMenu.Visible = false;
+            
             btExpand.Visible = true;
-            btClose.Visible = true;
             btSave.Visible = true;
             btDelete.Visible = true;
         }
@@ -40,6 +39,23 @@ namespace Diccon.Controls
         private void roundedPanel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void noteItems_Load(object sender, EventArgs e)
+        {
+            roundedPanel1.BackColor = dicconProp.ColorA5;
+            richContent.BackColor = dicconProp.ColorA9;
+            tbTitle.BackColor = dicconProp.ColorA5;
+        }
+
+        private void btMenu_MouseEnter(object sender, EventArgs e)
+        {
+            dicconProp.Control_MouseEnter(sender, e);
+        }
+
+        private void btMenu_MouseLeave(object sender, EventArgs e)
+        {
+            dicconProp.Control_MouseLeave(sender, e);
         }
     }
 }

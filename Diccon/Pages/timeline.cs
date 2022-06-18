@@ -51,8 +51,8 @@ namespace Diccon.Pages
             {
                 /* If the item is selected set the background color to SystemColors.Highlight 
                  or else set the color to either WhiteSmoke or White depending if the item index is even or odd */
-                Color color = isSelected ? /*Color.MediumSlateBlue*/dicconProp.ColorA3 :
-                    e.Index % 2 == 0 ? /*Color.FromArgb(245, 240, 255)*/dicconProp.ColorA9  : Color.White;
+                Color color = isSelected ? dicconProp.ColorA3 :
+                    e.Index % 2 == 0 ? dicconProp.ColorA9  : Color.White;
 
                 // Background item brush
                 SolidBrush backgroundBrush = new SolidBrush(color);

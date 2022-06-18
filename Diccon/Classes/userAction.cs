@@ -198,12 +198,13 @@ namespace Diccon
         }
         private void saveAsXml(userNote noteInTag)
         {
-            if (!File.Exists("Note.xml"))
+            
+            if (!File.Exists(dicconProp.noteFilePath))
             {
                 XmlWriterSettings xmlWriterSettings = new XmlWriterSettings();
                 xmlWriterSettings.Indent = true;
                 xmlWriterSettings.NewLineOnAttributes = true;
-                XmlWriter xml = XmlWriter.Create("Note.xml", xmlWriterSettings);
+                XmlWriter xml = XmlWriter.Create(dicconProp.noteFilePath, xmlWriterSettings);
                 xml.WriteStartDocument(true);
                 xml.WriteStartElement("DicconNote");
                 noteInXml(noteInTag.title, noteInTag.content, noteInTag.favourite, xml);
@@ -212,7 +213,7 @@ namespace Diccon
             }
             else
             {
-                XDocument xDocument = XDocument.Load("Note.xml");
+                XDocument xDocument = XDocument.Load(dicconProp.noteFilePath);
                 XElement root = xDocument.Element("DicconNote");
                 IEnumerable<XElement> rows = root.Descendants("user_note");
                 XElement firstRow = rows.First();
@@ -221,7 +222,7 @@ namespace Diccon
                    new XElement("title", noteInTag.title),
                    new XElement("content", noteInTag.content),
                    new XElement("favourite", noteInTag.favourite)));
-                xDocument.Save("Note.xml");
+                xDocument.Save(dicconProp.noteFilePath);
             }
 
         }
