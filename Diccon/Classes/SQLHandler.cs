@@ -14,11 +14,13 @@ namespace Diccon
 		
 		connectivity connectivity = new connectivity();
 
+		
 		public void Update(string updateQuery)
 		{
 
 			if (connectivity.isOnline())
 			{
+
 				SqlConnection sqlConnection = new SqlConnection(dicconProp.connectionString);
 				sqlConnection.Open();
 

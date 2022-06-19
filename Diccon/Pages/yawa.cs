@@ -112,7 +112,7 @@ namespace Diccon.Pages
         {
 
             SQLHandler sqlHandler = new SQLHandler();
-            sqlHandler.Insert("Insert into dbo.DicconAsking(Question, AskUserId, AskDate) values(N'" + richQuestion.Text + "','" + dicconProp.userID + "','" + DateTime.Today + "')");
+            sqlHandler.Insert("Insert into dbo.DicconAsking(Question, AskUserId, AskDate) values(N'" + richQuestion.Text.Replace("'", "") + "','" + dicconProp.userID + "','" + DateTime.Today + "')");
             richQuestion.Text = "";
             btPeopleTop_Click(null, null);
         }
@@ -192,13 +192,15 @@ namespace Diccon.Pages
                     foreach (var item in strings)
                     {
                         if (!listLoadedMessage.Contains(item)&& !listLoadedMessage.Contains("?"+item))
-                            if (item.StartsWith("?"))
+                            if ((item.Trim() != "") && (item.StartsWith("?")))
                             {
                                 user.userLongMessage(item.Substring(1), exampleAskLongText, exampleAskLongColoredPanel, exampleAskLongPanel, flowChatBox);
+                                listLoadedMessage += item;
                             }
-                            else if ((item != "") && (!item.StartsWith("?")))
+                            else if ((item.Trim() != "") && (!item.StartsWith("?")))
                             {
                                 bot.botAnswerLongMessage(item, exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
+                                listLoadedMessage += item;
 
                             }
                     }
@@ -297,13 +299,13 @@ namespace Diccon.Pages
                 if (dicconProp.userID == currentQuestionUserID)
                 {
                     //user.userLongMessage(answer_textBox.Text, exampleAskLongText, exampleAskLongColoredPanel, exampleAskLongPanel, flowChatBox);
-                    sqlHandler.Update("Update dbo.DicconAsking Set Answer=N'" + currentAnswerString + "#?" + answer_textBox.Text + "' where Id=" + currentQuestionID);
+                    sqlHandler.Update("Update dbo.DicconAsking Set Answer=N'" + currentAnswerString + "#?" + answer_textBox.Text.Replace("'","") + "' where Id=" + currentQuestionID);
 
                 }
                 else
                 {
                     //bot.botAnswerLongMessage(answer_textBox.Text, exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
-                    sqlHandler.Update("Update dbo.DicconAsking Set Answer=N'" + currentAnswerString + "#" + answer_textBox.Text + "' where Id=" + currentQuestionID);
+                    sqlHandler.Update("Update dbo.DicconAsking Set Answer=N'" + currentAnswerString + "#" + answer_textBox.Text.Replace("'", "") + "' where Id=" + currentQuestionID);
 
                 }
                 //ReloadInChat();

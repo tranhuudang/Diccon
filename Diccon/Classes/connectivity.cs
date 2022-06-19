@@ -11,10 +11,10 @@ namespace Diccon
         {
             try
             {
-                System.Net.NetworkInformation.Ping myPing = new Ping();
+                Ping myPing = new Ping();
                 String host = "google.com";
                 byte[] buffer = new byte[32];
-                int timeout = 1000;
+                int timeout = 5000;
                 PingOptions pingOptions = new PingOptions();
                 PingReply reply = myPing.Send(host, timeout, buffer, pingOptions);
                 return (reply.Status == IPStatus.Success);
