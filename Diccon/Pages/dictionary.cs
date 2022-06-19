@@ -66,7 +66,7 @@ namespace Diccon
 
             if (e.KeyCode == Keys.Enter)
             {
-                dicconProp.currentWord = searchTextBox.Text;
+                dicconProp.currentWord = searchTextBox.Text.Trim();
                 await searchAndShow(dicconProp.currentWord);
 
 
@@ -85,6 +85,7 @@ namespace Diccon
                 }
                 else if (numberOfWord == 1)
                 {
+
                     // add word to history file
                     addHistory(searchTextBox.Text);
                     // display message 
@@ -157,15 +158,12 @@ namespace Diccon
 
 
             }
-            return "";
+            // update missing word to database
+            SQLHandler sqlHandler = new SQLHandler();
+            sqlHandler.Insert("Insert into dbo.DicconMissing values(N'" + dicconProp.userID + "',N'" + wordsToSearch+"')");
+            return dicconProp.missingWord;
 
         }
-
-        //private void button1_Click(object sender, EventArgs e)
-        //{
-        //    panelSuggestFunction.Visible = true;
-        //    flowChatBox.Controls.SetChildIndex(panelSuggestFunction, flowChatBox.Controls.Count);
-        //}
 
         private void searchTextBox_TextChanged(object sender, EventArgs e)
         {

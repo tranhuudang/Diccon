@@ -149,7 +149,7 @@ namespace Diccon.Pages
             openPanel(panelAnswer);
             ///
             /// Sample Answer from SQL: #đây là câu trả lời#?Đây là câu hỏi#?đây là câu hỏi kế#đây là câu trả lời
-            DataTable dataTable = sqlHandler.Select("Select Answer, AskUserId from dbo.DicconAsking where Id=" + (sender as Label).Tag.ToString());
+            DataTable dataTable = sqlHandler.Select("Select Answer, AskUserId, Question from dbo.DicconAsking where Id=" + (sender as Label).Tag.ToString());
             if (currentAnswerString != dataTable.Rows[0][0].ToString())
             {
                 // clear flowchatbox for a new bunch of conversasion
@@ -157,6 +157,7 @@ namespace Diccon.Pages
                 currentAnswerString = dataTable.Rows[0][0].ToString();
                 string[] strings = dataTable.Rows[0][0].ToString().Split('#');
                 currentQuestionUserID = dataTable.Rows[0][1].ToString();
+                lbQuestionTitle.Text= dataTable.Rows[0][2].ToString();
                 currentQuestionID = (sender as Label).Tag.ToString();
 
                 foreach (var item in strings)
@@ -190,7 +191,7 @@ namespace Diccon.Pages
                     string[] strings = dataTable.Rows[0][0].ToString().Split('#');
                     foreach (var item in strings)
                     {
-                        if (!listLoadedMessage.Contains(item))
+                        if (!listLoadedMessage.Contains(item)&& !listLoadedMessage.Contains("?"+item))
                             if (item.StartsWith("?"))
                             {
                                 user.userLongMessage(item.Substring(1), exampleAskLongText, exampleAskLongColoredPanel, exampleAskLongPanel, flowChatBox);
@@ -305,7 +306,7 @@ namespace Diccon.Pages
                     sqlHandler.Update("Update dbo.DicconAsking Set Answer=N'" + currentAnswerString + "#" + answer_textBox.Text + "' where Id=" + currentQuestionID);
 
                 }
-                ReloadInChat();
+                //ReloadInChat();
                 answer_textBox.Text = "";
             }
         }

@@ -366,7 +366,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="diccon.ico" />
-    <Content Include="Ninja2.ico" />
     <Content Include="Notes.txt" />
     <None Include="Resources\Screenshot 2022-02-28 152046.png" />
     <None Include="Resources\annoyed.png" />

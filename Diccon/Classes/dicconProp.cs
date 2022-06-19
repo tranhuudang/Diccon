@@ -61,7 +61,7 @@ namespace Diccon
         public static string enableFlashClipboard = Properties.Settings.Default["FlashClipboard"].ToString();
         public static string userID = Properties.Settings.Default["userID"].ToString();
         public static string loginRequest = "You're not logged in yet. Please login or register a new account to use this function. ";
-
+        public static string missingWord = "This word is missing from our data. It had been automaticly reported, we will check it and make sure to update the data as soon as possible.";
 
         /// <summary>
         /// Change Red and Green background of Rounded-Label to a darker shade of  color

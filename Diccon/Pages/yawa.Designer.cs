@@ -73,6 +73,9 @@
             this.btReloadYours = new Diccon.RoundedIcon();
             this.btReload = new Diccon.RoundedIcon();
             this.newMessageChecker = new System.Windows.Forms.Timer(this.components);
+            this.answerTopPanel = new System.Windows.Forms.Panel();
+            this.lbQuestionTitle = new System.Windows.Forms.Label();
+            this.toolTipYawa = new System.Windows.Forms.ToolTip(this.components);
             this.panelAsk.SuspendLayout();
             this.panelOfRichQuestion_1.SuspendLayout();
             this.panelYours.SuspendLayout();
@@ -92,9 +95,11 @@
             this.globalFlowPanel.SuspendLayout();
             this.globalExamplePanel.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
+            this.panelMain.SuspendLayout();
             this.panelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btReloadYours)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btReload)).BeginInit();
+            this.answerTopPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelAsk
@@ -224,6 +229,7 @@
             // panelAnswer
             // 
             this.panelAnswer.Controls.Add(this.flowChatBox);
+            this.panelAnswer.Controls.Add(this.answerTopPanel);
             this.panelAnswer.Controls.Add(this.panel1);
             resources.ApplyResources(this.panelAnswer, "panelAnswer");
             this.panelAnswer.Name = "panelAnswer";
@@ -483,6 +489,20 @@
             this.newMessageChecker.Interval = 3000;
             this.newMessageChecker.Tick += new System.EventHandler(this.newMessageChecker_Tick);
             // 
+            // answerTopPanel
+            // 
+            this.answerTopPanel.BackColor = System.Drawing.Color.Gainsboro;
+            this.answerTopPanel.Controls.Add(this.lbQuestionTitle);
+            resources.ApplyResources(this.answerTopPanel, "answerTopPanel");
+            this.answerTopPanel.Name = "answerTopPanel";
+            // 
+            // lbQuestionTitle
+            // 
+            resources.ApplyResources(this.lbQuestionTitle, "lbQuestionTitle");
+            this.lbQuestionTitle.ForeColor = System.Drawing.Color.Gray;
+            this.lbQuestionTitle.Name = "lbQuestionTitle";
+            // 
+            // 
             // yawa
             // 
             resources.ApplyResources(this, "$this");
@@ -522,9 +542,12 @@
             this.globalExamplePanel.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
+            this.panelMain.ResumeLayout(false);
+            this.panelMain.PerformLayout();
             this.panelTop.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btReloadYours)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btReload)).EndInit();
+            this.answerTopPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -574,5 +597,8 @@
         private System.Windows.Forms.Panel panelMain;
         private System.Windows.Forms.Panel panelTop;
         private System.Windows.Forms.Timer newMessageChecker;
+        private System.Windows.Forms.Panel answerTopPanel;
+        private System.Windows.Forms.Label lbQuestionTitle;
+        private System.Windows.Forms.ToolTip toolTipYawa;
     }
 }
