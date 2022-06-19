@@ -359,9 +359,11 @@ namespace Diccon.Pages
         {
 
         }
-
+        connectivity connectivity = new connectivity();
         private void newMessageChecker_Tick(object sender, EventArgs e)
         {
+
+            if(connectivity.isOnline())
             ReloadInChat();
         }
 

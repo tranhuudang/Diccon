@@ -31,7 +31,6 @@ namespace Diccon
         public static int bottomPanel_DefaultHeight = 60;
         public static int bottomPanel_ExpandedHeight = 150;
         public static string backupError = "A error occur during Back up & Sync process. Try again or contact to us for help";
-        public static string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=ZeroClubOne;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
         public static Color default_addNote_BackColor = Color.FromArgb(255, 192, 128);
         public static Color hover_addNote_BackColor = Color.FromArgb(242, 203, 164);
