@@ -31,17 +31,17 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dictionary));
             this.panelBottom = new System.Windows.Forms.Panel();
+            this.btAdd = new FontAwesome.Sharp.IconPictureBox();
             this.panelAdd = new System.Windows.Forms.Panel();
             this.addEmoji = new Diccon.RoundedLabel();
             this.addNote = new Diccon.RoundedLabel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.roundedPanel1 = new Diccon.RoundedPanel();
+            this.textFromClipboard = new FontAwesome.Sharp.IconPictureBox();
             this.labelTypeToSearch = new System.Windows.Forms.Label();
             this.searchTextBox = new System.Windows.Forms.TextBox();
-            this.textFromClipboard = new System.Windows.Forms.PictureBox();
-            this.textFromMic = new System.Windows.Forms.PictureBox();
+            this.textFromMic = new FontAwesome.Sharp.IconPictureBox();
             this.btSend = new FontAwesome.Sharp.IconPictureBox();
-            this.buttonAdd = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.flowChatBox = new System.Windows.Forms.FlowLayoutPanel();
             this.exampleAnswerPanel = new System.Windows.Forms.Panel();
@@ -90,13 +90,13 @@
             this.e = new System.Windows.Forms.ToolStripSeparator();
             this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelBottom.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btAdd)).BeginInit();
             this.panelAdd.SuspendLayout();
             this.panel1.SuspendLayout();
             this.roundedPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textFromClipboard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textFromMic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btSend)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.buttonAdd)).BeginInit();
             this.flowChatBox.SuspendLayout();
             this.exampleAnswerPanel.SuspendLayout();
             this.exampleAnswerColoredPanel.SuspendLayout();
@@ -125,10 +125,28 @@
             // 
             // panelBottom
             // 
+            this.panelBottom.Controls.Add(this.btAdd);
             this.panelBottom.Controls.Add(this.panelAdd);
             this.panelBottom.Controls.Add(this.panel1);
             resources.ApplyResources(this.panelBottom, "panelBottom");
             this.panelBottom.Name = "panelBottom";
+            // 
+            // btAdd
+            // 
+            this.btAdd.BackColor = System.Drawing.Color.Transparent;
+            this.btAdd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btAdd.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btAdd.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
+            this.btAdd.IconColor = System.Drawing.SystemColors.ControlText;
+            this.btAdd.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btAdd.IconSize = 28;
+            resources.ApplyResources(this.btAdd, "btAdd");
+            this.btAdd.Name = "btAdd";
+            this.btAdd.TabStop = false;
+            this.btAdd.UseGdi = true;
+            this.btAdd.Click += new System.EventHandler(this.buttonAdd_Click);
+            this.btAdd.MouseEnter += new System.EventHandler(this.PictureBox_MouseEnter);
+            this.btAdd.MouseLeave += new System.EventHandler(this.PictureBox_MouseLeave);
             // 
             // panelAdd
             // 
@@ -168,7 +186,6 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.roundedPanel1);
-            this.panel1.Controls.Add(this.buttonAdd);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
@@ -177,14 +194,31 @@
             resources.ApplyResources(this.roundedPanel1, "roundedPanel1");
             this.roundedPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(235)))), ((int)(((byte)(252)))));
             this.roundedPanel1.BorderColor = System.Drawing.Color.White;
+            this.roundedPanel1.Controls.Add(this.textFromClipboard);
             this.roundedPanel1.Controls.Add(this.labelTypeToSearch);
             this.roundedPanel1.Controls.Add(this.searchTextBox);
-            this.roundedPanel1.Controls.Add(this.textFromClipboard);
             this.roundedPanel1.Controls.Add(this.textFromMic);
             this.roundedPanel1.Controls.Add(this.btSend);
             this.roundedPanel1.Name = "roundedPanel1";
             this.roundedPanel1.Radius = 20;
             this.roundedPanel1.Thickness = 5F;
+            // 
+            // textFromClipboard
+            // 
+            resources.ApplyResources(this.textFromClipboard, "textFromClipboard");
+            this.textFromClipboard.BackColor = System.Drawing.Color.Transparent;
+            this.textFromClipboard.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.textFromClipboard.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.textFromClipboard.IconChar = FontAwesome.Sharp.IconChar.Clipboard;
+            this.textFromClipboard.IconColor = System.Drawing.SystemColors.ControlText;
+            this.textFromClipboard.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.textFromClipboard.IconSize = 28;
+            this.textFromClipboard.Name = "textFromClipboard";
+            this.textFromClipboard.TabStop = false;
+            this.textFromClipboard.UseGdi = true;
+            this.textFromClipboard.Click += new System.EventHandler(this.textFromClipboard_Click);
+            this.textFromClipboard.MouseEnter += new System.EventHandler(this.PictureBox_MouseEnter);
+            this.textFromClipboard.MouseLeave += new System.EventHandler(this.PictureBox_MouseLeave);
             // 
             // labelTypeToSearch
             // 
@@ -207,24 +241,19 @@
             this.searchTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.searchTextBox_KeyPress);
             this.searchTextBox.Leave += new System.EventHandler(this.searchTextBox_Leave);
             // 
-            // textFromClipboard
-            // 
-            resources.ApplyResources(this.textFromClipboard, "textFromClipboard");
-            this.textFromClipboard.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.textFromClipboard.Image = global::Diccon.Properties.Resources.clipboard_24;
-            this.textFromClipboard.Name = "textFromClipboard";
-            this.textFromClipboard.TabStop = false;
-            this.textFromClipboard.Click += new System.EventHandler(this.textFromClipboard_Click);
-            this.textFromClipboard.MouseEnter += new System.EventHandler(this.PictureBox_MouseEnter);
-            this.textFromClipboard.MouseLeave += new System.EventHandler(this.PictureBox_MouseLeave);
-            // 
             // textFromMic
             // 
             resources.ApplyResources(this.textFromMic, "textFromMic");
+            this.textFromMic.BackColor = System.Drawing.Color.Transparent;
             this.textFromMic.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.textFromMic.Image = global::Diccon.Properties.Resources.keyboard_voice_24;
+            this.textFromMic.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.textFromMic.IconChar = FontAwesome.Sharp.IconChar.Microphone;
+            this.textFromMic.IconColor = System.Drawing.SystemColors.ControlText;
+            this.textFromMic.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.textFromMic.IconSize = 28;
             this.textFromMic.Name = "textFromMic";
             this.textFromMic.TabStop = false;
+            this.textFromMic.UseGdi = true;
             this.textFromMic.Click += new System.EventHandler(this.textFromMic_Click);
             this.textFromMic.MouseEnter += new System.EventHandler(this.PictureBox_MouseEnter);
             this.textFromMic.MouseLeave += new System.EventHandler(this.PictureBox_MouseLeave);
@@ -232,29 +261,19 @@
             // btSend
             // 
             resources.ApplyResources(this.btSend, "btSend");
-            this.btSend.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(235)))), ((int)(((byte)(252)))));
+            this.btSend.BackColor = System.Drawing.Color.Transparent;
             this.btSend.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btSend.ForeColor = System.Drawing.Color.Black;
+            this.btSend.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btSend.IconChar = FontAwesome.Sharp.IconChar.PaperPlane;
-            this.btSend.IconColor = System.Drawing.Color.Black;
-            this.btSend.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btSend.IconSize = 27;
+            this.btSend.IconColor = System.Drawing.SystemColors.ControlText;
+            this.btSend.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.btSend.IconSize = 28;
             this.btSend.Name = "btSend";
             this.btSend.TabStop = false;
+            this.btSend.UseGdi = true;
             this.btSend.Click += new System.EventHandler(this.btSend_Click);
             this.btSend.MouseEnter += new System.EventHandler(this.PictureBox_MouseEnter);
             this.btSend.MouseLeave += new System.EventHandler(this.PictureBox_MouseLeave);
-            // 
-            // buttonAdd
-            // 
-            this.buttonAdd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonAdd.Image = global::Diccon.Properties.Resources.add_circle_24;
-            resources.ApplyResources(this.buttonAdd, "buttonAdd");
-            this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.TabStop = false;
-            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
-            this.buttonAdd.MouseEnter += new System.EventHandler(this.PictureBox_MouseEnter);
-            this.buttonAdd.MouseLeave += new System.EventHandler(this.PictureBox_MouseLeave);
             // 
             // panel2
             // 
@@ -609,6 +628,7 @@
             // 
             // contextMenuNote
             // 
+            this.contextMenuNote.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.contextMenuNote.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.saveToolStripMenuItem,
             this.addToFavouriteToolStripMenuItem,
@@ -651,17 +671,17 @@
             this.ShowIcon = false;
             this.Tag = "423, 753";
             this.Load += new System.EventHandler(this.mainHall_Load);
+            this.SizeChanged += new System.EventHandler(this.dictionary_SizeChanged);
             this.VisibleChanged += new System.EventHandler(this.dictionary_VisibleChanged);
             this.panelBottom.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btAdd)).EndInit();
             this.panelAdd.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.roundedPanel1.ResumeLayout(false);
             this.roundedPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textFromClipboard)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textFromMic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btSend)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.buttonAdd)).EndInit();
             this.flowChatBox.ResumeLayout(false);
             this.flowChatBox.PerformLayout();
             this.exampleAnswerPanel.ResumeLayout(false);
@@ -702,7 +722,6 @@
 
         #endregion
         private System.Windows.Forms.TextBox searchTextBox;
-        private System.Windows.Forms.PictureBox textFromMic;
         private System.Windows.Forms.Panel panelBottom;
         private System.Windows.Forms.Panel panel2;
         public System.Windows.Forms.FlowLayoutPanel flowChatBox;
@@ -712,7 +731,6 @@
         private System.Windows.Forms.PictureBox examplePlayButton;
         private System.Windows.Forms.Panel exampleAskLongPanel;
         private RoundedPanel roundedPanel1;
-        private System.Windows.Forms.PictureBox buttonAdd;
         private System.Windows.Forms.Panel examplePlayAlignPanel;
         private RoundedPanel examplePlayColoredPanel;
         private RoundedPanel exampleAnswerColoredPanel;
@@ -736,7 +754,6 @@
         private RoundedLabel btImage;
         private RoundedLabel roundedLabel12;
         private System.Windows.Forms.Label exampleTextHolder;
-        private System.Windows.Forms.PictureBox textFromClipboard;
         private RoundedLabel addEmoji;
         private System.Windows.Forms.Timer realTimeDetermine;
         private System.Windows.Forms.ContextMenuStrip contextMenuNote;
@@ -754,12 +771,15 @@
         private RoundedPictureBox examplePictureBox;
         private System.Windows.Forms.Panel panel3;
         private RoundedPanel panelNotice;
-        private FontAwesome.Sharp.IconPictureBox btSend;
         private System.Windows.Forms.Label exampleAnswerText;
         private System.Windows.Forms.Label exampleAskLongText;
         private System.Windows.Forms.LinkLabel issueLink;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private FontAwesome.Sharp.IconPictureBox btAdd;
+        private FontAwesome.Sharp.IconPictureBox textFromMic;
+        private FontAwesome.Sharp.IconPictureBox btSend;
+        private FontAwesome.Sharp.IconPictureBox textFromClipboard;
     }
 }
 

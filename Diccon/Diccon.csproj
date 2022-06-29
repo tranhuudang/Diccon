@@ -214,6 +214,12 @@
     <Compile Include="Pages\donate.Designer.cs">
       <DependentUpon>donate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pages\ImageIndicatorMessage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\ImageIndicatorMessage.Designer.cs">
+      <DependentUpon>ImageIndicatorMessage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pages\login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -231,6 +237,12 @@
     </Compile>
     <Compile Include="Pages\timeline.Designer.cs">
       <DependentUpon>timeline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\UserLongMessage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\UserLongMessage.Designer.cs">
+      <DependentUpon>UserLongMessage.cs</DependentUpon>
     </Compile>
     <Compile Include="Pages\yawa.cs">
       <SubType>Form</SubType>
@@ -307,6 +319,9 @@
     <EmbeddedResource Include="Pages\emoji.vi.resx">
       <DependentUpon>emoji.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pages\ImageIndicatorMessage.resx">
+      <DependentUpon>ImageIndicatorMessage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pages\login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
@@ -324,6 +339,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\timeline.vi.resx">
       <DependentUpon>timeline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\UserLongMessage.resx">
+      <DependentUpon>UserLongMessage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\yawa.resx">
       <DependentUpon>yawa.cs</DependentUpon>

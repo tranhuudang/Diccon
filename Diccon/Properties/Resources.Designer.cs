@@ -61,16 +61,6 @@ namespace Diccon.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap add_circle_24 {
-            get {
-                object obj = ResourceManager.GetObject("add_circle_24", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
         internal static System.IO.UnmanagedMemoryStream alert_wav {
@@ -185,16 +175,6 @@ namespace Diccon.Properties {
         internal static System.Drawing.Bitmap close_24 {
             get {
                 object obj = ResourceManager.GetObject("close_24", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap coffee_32 {
-            get {
-                object obj = ResourceManager.GetObject("coffee_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -476,16 +456,6 @@ namespace Diccon.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap keyboard_voice_24 {
-            get {
-                object obj = ResourceManager.GetObject("keyboard_voice_24", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap laugh {
             get {
                 object obj = ResourceManager.GetObject("laugh", resourceCulture);
@@ -579,16 +549,6 @@ namespace Diccon.Properties {
         internal static System.Drawing.Bitmap save_24 {
             get {
                 object obj = ResourceManager.GetObject("save_24", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap send_24 {
-            get {
-                object obj = ResourceManager.GetObject("send_24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

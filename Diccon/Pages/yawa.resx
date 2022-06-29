@@ -145,7 +145,7 @@
     <value>btInstantAsk</value>
   </data>
   <data name="&gt;&gt;btInstantAsk.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=6.0.2.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btInstantAsk.Parent" xml:space="preserve">
     <value>panelAsk</value>
@@ -157,7 +157,7 @@
     <value>panelOfRichQuestion_1</value>
   </data>
   <data name="&gt;&gt;panelOfRichQuestion_1.Type" xml:space="preserve">
-    <value>Diccon.RoundedPanel, Diccon, Version=6.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedPanel, Diccon, Version=6.0.2.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;panelOfRichQuestion_1.Parent" xml:space="preserve">
     <value>panelAsk</value>
@@ -205,7 +205,7 @@
     <value>btAsk</value>
   </data>
   <data name="&gt;&gt;btAsk.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=6.0.2.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btAsk.Parent" xml:space="preserve">
     <value>panelAsk</value>
@@ -302,108 +302,6 @@
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="btInstantAsk.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="btInstantAsk.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="btInstantAsk.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="btInstantAsk.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btInstantAsk.Location" type="System.Drawing.Point, System.Drawing">
-    <value>83, 338</value>
-  </data>
-  <data name="btInstantAsk.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>7, 7, 7, 7</value>
-  </data>
-  <data name="btInstantAsk.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 34</value>
-  </data>
-  <data name="btInstantAsk.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="btInstantAsk.Text" xml:space="preserve">
-    <value>Instant Ask</value>
-  </data>
-  <data name="btInstantAsk.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;btInstantAsk.Name" xml:space="preserve">
-    <value>btInstantAsk</value>
-  </data>
-  <data name="&gt;&gt;btInstantAsk.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.0.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;btInstantAsk.Parent" xml:space="preserve">
-    <value>panelAsk</value>
-  </data>
-  <data name="&gt;&gt;btInstantAsk.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;richQuestion.Name" xml:space="preserve">
-    <value>richQuestion</value>
-  </data>
-  <data name="&gt;&gt;richQuestion.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;richQuestion.Parent" xml:space="preserve">
-    <value>panelOfRichQuestion_1</value>
-  </data>
-  <data name="&gt;&gt;richQuestion.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panelOfRichQuestion_1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 119</value>
-  </data>
-  <data name="panelOfRichQuestion_1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>330, 216</value>
-  </data>
-  <data name="panelOfRichQuestion_1.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;panelOfRichQuestion_1.Name" xml:space="preserve">
-    <value>panelOfRichQuestion_1</value>
-  </data>
-  <data name="&gt;&gt;panelOfRichQuestion_1.Type" xml:space="preserve">
-    <value>Diccon.RoundedPanel, Diccon, Version=6.0.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;panelOfRichQuestion_1.Parent" xml:space="preserve">
-    <value>panelAsk</value>
-  </data>
-  <data name="&gt;&gt;panelOfRichQuestion_1.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="richQuestion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 12</value>
-  </data>
-  <data name="richQuestion.MaxLength" type="System.Int32, mscorlib">
-    <value>500</value>
-  </data>
-  <data name="richQuestion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>309, 190</value>
-  </data>
-  <data name="richQuestion.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="richQuestion.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;richQuestion.Name" xml:space="preserve">
-    <value>richQuestion</value>
-  </data>
-  <data name="&gt;&gt;richQuestion.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;richQuestion.Parent" xml:space="preserve">
-    <value>panelOfRichQuestion_1</value>
-  </data>
-  <data name="&gt;&gt;richQuestion.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="notice.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -504,108 +402,6 @@
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="btAsk.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="btAsk.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="btAsk.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="btAsk.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btAsk.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 338</value>
-  </data>
-  <data name="btAsk.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>7, 7, 7, 7</value>
-  </data>
-  <data name="btAsk.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 34</value>
-  </data>
-  <data name="btAsk.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="btAsk.Text" xml:space="preserve">
-    <value>Ask</value>
-  </data>
-  <data name="btAsk.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;btAsk.Name" xml:space="preserve">
-    <value>btAsk</value>
-  </data>
-  <data name="&gt;&gt;btAsk.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.0.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;btAsk.Parent" xml:space="preserve">
-    <value>panelAsk</value>
-  </data>
-  <data name="&gt;&gt;btAsk.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="flowYours.AutoScroll" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;yourTime.Name" xml:space="preserve">
-    <value>yourTime</value>
-  </data>
-  <data name="&gt;&gt;yourTime.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;yourTime.Parent" xml:space="preserve">
-    <value>yourPanel</value>
-  </data>
-  <data name="&gt;&gt;yourTime.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;yourLabel.Name" xml:space="preserve">
-    <value>yourLabel</value>
-  </data>
-  <data name="&gt;&gt;yourLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;yourLabel.Parent" xml:space="preserve">
-    <value>yourPanel</value>
-  </data>
-  <data name="&gt;&gt;yourLabel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="yourPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="yourPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>333, 110</value>
-  </data>
-  <data name="yourPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;yourPanel.Name" xml:space="preserve">
-    <value>yourPanel</value>
-  </data>
-  <data name="&gt;&gt;yourPanel.Type" xml:space="preserve">
-    <value>Diccon.RoundedPanel, Diccon, Version=6.0.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;yourPanel.Parent" xml:space="preserve">
-    <value>flowYours</value>
-  </data>
-  <data name="&gt;&gt;yourPanel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="flowYours.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="flowYours.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="flowYours.Size" type="System.Drawing.Size, System.Drawing">
-    <value>355, 513</value>
-  </data>
-  <data name="flowYours.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
   <data name="&gt;&gt;flowYours.Name" xml:space="preserve">
     <value>flowYours</value>
   </data>
@@ -639,68 +435,44 @@
   <data name="&gt;&gt;panelYours.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="yourTime.AutoSize" type="System.Boolean, mscorlib">
+  <data name="flowYours.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="yourTime.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
-  </data>
-  <data name="yourTime.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="yourTime.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 82</value>
-  </data>
-  <data name="yourTime.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 16</value>
-  </data>
-  <data name="yourTime.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="yourTime.Text" xml:space="preserve">
-    <value>datetime</value>
-  </data>
-  <data name="&gt;&gt;yourTime.Name" xml:space="preserve">
-    <value>yourTime</value>
-  </data>
-  <data name="&gt;&gt;yourTime.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;yourTime.Parent" xml:space="preserve">
+  <data name="&gt;&gt;yourPanel.Name" xml:space="preserve">
     <value>yourPanel</value>
   </data>
-  <data name="&gt;&gt;yourTime.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;yourPanel.Type" xml:space="preserve">
+    <value>Diccon.RoundedPanel, Diccon, Version=6.0.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;yourPanel.Parent" xml:space="preserve">
+    <value>flowYours</value>
+  </data>
+  <data name="&gt;&gt;yourPanel.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="yourLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
+  <data name="flowYours.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
-  <data name="yourLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="flowYours.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
-  <data name="yourLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 13</value>
+  <data name="flowYours.Size" type="System.Drawing.Size, System.Drawing">
+    <value>355, 513</value>
   </data>
-  <data name="yourLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>306, 69</value>
+  <data name="flowYours.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
   </data>
-  <data name="yourLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
+  <data name="&gt;&gt;flowYours.Name" xml:space="preserve">
+    <value>flowYours</value>
   </data>
-  <data name="yourLabel.Text" xml:space="preserve">
-    <value>global</value>
+  <data name="&gt;&gt;flowYours.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;yourLabel.Name" xml:space="preserve">
-    <value>yourLabel</value>
+  <data name="&gt;&gt;flowYours.Parent" xml:space="preserve">
+    <value>panelYours</value>
   </data>
-  <data name="&gt;&gt;yourLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;yourLabel.Parent" xml:space="preserve">
-    <value>yourPanel</value>
-  </data>
-  <data name="&gt;&gt;yourLabel.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;flowYours.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;flowChatBox.Name" xml:space="preserve">
     <value>flowChatBox</value>
@@ -817,7 +589,7 @@
     <value>exampleAnswerColoredPanel</value>
   </data>
   <data name="&gt;&gt;exampleAnswerColoredPanel.Type" xml:space="preserve">
-    <value>Diccon.RoundedPanel, Diccon, Version=6.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedPanel, Diccon, Version=6.0.2.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;exampleAnswerColoredPanel.Parent" xml:space="preserve">
     <value>exampleAnswerPanel</value>
@@ -849,83 +621,11 @@
   <data name="&gt;&gt;exampleAnswerPanel.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;exampleAnswerText.Name" xml:space="preserve">
-    <value>exampleAnswerText</value>
-  </data>
-  <data name="&gt;&gt;exampleAnswerText.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;exampleAnswerText.Parent" xml:space="preserve">
-    <value>exampleAnswerColoredPanel</value>
-  </data>
-  <data name="&gt;&gt;exampleAnswerText.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="exampleAnswerColoredPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="exampleAnswerColoredPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>49, 0</value>
-  </data>
-  <data name="exampleAnswerColoredPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>264, 155</value>
-  </data>
-  <data name="exampleAnswerColoredPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;exampleAnswerColoredPanel.Name" xml:space="preserve">
-    <value>exampleAnswerColoredPanel</value>
-  </data>
-  <data name="&gt;&gt;exampleAnswerColoredPanel.Type" xml:space="preserve">
-    <value>Diccon.RoundedPanel, Diccon, Version=6.0.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;exampleAnswerColoredPanel.Parent" xml:space="preserve">
-    <value>exampleAnswerPanel</value>
-  </data>
-  <data name="&gt;&gt;exampleAnswerColoredPanel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="exampleAnswerText.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="exampleAnswerText.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="exampleAnswerText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="exampleAnswerText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 8</value>
-  </data>
-  <data name="exampleAnswerText.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>237, 2000</value>
-  </data>
-  <data name="exampleAnswerText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>235, 60</value>
-  </data>
-  <data name="exampleAnswerText.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="exampleAnswerText.Text" xml:space="preserve">
-    <value>label1 label1 label1 label1 label1 label1 label1 label1 label1 label1 label1 label1 </value>
-  </data>
-  <data name="&gt;&gt;exampleAnswerText.Name" xml:space="preserve">
-    <value>exampleAnswerText</value>
-  </data>
-  <data name="&gt;&gt;exampleAnswerText.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;exampleAnswerText.Parent" xml:space="preserve">
-    <value>exampleAnswerColoredPanel</value>
-  </data>
-  <data name="&gt;&gt;exampleAnswerText.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="&gt;&gt;exampleAskLongColoredPanel.Name" xml:space="preserve">
     <value>exampleAskLongColoredPanel</value>
   </data>
   <data name="&gt;&gt;exampleAskLongColoredPanel.Type" xml:space="preserve">
-    <value>Diccon.RoundedPanel, Diccon, Version=6.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedPanel, Diccon, Version=6.0.2.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;exampleAskLongColoredPanel.Parent" xml:space="preserve">
     <value>exampleAskLongPanel</value>
@@ -960,83 +660,83 @@
   <data name="&gt;&gt;exampleAskLongPanel.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;exampleAskLongText.Name" xml:space="preserve">
-    <value>exampleAskLongText</value>
+  <data name="&gt;&gt;lbQuestionTitle.Name" xml:space="preserve">
+    <value>lbQuestionTitle</value>
   </data>
-  <data name="&gt;&gt;exampleAskLongText.Type" xml:space="preserve">
+  <data name="&gt;&gt;lbQuestionTitle.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;exampleAskLongText.Parent" xml:space="preserve">
-    <value>exampleAskLongColoredPanel</value>
+  <data name="&gt;&gt;lbQuestionTitle.Parent" xml:space="preserve">
+    <value>answerTopPanel</value>
   </data>
-  <data name="&gt;&gt;exampleAskLongText.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lbQuestionTitle.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="exampleAskLongColoredPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
+  <data name="answerTopPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
   </data>
-  <data name="exampleAskLongColoredPanel.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="answerTopPanel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Italic</value>
+  </data>
+  <data name="answerTopPanel.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="exampleAskLongColoredPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 40</value>
+  <data name="answerTopPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>355, 42</value>
   </data>
-  <data name="exampleAskLongColoredPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="answerTopPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
-  <data name="&gt;&gt;exampleAskLongColoredPanel.Name" xml:space="preserve">
-    <value>exampleAskLongColoredPanel</value>
+  <data name="&gt;&gt;answerTopPanel.Name" xml:space="preserve">
+    <value>answerTopPanel</value>
   </data>
-  <data name="&gt;&gt;exampleAskLongColoredPanel.Type" xml:space="preserve">
-    <value>Diccon.RoundedPanel, Diccon, Version=6.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+  <data name="&gt;&gt;answerTopPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;exampleAskLongColoredPanel.Parent" xml:space="preserve">
-    <value>exampleAskLongPanel</value>
+  <data name="&gt;&gt;answerTopPanel.Parent" xml:space="preserve">
+    <value>panelAnswer</value>
   </data>
-  <data name="&gt;&gt;exampleAskLongColoredPanel.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;answerTopPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="exampleAskLongText.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="exampleAskLongText.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="lbQuestionTitle.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
-  <data name="exampleAskLongText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lbQuestionTitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="exampleAskLongText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 9</value>
+  <data name="lbQuestionTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 10</value>
   </data>
-  <data name="exampleAskLongText.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>279, 10000</value>
+  <data name="lbQuestionTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>313, 20</value>
   </data>
-  <data name="exampleAskLongText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 20</value>
-  </data>
-  <data name="exampleAskLongText.TabIndex" type="System.Int32, mscorlib">
+  <data name="lbQuestionTitle.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="exampleAskLongText.Text" xml:space="preserve">
-    <value>label1</value>
+  <data name="lbQuestionTitle.Text" xml:space="preserve">
+    <value>lbQuestionTitle</value>
   </data>
-  <data name="&gt;&gt;exampleAskLongText.Name" xml:space="preserve">
-    <value>exampleAskLongText</value>
+  <data name="lbQuestionTitle.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
-  <data name="&gt;&gt;exampleAskLongText.Type" xml:space="preserve">
+  <data name="&gt;&gt;lbQuestionTitle.Name" xml:space="preserve">
+    <value>lbQuestionTitle</value>
+  </data>
+  <data name="&gt;&gt;lbQuestionTitle.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;exampleAskLongText.Parent" xml:space="preserve">
-    <value>exampleAskLongColoredPanel</value>
+  <data name="&gt;&gt;lbQuestionTitle.Parent" xml:space="preserve">
+    <value>answerTopPanel</value>
   </data>
-  <data name="&gt;&gt;exampleAskLongText.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lbQuestionTitle.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="&gt;&gt;roundedPanelChatBox.Name" xml:space="preserve">
     <value>roundedPanelChatBox</value>
   </data>
   <data name="&gt;&gt;roundedPanelChatBox.Type" xml:space="preserve">
-    <value>Diccon.RoundedPanel, Diccon, Version=6.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedPanel, Diccon, Version=6.0.2.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;roundedPanelChatBox.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -1067,198 +767,6 @@
   </data>
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="roundedPanelChatBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left, Right</value>
-  </data>
-  <data name="&gt;&gt;answer_TextHolder.Name" xml:space="preserve">
-    <value>answer_TextHolder</value>
-  </data>
-  <data name="&gt;&gt;answer_TextHolder.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;answer_TextHolder.Parent" xml:space="preserve">
-    <value>roundedPanelChatBox</value>
-  </data>
-  <data name="&gt;&gt;answer_TextHolder.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;answer_textBox.Name" xml:space="preserve">
-    <value>answer_textBox</value>
-  </data>
-  <data name="&gt;&gt;answer_textBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;answer_textBox.Parent" xml:space="preserve">
-    <value>roundedPanelChatBox</value>
-  </data>
-  <data name="&gt;&gt;answer_textBox.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;textFromClipboard.Name" xml:space="preserve">
-    <value>textFromClipboard</value>
-  </data>
-  <data name="&gt;&gt;textFromClipboard.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textFromClipboard.Parent" xml:space="preserve">
-    <value>roundedPanelChatBox</value>
-  </data>
-  <data name="&gt;&gt;textFromClipboard.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;btSend.Name" xml:space="preserve">
-    <value>btSend</value>
-  </data>
-  <data name="&gt;&gt;btSend.Type" xml:space="preserve">
-    <value>FontAwesome.Sharp.IconPictureBox, FontAwesome.Sharp, Version=5.15.4.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
-  </data>
-  <data name="&gt;&gt;btSend.Parent" xml:space="preserve">
-    <value>roundedPanelChatBox</value>
-  </data>
-  <data name="&gt;&gt;btSend.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="roundedPanelChatBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 4</value>
-  </data>
-  <data name="roundedPanelChatBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>332, 45</value>
-  </data>
-  <data name="roundedPanelChatBox.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;roundedPanelChatBox.Name" xml:space="preserve">
-    <value>roundedPanelChatBox</value>
-  </data>
-  <data name="&gt;&gt;roundedPanelChatBox.Type" xml:space="preserve">
-    <value>Diccon.RoundedPanel, Diccon, Version=6.0.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;roundedPanelChatBox.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;roundedPanelChatBox.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="answer_TextHolder.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="answer_TextHolder.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="answer_TextHolder.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="answer_TextHolder.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 12</value>
-  </data>
-  <data name="answer_TextHolder.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 20</value>
-  </data>
-  <data name="answer_TextHolder.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="answer_TextHolder.Text" xml:space="preserve">
-    <value>Nhập để trao đổi</value>
-  </data>
-  <data name="&gt;&gt;answer_TextHolder.Name" xml:space="preserve">
-    <value>answer_TextHolder</value>
-  </data>
-  <data name="&gt;&gt;answer_TextHolder.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;answer_TextHolder.Parent" xml:space="preserve">
-    <value>roundedPanelChatBox</value>
-  </data>
-  <data name="&gt;&gt;answer_TextHolder.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="answer_textBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left, Right</value>
-  </data>
-  <data name="answer_textBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 15.75pt</value>
-  </data>
-  <data name="answer_textBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 10</value>
-  </data>
-  <data name="answer_textBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>238, 24</value>
-  </data>
-  <data name="answer_textBox.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;answer_textBox.Name" xml:space="preserve">
-    <value>answer_textBox</value>
-  </data>
-  <data name="&gt;&gt;answer_textBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;answer_textBox.Parent" xml:space="preserve">
-    <value>roundedPanelChatBox</value>
-  </data>
-  <data name="&gt;&gt;answer_textBox.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="textFromClipboard.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="textFromClipboard.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="textFromClipboard.Location" type="System.Drawing.Point, System.Drawing">
-    <value>260, 11</value>
-  </data>
-  <data name="textFromClipboard.Size" type="System.Drawing.Size, System.Drawing">
-    <value>24, 24</value>
-  </data>
-  <data name="textFromClipboard.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>AutoSize</value>
-  </data>
-  <data name="textFromClipboard.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="textFromClipboard.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;textFromClipboard.Name" xml:space="preserve">
-    <value>textFromClipboard</value>
-  </data>
-  <data name="&gt;&gt;textFromClipboard.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textFromClipboard.Parent" xml:space="preserve">
-    <value>roundedPanelChatBox</value>
-  </data>
-  <data name="&gt;&gt;textFromClipboard.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="btSend.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="btSend.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btSend.Location" type="System.Drawing.Point, System.Drawing">
-    <value>292, 11</value>
-  </data>
-  <data name="btSend.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 27</value>
-  </data>
-  <data name="btSend.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;btSend.Name" xml:space="preserve">
-    <value>btSend</value>
-  </data>
-  <data name="&gt;&gt;btSend.Type" xml:space="preserve">
-    <value>FontAwesome.Sharp.IconPictureBox, FontAwesome.Sharp, Version=5.15.4.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
-  </data>
-  <data name="&gt;&gt;btSend.Parent" xml:space="preserve">
-    <value>roundedPanelChatBox</value>
-  </data>
-  <data name="&gt;&gt;btSend.ZOrder" xml:space="preserve">
-    <value>3</value>
   </data>
   <data name="&gt;&gt;globalFlowPanel.Name" xml:space="preserve">
     <value>globalFlowPanel</value>
@@ -1300,7 +808,7 @@
     <value>globalExamplePanel</value>
   </data>
   <data name="&gt;&gt;globalExamplePanel.Type" xml:space="preserve">
-    <value>Diccon.RoundedPanel, Diccon, Version=6.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedPanel, Diccon, Version=6.0.2.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;globalExamplePanel.Parent" xml:space="preserve">
     <value>globalFlowPanel</value>
@@ -1331,6 +839,453 @@
   </data>
   <data name="&gt;&gt;globalFlowPanel.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="&gt;&gt;btAskTop.Name" xml:space="preserve">
+    <value>btAskTop</value>
+  </data>
+  <data name="&gt;&gt;btAskTop.Type" xml:space="preserve">
+    <value>Diccon.RoundedLabel, Diccon, Version=6.0.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btAskTop.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;btAskTop.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btPeopleTop.Name" xml:space="preserve">
+    <value>btPeopleTop</value>
+  </data>
+  <data name="&gt;&gt;btPeopleTop.Type" xml:space="preserve">
+    <value>Diccon.RoundedLabel, Diccon, Version=6.0.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btPeopleTop.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;btPeopleTop.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btYoursTop.Name" xml:space="preserve">
+    <value>btYoursTop</value>
+  </data>
+  <data name="&gt;&gt;btYoursTop.Type" xml:space="preserve">
+    <value>Diccon.RoundedLabel, Diccon, Version=6.0.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btYoursTop.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;btYoursTop.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="flowLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="flowLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>309, 35</value>
+  </data>
+  <data name="flowLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="flowLayoutPanel1.WrapContents" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel1.Name" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel1.Parent" xml:space="preserve">
+    <value>panelTop</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panelMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 38</value>
+  </data>
+  <data name="panelMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>355, 513</value>
+  </data>
+  <data name="panelMain.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;panelMain.Name" xml:space="preserve">
+    <value>panelMain</value>
+  </data>
+  <data name="&gt;&gt;panelMain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelMain.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelMain.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btReloadYours.Name" xml:space="preserve">
+    <value>btReloadYours</value>
+  </data>
+  <data name="&gt;&gt;btReloadYours.Type" xml:space="preserve">
+    <value>Diccon.RoundedIcon, Diccon, Version=6.0.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btReloadYours.Parent" xml:space="preserve">
+    <value>panelTop</value>
+  </data>
+  <data name="&gt;&gt;btReloadYours.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btReload.Name" xml:space="preserve">
+    <value>btReload</value>
+  </data>
+  <data name="&gt;&gt;btReload.Type" xml:space="preserve">
+    <value>Diccon.RoundedIcon, Diccon, Version=6.0.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btReload.Parent" xml:space="preserve">
+    <value>panelTop</value>
+  </data>
+  <data name="&gt;&gt;btReload.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panelTop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 1</value>
+  </data>
+  <data name="panelTop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>356, 37</value>
+  </data>
+  <data name="panelTop.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;panelTop.Name" xml:space="preserve">
+    <value>panelTop</value>
+  </data>
+  <data name="&gt;&gt;panelTop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelTop.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelTop.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="newMessageChecker.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="toolTipYawa.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>183, 17</value>
+  </metadata>
+  <data name="btReloadYours.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btReloadYours.Location" type="System.Drawing.Point, System.Drawing">
+    <value>315, 3</value>
+  </data>
+  <data name="btReloadYours.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="btReloadYours.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 28</value>
+  </data>
+  <data name="btReloadYours.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>CenterImage</value>
+  </data>
+  <data name="btReloadYours.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;btReloadYours.Name" xml:space="preserve">
+    <value>btReloadYours</value>
+  </data>
+  <data name="&gt;&gt;btReloadYours.Type" xml:space="preserve">
+    <value>Diccon.RoundedIcon, Diccon, Version=6.0.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btReloadYours.Parent" xml:space="preserve">
+    <value>panelTop</value>
+  </data>
+  <data name="&gt;&gt;btReloadYours.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btReload.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btReload.Location" type="System.Drawing.Point, System.Drawing">
+    <value>315, 3</value>
+  </data>
+  <data name="btReload.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="btReload.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 28</value>
+  </data>
+  <data name="btReload.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>CenterImage</value>
+  </data>
+  <data name="btReload.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;btReload.Name" xml:space="preserve">
+    <value>btReload</value>
+  </data>
+  <data name="&gt;&gt;btReload.Type" xml:space="preserve">
+    <value>Diccon.RoundedIcon, Diccon, Version=6.0.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btReload.Parent" xml:space="preserve">
+    <value>panelTop</value>
+  </data>
+  <data name="&gt;&gt;btReload.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btAskTop.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btAskTop.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btAskTop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 0</value>
+  </data>
+  <data name="btAskTop.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 7, 10, 7</value>
+  </data>
+  <data name="btAskTop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 34</value>
+  </data>
+  <data name="btAskTop.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="btAskTop.Text" xml:space="preserve">
+    <value>Ask</value>
+  </data>
+  <data name="btAskTop.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="btAskTop.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;btAskTop.Name" xml:space="preserve">
+    <value>btAskTop</value>
+  </data>
+  <data name="&gt;&gt;btAskTop.Type" xml:space="preserve">
+    <value>Diccon.RoundedLabel, Diccon, Version=6.0.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btAskTop.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;btAskTop.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btPeopleTop.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btPeopleTop.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btPeopleTop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>65, 0</value>
+  </data>
+  <data name="btPeopleTop.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 7, 10, 7</value>
+  </data>
+  <data name="btPeopleTop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 34</value>
+  </data>
+  <data name="btPeopleTop.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="btPeopleTop.Text" xml:space="preserve">
+    <value>Global</value>
+  </data>
+  <data name="btPeopleTop.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;btPeopleTop.Name" xml:space="preserve">
+    <value>btPeopleTop</value>
+  </data>
+  <data name="&gt;&gt;btPeopleTop.Type" xml:space="preserve">
+    <value>Diccon.RoundedLabel, Diccon, Version=6.0.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btPeopleTop.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;btPeopleTop.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btYoursTop.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btYoursTop.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btYoursTop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>146, 0</value>
+  </data>
+  <data name="btYoursTop.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 7, 10, 7</value>
+  </data>
+  <data name="btYoursTop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 34</value>
+  </data>
+  <data name="btYoursTop.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="btYoursTop.Text" xml:space="preserve">
+    <value>Your question</value>
+  </data>
+  <data name="btYoursTop.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;btYoursTop.Name" xml:space="preserve">
+    <value>btYoursTop</value>
+  </data>
+  <data name="&gt;&gt;btYoursTop.Type" xml:space="preserve">
+    <value>Diccon.RoundedLabel, Diccon, Version=6.0.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btYoursTop.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;btYoursTop.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btInstantAsk.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="btInstantAsk.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btInstantAsk.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="btInstantAsk.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btInstantAsk.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 338</value>
+  </data>
+  <data name="btInstantAsk.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 7, 7, 7</value>
+  </data>
+  <data name="btInstantAsk.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 34</value>
+  </data>
+  <data name="btInstantAsk.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="btInstantAsk.Text" xml:space="preserve">
+    <value>Instant Ask</value>
+  </data>
+  <data name="btInstantAsk.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;btInstantAsk.Name" xml:space="preserve">
+    <value>btInstantAsk</value>
+  </data>
+  <data name="&gt;&gt;btInstantAsk.Type" xml:space="preserve">
+    <value>Diccon.RoundedLabel, Diccon, Version=6.0.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btInstantAsk.Parent" xml:space="preserve">
+    <value>panelAsk</value>
+  </data>
+  <data name="&gt;&gt;btInstantAsk.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;richQuestion.Name" xml:space="preserve">
+    <value>richQuestion</value>
+  </data>
+  <data name="&gt;&gt;richQuestion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;richQuestion.Parent" xml:space="preserve">
+    <value>panelOfRichQuestion_1</value>
+  </data>
+  <data name="&gt;&gt;richQuestion.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panelOfRichQuestion_1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 119</value>
+  </data>
+  <data name="panelOfRichQuestion_1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>330, 216</value>
+  </data>
+  <data name="panelOfRichQuestion_1.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;panelOfRichQuestion_1.Name" xml:space="preserve">
+    <value>panelOfRichQuestion_1</value>
+  </data>
+  <data name="&gt;&gt;panelOfRichQuestion_1.Type" xml:space="preserve">
+    <value>Diccon.RoundedPanel, Diccon, Version=6.0.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;panelOfRichQuestion_1.Parent" xml:space="preserve">
+    <value>panelAsk</value>
+  </data>
+  <data name="&gt;&gt;panelOfRichQuestion_1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="richQuestion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 12</value>
+  </data>
+  <data name="richQuestion.MaxLength" type="System.Int32, mscorlib">
+    <value>500</value>
+  </data>
+  <data name="richQuestion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>309, 190</value>
+  </data>
+  <data name="richQuestion.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="richQuestion.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;richQuestion.Name" xml:space="preserve">
+    <value>richQuestion</value>
+  </data>
+  <data name="&gt;&gt;richQuestion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;richQuestion.Parent" xml:space="preserve">
+    <value>panelOfRichQuestion_1</value>
+  </data>
+  <data name="&gt;&gt;richQuestion.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btAsk.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="btAsk.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btAsk.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="btAsk.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btAsk.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 338</value>
+  </data>
+  <data name="btAsk.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 7, 7, 7</value>
+  </data>
+  <data name="btAsk.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 34</value>
+  </data>
+  <data name="btAsk.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="btAsk.Text" xml:space="preserve">
+    <value>Ask</value>
+  </data>
+  <data name="btAsk.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;btAsk.Name" xml:space="preserve">
+    <value>btAsk</value>
+  </data>
+  <data name="&gt;&gt;btAsk.Type" xml:space="preserve">
+    <value>Diccon.RoundedLabel, Diccon, Version=6.0.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btAsk.Parent" xml:space="preserve">
+    <value>panelAsk</value>
+  </data>
+  <data name="&gt;&gt;btAsk.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
   <data name="&gt;&gt;globalExampleDatetime.Name" xml:space="preserve">
     <value>globalExampleDatetime</value>
@@ -1369,7 +1324,7 @@
     <value>globalExamplePanel</value>
   </data>
   <data name="&gt;&gt;globalExamplePanel.Type" xml:space="preserve">
-    <value>Diccon.RoundedPanel, Diccon, Version=6.0.1.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedPanel, Diccon, Version=6.0.2.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;globalExamplePanel.Parent" xml:space="preserve">
     <value>globalFlowPanel</value>
@@ -1440,405 +1395,450 @@
   <data name="&gt;&gt;globalExampleAsk.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;btAskTop.Name" xml:space="preserve">
-    <value>btAskTop</value>
+  <data name="&gt;&gt;exampleAnswerText.Name" xml:space="preserve">
+    <value>exampleAnswerText</value>
   </data>
-  <data name="&gt;&gt;btAskTop.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.0.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;btAskTop.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;btAskTop.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btPeopleTop.Name" xml:space="preserve">
-    <value>btPeopleTop</value>
-  </data>
-  <data name="&gt;&gt;btPeopleTop.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.0.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;btPeopleTop.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;btPeopleTop.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;btYoursTop.Name" xml:space="preserve">
-    <value>btYoursTop</value>
-  </data>
-  <data name="&gt;&gt;btYoursTop.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.0.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;btYoursTop.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;btYoursTop.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="flowLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="flowLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>309, 35</value>
-  </data>
-  <data name="flowLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="flowLayoutPanel1.WrapContents" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel1.Name" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel1.Parent" xml:space="preserve">
-    <value>panelTop</value>
-  </data>
-  <data name="&gt;&gt;flowLayoutPanel1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="btAskTop.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="btAskTop.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btAskTop.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 0</value>
-  </data>
-  <data name="btAskTop.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 7, 10, 7</value>
-  </data>
-  <data name="btAskTop.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 34</value>
-  </data>
-  <data name="btAskTop.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="btAskTop.Text" xml:space="preserve">
-    <value>Ask</value>
-  </data>
-  <data name="btAskTop.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="btAskTop.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;btAskTop.Name" xml:space="preserve">
-    <value>btAskTop</value>
-  </data>
-  <data name="&gt;&gt;btAskTop.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.0.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;btAskTop.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;btAskTop.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btPeopleTop.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="btPeopleTop.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btPeopleTop.Location" type="System.Drawing.Point, System.Drawing">
-    <value>65, 0</value>
-  </data>
-  <data name="btPeopleTop.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 7, 10, 7</value>
-  </data>
-  <data name="btPeopleTop.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 34</value>
-  </data>
-  <data name="btPeopleTop.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="btPeopleTop.Text" xml:space="preserve">
-    <value>Global</value>
-  </data>
-  <data name="btPeopleTop.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;btPeopleTop.Name" xml:space="preserve">
-    <value>btPeopleTop</value>
-  </data>
-  <data name="&gt;&gt;btPeopleTop.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.0.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;btPeopleTop.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;btPeopleTop.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="btYoursTop.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="btYoursTop.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btYoursTop.Location" type="System.Drawing.Point, System.Drawing">
-    <value>146, 0</value>
-  </data>
-  <data name="btYoursTop.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 7, 10, 7</value>
-  </data>
-  <data name="btYoursTop.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 34</value>
-  </data>
-  <data name="btYoursTop.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="btYoursTop.Text" xml:space="preserve">
-    <value>Your question</value>
-  </data>
-  <data name="btYoursTop.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;btYoursTop.Name" xml:space="preserve">
-    <value>btYoursTop</value>
-  </data>
-  <data name="&gt;&gt;btYoursTop.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.0.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;btYoursTop.Parent" xml:space="preserve">
-    <value>flowLayoutPanel1</value>
-  </data>
-  <data name="&gt;&gt;btYoursTop.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="gradientLabel1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="gradientLabel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>56, 211</value>
-  </data>
-  <data name="gradientLabel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 20</value>
-  </data>
-  <data name="gradientLabel1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="gradientLabel1.Text" xml:space="preserve">
-    <value>gradientLabel1</value>
-  </data>
-  <data name="&gt;&gt;gradientLabel1.Name" xml:space="preserve">
-    <value>gradientLabel1</value>
-  </data>
-  <data name="&gt;&gt;gradientLabel1.Type" xml:space="preserve">
-    <value>Diccon.Pages.GradientLabel, Diccon, Version=6.0.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;gradientLabel1.Parent" xml:space="preserve">
-    <value>panelMain</value>
-  </data>
-  <data name="&gt;&gt;gradientLabel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panelMain.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 38</value>
-  </data>
-  <data name="panelMain.Size" type="System.Drawing.Size, System.Drawing">
-    <value>355, 513</value>
-  </data>
-  <data name="panelMain.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="&gt;&gt;panelMain.Name" xml:space="preserve">
-    <value>panelMain</value>
-  </data>
-  <data name="&gt;&gt;panelMain.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelMain.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panelMain.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;btReloadYours.Name" xml:space="preserve">
-    <value>btReloadYours</value>
-  </data>
-  <data name="&gt;&gt;btReloadYours.Type" xml:space="preserve">
-    <value>Diccon.RoundedIcon, Diccon, Version=6.0.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;btReloadYours.Parent" xml:space="preserve">
-    <value>panelTop</value>
-  </data>
-  <data name="&gt;&gt;btReloadYours.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btReload.Name" xml:space="preserve">
-    <value>btReload</value>
-  </data>
-  <data name="&gt;&gt;btReload.Type" xml:space="preserve">
-    <value>Diccon.RoundedIcon, Diccon, Version=6.0.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;btReload.Parent" xml:space="preserve">
-    <value>panelTop</value>
-  </data>
-  <data name="&gt;&gt;btReload.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="panelTop.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 1</value>
-  </data>
-  <data name="panelTop.Size" type="System.Drawing.Size, System.Drawing">
-    <value>356, 37</value>
-  </data>
-  <data name="panelTop.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="&gt;&gt;panelTop.Name" xml:space="preserve">
-    <value>panelTop</value>
-  </data>
-  <data name="&gt;&gt;panelTop.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelTop.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panelTop.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btReloadYours.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btReloadYours.Location" type="System.Drawing.Point, System.Drawing">
-    <value>315, 3</value>
-  </data>
-  <data name="btReloadYours.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
-  </data>
-  <data name="btReloadYours.Size" type="System.Drawing.Size, System.Drawing">
-    <value>28, 28</value>
-  </data>
-  <data name="btReloadYours.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>CenterImage</value>
-  </data>
-  <data name="btReloadYours.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;btReloadYours.Name" xml:space="preserve">
-    <value>btReloadYours</value>
-  </data>
-  <data name="&gt;&gt;btReloadYours.Type" xml:space="preserve">
-    <value>Diccon.RoundedIcon, Diccon, Version=6.0.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;btReloadYours.Parent" xml:space="preserve">
-    <value>panelTop</value>
-  </data>
-  <data name="&gt;&gt;btReloadYours.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btReload.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btReload.Location" type="System.Drawing.Point, System.Drawing">
-    <value>315, 3</value>
-  </data>
-  <data name="btReload.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
-  </data>
-  <data name="btReload.Size" type="System.Drawing.Size, System.Drawing">
-    <value>28, 28</value>
-  </data>
-  <data name="btReload.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>CenterImage</value>
-  </data>
-  <data name="btReload.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;btReload.Name" xml:space="preserve">
-    <value>btReload</value>
-  </data>
-  <data name="&gt;&gt;btReload.Type" xml:space="preserve">
-    <value>Diccon.RoundedIcon, Diccon, Version=6.0.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;btReload.Parent" xml:space="preserve">
-    <value>panelTop</value>
-  </data>
-  <data name="&gt;&gt;btReload.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <metadata name="newMessageChecker.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <data name="&gt;&gt;lbQuestionTitle.Name" xml:space="preserve">
-    <value>lbQuestionTitle</value>
-  </data>
-  <data name="&gt;&gt;lbQuestionTitle.Type" xml:space="preserve">
+  <data name="&gt;&gt;exampleAnswerText.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;lbQuestionTitle.Parent" xml:space="preserve">
-    <value>answerTopPanel</value>
+  <data name="&gt;&gt;exampleAnswerText.Parent" xml:space="preserve">
+    <value>exampleAnswerColoredPanel</value>
   </data>
-  <data name="&gt;&gt;lbQuestionTitle.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;exampleAnswerText.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="answerTopPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
+  <data name="exampleAnswerColoredPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
   </data>
-  <data name="answerTopPanel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt, style=Italic</value>
+  <data name="exampleAnswerColoredPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, 0</value>
   </data>
-  <data name="answerTopPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="exampleAnswerColoredPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>264, 155</value>
   </data>
-  <data name="answerTopPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>355, 42</value>
+  <data name="exampleAnswerColoredPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
-  <data name="answerTopPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+  <data name="&gt;&gt;exampleAnswerColoredPanel.Name" xml:space="preserve">
+    <value>exampleAnswerColoredPanel</value>
   </data>
-  <data name="&gt;&gt;answerTopPanel.Name" xml:space="preserve">
-    <value>answerTopPanel</value>
+  <data name="&gt;&gt;exampleAnswerColoredPanel.Type" xml:space="preserve">
+    <value>Diccon.RoundedPanel, Diccon, Version=6.0.2.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;answerTopPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;exampleAnswerColoredPanel.Parent" xml:space="preserve">
+    <value>exampleAnswerPanel</value>
   </data>
-  <data name="&gt;&gt;answerTopPanel.Parent" xml:space="preserve">
-    <value>panelAnswer</value>
+  <data name="&gt;&gt;exampleAnswerColoredPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;answerTopPanel.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="exampleAnswerText.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="lbQuestionTitle.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="exampleAnswerText.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
-  <data name="lbQuestionTitle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 10</value>
+  <data name="exampleAnswerText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="lbQuestionTitle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>336, 20</value>
+  <data name="exampleAnswerText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 8</value>
   </data>
-  <data name="lbQuestionTitle.TabIndex" type="System.Int32, mscorlib">
+  <data name="exampleAnswerText.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>237, 2000</value>
+  </data>
+  <data name="exampleAnswerText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>235, 60</value>
+  </data>
+  <data name="exampleAnswerText.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="lbQuestionTitle.Text" xml:space="preserve">
-    <value>lbQuestionTitle</value>
+  <data name="exampleAnswerText.Text" xml:space="preserve">
+    <value>label1 label1 label1 label1 label1 label1 label1 label1 label1 label1 label1 label1 </value>
   </data>
-  <data name="lbQuestionTitle.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
+  <data name="&gt;&gt;exampleAnswerText.Name" xml:space="preserve">
+    <value>exampleAnswerText</value>
   </data>
-  <data name="&gt;&gt;lbQuestionTitle.Name" xml:space="preserve">
-    <value>lbQuestionTitle</value>
-  </data>
-  <data name="&gt;&gt;lbQuestionTitle.Type" xml:space="preserve">
+  <data name="&gt;&gt;exampleAnswerText.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;lbQuestionTitle.Parent" xml:space="preserve">
-    <value>answerTopPanel</value>
+  <data name="&gt;&gt;exampleAnswerText.Parent" xml:space="preserve">
+    <value>exampleAnswerColoredPanel</value>
   </data>
-  <data name="&gt;&gt;lbQuestionTitle.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;exampleAnswerText.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="toolTipYawa.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>183, 17</value>
-  </metadata>
+  <data name="&gt;&gt;exampleAskLongText.Name" xml:space="preserve">
+    <value>exampleAskLongText</value>
+  </data>
+  <data name="&gt;&gt;exampleAskLongText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;exampleAskLongText.Parent" xml:space="preserve">
+    <value>exampleAskLongColoredPanel</value>
+  </data>
+  <data name="&gt;&gt;exampleAskLongText.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="exampleAskLongColoredPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="exampleAskLongColoredPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="exampleAskLongColoredPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 40</value>
+  </data>
+  <data name="exampleAskLongColoredPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;exampleAskLongColoredPanel.Name" xml:space="preserve">
+    <value>exampleAskLongColoredPanel</value>
+  </data>
+  <data name="&gt;&gt;exampleAskLongColoredPanel.Type" xml:space="preserve">
+    <value>Diccon.RoundedPanel, Diccon, Version=6.0.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;exampleAskLongColoredPanel.Parent" xml:space="preserve">
+    <value>exampleAskLongPanel</value>
+  </data>
+  <data name="&gt;&gt;exampleAskLongColoredPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="exampleAskLongText.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="exampleAskLongText.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="exampleAskLongText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="exampleAskLongText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 9</value>
+  </data>
+  <data name="exampleAskLongText.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>279, 10000</value>
+  </data>
+  <data name="exampleAskLongText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 20</value>
+  </data>
+  <data name="exampleAskLongText.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="exampleAskLongText.Text" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;exampleAskLongText.Name" xml:space="preserve">
+    <value>exampleAskLongText</value>
+  </data>
+  <data name="&gt;&gt;exampleAskLongText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;exampleAskLongText.Parent" xml:space="preserve">
+    <value>exampleAskLongColoredPanel</value>
+  </data>
+  <data name="&gt;&gt;exampleAskLongText.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="roundedPanelChatBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
+  </data>
+  <data name="&gt;&gt;answer_TextHolder.Name" xml:space="preserve">
+    <value>answer_TextHolder</value>
+  </data>
+  <data name="&gt;&gt;answer_TextHolder.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;answer_TextHolder.Parent" xml:space="preserve">
+    <value>roundedPanelChatBox</value>
+  </data>
+  <data name="&gt;&gt;answer_TextHolder.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;answer_textBox.Name" xml:space="preserve">
+    <value>answer_textBox</value>
+  </data>
+  <data name="&gt;&gt;answer_textBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;answer_textBox.Parent" xml:space="preserve">
+    <value>roundedPanelChatBox</value>
+  </data>
+  <data name="&gt;&gt;answer_textBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;textFromClipboard.Name" xml:space="preserve">
+    <value>textFromClipboard</value>
+  </data>
+  <data name="&gt;&gt;textFromClipboard.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textFromClipboard.Parent" xml:space="preserve">
+    <value>roundedPanelChatBox</value>
+  </data>
+  <data name="&gt;&gt;textFromClipboard.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btSend.Name" xml:space="preserve">
+    <value>btSend</value>
+  </data>
+  <data name="&gt;&gt;btSend.Type" xml:space="preserve">
+    <value>FontAwesome.Sharp.IconPictureBox, FontAwesome.Sharp, Version=5.15.4.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
+  </data>
+  <data name="&gt;&gt;btSend.Parent" xml:space="preserve">
+    <value>roundedPanelChatBox</value>
+  </data>
+  <data name="&gt;&gt;btSend.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="roundedPanelChatBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 4</value>
+  </data>
+  <data name="roundedPanelChatBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>339, 45</value>
+  </data>
+  <data name="roundedPanelChatBox.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;roundedPanelChatBox.Name" xml:space="preserve">
+    <value>roundedPanelChatBox</value>
+  </data>
+  <data name="&gt;&gt;roundedPanelChatBox.Type" xml:space="preserve">
+    <value>Diccon.RoundedPanel, Diccon, Version=6.0.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;roundedPanelChatBox.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;roundedPanelChatBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="answer_TextHolder.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="answer_TextHolder.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="answer_TextHolder.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="answer_TextHolder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 12</value>
+  </data>
+  <data name="answer_TextHolder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 20</value>
+  </data>
+  <data name="answer_TextHolder.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="answer_TextHolder.Text" xml:space="preserve">
+    <value>Nhập để trao đổi</value>
+  </data>
+  <data name="&gt;&gt;answer_TextHolder.Name" xml:space="preserve">
+    <value>answer_TextHolder</value>
+  </data>
+  <data name="&gt;&gt;answer_TextHolder.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;answer_TextHolder.Parent" xml:space="preserve">
+    <value>roundedPanelChatBox</value>
+  </data>
+  <data name="&gt;&gt;answer_TextHolder.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="answer_textBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
+  </data>
+  <data name="answer_textBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 15.75pt</value>
+  </data>
+  <data name="answer_textBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 10</value>
+  </data>
+  <data name="answer_textBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>245, 24</value>
+  </data>
+  <data name="answer_textBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;answer_textBox.Name" xml:space="preserve">
+    <value>answer_textBox</value>
+  </data>
+  <data name="&gt;&gt;answer_textBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;answer_textBox.Parent" xml:space="preserve">
+    <value>roundedPanelChatBox</value>
+  </data>
+  <data name="&gt;&gt;answer_textBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="textFromClipboard.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="textFromClipboard.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="textFromClipboard.Location" type="System.Drawing.Point, System.Drawing">
+    <value>265, 11</value>
+  </data>
+  <data name="textFromClipboard.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="textFromClipboard.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>AutoSize</value>
+  </data>
+  <data name="textFromClipboard.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="textFromClipboard.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;textFromClipboard.Name" xml:space="preserve">
+    <value>textFromClipboard</value>
+  </data>
+  <data name="&gt;&gt;textFromClipboard.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textFromClipboard.Parent" xml:space="preserve">
+    <value>roundedPanelChatBox</value>
+  </data>
+  <data name="&gt;&gt;textFromClipboard.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btSend.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btSend.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btSend.Location" type="System.Drawing.Point, System.Drawing">
+    <value>297, 11</value>
+  </data>
+  <data name="btSend.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 27</value>
+  </data>
+  <data name="btSend.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;btSend.Name" xml:space="preserve">
+    <value>btSend</value>
+  </data>
+  <data name="&gt;&gt;btSend.Type" xml:space="preserve">
+    <value>FontAwesome.Sharp.IconPictureBox, FontAwesome.Sharp, Version=5.15.4.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
+  </data>
+  <data name="&gt;&gt;btSend.Parent" xml:space="preserve">
+    <value>roundedPanelChatBox</value>
+  </data>
+  <data name="&gt;&gt;btSend.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;yourTime.Name" xml:space="preserve">
+    <value>yourTime</value>
+  </data>
+  <data name="&gt;&gt;yourTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;yourTime.Parent" xml:space="preserve">
+    <value>yourPanel</value>
+  </data>
+  <data name="&gt;&gt;yourTime.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;yourLabel.Name" xml:space="preserve">
+    <value>yourLabel</value>
+  </data>
+  <data name="&gt;&gt;yourLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;yourLabel.Parent" xml:space="preserve">
+    <value>yourPanel</value>
+  </data>
+  <data name="&gt;&gt;yourLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="yourPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="yourPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>333, 110</value>
+  </data>
+  <data name="yourPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;yourPanel.Name" xml:space="preserve">
+    <value>yourPanel</value>
+  </data>
+  <data name="&gt;&gt;yourPanel.Type" xml:space="preserve">
+    <value>Diccon.RoundedPanel, Diccon, Version=6.0.2.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;yourPanel.Parent" xml:space="preserve">
+    <value>flowYours</value>
+  </data>
+  <data name="&gt;&gt;yourPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="yourTime.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="yourTime.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
+  </data>
+  <data name="yourTime.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="yourTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 82</value>
+  </data>
+  <data name="yourTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 16</value>
+  </data>
+  <data name="yourTime.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="yourTime.Text" xml:space="preserve">
+    <value>datetime</value>
+  </data>
+  <data name="&gt;&gt;yourTime.Name" xml:space="preserve">
+    <value>yourTime</value>
+  </data>
+  <data name="&gt;&gt;yourTime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;yourTime.Parent" xml:space="preserve">
+    <value>yourPanel</value>
+  </data>
+  <data name="&gt;&gt;yourTime.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="yourLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="yourLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="yourLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 13</value>
+  </data>
+  <data name="yourLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>306, 69</value>
+  </data>
+  <data name="yourLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="yourLabel.Text" xml:space="preserve">
+    <value>global</value>
+  </data>
+  <data name="&gt;&gt;yourLabel.Name" xml:space="preserve">
+    <value>yourLabel</value>
+  </data>
+  <data name="&gt;&gt;yourLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;yourLabel.Parent" xml:space="preserve">
+    <value>yourPanel</value>
+  </data>
+  <data name="&gt;&gt;yourLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -1853,9 +1853,6 @@
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
-  </data>
-  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>371, 590</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Community</value>

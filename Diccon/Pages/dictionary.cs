@@ -22,7 +22,7 @@ namespace Diccon
 
         private void mainHall_Load(object sender, EventArgs e)
         {
-
+           
             ///////  T   H   E   M   E  ///////////////
             panelNotice.BackColor = dicconProp.ColorA3;
             exampleAnswerColoredPanel.BackColor = dicconProp.ColorA3;
@@ -387,6 +387,11 @@ namespace Diccon
         private void exampleNoteSave_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void dictionary_SizeChanged(object sender, EventArgs e)
+        {
+            this.Refresh();
         }
     }
 

@@ -26,7 +26,9 @@ namespace Diccon.Pages
 
         private void yawa_Load(object sender, EventArgs e)
         {
-            //panelMain.Dock = DockStyle.Fill;
+            panelMain.Dock = DockStyle.Fill;
+            panelMain.BringToFront();
+            panelTop.Dock = DockStyle.Top;
             btAsk.BackColor = dicconProp.ColorA8;
             btInstantAsk.BackColor = dicconProp.ColorA8;
             btPeopleTop.BackColor = dicconProp.ColorA3;
@@ -86,11 +88,10 @@ namespace Diccon.Pages
         }
         private void openPanel(Panel panel)
         {
-            currentPanel = panel;
-            panelMain.Controls.Add(currentPanel);
-            currentPanel.Visible = true;
-            currentPanel.Dock = DockStyle.Fill;
-            currentPanel.BringToFront();
+            panelMain.Controls.Add(panel);
+            panel.Visible = true;
+            panel.Dock = DockStyle.Fill;
+            panel.BringToFront();
         }
 
         private void btAskPanel_Click(object sender, EventArgs e)
@@ -143,7 +144,7 @@ namespace Diccon.Pages
         string listLoadedMessage ;
         private void GoToAnswer_Click(object sender, EventArgs e)
         {
-            newMessageChecker.Interval = 5000;
+           
             newMessageChecker.Enabled = true;
             TopControlSwitch("answerBox");
             openPanel(panelAnswer);
@@ -365,7 +366,7 @@ namespace Diccon.Pages
         private void newMessageChecker_Tick(object sender, EventArgs e)
         {
 
-            if(connectivity.isOnline())
+            //if(connectivity.isOnline())
             ReloadInChat();
         }
 
