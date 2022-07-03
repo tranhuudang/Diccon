@@ -32,8 +32,7 @@ namespace Diccon
         public static int bottomPanel_ExpandedHeight = 150;
         public static string backupError = "A error occur during Back up & Sync process. Try again or contact to us for help";
 
-
-
+      
 
         public static Color default_addNote_BackColor = Color.FromArgb(255, 192, 128);
         public static Color hover_addNote_BackColor = Color.FromArgb(242, 203, 164);
