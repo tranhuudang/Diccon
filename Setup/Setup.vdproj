@@ -6292,15 +6292,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Diccon"
-        "ProductCode" = "8:{74832F55-F2D3-4C0A-866F-CD5AB0400AC2}"
-        "PackageCode" = "8:{2038387A-0359-4EEA-A84C-86E21491BFD0}"
+        "ProductCode" = "8:{4E17042E-B949-4569-8878-75FD43001E3A}"
+        "PackageCode" = "8:{CA71EF19-6EA0-40C5-B01F-2EB3ACCDCCCB}"
         "UpgradeCode" = "8:{C3EC954D-584A-4601-9060-9EB3A8F54986}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:6.0.4"
+        "ProductVersion" = "8:6.0.5"
         "Manufacturer" = "8:ZeroClub"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:https://www.zeroclub.one"
@@ -6842,7 +6842,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_47DAF1F24D184872A1F8B518C93A1710"
             {
-            "SourcePath" = "8:..\\Diccon\\obj\\x64\\Release\\Diccon.exe"
+            "SourcePath" = "8:..\\Diccon\\obj\\Debug\\Diccon.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_F98A2CC3884C4A5CAC2EE97EBFA5A0C7"
