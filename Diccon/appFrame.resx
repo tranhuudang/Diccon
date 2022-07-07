@@ -124,6 +124,9 @@
   <data name="buttonMenu.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
+  <data name="buttonMenu.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="buttonMenu.Location" type="System.Drawing.Point, System.Drawing">
     <value>98, 3</value>
@@ -153,6 +156,9 @@
   <data name="iconPictureBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
+  <data name="iconPictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="iconPictureBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>64, 3</value>
   </data>
@@ -179,6 +185,9 @@
   </data>
   <data name="btStar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
+  </data>
+  <data name="btStar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="btStar.Location" type="System.Drawing.Point, System.Drawing">
     <value>30, 3</value>
@@ -231,6 +240,9 @@
   <data name="&gt;&gt;topControlPanel.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="logo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="logo.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 3</value>
   </data>
@@ -257,6 +269,9 @@
   </data>
   <data name="title.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 15.75pt, style=Bold</value>
+  </data>
+  <data name="title.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="title.Location" type="System.Drawing.Point, System.Drawing">
     <value>66, 3</value>
@@ -315,6 +330,9 @@
   <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 11.25pt, style=Bold</value>
   </data>
+  <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
     <value>142, 512</value>
   </data>
@@ -345,11 +363,14 @@
   <data name="btDonate.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
+  <data name="btDonate.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="btDonate.Location" type="System.Drawing.Point, System.Drawing">
     <value>142, 291</value>
   </data>
   <data name="btDonate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 69</value>
+    <value>73, 71</value>
   </data>
   <data name="btDonate.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -361,7 +382,7 @@
     <value>btDonate</value>
   </data>
   <data name="&gt;&gt;btDonate.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.0.2.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btDonate.Parent" xml:space="preserve">
     <value>panelHome</value>
@@ -374,6 +395,9 @@
   </data>
   <data name="lbQuotation.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 15.75pt</value>
+  </data>
+  <data name="lbQuotation.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="lbQuotation.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 12</value>
@@ -408,11 +432,14 @@
   <data name="btDictionary.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
+  <data name="btDictionary.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="btDictionary.Location" type="System.Drawing.Point, System.Drawing">
     <value>51, 190</value>
   </data>
   <data name="btDictionary.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 69</value>
+    <value>73, 71</value>
   </data>
   <data name="btDictionary.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -424,7 +451,7 @@
     <value>btDictionary</value>
   </data>
   <data name="&gt;&gt;btDictionary.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.0.2.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btDictionary.Parent" xml:space="preserve">
     <value>panelHome</value>
@@ -438,11 +465,14 @@
   <data name="btTimeline.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
+  <data name="btTimeline.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="btTimeline.Location" type="System.Drawing.Point, System.Drawing">
     <value>142, 190</value>
   </data>
   <data name="btTimeline.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 69</value>
+    <value>73, 71</value>
   </data>
   <data name="btTimeline.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -454,7 +484,7 @@
     <value>btTimeline</value>
   </data>
   <data name="&gt;&gt;btTimeline.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.0.2.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btTimeline.Parent" xml:space="preserve">
     <value>panelHome</value>
@@ -470,6 +500,9 @@
   </data>
   <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
     <value>49, 261</value>
@@ -504,6 +537,9 @@
   <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
+  <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
     <value>149, 364</value>
   </data>
@@ -536,6 +572,9 @@
   </data>
   <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
     <value>147, 261</value>
@@ -570,6 +609,9 @@
   <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>225, 262</value>
   </data>
@@ -597,14 +639,20 @@
   <data name="label1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
   </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>47, 364</value>
+    <value>62, 364</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 21</value>
+    <value>51, 20</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -633,11 +681,14 @@
   <data name="btNotes.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
+  <data name="btNotes.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="btNotes.Location" type="System.Drawing.Point, System.Drawing">
     <value>51, 293</value>
   </data>
   <data name="btNotes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 69</value>
+    <value>73, 71</value>
   </data>
   <data name="btNotes.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -649,7 +700,7 @@
     <value>btNotes</value>
   </data>
   <data name="&gt;&gt;btNotes.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.0.2.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btNotes.Parent" xml:space="preserve">
     <value>panelHome</value>
@@ -663,11 +714,14 @@
   <data name="btCommunity.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
+  <data name="btCommunity.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="btCommunity.Location" type="System.Drawing.Point, System.Drawing">
     <value>233, 190</value>
   </data>
   <data name="btCommunity.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 69</value>
+    <value>73, 71</value>
   </data>
   <data name="btCommunity.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -679,7 +733,7 @@
     <value>btCommunity</value>
   </data>
   <data name="&gt;&gt;btCommunity.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.0.2.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btCommunity.Parent" xml:space="preserve">
     <value>panelHome</value>
@@ -842,6 +896,9 @@
   </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>54</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>

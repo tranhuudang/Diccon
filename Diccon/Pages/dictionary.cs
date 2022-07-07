@@ -37,7 +37,10 @@ namespace Diccon
             searchTextBox.BackColor = dicconProp.ColorA9;
 
             ///////////////////////////////////////////
+            ///
             panelBottom.Height = dicconProp.bottomPanel_DefaultHeight;
+            panelAdd.Visible = false;
+
             // setup flowchatbox to only show vertical scrollbar
             flowChatBox.HorizontalScroll.Visible = false;
             flowChatBox.HorizontalScroll.Enabled = false;
@@ -183,9 +186,17 @@ namespace Diccon
         private void buttonAdd_Click(object sender, EventArgs e)
         {
             if (panelBottom.Height == dicconProp.bottomPanel_ExpandedHeight)
+            {
+                panelAdd.Visible = false;
                 panelBottom.Height = dicconProp.bottomPanel_DefaultHeight;
+
+            }
             else
+            {
+                panelAdd.Visible = true;
                 panelBottom.Height = dicconProp.bottomPanel_ExpandedHeight;
+
+            }
         }
 
         private void searchTextBox_Click(object sender, EventArgs e)

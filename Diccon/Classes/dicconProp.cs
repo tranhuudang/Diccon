@@ -28,11 +28,11 @@ namespace Diccon
         public static string TextDataFromResources = Properties.Resources.Envi;
         public static string[] splitedText = TextDataFromResources.Split("@".ToCharArray());
         // botton height use to control the panel when open bottom menu
-        public static int bottomPanel_DefaultHeight = 60;
-        public static int bottomPanel_ExpandedHeight = 150;
+        public static int bottomPanel_DefaultHeight = 85;
+        public static int bottomPanel_ExpandedHeight = 160;
         public static string backupError = "A error occur during Back up & Sync process. Try again or contact to us for help";
 
-      
+
         public static Color default_addNote_BackColor = Color.FromArgb(255, 192, 128);
         public static Color hover_addNote_BackColor = Color.FromArgb(242, 203, 164);
         public static string resourcesFolder = dicconApplicationDataPath + @"\Resources\";

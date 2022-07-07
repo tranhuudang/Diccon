@@ -44,12 +44,12 @@
             // 
             // panel1
             // 
-            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.panelQr);
             this.panel1.Controls.Add(this.btOpenQr);
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
             // pictureBox2
@@ -66,24 +66,24 @@
             // 
             // panelQr
             // 
-            resources.ApplyResources(this.panelQr, "panelQr");
             this.panelQr.Controls.Add(this.comboBox1);
             this.panelQr.Controls.Add(this.pictureBox1);
+            resources.ApplyResources(this.panelQr, "panelQr");
             this.panelQr.Name = "panelQr";
             // 
             // comboBox1
             // 
-            resources.ApplyResources(this.comboBox1, "comboBox1");
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             resources.GetString("comboBox1.Items")});
+            resources.ApplyResources(this.comboBox1, "comboBox1");
             this.comboBox1.Name = "comboBox1";
             // 
             // pictureBox1
             // 
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Image = global::Diccon.Properties.Resources.IMG_Sacombank_png;
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
             // 

@@ -334,6 +334,9 @@
     <EmbeddedResource Include="Pages\settings.resx">
       <DependentUpon>settings.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pages\settings.vi.resx">
+      <DependentUpon>settings.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pages\timeline.resx">
       <DependentUpon>timeline.cs</DependentUpon>
     </EmbeddedResource>

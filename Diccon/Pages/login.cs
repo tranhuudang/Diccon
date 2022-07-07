@@ -208,5 +208,10 @@ namespace Diccon.Pages
                 btLogin_Click(null, null);
             }    
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            panelLogin.Dock = DockStyle.Fill;
+        }
     }
 }

@@ -49,65 +49,17 @@ namespace Diccon
             }
             InitializeComponent();
         }
-        //// Reduce font size to match the resolution
-        //public void SetAllControlsFont(Control.ControlCollection ctrls, int minusFontSize)
-        //{
-        //    foreach (Control ctrl in ctrls)
-        //    {
-        //        if (ctrl.Controls != null)
-        //            SetAllControlsFont(ctrl.Controls, minusFontSize);
-
-        //        ctrl.Font = new Font("MS Reference Sans Serif", ctrl.Font.Size - minusFontSize);
-
-        //    }
-        //}
-        //// reduce noise in scale larger than 100%
-        //[System.Runtime.InteropServices.DllImport("user32.dll")]
-        //private static extern bool SetProcessDPIAware();
-        //// #####################################################################################################
-        //// Hàm và thủ tục này dùng để kiểm tra mức độ thu phóng của hệ điều hành
-        //// Qua đó cho phép người lập trình xử lí giao diện tốt hơn
-        //[System.Runtime.InteropServices.DllImport("gdi32.dll", CharSet = CharSet.Auto, SetLastError = true, ExactSpelling = true)]
-        //public static extern int GetDeviceCaps(IntPtr hDC, int nIndex);
-
-        //public enum DeviceCap
-        //{
-        //    VERTRES = 10,
-        //    DESKTOPVERTRES = 117
-        //}
-
-        //static double GetWindowsScreenScalingFactor(bool percentage = true)
-        //{
-        //    //Create Graphics object from the current windows handle
-        //    Graphics GraphicsObject = Graphics.FromHwnd(IntPtr.Zero);
-        //    //Get Handle to the device context associated with this Graphics object
-        //    IntPtr DeviceContextHandle = GraphicsObject.GetHdc();
-        //    //Call GetDeviceCaps with the Handle to retrieve the Screen Height
-        //    int LogicalScreenHeight = GetDeviceCaps(DeviceContextHandle, (int)DeviceCap.VERTRES);
-        //    int PhysicalScreenHeight = GetDeviceCaps(DeviceContextHandle, (int)DeviceCap.DESKTOPVERTRES);
-        //    //Divide the Screen Heights to get the scaling factor and round it to two decimals
-        //    double ScreenScalingFactor = Math.Round((double)PhysicalScreenHeight / (double)LogicalScreenHeight, 2);
-        //    //If requested as percentage - convert it
-        //    if (percentage)
-        //    {
-        //        ScreenScalingFactor *= 100.0;
-        //    }
-        //    //Release the Handle and Dispose of the GraphicsObject object
-        //    GraphicsObject.ReleaseHdc(DeviceContextHandle);
-        //    GraphicsObject.Dispose();
-        //    //Return the Scaling Factor
-        //    return ScreenScalingFactor;
-        //}
-        //// #####################################################################################################
-
-
         private void AppFrame_Load(object sender, EventArgs e)
         {
+            Resolution objFormResizer = new Resolution();
+            //objFormResizer.ResizeForm(this, 768, 1024);
+            objFormResizer.ResizeForm(this, 1080, 1920);
+
             // Stack up quotation
             Quotes quotes = new Quotes();
             switch (Properties.Settings.Default["language"])
             {
-                
+
                 case "english":
                     englishToolStripMenuItem.Checked = true;
                     vietnameseToolStripMenuItem.Checked = false;
@@ -126,23 +78,6 @@ namespace Diccon
             {
                 Directory.CreateDirectory(dicconProp.dicconApplicationDataPath);
             };
-            //
-            //MessageBox.Show(GetWindowsScreenScalingFactor().ToString());
-            //switch (GetWindowsScreenScalingFactor())
-            //{
-            //    case 100: // 100% scaling
-
-            //        break;
-            //    case 125: // 125% scaling
-
-            //        SetProcessDPIAware();
-            //        SetAllControlsFont(this.Controls, 4);
-            //        break;
-            //    case 150: // 150% scaling
-            //        SetProcessDPIAware();
-            //        SetAllControlsFont(this.Controls, 5);
-            //        break;
-            //}
             switch (Properties.Settings.Default["staredForm"])
             {
                 case "Dictionary":
@@ -154,7 +89,7 @@ namespace Diccon
                     openForm(timelineForm);
                     break;
                 default:
-                   
+
                     break;
             }
             if (Properties.Settings.Default["userID"].ToString() != "none")
@@ -163,7 +98,7 @@ namespace Diccon
                 backUpSyncToolStripMenuItem.Visible = true;
                 logInWithGoogleToolStripMenuItem.Visible = false;
             }
-           
+
 
             topPanel.BackColor = dicconProp.AccentColor;
             topControlPanel.BackColor = dicconProp.AccentColor;
@@ -174,8 +109,63 @@ namespace Diccon
             btCommunity.BackColor = dicconProp.ColorA8;
         }
 
-       
 
+
+
+
+        public class Resolution
+        {
+            float heightRatio = new float();
+            float widthRatio = new float();
+            int standardHeight, standardWidth;
+            public void ResizeForm(Form objForm, int DesignerHeight, int DesignerWidth)
+            {
+                standardHeight = DesignerHeight;
+                standardWidth = DesignerWidth;
+                int presentHeight = Screen.PrimaryScreen.WorkingArea.Height;//.Bounds.Height;
+                int presentWidth = Screen.PrimaryScreen.Bounds.Width;
+                heightRatio = (float)((float)presentHeight / (float)standardHeight);
+                widthRatio = (float)((float)presentWidth / (float)standardWidth);
+                objForm.AutoScaleMode = AutoScaleMode.None;
+                objForm.Scale(new SizeF(widthRatio, heightRatio));
+                foreach (Control c in objForm.Controls)
+                {
+                    if (c.HasChildren)
+                    {
+                        ResizeControlStore(c);
+                    }
+                    else
+                    {
+                        c.Font = new Font(c.Font.FontFamily, c.Font.Size * heightRatio, c.Font.Style, c.Font.Unit, ((byte)(0)));
+                    }
+                }
+                objForm.Font = new Font(objForm.Font.FontFamily, objForm.Font.Size * heightRatio, objForm.Font.Style, objForm.Font.Unit, ((byte)(0)));
+            }
+
+            private void ResizeControlStore(Control objCtl)
+            {
+                if (objCtl.HasChildren)
+                {
+                    foreach (Control cChildren in objCtl.Controls)
+                    {
+                        if (cChildren.HasChildren)
+                        {
+                            ResizeControlStore(cChildren);
+
+                        }
+                        else
+                        {
+                            cChildren.Font = new Font(cChildren.Font.FontFamily, cChildren.Font.Size * heightRatio, cChildren.Font.Style, cChildren.Font.Unit, ((byte)(0)));
+                        }
+                    }
+                    objCtl.Font = new Font(objCtl.Font.FontFamily, objCtl.Font.Size * heightRatio, objCtl.Font.Style, objCtl.Font.Unit, ((byte)(0)));
+                }
+                else
+                {
+                    objCtl.Font = new Font(objCtl.Font.FontFamily, objCtl.Font.Size * heightRatio, objCtl.Font.Style, objCtl.Font.Unit, ((byte)(0)));
+                }
+            }
+        }
 
 
 
@@ -247,7 +237,7 @@ namespace Diccon
             ///Star button
             foreach (string item in pagesName)
             {
-                if(formName==item)
+                if (formName == item)
                 {
                     if (Properties.Settings.Default["staredForm"].ToString() == targetForm.Text)
                     {
@@ -348,16 +338,16 @@ namespace Diccon
 
         private void playGroundPanel_ControlAdded(object sender, ControlEventArgs e)
         {
-          
+
         }
 
         private void btStar_Click(object sender, EventArgs e)
         {
             string staredForm = Properties.Settings.Default["staredForm"].ToString();
-            if (staredForm=="default")
+            if (staredForm == "default")
             {
                 btStar.IconColor = Color.Gold;
-                btStar.IconFont =IconFont.Solid;
+                btStar.IconFont = IconFont.Solid;
                 Properties.Settings.Default["staredForm"] = title.Text;
                 Properties.Settings.Default.Save();
             }
@@ -379,7 +369,7 @@ namespace Diccon
 
         private void btDonate_Click(object sender, EventArgs e)
         {
-            
+
 
             if (donateForm != null)
             {
@@ -445,9 +435,9 @@ namespace Diccon
 
         private void timeLineDetector_Tick(object sender, EventArgs e)
         {
-            if(dicconProp.wordFromTimeline!="")
+            if (dicconProp.wordFromTimeline != "")
             {
-                btDictionary_Click(null,null);
+                btDictionary_Click(null, null);
             }
         }
 
@@ -517,20 +507,21 @@ namespace Diccon
             string timelineLocalContents = "";
             string timelineOnlineContents = "";
             connectivity connectivity = new connectivity();
-            if (connectivity.isOnline()) {
+            if (connectivity.isOnline())
+            {
                 try
                 {
                     if (File.Exists(dicconProp.historyFileName))
                     {
                         // Get both local and online data together, and then mix them up, filter out doulicate and push online and local
                         timelineLocalContents = File.ReadAllText(dicconProp.historyFileName);
-                        string getOnlineQueryString = @"Select Timeline from dbo.DicconUser where Id="+dicconProp.userID;
+                        string getOnlineQueryString = @"Select Timeline from dbo.DicconUser where Id=" + dicconProp.userID;
                         SQLHandler sqlHandler = new SQLHandler();
                         DataTable dataTable = sqlHandler.Select(getOnlineQueryString);
                         timelineOnlineContents = dataTable.Rows[0][0].ToString();
                         // Combine two string
-                        string combinedContents = timelineLocalContents +"#"+ timelineOnlineContents;
-                        string[] rawList= combinedContents.Split('#');
+                        string combinedContents = timelineLocalContents + "#" + timelineOnlineContents;
+                        string[] rawList = combinedContents.Split('#');
                         List<string> rawList_1 = new List<string>();
                         foreach (var item in rawList)
                         {
@@ -540,7 +531,7 @@ namespace Diccon
                         List<string> rawList_2 = rawList_1.Distinct().ToList();
                         string outList = string.Join("#", rawList_2);
                         // Update new data to online disk
-                        string updateQueryString = "UPDATE dbo.DicconUser  SET Timeline = '" + outList + "' Where Id=" +dicconProp.userID;
+                        string updateQueryString = "UPDATE dbo.DicconUser  SET Timeline = '" + outList + "' Where Id=" + dicconProp.userID;
                         sqlHandler.Update(updateQueryString);
                         // Update new data to local disk
                         StreamWriter history = new StreamWriter(dicconProp.historyFileName);
@@ -563,17 +554,17 @@ namespace Diccon
                 catch (Exception)
                 {
                     MessageBox.Show(dicconProp.backupError);
-    
 
-            }
+
+                }
 
             }
             else
             {
                 MessageBox.Show(dicconProp.internetError);
             }
-           
-            
+
+
         }
 
         private void englishToolStripMenuItem_Click(object sender, EventArgs e)
