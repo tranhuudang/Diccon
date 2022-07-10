@@ -56,19 +56,20 @@ namespace Diccon
             objFormResizer.ResizeForm(this, 1080, 1920);
 
             // Stack up quotation
-            Quotes quotes = new Quotes();
             switch (Properties.Settings.Default["language"])
             {
 
                 case "english":
                     englishToolStripMenuItem.Checked = true;
                     vietnameseToolStripMenuItem.Checked = false;
-                    lbQuotation.Text = quotes.getQuote("en-US");
+                    Quotes.English quote = new Quotes.English();
+                    lbQuotation.Text = quote.Wisdom;
                     break;
                 case "vietnamese":
                     englishToolStripMenuItem.Checked = false;
                     vietnameseToolStripMenuItem.Checked = true;
-                    lbQuotation.Text = quotes.getQuote("vi-VI");
+                    Quotes.Vietnamese quote_vi = new Quotes.Vietnamese();
+                    lbQuotation.Text = quote_vi.Wisdom;
                     break;
                 default:
                     break;
