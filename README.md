@@ -30,7 +30,7 @@
 
 ## Tải về
 
-* ⬇️ Diccon Dictionary Setup : [Download](https://github.com/tranhuudang/Diccon/raw/master/Diccon/Setup%20and%20Update/DicconSetup.msi)
+* ⬇️ Microsoft Store : [Download](https://www.microsoft.com/store/apps/9NB4287NDVN6)
 
 
 ## Liên hệ
