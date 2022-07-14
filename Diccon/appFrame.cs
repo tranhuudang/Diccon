@@ -1,7 +1,6 @@
 ﻿using Diccon.Pages;
 using FontAwesome.Sharp;
 using System;
-using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Media;
@@ -12,8 +11,6 @@ using System.Threading;
 using System.Windows.Forms;
 using QuoteBank;
 using System.Xml;
-using WK.Libraries.WTL;
-using static WK.Libraries.WTL.ThemeListener;
 using System.Data.SqlClient;
 using System.Data;
 using System.Collections.Generic;
@@ -51,9 +48,8 @@ namespace Diccon
         }
         private void AppFrame_Load(object sender, EventArgs e)
         {
-            Resolution objFormResizer = new Resolution();
-            //objFormResizer.ResizeForm(this, 768, 1024);
-            objFormResizer.ResizeForm(this, 1080, 1920);
+            //Resolution objFormResizer = new Resolution();
+            //objFormResizer.ResizeForm(this, 1080, 1920);
 
             // Stack up quotation
             switch (Properties.Settings.Default["language"])
@@ -101,13 +97,14 @@ namespace Diccon
             }
 
 
-            topPanel.BackColor = dicconProp.AccentColor;
-            topControlPanel.BackColor = dicconProp.AccentColor;
+            
+            //topControlPanel.BackColor = dicconProp.AccentColor;
             btDictionary.BackColor = dicconProp.ColorA8;
             btDonate.BackColor = dicconProp.ColorA8;
             btTimeline.BackColor = dicconProp.ColorA8;
             btNotes.BackColor = dicconProp.ColorA8;
             btCommunity.BackColor = dicconProp.ColorA8;
+            topPanel.BackColor = dicconProp.AccentColor;
         }
 
 
@@ -197,10 +194,7 @@ namespace Diccon
         /// <param name="e"></param>
         private void PictureBox_MouseEnter(object sender, EventArgs e)
         {
-            PictureBox pictureBox = (sender as PictureBox);
-            int X = pictureBox.Location.X;
-            int Y = pictureBox.Location.Y - 2;
-            pictureBox.Location = new Point(X, Y);
+
         }
         /// <summary>
         /// Change position of PictureBox to create a illusion that the box is push down a little bit
@@ -209,10 +203,7 @@ namespace Diccon
         /// <param name="e"></param>
         private void PictureBox_MouseLeave(object sender, EventArgs e)
         {
-            PictureBox pictureBox = (sender as PictureBox);
-            int X = pictureBox.Location.X;
-            int Y = pictureBox.Location.Y + 2;
-            pictureBox.Location = new Point(X, Y);
+
         }
 
         private void btDictionary_Click(object sender, EventArgs e)
@@ -328,14 +319,7 @@ namespace Diccon
         }
 
 
-        private void WebClient_DownloadFileCompleted(object sender, System.ComponentModel.AsyncCompletedEventArgs e)
-        {
-            if (MessageBox.Show(dicconProp.downloadSetupCompleteMessage, "Update", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
-            {
-                Process.Start(dicconProp.setupName);
-                Application.Exit();
-            }
-        }
+    
 
         private void playGroundPanel_ControlAdded(object sender, ControlEventArgs e)
         {
@@ -444,7 +428,7 @@ namespace Diccon
 
         private void githubToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Process.Start(dicconProp.githubPath);
+           
         }
 
         private void toolStripMenuItem3_Click(object sender, EventArgs e)
@@ -551,6 +535,7 @@ namespace Diccon
                         history.Write(timelineOnlineContents);
                         history.Close();
                     }
+                    MessageBox.Show("Your data had been synced successfully");
                 }
                 catch (Exception)
                 {
@@ -573,6 +558,7 @@ namespace Diccon
             Properties.Settings.Default["language"] = "english";
             Properties.Settings.Default.Save();
             Application.Restart();
+            
         }
 
         private void vietnameseToolStripMenuItem_Click(object sender, EventArgs e)

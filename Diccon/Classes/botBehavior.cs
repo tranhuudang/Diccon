@@ -200,19 +200,12 @@ namespace Diccon
                 newLabel.Text = word;
                 newLabel.AutoSize = true;
                 newLabel.Font = exampleItem.Font;
-                newLabel.Click += NewLabel_Click;
 
                 panelHaveSynonyms.Controls.Add(newLabel);
 
             }
 
             targetFlowLayout.ScrollControlIntoView(panelHaveSynonyms);
-        }
-
-        private void NewLabel_Click(object sender, EventArgs e)
-        {
-            Clipboard.SetText((sender as RoundedLabel).Text);
-
         }
         /// <summary>
         /// Using Microsoft Translator API to translate string to a translated JSON-formated string.
@@ -316,7 +309,7 @@ namespace Diccon
 
         private void PixabayLogo_Click(object sender, EventArgs e)
         {
-            Process.Start("https://www.pixabay.com");
+           
         }
 
         private async void PictureBox_Click(object sender, EventArgs e)

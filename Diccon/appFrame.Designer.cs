@@ -33,7 +33,6 @@
             this.topPanel = new System.Windows.Forms.Panel();
             this.topControlPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.buttonMenu = new System.Windows.Forms.PictureBox();
-            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.btStar = new FontAwesome.Sharp.IconPictureBox();
             this.logo = new System.Windows.Forms.PictureBox();
             this.title = new System.Windows.Forms.Label();
@@ -61,10 +60,7 @@
             this.vietnameseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.checkForUpdatesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
-            this.githubToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripSeparator();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.timeLineDetector = new System.Windows.Forms.Timer(this.components);
@@ -72,7 +68,6 @@
             this.topPanel.SuspendLayout();
             this.topControlPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.buttonMenu)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btStar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.playGroundPanel.SuspendLayout();
@@ -92,34 +87,20 @@
             // topControlPanel
             // 
             resources.ApplyResources(this.topControlPanel, "topControlPanel");
+            this.topControlPanel.BackColor = System.Drawing.Color.Transparent;
             this.topControlPanel.Controls.Add(this.buttonMenu);
-            this.topControlPanel.Controls.Add(this.iconPictureBox1);
             this.topControlPanel.Controls.Add(this.btStar);
             this.topControlPanel.Name = "topControlPanel";
             // 
             // buttonMenu
             // 
             resources.ApplyResources(this.buttonMenu, "buttonMenu");
+            this.buttonMenu.BackColor = System.Drawing.Color.Transparent;
             this.buttonMenu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonMenu.Image = global::Diccon.Properties.Resources.menu_24;
             this.buttonMenu.Name = "buttonMenu";
             this.buttonMenu.TabStop = false;
             this.buttonMenu.Click += new System.EventHandler(this.buttonMenu_Click);
-            this.buttonMenu.MouseEnter += new System.EventHandler(this.PictureBox_MouseEnter);
-            this.buttonMenu.MouseLeave += new System.EventHandler(this.PictureBox_MouseLeave);
-            // 
-            // iconPictureBox1
-            // 
-            resources.ApplyResources(this.iconPictureBox1, "iconPictureBox1");
-            this.iconPictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.iconPictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconPictureBox1.ForeColor = System.Drawing.Color.Black;
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Bell;
-            this.iconPictureBox1.IconColor = System.Drawing.Color.Black;
-            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Regular;
-            this.iconPictureBox1.IconSize = 28;
-            this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.TabStop = false;
             // 
             // btStar
             // 
@@ -134,22 +115,20 @@
             this.btStar.Name = "btStar";
             this.btStar.TabStop = false;
             this.btStar.Click += new System.EventHandler(this.btStar_Click);
-            this.btStar.MouseEnter += new System.EventHandler(this.PictureBox_MouseEnter);
-            this.btStar.MouseLeave += new System.EventHandler(this.PictureBox_MouseLeave);
             // 
             // logo
             // 
+            this.logo.BackColor = System.Drawing.Color.Transparent;
             this.logo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.logo.Image = global::Diccon.Properties.Resources.diccon_32_2;
             resources.ApplyResources(this.logo, "logo");
             this.logo.Name = "logo";
             this.logo.TabStop = false;
             this.logo.Click += new System.EventHandler(this.logo_Click);
-            this.logo.MouseEnter += new System.EventHandler(this.PictureBox_MouseEnter);
-            this.logo.MouseLeave += new System.EventHandler(this.PictureBox_MouseLeave);
             // 
             // title
             // 
+            this.title.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.title, "title");
             this.title.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.title.Name = "title";
@@ -297,10 +276,7 @@
             this.languageToolStripMenuItem,
             this.toolStripMenuItem1,
             this.settingsToolStripMenuItem,
-            this.checkForUpdatesToolStripMenuItem,
             this.toolStripMenuItem2,
-            this.githubToolStripMenuItem,
-            this.toolStripMenuItem3,
             this.aboutToolStripMenuItem});
             this.contextMenu.Name = "contextMenu";
             resources.ApplyResources(this.contextMenu, "contextMenu");
@@ -361,28 +337,10 @@
             resources.ApplyResources(this.settingsToolStripMenuItem, "settingsToolStripMenuItem");
             this.settingsToolStripMenuItem.Click += new System.EventHandler(this.settingsToolStripMenuItem_Click);
             // 
-            // checkForUpdatesToolStripMenuItem
-            // 
-            this.checkForUpdatesToolStripMenuItem.Name = "checkForUpdatesToolStripMenuItem";
-            resources.ApplyResources(this.checkForUpdatesToolStripMenuItem, "checkForUpdatesToolStripMenuItem");
-            this.checkForUpdatesToolStripMenuItem.Click += new System.EventHandler(this.checkForUpdatesToolStripMenuItem_Click);
-            // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
             resources.ApplyResources(this.toolStripMenuItem2, "toolStripMenuItem2");
-            // 
-            // githubToolStripMenuItem
-            // 
-            this.githubToolStripMenuItem.Image = global::Diccon.Properties.Resources.github_20;
-            this.githubToolStripMenuItem.Name = "githubToolStripMenuItem";
-            resources.ApplyResources(this.githubToolStripMenuItem, "githubToolStripMenuItem");
-            this.githubToolStripMenuItem.Click += new System.EventHandler(this.githubToolStripMenuItem_Click);
-            // 
-            // toolStripMenuItem3
-            // 
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            resources.ApplyResources(this.toolStripMenuItem3, "toolStripMenuItem3");
             // 
             // aboutToolStripMenuItem
             // 
@@ -409,7 +367,8 @@
             // appFrame
             // 
             resources.ApplyResources(this, "$this");
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.playGroundPanel);
             this.Controls.Add(this.topPanel);
@@ -420,7 +379,6 @@
             this.topPanel.ResumeLayout(false);
             this.topControlPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.buttonMenu)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btStar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             this.playGroundPanel.ResumeLayout(false);
@@ -456,18 +414,14 @@
         private System.Windows.Forms.ToolStripMenuItem englishToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem vietnameseToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem checkForUpdatesToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem githubToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
         private FontAwesome.Sharp.IconPictureBox btStar;
         private System.Windows.Forms.Timer timeLineDetector;
         private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem logInWithGoogleToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem4;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private System.Windows.Forms.FlowLayoutPanel topControlPanel;
         private System.Windows.Forms.Timer notificationDetector;
         private System.Windows.Forms.ToolStripMenuItem accountToolStripMenuItem;

@@ -11,8 +11,6 @@ namespace Diccon
 
         #region Fields
 
-        private bool _isAeroEnabled = false;
-        private bool _isDraggingEnabled = false;
         private const int WM_NCHITTEST = 0x84;
         private const int WS_MINIMIZEBOX = 0x20000;
         private const int HTCLIENT = 0x1;

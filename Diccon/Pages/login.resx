@@ -126,13 +126,10 @@
   <data name="&gt;&gt;manageAccountText.Parent" xml:space="preserve">
     <value>panelLogin</value>
   </data>
+  <data name="&gt;&gt;btBack.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 31</value>
-  </data>
-  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>31, 14</value>
-  </data>
   <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
@@ -164,21 +161,15 @@
   <data name="panelCreateAccount.Location" type="System.Drawing.Point, System.Drawing">
     <value>686, 0</value>
   </data>
-  <data name="label2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="&gt;&gt;label6.Name" xml:space="preserve">
-    <value>label6</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label10.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
   </data>
   <data name="btCreateNow.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="label8.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;btCreateNow.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="&gt;&gt;createEmail.Parent" xml:space="preserve">
+    <value>roundedPanel8</value>
   </data>
   <data name="label8.Text" xml:space="preserve">
     <value>Change password</value>
@@ -188,9 +179,6 @@
   </data>
   <data name="btTerm.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
-  </data>
-  <data name="&gt;&gt;roundedPanel7.Name" xml:space="preserve">
-    <value>roundedPanel7</value>
   </data>
   <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
     <value>panelManage</value>
@@ -204,11 +192,8 @@
   <data name="&gt;&gt;panelManage.Name" xml:space="preserve">
     <value>panelManage</value>
   </data>
-  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 16</value>
-  </data>
-  <data name="&gt;&gt;btHelp.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="btCreateAccount.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="roundedPanel6.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -240,26 +225,26 @@
   <data name="panelManage.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
   </data>
-  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="&gt;&gt;btCreateNow.Type" xml:space="preserve">
     <value>Diccon.RoundedLabel, Diccon, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="manageAccountText.Size" type="System.Drawing.Size, System.Drawing">
     <value>67, 20</value>
   </data>
+  <data name="&gt;&gt;roundedPanel7.Parent" xml:space="preserve">
+    <value>panelCreateAccount</value>
+  </data>
   <data name="btLogOut.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
   </data>
-  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>257, 39</value>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label12.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
   </data>
-  <data name="roundedPanel5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>269, 38</value>
+  <data name="btCreateNow.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -273,11 +258,17 @@
   <data name="createText.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="roundedPanel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 156</value>
+  </data>
   <data name="&gt;&gt;roundedPanel7.Type" xml:space="preserve">
     <value>Diccon.RoundedPanel, Diccon, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;label10.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="btLogin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 34</value>
+  </data>
+  <data name="editEmail.Size" type="System.Drawing.Size, System.Drawing">
+    <value>244, 19</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -285,11 +276,11 @@
   <data name="roundedPanel5.Location" type="System.Drawing.Point, System.Drawing">
     <value>34, 147</value>
   </data>
-  <data name="btLogOut.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 34</value>
-  </data>
   <data name="&gt;&gt;label11.Parent" xml:space="preserve">
     <value>groupBox1</value>
+  </data>
+  <data name="editPass_2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
   </data>
   <data name="&gt;&gt;panelLogin.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -306,17 +297,11 @@
   <data name="createPass_2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
   </data>
-  <data name="&gt;&gt;createEmail.Parent" xml:space="preserve">
-    <value>roundedPanel8</value>
-  </data>
   <data name="&gt;&gt;btLogOut.Parent" xml:space="preserve">
     <value>panelManage</value>
   </data>
   <data name="&gt;&gt;roundedPanel8.Type" xml:space="preserve">
     <value>Diccon.RoundedPanel, Diccon, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="btSave.Location" type="System.Drawing.Point, System.Drawing">
-    <value>34, 188</value>
   </data>
   <data name="btCreateAccount.Size" type="System.Drawing.Size, System.Drawing">
     <value>142, 16</value>
@@ -326,9 +311,6 @@
   </data>
   <data name="btBack.Text" xml:space="preserve">
     <value>Back</value>
-  </data>
-  <data name="btCreateNow.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
   </data>
   <data name="btSave.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -341,9 +323,6 @@
   </data>
   <data name="&gt;&gt;createText.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;roundedPanel6.ZOrder" xml:space="preserve">
-    <value>4</value>
   </data>
   <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
     <value>groupBox1</value>
@@ -360,17 +339,14 @@
   <data name="editPass_1.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
-    <value>panelCreateAccount</value>
-  </data>
-  <data name="btTerm.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="btBack.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
+  </data>
+  <data name="btDeleteLocal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 34</value>
+  </data>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="roundedPanel1.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -378,26 +354,23 @@
   <data name="&gt;&gt;btCreateAccount.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="&gt;&gt;editPass_1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label10.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;roundedPanel8.Name" xml:space="preserve">
-    <value>roundedPanel8</value>
+  <data name="roundedPanel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>269, 38</value>
   </data>
   <data name="tbEmail.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
   </data>
-  <data name="&gt;&gt;label8.Name" xml:space="preserve">
-    <value>label8</value>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 16</value>
   </data>
   <data name="editPass_1.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
     <value>●</value>
   </data>
   <data name="&gt;&gt;btSave.Type" xml:space="preserve">
     <value>Diccon.RoundedLabel, Diccon, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="lbNotice.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -423,8 +396,8 @@
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="roundedPanel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>269, 38</value>
+  <data name="roundedPanel8.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
   </data>
   <data name="editPass_2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
@@ -450,8 +423,11 @@
   <data name="btDeleteLocal.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
-  <data name="label10.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;btLogOut.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 132</value>
   </data>
   <data name="label11.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -462,8 +438,8 @@
   <data name="&gt;&gt;roundedPanel7.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="btSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 34</value>
   </data>
   <data name="&gt;&gt;roundedPanel1.Parent" xml:space="preserve">
     <value>panelLogin</value>
@@ -483,6 +459,9 @@
   <data name="&gt;&gt;btCreateAccount.Parent" xml:space="preserve">
     <value>panelLogin</value>
   </data>
+  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
   <data name="&gt;&gt;roundedPanel5.Name" xml:space="preserve">
     <value>roundedPanel5</value>
   </data>
@@ -492,14 +471,17 @@
   <data name="roundedPanel3.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
   </data>
-  <data name="roundedPanel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>34, 38</value>
+  <data name="&gt;&gt;loginText.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="editPass_1.Size" type="System.Drawing.Size, System.Drawing">
     <value>244, 19</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
     <value>19, 67</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;editPass_2.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -510,8 +492,8 @@
   <data name="label1.Text" xml:space="preserve">
     <value>ZeroClub</value>
   </data>
-  <data name="createPass_1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>236, 19</value>
+  <data name="btDeleteOnline.Text" xml:space="preserve">
+    <value>Remove</value>
   </data>
   <data name="&gt;&gt;btBack.Name" xml:space="preserve">
     <value>btBack</value>
@@ -519,35 +501,32 @@
   <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="btDeleteOnline.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>7, 7, 7, 7</value>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 16</value>
   </data>
-  <data name="&gt;&gt;roundedPanel1.Name" xml:space="preserve">
-    <value>roundedPanel1</value>
+  <data name="editPass_1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
   </data>
-  <data name="&gt;&gt;roundedPanel6.Name" xml:space="preserve">
-    <value>roundedPanel6</value>
+  <data name="&gt;&gt;lbNotice.Name" xml:space="preserve">
+    <value>lbNotice</value>
   </data>
   <data name="tbPassword.Location" type="System.Drawing.Point, System.Drawing">
     <value>14, 9</value>
   </data>
-  <data name="&gt;&gt;roundedPanel4.Name" xml:space="preserve">
-    <value>roundedPanel4</value>
-  </data>
   <data name="&gt;&gt;btDeleteOnline.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="btLogin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 34</value>
+  <data name="&gt;&gt;label11.Name" xml:space="preserve">
+    <value>label11</value>
+  </data>
+  <data name="btSave.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 188</value>
   </data>
   <data name="&gt;&gt;roundedPanel6.Parent" xml:space="preserve">
     <value>panelCreateAccount</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Login</value>
-  </data>
-  <data name="&gt;&gt;editEmail.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;roundedPanel4.Name" xml:space="preserve">
+    <value>roundedPanel4</value>
   </data>
   <data name="&gt;&gt;editPass_1.Parent" xml:space="preserve">
     <value>roundedPanel4</value>
@@ -561,6 +540,9 @@
   <data name="&gt;&gt;label12.Name" xml:space="preserve">
     <value>label12</value>
   </data>
+  <data name="roundedPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 91</value>
+  </data>
   <data name="btDeleteOnline.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
@@ -573,26 +555,17 @@
   <data name="&gt;&gt;editPass_2.Name" xml:space="preserve">
     <value>editPass_2</value>
   </data>
-  <data name="&gt;&gt;btBack.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
-  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>28, 132</value>
-  </data>
   <data name="&gt;&gt;label6.Parent" xml:space="preserve">
     <value>panelCreateAccount</value>
   </data>
   <data name="&gt;&gt;btTerm.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="&gt;&gt;panelCreateAccount.Name" xml:space="preserve">
-    <value>panelCreateAccount</value>
   </data>
   <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 11.25pt, style=Bold</value>
@@ -609,6 +582,9 @@
   <data name="btCreateAccount.Location" type="System.Drawing.Point, System.Drawing">
     <value>93, 279</value>
   </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="&gt;&gt;loginText.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -623,6 +599,9 @@
   </data>
   <data name="&gt;&gt;editEmail.Parent" xml:space="preserve">
     <value>roundedPanel3</value>
+  </data>
+  <data name="&gt;&gt;editPass_1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="createPass_1.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -639,26 +618,17 @@
   <data name="label9.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="manageAccountText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 384</value>
-  </data>
   <data name="createText.Location" type="System.Drawing.Point, System.Drawing">
     <value>18, 404</value>
   </data>
   <data name="btDeleteOnline.Size" type="System.Drawing.Size, System.Drawing">
     <value>82, 34</value>
   </data>
-  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 16</value>
-  </data>
   <data name="&gt;&gt;lbNotice.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="createPass_2.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
     <value>●</value>
-  </data>
-  <data name="btDeleteLocal.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="btDeleteOnline.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -675,11 +645,8 @@
   <data name="&gt;&gt;label5.Name" xml:space="preserve">
     <value>label5</value>
   </data>
-  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="btDeleteLocal.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
+  <data name="btTerm.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
   </data>
   <data name="&gt;&gt;btDeleteOnline.Name" xml:space="preserve">
     <value>btDeleteOnline</value>
@@ -690,17 +657,11 @@
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
     <value>31, 67</value>
   </data>
-  <data name="btCreateAccount.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="createPass_1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
   <data name="createPass_2.Size" type="System.Drawing.Size, System.Drawing">
     <value>257, 19</value>
-  </data>
-  <data name="&gt;&gt;lbNotice.Name" xml:space="preserve">
-    <value>lbNotice</value>
   </data>
   <data name="btCreateNow.Size" type="System.Drawing.Size, System.Drawing">
     <value>165, 34</value>
@@ -729,11 +690,8 @@
   <data name="&gt;&gt;manageAccountText.Name" xml:space="preserve">
     <value>manageAccountText</value>
   </data>
-  <data name="roundedPanel5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="btCreateNow.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;roundedPanel1.Name" xml:space="preserve">
+    <value>roundedPanel1</value>
   </data>
   <data name="createText.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -744,11 +702,14 @@
   <data name="label4.Text" xml:space="preserve">
     <value>Password</value>
   </data>
-  <data name="&gt;&gt;label9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="btHelp.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
+  </data>
+  <data name="editPass_2.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
   <data name="btSave.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>7, 7, 7, 7</value>
@@ -759,8 +720,8 @@
   <data name="btCreateNow.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-  <data name="tbPassword.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
+  <data name="&gt;&gt;btHelp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="lbNotice.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -780,17 +741,20 @@
   <data name="btLogOut.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
-  <data name="btCreateNow.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
   <data name="btHelp.Text" xml:space="preserve">
     <value>Need help?</value>
   </data>
   <data name="roundedPanel4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
+  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="groupBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="tbPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>261, 19</value>
   </data>
   <data name="btCreateNow.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>7, 7, 7, 7</value>
@@ -807,11 +771,14 @@
   <data name="btTerm.Size" type="System.Drawing.Size, System.Drawing">
     <value>241, 16</value>
   </data>
+  <data name="editPass_1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 9</value>
+  </data>
   <data name="roundedPanel2.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
   </data>
-  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
-    <value>panelManage</value>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 31</value>
   </data>
   <data name="roundedPanel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -819,26 +786,20 @@
   <data name="btBack.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
-  <data name="panelLogin.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
+  <data name="panelCreateAccount.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
   </data>
-  <data name="&gt;&gt;btDeleteOnline.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null</value>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
   </data>
   <data name="btSave.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>login</value>
   </data>
   <data name="btCreateAccount.Text" xml:space="preserve">
     <value>Create new account</value>
   </data>
   <data name="&gt;&gt;roundedPanel2.Parent" xml:space="preserve">
     <value>panelLogin</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
   </data>
   <data name="&gt;&gt;btCreateAccount.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -849,17 +810,14 @@
   <data name="roundedPanel7.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
   </data>
-  <data name="editPass_2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
-    <value>9</value>
+  <data name="label12.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
   <data name="btLogOut.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
-  <data name="editPass_1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 9</value>
+  <data name="roundedPanel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 38</value>
   </data>
   <data name="&gt;&gt;panelManage.Parent" xml:space="preserve">
     <value>$this</value>
@@ -876,20 +834,29 @@
   <data name="label10.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>Password</value>
+  </data>
   <data name="&gt;&gt;tbEmail.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="createText.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
+  <data name="btBack.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="btLogin.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
   <data name="btBack.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
   </data>
   <data name="lbNotice.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
+  </data>
+  <data name="&gt;&gt;btDeleteLocal.Name" xml:space="preserve">
+    <value>btDeleteLocal</value>
   </data>
   <data name="&gt;&gt;btTerm.Name" xml:space="preserve">
     <value>btTerm</value>
@@ -900,32 +867,35 @@
   <data name="btLogin.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>31, 233</value>
+  </data>
+  <data name="btSave.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="&gt;&gt;btDeleteOnline.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="roundedPanel8.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
+  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
+    <value>panelCreateAccount</value>
   </data>
   <data name="btCreateNow.Text" xml:space="preserve">
     <value>Create new account</value>
   </data>
-  <data name="btDeleteLocal.Text" xml:space="preserve">
-    <value>Remove</value>
+  <data name="&gt;&gt;tbPassword.Name" xml:space="preserve">
+    <value>tbPassword</value>
   </data>
-  <data name="label11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>10</value>
   </data>
   <data name="btLogin.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="btCreateNow.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
-  </data>
-  <data name="btDeleteLocal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 34</value>
   </data>
   <data name="&gt;&gt;panelLogin.Name" xml:space="preserve">
     <value>panelLogin</value>
@@ -963,11 +933,14 @@
   <data name="roundedPanel2.Size" type="System.Drawing.Size, System.Drawing">
     <value>290, 38</value>
   </data>
-  <data name="btSave.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 34</value>
+  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
     <value>257, 39</value>
+  </data>
+  <data name="&gt;&gt;createText.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;label3.Name" xml:space="preserve">
     <value>label3</value>
@@ -981,14 +954,8 @@
   <data name="lbNotice.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="createEmail.Size" type="System.Drawing.Size, System.Drawing">
-    <value>236, 19</value>
-  </data>
   <data name="&gt;&gt;roundedPanel4.Parent" xml:space="preserve">
     <value>panelManage</value>
-  </data>
-  <data name="btDeleteOnline.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1005,6 +972,9 @@
   <data name="createPass_2.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
+  <data name="createEmail.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
   <data name="&gt;&gt;btBack.Type" xml:space="preserve">
     <value>Diccon.RoundedLabel, Diccon, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
@@ -1020,20 +990,17 @@
   <data name="createEmail.Location" type="System.Drawing.Point, System.Drawing">
     <value>16, 9</value>
   </data>
-  <data name="tbPassword.Size" type="System.Drawing.Size, System.Drawing">
-    <value>261, 19</value>
+  <data name="&gt;&gt;roundedPanel7.Name" xml:space="preserve">
+    <value>roundedPanel7</value>
   </data>
   <data name="&gt;&gt;manageAccountText.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="roundedPanel8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>34, 91</value>
-  </data>
   <data name="&gt;&gt;loginText.Name" xml:space="preserve">
     <value>loginText</value>
   </data>
-  <data name="&gt;&gt;loginText.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="createEmail.Size" type="System.Drawing.Size, System.Drawing">
+    <value>236, 19</value>
   </data>
   <data name="editPass_2.Location" type="System.Drawing.Point, System.Drawing">
     <value>16, 9</value>
@@ -1050,26 +1017,23 @@
   <data name="tbEmail.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="roundedPanel2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
+  <data name="btDeleteOnline.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="&gt;&gt;roundedPanel3.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="label12.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
+  <data name="&gt;&gt;panelLogin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;panelCreateAccount.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>login</value>
   </data>
   <data name="btLogOut.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>7, 7, 7, 7</value>
-  </data>
-  <data name="editEmail.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 9</value>
   </data>
   <data name="loginText.Size" type="System.Drawing.Size, System.Drawing">
     <value>52, 20</value>
@@ -1080,8 +1044,8 @@
   <data name="&gt;&gt;lbNotice.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="&gt;&gt;createText.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="btLogOut.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 34</value>
   </data>
   <data name="editEmail.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1098,20 +1062,20 @@
   <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
-  <data name="editPass_2.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="&gt;&gt;roundedPanel6.Name" xml:space="preserve">
+    <value>roundedPanel6</value>
   </data>
   <data name="&gt;&gt;btLogin.Type" xml:space="preserve">
     <value>Diccon.RoundedLabel, Diccon, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="btDeleteLocal.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>7, 7, 7, 7</value>
+  <data name="btDeleteLocal.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
   </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
-  <data name="createEmail.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
+  <data name="&gt;&gt;roundedPanel8.Name" xml:space="preserve">
+    <value>roundedPanel8</value>
   </data>
   <data name="&gt;&gt;createPass_1.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1121,9 +1085,6 @@
   </data>
   <data name="&gt;&gt;btCreateNow.Name" xml:space="preserve">
     <value>btCreateNow</value>
-  </data>
-  <data name="&gt;&gt;createEmail.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="&gt;&gt;createEmail.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1143,6 +1104,9 @@
   <data name="btBack.Location" type="System.Drawing.Point, System.Drawing">
     <value>34, 250</value>
   </data>
+  <data name="label10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -1152,20 +1116,20 @@
   <data name="manageAccountText.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
   </data>
-  <data name="&gt;&gt;roundedPanel3.Parent" xml:space="preserve">
-    <value>panelManage</value>
+  <data name="roundedPanel5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
   </data>
-  <data name="loginText.Text" xml:space="preserve">
-    <value>Log in</value>
+  <data name="roundedPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>290, 38</value>
+  </data>
+  <data name="&gt;&gt;label10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="roundedPanel7.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
-  <data name="&gt;&gt;label6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tbPassword.Name" xml:space="preserve">
-    <value>tbPassword</value>
+  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 14</value>
   </data>
   <data name="&gt;&gt;roundedPanel1.ZOrder" xml:space="preserve">
     <value>4</value>
@@ -1176,8 +1140,8 @@
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
   </data>
-  <data name="loginText.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
+  <data name="&gt;&gt;createEmail.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="editEmail.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
@@ -1188,11 +1152,11 @@
   <data name="btLogOut.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="label11.Text" xml:space="preserve">
-    <value>Your local data include updates and download contents</value>
+  <data name="roundedPanel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>269, 38</value>
   </data>
-  <data name="btLogin.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+  <data name="tbPassword.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="label10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1209,11 +1173,20 @@
   <data name="&gt;&gt;btTerm.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label12.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="btTerm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 439</value>
+  </data>
+  <data name="label7.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="btDeleteLocal.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 16</value>
   </data>
   <data name="label5.Text" xml:space="preserve">
     <value>Email</value>
@@ -1221,23 +1194,23 @@
   <data name="createPass_1.Location" type="System.Drawing.Point, System.Drawing">
     <value>16, 9</value>
   </data>
+  <data name="&gt;&gt;editEmail.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="&gt;&gt;label11.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
     <value>67, 16</value>
   </data>
-  <data name="&gt;&gt;btDeleteLocal.Name" xml:space="preserve">
-    <value>btDeleteLocal</value>
+  <data name="btCreateNow.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
   </data>
   <data name="loginText.Location" type="System.Drawing.Point, System.Drawing">
     <value>18, 364</value>
   </data>
   <data name="btLogin.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="btDeleteOnline.Text" xml:space="preserve">
-    <value>Remove</value>
   </data>
   <data name="panelManage.Location" type="System.Drawing.Point, System.Drawing">
     <value>344, 0</value>
@@ -1254,14 +1227,17 @@
   <data name="btCreateAccount.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
   </data>
+  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="editPass_1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
   </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
     <value>28, 79</value>
   </data>
-  <data name="&gt;&gt;panelLogin.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;editEmail.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1272,8 +1248,11 @@
   <data name="&gt;&gt;btLogOut.Name" xml:space="preserve">
     <value>btLogOut</value>
   </data>
-  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>355, 50</value>
+  <data name="&gt;&gt;label12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tbEmail.Parent" xml:space="preserve">
+    <value>roundedPanel1</value>
   </data>
   <data name="createText.Size" type="System.Drawing.Size, System.Drawing">
     <value>57, 20</value>
@@ -1281,20 +1260,23 @@
   <data name="groupBox1.Text" xml:space="preserve">
     <value>User Data</value>
   </data>
-  <data name="createEmail.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="btHelp.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
-  <data name="label10.Text" xml:space="preserve">
-    <value>Password</value>
+  <data name="&gt;&gt;panelCreateAccount.Name" xml:space="preserve">
+    <value>panelCreateAccount</value>
+  </data>
+  <data name="&gt;&gt;btDeleteOnline.Type" xml:space="preserve">
+    <value>Diccon.RoundedLabel, Diccon, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;tbEmail.Name" xml:space="preserve">
     <value>tbEmail</value>
   </data>
-  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="roundedPanel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>269, 38</value>
   </data>
-  <data name="&gt;&gt;panelCreateAccount.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
   </data>
   <data name="&gt;&gt;tbPassword.Parent" xml:space="preserve">
     <value>roundedPanel2</value>
@@ -1302,8 +1284,8 @@
   <data name="label7.Text" xml:space="preserve">
     <value>ZeroClub</value>
   </data>
-  <data name="roundedPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>290, 38</value>
+  <data name="btCreateNow.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -1311,11 +1293,14 @@
   <data name="btHelp.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;label5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="createEmail.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
   </data>
   <data name="&gt;&gt;label9.Parent" xml:space="preserve">
     <value>panelManage</value>
+  </data>
+  <data name="roundedPanel2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
   </data>
   <data name="manageAccountText.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -1326,23 +1311,26 @@
   <data name="&gt;&gt;roundedPanel8.Parent" xml:space="preserve">
     <value>panelCreateAccount</value>
   </data>
+  <data name="loginText.Text" xml:space="preserve">
+    <value>Log in</value>
+  </data>
   <data name="&gt;&gt;roundedPanel5.Parent" xml:space="preserve">
     <value>panelManage</value>
   </data>
-  <data name="btHelp.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Email</value>
   </data>
   <data name="label11.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 16</value>
+  <data name="label11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="&gt;&gt;label3.Parent" xml:space="preserve">
     <value>panelCreateAccount</value>
   </data>
-  <data name="&gt;&gt;tbEmail.Parent" xml:space="preserve">
-    <value>roundedPanel1</value>
+  <data name="manageAccountText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 384</value>
   </data>
   <data name="btCreateAccount.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1359,20 +1347,17 @@
   <data name="createText.Text" xml:space="preserve">
     <value>Create</value>
   </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label11.Text" xml:space="preserve">
+    <value>Your local data include updates and download contents</value>
   </data>
-  <data name="roundedPanel7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>269, 38</value>
-  </data>
-  <data name="&gt;&gt;roundedPanel4.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
   </data>
   <data name="&gt;&gt;label2.Parent" xml:space="preserve">
     <value>panelLogin</value>
   </data>
-  <data name="&gt;&gt;panelLogin.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="btBack.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 7, 7, 7</value>
   </data>
   <data name="tbPassword.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1380,20 +1365,29 @@
   <data name="label1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
+    <value>groupBox1</value>
   </data>
-  <data name="label7.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
+  <data name="editEmail.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 9</value>
   </data>
-  <data name="&gt;&gt;label11.Name" xml:space="preserve">
-    <value>label11</value>
+  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>10</value>
+  <data name="roundedPanel7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>269, 38</value>
+  </data>
+  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>257, 39</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
     <value>7</value>
+  </data>
+  <data name="btDeleteLocal.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 7, 7, 7</value>
+  </data>
+  <data name="&gt;&gt;roundedPanel6.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>269, 191</value>
@@ -1401,8 +1395,8 @@
   <data name="createPass_2.Location" type="System.Drawing.Point, System.Drawing">
     <value>16, 9</value>
   </data>
-  <data name="editPass_1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
+  <data name="&gt;&gt;roundedPanel4.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
   <data name="&gt;&gt;roundedPanel5.Type" xml:space="preserve">
     <value>Diccon.RoundedPanel, Diccon, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null</value>
@@ -1413,8 +1407,8 @@
   <data name="&gt;&gt;roundedPanel2.Type" xml:space="preserve">
     <value>Diccon.RoundedPanel, Diccon, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="roundedPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 91</value>
+  <data name="loginText.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
   </data>
   <data name="&gt;&gt;label2.Name" xml:space="preserve">
     <value>label2</value>
@@ -1431,32 +1425,29 @@
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>9, 20</value>
   </data>
-  <data name="&gt;&gt;roundedPanel7.Parent" xml:space="preserve">
-    <value>panelCreateAccount</value>
-  </data>
-  <data name="btTerm.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 439</value>
-  </data>
-  <data name="btTerm.AutoSize" type="System.Boolean, mscorlib">
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 16</value>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>panelManage</value>
+  </data>
+  <data name="&gt;&gt;btCreateNow.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="roundedPanel3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
-  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 16</value>
   </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>355, 50</value>
   </data>
   <data name="btCreateAccount.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
   </data>
-  <data name="roundedPanel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>269, 38</value>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label9.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -1476,14 +1467,17 @@
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;btSave.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="&gt;&gt;btLogin.Name" xml:space="preserve">
     <value>btLogin</value>
   </data>
   <data name="btBack.Size" type="System.Drawing.Size, System.Drawing">
     <value>59, 34</value>
   </data>
-  <data name="&gt;&gt;btSave.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="roundedPanel8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 91</value>
   </data>
   <data name="tbEmail.Size" type="System.Drawing.Size, System.Drawing">
     <value>261, 19</value>
@@ -1494,14 +1488,14 @@
   <data name="btHelp.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
   </data>
-  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
-  <data name="&gt;&gt;btLogOut.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="btDeleteOnline.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 7, 7, 7</value>
   </data>
-  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
-    <value>groupBox1</value>
+  <data name="&gt;&gt;panelCreateAccount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;roundedPanel6.Type" xml:space="preserve">
     <value>Diccon.RoundedPanel, Diccon, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null</value>
@@ -1518,17 +1512,17 @@
   <data name="panelManage.Size" type="System.Drawing.Size, System.Drawing">
     <value>336, 511</value>
   </data>
-  <data name="lbNotice.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="createPass_1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>236, 19</value>
   </data>
-  <data name="btBack.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>7, 7, 7, 7</value>
+  <data name="btTerm.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="editEmail.Size" type="System.Drawing.Size, System.Drawing">
-    <value>244, 19</value>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
   </data>
   <data name="label1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom</value>
@@ -1536,14 +1530,17 @@
   <data name="btLogin.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Login</value>
   </data>
-  <data name="label6.Text" xml:space="preserve">
-    <value>Email</value>
+  <data name="&gt;&gt;roundedPanel3.Parent" xml:space="preserve">
+    <value>panelManage</value>
   </data>
   <data name="btLogOut.Location" type="System.Drawing.Point, System.Drawing">
     <value>223, 427</value>
+  </data>
+  <data name="panelLogin.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
   </data>
   <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1554,8 +1551,8 @@
   <data name="btDeleteLocal.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="roundedPanel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 156</value>
+  <data name="createText.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
   </data>
   <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt</value>
@@ -1566,8 +1563,8 @@
   <data name="btBack.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;editEmail.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="label2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
   </data>
   <data name="lbNotice.Location" type="System.Drawing.Point, System.Drawing">
     <value>19, 197</value>
@@ -1578,14 +1575,17 @@
   <data name="&gt;&gt;label1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="createText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="btSave.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
+  <data name="&gt;&gt;panelLogin.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="panelCreateAccount.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
+  <data name="btDeleteLocal.Text" xml:space="preserve">
+    <value>Remove</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
     <value>116, 470</value>

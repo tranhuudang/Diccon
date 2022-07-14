@@ -12,14 +12,14 @@ namespace Diccon
 	class SQLHandler
 	{
 		
-		connectivity connectivity = new connectivity();
+		//connectivity connectivity = new connectivity();
 
 		
 		public void Update(string updateQuery)
 		{
 
-			if (connectivity.isOnline())
-			{
+			//if (connectivity.isOnline())
+			//{
 
 				SqlConnection sqlConnection = new SqlConnection(dicconProp.connectionString);
 				sqlConnection.Open();
@@ -27,11 +27,11 @@ namespace Diccon
 				SqlCommand cmd = new SqlCommand(updateQuery, sqlConnection);
 				cmd.ExecuteNonQuery();
 				sqlConnection.Close();
-			}
-			else
-			{
-				MessageBox.Show(dicconProp.internetError);
-			}
+			//}
+			//else
+			//{
+			//	MessageBox.Show(dicconProp.internetError);
+			//}
 		}
 		/// <summary>
 		/// Create a new connection with Insert Command and then return a DataTable contain returned value.
@@ -41,34 +41,34 @@ namespace Diccon
 		public DataTable Select(string selectQuery)
 		{
 			DataTable dataTable = new DataTable();
-			if (connectivity.isOnline())
-			{
+			//if (connectivity.isOnline())
+			//{
 				SqlConnection sqlConnection = new SqlConnection(dicconProp.connectionString);
 				sqlConnection.Open();
 				SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(selectQuery, sqlConnection);
 				sqlDataAdapter.Fill(dataTable);
 				return dataTable;
-			}
-			else
-			{
-				MessageBox.Show(dicconProp.internetError);
-				return dataTable;
-			}
+			//}
+			//else
+			//{
+			//	MessageBox.Show(dicconProp.internetError);
+			//	return dataTable;
+			//}
 		}
 		public void Insert(string insertString)
 		{
-			if (connectivity.isOnline())
-			{
+		//	if (connectivity.isOnline())
+		//	{
 				SqlConnection sqlConnection = new SqlConnection(dicconProp.connectionString);
 				sqlConnection.Open();
 				SqlCommand cmd = new SqlCommand(insertString, sqlConnection);
 				cmd.ExecuteNonQuery();
 				sqlConnection.Close();
-			}
-			else
-			{
-				MessageBox.Show(dicconProp.internetError);
-			}
+			//}
+			//else
+			//{
+			//	MessageBox.Show(dicconProp.internetError);
+			//}
 		}
 	}
 }

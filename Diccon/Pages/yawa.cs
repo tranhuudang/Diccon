@@ -18,7 +18,6 @@ namespace Diccon.Pages
         string currentAnswerString;
         string currentQuestionUserID; // ID of user who ask the question
         string currentQuestionID; // ID of current question displayed in flowchatbox
-        Panel currentPanel = null;
         public yawa()
         {
             InitializeComponent();
@@ -51,13 +50,11 @@ namespace Diccon.Pages
             {
                 countWord.Visible = false;
                 btAsk.Enabled = false;
-                notice.Visible = false;
             }
             else if (richQuestion.Text.Length > 20)
             {
                 countWord.Text = richQuestion.Text.Length.ToString() + "/500";
                 countWord.Visible = true;
-                notice.Visible = true;
                 btAsk.Enabled = true;
 
             }
@@ -246,12 +243,15 @@ namespace Diccon.Pages
 
         private void btAskTop_Click(object sender, EventArgs e)
         {
+
             listLoadedMessage = "";
 
             TopControlSwitch("btAskTop");
             openPanel(panelAsk);
             btReload_Click(null, null);
             btReload.BringToFront();
+            // Disable MessageChecker when going out of answer tab
+            newMessageChecker.Enabled = false;
         }
 
         private void btPeopleTop_Click(object sender, EventArgs e)
@@ -263,6 +263,8 @@ namespace Diccon.Pages
             openPanel(panelGlobal);
             btReload_Click(null, null);
             btReload.BringToFront();
+            // Disable MessageChecker when going out of answer tab
+            newMessageChecker.Enabled = false;
         }
 
         private void btYoursTop_Click(object sender, EventArgs e)
@@ -274,6 +276,8 @@ namespace Diccon.Pages
             openPanel(panelYours);
             btReloadYours_Click(null, null);
             btReloadYours.BringToFront();
+            // Disable MessageChecker when going out of answer tab
+            newMessageChecker.Enabled = false;
         }
 
         private void btReload_MouseEnter(object sender, EventArgs e)
@@ -365,9 +369,13 @@ namespace Diccon.Pages
         connectivity connectivity = new connectivity();
         private void newMessageChecker_Tick(object sender, EventArgs e)
         {
+            newMessageChecker.Enabled=false;
+            if (connectivity.isOnline())
+            {
+                ReloadInChat();
+            }
+            newMessageChecker.Enabled = true;
 
-            //if(connectivity.isOnline())
-            ReloadInChat();
         }
 
         private void flowYours_Paint(object sender, PaintEventArgs e)

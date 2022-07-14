@@ -2,18 +2,17 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
-using WK.Libraries.WTL;
 
 namespace Diccon
 {
     static class dicconProp
     {
         
-        public static int A = ThemeListener.AccentColor.A;
-        public static int R = ThemeListener.AccentColor.R;
-        public static int G = ThemeListener.AccentColor.G;
-        public static int B = ThemeListener.AccentColor.B;
-        public static Color AccentColor = ThemeListener.AccentColor;
+        public static int A = 200;
+        public static int R = 0;
+        public static int G = 120;
+        public static int B = 215;
+        public static Color AccentColor = Color.FromArgb(200,0,120,215);
         // higher is lighter 0.9 ligher than 0.1
         public static Color ColorA9 = Color.FromArgb((int)(R + (0.9 * (255 - R))), (int)(G + Math.Floor(0.9 * (255 - G))), (int)(B + Math.Floor(0.9 * (255 - B))));
         public static Color ColorA8 = Color.FromArgb((int)(R + (0.8 * (255 - R))), (int)(G + Math.Floor(0.8 * (255 - G))), (int)(B + Math.Floor(0.8 * (255 - B))));
@@ -31,6 +30,8 @@ namespace Diccon
         public static int bottomPanel_DefaultHeight = 85;
         public static int bottomPanel_ExpandedHeight = 160;
         public static string backupError = "A error occur during Back up & Sync process. Try again or contact to us for help";
+
+        public static string connectionString = "Server= 112.78.2.154;Database=zer42982_ZeroClubOne;Trusted_Connection=False;MultipleActiveResultSets=true;User ID=zer42982_study;Password=7wYi02_w";
 
         public static Color default_addNote_BackColor = Color.FromArgb(255, 192, 128);
         public static Color hover_addNote_BackColor = Color.FromArgb(242, 203, 164);

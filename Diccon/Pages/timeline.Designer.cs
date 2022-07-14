@@ -41,10 +41,10 @@
             // 
             // panelList
             // 
-            resources.ApplyResources(this.panelList, "panelList");
             this.panelList.Controls.Add(this.listHistory);
             this.panelList.Controls.Add(this.panel2);
             this.panelList.Controls.Add(this.panel1);
+            resources.ApplyResources(this.panelList, "panelList");
             this.panelList.Name = "panelList";
             // 
             // listHistory

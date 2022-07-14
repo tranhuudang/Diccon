@@ -83,7 +83,6 @@
             this.roundedLabel12 = new Diccon.RoundedLabel();
             this.roundedLabel10 = new Diccon.RoundedLabel();
             this.btImage = new Diccon.RoundedLabel();
-            this.realTimeDetermine = new System.Windows.Forms.Timer(this.components);
             this.contextMenuNote = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addToFavouriteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -620,12 +619,6 @@
             this.btImage.Thickness = 5F;
             this.btImage.Click += new System.EventHandler(this.btImage_Click);
             // 
-            // realTimeDetermine
-            // 
-            this.realTimeDetermine.Enabled = true;
-            this.realTimeDetermine.Interval = 1000;
-            this.realTimeDetermine.Tick += new System.EventHandler(this.realTimeDetermine_Tick);
-            // 
             // contextMenuNote
             // 
             this.contextMenuNote.ImageScalingSize = new System.Drawing.Size(24, 24);
@@ -755,7 +748,6 @@
         private RoundedLabel roundedLabel12;
         private System.Windows.Forms.Label exampleTextHolder;
         private RoundedLabel addEmoji;
-        private System.Windows.Forms.Timer realTimeDetermine;
         private System.Windows.Forms.ContextMenuStrip contextMenuNote;
         private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addToFavouriteToolStripMenuItem;

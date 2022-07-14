@@ -117,6 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btAdd.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btAdd.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 13</value>
@@ -143,6 +147,9 @@
   <data name="addEmoji.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
+  <data name="addEmoji.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="addEmoji.Location" type="System.Drawing.Point, System.Drawing">
     <value>89, 5</value>
   </data>
@@ -159,7 +166,7 @@
     <value>addEmoji</value>
   </data>
   <data name="&gt;&gt;addEmoji.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.0.2.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;addEmoji.Parent" xml:space="preserve">
     <value>panelAdd</value>
@@ -169,6 +176,9 @@
   </data>
   <data name="addNote.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="addNote.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="addNote.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 5</value>
@@ -186,7 +196,7 @@
     <value>addNote</value>
   </data>
   <data name="&gt;&gt;addNote.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.0.2.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;addNote.Parent" xml:space="preserve">
     <value>panelAdd</value>
@@ -194,7 +204,6 @@
   <data name="&gt;&gt;addNote.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="panelAdd.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -257,6 +266,9 @@
   </data>
   <data name="labelTypeToSearch.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="labelTypeToSearch.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="labelTypeToSearch.Location" type="System.Drawing.Point, System.Drawing">
     <value>17, 12</value>
@@ -376,7 +388,7 @@
     <value>roundedPanel1</value>
   </data>
   <data name="&gt;&gt;roundedPanel1.Type" xml:space="preserve">
-    <value>Diccon.RoundedPanel, Diccon, Version=6.0.2.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedPanel, Diccon, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;roundedPanel1.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -465,6 +477,9 @@
   <data name="exampleAnswerText.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
+  <data name="exampleAnswerText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="exampleAnswerText.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 8</value>
   </data>
@@ -508,7 +523,7 @@
     <value>exampleAnswerColoredPanel</value>
   </data>
   <data name="&gt;&gt;exampleAnswerColoredPanel.Type" xml:space="preserve">
-    <value>Diccon.RoundedPanel, Diccon, Version=6.0.2.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedPanel, Diccon, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;exampleAnswerColoredPanel.Parent" xml:space="preserve">
     <value>exampleAnswerPanel</value>
@@ -552,6 +567,9 @@
   <data name="issueLink.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
+  <data name="issueLink.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="issueLink.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 92</value>
   </data>
@@ -579,6 +597,9 @@
   <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 133</value>
   </data>
@@ -605,6 +626,9 @@
   </data>
   <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 12</value>
@@ -643,7 +667,7 @@
     <value>panelNotice</value>
   </data>
   <data name="&gt;&gt;panelNotice.Type" xml:space="preserve">
-    <value>Diccon.RoundedPanel, Diccon, Version=6.0.2.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedPanel, Diccon, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;panelNotice.Parent" xml:space="preserve">
     <value>panel3</value>
@@ -681,6 +705,9 @@
   <data name="exampleItemSynonym.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
+  <data name="exampleItemSynonym.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="exampleItemSynonym.Location" type="System.Drawing.Point, System.Drawing">
     <value>48, 0</value>
   </data>
@@ -703,7 +730,7 @@
     <value>exampleItemSynonym</value>
   </data>
   <data name="&gt;&gt;exampleItemSynonym.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.0.2.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;exampleItemSynonym.Parent" xml:space="preserve">
     <value>exampleflowLayoutSynonym</value>
@@ -716,6 +743,9 @@
   </data>
   <data name="roundedLabel3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="roundedLabel3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="roundedLabel3.Location" type="System.Drawing.Point, System.Drawing">
     <value>48, 30</value>
@@ -739,7 +769,7 @@
     <value>roundedLabel3</value>
   </data>
   <data name="&gt;&gt;roundedLabel3.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.0.2.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;roundedLabel3.Parent" xml:space="preserve">
     <value>exampleflowLayoutSynonym</value>
@@ -789,6 +819,9 @@
   <data name="exampleShortText.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
+  <data name="exampleShortText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="exampleShortText.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
@@ -811,7 +844,7 @@
     <value>exampleShortText</value>
   </data>
   <data name="&gt;&gt;exampleShortText.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.0.2.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;exampleShortText.Parent" xml:space="preserve">
     <value>exampleShortPanel</value>
@@ -848,6 +881,9 @@
   </data>
   <data name="exampleAskLongText.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="exampleAskLongText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="exampleAskLongText.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 9</value>
@@ -892,7 +928,7 @@
     <value>exampleAskLongColoredPanel</value>
   </data>
   <data name="&gt;&gt;exampleAskLongColoredPanel.Type" xml:space="preserve">
-    <value>Diccon.RoundedPanel, Diccon, Version=6.0.2.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedPanel, Diccon, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;exampleAskLongColoredPanel.Parent" xml:space="preserve">
     <value>exampleAskLongPanel</value>
@@ -936,6 +972,9 @@
   <data name="exampleTextHolder.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
+  <data name="exampleTextHolder.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="exampleTextHolder.Location" type="System.Drawing.Point, System.Drawing">
     <value>42, 11</value>
   </data>
@@ -973,6 +1012,9 @@
         NuYoRi13CbdAjjppq3YdUVfUfrrF6lRT3Jam6LDUuNRbdLf1GEXfGtNtaTzQc0hVHQCGTBwUn94X5wAA
         AABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="examplePlayButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="examplePlayButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 7</value>
@@ -1014,7 +1056,7 @@
     <value>examplePlayColoredPanel</value>
   </data>
   <data name="&gt;&gt;examplePlayColoredPanel.Type" xml:space="preserve">
-    <value>Diccon.RoundedPanel, Diccon, Version=6.0.2.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedPanel, Diccon, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;examplePlayColoredPanel.Parent" xml:space="preserve">
     <value>examplePlayAlignPanel</value>
@@ -1103,6 +1145,9 @@
   <data name="exampleNoteClose.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
+  <data name="exampleNoteClose.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="exampleNoteClose.Location" type="System.Drawing.Point, System.Drawing">
     <value>276, 15</value>
   </data>
@@ -1127,6 +1172,9 @@
   <data name="&gt;&gt;exampleNoteClose.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="exampleNoteDelete.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="exampleNoteDelete.Location" type="System.Drawing.Point, System.Drawing">
     <value>43, 15</value>
   </data>
@@ -1150,6 +1198,9 @@
   </data>
   <data name="&gt;&gt;exampleNoteDelete.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="exampleNoteSave.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="exampleNoteSave.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 15</value>
@@ -1221,7 +1272,7 @@
     <value>exampleNoteColoredPanel</value>
   </data>
   <data name="&gt;&gt;exampleNoteColoredPanel.Type" xml:space="preserve">
-    <value>Diccon.RoundedPanel, Diccon, Version=6.0.2.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedPanel, Diccon, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;exampleNoteColoredPanel.Parent" xml:space="preserve">
     <value>exampleNotePanel</value>
@@ -1252,6 +1303,9 @@
   </data>
   <data name="&gt;&gt;exampleNotePanel.ZOrder" xml:space="preserve">
     <value>6</value>
+  </data>
+  <data name="examplePixabayLogo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="examplePixabayLogo.Location" type="System.Drawing.Point, System.Drawing">
     <value>234, 250</value>
@@ -3451,6 +3505,9 @@
         /xqwA1uwB5uwC9uw5TogAAA7
 </value>
   </data>
+  <data name="examplePictureBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="examplePictureBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>5, 5</value>
   </data>
@@ -3470,7 +3527,7 @@
     <value>examplePictureBox</value>
   </data>
   <data name="&gt;&gt;examplePictureBox.Type" xml:space="preserve">
-    <value>Diccon.RoundedPictureBox, Diccon, Version=6.0.2.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedPictureBox, Diccon, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;examplePictureBox.Parent" xml:space="preserve">
     <value>exampleColoredPicturePanel</value>
@@ -3491,7 +3548,7 @@
     <value>exampleColoredPicturePanel</value>
   </data>
   <data name="&gt;&gt;exampleColoredPicturePanel.Type" xml:space="preserve">
-    <value>Diccon.RoundedPanel, Diccon, Version=6.0.2.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedPanel, Diccon, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;exampleColoredPicturePanel.Parent" xml:space="preserve">
     <value>examplePicturePanel</value>
@@ -3562,6 +3619,9 @@
   <data name="btSynonym.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
+  <data name="btSynonym.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="btSynonym.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 5</value>
   </data>
@@ -3587,7 +3647,7 @@
     <value>btSynonym</value>
   </data>
   <data name="&gt;&gt;btSynonym.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.0.2.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btSynonym.Parent" xml:space="preserve">
     <value>flowSuggestion</value>
@@ -3600,6 +3660,9 @@
   </data>
   <data name="roundedLabel9.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="roundedLabel9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="roundedLabel9.Location" type="System.Drawing.Point, System.Drawing">
     <value>113, 5</value>
@@ -3626,7 +3689,7 @@
     <value>roundedLabel9</value>
   </data>
   <data name="&gt;&gt;roundedLabel9.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.0.2.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;roundedLabel9.Parent" xml:space="preserve">
     <value>flowSuggestion</value>
@@ -3639,6 +3702,9 @@
   </data>
   <data name="roundedLabel12.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="roundedLabel12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="roundedLabel12.Location" type="System.Drawing.Point, System.Drawing">
     <value>209, 5</value>
@@ -3665,7 +3731,7 @@
     <value>roundedLabel12</value>
   </data>
   <data name="&gt;&gt;roundedLabel12.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.0.2.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;roundedLabel12.Parent" xml:space="preserve">
     <value>flowSuggestion</value>
@@ -3678,6 +3744,9 @@
   </data>
   <data name="roundedLabel10.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="roundedLabel10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="roundedLabel10.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 33</value>
@@ -3704,7 +3773,7 @@
     <value>roundedLabel10</value>
   </data>
   <data name="&gt;&gt;roundedLabel10.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.0.2.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;roundedLabel10.Parent" xml:space="preserve">
     <value>flowSuggestion</value>
@@ -3717,6 +3786,9 @@
   </data>
   <data name="btImage.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="btImage.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="btImage.Location" type="System.Drawing.Point, System.Drawing">
     <value>157, 33</value>
@@ -3743,7 +3815,7 @@
     <value>btImage</value>
   </data>
   <data name="&gt;&gt;btImage.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.0.2.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btImage.Parent" xml:space="preserve">
     <value>flowSuggestion</value>
@@ -3778,9 +3850,6 @@
   <data name="&gt;&gt;flowSuggestion.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <metadata name="realTimeDetermine.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>159, 17</value>
-  </metadata>
   <metadata name="contextMenuNote.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>314, 17</value>
   </metadata>
@@ -5749,12 +5818,6 @@
     <value>suggestionTimer</value>
   </data>
   <data name="&gt;&gt;suggestionTimer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;realTimeDetermine.Name" xml:space="preserve">
-    <value>realTimeDetermine</value>
-  </data>
-  <data name="&gt;&gt;realTimeDetermine.Type" xml:space="preserve">
     <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;saveToolStripMenuItem.Name" xml:space="preserve">

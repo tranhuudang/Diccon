@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Net;
@@ -13,16 +12,16 @@ using System.Xml;
 
 namespace Diccon
 {
+
     public partial class dictionary : Form
     {
         botBehavior bot = new botBehavior();
         userAction user = new userAction();
-
-
-
+        connectivity connectivity = new connectivity();
+        [STAThreadAttribute]
         private void mainHall_Load(object sender, EventArgs e)
         {
-           
+            //searchTextBox.Text = Clipboard.GetText();
             ///////  T   H   E   M   E  ///////////////
             panelNotice.BackColor = dicconProp.ColorA3;
             exampleAnswerColoredPanel.BackColor = dicconProp.ColorA3;
@@ -30,8 +29,8 @@ namespace Diccon
             examplePlayColoredPanel.BackColor = dicconProp.ColorA5;
             btSynonym.BackColor = dicconProp.ColorA8;
             btImage.BackColor = dicconProp.ColorA8;
-            addEmoji.BackColor= dicconProp.ColorA8;
-            addNote.BackColor= dicconProp.ColorA8;
+            addEmoji.BackColor = dicconProp.ColorA8;
+            addNote.BackColor = dicconProp.ColorA8;
             examplePictureBox.BackColor = dicconProp.ColorA7;
             roundedPanel1.BackColor = dicconProp.ColorA9;
             searchTextBox.BackColor = dicconProp.ColorA9;
@@ -45,9 +44,11 @@ namespace Diccon
             flowChatBox.HorizontalScroll.Visible = false;
             flowChatBox.HorizontalScroll.Enabled = false;
             flowChatBox.Padding = new Padding(10, 0, 0, 0);
-            
+
 
         }
+
+
 
         private void textFromMic_Click(object sender, EventArgs e)
         {
@@ -119,7 +120,7 @@ namespace Diccon
         }
         private void addHistory(string word)
         {
-            if(!File.Exists(dicconProp.historyFileName))
+            if (!File.Exists(dicconProp.historyFileName))
             {
                 StreamWriter history = new StreamWriter(dicconProp.historyFileName);
                 history.Write(word);
@@ -127,7 +128,7 @@ namespace Diccon
             }
             else
             {
-                StreamWriter history = new StreamWriter(dicconProp.historyFileName,true);
+                StreamWriter history = new StreamWriter(dicconProp.historyFileName, true);
                 history.Write(dicconProp.saparateCharactorInHistory);
                 history.Write(word);
                 history.Close();
@@ -162,8 +163,17 @@ namespace Diccon
 
             }
             // update missing word to database
-            SQLHandler sqlHandler = new SQLHandler();
-            sqlHandler.Insert("Insert into dbo.DicconMissing values(N'" + dicconProp.userID + "',N'" + wordsToSearch+"')");
+            if (connectivity.isOnline())
+            {
+                SQLHandler sqlHandler = new SQLHandler();
+                if (wordsToSearch.Length > 9)
+                    sqlHandler.Insert("Insert into dbo.DicconMissing values(N'" + dicconProp.userID + "',N'" + wordsToSearch.Substring(0, 9) + "')");
+                else
+                    sqlHandler.Insert("Insert into dbo.DicconMissing values(N'" + dicconProp.userID + "',N'" + wordsToSearch + "')");
+
+
+
+            }
             return dicconProp.missingWord;
 
         }
@@ -269,15 +279,15 @@ namespace Diccon
 
         private void githubToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Process.Start("https://github.com/zeroclubvn/Diccon");
+
         }
 
         private void checkForUpdatesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+
         }
 
-       
+
 
 
         private void exampleAnswerText_HScroll(object sender, EventArgs e)
@@ -330,10 +340,7 @@ namespace Diccon
 
         private void textFromClipboard_Click(object sender, EventArgs e)
         {
-            if (Clipboard.ContainsText())
-            {
-                searchTextBox.Text = Clipboard.GetText();
-            }
+
         }
 
         private void addEmoji_Click(object sender, EventArgs e)
@@ -349,15 +356,7 @@ namespace Diccon
             await searchAndShow(dicconProp.currentWord);
         }
 
-        private void realTimeDetermine_Tick(object sender, EventArgs e)
-        {
-            string textInClipboard = Clipboard.GetText();
-            textFromClipboard.Visible = Clipboard.ContainsText() ? true : false;
-            if ((textInClipboard.Length < 18) && (textInClipboard.Length > 0))
-            {
-                labelTypeToSearch.Text = "\"" + Clipboard.GetText() + "\" is in Clipboard";
-            }
-        }
+
         public dictionary()
         {
             InitializeComponent();
@@ -388,11 +387,10 @@ namespace Diccon
                 dicconProp.wordFromTimeline = "";
             }
             //enable event to listen to clipboard changes if enable
-            realTimeDetermine.Enabled = dicconProp.enableFlashClipboard == "True" ? true : false;
         }
         private void issueLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start(dicconProp.githubIssuesPath);
+
         }
 
         private void exampleNoteSave_Click(object sender, EventArgs e)
