@@ -112,7 +112,7 @@ namespace Diccon
                     }
                     else
                     {
-                        MessageBox.Show(dicconProp.connectError);
+                        MessageBox.Show(dicconProp.errorInternet, dicconProp.caption);
                     }
                 }
                 searchTextBox.Text = "";
@@ -174,7 +174,7 @@ namespace Diccon
 
 
             }
-            return dicconProp.missingWord;
+            return dicconProp.promptMissingWord;
 
         }
 
@@ -364,7 +364,7 @@ namespace Diccon
 
         private void closeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show((sender as ToolStripMenuItem).Owner.TopLevelControl.Name);
+            MessageBox.Show((sender as ToolStripMenuItem).Owner.TopLevelControl.Name, dicconProp.caption);
         }
 
         private void btImage_Click(object sender, EventArgs e)

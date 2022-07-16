@@ -221,10 +221,10 @@
     <Compile Include="Pages\timeline.Designer.cs">
       <DependentUpon>timeline.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pages\UserLongMessage.cs">
+    <Compile Include="Controls\UserLongMessage.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Pages\UserLongMessage.Designer.cs">
+    <Compile Include="Controls\UserLongMessage.Designer.cs">
       <DependentUpon>UserLongMessage.cs</DependentUpon>
     </Compile>
     <Compile Include="Pages\yawa.cs">
@@ -235,16 +235,16 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="roundedIcon.cs">
+    <Compile Include="Controls\roundedIcon.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="roundedLabel.cs">
+    <Compile Include="Controls\roundedLabel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="roundedPanel.cs">
+    <Compile Include="Controls\roundedPanel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="roundedPicturebox.cs">
+    <Compile Include="Controls\roundedPicturebox.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Classes\soundRelated.cs" />
@@ -287,6 +287,9 @@
     <EmbeddedResource Include="Pages\dictionary.vi.resx">
       <DependentUpon>dictionary.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pages\donate.vi-VN.resx">
+      <DependentUpon>donate.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pages\donate.vi.resx">
       <DependentUpon>donate.cs</DependentUpon>
     </EmbeddedResource>
@@ -326,7 +329,7 @@
     <EmbeddedResource Include="Pages\timeline.vi.resx">
       <DependentUpon>timeline.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pages\UserLongMessage.resx">
+    <EmbeddedResource Include="Controls\UserLongMessage.resx">
       <DependentUpon>UserLongMessage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\yawa.resx">
@@ -360,7 +363,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Setup and Update\DicconSetup.msi" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -436,7 +438,6 @@
     <None Include="Resources\diccon_32_2.png" />
     <None Include="Resources\alert_wav.wav" />
     <None Include="Resources\diccon_128.png" />
-    <Content Include="Setup and Update\UpdateInfo.xml" />
     <None Include="Resources\github_20.png" />
     <None Include="Resources\info_20.png" />
     <None Include="Resources\ninja_128.png" />

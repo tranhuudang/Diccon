@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Diccon.Pages;
+using System;
 using System.Net;
 using System.Reflection;
 using System.Threading;
@@ -47,5 +48,11 @@ namespace Diccon
         {
             dicconProp.RoundedLabel_MouseLeave(sender, e);
         }
+
+        private void lbGithub_Click(object sender, EventArgs e)
+        {
+          
+        }
+       
     }
 }

@@ -48,20 +48,18 @@ namespace Diccon
         }
         private void AppFrame_Load(object sender, EventArgs e)
         {
-            //Resolution objFormResizer = new Resolution();
-            //objFormResizer.ResizeForm(this, 1080, 1920);
-
+           
             // Stack up quotation
-            switch (Properties.Settings.Default["language"])
+            switch (dicconProp.language)
             {
 
-                case "english":
+                case dicconProp.LanguageType.English:
                     englishToolStripMenuItem.Checked = true;
                     vietnameseToolStripMenuItem.Checked = false;
                     Quotes.English quote = new Quotes.English();
                     lbQuotation.Text = quote.Wisdom;
                     break;
-                case "vietnamese":
+                case dicconProp.LanguageType.Vietnamese:
                     englishToolStripMenuItem.Checked = false;
                     vietnameseToolStripMenuItem.Checked = true;
                     Quotes.Vietnamese quote_vi = new Quotes.Vietnamese();
@@ -111,59 +109,9 @@ namespace Diccon
 
 
 
-        public class Resolution
-        {
-            float heightRatio = new float();
-            float widthRatio = new float();
-            int standardHeight, standardWidth;
-            public void ResizeForm(Form objForm, int DesignerHeight, int DesignerWidth)
-            {
-                standardHeight = DesignerHeight;
-                standardWidth = DesignerWidth;
-                int presentHeight = Screen.PrimaryScreen.WorkingArea.Height;//.Bounds.Height;
-                int presentWidth = Screen.PrimaryScreen.Bounds.Width;
-                heightRatio = (float)((float)presentHeight / (float)standardHeight);
-                widthRatio = (float)((float)presentWidth / (float)standardWidth);
-                objForm.AutoScaleMode = AutoScaleMode.None;
-                objForm.Scale(new SizeF(widthRatio, heightRatio));
-                foreach (Control c in objForm.Controls)
-                {
-                    if (c.HasChildren)
-                    {
-                        ResizeControlStore(c);
-                    }
-                    else
-                    {
-                        c.Font = new Font(c.Font.FontFamily, c.Font.Size * heightRatio, c.Font.Style, c.Font.Unit, ((byte)(0)));
-                    }
-                }
-                objForm.Font = new Font(objForm.Font.FontFamily, objForm.Font.Size * heightRatio, objForm.Font.Style, objForm.Font.Unit, ((byte)(0)));
-            }
-
-            private void ResizeControlStore(Control objCtl)
-            {
-                if (objCtl.HasChildren)
-                {
-                    foreach (Control cChildren in objCtl.Controls)
-                    {
-                        if (cChildren.HasChildren)
-                        {
-                            ResizeControlStore(cChildren);
-
-                        }
-                        else
-                        {
-                            cChildren.Font = new Font(cChildren.Font.FontFamily, cChildren.Font.Size * heightRatio, cChildren.Font.Style, cChildren.Font.Unit, ((byte)(0)));
-                        }
-                    }
-                    objCtl.Font = new Font(objCtl.Font.FontFamily, objCtl.Font.Size * heightRatio, objCtl.Font.Style, objCtl.Font.Unit, ((byte)(0)));
-                }
-                else
-                {
-                    objCtl.Font = new Font(objCtl.Font.FontFamily, objCtl.Font.Size * heightRatio, objCtl.Font.Style, objCtl.Font.Unit, ((byte)(0)));
-                }
-            }
-        }
+      
+          
+        
 
 
 
@@ -414,7 +362,7 @@ namespace Diccon
             }
             else
             {
-                MessageBox.Show(dicconProp.loginRequest);
+                MessageBox.Show(dicconProp.promptLogin, dicconProp.caption);
             }
         }
 
@@ -535,11 +483,11 @@ namespace Diccon
                         history.Write(timelineOnlineContents);
                         history.Close();
                     }
-                    MessageBox.Show("Your data had been synced successfully");
+                    MessageBox.Show(dicconProp.promptSyncedSuccess, dicconProp.caption);
                 }
                 catch (Exception)
                 {
-                    MessageBox.Show(dicconProp.backupError);
+                    MessageBox.Show(dicconProp.errorBackup, dicconProp.caption);
 
 
                 }
@@ -547,7 +495,7 @@ namespace Diccon
             }
             else
             {
-                MessageBox.Show(dicconProp.internetError);
+                MessageBox.Show(dicconProp.errorInternet, dicconProp.caption);
             }
 
 

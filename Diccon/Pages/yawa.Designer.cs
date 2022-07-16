@@ -53,6 +53,8 @@
             this.exampleAskLongText = new System.Windows.Forms.Label();
             this.answerTopPanel = new System.Windows.Forms.Panel();
             this.lbQuestionTitle = new System.Windows.Forms.Label();
+            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.btRemove = new FontAwesome.Sharp.IconPictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.roundedPanelChatBox = new Diccon.RoundedPanel();
             this.answer_TextHolder = new System.Windows.Forms.Label();
@@ -86,6 +88,8 @@
             this.exampleAskLongPanel.SuspendLayout();
             this.exampleAskLongColoredPanel.SuspendLayout();
             this.answerTopPanel.SuspendLayout();
+            this.flowLayoutPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btRemove)).BeginInit();
             this.panel1.SuspendLayout();
             this.roundedPanelChatBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textFromClipboard)).BeginInit();
@@ -274,6 +278,7 @@
             // 
             this.answerTopPanel.BackColor = System.Drawing.Color.Gainsboro;
             this.answerTopPanel.Controls.Add(this.lbQuestionTitle);
+            this.answerTopPanel.Controls.Add(this.flowLayoutPanel3);
             resources.ApplyResources(this.answerTopPanel, "answerTopPanel");
             this.answerTopPanel.Name = "answerTopPanel";
             // 
@@ -282,6 +287,27 @@
             resources.ApplyResources(this.lbQuestionTitle, "lbQuestionTitle");
             this.lbQuestionTitle.ForeColor = System.Drawing.Color.Gray;
             this.lbQuestionTitle.Name = "lbQuestionTitle";
+            this.lbQuestionTitle.Click += new System.EventHandler(this.lbQuestionTitle_Click);
+            // 
+            // flowLayoutPanel3
+            // 
+            resources.ApplyResources(this.flowLayoutPanel3, "flowLayoutPanel3");
+            this.flowLayoutPanel3.Controls.Add(this.btRemove);
+            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
+            // 
+            // btRemove
+            // 
+            resources.ApplyResources(this.btRemove, "btRemove");
+            this.btRemove.BackColor = System.Drawing.Color.Gainsboro;
+            this.btRemove.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btRemove.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btRemove.IconChar = FontAwesome.Sharp.IconChar.TrashAlt;
+            this.btRemove.IconColor = System.Drawing.SystemColors.ControlText;
+            this.btRemove.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btRemove.IconSize = 27;
+            this.btRemove.Name = "btRemove";
+            this.btRemove.TabStop = false;
+            this.btRemove.Click += new System.EventHandler(this.btRemove_Click);
             // 
             // panel1
             // 
@@ -516,6 +542,9 @@
             this.exampleAskLongColoredPanel.ResumeLayout(false);
             this.exampleAskLongColoredPanel.PerformLayout();
             this.answerTopPanel.ResumeLayout(false);
+            this.answerTopPanel.PerformLayout();
+            this.flowLayoutPanel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btRemove)).EndInit();
             this.panel1.ResumeLayout(false);
             this.roundedPanelChatBox.ResumeLayout(false);
             this.roundedPanelChatBox.PerformLayout();
@@ -579,5 +608,7 @@
         private System.Windows.Forms.Label lbQuestionTitle;
         private System.Windows.Forms.FlowLayoutPanel flowChatBox;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        private FontAwesome.Sharp.IconPictureBox btRemove;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
     }
 }

@@ -247,7 +247,7 @@ namespace Diccon
                     else
                     {
 
-                        return dicconProp.internetError;
+                        return dicconProp.errorInternet;
 
                     }
 
@@ -255,7 +255,7 @@ namespace Diccon
             }
             catch (Exception)
             {
-                return dicconProp.internetError;
+                return dicconProp.errorInternet;
             }
 
 

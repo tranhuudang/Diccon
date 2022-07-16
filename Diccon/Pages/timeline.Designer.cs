@@ -33,10 +33,10 @@
             this.listHistory = new System.Windows.Forms.ListBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            this.btRemove = new FontAwesome.Sharp.IconPictureBox();
             this.panelList.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btRemove)).BeginInit();
             this.SuspendLayout();
             // 
             // panelList
@@ -67,22 +67,23 @@
             // 
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.iconPictureBox1);
+            this.panel1.Controls.Add(this.btRemove);
             this.panel1.Name = "panel1";
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // iconPictureBox1
+            // btRemove
             // 
-            resources.ApplyResources(this.iconPictureBox1, "iconPictureBox1");
-            this.iconPictureBox1.BackColor = System.Drawing.Color.White;
-            this.iconPictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconPictureBox1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.FileExport;
-            this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 27;
-            this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.TabStop = false;
+            resources.ApplyResources(this.btRemove, "btRemove");
+            this.btRemove.BackColor = System.Drawing.Color.White;
+            this.btRemove.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btRemove.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btRemove.IconChar = FontAwesome.Sharp.IconChar.TrashAlt;
+            this.btRemove.IconColor = System.Drawing.SystemColors.ControlText;
+            this.btRemove.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btRemove.IconSize = 27;
+            this.btRemove.Name = "btRemove";
+            this.btRemove.TabStop = false;
+            this.btRemove.Click += new System.EventHandler(this.btRemove_Click);
             // 
             // timeline
             // 
@@ -94,7 +95,7 @@
             this.VisibleChanged += new System.EventHandler(this.timeline_VisibleChanged);
             this.panelList.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btRemove)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -104,6 +105,6 @@
         private System.Windows.Forms.ListBox listHistory;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
+        private FontAwesome.Sharp.IconPictureBox btRemove;
     }
 }

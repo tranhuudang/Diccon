@@ -91,5 +91,26 @@ namespace Diccon.Pages
         {
             
         }
+
+        private void btRemove_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (File.Exists(dicconProp.historyFileName))
+                {
+                    if (MessageBox.Show(dicconProp.promptDeleteHistoryFile, dicconProp.caption, MessageBoxButtons.YesNo) == DialogResult.Yes)
+                    {
+                        File.Delete(dicconProp.historyFileName);
+                        listHistory.Items.Clear();
+                    }
+
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show(dicconProp.errorDeleteHistoryFile, dicconProp.caption);
+            }
+           
+        }
     }
 }
