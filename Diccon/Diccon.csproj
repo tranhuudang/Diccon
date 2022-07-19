@@ -197,10 +197,10 @@
     <Compile Include="Pages\donate.Designer.cs">
       <DependentUpon>donate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pages\ImageIndicatorMessage.cs">
+    <Compile Include="Controls\ImageIndicatorMessage.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Pages\ImageIndicatorMessage.Designer.cs">
+    <Compile Include="Controls\ImageIndicatorMessage.Designer.cs">
       <DependentUpon>ImageIndicatorMessage.cs</DependentUpon>
     </Compile>
     <Compile Include="Pages\login.cs">
@@ -305,7 +305,7 @@
     <EmbeddedResource Include="Pages\emoji.vi.resx">
       <DependentUpon>emoji.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pages\ImageIndicatorMessage.resx">
+    <EmbeddedResource Include="Controls\ImageIndicatorMessage.resx">
       <DependentUpon>ImageIndicatorMessage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\login.resx">

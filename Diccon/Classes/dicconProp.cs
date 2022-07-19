@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
@@ -18,7 +19,7 @@ namespace Diccon
         public static int R = 0;
         public static int G = 120;
         public static int B = 215;
-        public static Color AccentColor = Color.FromArgb(200, 0, 120, 215);
+        public static Color AccentColor = GetAccentColor();
         // higher is lighter 0.9 ligher than 0.1
         public static Color ColorA9 = Color.FromArgb((int)(R + (0.9 * (255 - R))), (int)(G + Math.Floor(0.9 * (255 - G))), (int)(B + Math.Floor(0.9 * (255 - B))));
         public static Color ColorA8 = Color.FromArgb((int)(R + (0.8 * (255 - R))), (int)(G + Math.Floor(0.8 * (255 - G))), (int)(B + Math.Floor(0.8 * (255 - B))));
@@ -35,6 +36,7 @@ namespace Diccon
         public static int bottomPanel_DefaultHeight = 60;
         public static int bottomPanel_ExpandedHeight = 140;
 
+        public static string connectionString = "Server= 112.78.2.154;Database=zer42982_ZeroClubOne;Trusted_Connection=False;MultipleActiveResultSets=true;User ID=zer42982_study;Password=7wYi02_w";
 
         public static Color default_addNote_BackColor = Color.FromArgb(255, 192, 128);
         public static Color hover_addNote_BackColor = Color.FromArgb(242, 203, 164);
@@ -81,6 +83,27 @@ namespace Diccon
         public static string errorUnknown =
             language == LanguageType.English ? "Unexpected error."
             : "Lỗi chưa xác định";
+        private static RegistryKey accentColorValue;
+        public static string pathAccentColor = @"HKEY_CURRENT_USER\Software\Microsoft\Windows\DWM";
+        /// <summary>
+        /// Gets the currently applied Windows accent color.
+        /// </summary>
+        private static Color GetAccentColor()
+        {
+            
+            try
+            {
+              
+
+                return Color.FromArgb(200, 0, 120, 215);
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.ToString()) ;
+                // default blue color
+                return Color.FromArgb(200, 0, 120, 215);
+            }
+        }
         /// <summary>
         /// Change Red and Green background of Rounded-Label to a darker shade of  color
         /// </summary>

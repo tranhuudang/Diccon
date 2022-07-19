@@ -77,19 +77,19 @@
             // 
             // topPanel
             // 
-            resources.ApplyResources(this.topPanel, "topPanel");
             this.topPanel.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.topPanel.Controls.Add(this.title);
             this.topPanel.Controls.Add(this.topControlPanel);
             this.topPanel.Controls.Add(this.logo);
-            this.topPanel.Controls.Add(this.title);
+            resources.ApplyResources(this.topPanel, "topPanel");
             this.topPanel.Name = "topPanel";
             // 
             // topControlPanel
             // 
-            resources.ApplyResources(this.topControlPanel, "topControlPanel");
             this.topControlPanel.BackColor = System.Drawing.Color.Transparent;
             this.topControlPanel.Controls.Add(this.buttonMenu);
             this.topControlPanel.Controls.Add(this.btStar);
+            resources.ApplyResources(this.topControlPanel, "topControlPanel");
             this.topControlPanel.Name = "topControlPanel";
             // 
             // buttonMenu
@@ -118,9 +118,9 @@
             // 
             // logo
             // 
-            resources.ApplyResources(this.logo, "logo");
             this.logo.BackColor = System.Drawing.Color.Transparent;
             this.logo.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.logo, "logo");
             this.logo.Image = global::Diccon.Properties.Resources.diccon_32_2;
             this.logo.Name = "logo";
             this.logo.TabStop = false;
@@ -128,21 +128,20 @@
             // 
             // title
             // 
-            resources.ApplyResources(this.title, "title");
             this.title.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.title, "title");
             this.title.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.title.Name = "title";
             // 
             // playGroundPanel
             // 
-            resources.ApplyResources(this.playGroundPanel, "playGroundPanel");
             this.playGroundPanel.Controls.Add(this.panelHome);
+            resources.ApplyResources(this.playGroundPanel, "playGroundPanel");
             this.playGroundPanel.Name = "playGroundPanel";
             this.playGroundPanel.ControlAdded += new System.Windows.Forms.ControlEventHandler(this.playGroundPanel_ControlAdded);
             // 
             // panelHome
             // 
-            resources.ApplyResources(this.panelHome, "panelHome");
             this.panelHome.BackColor = System.Drawing.Color.White;
             this.panelHome.Controls.Add(this.label7);
             this.panelHome.Controls.Add(this.btDonate);
@@ -156,6 +155,7 @@
             this.panelHome.Controls.Add(this.label1);
             this.panelHome.Controls.Add(this.btNotes);
             this.panelHome.Controls.Add(this.btCommunity);
+            resources.ApplyResources(this.panelHome, "panelHome");
             this.panelHome.Name = "panelHome";
             // 
             // label7
@@ -267,7 +267,6 @@
             // 
             // contextMenu
             // 
-            resources.ApplyResources(this.contextMenu, "contextMenu");
             this.contextMenu.DropShadowEnabled = false;
             this.contextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.accountToolStripMenuItem,
@@ -280,73 +279,74 @@
             this.toolStripMenuItem2,
             this.aboutToolStripMenuItem});
             this.contextMenu.Name = "contextMenu";
+            resources.ApplyResources(this.contextMenu, "contextMenu");
             // 
             // accountToolStripMenuItem
             // 
-            resources.ApplyResources(this.accountToolStripMenuItem, "accountToolStripMenuItem");
             this.accountToolStripMenuItem.Name = "accountToolStripMenuItem";
+            resources.ApplyResources(this.accountToolStripMenuItem, "accountToolStripMenuItem");
             this.accountToolStripMenuItem.Click += new System.EventHandler(this.accountToolStripMenuItem_Click);
             // 
             // backUpSyncToolStripMenuItem
             // 
-            resources.ApplyResources(this.backUpSyncToolStripMenuItem, "backUpSyncToolStripMenuItem");
             this.backUpSyncToolStripMenuItem.Name = "backUpSyncToolStripMenuItem";
+            resources.ApplyResources(this.backUpSyncToolStripMenuItem, "backUpSyncToolStripMenuItem");
             this.backUpSyncToolStripMenuItem.Click += new System.EventHandler(this.backUpSyncToolStripMenuItem_Click);
             // 
             // logInWithGoogleToolStripMenuItem
             // 
-            resources.ApplyResources(this.logInWithGoogleToolStripMenuItem, "logInWithGoogleToolStripMenuItem");
             this.logInWithGoogleToolStripMenuItem.Name = "logInWithGoogleToolStripMenuItem";
+            resources.ApplyResources(this.logInWithGoogleToolStripMenuItem, "logInWithGoogleToolStripMenuItem");
             this.logInWithGoogleToolStripMenuItem.Click += new System.EventHandler(this.logInWithGoogleToolStripMenuItem_Click);
             // 
             // toolStripMenuItem4
             // 
-            resources.ApplyResources(this.toolStripMenuItem4, "toolStripMenuItem4");
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
+            resources.ApplyResources(this.toolStripMenuItem4, "toolStripMenuItem4");
             // 
             // languageToolStripMenuItem
             // 
-            resources.ApplyResources(this.languageToolStripMenuItem, "languageToolStripMenuItem");
             this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.englishToolStripMenuItem,
             this.vietnameseToolStripMenuItem});
             this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
+            resources.ApplyResources(this.languageToolStripMenuItem, "languageToolStripMenuItem");
             // 
             // englishToolStripMenuItem
             // 
-            resources.ApplyResources(this.englishToolStripMenuItem, "englishToolStripMenuItem");
             this.englishToolStripMenuItem.Checked = true;
             this.englishToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
+            resources.ApplyResources(this.englishToolStripMenuItem, "englishToolStripMenuItem");
             this.englishToolStripMenuItem.Click += new System.EventHandler(this.englishToolStripMenuItem_Click);
             // 
             // vietnameseToolStripMenuItem
             // 
-            resources.ApplyResources(this.vietnameseToolStripMenuItem, "vietnameseToolStripMenuItem");
             this.vietnameseToolStripMenuItem.Name = "vietnameseToolStripMenuItem";
+            resources.ApplyResources(this.vietnameseToolStripMenuItem, "vietnameseToolStripMenuItem");
             this.vietnameseToolStripMenuItem.Click += new System.EventHandler(this.vietnameseToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
-            resources.ApplyResources(this.toolStripMenuItem1, "toolStripMenuItem1");
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            resources.ApplyResources(this.toolStripMenuItem1, "toolStripMenuItem1");
             // 
             // settingsToolStripMenuItem
             // 
-            resources.ApplyResources(this.settingsToolStripMenuItem, "settingsToolStripMenuItem");
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
+            resources.ApplyResources(this.settingsToolStripMenuItem, "settingsToolStripMenuItem");
             this.settingsToolStripMenuItem.Click += new System.EventHandler(this.settingsToolStripMenuItem_Click);
             // 
             // toolStripMenuItem2
             // 
-            resources.ApplyResources(this.toolStripMenuItem2, "toolStripMenuItem2");
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            resources.ApplyResources(this.toolStripMenuItem2, "toolStripMenuItem2");
             // 
             // aboutToolStripMenuItem
             // 
-            resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
             this.aboutToolStripMenuItem.Image = global::Diccon.Properties.Resources.info_20;
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // notifyIcon1

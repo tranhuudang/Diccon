@@ -405,10 +405,10 @@
             // 
             // flowLayoutPanel1
             // 
-            resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
             this.flowLayoutPanel1.Controls.Add(this.btAskTop);
             this.flowLayoutPanel1.Controls.Add(this.btPeopleTop);
             this.flowLayoutPanel1.Controls.Add(this.btYoursTop);
+            resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             // 
             // btAskTop
