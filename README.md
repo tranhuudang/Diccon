@@ -30,9 +30,9 @@
 
 ## Tải về
 
-* ⬇️ Microsoft Store : [Download](https://www.microsoft.com/store/apps/9NB4287NDVN6)
+* ⬇️ Microsoft Store : [https://www.microsoft.com/store/apps/9NB4287NDVN6](https://www.microsoft.com/store/apps/9NB4287NDVN6)
 
 
 ## Liên hệ
 
-* 📨 Mọi người có tin nhắn góp ý hoặc điều gì muốn chia sẻ có thể gửi thư qua địa chỉ email [Dang Tran Huu](mailto:tranhuudang127@gmail.com) hoặc Zalo: 084390394 🎊.
+* 📨 Mọi người có tin nhắn góp ý có thể gửi thư qua địa chỉ email [Dang Tran Huu](mailto:tranhuudang127@gmail.com) hoặc Zalo: 084390394 🎊.
