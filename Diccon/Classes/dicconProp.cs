@@ -32,6 +32,7 @@ namespace Diccon
         public static string applicationDataPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
         public static string dicconApplicationDataPath = applicationDataPath + @"\Diccon";
         public static string TextDataFromResources = Properties.Resources.Envi;
+        public static string SpellingCorrectorDictionary = Properties.Resources.spellingCorrectorDictionary;
         public static string[] splitedText = TextDataFromResources.Split("@".ToCharArray());
         // botton height use to control the panel when open bottom menu
         public static int bottomPanel_DefaultHeight = 60;
@@ -60,6 +61,9 @@ namespace Diccon
         public static string githubIssuesPath = "https://github.com/tranhuudang/Diccon/issues";
         public static string enableFlashClipboard = Properties.Settings.Default["FlashClipboard"].ToString();
         public static string userID = Properties.Settings.Default["userID"].ToString();
+        /// <summary>
+        /// Duo language notifications
+        /// </summary>
         public static string promptLogin =
              language == LanguageType.English ? "You're not logged in yet. Please login or register a new account to use this function. "
             : "Bạn chưa Đăng nhập vào ứng dụng. Vui lòng Đăng nhập hoặc Tạo tài khoản mới để sử dụng tính năng này.";
@@ -84,7 +88,7 @@ namespace Diccon
         public static string errorUnknown =
             language == LanguageType.English ? "Unexpected error."
             : "Lỗi chưa xác định";
-        private static RegistryKey accentColorValue;
+        
         public static string pathAccentColor = @"HKEY_CURRENT_USER\Software\Microsoft\Windows\DWM";
         /// <summary>
         /// Gets the currently applied Windows accent color.

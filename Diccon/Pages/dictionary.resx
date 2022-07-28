@@ -166,7 +166,7 @@
     <value>addEmoji</value>
   </data>
   <data name="&gt;&gt;addEmoji.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=6.0.7.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;addEmoji.Parent" xml:space="preserve">
     <value>panelAdd</value>
@@ -196,7 +196,7 @@
     <value>addNote</value>
   </data>
   <data name="&gt;&gt;addNote.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=6.0.7.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;addNote.Parent" xml:space="preserve">
     <value>panelAdd</value>
@@ -388,7 +388,7 @@
     <value>roundedPanel1</value>
   </data>
   <data name="&gt;&gt;roundedPanel1.Type" xml:space="preserve">
-    <value>Diccon.RoundedPanel, Diccon, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedPanel, Diccon, Version=6.0.7.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;roundedPanel1.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -424,7 +424,7 @@
     <value>Bottom</value>
   </data>
   <data name="panelBottom.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 369</value>
+    <value>0, 498</value>
   </data>
   <data name="panelBottom.Size" type="System.Drawing.Size, System.Drawing">
     <value>339, 142</value>
@@ -523,7 +523,7 @@
     <value>exampleAnswerColoredPanel</value>
   </data>
   <data name="&gt;&gt;exampleAnswerColoredPanel.Type" xml:space="preserve">
-    <value>Diccon.RoundedPanel, Diccon, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedPanel, Diccon, Version=6.0.7.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;exampleAnswerColoredPanel.Parent" xml:space="preserve">
     <value>exampleAnswerPanel</value>
@@ -667,7 +667,7 @@
     <value>panelNotice</value>
   </data>
   <data name="&gt;&gt;panelNotice.Type" xml:space="preserve">
-    <value>Diccon.RoundedPanel, Diccon, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedPanel, Diccon, Version=6.0.7.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;panelNotice.Parent" xml:space="preserve">
     <value>panel3</value>
@@ -730,7 +730,7 @@
     <value>exampleItemSynonym</value>
   </data>
   <data name="&gt;&gt;exampleItemSynonym.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=6.0.7.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;exampleItemSynonym.Parent" xml:space="preserve">
     <value>exampleflowLayoutSynonym</value>
@@ -769,7 +769,7 @@
     <value>roundedLabel3</value>
   </data>
   <data name="&gt;&gt;roundedLabel3.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=6.0.7.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;roundedLabel3.Parent" xml:space="preserve">
     <value>exampleflowLayoutSynonym</value>
@@ -844,7 +844,7 @@
     <value>exampleShortText</value>
   </data>
   <data name="&gt;&gt;exampleShortText.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=6.0.7.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;exampleShortText.Parent" xml:space="preserve">
     <value>exampleShortPanel</value>
@@ -928,7 +928,7 @@
     <value>exampleAskLongColoredPanel</value>
   </data>
   <data name="&gt;&gt;exampleAskLongColoredPanel.Type" xml:space="preserve">
-    <value>Diccon.RoundedPanel, Diccon, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedPanel, Diccon, Version=6.0.7.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;exampleAskLongColoredPanel.Parent" xml:space="preserve">
     <value>exampleAskLongPanel</value>
@@ -1056,7 +1056,7 @@
     <value>examplePlayColoredPanel</value>
   </data>
   <data name="&gt;&gt;examplePlayColoredPanel.Type" xml:space="preserve">
-    <value>Diccon.RoundedPanel, Diccon, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedPanel, Diccon, Version=6.0.7.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;examplePlayColoredPanel.Parent" xml:space="preserve">
     <value>examplePlayAlignPanel</value>
@@ -1272,7 +1272,7 @@
     <value>exampleNoteColoredPanel</value>
   </data>
   <data name="&gt;&gt;exampleNoteColoredPanel.Type" xml:space="preserve">
-    <value>Diccon.RoundedPanel, Diccon, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedPanel, Diccon, Version=6.0.7.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;exampleNoteColoredPanel.Parent" xml:space="preserve">
     <value>exampleNotePanel</value>
@@ -3527,7 +3527,7 @@
     <value>examplePictureBox</value>
   </data>
   <data name="&gt;&gt;examplePictureBox.Type" xml:space="preserve">
-    <value>Diccon.RoundedPictureBox, Diccon, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedPictureBox, Diccon, Version=6.0.7.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;examplePictureBox.Parent" xml:space="preserve">
     <value>exampleColoredPicturePanel</value>
@@ -3548,7 +3548,7 @@
     <value>exampleColoredPicturePanel</value>
   </data>
   <data name="&gt;&gt;exampleColoredPicturePanel.Type" xml:space="preserve">
-    <value>Diccon.RoundedPanel, Diccon, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedPanel, Diccon, Version=6.0.7.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;exampleColoredPicturePanel.Parent" xml:space="preserve">
     <value>examplePicturePanel</value>
@@ -3590,7 +3590,7 @@
     <value>5, 5, 5, 5</value>
   </data>
   <data name="flowChatBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>339, 329</value>
+    <value>339, 458</value>
   </data>
   <data name="flowChatBox.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -3647,7 +3647,7 @@
     <value>btSynonym</value>
   </data>
   <data name="&gt;&gt;btSynonym.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=6.0.7.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btSynonym.Parent" xml:space="preserve">
     <value>flowSuggestion</value>
@@ -3689,7 +3689,7 @@
     <value>roundedLabel9</value>
   </data>
   <data name="&gt;&gt;roundedLabel9.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=6.0.7.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;roundedLabel9.Parent" xml:space="preserve">
     <value>flowSuggestion</value>
@@ -3731,7 +3731,7 @@
     <value>roundedLabel12</value>
   </data>
   <data name="&gt;&gt;roundedLabel12.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=6.0.7.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;roundedLabel12.Parent" xml:space="preserve">
     <value>flowSuggestion</value>
@@ -3739,46 +3739,46 @@
   <data name="&gt;&gt;roundedLabel12.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="roundedLabel10.AutoSize" type="System.Boolean, mscorlib">
+  <data name="btSpellingCorrector.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="roundedLabel10.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="btSpellingCorrector.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
-  <data name="roundedLabel10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btSpellingCorrector.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="roundedLabel10.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="btSpellingCorrector.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 33</value>
   </data>
-  <data name="roundedLabel10.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="btSpellingCorrector.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 4, 6, 4</value>
   </data>
-  <data name="roundedLabel10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>138, 28</value>
+  <data name="btSpellingCorrector.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 28</value>
   </data>
-  <data name="roundedLabel10.TabIndex" type="System.Int32, mscorlib">
+  <data name="btSpellingCorrector.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="roundedLabel10.Text" xml:space="preserve">
-    <value>English - English</value>
+  <data name="btSpellingCorrector.Text" xml:space="preserve">
+    <value>Spelling Corrector</value>
   </data>
-  <data name="roundedLabel10.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="btSpellingCorrector.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="roundedLabel10.Visible" type="System.Boolean, mscorlib">
+  <data name="btSpellingCorrector.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="&gt;&gt;roundedLabel10.Name" xml:space="preserve">
-    <value>roundedLabel10</value>
+  <data name="&gt;&gt;btSpellingCorrector.Name" xml:space="preserve">
+    <value>btSpellingCorrector</value>
   </data>
-  <data name="&gt;&gt;roundedLabel10.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null</value>
+  <data name="&gt;&gt;btSpellingCorrector.Type" xml:space="preserve">
+    <value>Diccon.RoundedLabel, Diccon, Version=6.0.7.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;roundedLabel10.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btSpellingCorrector.Parent" xml:space="preserve">
     <value>flowSuggestion</value>
   </data>
-  <data name="&gt;&gt;roundedLabel10.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btSpellingCorrector.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="btImage.AutoSize" type="System.Boolean, mscorlib">
@@ -3791,7 +3791,7 @@
     <value>NoControl</value>
   </data>
   <data name="btImage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>157, 33</value>
+    <value>166, 33</value>
   </data>
   <data name="btImage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 4, 6, 4</value>
@@ -3815,7 +3815,7 @@
     <value>btImage</value>
   </data>
   <data name="&gt;&gt;btImage.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.0.6.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=6.0.7.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btImage.Parent" xml:space="preserve">
     <value>flowSuggestion</value>
@@ -3827,7 +3827,7 @@
     <value>Bottom</value>
   </data>
   <data name="flowSuggestion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 334</value>
+    <value>0, 463</value>
   </data>
   <data name="flowSuggestion.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 5, 10, 0</value>
@@ -3896,7 +3896,7 @@
     <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>339, 511</value>
+    <value>339, 640</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -5801,6 +5801,9 @@
         AAAAAAkAAAALAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIABAACAAQAAwAEAAMADAADAAwAAgAMA
         AIADAACAAwAAwAMAAMADAADAAwAAwAMAAMADAADgBwAA8A8AAP5/AAA=
 </value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>423, 10000</value>

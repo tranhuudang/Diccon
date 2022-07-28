@@ -31,95 +31,95 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dictionary));
             this.panelBottom = new System.Windows.Forms.Panel();
-            this.btAdd = new FontAwesome.Sharp.IconPictureBox();
             this.panelAdd = new System.Windows.Forms.Panel();
-            this.addEmoji = new Diccon.RoundedLabel();
-            this.addNote = new Diccon.RoundedLabel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.roundedPanel1 = new Diccon.RoundedPanel();
-            this.textFromClipboard = new FontAwesome.Sharp.IconPictureBox();
-            this.labelTypeToSearch = new System.Windows.Forms.Label();
-            this.searchTextBox = new System.Windows.Forms.TextBox();
-            this.textFromMic = new FontAwesome.Sharp.IconPictureBox();
-            this.btSend = new FontAwesome.Sharp.IconPictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.flowChatBox = new System.Windows.Forms.FlowLayoutPanel();
             this.exampleAnswerPanel = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.exampleflowLayoutSynonym = new System.Windows.Forms.FlowLayoutPanel();
+            this.exampleShortPanel = new System.Windows.Forms.Panel();
+            this.exampleAskLongPanel = new System.Windows.Forms.Panel();
+            this.examplePlayPanel = new System.Windows.Forms.Panel();
+            this.examplePlayAlignPanel = new System.Windows.Forms.Panel();
+            this.exampleNotePanel = new System.Windows.Forms.Panel();
+            this.examplePicturePanel = new System.Windows.Forms.Panel();
+            this.suggestionTimer = new System.Windows.Forms.Timer(this.components);
+            this.flowSuggestion = new System.Windows.Forms.FlowLayoutPanel();
+            this.contextMenuNote = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addToFavouriteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.e = new System.Windows.Forms.ToolStripSeparator();
+            this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.examplePixabayLogo = new System.Windows.Forms.PictureBox();
+            this.btAdd = new FontAwesome.Sharp.IconPictureBox();
             this.exampleAnswerColoredPanel = new Diccon.RoundedPanel();
             this.exampleAnswerText = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panelNotice = new Diccon.RoundedPanel();
             this.issueLink = new System.Windows.Forms.LinkLabel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.exampleflowLayoutSynonym = new System.Windows.Forms.FlowLayoutPanel();
             this.exampleItemSynonym = new Diccon.RoundedLabel();
             this.roundedLabel3 = new Diccon.RoundedLabel();
-            this.exampleShortPanel = new System.Windows.Forms.Panel();
             this.exampleShortText = new Diccon.RoundedLabel();
-            this.exampleAskLongPanel = new System.Windows.Forms.Panel();
             this.exampleAskLongColoredPanel = new Diccon.RoundedPanel();
             this.exampleAskLongText = new System.Windows.Forms.Label();
-            this.examplePlayPanel = new System.Windows.Forms.Panel();
-            this.examplePlayAlignPanel = new System.Windows.Forms.Panel();
             this.examplePlayColoredPanel = new Diccon.RoundedPanel();
             this.exampleTextHolder = new System.Windows.Forms.Label();
             this.examplePlayButton = new System.Windows.Forms.PictureBox();
-            this.exampleNotePanel = new System.Windows.Forms.Panel();
             this.exampleNoteColoredPanel = new Diccon.RoundedPanel();
             this.exampleNoteTitle = new System.Windows.Forms.TextBox();
             this.exampleNoteClose = new System.Windows.Forms.PictureBox();
             this.exampleNoteDelete = new System.Windows.Forms.PictureBox();
             this.exampleNoteSave = new System.Windows.Forms.PictureBox();
             this.exampleNoteRichTextBox = new System.Windows.Forms.RichTextBox();
-            this.examplePicturePanel = new System.Windows.Forms.Panel();
-            this.examplePixabayLogo = new System.Windows.Forms.PictureBox();
             this.exampleColoredPicturePanel = new Diccon.RoundedPanel();
             this.examplePictureBox = new Diccon.RoundedPictureBox();
-            this.suggestionTimer = new System.Windows.Forms.Timer(this.components);
-            this.flowSuggestion = new System.Windows.Forms.FlowLayoutPanel();
             this.btSynonym = new Diccon.RoundedLabel();
             this.roundedLabel9 = new Diccon.RoundedLabel();
             this.roundedLabel12 = new Diccon.RoundedLabel();
-            this.roundedLabel10 = new Diccon.RoundedLabel();
+            this.btSpellingCorrector = new Diccon.RoundedLabel();
             this.btImage = new Diccon.RoundedLabel();
-            this.contextMenuNote = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addToFavouriteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.e = new System.Windows.Forms.ToolStripSeparator();
-            this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addEmoji = new Diccon.RoundedLabel();
+            this.addNote = new Diccon.RoundedLabel();
+            this.roundedPanel1 = new Diccon.RoundedPanel();
+            this.textFromClipboard = new FontAwesome.Sharp.IconPictureBox();
+            this.labelTypeToSearch = new System.Windows.Forms.Label();
+            this.searchTextBox = new System.Windows.Forms.TextBox();
+            this.textFromMic = new FontAwesome.Sharp.IconPictureBox();
+            this.btSend = new FontAwesome.Sharp.IconPictureBox();
             this.panelBottom.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btAdd)).BeginInit();
             this.panelAdd.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.roundedPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textFromClipboard)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textFromMic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btSend)).BeginInit();
             this.flowChatBox.SuspendLayout();
             this.exampleAnswerPanel.SuspendLayout();
-            this.exampleAnswerColoredPanel.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panelNotice.SuspendLayout();
             this.exampleflowLayoutSynonym.SuspendLayout();
             this.exampleShortPanel.SuspendLayout();
             this.exampleAskLongPanel.SuspendLayout();
-            this.exampleAskLongColoredPanel.SuspendLayout();
             this.examplePlayPanel.SuspendLayout();
             this.examplePlayAlignPanel.SuspendLayout();
+            this.exampleNotePanel.SuspendLayout();
+            this.examplePicturePanel.SuspendLayout();
+            this.flowSuggestion.SuspendLayout();
+            this.contextMenuNote.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.examplePixabayLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btAdd)).BeginInit();
+            this.exampleAnswerColoredPanel.SuspendLayout();
+            this.panelNotice.SuspendLayout();
+            this.exampleAskLongColoredPanel.SuspendLayout();
             this.examplePlayColoredPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.examplePlayButton)).BeginInit();
-            this.exampleNotePanel.SuspendLayout();
             this.exampleNoteColoredPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.exampleNoteClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exampleNoteDelete)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exampleNoteSave)).BeginInit();
-            this.examplePicturePanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.examplePixabayLogo)).BeginInit();
             this.exampleColoredPicturePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.examplePictureBox)).BeginInit();
-            this.flowSuggestion.SuspendLayout();
-            this.contextMenuNote.SuspendLayout();
+            this.roundedPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textFromClipboard)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textFromMic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btSend)).BeginInit();
             this.SuspendLayout();
             // 
             // panelBottom
@@ -129,6 +129,150 @@
             this.panelBottom.Controls.Add(this.panel1);
             resources.ApplyResources(this.panelBottom, "panelBottom");
             this.panelBottom.Name = "panelBottom";
+            // 
+            // panelAdd
+            // 
+            this.panelAdd.Controls.Add(this.addEmoji);
+            this.panelAdd.Controls.Add(this.addNote);
+            resources.ApplyResources(this.panelAdd, "panelAdd");
+            this.panelAdd.Name = "panelAdd";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.roundedPanel1);
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Name = "panel1";
+            // 
+            // panel2
+            // 
+            resources.ApplyResources(this.panel2, "panel2");
+            this.panel2.Name = "panel2";
+            // 
+            // flowChatBox
+            // 
+            resources.ApplyResources(this.flowChatBox, "flowChatBox");
+            this.flowChatBox.BackColor = System.Drawing.Color.White;
+            this.flowChatBox.Controls.Add(this.exampleAnswerPanel);
+            this.flowChatBox.Controls.Add(this.panel3);
+            this.flowChatBox.Controls.Add(this.exampleflowLayoutSynonym);
+            this.flowChatBox.Controls.Add(this.exampleShortPanel);
+            this.flowChatBox.Controls.Add(this.exampleAskLongPanel);
+            this.flowChatBox.Controls.Add(this.examplePlayPanel);
+            this.flowChatBox.Controls.Add(this.exampleNotePanel);
+            this.flowChatBox.Controls.Add(this.examplePicturePanel);
+            this.flowChatBox.Name = "flowChatBox";
+            // 
+            // exampleAnswerPanel
+            // 
+            this.exampleAnswerPanel.Controls.Add(this.exampleAnswerColoredPanel);
+            resources.ApplyResources(this.exampleAnswerPanel, "exampleAnswerPanel");
+            this.exampleAnswerPanel.Name = "exampleAnswerPanel";
+            // 
+            // panel3
+            // 
+            resources.ApplyResources(this.panel3, "panel3");
+            this.panel3.Controls.Add(this.panelNotice);
+            this.panel3.Name = "panel3";
+            // 
+            // exampleflowLayoutSynonym
+            // 
+            resources.ApplyResources(this.exampleflowLayoutSynonym, "exampleflowLayoutSynonym");
+            this.exampleflowLayoutSynonym.Controls.Add(this.exampleItemSynonym);
+            this.exampleflowLayoutSynonym.Controls.Add(this.roundedLabel3);
+            this.exampleflowLayoutSynonym.Name = "exampleflowLayoutSynonym";
+            // 
+            // exampleShortPanel
+            // 
+            this.exampleShortPanel.Controls.Add(this.exampleShortText);
+            resources.ApplyResources(this.exampleShortPanel, "exampleShortPanel");
+            this.exampleShortPanel.Name = "exampleShortPanel";
+            // 
+            // exampleAskLongPanel
+            // 
+            this.exampleAskLongPanel.Controls.Add(this.exampleAskLongColoredPanel);
+            resources.ApplyResources(this.exampleAskLongPanel, "exampleAskLongPanel");
+            this.exampleAskLongPanel.Name = "exampleAskLongPanel";
+            // 
+            // examplePlayPanel
+            // 
+            this.examplePlayPanel.Controls.Add(this.examplePlayAlignPanel);
+            resources.ApplyResources(this.examplePlayPanel, "examplePlayPanel");
+            this.examplePlayPanel.Name = "examplePlayPanel";
+            // 
+            // examplePlayAlignPanel
+            // 
+            this.examplePlayAlignPanel.Controls.Add(this.examplePlayColoredPanel);
+            resources.ApplyResources(this.examplePlayAlignPanel, "examplePlayAlignPanel");
+            this.examplePlayAlignPanel.Name = "examplePlayAlignPanel";
+            // 
+            // exampleNotePanel
+            // 
+            this.exampleNotePanel.Controls.Add(this.exampleNoteColoredPanel);
+            resources.ApplyResources(this.exampleNotePanel, "exampleNotePanel");
+            this.exampleNotePanel.Name = "exampleNotePanel";
+            // 
+            // examplePicturePanel
+            // 
+            this.examplePicturePanel.Controls.Add(this.examplePixabayLogo);
+            this.examplePicturePanel.Controls.Add(this.exampleColoredPicturePanel);
+            resources.ApplyResources(this.examplePicturePanel, "examplePicturePanel");
+            this.examplePicturePanel.Name = "examplePicturePanel";
+            // 
+            // suggestionTimer
+            // 
+            this.suggestionTimer.Interval = 1000;
+            this.suggestionTimer.Tick += new System.EventHandler(this.suggestionTimer_TickAsync);
+            // 
+            // flowSuggestion
+            // 
+            resources.ApplyResources(this.flowSuggestion, "flowSuggestion");
+            this.flowSuggestion.Controls.Add(this.btSynonym);
+            this.flowSuggestion.Controls.Add(this.roundedLabel9);
+            this.flowSuggestion.Controls.Add(this.roundedLabel12);
+            this.flowSuggestion.Controls.Add(this.btSpellingCorrector);
+            this.flowSuggestion.Controls.Add(this.btImage);
+            this.flowSuggestion.Name = "flowSuggestion";
+            // 
+            // contextMenuNote
+            // 
+            this.contextMenuNote.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.contextMenuNote.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.saveToolStripMenuItem,
+            this.addToFavouriteToolStripMenuItem,
+            this.e,
+            this.closeToolStripMenuItem});
+            this.contextMenuNote.Name = "contextMenuNote";
+            resources.ApplyResources(this.contextMenuNote, "contextMenuNote");
+            // 
+            // saveToolStripMenuItem
+            // 
+            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
+            resources.ApplyResources(this.saveToolStripMenuItem, "saveToolStripMenuItem");
+            // 
+            // addToFavouriteToolStripMenuItem
+            // 
+            this.addToFavouriteToolStripMenuItem.Name = "addToFavouriteToolStripMenuItem";
+            resources.ApplyResources(this.addToFavouriteToolStripMenuItem, "addToFavouriteToolStripMenuItem");
+            // 
+            // e
+            // 
+            this.e.Name = "e";
+            resources.ApplyResources(this.e, "e");
+            // 
+            // closeToolStripMenuItem
+            // 
+            this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
+            resources.ApplyResources(this.closeToolStripMenuItem, "closeToolStripMenuItem");
+            this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
+            // 
+            // examplePixabayLogo
+            // 
+            this.examplePixabayLogo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.examplePixabayLogo.Image = global::Diccon.Properties.Resources.pixabay_logo;
+            resources.ApplyResources(this.examplePixabayLogo, "examplePixabayLogo");
+            this.examplePixabayLogo.Name = "examplePixabayLogo";
+            this.examplePixabayLogo.TabStop = false;
+            this.examplePixabayLogo.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // btAdd
             // 
@@ -147,12 +291,252 @@
             this.btAdd.MouseEnter += new System.EventHandler(this.PictureBox_MouseEnter);
             this.btAdd.MouseLeave += new System.EventHandler(this.PictureBox_MouseLeave);
             // 
-            // panelAdd
+            // exampleAnswerColoredPanel
             // 
-            this.panelAdd.Controls.Add(this.addEmoji);
-            this.panelAdd.Controls.Add(this.addNote);
-            resources.ApplyResources(this.panelAdd, "panelAdd");
-            this.panelAdd.Name = "panelAdd";
+            this.exampleAnswerColoredPanel.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.exampleAnswerColoredPanel.BorderColor = System.Drawing.Color.White;
+            this.exampleAnswerColoredPanel.Controls.Add(this.exampleAnswerText);
+            resources.ApplyResources(this.exampleAnswerColoredPanel, "exampleAnswerColoredPanel");
+            this.exampleAnswerColoredPanel.Name = "exampleAnswerColoredPanel";
+            this.exampleAnswerColoredPanel.Radius = 20;
+            this.exampleAnswerColoredPanel.Thickness = 5F;
+            // 
+            // exampleAnswerText
+            // 
+            resources.ApplyResources(this.exampleAnswerText, "exampleAnswerText");
+            this.exampleAnswerText.ForeColor = System.Drawing.Color.White;
+            this.exampleAnswerText.Name = "exampleAnswerText";
+            // 
+            // panelNotice
+            // 
+            resources.ApplyResources(this.panelNotice, "panelNotice");
+            this.panelNotice.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.panelNotice.BorderColor = System.Drawing.Color.White;
+            this.panelNotice.Controls.Add(this.issueLink);
+            this.panelNotice.Controls.Add(this.label2);
+            this.panelNotice.Controls.Add(this.label1);
+            this.panelNotice.Name = "panelNotice";
+            this.panelNotice.Radius = 20;
+            this.panelNotice.Thickness = 5F;
+            // 
+            // issueLink
+            // 
+            this.issueLink.ActiveLinkColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.issueLink, "issueLink");
+            this.issueLink.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.issueLink.Name = "issueLink";
+            this.issueLink.TabStop = true;
+            this.issueLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.issueLink_LinkClicked);
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Name = "label2";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Name = "label1";
+            // 
+            // exampleItemSynonym
+            // 
+            resources.ApplyResources(this.exampleItemSynonym, "exampleItemSynonym");
+            this.exampleItemSynonym.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.exampleItemSynonym.BorderColor = System.Drawing.Color.White;
+            this.exampleItemSynonym.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.exampleItemSynonym.Name = "exampleItemSynonym";
+            this.exampleItemSynonym.Radius = 20;
+            this.exampleItemSynonym.Thickness = 5F;
+            // 
+            // roundedLabel3
+            // 
+            resources.ApplyResources(this.roundedLabel3, "roundedLabel3");
+            this.roundedLabel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.roundedLabel3.BorderColor = System.Drawing.Color.White;
+            this.roundedLabel3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.roundedLabel3.Name = "roundedLabel3";
+            this.roundedLabel3.Radius = 20;
+            this.roundedLabel3.Thickness = 5F;
+            // 
+            // exampleShortText
+            // 
+            resources.ApplyResources(this.exampleShortText, "exampleShortText");
+            this.exampleShortText.BackColor = System.Drawing.Color.LightGray;
+            this.exampleShortText.BorderColor = System.Drawing.Color.White;
+            this.exampleShortText.Name = "exampleShortText";
+            this.exampleShortText.Radius = 20;
+            this.exampleShortText.Thickness = 5F;
+            // 
+            // exampleAskLongColoredPanel
+            // 
+            this.exampleAskLongColoredPanel.BackColor = System.Drawing.Color.LightGray;
+            this.exampleAskLongColoredPanel.BorderColor = System.Drawing.Color.White;
+            this.exampleAskLongColoredPanel.Controls.Add(this.exampleAskLongText);
+            resources.ApplyResources(this.exampleAskLongColoredPanel, "exampleAskLongColoredPanel");
+            this.exampleAskLongColoredPanel.Name = "exampleAskLongColoredPanel";
+            this.exampleAskLongColoredPanel.Radius = 20;
+            this.exampleAskLongColoredPanel.Thickness = 5F;
+            // 
+            // exampleAskLongText
+            // 
+            resources.ApplyResources(this.exampleAskLongText, "exampleAskLongText");
+            this.exampleAskLongText.Name = "exampleAskLongText";
+            // 
+            // examplePlayColoredPanel
+            // 
+            resources.ApplyResources(this.examplePlayColoredPanel, "examplePlayColoredPanel");
+            this.examplePlayColoredPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.examplePlayColoredPanel.BorderColor = System.Drawing.Color.White;
+            this.examplePlayColoredPanel.Controls.Add(this.exampleTextHolder);
+            this.examplePlayColoredPanel.Controls.Add(this.examplePlayButton);
+            this.examplePlayColoredPanel.Name = "examplePlayColoredPanel";
+            this.examplePlayColoredPanel.Radius = 20;
+            this.examplePlayColoredPanel.Thickness = 5F;
+            // 
+            // exampleTextHolder
+            // 
+            resources.ApplyResources(this.exampleTextHolder, "exampleTextHolder");
+            this.exampleTextHolder.Name = "exampleTextHolder";
+            // 
+            // examplePlayButton
+            // 
+            this.examplePlayButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.examplePlayButton, "examplePlayButton");
+            this.examplePlayButton.Name = "examplePlayButton";
+            this.examplePlayButton.TabStop = false;
+            // 
+            // exampleNoteColoredPanel
+            // 
+            this.exampleNoteColoredPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.exampleNoteColoredPanel.BorderColor = System.Drawing.Color.White;
+            this.exampleNoteColoredPanel.Controls.Add(this.exampleNoteTitle);
+            this.exampleNoteColoredPanel.Controls.Add(this.exampleNoteClose);
+            this.exampleNoteColoredPanel.Controls.Add(this.exampleNoteDelete);
+            this.exampleNoteColoredPanel.Controls.Add(this.exampleNoteSave);
+            this.exampleNoteColoredPanel.Controls.Add(this.exampleNoteRichTextBox);
+            resources.ApplyResources(this.exampleNoteColoredPanel, "exampleNoteColoredPanel");
+            this.exampleNoteColoredPanel.Name = "exampleNoteColoredPanel";
+            this.exampleNoteColoredPanel.Radius = 20;
+            this.exampleNoteColoredPanel.Thickness = 5F;
+            // 
+            // exampleNoteTitle
+            // 
+            this.exampleNoteTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.exampleNoteTitle.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.exampleNoteTitle, "exampleNoteTitle");
+            this.exampleNoteTitle.ForeColor = System.Drawing.Color.DimGray;
+            this.exampleNoteTitle.Name = "exampleNoteTitle";
+            // 
+            // exampleNoteClose
+            // 
+            resources.ApplyResources(this.exampleNoteClose, "exampleNoteClose");
+            this.exampleNoteClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.exampleNoteClose.Image = global::Diccon.Properties.Resources.close_24;
+            this.exampleNoteClose.Name = "exampleNoteClose";
+            this.exampleNoteClose.TabStop = false;
+            // 
+            // exampleNoteDelete
+            // 
+            this.exampleNoteDelete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.exampleNoteDelete.Image = global::Diccon.Properties.Resources.delete_24;
+            resources.ApplyResources(this.exampleNoteDelete, "exampleNoteDelete");
+            this.exampleNoteDelete.Name = "exampleNoteDelete";
+            this.exampleNoteDelete.TabStop = false;
+            // 
+            // exampleNoteSave
+            // 
+            this.exampleNoteSave.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.exampleNoteSave.Image = global::Diccon.Properties.Resources.save_24;
+            resources.ApplyResources(this.exampleNoteSave, "exampleNoteSave");
+            this.exampleNoteSave.Name = "exampleNoteSave";
+            this.exampleNoteSave.TabStop = false;
+            this.exampleNoteSave.Click += new System.EventHandler(this.exampleNoteSave_Click);
+            // 
+            // exampleNoteRichTextBox
+            // 
+            resources.ApplyResources(this.exampleNoteRichTextBox, "exampleNoteRichTextBox");
+            this.exampleNoteRichTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.exampleNoteRichTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.exampleNoteRichTextBox.Name = "exampleNoteRichTextBox";
+            // 
+            // exampleColoredPicturePanel
+            // 
+            this.exampleColoredPicturePanel.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.exampleColoredPicturePanel.BorderColor = System.Drawing.Color.White;
+            this.exampleColoredPicturePanel.Controls.Add(this.examplePictureBox);
+            resources.ApplyResources(this.exampleColoredPicturePanel, "exampleColoredPicturePanel");
+            this.exampleColoredPicturePanel.Name = "exampleColoredPicturePanel";
+            this.exampleColoredPicturePanel.Radius = 20;
+            this.exampleColoredPicturePanel.Thickness = 5F;
+            // 
+            // examplePictureBox
+            // 
+            this.examplePictureBox.BackColor = System.Drawing.Color.White;
+            this.examplePictureBox.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.examplePictureBox.ErrorImage = global::Diccon.Properties.Resources.doubtful;
+            resources.ApplyResources(this.examplePictureBox, "examplePictureBox");
+            this.examplePictureBox.InitialImage = global::Diccon.Properties.Resources.reluctant;
+            this.examplePictureBox.Name = "examplePictureBox";
+            this.examplePictureBox.Radius = 20;
+            this.examplePictureBox.TabStop = false;
+            this.examplePictureBox.Thickness = 5F;
+            // 
+            // btSynonym
+            // 
+            resources.ApplyResources(this.btSynonym, "btSynonym");
+            this.btSynonym.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btSynonym.BorderColor = System.Drawing.Color.White;
+            this.btSynonym.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btSynonym.Name = "btSynonym";
+            this.btSynonym.Radius = 20;
+            this.btSynonym.Thickness = 5F;
+            this.btSynonym.Click += new System.EventHandler(this.btSynonym_Click);
+            this.btSynonym.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
+            this.btSynonym.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
+            // 
+            // roundedLabel9
+            // 
+            resources.ApplyResources(this.roundedLabel9, "roundedLabel9");
+            this.roundedLabel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.roundedLabel9.BorderColor = System.Drawing.Color.White;
+            this.roundedLabel9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.roundedLabel9.Name = "roundedLabel9";
+            this.roundedLabel9.Radius = 20;
+            this.roundedLabel9.Thickness = 5F;
+            // 
+            // roundedLabel12
+            // 
+            resources.ApplyResources(this.roundedLabel12, "roundedLabel12");
+            this.roundedLabel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.roundedLabel12.BorderColor = System.Drawing.Color.White;
+            this.roundedLabel12.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.roundedLabel12.Name = "roundedLabel12";
+            this.roundedLabel12.Radius = 20;
+            this.roundedLabel12.Thickness = 5F;
+            // 
+            // btSpellingCorrector
+            // 
+            resources.ApplyResources(this.btSpellingCorrector, "btSpellingCorrector");
+            this.btSpellingCorrector.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.btSpellingCorrector.BorderColor = System.Drawing.Color.White;
+            this.btSpellingCorrector.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btSpellingCorrector.Name = "btSpellingCorrector";
+            this.btSpellingCorrector.Radius = 20;
+            this.btSpellingCorrector.Thickness = 5F;
+            this.btSpellingCorrector.Click += new System.EventHandler(this.btSpellingCorrector_Click);
+            // 
+            // btImage
+            // 
+            resources.ApplyResources(this.btImage, "btImage");
+            this.btImage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btImage.BorderColor = System.Drawing.Color.White;
+            this.btImage.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btImage.Name = "btImage";
+            this.btImage.Radius = 20;
+            this.btImage.Thickness = 5F;
+            this.btImage.Click += new System.EventHandler(this.btImage_Click);
             // 
             // addEmoji
             // 
@@ -181,12 +565,6 @@
             this.addNote.Click += new System.EventHandler(this.addNote_Click);
             this.addNote.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
             this.addNote.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.roundedPanel1);
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Name = "panel1";
             // 
             // roundedPanel1
             // 
@@ -274,383 +652,6 @@
             this.btSend.MouseEnter += new System.EventHandler(this.PictureBox_MouseEnter);
             this.btSend.MouseLeave += new System.EventHandler(this.PictureBox_MouseLeave);
             // 
-            // panel2
-            // 
-            resources.ApplyResources(this.panel2, "panel2");
-            this.panel2.Name = "panel2";
-            // 
-            // flowChatBox
-            // 
-            resources.ApplyResources(this.flowChatBox, "flowChatBox");
-            this.flowChatBox.BackColor = System.Drawing.Color.White;
-            this.flowChatBox.Controls.Add(this.exampleAnswerPanel);
-            this.flowChatBox.Controls.Add(this.panel3);
-            this.flowChatBox.Controls.Add(this.exampleflowLayoutSynonym);
-            this.flowChatBox.Controls.Add(this.exampleShortPanel);
-            this.flowChatBox.Controls.Add(this.exampleAskLongPanel);
-            this.flowChatBox.Controls.Add(this.examplePlayPanel);
-            this.flowChatBox.Controls.Add(this.exampleNotePanel);
-            this.flowChatBox.Controls.Add(this.examplePicturePanel);
-            this.flowChatBox.Name = "flowChatBox";
-            // 
-            // exampleAnswerPanel
-            // 
-            this.exampleAnswerPanel.Controls.Add(this.exampleAnswerColoredPanel);
-            resources.ApplyResources(this.exampleAnswerPanel, "exampleAnswerPanel");
-            this.exampleAnswerPanel.Name = "exampleAnswerPanel";
-            // 
-            // exampleAnswerColoredPanel
-            // 
-            this.exampleAnswerColoredPanel.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.exampleAnswerColoredPanel.BorderColor = System.Drawing.Color.White;
-            this.exampleAnswerColoredPanel.Controls.Add(this.exampleAnswerText);
-            resources.ApplyResources(this.exampleAnswerColoredPanel, "exampleAnswerColoredPanel");
-            this.exampleAnswerColoredPanel.Name = "exampleAnswerColoredPanel";
-            this.exampleAnswerColoredPanel.Radius = 20;
-            this.exampleAnswerColoredPanel.Thickness = 5F;
-            // 
-            // exampleAnswerText
-            // 
-            resources.ApplyResources(this.exampleAnswerText, "exampleAnswerText");
-            this.exampleAnswerText.ForeColor = System.Drawing.Color.White;
-            this.exampleAnswerText.Name = "exampleAnswerText";
-            // 
-            // panel3
-            // 
-            resources.ApplyResources(this.panel3, "panel3");
-            this.panel3.Controls.Add(this.panelNotice);
-            this.panel3.Name = "panel3";
-            // 
-            // panelNotice
-            // 
-            resources.ApplyResources(this.panelNotice, "panelNotice");
-            this.panelNotice.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.panelNotice.BorderColor = System.Drawing.Color.White;
-            this.panelNotice.Controls.Add(this.issueLink);
-            this.panelNotice.Controls.Add(this.label2);
-            this.panelNotice.Controls.Add(this.label1);
-            this.panelNotice.Name = "panelNotice";
-            this.panelNotice.Radius = 20;
-            this.panelNotice.Thickness = 5F;
-            // 
-            // issueLink
-            // 
-            this.issueLink.ActiveLinkColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.issueLink, "issueLink");
-            this.issueLink.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.issueLink.Name = "issueLink";
-            this.issueLink.TabStop = true;
-            this.issueLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.issueLink_LinkClicked);
-            // 
-            // label2
-            // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Name = "label2";
-            // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Name = "label1";
-            // 
-            // exampleflowLayoutSynonym
-            // 
-            resources.ApplyResources(this.exampleflowLayoutSynonym, "exampleflowLayoutSynonym");
-            this.exampleflowLayoutSynonym.Controls.Add(this.exampleItemSynonym);
-            this.exampleflowLayoutSynonym.Controls.Add(this.roundedLabel3);
-            this.exampleflowLayoutSynonym.Name = "exampleflowLayoutSynonym";
-            // 
-            // exampleItemSynonym
-            // 
-            resources.ApplyResources(this.exampleItemSynonym, "exampleItemSynonym");
-            this.exampleItemSynonym.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.exampleItemSynonym.BorderColor = System.Drawing.Color.White;
-            this.exampleItemSynonym.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.exampleItemSynonym.Name = "exampleItemSynonym";
-            this.exampleItemSynonym.Radius = 20;
-            this.exampleItemSynonym.Thickness = 5F;
-            // 
-            // roundedLabel3
-            // 
-            resources.ApplyResources(this.roundedLabel3, "roundedLabel3");
-            this.roundedLabel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.roundedLabel3.BorderColor = System.Drawing.Color.White;
-            this.roundedLabel3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.roundedLabel3.Name = "roundedLabel3";
-            this.roundedLabel3.Radius = 20;
-            this.roundedLabel3.Thickness = 5F;
-            // 
-            // exampleShortPanel
-            // 
-            this.exampleShortPanel.Controls.Add(this.exampleShortText);
-            resources.ApplyResources(this.exampleShortPanel, "exampleShortPanel");
-            this.exampleShortPanel.Name = "exampleShortPanel";
-            // 
-            // exampleShortText
-            // 
-            resources.ApplyResources(this.exampleShortText, "exampleShortText");
-            this.exampleShortText.BackColor = System.Drawing.Color.LightGray;
-            this.exampleShortText.BorderColor = System.Drawing.Color.White;
-            this.exampleShortText.Name = "exampleShortText";
-            this.exampleShortText.Radius = 20;
-            this.exampleShortText.Thickness = 5F;
-            // 
-            // exampleAskLongPanel
-            // 
-            this.exampleAskLongPanel.Controls.Add(this.exampleAskLongColoredPanel);
-            resources.ApplyResources(this.exampleAskLongPanel, "exampleAskLongPanel");
-            this.exampleAskLongPanel.Name = "exampleAskLongPanel";
-            // 
-            // exampleAskLongColoredPanel
-            // 
-            this.exampleAskLongColoredPanel.BackColor = System.Drawing.Color.LightGray;
-            this.exampleAskLongColoredPanel.BorderColor = System.Drawing.Color.White;
-            this.exampleAskLongColoredPanel.Controls.Add(this.exampleAskLongText);
-            resources.ApplyResources(this.exampleAskLongColoredPanel, "exampleAskLongColoredPanel");
-            this.exampleAskLongColoredPanel.Name = "exampleAskLongColoredPanel";
-            this.exampleAskLongColoredPanel.Radius = 20;
-            this.exampleAskLongColoredPanel.Thickness = 5F;
-            // 
-            // exampleAskLongText
-            // 
-            resources.ApplyResources(this.exampleAskLongText, "exampleAskLongText");
-            this.exampleAskLongText.Name = "exampleAskLongText";
-            // 
-            // examplePlayPanel
-            // 
-            this.examplePlayPanel.Controls.Add(this.examplePlayAlignPanel);
-            resources.ApplyResources(this.examplePlayPanel, "examplePlayPanel");
-            this.examplePlayPanel.Name = "examplePlayPanel";
-            // 
-            // examplePlayAlignPanel
-            // 
-            this.examplePlayAlignPanel.Controls.Add(this.examplePlayColoredPanel);
-            resources.ApplyResources(this.examplePlayAlignPanel, "examplePlayAlignPanel");
-            this.examplePlayAlignPanel.Name = "examplePlayAlignPanel";
-            // 
-            // examplePlayColoredPanel
-            // 
-            resources.ApplyResources(this.examplePlayColoredPanel, "examplePlayColoredPanel");
-            this.examplePlayColoredPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.examplePlayColoredPanel.BorderColor = System.Drawing.Color.White;
-            this.examplePlayColoredPanel.Controls.Add(this.exampleTextHolder);
-            this.examplePlayColoredPanel.Controls.Add(this.examplePlayButton);
-            this.examplePlayColoredPanel.Name = "examplePlayColoredPanel";
-            this.examplePlayColoredPanel.Radius = 20;
-            this.examplePlayColoredPanel.Thickness = 5F;
-            // 
-            // exampleTextHolder
-            // 
-            resources.ApplyResources(this.exampleTextHolder, "exampleTextHolder");
-            this.exampleTextHolder.Name = "exampleTextHolder";
-            // 
-            // examplePlayButton
-            // 
-            this.examplePlayButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.examplePlayButton, "examplePlayButton");
-            this.examplePlayButton.Name = "examplePlayButton";
-            this.examplePlayButton.TabStop = false;
-            // 
-            // exampleNotePanel
-            // 
-            this.exampleNotePanel.Controls.Add(this.exampleNoteColoredPanel);
-            resources.ApplyResources(this.exampleNotePanel, "exampleNotePanel");
-            this.exampleNotePanel.Name = "exampleNotePanel";
-            // 
-            // exampleNoteColoredPanel
-            // 
-            this.exampleNoteColoredPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.exampleNoteColoredPanel.BorderColor = System.Drawing.Color.White;
-            this.exampleNoteColoredPanel.Controls.Add(this.exampleNoteTitle);
-            this.exampleNoteColoredPanel.Controls.Add(this.exampleNoteClose);
-            this.exampleNoteColoredPanel.Controls.Add(this.exampleNoteDelete);
-            this.exampleNoteColoredPanel.Controls.Add(this.exampleNoteSave);
-            this.exampleNoteColoredPanel.Controls.Add(this.exampleNoteRichTextBox);
-            resources.ApplyResources(this.exampleNoteColoredPanel, "exampleNoteColoredPanel");
-            this.exampleNoteColoredPanel.Name = "exampleNoteColoredPanel";
-            this.exampleNoteColoredPanel.Radius = 20;
-            this.exampleNoteColoredPanel.Thickness = 5F;
-            // 
-            // exampleNoteTitle
-            // 
-            this.exampleNoteTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.exampleNoteTitle.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            resources.ApplyResources(this.exampleNoteTitle, "exampleNoteTitle");
-            this.exampleNoteTitle.ForeColor = System.Drawing.Color.DimGray;
-            this.exampleNoteTitle.Name = "exampleNoteTitle";
-            // 
-            // exampleNoteClose
-            // 
-            resources.ApplyResources(this.exampleNoteClose, "exampleNoteClose");
-            this.exampleNoteClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.exampleNoteClose.Image = global::Diccon.Properties.Resources.close_24;
-            this.exampleNoteClose.Name = "exampleNoteClose";
-            this.exampleNoteClose.TabStop = false;
-            // 
-            // exampleNoteDelete
-            // 
-            this.exampleNoteDelete.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.exampleNoteDelete.Image = global::Diccon.Properties.Resources.delete_24;
-            resources.ApplyResources(this.exampleNoteDelete, "exampleNoteDelete");
-            this.exampleNoteDelete.Name = "exampleNoteDelete";
-            this.exampleNoteDelete.TabStop = false;
-            // 
-            // exampleNoteSave
-            // 
-            this.exampleNoteSave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.exampleNoteSave.Image = global::Diccon.Properties.Resources.save_24;
-            resources.ApplyResources(this.exampleNoteSave, "exampleNoteSave");
-            this.exampleNoteSave.Name = "exampleNoteSave";
-            this.exampleNoteSave.TabStop = false;
-            this.exampleNoteSave.Click += new System.EventHandler(this.exampleNoteSave_Click);
-            // 
-            // exampleNoteRichTextBox
-            // 
-            resources.ApplyResources(this.exampleNoteRichTextBox, "exampleNoteRichTextBox");
-            this.exampleNoteRichTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.exampleNoteRichTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.exampleNoteRichTextBox.Name = "exampleNoteRichTextBox";
-            // 
-            // examplePicturePanel
-            // 
-            this.examplePicturePanel.Controls.Add(this.examplePixabayLogo);
-            this.examplePicturePanel.Controls.Add(this.exampleColoredPicturePanel);
-            resources.ApplyResources(this.examplePicturePanel, "examplePicturePanel");
-            this.examplePicturePanel.Name = "examplePicturePanel";
-            // 
-            // examplePixabayLogo
-            // 
-            this.examplePixabayLogo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.examplePixabayLogo.Image = global::Diccon.Properties.Resources.pixabay_logo;
-            resources.ApplyResources(this.examplePixabayLogo, "examplePixabayLogo");
-            this.examplePixabayLogo.Name = "examplePixabayLogo";
-            this.examplePixabayLogo.TabStop = false;
-            this.examplePixabayLogo.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // exampleColoredPicturePanel
-            // 
-            this.exampleColoredPicturePanel.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.exampleColoredPicturePanel.BorderColor = System.Drawing.Color.White;
-            this.exampleColoredPicturePanel.Controls.Add(this.examplePictureBox);
-            resources.ApplyResources(this.exampleColoredPicturePanel, "exampleColoredPicturePanel");
-            this.exampleColoredPicturePanel.Name = "exampleColoredPicturePanel";
-            this.exampleColoredPicturePanel.Radius = 20;
-            this.exampleColoredPicturePanel.Thickness = 5F;
-            // 
-            // examplePictureBox
-            // 
-            this.examplePictureBox.BackColor = System.Drawing.Color.White;
-            this.examplePictureBox.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.examplePictureBox.ErrorImage = global::Diccon.Properties.Resources.doubtful;
-            resources.ApplyResources(this.examplePictureBox, "examplePictureBox");
-            this.examplePictureBox.InitialImage = global::Diccon.Properties.Resources.reluctant;
-            this.examplePictureBox.Name = "examplePictureBox";
-            this.examplePictureBox.Radius = 20;
-            this.examplePictureBox.TabStop = false;
-            this.examplePictureBox.Thickness = 5F;
-            // 
-            // suggestionTimer
-            // 
-            this.suggestionTimer.Interval = 1000;
-            this.suggestionTimer.Tick += new System.EventHandler(this.suggestionTimer_TickAsync);
-            // 
-            // flowSuggestion
-            // 
-            resources.ApplyResources(this.flowSuggestion, "flowSuggestion");
-            this.flowSuggestion.Controls.Add(this.btSynonym);
-            this.flowSuggestion.Controls.Add(this.roundedLabel9);
-            this.flowSuggestion.Controls.Add(this.roundedLabel12);
-            this.flowSuggestion.Controls.Add(this.roundedLabel10);
-            this.flowSuggestion.Controls.Add(this.btImage);
-            this.flowSuggestion.Name = "flowSuggestion";
-            // 
-            // btSynonym
-            // 
-            resources.ApplyResources(this.btSynonym, "btSynonym");
-            this.btSynonym.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btSynonym.BorderColor = System.Drawing.Color.White;
-            this.btSynonym.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btSynonym.Name = "btSynonym";
-            this.btSynonym.Radius = 20;
-            this.btSynonym.Thickness = 5F;
-            this.btSynonym.Click += new System.EventHandler(this.btSynonym_Click);
-            this.btSynonym.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
-            this.btSynonym.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
-            // 
-            // roundedLabel9
-            // 
-            resources.ApplyResources(this.roundedLabel9, "roundedLabel9");
-            this.roundedLabel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.roundedLabel9.BorderColor = System.Drawing.Color.White;
-            this.roundedLabel9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.roundedLabel9.Name = "roundedLabel9";
-            this.roundedLabel9.Radius = 20;
-            this.roundedLabel9.Thickness = 5F;
-            // 
-            // roundedLabel12
-            // 
-            resources.ApplyResources(this.roundedLabel12, "roundedLabel12");
-            this.roundedLabel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.roundedLabel12.BorderColor = System.Drawing.Color.White;
-            this.roundedLabel12.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.roundedLabel12.Name = "roundedLabel12";
-            this.roundedLabel12.Radius = 20;
-            this.roundedLabel12.Thickness = 5F;
-            // 
-            // roundedLabel10
-            // 
-            resources.ApplyResources(this.roundedLabel10, "roundedLabel10");
-            this.roundedLabel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.roundedLabel10.BorderColor = System.Drawing.Color.White;
-            this.roundedLabel10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.roundedLabel10.Name = "roundedLabel10";
-            this.roundedLabel10.Radius = 20;
-            this.roundedLabel10.Thickness = 5F;
-            // 
-            // btImage
-            // 
-            resources.ApplyResources(this.btImage, "btImage");
-            this.btImage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btImage.BorderColor = System.Drawing.Color.White;
-            this.btImage.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btImage.Name = "btImage";
-            this.btImage.Radius = 20;
-            this.btImage.Thickness = 5F;
-            this.btImage.Click += new System.EventHandler(this.btImage_Click);
-            // 
-            // contextMenuNote
-            // 
-            this.contextMenuNote.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.contextMenuNote.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.saveToolStripMenuItem,
-            this.addToFavouriteToolStripMenuItem,
-            this.e,
-            this.closeToolStripMenuItem});
-            this.contextMenuNote.Name = "contextMenuNote";
-            resources.ApplyResources(this.contextMenuNote, "contextMenuNote");
-            // 
-            // saveToolStripMenuItem
-            // 
-            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            resources.ApplyResources(this.saveToolStripMenuItem, "saveToolStripMenuItem");
-            // 
-            // addToFavouriteToolStripMenuItem
-            // 
-            this.addToFavouriteToolStripMenuItem.Name = "addToFavouriteToolStripMenuItem";
-            resources.ApplyResources(this.addToFavouriteToolStripMenuItem, "addToFavouriteToolStripMenuItem");
-            // 
-            // e
-            // 
-            this.e.Name = "e";
-            resources.ApplyResources(this.e, "e");
-            // 
-            // closeToolStripMenuItem
-            // 
-            this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            resources.ApplyResources(this.closeToolStripMenuItem, "closeToolStripMenuItem");
-            this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
-            // 
             // dictionary
             // 
             resources.ApplyResources(this, "$this");
@@ -667,48 +668,48 @@
             this.SizeChanged += new System.EventHandler(this.dictionary_SizeChanged);
             this.VisibleChanged += new System.EventHandler(this.dictionary_VisibleChanged);
             this.panelBottom.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btAdd)).EndInit();
             this.panelAdd.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            this.roundedPanel1.ResumeLayout(false);
-            this.roundedPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textFromClipboard)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textFromMic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btSend)).EndInit();
             this.flowChatBox.ResumeLayout(false);
             this.flowChatBox.PerformLayout();
             this.exampleAnswerPanel.ResumeLayout(false);
-            this.exampleAnswerColoredPanel.ResumeLayout(false);
-            this.exampleAnswerColoredPanel.PerformLayout();
             this.panel3.ResumeLayout(false);
-            this.panelNotice.ResumeLayout(false);
             this.exampleflowLayoutSynonym.ResumeLayout(false);
             this.exampleflowLayoutSynonym.PerformLayout();
             this.exampleShortPanel.ResumeLayout(false);
             this.exampleShortPanel.PerformLayout();
             this.exampleAskLongPanel.ResumeLayout(false);
-            this.exampleAskLongColoredPanel.ResumeLayout(false);
-            this.exampleAskLongColoredPanel.PerformLayout();
             this.examplePlayPanel.ResumeLayout(false);
             this.examplePlayAlignPanel.ResumeLayout(false);
             this.examplePlayAlignPanel.PerformLayout();
+            this.exampleNotePanel.ResumeLayout(false);
+            this.examplePicturePanel.ResumeLayout(false);
+            this.examplePicturePanel.PerformLayout();
+            this.flowSuggestion.ResumeLayout(false);
+            this.flowSuggestion.PerformLayout();
+            this.contextMenuNote.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.examplePixabayLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btAdd)).EndInit();
+            this.exampleAnswerColoredPanel.ResumeLayout(false);
+            this.exampleAnswerColoredPanel.PerformLayout();
+            this.panelNotice.ResumeLayout(false);
+            this.exampleAskLongColoredPanel.ResumeLayout(false);
+            this.exampleAskLongColoredPanel.PerformLayout();
             this.examplePlayColoredPanel.ResumeLayout(false);
             this.examplePlayColoredPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.examplePlayButton)).EndInit();
-            this.exampleNotePanel.ResumeLayout(false);
             this.exampleNoteColoredPanel.ResumeLayout(false);
             this.exampleNoteColoredPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.exampleNoteClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.exampleNoteDelete)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.exampleNoteSave)).EndInit();
-            this.examplePicturePanel.ResumeLayout(false);
-            this.examplePicturePanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.examplePixabayLogo)).EndInit();
             this.exampleColoredPicturePanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.examplePictureBox)).EndInit();
-            this.flowSuggestion.ResumeLayout(false);
-            this.flowSuggestion.PerformLayout();
-            this.contextMenuNote.ResumeLayout(false);
+            this.roundedPanel1.ResumeLayout(false);
+            this.roundedPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textFromClipboard)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textFromMic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btSend)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -743,7 +744,7 @@
         private RoundedLabel roundedLabel3;
         private System.Windows.Forms.FlowLayoutPanel flowSuggestion;
         private RoundedLabel roundedLabel9;
-        private RoundedLabel roundedLabel10;
+        private RoundedLabel btSpellingCorrector;
         private RoundedLabel btImage;
         private RoundedLabel roundedLabel12;
         private System.Windows.Forms.Label exampleTextHolder;

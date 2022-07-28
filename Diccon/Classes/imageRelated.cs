@@ -11,7 +11,6 @@ namespace Diccon
         int imageIndex = 0;
         public async Task<string> getImageUrl(string word)
         {
-            //string API_Key = "25829393-af32bf17ec8386b5941fb5f8f";
             imageIndex = random.Next(0, 3);
             string rawContent;
             string imageUrl = "none";

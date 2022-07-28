@@ -200,6 +200,7 @@ namespace Diccon
                 newLabel.Text = word;
                 newLabel.AutoSize = true;
                 newLabel.Font = exampleItem.Font;
+               
 
                 panelHaveSynonyms.Controls.Add(newLabel);
 

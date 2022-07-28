@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Diccon.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
@@ -18,9 +19,11 @@ namespace Diccon
         botBehavior bot = new botBehavior();
         userAction user = new userAction();
         connectivity connectivity = new connectivity();
+        string spellingCorrectorCurrentWord="";
         [STAThreadAttribute]
         private void mainHall_Load(object sender, EventArgs e)
         {
+            
             //searchTextBox.Text = Clipboard.GetText();
             ///////  T   H   E   M   E  ///////////////
             panelNotice.BackColor = dicconProp.ColorA3;
@@ -64,17 +67,40 @@ namespace Diccon
             searchTextBox.Text = sound.SpeechToText(dicconProp.listenTimeInString);
         }
 
-
+        private void VisibleControlInSuggestionBar()
+        {
+            btSpellingCorrector.Visible = false;
+            btSynonym.Visible = false;
+            btImage.Visible = false;
+        }
         private async void searchTextBox_KeyDown(object sender, KeyEventArgs e)
         {
-
-            if (e.KeyCode == Keys.Enter)
+            if(e == null)
             {
+              
+                VisibleControlInSuggestionBar();
+
+                dicconProp.currentWord = searchTextBox.Text.Trim();
+                await searchAndShow(dicconProp.currentWord);
+            }
+            else if (e.KeyCode == Keys.Enter)
+            {
+                VisibleControlInSuggestionBar();
+
                 dicconProp.currentWord = searchTextBox.Text.Trim();
                 await searchAndShow(dicconProp.currentWord);
 
 
             }
+
+            
+
+
+        }
+        private string spellingCorrector(string word)
+        {
+            Spelling spelling = new Spelling();
+            return spelling.Correct(word);
         }
         private async Task searchAndShow(string searchWord)
         {
@@ -301,6 +327,18 @@ namespace Diccon
         /// <param name="e"></param>
         private async void suggestionTimer_TickAsync(object sender, EventArgs e)
         {
+            // Get correct form of word from Spelling Corrector library
+            spellingCorrectorCurrentWord = spellingCorrector(dicconProp.currentWord);
+            if ((spellingCorrectorCurrentWord.Length > 1) && (spellingCorrectorCurrentWord != dicconProp.currentWord))
+            {
+                btSpellingCorrector.Text = spellingCorrectorCurrentWord.Replace(spellingCorrectorCurrentWord.Substring(0, 1), spellingCorrectorCurrentWord.Substring(0, 1).ToUpper());
+                btSpellingCorrector.Visible = true;
+            }
+            else
+            {
+                btSpellingCorrector.Visible = false;
+            }
+            // Get other suggestions
             bool isOnline = new connectivity().isOnline();
             if (isOnline)
             {
@@ -325,6 +363,7 @@ namespace Diccon
                 }
 
             }
+            
 
 
         }
@@ -401,6 +440,13 @@ namespace Diccon
         private void dictionary_SizeChanged(object sender, EventArgs e)
         {
             this.Refresh();
+        }
+
+        private void btSpellingCorrector_Click(object sender, EventArgs e)
+        {
+            searchTextBox.Text = btSpellingCorrector.Text;
+            btSpellingCorrector.Visible = false;
+            searchTextBox_KeyDown(null, null);
         }
     }
 

@@ -150,6 +150,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\SHA256Encrypt.cs" />
+    <Compile Include="Classes\spellingCorrector.cs" />
     <Compile Include="Controls\noteItems.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -373,6 +374,8 @@
   <ItemGroup>
     <Content Include="diccon.ico" />
     <Content Include="Notes.txt" />
+    <None Include="Resources\spellingCorrectorDictionary.txt" />
+    <None Include="Resources\spellingCorrectorDictionary.txt.txt" />
     <None Include="Resources\Screenshot 2022-02-28 152046.png" />
     <None Include="Resources\annoyed.png" />
     <None Include="Resources\astonished.png" />
