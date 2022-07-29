@@ -70,10 +70,10 @@
             this.examplePictureBox = new Diccon.RoundedPictureBox();
             this.suggestionTimer = new System.Windows.Forms.Timer(this.components);
             this.flowSuggestion = new System.Windows.Forms.FlowLayoutPanel();
+            this.btSpellingCorrector = new Diccon.RoundedLabel();
             this.btSynonym = new Diccon.RoundedLabel();
             this.roundedLabel9 = new Diccon.RoundedLabel();
             this.roundedLabel12 = new Diccon.RoundedLabel();
-            this.btSpellingCorrector = new Diccon.RoundedLabel();
             this.btImage = new Diccon.RoundedLabel();
             this.contextMenuNote = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -477,6 +477,17 @@
             this.flowSuggestion.Controls.Add(this.btImage);
             this.flowSuggestion.Name = "flowSuggestion";
             // 
+            // btSpellingCorrector
+            // 
+            resources.ApplyResources(this.btSpellingCorrector, "btSpellingCorrector");
+            this.btSpellingCorrector.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.btSpellingCorrector.BorderColor = System.Drawing.Color.White;
+            this.btSpellingCorrector.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btSpellingCorrector.Name = "btSpellingCorrector";
+            this.btSpellingCorrector.Radius = 20;
+            this.btSpellingCorrector.Thickness = 5F;
+            this.btSpellingCorrector.Click += new System.EventHandler(this.btSpellingCorrector_Click);
+            // 
             // btSynonym
             // 
             resources.ApplyResources(this.btSynonym, "btSynonym");
@@ -509,17 +520,6 @@
             this.roundedLabel12.Name = "roundedLabel12";
             this.roundedLabel12.Radius = 20;
             this.roundedLabel12.Thickness = 5F;
-            // 
-            // btSpellingCorrector
-            // 
-            resources.ApplyResources(this.btSpellingCorrector, "btSpellingCorrector");
-            this.btSpellingCorrector.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.btSpellingCorrector.BorderColor = System.Drawing.Color.White;
-            this.btSpellingCorrector.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btSpellingCorrector.Name = "btSpellingCorrector";
-            this.btSpellingCorrector.Radius = 20;
-            this.btSpellingCorrector.Thickness = 5F;
-            this.btSpellingCorrector.Click += new System.EventHandler(this.btSpellingCorrector_Click);
             // 
             // btImage
             // 
