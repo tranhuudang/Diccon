@@ -31,25 +31,19 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(appFrame));
             this.topPanel = new System.Windows.Forms.Panel();
+            this.title = new System.Windows.Forms.Label();
             this.topControlPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.buttonMenu = new System.Windows.Forms.PictureBox();
             this.btStar = new FontAwesome.Sharp.IconPictureBox();
             this.logo = new System.Windows.Forms.PictureBox();
-            this.title = new System.Windows.Forms.Label();
             this.playGroundPanel = new System.Windows.Forms.Panel();
             this.panelHome = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
-            this.btDonate = new Diccon.RoundedLabel();
             this.lbQuotation = new System.Windows.Forms.Label();
-            this.btDictionary = new Diccon.RoundedLabel();
-            this.btTimeline = new Diccon.RoundedLabel();
             this.label3 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btNotes = new Diccon.RoundedLabel();
-            this.btCommunity = new Diccon.RoundedLabel();
+            this.label6 = new System.Windows.Forms.Label();
             this.contextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.accountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.backUpSyncToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -62,9 +56,11 @@
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.timeLineDetector = new System.Windows.Forms.Timer(this.components);
-            this.notificationDetector = new System.Windows.Forms.Timer(this.components);
+            this.btDictionary = new Diccon.RoundedLabel();
+            this.btTimeline = new Diccon.RoundedLabel();
+            this.btCommunity = new Diccon.RoundedLabel();
+            this.btDonate = new Diccon.RoundedLabel();
             this.topPanel.SuspendLayout();
             this.topControlPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.buttonMenu)).BeginInit();
@@ -83,6 +79,13 @@
             this.topPanel.Controls.Add(this.logo);
             resources.ApplyResources(this.topPanel, "topPanel");
             this.topPanel.Name = "topPanel";
+            // 
+            // title
+            // 
+            this.title.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.title, "title");
+            this.title.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.title.Name = "title";
             // 
             // topControlPanel
             // 
@@ -126,13 +129,6 @@
             this.logo.TabStop = false;
             this.logo.Click += new System.EventHandler(this.logo_Click);
             // 
-            // title
-            // 
-            this.title.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.title, "title");
-            this.title.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.title.Name = "title";
-            // 
             // playGroundPanel
             // 
             this.playGroundPanel.Controls.Add(this.panelHome);
@@ -144,17 +140,15 @@
             // 
             this.panelHome.BackColor = System.Drawing.Color.White;
             this.panelHome.Controls.Add(this.label7);
-            this.panelHome.Controls.Add(this.btDonate);
             this.panelHome.Controls.Add(this.lbQuotation);
             this.panelHome.Controls.Add(this.btDictionary);
             this.panelHome.Controls.Add(this.btTimeline);
             this.panelHome.Controls.Add(this.label3);
-            this.panelHome.Controls.Add(this.label6);
             this.panelHome.Controls.Add(this.label4);
             this.panelHome.Controls.Add(this.label2);
-            this.panelHome.Controls.Add(this.label1);
-            this.panelHome.Controls.Add(this.btNotes);
             this.panelHome.Controls.Add(this.btCommunity);
+            this.panelHome.Controls.Add(this.btDonate);
+            this.panelHome.Controls.Add(this.label6);
             resources.ApplyResources(this.panelHome, "panelHome");
             this.panelHome.Name = "panelHome";
             // 
@@ -164,63 +158,15 @@
             this.label7.ForeColor = System.Drawing.Color.DarkGray;
             this.label7.Name = "label7";
             // 
-            // btDonate
-            // 
-            resources.ApplyResources(this.btDonate, "btDonate");
-            this.btDonate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btDonate.BorderColor = System.Drawing.Color.White;
-            this.btDonate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btDonate.Image = global::Diccon.Properties.Resources.support_36;
-            this.btDonate.Name = "btDonate";
-            this.btDonate.Radius = 50;
-            this.btDonate.Thickness = 5F;
-            this.btDonate.Click += new System.EventHandler(this.btDonate_Click);
-            this.btDonate.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
-            this.btDonate.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
-            // 
             // lbQuotation
             // 
             resources.ApplyResources(this.lbQuotation, "lbQuotation");
             this.lbQuotation.Name = "lbQuotation";
             // 
-            // btDictionary
-            // 
-            resources.ApplyResources(this.btDictionary, "btDictionary");
-            this.btDictionary.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btDictionary.BorderColor = System.Drawing.Color.White;
-            this.btDictionary.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btDictionary.Image = global::Diccon.Properties.Resources.translate_36;
-            this.btDictionary.Name = "btDictionary";
-            this.btDictionary.Radius = 50;
-            this.btDictionary.Thickness = 5F;
-            this.btDictionary.Click += new System.EventHandler(this.btDictionary_Click);
-            this.btDictionary.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
-            this.btDictionary.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
-            // 
-            // btTimeline
-            // 
-            resources.ApplyResources(this.btTimeline, "btTimeline");
-            this.btTimeline.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btTimeline.BorderColor = System.Drawing.Color.White;
-            this.btTimeline.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btTimeline.Image = global::Diccon.Properties.Resources.timeline_36;
-            this.btTimeline.Name = "btTimeline";
-            this.btTimeline.Radius = 50;
-            this.btTimeline.Thickness = 5F;
-            this.btTimeline.Click += new System.EventHandler(this.btTimeline_Click);
-            this.btTimeline.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
-            this.btTimeline.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
-            // 
             // label3
             // 
             resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            // 
-            // label6
-            // 
-            resources.ApplyResources(this.label6, "label6");
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Name = "label6";
             // 
             // label4
             // 
@@ -232,38 +178,11 @@
             resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
             // 
-            // label1
+            // label6
             // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
-            // 
-            // btNotes
-            // 
-            resources.ApplyResources(this.btNotes, "btNotes");
-            this.btNotes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btNotes.BorderColor = System.Drawing.Color.White;
-            this.btNotes.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btNotes.Image = global::Diccon.Properties.Resources.your_note_36;
-            this.btNotes.Name = "btNotes";
-            this.btNotes.Radius = 50;
-            this.btNotes.Thickness = 5F;
-            this.btNotes.Click += new System.EventHandler(this.buttonYourNote_Click);
-            this.btNotes.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
-            this.btNotes.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
-            // 
-            // btCommunity
-            // 
-            resources.ApplyResources(this.btCommunity, "btCommunity");
-            this.btCommunity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btCommunity.BorderColor = System.Drawing.Color.White;
-            this.btCommunity.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btCommunity.Image = global::Diccon.Properties.Resources.chat_36;
-            this.btCommunity.Name = "btCommunity";
-            this.btCommunity.Radius = 50;
-            this.btCommunity.Thickness = 5F;
-            this.btCommunity.Click += new System.EventHandler(this.roundedLabel7_Click);
-            this.btCommunity.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
-            this.btCommunity.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
+            resources.ApplyResources(this.label6, "label6");
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Name = "label6";
             // 
             // contextMenu
             // 
@@ -349,20 +268,66 @@
             resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
-            // notifyIcon1
-            // 
-            resources.ApplyResources(this.notifyIcon1, "notifyIcon1");
-            // 
             // timeLineDetector
             // 
-            this.timeLineDetector.Enabled = true;
             this.timeLineDetector.Interval = 500;
             this.timeLineDetector.Tick += new System.EventHandler(this.timeLineDetector_Tick);
             // 
-            // notificationDetector
+            // btDictionary
             // 
-            this.notificationDetector.Interval = 5000;
-            this.notificationDetector.Tick += new System.EventHandler(this.notificationDetector_Tick);
+            resources.ApplyResources(this.btDictionary, "btDictionary");
+            this.btDictionary.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btDictionary.BorderColor = System.Drawing.Color.White;
+            this.btDictionary.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btDictionary.Image = global::Diccon.Properties.Resources.translate_36;
+            this.btDictionary.Name = "btDictionary";
+            this.btDictionary.Radius = 50;
+            this.btDictionary.Thickness = 5F;
+            this.btDictionary.Click += new System.EventHandler(this.btDictionary_Click);
+            this.btDictionary.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
+            this.btDictionary.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
+            // 
+            // btTimeline
+            // 
+            resources.ApplyResources(this.btTimeline, "btTimeline");
+            this.btTimeline.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btTimeline.BorderColor = System.Drawing.Color.White;
+            this.btTimeline.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btTimeline.Image = global::Diccon.Properties.Resources.timeline_36;
+            this.btTimeline.Name = "btTimeline";
+            this.btTimeline.Radius = 50;
+            this.btTimeline.Thickness = 5F;
+            this.btTimeline.Click += new System.EventHandler(this.btTimeline_Click);
+            this.btTimeline.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
+            this.btTimeline.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
+            // 
+            // btCommunity
+            // 
+            resources.ApplyResources(this.btCommunity, "btCommunity");
+            this.btCommunity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btCommunity.BorderColor = System.Drawing.Color.White;
+            this.btCommunity.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btCommunity.Image = global::Diccon.Properties.Resources.chat_36;
+            this.btCommunity.Name = "btCommunity";
+            this.btCommunity.Radius = 50;
+            this.btCommunity.Thickness = 5F;
+            this.btCommunity.Click += new System.EventHandler(this.roundedLabel7_Click);
+            this.btCommunity.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
+            this.btCommunity.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
+            // 
+            // btDonate
+            // 
+            resources.ApplyResources(this.btDonate, "btDonate");
+            this.btDonate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btDonate.BorderColor = System.Drawing.Color.White;
+            this.btDonate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btDonate.Image = global::Diccon.Properties.Resources.support_36;
+            this.btDonate.Name = "btDonate";
+            this.btDonate.Radius = 50;
+            this.btDonate.Thickness = 5F;
+            this.btDonate.Click += new System.EventHandler(this.btDonate_Click);
+            this.btDonate.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
+            this.btDonate.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
             // 
             // appFrame
             // 
@@ -405,8 +370,6 @@
         private System.Windows.Forms.Label label4;
         private RoundedLabel btCommunity;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private RoundedLabel btNotes;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ContextMenuStrip contextMenu;
         private System.Windows.Forms.ToolStripMenuItem languageToolStripMenuItem;
@@ -415,14 +378,12 @@
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
-        private System.Windows.Forms.NotifyIcon notifyIcon1;
         private FontAwesome.Sharp.IconPictureBox btStar;
         private System.Windows.Forms.Timer timeLineDetector;
         private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logInWithGoogleToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem4;
         private System.Windows.Forms.FlowLayoutPanel topControlPanel;
-        private System.Windows.Forms.Timer notificationDetector;
         private System.Windows.Forms.ToolStripMenuItem accountToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem backUpSyncToolStripMenuItem;
     }

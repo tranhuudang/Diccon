@@ -117,18 +117,78 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;btAdd.Name" xml:space="preserve">
+    <value>btAdd</value>
+  </data>
+  <data name="&gt;&gt;btAdd.Type" xml:space="preserve">
+    <value>FontAwesome.Sharp.IconPictureBox, FontAwesome.Sharp, Version=5.15.4.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
+  </data>
+  <data name="&gt;&gt;btAdd.Parent" xml:space="preserve">
+    <value>panelBottom</value>
+  </data>
+  <data name="&gt;&gt;btAdd.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panelAdd.Name" xml:space="preserve">
+    <value>panelAdd</value>
+  </data>
+  <data name="&gt;&gt;panelAdd.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelAdd.Parent" xml:space="preserve">
+    <value>panelBottom</value>
+  </data>
+  <data name="&gt;&gt;panelAdd.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>panelBottom</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="panelBottom.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="panelBottom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 470</value>
+  </data>
+  <data name="panelBottom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>339, 142</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="panelBottom.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;panelBottom.Name" xml:space="preserve">
+    <value>panelBottom</value>
+  </data>
+  <data name="&gt;&gt;panelBottom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelBottom.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelBottom.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
   <data name="btAdd.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btAdd.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 13</value>
   </data>
   <data name="btAdd.Size" type="System.Drawing.Size, System.Drawing">
     <value>28, 28</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btAdd.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
@@ -144,65 +204,17 @@
   <data name="&gt;&gt;btAdd.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="addEmoji.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="addEmoji.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="addEmoji.Location" type="System.Drawing.Point, System.Drawing">
-    <value>89, 5</value>
-  </data>
-  <data name="addEmoji.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 62</value>
-  </data>
-  <data name="addEmoji.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="addEmoji.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>BottomCenter</value>
-  </data>
   <data name="&gt;&gt;addEmoji.Name" xml:space="preserve">
     <value>addEmoji</value>
   </data>
   <data name="&gt;&gt;addEmoji.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.0.7.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;addEmoji.Parent" xml:space="preserve">
     <value>panelAdd</value>
   </data>
   <data name="&gt;&gt;addEmoji.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="addNote.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="addNote.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="addNote.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 5</value>
-  </data>
-  <data name="addNote.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 62</value>
-  </data>
-  <data name="addNote.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="addNote.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>BottomCenter</value>
-  </data>
-  <data name="&gt;&gt;addNote.Name" xml:space="preserve">
-    <value>addNote</value>
-  </data>
-  <data name="&gt;&gt;addNote.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.0.7.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;addNote.Parent" xml:space="preserve">
-    <value>panelAdd</value>
-  </data>
-  <data name="&gt;&gt;addNote.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="panelAdd.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -228,8 +240,155 @@
   <data name="&gt;&gt;panelAdd.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="addEmoji.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="addEmoji.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="addEmoji.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 5</value>
+  </data>
+  <data name="addEmoji.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 62</value>
+  </data>
+  <data name="addEmoji.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="addEmoji.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="&gt;&gt;addEmoji.Name" xml:space="preserve">
+    <value>addEmoji</value>
+  </data>
+  <data name="&gt;&gt;addEmoji.Type" xml:space="preserve">
+    <value>Diccon.RoundedLabel, Diccon, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;addEmoji.Parent" xml:space="preserve">
+    <value>panelAdd</value>
+  </data>
+  <data name="&gt;&gt;addEmoji.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;roundedPanel1.Name" xml:space="preserve">
+    <value>roundedPanel1</value>
+  </data>
+  <data name="&gt;&gt;roundedPanel1.Type" xml:space="preserve">
+    <value>Diccon.RoundedPanel, Diccon, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;roundedPanel1.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;roundedPanel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>339, 56</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>panelBottom</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="roundedPanel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left, Right</value>
+  </data>
+  <data name="&gt;&gt;textFromClipboard.Name" xml:space="preserve">
+    <value>textFromClipboard</value>
+  </data>
+  <data name="&gt;&gt;textFromClipboard.Type" xml:space="preserve">
+    <value>FontAwesome.Sharp.IconPictureBox, FontAwesome.Sharp, Version=5.15.4.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
+  </data>
+  <data name="&gt;&gt;textFromClipboard.Parent" xml:space="preserve">
+    <value>roundedPanel1</value>
+  </data>
+  <data name="&gt;&gt;textFromClipboard.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;labelTypeToSearch.Name" xml:space="preserve">
+    <value>labelTypeToSearch</value>
+  </data>
+  <data name="&gt;&gt;labelTypeToSearch.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelTypeToSearch.Parent" xml:space="preserve">
+    <value>roundedPanel1</value>
+  </data>
+  <data name="&gt;&gt;labelTypeToSearch.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;searchTextBox.Name" xml:space="preserve">
+    <value>searchTextBox</value>
+  </data>
+  <data name="&gt;&gt;searchTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;searchTextBox.Parent" xml:space="preserve">
+    <value>roundedPanel1</value>
+  </data>
+  <data name="&gt;&gt;searchTextBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;textFromMic.Name" xml:space="preserve">
+    <value>textFromMic</value>
+  </data>
+  <data name="&gt;&gt;textFromMic.Type" xml:space="preserve">
+    <value>FontAwesome.Sharp.IconPictureBox, FontAwesome.Sharp, Version=5.15.4.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
+  </data>
+  <data name="&gt;&gt;textFromMic.Parent" xml:space="preserve">
+    <value>roundedPanel1</value>
+  </data>
+  <data name="&gt;&gt;textFromMic.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;btSend.Name" xml:space="preserve">
+    <value>btSend</value>
+  </data>
+  <data name="&gt;&gt;btSend.Type" xml:space="preserve">
+    <value>FontAwesome.Sharp.IconPictureBox, FontAwesome.Sharp, Version=5.15.4.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
+  </data>
+  <data name="&gt;&gt;btSend.Parent" xml:space="preserve">
+    <value>roundedPanel1</value>
+  </data>
+  <data name="&gt;&gt;btSend.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="roundedPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>39, 4</value>
+  </data>
+  <data name="roundedPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>286, 45</value>
+  </data>
+  <data name="roundedPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;roundedPanel1.Name" xml:space="preserve">
+    <value>roundedPanel1</value>
+  </data>
+  <data name="&gt;&gt;roundedPanel1.Type" xml:space="preserve">
+    <value>Diccon.RoundedPanel, Diccon, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;roundedPanel1.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;roundedPanel1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="textFromClipboard.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -375,75 +534,6 @@
   <data name="&gt;&gt;btSend.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="roundedPanel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>39, 4</value>
-  </data>
-  <data name="roundedPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>286, 45</value>
-  </data>
-  <data name="roundedPanel1.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;roundedPanel1.Name" xml:space="preserve">
-    <value>roundedPanel1</value>
-  </data>
-  <data name="&gt;&gt;roundedPanel1.Type" xml:space="preserve">
-    <value>Diccon.RoundedPanel, Diccon, Version=6.0.7.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;roundedPanel1.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;roundedPanel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>339, 56</value>
-  </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>panelBottom</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="panelBottom.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="panelBottom.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 498</value>
-  </data>
-  <data name="panelBottom.Size" type="System.Drawing.Size, System.Drawing">
-    <value>339, 142</value>
-  </data>
-  <data name="panelBottom.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;panelBottom.Name" xml:space="preserve">
-    <value>panelBottom</value>
-  </data>
-  <data name="&gt;&gt;panelBottom.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelBottom.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panelBottom.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
   <data name="panel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
@@ -470,6 +560,192 @@
   </data>
   <data name="flowChatBox.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="&gt;&gt;exampleAnswerPanel.Name" xml:space="preserve">
+    <value>exampleAnswerPanel</value>
+  </data>
+  <data name="&gt;&gt;exampleAnswerPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;exampleAnswerPanel.Parent" xml:space="preserve">
+    <value>flowChatBox</value>
+  </data>
+  <data name="&gt;&gt;exampleAnswerPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
+    <value>flowChatBox</value>
+  </data>
+  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;exampleflowLayoutSynonym.Name" xml:space="preserve">
+    <value>exampleflowLayoutSynonym</value>
+  </data>
+  <data name="&gt;&gt;exampleflowLayoutSynonym.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;exampleflowLayoutSynonym.Parent" xml:space="preserve">
+    <value>flowChatBox</value>
+  </data>
+  <data name="&gt;&gt;exampleflowLayoutSynonym.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;exampleShortPanel.Name" xml:space="preserve">
+    <value>exampleShortPanel</value>
+  </data>
+  <data name="&gt;&gt;exampleShortPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;exampleShortPanel.Parent" xml:space="preserve">
+    <value>flowChatBox</value>
+  </data>
+  <data name="&gt;&gt;exampleShortPanel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;exampleAskLongPanel.Name" xml:space="preserve">
+    <value>exampleAskLongPanel</value>
+  </data>
+  <data name="&gt;&gt;exampleAskLongPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;exampleAskLongPanel.Parent" xml:space="preserve">
+    <value>flowChatBox</value>
+  </data>
+  <data name="&gt;&gt;exampleAskLongPanel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;examplePlayPanel.Name" xml:space="preserve">
+    <value>examplePlayPanel</value>
+  </data>
+  <data name="&gt;&gt;examplePlayPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;examplePlayPanel.Parent" xml:space="preserve">
+    <value>flowChatBox</value>
+  </data>
+  <data name="&gt;&gt;examplePlayPanel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;examplePicturePanel.Name" xml:space="preserve">
+    <value>examplePicturePanel</value>
+  </data>
+  <data name="&gt;&gt;examplePicturePanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;examplePicturePanel.Parent" xml:space="preserve">
+    <value>flowChatBox</value>
+  </data>
+  <data name="&gt;&gt;examplePicturePanel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="flowChatBox.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="flowChatBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 5</value>
+  </data>
+  <data name="flowChatBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="flowChatBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>339, 430</value>
+  </data>
+  <data name="flowChatBox.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;flowChatBox.Name" xml:space="preserve">
+    <value>flowChatBox</value>
+  </data>
+  <data name="&gt;&gt;flowChatBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;flowChatBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;flowChatBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;exampleAnswerColoredPanel.Name" xml:space="preserve">
+    <value>exampleAnswerColoredPanel</value>
+  </data>
+  <data name="&gt;&gt;exampleAnswerColoredPanel.Type" xml:space="preserve">
+    <value>Diccon.RoundedPanel, Diccon, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;exampleAnswerColoredPanel.Parent" xml:space="preserve">
+    <value>exampleAnswerPanel</value>
+  </data>
+  <data name="&gt;&gt;exampleAnswerColoredPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="exampleAnswerPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="exampleAnswerPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 8</value>
+  </data>
+  <data name="exampleAnswerPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>313, 155</value>
+  </data>
+  <data name="exampleAnswerPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="exampleAnswerPanel.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;exampleAnswerPanel.Name" xml:space="preserve">
+    <value>exampleAnswerPanel</value>
+  </data>
+  <data name="&gt;&gt;exampleAnswerPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;exampleAnswerPanel.Parent" xml:space="preserve">
+    <value>flowChatBox</value>
+  </data>
+  <data name="&gt;&gt;exampleAnswerPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;exampleAnswerText.Name" xml:space="preserve">
+    <value>exampleAnswerText</value>
+  </data>
+  <data name="&gt;&gt;exampleAnswerText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;exampleAnswerText.Parent" xml:space="preserve">
+    <value>exampleAnswerColoredPanel</value>
+  </data>
+  <data name="&gt;&gt;exampleAnswerText.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="exampleAnswerColoredPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="exampleAnswerColoredPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, 0</value>
+  </data>
+  <data name="exampleAnswerColoredPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>264, 155</value>
+  </data>
+  <data name="exampleAnswerColoredPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;exampleAnswerColoredPanel.Name" xml:space="preserve">
+    <value>exampleAnswerColoredPanel</value>
+  </data>
+  <data name="&gt;&gt;exampleAnswerColoredPanel.Type" xml:space="preserve">
+    <value>Diccon.RoundedPanel, Diccon, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;exampleAnswerColoredPanel.Parent" xml:space="preserve">
+    <value>exampleAnswerPanel</value>
+  </data>
+  <data name="&gt;&gt;exampleAnswerColoredPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="exampleAnswerText.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -507,62 +783,101 @@
   <data name="&gt;&gt;exampleAnswerText.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="exampleAnswerColoredPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="exampleAnswerColoredPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>49, 0</value>
-  </data>
-  <data name="exampleAnswerColoredPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>264, 155</value>
-  </data>
-  <data name="exampleAnswerColoredPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;exampleAnswerColoredPanel.Name" xml:space="preserve">
-    <value>exampleAnswerColoredPanel</value>
-  </data>
-  <data name="&gt;&gt;exampleAnswerColoredPanel.Type" xml:space="preserve">
-    <value>Diccon.RoundedPanel, Diccon, Version=6.0.7.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;exampleAnswerColoredPanel.Parent" xml:space="preserve">
-    <value>exampleAnswerPanel</value>
-  </data>
-  <data name="&gt;&gt;exampleAnswerColoredPanel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="exampleAnswerPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="exampleAnswerPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 8</value>
-  </data>
-  <data name="exampleAnswerPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>313, 155</value>
-  </data>
-  <data name="exampleAnswerPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="exampleAnswerPanel.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;exampleAnswerPanel.Name" xml:space="preserve">
-    <value>exampleAnswerPanel</value>
-  </data>
-  <data name="&gt;&gt;exampleAnswerPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;exampleAnswerPanel.Parent" xml:space="preserve">
-    <value>flowChatBox</value>
-  </data>
-  <data name="&gt;&gt;exampleAnswerPanel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="panel3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
+  <data name="&gt;&gt;panelNotice.Name" xml:space="preserve">
+    <value>panelNotice</value>
+  </data>
+  <data name="&gt;&gt;panelNotice.Type" xml:space="preserve">
+    <value>Diccon.RoundedPanel, Diccon, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;panelNotice.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;panelNotice.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 169</value>
+  </data>
+  <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>316, 229</value>
+  </data>
+  <data name="panel3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
+    <value>flowChatBox</value>
+  </data>
+  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="panelNotice.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left, Right</value>
+  </data>
+  <data name="&gt;&gt;issueLink.Name" xml:space="preserve">
+    <value>issueLink</value>
+  </data>
+  <data name="&gt;&gt;issueLink.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;issueLink.Parent" xml:space="preserve">
+    <value>panelNotice</value>
+  </data>
+  <data name="&gt;&gt;issueLink.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>panelNotice</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>panelNotice</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panelNotice.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, 0</value>
+  </data>
+  <data name="panelNotice.Size" type="System.Drawing.Size, System.Drawing">
+    <value>264, 221</value>
+  </data>
+  <data name="panelNotice.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panelNotice.Name" xml:space="preserve">
+    <value>panelNotice</value>
+  </data>
+  <data name="&gt;&gt;panelNotice.Type" xml:space="preserve">
+    <value>Diccon.RoundedPanel, Diccon, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;panelNotice.Parent" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;panelNotice.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="issueLink.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
@@ -654,83 +969,14 @@
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="panelNotice.Location" type="System.Drawing.Point, System.Drawing">
-    <value>49, 0</value>
-  </data>
-  <data name="panelNotice.Size" type="System.Drawing.Size, System.Drawing">
-    <value>264, 221</value>
-  </data>
-  <data name="panelNotice.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;panelNotice.Name" xml:space="preserve">
-    <value>panelNotice</value>
-  </data>
-  <data name="&gt;&gt;panelNotice.Type" xml:space="preserve">
-    <value>Diccon.RoundedPanel, Diccon, Version=6.0.7.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;panelNotice.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;panelNotice.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 169</value>
-  </data>
-  <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>316, 229</value>
-  </data>
-  <data name="panel3.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
-    <value>flowChatBox</value>
-  </data>
-  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="exampleflowLayoutSynonym.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="exampleItemSynonym.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="exampleItemSynonym.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="exampleItemSynonym.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="exampleItemSynonym.Location" type="System.Drawing.Point, System.Drawing">
-    <value>48, 0</value>
-  </data>
-  <data name="exampleItemSynonym.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>8, 5, 8, 5</value>
-  </data>
-  <data name="exampleItemSynonym.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 30</value>
-  </data>
-  <data name="exampleItemSynonym.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="exampleItemSynonym.Text" xml:space="preserve">
-    <value>Example Synonym</value>
-  </data>
-  <data name="exampleItemSynonym.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
   </data>
   <data name="&gt;&gt;exampleItemSynonym.Name" xml:space="preserve">
     <value>exampleItemSynonym</value>
   </data>
   <data name="&gt;&gt;exampleItemSynonym.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.0.7.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;exampleItemSynonym.Parent" xml:space="preserve">
     <value>exampleflowLayoutSynonym</value>
@@ -738,38 +984,11 @@
   <data name="&gt;&gt;exampleItemSynonym.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="roundedLabel3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="roundedLabel3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="roundedLabel3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="roundedLabel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>48, 30</value>
-  </data>
-  <data name="roundedLabel3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>8, 5, 8, 5</value>
-  </data>
-  <data name="roundedLabel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 30</value>
-  </data>
-  <data name="roundedLabel3.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="roundedLabel3.Text" xml:space="preserve">
-    <value>Example Synonym</value>
-  </data>
-  <data name="roundedLabel3.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
   <data name="&gt;&gt;roundedLabel3.Name" xml:space="preserve">
     <value>roundedLabel3</value>
   </data>
   <data name="&gt;&gt;roundedLabel3.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.0.7.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;roundedLabel3.Parent" xml:space="preserve">
     <value>exampleflowLayoutSynonym</value>
@@ -810,6 +1029,120 @@
   <data name="&gt;&gt;exampleflowLayoutSynonym.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="exampleItemSynonym.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="exampleItemSynonym.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="exampleItemSynonym.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="exampleItemSynonym.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 0</value>
+  </data>
+  <data name="exampleItemSynonym.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>8, 5, 8, 5</value>
+  </data>
+  <data name="exampleItemSynonym.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 30</value>
+  </data>
+  <data name="exampleItemSynonym.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="exampleItemSynonym.Text" xml:space="preserve">
+    <value>Example Synonym</value>
+  </data>
+  <data name="exampleItemSynonym.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;exampleItemSynonym.Name" xml:space="preserve">
+    <value>exampleItemSynonym</value>
+  </data>
+  <data name="&gt;&gt;exampleItemSynonym.Type" xml:space="preserve">
+    <value>Diccon.RoundedLabel, Diccon, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;exampleItemSynonym.Parent" xml:space="preserve">
+    <value>exampleflowLayoutSynonym</value>
+  </data>
+  <data name="&gt;&gt;exampleItemSynonym.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="roundedLabel3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="roundedLabel3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="roundedLabel3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="roundedLabel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 30</value>
+  </data>
+  <data name="roundedLabel3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>8, 5, 8, 5</value>
+  </data>
+  <data name="roundedLabel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 30</value>
+  </data>
+  <data name="roundedLabel3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="roundedLabel3.Text" xml:space="preserve">
+    <value>Example Synonym</value>
+  </data>
+  <data name="roundedLabel3.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;roundedLabel3.Name" xml:space="preserve">
+    <value>roundedLabel3</value>
+  </data>
+  <data name="&gt;&gt;roundedLabel3.Type" xml:space="preserve">
+    <value>Diccon.RoundedLabel, Diccon, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;roundedLabel3.Parent" xml:space="preserve">
+    <value>exampleflowLayoutSynonym</value>
+  </data>
+  <data name="&gt;&gt;roundedLabel3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;exampleShortText.Name" xml:space="preserve">
+    <value>exampleShortText</value>
+  </data>
+  <data name="&gt;&gt;exampleShortText.Type" xml:space="preserve">
+    <value>Diccon.RoundedLabel, Diccon, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;exampleShortText.Parent" xml:space="preserve">
+    <value>exampleShortPanel</value>
+  </data>
+  <data name="&gt;&gt;exampleShortText.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="exampleShortPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 470</value>
+  </data>
+  <data name="exampleShortPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>313, 39</value>
+  </data>
+  <data name="exampleShortPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="exampleShortPanel.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;exampleShortPanel.Name" xml:space="preserve">
+    <value>exampleShortPanel</value>
+  </data>
+  <data name="&gt;&gt;exampleShortPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;exampleShortPanel.Parent" xml:space="preserve">
+    <value>flowChatBox</value>
+  </data>
+  <data name="&gt;&gt;exampleShortPanel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="exampleShortText.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -844,7 +1177,7 @@
     <value>exampleShortText</value>
   </data>
   <data name="&gt;&gt;exampleShortText.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.0.7.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;exampleShortText.Parent" xml:space="preserve">
     <value>exampleShortPanel</value>
@@ -852,29 +1185,80 @@
   <data name="&gt;&gt;exampleShortText.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="exampleShortPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 470</value>
+  <data name="&gt;&gt;exampleAskLongColoredPanel.Name" xml:space="preserve">
+    <value>exampleAskLongColoredPanel</value>
   </data>
-  <data name="exampleShortPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>313, 39</value>
+  <data name="&gt;&gt;exampleAskLongColoredPanel.Type" xml:space="preserve">
+    <value>Diccon.RoundedPanel, Diccon, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="exampleShortPanel.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;exampleAskLongColoredPanel.Parent" xml:space="preserve">
+    <value>exampleAskLongPanel</value>
+  </data>
+  <data name="&gt;&gt;exampleAskLongColoredPanel.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="exampleShortPanel.Visible" type="System.Boolean, mscorlib">
+  <data name="exampleAskLongPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 515</value>
+  </data>
+  <data name="exampleAskLongPanel.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 40</value>
+  </data>
+  <data name="exampleAskLongPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>313, 40</value>
+  </data>
+  <data name="exampleAskLongPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="exampleAskLongPanel.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="&gt;&gt;exampleShortPanel.Name" xml:space="preserve">
-    <value>exampleShortPanel</value>
+  <data name="&gt;&gt;exampleAskLongPanel.Name" xml:space="preserve">
+    <value>exampleAskLongPanel</value>
   </data>
-  <data name="&gt;&gt;exampleShortPanel.Type" xml:space="preserve">
+  <data name="&gt;&gt;exampleAskLongPanel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;exampleShortPanel.Parent" xml:space="preserve">
+  <data name="&gt;&gt;exampleAskLongPanel.Parent" xml:space="preserve">
     <value>flowChatBox</value>
   </data>
-  <data name="&gt;&gt;exampleShortPanel.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;exampleAskLongPanel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;exampleAskLongText.Name" xml:space="preserve">
+    <value>exampleAskLongText</value>
+  </data>
+  <data name="&gt;&gt;exampleAskLongText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;exampleAskLongText.Parent" xml:space="preserve">
+    <value>exampleAskLongColoredPanel</value>
+  </data>
+  <data name="&gt;&gt;exampleAskLongText.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="exampleAskLongColoredPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="exampleAskLongColoredPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="exampleAskLongColoredPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 40</value>
+  </data>
+  <data name="exampleAskLongColoredPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;exampleAskLongColoredPanel.Name" xml:space="preserve">
+    <value>exampleAskLongColoredPanel</value>
+  </data>
+  <data name="&gt;&gt;exampleAskLongColoredPanel.Type" xml:space="preserve">
+    <value>Diccon.RoundedPanel, Diccon, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;exampleAskLongColoredPanel.Parent" xml:space="preserve">
+    <value>exampleAskLongPanel</value>
+  </data>
+  <data name="&gt;&gt;exampleAskLongColoredPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="exampleAskLongText.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -912,59 +1296,128 @@
   <data name="&gt;&gt;exampleAskLongText.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="exampleAskLongColoredPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
+  <data name="&gt;&gt;examplePlayAlignPanel.Name" xml:space="preserve">
+    <value>examplePlayAlignPanel</value>
   </data>
-  <data name="exampleAskLongColoredPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="exampleAskLongColoredPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 40</value>
-  </data>
-  <data name="exampleAskLongColoredPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;exampleAskLongColoredPanel.Name" xml:space="preserve">
-    <value>exampleAskLongColoredPanel</value>
-  </data>
-  <data name="&gt;&gt;exampleAskLongColoredPanel.Type" xml:space="preserve">
-    <value>Diccon.RoundedPanel, Diccon, Version=6.0.7.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;exampleAskLongColoredPanel.Parent" xml:space="preserve">
-    <value>exampleAskLongPanel</value>
-  </data>
-  <data name="&gt;&gt;exampleAskLongColoredPanel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="exampleAskLongPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 515</value>
-  </data>
-  <data name="exampleAskLongPanel.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>0, 40</value>
-  </data>
-  <data name="exampleAskLongPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>313, 40</value>
-  </data>
-  <data name="exampleAskLongPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="exampleAskLongPanel.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;exampleAskLongPanel.Name" xml:space="preserve">
-    <value>exampleAskLongPanel</value>
-  </data>
-  <data name="&gt;&gt;exampleAskLongPanel.Type" xml:space="preserve">
+  <data name="&gt;&gt;examplePlayAlignPanel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;exampleAskLongPanel.Parent" xml:space="preserve">
+  <data name="&gt;&gt;examplePlayAlignPanel.Parent" xml:space="preserve">
+    <value>examplePlayPanel</value>
+  </data>
+  <data name="&gt;&gt;examplePlayAlignPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="examplePlayPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 561</value>
+  </data>
+  <data name="examplePlayPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>313, 39</value>
+  </data>
+  <data name="examplePlayPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;examplePlayPanel.Name" xml:space="preserve">
+    <value>examplePlayPanel</value>
+  </data>
+  <data name="&gt;&gt;examplePlayPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;examplePlayPanel.Parent" xml:space="preserve">
     <value>flowChatBox</value>
   </data>
-  <data name="&gt;&gt;exampleAskLongPanel.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="&gt;&gt;examplePlayPanel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;examplePlayColoredPanel.Name" xml:space="preserve">
+    <value>examplePlayColoredPanel</value>
+  </data>
+  <data name="&gt;&gt;examplePlayColoredPanel.Type" xml:space="preserve">
+    <value>Diccon.RoundedPanel, Diccon, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;examplePlayColoredPanel.Parent" xml:space="preserve">
+    <value>examplePlayAlignPanel</value>
+  </data>
+  <data name="&gt;&gt;examplePlayColoredPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="examplePlayAlignPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="examplePlayAlignPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, 0</value>
+  </data>
+  <data name="examplePlayAlignPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>264, 39</value>
+  </data>
+  <data name="examplePlayAlignPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="examplePlayAlignPanel.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;examplePlayAlignPanel.Name" xml:space="preserve">
+    <value>examplePlayAlignPanel</value>
+  </data>
+  <data name="&gt;&gt;examplePlayAlignPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;examplePlayAlignPanel.Parent" xml:space="preserve">
+    <value>examplePlayPanel</value>
+  </data>
+  <data name="&gt;&gt;examplePlayAlignPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="examplePlayColoredPanel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="&gt;&gt;exampleTextHolder.Name" xml:space="preserve">
+    <value>exampleTextHolder</value>
+  </data>
+  <data name="&gt;&gt;exampleTextHolder.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;exampleTextHolder.Parent" xml:space="preserve">
+    <value>examplePlayColoredPanel</value>
+  </data>
+  <data name="&gt;&gt;exampleTextHolder.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;examplePlayButton.Name" xml:space="preserve">
+    <value>examplePlayButton</value>
+  </data>
+  <data name="&gt;&gt;examplePlayButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;examplePlayButton.Parent" xml:space="preserve">
+    <value>examplePlayColoredPanel</value>
+  </data>
+  <data name="&gt;&gt;examplePlayButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="examplePlayColoredPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="examplePlayColoredPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="examplePlayColoredPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 39</value>
+  </data>
+  <data name="examplePlayColoredPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;examplePlayColoredPanel.Name" xml:space="preserve">
+    <value>examplePlayColoredPanel</value>
+  </data>
+  <data name="&gt;&gt;examplePlayColoredPanel.Type" xml:space="preserve">
+    <value>Diccon.RoundedPanel, Diccon, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;examplePlayColoredPanel.Parent" xml:space="preserve">
+    <value>examplePlayAlignPanel</value>
+  </data>
+  <data name="&gt;&gt;examplePlayColoredPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="exampleTextHolder.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1040,268 +1493,52 @@
   <data name="&gt;&gt;examplePlayButton.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="examplePlayColoredPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
+  <data name="&gt;&gt;examplePixabayLogo.Name" xml:space="preserve">
+    <value>examplePixabayLogo</value>
   </data>
-  <data name="examplePlayColoredPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="examplePlayColoredPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 39</value>
-  </data>
-  <data name="examplePlayColoredPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;examplePlayColoredPanel.Name" xml:space="preserve">
-    <value>examplePlayColoredPanel</value>
-  </data>
-  <data name="&gt;&gt;examplePlayColoredPanel.Type" xml:space="preserve">
-    <value>Diccon.RoundedPanel, Diccon, Version=6.0.7.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;examplePlayColoredPanel.Parent" xml:space="preserve">
-    <value>examplePlayAlignPanel</value>
-  </data>
-  <data name="&gt;&gt;examplePlayColoredPanel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="examplePlayAlignPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="examplePlayAlignPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>49, 0</value>
-  </data>
-  <data name="examplePlayAlignPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>264, 39</value>
-  </data>
-  <data name="examplePlayAlignPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="examplePlayAlignPanel.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;examplePlayAlignPanel.Name" xml:space="preserve">
-    <value>examplePlayAlignPanel</value>
-  </data>
-  <data name="&gt;&gt;examplePlayAlignPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;examplePlayAlignPanel.Parent" xml:space="preserve">
-    <value>examplePlayPanel</value>
-  </data>
-  <data name="&gt;&gt;examplePlayAlignPanel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="examplePlayPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 561</value>
-  </data>
-  <data name="examplePlayPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>313, 39</value>
-  </data>
-  <data name="examplePlayPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;examplePlayPanel.Name" xml:space="preserve">
-    <value>examplePlayPanel</value>
-  </data>
-  <data name="&gt;&gt;examplePlayPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;examplePlayPanel.Parent" xml:space="preserve">
-    <value>flowChatBox</value>
-  </data>
-  <data name="&gt;&gt;examplePlayPanel.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="exampleNoteTitle.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
-  </data>
-  <data name="exampleNoteTitle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>105, 19</value>
-  </data>
-  <data name="exampleNoteTitle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>168, 15</value>
-  </data>
-  <data name="exampleNoteTitle.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="exampleNoteTitle.Text" xml:space="preserve">
-    <value>untitled</value>
-  </data>
-  <data name="exampleNoteTitle.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="&gt;&gt;exampleNoteTitle.Name" xml:space="preserve">
-    <value>exampleNoteTitle</value>
-  </data>
-  <data name="&gt;&gt;exampleNoteTitle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;exampleNoteTitle.Parent" xml:space="preserve">
-    <value>exampleNoteColoredPanel</value>
-  </data>
-  <data name="&gt;&gt;exampleNoteTitle.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="exampleNoteClose.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="exampleNoteClose.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="exampleNoteClose.Location" type="System.Drawing.Point, System.Drawing">
-    <value>276, 15</value>
-  </data>
-  <data name="exampleNoteClose.Size" type="System.Drawing.Size, System.Drawing">
-    <value>24, 24</value>
-  </data>
-  <data name="exampleNoteClose.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>AutoSize</value>
-  </data>
-  <data name="exampleNoteClose.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;exampleNoteClose.Name" xml:space="preserve">
-    <value>exampleNoteClose</value>
-  </data>
-  <data name="&gt;&gt;exampleNoteClose.Type" xml:space="preserve">
+  <data name="&gt;&gt;examplePixabayLogo.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;exampleNoteClose.Parent" xml:space="preserve">
-    <value>exampleNoteColoredPanel</value>
+  <data name="&gt;&gt;examplePixabayLogo.Parent" xml:space="preserve">
+    <value>examplePicturePanel</value>
   </data>
-  <data name="&gt;&gt;exampleNoteClose.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;examplePixabayLogo.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;exampleColoredPicturePanel.Name" xml:space="preserve">
+    <value>exampleColoredPicturePanel</value>
+  </data>
+  <data name="&gt;&gt;exampleColoredPicturePanel.Type" xml:space="preserve">
+    <value>Diccon.RoundedPanel, Diccon, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;exampleColoredPicturePanel.Parent" xml:space="preserve">
+    <value>examplePicturePanel</value>
+  </data>
+  <data name="&gt;&gt;exampleColoredPicturePanel.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="exampleNoteDelete.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="exampleNoteDelete.Location" type="System.Drawing.Point, System.Drawing">
-    <value>43, 15</value>
-  </data>
-  <data name="exampleNoteDelete.Size" type="System.Drawing.Size, System.Drawing">
-    <value>24, 24</value>
-  </data>
-  <data name="exampleNoteDelete.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>AutoSize</value>
-  </data>
-  <data name="exampleNoteDelete.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;exampleNoteDelete.Name" xml:space="preserve">
-    <value>exampleNoteDelete</value>
-  </data>
-  <data name="&gt;&gt;exampleNoteDelete.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;exampleNoteDelete.Parent" xml:space="preserve">
-    <value>exampleNoteColoredPanel</value>
-  </data>
-  <data name="&gt;&gt;exampleNoteDelete.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="exampleNoteSave.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="exampleNoteSave.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 15</value>
-  </data>
-  <data name="exampleNoteSave.Size" type="System.Drawing.Size, System.Drawing">
-    <value>24, 24</value>
-  </data>
-  <data name="exampleNoteSave.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>AutoSize</value>
-  </data>
-  <data name="exampleNoteSave.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;exampleNoteSave.Name" xml:space="preserve">
-    <value>exampleNoteSave</value>
-  </data>
-  <data name="&gt;&gt;exampleNoteSave.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;exampleNoteSave.Parent" xml:space="preserve">
-    <value>exampleNoteColoredPanel</value>
-  </data>
-  <data name="&gt;&gt;exampleNoteSave.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="exampleNoteRichTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="exampleNoteRichTextBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="exampleNoteRichTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 45</value>
-  </data>
-  <data name="exampleNoteRichTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>295, 181</value>
-  </data>
-  <data name="exampleNoteRichTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="exampleNoteRichTextBox.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;exampleNoteRichTextBox.Name" xml:space="preserve">
-    <value>exampleNoteRichTextBox</value>
-  </data>
-  <data name="&gt;&gt;exampleNoteRichTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;exampleNoteRichTextBox.Parent" xml:space="preserve">
-    <value>exampleNoteColoredPanel</value>
-  </data>
-  <data name="&gt;&gt;exampleNoteRichTextBox.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="exampleNoteColoredPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="exampleNoteColoredPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="exampleNoteColoredPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>313, 236</value>
-  </data>
-  <data name="exampleNoteColoredPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;exampleNoteColoredPanel.Name" xml:space="preserve">
-    <value>exampleNoteColoredPanel</value>
-  </data>
-  <data name="&gt;&gt;exampleNoteColoredPanel.Type" xml:space="preserve">
-    <value>Diccon.RoundedPanel, Diccon, Version=6.0.7.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;exampleNoteColoredPanel.Parent" xml:space="preserve">
-    <value>exampleNotePanel</value>
-  </data>
-  <data name="&gt;&gt;exampleNoteColoredPanel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="exampleNotePanel.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="examplePicturePanel.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 606</value>
   </data>
-  <data name="exampleNotePanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>313, 236</value>
+  <data name="examplePicturePanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>316, 269</value>
   </data>
-  <data name="exampleNotePanel.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="examplePicturePanel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
-  <data name="exampleNotePanel.Visible" type="System.Boolean, mscorlib">
+  <data name="examplePicturePanel.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="&gt;&gt;exampleNotePanel.Name" xml:space="preserve">
-    <value>exampleNotePanel</value>
+  <data name="&gt;&gt;examplePicturePanel.Name" xml:space="preserve">
+    <value>examplePicturePanel</value>
   </data>
-  <data name="&gt;&gt;exampleNotePanel.Type" xml:space="preserve">
+  <data name="&gt;&gt;examplePicturePanel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;exampleNotePanel.Parent" xml:space="preserve">
+  <data name="&gt;&gt;examplePicturePanel.Parent" xml:space="preserve">
     <value>flowChatBox</value>
   </data>
-  <data name="&gt;&gt;exampleNotePanel.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;examplePicturePanel.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
   <data name="examplePixabayLogo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
@@ -1330,6 +1567,39 @@
   </data>
   <data name="&gt;&gt;examplePixabayLogo.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="&gt;&gt;examplePictureBox.Name" xml:space="preserve">
+    <value>examplePictureBox</value>
+  </data>
+  <data name="&gt;&gt;examplePictureBox.Type" xml:space="preserve">
+    <value>Diccon.RoundedPictureBox, Diccon, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;examplePictureBox.Parent" xml:space="preserve">
+    <value>exampleColoredPicturePanel</value>
+  </data>
+  <data name="&gt;&gt;examplePictureBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="exampleColoredPicturePanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="exampleColoredPicturePanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>313, 248</value>
+  </data>
+  <data name="exampleColoredPicturePanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;exampleColoredPicturePanel.Name" xml:space="preserve">
+    <value>exampleColoredPicturePanel</value>
+  </data>
+  <data name="&gt;&gt;exampleColoredPicturePanel.Type" xml:space="preserve">
+    <value>Diccon.RoundedPanel, Diccon, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;exampleColoredPicturePanel.Parent" xml:space="preserve">
+    <value>examplePicturePanel</value>
+  </data>
+  <data name="&gt;&gt;exampleColoredPicturePanel.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="examplePictureBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -3527,7 +3797,7 @@
     <value>examplePictureBox</value>
   </data>
   <data name="&gt;&gt;examplePictureBox.Type" xml:space="preserve">
-    <value>Diccon.RoundedPictureBox, Diccon, Version=6.0.7.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedPictureBox, Diccon, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;examplePictureBox.Parent" xml:space="preserve">
     <value>exampleColoredPicturePanel</value>
@@ -3535,83 +3805,98 @@
   <data name="&gt;&gt;examplePictureBox.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="exampleColoredPicturePanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="exampleColoredPicturePanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>313, 248</value>
-  </data>
-  <data name="exampleColoredPicturePanel.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;exampleColoredPicturePanel.Name" xml:space="preserve">
-    <value>exampleColoredPicturePanel</value>
-  </data>
-  <data name="&gt;&gt;exampleColoredPicturePanel.Type" xml:space="preserve">
-    <value>Diccon.RoundedPanel, Diccon, Version=6.0.7.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;exampleColoredPicturePanel.Parent" xml:space="preserve">
-    <value>examplePicturePanel</value>
-  </data>
-  <data name="&gt;&gt;exampleColoredPicturePanel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="examplePicturePanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 848</value>
-  </data>
-  <data name="examplePicturePanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>316, 269</value>
-  </data>
-  <data name="examplePicturePanel.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="examplePicturePanel.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;examplePicturePanel.Name" xml:space="preserve">
-    <value>examplePicturePanel</value>
-  </data>
-  <data name="&gt;&gt;examplePicturePanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;examplePicturePanel.Parent" xml:space="preserve">
-    <value>flowChatBox</value>
-  </data>
-  <data name="&gt;&gt;examplePicturePanel.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="flowChatBox.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="flowChatBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 5</value>
-  </data>
-  <data name="flowChatBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
-  </data>
-  <data name="flowChatBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>339, 458</value>
-  </data>
-  <data name="flowChatBox.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;flowChatBox.Name" xml:space="preserve">
-    <value>flowChatBox</value>
-  </data>
-  <data name="&gt;&gt;flowChatBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;flowChatBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;flowChatBox.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <metadata name="suggestionTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
   <data name="flowSuggestion.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="&gt;&gt;btSpellingCorrector.Name" xml:space="preserve">
+    <value>btSpellingCorrector</value>
+  </data>
+  <data name="&gt;&gt;btSpellingCorrector.Type" xml:space="preserve">
+    <value>Diccon.RoundedLabel, Diccon, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btSpellingCorrector.Parent" xml:space="preserve">
+    <value>flowSuggestion</value>
+  </data>
+  <data name="&gt;&gt;btSpellingCorrector.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btSynonym.Name" xml:space="preserve">
+    <value>btSynonym</value>
+  </data>
+  <data name="&gt;&gt;btSynonym.Type" xml:space="preserve">
+    <value>Diccon.RoundedLabel, Diccon, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btSynonym.Parent" xml:space="preserve">
+    <value>flowSuggestion</value>
+  </data>
+  <data name="&gt;&gt;btSynonym.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;roundedLabel9.Name" xml:space="preserve">
+    <value>roundedLabel9</value>
+  </data>
+  <data name="&gt;&gt;roundedLabel9.Type" xml:space="preserve">
+    <value>Diccon.RoundedLabel, Diccon, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;roundedLabel9.Parent" xml:space="preserve">
+    <value>flowSuggestion</value>
+  </data>
+  <data name="&gt;&gt;roundedLabel9.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;roundedLabel12.Name" xml:space="preserve">
+    <value>roundedLabel12</value>
+  </data>
+  <data name="&gt;&gt;roundedLabel12.Type" xml:space="preserve">
+    <value>Diccon.RoundedLabel, Diccon, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;roundedLabel12.Parent" xml:space="preserve">
+    <value>flowSuggestion</value>
+  </data>
+  <data name="&gt;&gt;roundedLabel12.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;btImage.Name" xml:space="preserve">
+    <value>btImage</value>
+  </data>
+  <data name="&gt;&gt;btImage.Type" xml:space="preserve">
+    <value>Diccon.RoundedLabel, Diccon, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btImage.Parent" xml:space="preserve">
+    <value>flowSuggestion</value>
+  </data>
+  <data name="&gt;&gt;btImage.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="flowSuggestion.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="flowSuggestion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 435</value>
+  </data>
+  <data name="flowSuggestion.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 5, 10, 0</value>
+  </data>
+  <data name="flowSuggestion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>339, 35</value>
+  </data>
+  <data name="flowSuggestion.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;flowSuggestion.Name" xml:space="preserve">
+    <value>flowSuggestion</value>
+  </data>
+  <data name="&gt;&gt;flowSuggestion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;flowSuggestion.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;flowSuggestion.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="btSynonym.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3623,7 +3908,7 @@
     <value>NoControl</value>
   </data>
   <data name="btSynonym.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 5</value>
+    <value>166, 5</value>
   </data>
   <data name="btSynonym.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 4, 6, 4</value>
@@ -3647,13 +3932,13 @@
     <value>btSynonym</value>
   </data>
   <data name="&gt;&gt;btSynonym.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.0.7.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btSynonym.Parent" xml:space="preserve">
     <value>flowSuggestion</value>
   </data>
   <data name="&gt;&gt;btSynonym.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="roundedLabel9.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3665,7 +3950,7 @@
     <value>NoControl</value>
   </data>
   <data name="roundedLabel9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>113, 5</value>
+    <value>13, 33</value>
   </data>
   <data name="roundedLabel9.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 4, 6, 4</value>
@@ -3689,13 +3974,13 @@
     <value>roundedLabel9</value>
   </data>
   <data name="&gt;&gt;roundedLabel9.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.0.7.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;roundedLabel9.Parent" xml:space="preserve">
     <value>flowSuggestion</value>
   </data>
   <data name="&gt;&gt;roundedLabel9.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="roundedLabel12.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3707,7 +3992,7 @@
     <value>NoControl</value>
   </data>
   <data name="roundedLabel12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>209, 5</value>
+    <value>109, 33</value>
   </data>
   <data name="roundedLabel12.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 4, 6, 4</value>
@@ -3731,13 +4016,13 @@
     <value>roundedLabel12</value>
   </data>
   <data name="&gt;&gt;roundedLabel12.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.0.7.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;roundedLabel12.Parent" xml:space="preserve">
     <value>flowSuggestion</value>
   </data>
   <data name="&gt;&gt;roundedLabel12.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="btSpellingCorrector.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3749,7 +4034,7 @@
     <value>NoControl</value>
   </data>
   <data name="btSpellingCorrector.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 33</value>
+    <value>13, 5</value>
   </data>
   <data name="btSpellingCorrector.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 4, 6, 4</value>
@@ -3773,13 +4058,13 @@
     <value>btSpellingCorrector</value>
   </data>
   <data name="&gt;&gt;btSpellingCorrector.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.0.7.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btSpellingCorrector.Parent" xml:space="preserve">
     <value>flowSuggestion</value>
   </data>
   <data name="&gt;&gt;btSpellingCorrector.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>0</value>
   </data>
   <data name="btImage.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3791,7 +4076,7 @@
     <value>NoControl</value>
   </data>
   <data name="btImage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>166, 33</value>
+    <value>177, 33</value>
   </data>
   <data name="btImage.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 4, 6, 4</value>
@@ -3815,7 +4100,7 @@
     <value>btImage</value>
   </data>
   <data name="&gt;&gt;btImage.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.0.7.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=6.1.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btImage.Parent" xml:space="preserve">
     <value>flowSuggestion</value>
@@ -3823,36 +4108,18 @@
   <data name="&gt;&gt;btImage.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="flowSuggestion.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="flowSuggestion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 463</value>
-  </data>
-  <data name="flowSuggestion.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 5, 10, 0</value>
-  </data>
-  <data name="flowSuggestion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>339, 35</value>
-  </data>
-  <data name="flowSuggestion.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;flowSuggestion.Name" xml:space="preserve">
-    <value>flowSuggestion</value>
-  </data>
-  <data name="&gt;&gt;flowSuggestion.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;flowSuggestion.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;flowSuggestion.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <metadata name="contextMenuNote.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>314, 17</value>
+    <value>303, 17</value>
   </metadata>
+  <data name="contextMenuNote.Size" type="System.Drawing.Size, System.Drawing">
+    <value>161, 76</value>
+  </data>
+  <data name="&gt;&gt;contextMenuNote.Name" xml:space="preserve">
+    <value>contextMenuNote</value>
+  </data>
+  <data name="&gt;&gt;contextMenuNote.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="saveToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 22</value>
   </data>
@@ -3874,15 +4141,9 @@
   <data name="closeToolStripMenuItem.Text" xml:space="preserve">
     <value>Close</value>
   </data>
-  <data name="contextMenuNote.Size" type="System.Drawing.Size, System.Drawing">
-    <value>161, 76</value>
-  </data>
-  <data name="&gt;&gt;contextMenuNote.Name" xml:space="preserve">
-    <value>contextMenuNote</value>
-  </data>
-  <data name="&gt;&gt;contextMenuNote.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
+  <metadata name="synonymChecker.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>159, 17</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -3896,7 +4157,7 @@
     <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>339, 640</value>
+    <value>339, 612</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -5802,9 +6063,6 @@
         AIADAACAAwAAwAMAAMADAADAAwAAwAMAAMADAADgBwAA8A8AAP5/AAA=
 </value>
   </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>423, 10000</value>
   </data>
@@ -5846,6 +6104,12 @@
   </data>
   <data name="&gt;&gt;closeToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;synonymChecker.Name" xml:space="preserve">
+    <value>synonymChecker</value>
+  </data>
+  <data name="&gt;&gt;synonymChecker.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>dictionary</value>

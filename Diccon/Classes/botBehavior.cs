@@ -200,7 +200,7 @@ namespace Diccon
                 newLabel.Text = word;
                 newLabel.AutoSize = true;
                 newLabel.Font = exampleItem.Font;
-               
+                newLabel.Click += NewLabel_Click;
 
                 panelHaveSynonyms.Controls.Add(newLabel);
 
@@ -208,6 +208,12 @@ namespace Diccon
 
             targetFlowLayout.ScrollControlIntoView(panelHaveSynonyms);
         }
+
+        private void NewLabel_Click(object sender, EventArgs e)
+        {
+            dicconProp.wordFromSynonym = (sender as RoundedLabel).Text;
+        }
+
         /// <summary>
         /// Using Microsoft Translator API to translate string to a translated JSON-formated string.
         /// Key is hold by RapidAPI website.

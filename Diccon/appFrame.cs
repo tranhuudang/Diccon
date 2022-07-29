@@ -26,7 +26,6 @@ namespace Diccon
         Form aboutForm = null;
         Form donateForm = null;
         Form timelineForm = null;
-        Form noteForm = null;
         Form settingForm = null;
         Form yawaForm = null;
         Form loginForm = null;
@@ -100,7 +99,6 @@ namespace Diccon
             btDictionary.BackColor = dicconProp.ColorA8;
             btDonate.BackColor = dicconProp.ColorA8;
             btTimeline.BackColor = dicconProp.ColorA8;
-            btNotes.BackColor = dicconProp.ColorA8;
             btCommunity.BackColor = dicconProp.ColorA8;
             topPanel.BackColor = dicconProp.AccentColor;
         }
@@ -169,6 +167,15 @@ namespace Diccon
         }
         private void openForm(Form targetForm)
         {
+            if (targetForm == timelineForm)
+            {
+                timeLineDetector.Enabled = true;
+
+            }
+            else
+            {
+                timeLineDetector.Enabled = false;
+            }
             btStar.Visible = false;
             string formName = targetForm.Text;
             title.Text = formName;
@@ -333,16 +340,6 @@ namespace Diccon
         private void buttonYourNote_Click(object sender, EventArgs e)
         {
 
-            if (noteForm != null)
-            {
-
-                openForm(noteForm);
-            }
-            else
-            {
-                noteForm = new notes();
-                openForm(noteForm);
-            }
         }
 
         private void roundedLabel7_Click(object sender, EventArgs e)
@@ -404,7 +401,6 @@ namespace Diccon
         {
             SoundPlayer soundPlayer = new SoundPlayer(Properties.Resources.alert_wav);
             soundPlayer.Play();
-            notificationDetector.Enabled = false;
         }
 
         private void logInWithGoogleToolStripMenuItem_Click(object sender, EventArgs e)

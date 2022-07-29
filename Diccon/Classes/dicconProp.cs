@@ -38,8 +38,6 @@ namespace Diccon
         public static int bottomPanel_DefaultHeight = 60;
         public static int bottomPanel_ExpandedHeight = 140;
 
-        public static string connectionString = File.ReadAllText(@"D:\DB\connectionString.txt"); 
-
         public static Color default_addNote_BackColor = Color.FromArgb(255, 192, 128);
         public static Color hover_addNote_BackColor = Color.FromArgb(242, 203, 164);
         public static string resourcesFolder = dicconApplicationDataPath + @"\Resources\";
@@ -56,6 +54,7 @@ namespace Diccon
         public static string historyFileName = dicconApplicationDataPath + @"\History.ini";
         public static string noteFilePath = dicconApplicationDataPath + @"\Note.xml";
         public static string wordFromTimeline = "";
+        public static string wordFromSynonym = "";
         public static string githubPath = "https://github.com/tranhuudang";
         public static string githubProjectPath = "https://github.com/zeroclubvn/Diccon";
         public static string githubIssuesPath = "https://github.com/tranhuudang/Diccon/issues";

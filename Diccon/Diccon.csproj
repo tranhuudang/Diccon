@@ -151,12 +151,6 @@
   <ItemGroup>
     <Compile Include="Classes\SHA256Encrypt.cs" />
     <Compile Include="Classes\spellingCorrector.cs" />
-    <Compile Include="Controls\noteItems.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Controls\noteItems.Designer.cs">
-      <DependentUpon>noteItems.cs</DependentUpon>
-    </Compile>
     <Compile Include="Controls\timeLineItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -209,12 +203,6 @@
     </Compile>
     <Compile Include="Pages\login.Designer.cs">
       <DependentUpon>login.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\notes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Pages\notes.Designer.cs">
-      <DependentUpon>notes.cs</DependentUpon>
     </Compile>
     <Compile Include="Pages\timeline.cs">
       <SubType>Form</SubType>
@@ -270,9 +258,6 @@
     <EmbeddedResource Include="appFrame.vi.resx">
       <DependentUpon>appFrame.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Controls\noteItems.resx">
-      <DependentUpon>noteItems.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Controls\timeLineItem.resx">
       <DependentUpon>timeLineItem.cs</DependentUpon>
     </EmbeddedResource>
@@ -281,6 +266,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="appFrame.resx">
       <DependentUpon>appFrame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\about.vi-VN.resx">
+      <DependentUpon>about.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\about.vi.resx">
       <DependentUpon>about.cs</DependentUpon>
@@ -314,9 +302,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\login.vi.resx">
       <DependentUpon>login.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Pages\notes.resx">
-      <DependentUpon>notes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\settings.resx">
       <DependentUpon>settings.cs</DependentUpon>

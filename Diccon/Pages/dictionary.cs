@@ -23,17 +23,17 @@ namespace Diccon
         [STAThreadAttribute]
         private void mainHall_Load(object sender, EventArgs e)
         {
-            
+            synonymChecker.Enabled = true;
             //searchTextBox.Text = Clipboard.GetText();
             ///////  T   H   E   M   E  ///////////////
             panelNotice.BackColor = dicconProp.ColorA3;
             exampleAnswerColoredPanel.BackColor = dicconProp.ColorA3;
+            exampleColoredPicturePanel.BackColor = dicconProp.ColorA3;
             exampleItemSynonym.BackColor = dicconProp.ColorA5;
             examplePlayColoredPanel.BackColor = dicconProp.ColorA5;
             btSynonym.BackColor = dicconProp.ColorA8;
             btImage.BackColor = dicconProp.ColorA8;
             addEmoji.BackColor = dicconProp.ColorA8;
-            addNote.BackColor = dicconProp.ColorA8;
             examplePictureBox.BackColor = dicconProp.ColorA7;
             roundedPanel1.BackColor = dicconProp.ColorA9;
             searchTextBox.BackColor = dicconProp.ColorA9;
@@ -75,6 +75,7 @@ namespace Diccon
         }
         private async void searchTextBox_KeyDown(object sender, KeyEventArgs e)
         {
+            
             if(e == null)
             {
               
@@ -240,22 +241,7 @@ namespace Diccon
             panelBottom.Height = dicconProp.bottomPanel_DefaultHeight;
         }
 
-        private void addNote_Click(object sender, EventArgs e)
-        {
-            user.userAddNote(exampleNoteSave, exampleNoteDelete, exampleNoteClose, exampleNoteRichTextBox, exampleNoteColoredPanel, exampleNotePanel, flowChatBox);
-            // hide the tool box
-            panelBottom.Height = dicconProp.bottomPanel_DefaultHeight;
-        }
 
-        private void addNote_MouseEnter(object sender, EventArgs e)
-        {
-            addNote.BackColor = dicconProp.hover_addNote_BackColor;
-        }
-
-        private void addNote_MouseLeave(object sender, EventArgs e)
-        {
-            addNote.BackColor = dicconProp.default_addNote_BackColor;
-        }
 
         private void searchTextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -329,7 +315,7 @@ namespace Diccon
         {
             // Get correct form of word from Spelling Corrector library
             spellingCorrectorCurrentWord = spellingCorrector(dicconProp.currentWord);
-            if ((spellingCorrectorCurrentWord.Length > 1) && (spellingCorrectorCurrentWord != dicconProp.currentWord))
+            if ((spellingCorrectorCurrentWord.Length > 1) && (spellingCorrectorCurrentWord.ToLower() != dicconProp.currentWord.ToLower()))
             {
                 btSpellingCorrector.Text = spellingCorrectorCurrentWord.Replace(spellingCorrectorCurrentWord.Substring(0, 1), spellingCorrectorCurrentWord.Substring(0, 1).ToUpper());
                 btSpellingCorrector.Visible = true;
@@ -415,7 +401,7 @@ namespace Diccon
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void dictionary_VisibleChanged(object sender, EventArgs e)
@@ -426,6 +412,7 @@ namespace Diccon
                 dicconProp.wordFromTimeline = "";
             }
             //enable event to listen to clipboard changes if enable
+           
         }
         private void issueLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -447,6 +434,21 @@ namespace Diccon
             searchTextBox.Text = btSpellingCorrector.Text;
             btSpellingCorrector.Visible = false;
             searchTextBox_KeyDown(null, null);
+        }
+
+        private void synonymChecker_Tick(object sender, EventArgs e)
+        {
+            if (dicconProp.wordFromSynonym != "")
+            {
+                searchTextBox.Text = dicconProp.wordFromSynonym;
+                searchTextBox_KeyDown(null, null);
+                dicconProp.wordFromSynonym = "";
+            }     
+        }
+
+        private void dictionary_Leave(object sender, EventArgs e)
+        {
+          
         }
     }
 
