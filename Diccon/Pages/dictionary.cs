@@ -19,7 +19,7 @@ namespace Diccon
         botBehavior bot = new botBehavior();
         userAction user = new userAction();
         connectivity connectivity = new connectivity();
-        string spellingCorrectorCurrentWord="";
+        string spellingCorrectorCurrentWord = "";
         [STAThreadAttribute]
         private void mainHall_Load(object sender, EventArgs e)
         {
@@ -75,10 +75,10 @@ namespace Diccon
         }
         private async void searchTextBox_KeyDown(object sender, KeyEventArgs e)
         {
-            
-            if(e == null)
+
+            if (e == null)
             {
-              
+
                 VisibleControlInSuggestionBar();
 
                 dicconProp.currentWord = searchTextBox.Text.Trim();
@@ -94,7 +94,7 @@ namespace Diccon
 
             }
 
-            
+
 
 
         }
@@ -111,21 +111,8 @@ namespace Diccon
 
                 // if user type in just one word, so the case is we will use userSingMessage instead of userLongMessage
                 int numberOfWord = word.countWord(searchTextBox.Text);
-                if (numberOfWord == 0)
-                {
-                }
-                else if (numberOfWord == 1)
-                {
 
-                    // add word to history file
-                    addHistory(searchTextBox.Text);
-                    // display message 
-                    user.userSingleMessage(searchTextBox.Text, exampleShortText, exampleShortPanel, flowChatBox);
-                    bot.botSoundMessage(searchTextBox.Text, exampleTextHolder, examplePlayButton, examplePlayColoredPanel, examplePlayAlignPanel, examplePlayPanel, flowChatBox);
-                    bot.botAnswerLongMessage(searchMatchWord(searchTextBox.Text), exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
-                    suggestionTimer.Enabled = true;
-                }
-                else if (numberOfWord > 1)
+                if (numberOfWord > 1)
                 {
                     bool isOnline = new connectivity().isOnline();
                     if (isOnline)
@@ -141,6 +128,24 @@ namespace Diccon
                     {
                         MessageBox.Show(dicconProp.errorInternet, dicconProp.caption);
                     }
+                }
+                else if (numberOfWord == 1)
+                {
+                    // display message 
+                    user.userSingleMessage(searchTextBox.Text, exampleShortText, exampleShortPanel, flowChatBox);
+                    bot.botSoundMessage(searchTextBox.Text, exampleTextHolder, examplePlayButton, examplePlayColoredPanel, examplePlayAlignPanel, examplePlayPanel, flowChatBox);
+                    string definitionResult = searchMatchWord(searchTextBox.Text);
+                    if(definitionResult != dicconProp.promptMissingWord)
+                    {
+                        // add word to history file if the word is exist in the dictionary database
+                        addHistory(searchTextBox.Text);
+                        bot.botAnswerLongMessage(definitionResult, exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
+                    }
+                    else
+                    {
+                        bot.botAnswerLongMessage(definitionResult, exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
+                    }
+                    suggestionTimer.Enabled = true;
                 }
                 searchTextBox.Text = "";
             }
@@ -185,9 +190,6 @@ namespace Diccon
 
                 }
                 indexOfArray++;
-
-
-
             }
             // update missing word to database
             if (connectivity.isOnline())
@@ -349,7 +351,7 @@ namespace Diccon
                 }
 
             }
-            
+
 
 
         }
@@ -401,7 +403,7 @@ namespace Diccon
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void dictionary_VisibleChanged(object sender, EventArgs e)
@@ -412,7 +414,7 @@ namespace Diccon
                 dicconProp.wordFromTimeline = "";
             }
             //enable event to listen to clipboard changes if enable
-           
+
         }
         private void issueLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -443,12 +445,12 @@ namespace Diccon
                 searchTextBox.Text = dicconProp.wordFromSynonym;
                 searchTextBox_KeyDown(null, null);
                 dicconProp.wordFromSynonym = "";
-            }     
+            }
         }
 
         private void dictionary_Leave(object sender, EventArgs e)
         {
-          
+
         }
     }
 
