@@ -30,9 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(emoji));
             this.roundedPanel1 = new Diccon.RoundedPanel();
-            this.btCopy = new Diccon.RoundedLabel();
             this.lbEmojiText = new Diccon.RoundedLabel();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.laugh = new System.Windows.Forms.PictureBox();
             this.shame = new System.Windows.Forms.PictureBox();
             this.silly = new System.Windows.Forms.PictureBox();
@@ -56,8 +54,8 @@
             this.surrender = new System.Windows.Forms.PictureBox();
             this.wary = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.roundedPanel1.SuspendLayout();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.laugh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.shame)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.silly)).BeginInit();
@@ -80,32 +78,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.stuck)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.surrender)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.wary)).BeginInit();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // roundedPanel1
             // 
-            resources.ApplyResources(this.roundedPanel1, "roundedPanel1");
             this.roundedPanel1.BackColor = System.Drawing.Color.White;
             this.roundedPanel1.BorderColor = System.Drawing.Color.DarkGray;
-            this.roundedPanel1.Controls.Add(this.btCopy);
+            this.roundedPanel1.Controls.Add(this.flowLayoutPanel1);
             this.roundedPanel1.Controls.Add(this.lbEmojiText);
-            this.roundedPanel1.Controls.Add(this.panel1);
             this.roundedPanel1.Controls.Add(this.label1);
+            resources.ApplyResources(this.roundedPanel1, "roundedPanel1");
             this.roundedPanel1.Name = "roundedPanel1";
             this.roundedPanel1.Radius = 1;
             this.roundedPanel1.Thickness = 1F;
             this.roundedPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.roundedPanel1_Paint);
-            // 
-            // btCopy
-            // 
-            resources.ApplyResources(this.btCopy, "btCopy");
-            this.btCopy.BackColor = System.Drawing.Color.Silver;
-            this.btCopy.BorderColor = System.Drawing.Color.White;
-            this.btCopy.Image = global::Diccon.Properties.Resources.copy_24;
-            this.btCopy.Name = "btCopy";
-            this.btCopy.Radius = 20;
-            this.btCopy.Thickness = 1F;
-            this.btCopy.Click += new System.EventHandler(this.btCopy_Click);
             // 
             // lbEmojiText
             // 
@@ -117,38 +104,11 @@
             this.lbEmojiText.Radius = 20;
             this.lbEmojiText.Thickness = 5F;
             // 
-            // panel1
-            // 
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Controls.Add(this.laugh);
-            this.panel1.Controls.Add(this.shame);
-            this.panel1.Controls.Add(this.silly);
-            this.panel1.Controls.Add(this.sleeping);
-            this.panel1.Controls.Add(this.wonder);
-            this.panel1.Controls.Add(this.astonished);
-            this.panel1.Controls.Add(this.annoyed);
-            this.panel1.Controls.Add(this.blind);
-            this.panel1.Controls.Add(this.cry);
-            this.panel1.Controls.Add(this.dead);
-            this.panel1.Controls.Add(this.doubtful);
-            this.panel1.Controls.Add(this.foolish);
-            this.panel1.Controls.Add(this.furious);
-            this.panel1.Controls.Add(this.glued);
-            this.panel1.Controls.Add(this.grumble);
-            this.panel1.Controls.Add(this.prejudice);
-            this.panel1.Controls.Add(this.reluctant);
-            this.panel1.Controls.Add(this.ridiculous);
-            this.panel1.Controls.Add(this.shocked);
-            this.panel1.Controls.Add(this.stuck);
-            this.panel1.Controls.Add(this.surrender);
-            this.panel1.Controls.Add(this.wary);
-            this.panel1.Name = "panel1";
-            // 
             // laugh
             // 
-            resources.ApplyResources(this.laugh, "laugh");
             this.laugh.Cursor = System.Windows.Forms.Cursors.Hand;
             this.laugh.Image = global::Diccon.Properties.Resources.laugh;
+            resources.ApplyResources(this.laugh, "laugh");
             this.laugh.Name = "laugh";
             this.laugh.TabStop = false;
             this.laugh.Click += new System.EventHandler(this.emojiClick);
@@ -157,9 +117,9 @@
             // 
             // shame
             // 
-            resources.ApplyResources(this.shame, "shame");
             this.shame.Cursor = System.Windows.Forms.Cursors.Hand;
             this.shame.Image = global::Diccon.Properties.Resources.shame;
+            resources.ApplyResources(this.shame, "shame");
             this.shame.Name = "shame";
             this.shame.TabStop = false;
             this.shame.Click += new System.EventHandler(this.emojiClick);
@@ -168,9 +128,9 @@
             // 
             // silly
             // 
-            resources.ApplyResources(this.silly, "silly");
             this.silly.Cursor = System.Windows.Forms.Cursors.Hand;
             this.silly.Image = global::Diccon.Properties.Resources.silly;
+            resources.ApplyResources(this.silly, "silly");
             this.silly.Name = "silly";
             this.silly.TabStop = false;
             this.silly.Click += new System.EventHandler(this.emojiClick);
@@ -179,9 +139,9 @@
             // 
             // sleeping
             // 
-            resources.ApplyResources(this.sleeping, "sleeping");
             this.sleeping.Cursor = System.Windows.Forms.Cursors.Hand;
             this.sleeping.Image = global::Diccon.Properties.Resources.sleeping;
+            resources.ApplyResources(this.sleeping, "sleeping");
             this.sleeping.Name = "sleeping";
             this.sleeping.TabStop = false;
             this.sleeping.Click += new System.EventHandler(this.emojiClick);
@@ -190,9 +150,9 @@
             // 
             // wonder
             // 
-            resources.ApplyResources(this.wonder, "wonder");
             this.wonder.Cursor = System.Windows.Forms.Cursors.Hand;
             this.wonder.Image = global::Diccon.Properties.Resources.wonder;
+            resources.ApplyResources(this.wonder, "wonder");
             this.wonder.Name = "wonder";
             this.wonder.TabStop = false;
             this.wonder.Click += new System.EventHandler(this.emojiClick);
@@ -201,9 +161,9 @@
             // 
             // astonished
             // 
-            resources.ApplyResources(this.astonished, "astonished");
             this.astonished.Cursor = System.Windows.Forms.Cursors.Hand;
             this.astonished.Image = global::Diccon.Properties.Resources.astonished;
+            resources.ApplyResources(this.astonished, "astonished");
             this.astonished.Name = "astonished";
             this.astonished.TabStop = false;
             this.astonished.Click += new System.EventHandler(this.emojiClick);
@@ -212,9 +172,9 @@
             // 
             // annoyed
             // 
-            resources.ApplyResources(this.annoyed, "annoyed");
             this.annoyed.Cursor = System.Windows.Forms.Cursors.Hand;
             this.annoyed.Image = global::Diccon.Properties.Resources.annoyed;
+            resources.ApplyResources(this.annoyed, "annoyed");
             this.annoyed.Name = "annoyed";
             this.annoyed.TabStop = false;
             this.annoyed.Click += new System.EventHandler(this.emojiClick);
@@ -223,9 +183,9 @@
             // 
             // blind
             // 
-            resources.ApplyResources(this.blind, "blind");
             this.blind.Cursor = System.Windows.Forms.Cursors.Hand;
             this.blind.Image = global::Diccon.Properties.Resources.blind;
+            resources.ApplyResources(this.blind, "blind");
             this.blind.Name = "blind";
             this.blind.TabStop = false;
             this.blind.Click += new System.EventHandler(this.emojiClick);
@@ -234,9 +194,9 @@
             // 
             // cry
             // 
-            resources.ApplyResources(this.cry, "cry");
             this.cry.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cry.Image = global::Diccon.Properties.Resources.cry;
+            resources.ApplyResources(this.cry, "cry");
             this.cry.Name = "cry";
             this.cry.TabStop = false;
             this.cry.Click += new System.EventHandler(this.emojiClick);
@@ -245,9 +205,9 @@
             // 
             // dead
             // 
-            resources.ApplyResources(this.dead, "dead");
             this.dead.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dead.Image = global::Diccon.Properties.Resources.dead;
+            resources.ApplyResources(this.dead, "dead");
             this.dead.Name = "dead";
             this.dead.TabStop = false;
             this.dead.Click += new System.EventHandler(this.emojiClick);
@@ -256,9 +216,9 @@
             // 
             // doubtful
             // 
-            resources.ApplyResources(this.doubtful, "doubtful");
             this.doubtful.Cursor = System.Windows.Forms.Cursors.Hand;
             this.doubtful.Image = global::Diccon.Properties.Resources.doubtful;
+            resources.ApplyResources(this.doubtful, "doubtful");
             this.doubtful.Name = "doubtful";
             this.doubtful.TabStop = false;
             this.doubtful.Click += new System.EventHandler(this.emojiClick);
@@ -267,9 +227,9 @@
             // 
             // foolish
             // 
-            resources.ApplyResources(this.foolish, "foolish");
             this.foolish.Cursor = System.Windows.Forms.Cursors.Hand;
             this.foolish.Image = global::Diccon.Properties.Resources.foolish;
+            resources.ApplyResources(this.foolish, "foolish");
             this.foolish.Name = "foolish";
             this.foolish.TabStop = false;
             this.foolish.Click += new System.EventHandler(this.emojiClick);
@@ -278,9 +238,9 @@
             // 
             // furious
             // 
-            resources.ApplyResources(this.furious, "furious");
             this.furious.Cursor = System.Windows.Forms.Cursors.Hand;
             this.furious.Image = global::Diccon.Properties.Resources.furious;
+            resources.ApplyResources(this.furious, "furious");
             this.furious.Name = "furious";
             this.furious.TabStop = false;
             this.furious.Click += new System.EventHandler(this.emojiClick);
@@ -289,9 +249,9 @@
             // 
             // glued
             // 
-            resources.ApplyResources(this.glued, "glued");
             this.glued.Cursor = System.Windows.Forms.Cursors.Hand;
             this.glued.Image = global::Diccon.Properties.Resources.glued;
+            resources.ApplyResources(this.glued, "glued");
             this.glued.Name = "glued";
             this.glued.TabStop = false;
             this.glued.Click += new System.EventHandler(this.emojiClick);
@@ -300,9 +260,9 @@
             // 
             // grumble
             // 
-            resources.ApplyResources(this.grumble, "grumble");
             this.grumble.Cursor = System.Windows.Forms.Cursors.Hand;
             this.grumble.Image = global::Diccon.Properties.Resources.grumble;
+            resources.ApplyResources(this.grumble, "grumble");
             this.grumble.Name = "grumble";
             this.grumble.TabStop = false;
             this.grumble.Click += new System.EventHandler(this.emojiClick);
@@ -311,9 +271,9 @@
             // 
             // prejudice
             // 
-            resources.ApplyResources(this.prejudice, "prejudice");
             this.prejudice.Cursor = System.Windows.Forms.Cursors.Hand;
             this.prejudice.Image = global::Diccon.Properties.Resources.prejudice;
+            resources.ApplyResources(this.prejudice, "prejudice");
             this.prejudice.Name = "prejudice";
             this.prejudice.TabStop = false;
             this.prejudice.Click += new System.EventHandler(this.emojiClick);
@@ -322,9 +282,9 @@
             // 
             // reluctant
             // 
-            resources.ApplyResources(this.reluctant, "reluctant");
             this.reluctant.Cursor = System.Windows.Forms.Cursors.Hand;
             this.reluctant.Image = global::Diccon.Properties.Resources.reluctant;
+            resources.ApplyResources(this.reluctant, "reluctant");
             this.reluctant.Name = "reluctant";
             this.reluctant.TabStop = false;
             this.reluctant.Click += new System.EventHandler(this.emojiClick);
@@ -333,9 +293,9 @@
             // 
             // ridiculous
             // 
-            resources.ApplyResources(this.ridiculous, "ridiculous");
             this.ridiculous.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ridiculous.Image = global::Diccon.Properties.Resources.ridiculous;
+            resources.ApplyResources(this.ridiculous, "ridiculous");
             this.ridiculous.Name = "ridiculous";
             this.ridiculous.TabStop = false;
             this.ridiculous.Click += new System.EventHandler(this.emojiClick);
@@ -344,9 +304,9 @@
             // 
             // shocked
             // 
-            resources.ApplyResources(this.shocked, "shocked");
             this.shocked.Cursor = System.Windows.Forms.Cursors.Hand;
             this.shocked.Image = global::Diccon.Properties.Resources.shocked;
+            resources.ApplyResources(this.shocked, "shocked");
             this.shocked.Name = "shocked";
             this.shocked.TabStop = false;
             this.shocked.Click += new System.EventHandler(this.emojiClick);
@@ -355,9 +315,9 @@
             // 
             // stuck
             // 
-            resources.ApplyResources(this.stuck, "stuck");
             this.stuck.Cursor = System.Windows.Forms.Cursors.Hand;
             this.stuck.Image = global::Diccon.Properties.Resources.stuck;
+            resources.ApplyResources(this.stuck, "stuck");
             this.stuck.Name = "stuck";
             this.stuck.TabStop = false;
             this.stuck.Click += new System.EventHandler(this.emojiClick);
@@ -366,9 +326,9 @@
             // 
             // surrender
             // 
-            resources.ApplyResources(this.surrender, "surrender");
             this.surrender.Cursor = System.Windows.Forms.Cursors.Hand;
             this.surrender.Image = global::Diccon.Properties.Resources.surrender;
+            resources.ApplyResources(this.surrender, "surrender");
             this.surrender.Name = "surrender";
             this.surrender.TabStop = false;
             this.surrender.Click += new System.EventHandler(this.emojiClick);
@@ -377,9 +337,9 @@
             // 
             // wary
             // 
-            resources.ApplyResources(this.wary, "wary");
             this.wary.Cursor = System.Windows.Forms.Cursors.Hand;
             this.wary.Image = global::Diccon.Properties.Resources.wary;
+            resources.ApplyResources(this.wary, "wary");
             this.wary.Name = "wary";
             this.wary.TabStop = false;
             this.wary.Click += new System.EventHandler(this.emojiClick);
@@ -391,6 +351,33 @@
             resources.ApplyResources(this.label1, "label1");
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Name = "label1";
+            // 
+            // flowLayoutPanel1
+            // 
+            resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
+            this.flowLayoutPanel1.Controls.Add(this.laugh);
+            this.flowLayoutPanel1.Controls.Add(this.wary);
+            this.flowLayoutPanel1.Controls.Add(this.surrender);
+            this.flowLayoutPanel1.Controls.Add(this.stuck);
+            this.flowLayoutPanel1.Controls.Add(this.shocked);
+            this.flowLayoutPanel1.Controls.Add(this.ridiculous);
+            this.flowLayoutPanel1.Controls.Add(this.reluctant);
+            this.flowLayoutPanel1.Controls.Add(this.prejudice);
+            this.flowLayoutPanel1.Controls.Add(this.grumble);
+            this.flowLayoutPanel1.Controls.Add(this.glued);
+            this.flowLayoutPanel1.Controls.Add(this.furious);
+            this.flowLayoutPanel1.Controls.Add(this.foolish);
+            this.flowLayoutPanel1.Controls.Add(this.doubtful);
+            this.flowLayoutPanel1.Controls.Add(this.dead);
+            this.flowLayoutPanel1.Controls.Add(this.cry);
+            this.flowLayoutPanel1.Controls.Add(this.blind);
+            this.flowLayoutPanel1.Controls.Add(this.annoyed);
+            this.flowLayoutPanel1.Controls.Add(this.astonished);
+            this.flowLayoutPanel1.Controls.Add(this.wonder);
+            this.flowLayoutPanel1.Controls.Add(this.sleeping);
+            this.flowLayoutPanel1.Controls.Add(this.silly);
+            this.flowLayoutPanel1.Controls.Add(this.shame);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             // 
             // emoji
             // 
@@ -405,9 +392,9 @@
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.Deactivate += new System.EventHandler(this.emoji_Deactivate);
+            this.Load += new System.EventHandler(this.emoji_Load);
             this.roundedPanel1.ResumeLayout(false);
             this.roundedPanel1.PerformLayout();
-            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.laugh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.shame)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.silly)).EndInit();
@@ -430,13 +417,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.stuck)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.surrender)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.wary)).EndInit();
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox laugh;
         private System.Windows.Forms.PictureBox shame;
         private System.Windows.Forms.PictureBox silly;
@@ -460,7 +447,7 @@
         private System.Windows.Forms.PictureBox surrender;
         private System.Windows.Forms.PictureBox wary;
         private RoundedLabel lbEmojiText;
-        private RoundedLabel btCopy;
         private RoundedPanel roundedPanel1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }

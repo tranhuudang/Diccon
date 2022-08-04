@@ -1,6 +1,6 @@
-﻿// khi người dùng gõ sai từ thì hiển thị các pillbox nhỏ để người dùng chọn đúng từ mà họ muốn tìm
-// hộp tìm kiếm trên cùng dùng để người dùng tìm những đoạn từ điển trước đây
-// người dùng có thể đánh dấu sao vào đoạn tin mà người dùng muốn (favourite added)
-// kết nối người dùng với đội ngũ tư vấn
-// người dùng có thể xem lại được những từ mà mình tra cứu cùng với nghĩa của chúng được lưu trong một file cục bộ
-//https://api.dictionaryapi.dev/media/pronunciations/en/serious-us.mp3
+﻿// https://api.dictionaryapi.dev/media/pronunciations/en/serious-us.mp3
+// offline synonym
+// mini flashcard to review learnd word
+// tự động nhận dạng ngôn ngữ để chuyển khi tra cứu
+// từ điển việt anh
+//

@@ -394,7 +394,7 @@
     <value>Bottom</value>
   </data>
   <data name="panelBottom.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 470</value>
+    <value>0, 512</value>
   </data>
   <data name="panelBottom.Size" type="System.Drawing.Size, System.Drawing">
     <value>339, 142</value>
@@ -413,30 +413,6 @@
   </data>
   <data name="&gt;&gt;panelBottom.ZOrder" xml:space="preserve">
     <value>4</value>
-  </data>
-  <data name="panel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>339, 5</value>
-  </data>
-  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>3</value>
   </data>
   <data name="flowChatBox.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -760,7 +736,7 @@
     <value>45, 0, 0, 0</value>
   </data>
   <data name="exampleflowLayoutSynonym.Size" type="System.Drawing.Size, System.Drawing">
-    <value>304, 60</value>
+    <value>304, 0</value>
   </data>
   <data name="exampleflowLayoutSynonym.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -3362,13 +3338,13 @@
     <value>Fill</value>
   </data>
   <data name="flowChatBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 5</value>
+    <value>0, 0</value>
   </data>
   <data name="flowChatBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
   </data>
   <data name="flowChatBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>339, 430</value>
+    <value>339, 451</value>
   </data>
   <data name="flowChatBox.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -3383,12 +3359,15 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;flowChatBox.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <metadata name="suggestionTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
   <data name="flowSuggestion.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="flowSuggestion.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="btSpellingCorrector.AutoSize" type="System.Boolean, mscorlib">
@@ -3605,13 +3584,16 @@
     <value>Bottom</value>
   </data>
   <data name="flowSuggestion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 435</value>
+    <value>0, 451</value>
+  </data>
+  <data name="flowSuggestion.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 33</value>
   </data>
   <data name="flowSuggestion.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>10, 5, 10, 0</value>
   </data>
   <data name="flowSuggestion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>339, 35</value>
+    <value>339, 61</value>
   </data>
   <data name="flowSuggestion.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -3626,7 +3608,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;flowSuggestion.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <metadata name="contextMenuNote.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>303, 17</value>
@@ -3664,6 +3646,66 @@
   <metadata name="synonymChecker.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>159, 17</value>
   </metadata>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 0</value>
+  </data>
+  <data name="label3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 30</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Listening to you...</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>listeningPanel</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="listeningPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="listeningPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>339, 31</value>
+  </data>
+  <data name="listeningPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="listeningPanel.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;listeningPanel.Name" xml:space="preserve">
+    <value>listeningPanel</value>
+  </data>
+  <data name="&gt;&gt;listeningPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listeningPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;listeningPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -3677,7 +3719,7 @@
     <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>339, 612</value>
+    <value>339, 654</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -5582,6 +5624,9 @@
         AAAAAAkAAAALAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIABAACAAQAAwAEAAMADAADAAwAAgAMA
         AIADAACAAwAAwAMAAMADAADAAwAAwAMAAMADAADgBwAA8A8AAP5/AAA=
 </value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>423, 10000</value>

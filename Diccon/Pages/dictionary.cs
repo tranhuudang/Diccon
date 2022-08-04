@@ -20,6 +20,7 @@ namespace Diccon
         userAction user = new userAction();
         connectivity connectivity = new connectivity();
         string spellingCorrectorCurrentWord = "";
+        emoji emoji = new emoji();
         [STAThreadAttribute]
         private void mainHall_Load(object sender, EventArgs e)
         {
@@ -31,6 +32,7 @@ namespace Diccon
             exampleColoredPicturePanel.BackColor = dicconProp.ColorA3;
             exampleItemSynonym.BackColor = dicconProp.ColorA5;
             examplePlayColoredPanel.BackColor = dicconProp.ColorA5;
+            listeningPanel.BackColor = dicconProp.ColorA9;
             btSynonym.BackColor = dicconProp.ColorA8;
             btImage.BackColor = dicconProp.ColorA8;
             addEmoji.BackColor = dicconProp.ColorA8;
@@ -55,16 +57,11 @@ namespace Diccon
 
         private void textFromMic_Click(object sender, EventArgs e)
         {
-            Thread thread = new Thread(() =>
-            {
-                speechToText speechToText = new speechToText();
-                speechToText.Location = new Point(Cursor.Position.X - speechToText.Width / 2, Cursor.Position.Y - speechToText.Height - 15);
-                speechToText.ShowDialog();
-
-            });
-            thread.Start();
+            listeningPanel.Visible = true;
+            listeningPanel.Refresh();
             soundRelated sound = new soundRelated();
             searchTextBox.Text = sound.SpeechToText(dicconProp.listenTimeInString);
+            listeningPanel.Visible = false;
         }
 
         private void VisibleControlInSuggestionBar()
@@ -372,9 +369,11 @@ namespace Diccon
 
         private void addEmoji_Click(object sender, EventArgs e)
         {
-            emoji emoji = new emoji();
-            emoji.Location = new Point(Cursor.Position.X - emoji.Width / 2, Cursor.Position.Y - emoji.Height - 15);
+            emoji.TopLevel = false;
+            flowChatBox.Controls.Add(emoji);
             emoji.Show();
+            flowChatBox.ScrollControlIntoView(emoji);
+            buttonAdd_Click(null, null);
         }
 
         private async void btSend_Click(object sender, EventArgs e)

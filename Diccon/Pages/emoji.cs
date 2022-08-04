@@ -38,17 +38,17 @@ namespace Diccon
         private void emojiClick(object sender, EventArgs e)
         {
             lbEmojiText.Text = (sender as PictureBox).Name;
-            Clipboard.SetText(lbEmojiText.Text);
         }
 
-        private void btCopy_Click(object sender, EventArgs e)
-        {
-            Clipboard.SetText(lbEmojiText.Text);
-        }
 
         private void roundedPanel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void emoji_Load(object sender, EventArgs e)
+        {
+            lbEmojiText.BackColor = dicconProp.ColorA8;
         }
     }
 }

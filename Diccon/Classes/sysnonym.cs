@@ -43,7 +43,7 @@ namespace Diccon
             try
             {
                 SQLHandler sqlHandler = new SQLHandler();
-                sqlHandler.Insert($"INSERT INTO dbo.DicconSynonym VALUES('{word}','{synonym}')");
+                sqlHandler.Insert($"INSERT INTO dbo.DicconSynonym VALUES('{word.ToLower()}','{synonym}')");
             }
             catch (Exception)
             {
