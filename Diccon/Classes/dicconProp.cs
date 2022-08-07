@@ -38,6 +38,7 @@ namespace Diccon
         public static int bottomPanel_DefaultHeight = 60;
         public static int bottomPanel_ExpandedHeight = 140;
 
+        public static string connectionString = "Server= 112.78.2.154;Database=zer42982_ZeroClubOne;Trusted_Connection=False;MultipleActiveResultSets=true;User ID=zer42982_study;Password=7wYi02_w";
 
         public static Color default_addNote_BackColor = Color.FromArgb(255, 192, 128);
         public static Color hover_addNote_BackColor = Color.FromArgb(242, 203, 164);

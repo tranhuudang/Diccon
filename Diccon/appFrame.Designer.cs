@@ -40,9 +40,13 @@
             this.panelHome = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.lbQuotation = new System.Windows.Forms.Label();
+            this.btDictionary = new Diccon.RoundedLabel();
+            this.btTimeline = new Diccon.RoundedLabel();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btCommunity = new Diccon.RoundedLabel();
+            this.btDonate = new Diccon.RoundedLabel();
             this.label6 = new System.Windows.Forms.Label();
             this.contextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.accountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -57,10 +61,6 @@
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.timeLineDetector = new System.Windows.Forms.Timer(this.components);
-            this.btDictionary = new Diccon.RoundedLabel();
-            this.btTimeline = new Diccon.RoundedLabel();
-            this.btCommunity = new Diccon.RoundedLabel();
-            this.btDonate = new Diccon.RoundedLabel();
             this.topPanel.SuspendLayout();
             this.topControlPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.buttonMenu)).BeginInit();
@@ -163,6 +163,34 @@
             resources.ApplyResources(this.lbQuotation, "lbQuotation");
             this.lbQuotation.Name = "lbQuotation";
             // 
+            // btDictionary
+            // 
+            resources.ApplyResources(this.btDictionary, "btDictionary");
+            this.btDictionary.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btDictionary.BorderColor = System.Drawing.Color.White;
+            this.btDictionary.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btDictionary.Image = global::Diccon.Properties.Resources.translate_36;
+            this.btDictionary.Name = "btDictionary";
+            this.btDictionary.Radius = 50;
+            this.btDictionary.Thickness = 5F;
+            this.btDictionary.Click += new System.EventHandler(this.btDictionary_Click);
+            this.btDictionary.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
+            this.btDictionary.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
+            // 
+            // btTimeline
+            // 
+            resources.ApplyResources(this.btTimeline, "btTimeline");
+            this.btTimeline.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btTimeline.BorderColor = System.Drawing.Color.White;
+            this.btTimeline.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btTimeline.Image = global::Diccon.Properties.Resources.timeline_36;
+            this.btTimeline.Name = "btTimeline";
+            this.btTimeline.Radius = 50;
+            this.btTimeline.Thickness = 5F;
+            this.btTimeline.Click += new System.EventHandler(this.btTimeline_Click);
+            this.btTimeline.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
+            this.btTimeline.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
+            // 
             // label3
             // 
             resources.ApplyResources(this.label3, "label3");
@@ -177,6 +205,34 @@
             // 
             resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
+            // 
+            // btCommunity
+            // 
+            resources.ApplyResources(this.btCommunity, "btCommunity");
+            this.btCommunity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btCommunity.BorderColor = System.Drawing.Color.White;
+            this.btCommunity.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btCommunity.Image = global::Diccon.Properties.Resources.chat_36;
+            this.btCommunity.Name = "btCommunity";
+            this.btCommunity.Radius = 50;
+            this.btCommunity.Thickness = 5F;
+            this.btCommunity.Click += new System.EventHandler(this.roundedLabel7_Click);
+            this.btCommunity.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
+            this.btCommunity.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
+            // 
+            // btDonate
+            // 
+            resources.ApplyResources(this.btDonate, "btDonate");
+            this.btDonate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btDonate.BorderColor = System.Drawing.Color.White;
+            this.btDonate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btDonate.Image = global::Diccon.Properties.Resources.support_36;
+            this.btDonate.Name = "btDonate";
+            this.btDonate.Radius = 50;
+            this.btDonate.Thickness = 5F;
+            this.btDonate.Click += new System.EventHandler(this.btDonate_Click);
+            this.btDonate.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
+            this.btDonate.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
             // 
             // label6
             // 
@@ -272,62 +328,6 @@
             // 
             this.timeLineDetector.Interval = 500;
             this.timeLineDetector.Tick += new System.EventHandler(this.timeLineDetector_Tick);
-            // 
-            // btDictionary
-            // 
-            resources.ApplyResources(this.btDictionary, "btDictionary");
-            this.btDictionary.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btDictionary.BorderColor = System.Drawing.Color.White;
-            this.btDictionary.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btDictionary.Image = global::Diccon.Properties.Resources.translate_36;
-            this.btDictionary.Name = "btDictionary";
-            this.btDictionary.Radius = 50;
-            this.btDictionary.Thickness = 5F;
-            this.btDictionary.Click += new System.EventHandler(this.btDictionary_Click);
-            this.btDictionary.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
-            this.btDictionary.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
-            // 
-            // btTimeline
-            // 
-            resources.ApplyResources(this.btTimeline, "btTimeline");
-            this.btTimeline.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btTimeline.BorderColor = System.Drawing.Color.White;
-            this.btTimeline.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btTimeline.Image = global::Diccon.Properties.Resources.timeline_36;
-            this.btTimeline.Name = "btTimeline";
-            this.btTimeline.Radius = 50;
-            this.btTimeline.Thickness = 5F;
-            this.btTimeline.Click += new System.EventHandler(this.btTimeline_Click);
-            this.btTimeline.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
-            this.btTimeline.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
-            // 
-            // btCommunity
-            // 
-            resources.ApplyResources(this.btCommunity, "btCommunity");
-            this.btCommunity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btCommunity.BorderColor = System.Drawing.Color.White;
-            this.btCommunity.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btCommunity.Image = global::Diccon.Properties.Resources.chat_36;
-            this.btCommunity.Name = "btCommunity";
-            this.btCommunity.Radius = 50;
-            this.btCommunity.Thickness = 5F;
-            this.btCommunity.Click += new System.EventHandler(this.roundedLabel7_Click);
-            this.btCommunity.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
-            this.btCommunity.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
-            // 
-            // btDonate
-            // 
-            resources.ApplyResources(this.btDonate, "btDonate");
-            this.btDonate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btDonate.BorderColor = System.Drawing.Color.White;
-            this.btDonate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btDonate.Image = global::Diccon.Properties.Resources.support_36;
-            this.btDonate.Name = "btDonate";
-            this.btDonate.Radius = 50;
-            this.btDonate.Thickness = 5F;
-            this.btDonate.Click += new System.EventHandler(this.btDonate_Click);
-            this.btDonate.MouseEnter += new System.EventHandler(this.RoundedLabel_MouseEnter);
-            this.btDonate.MouseLeave += new System.EventHandler(this.RoundedLabel_MouseLeave);
             // 
             // appFrame
             // 

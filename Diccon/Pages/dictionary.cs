@@ -27,7 +27,7 @@ namespace Diccon
             synonymChecker.Enabled = true;
             //searchTextBox.Text = Clipboard.GetText();
             ///////  T   H   E   M   E  ///////////////
-            panelNotice.BackColor = dicconProp.ColorA3;
+            //panelNotice.BackColor = dicconProp.ColorA3;
             exampleAnswerColoredPanel.BackColor = dicconProp.ColorA3;
             exampleColoredPicturePanel.BackColor = dicconProp.ColorA3;
             exampleItemSynonym.BackColor = dicconProp.ColorA5;
