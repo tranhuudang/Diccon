@@ -315,6 +315,9 @@
     <EmbeddedResource Include="Pages\yawa.resx">
       <DependentUpon>yawa.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pages\yawa.vi-VN.resx">
+      <DependentUpon>yawa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pages\yawa.vi.resx">
       <DependentUpon>yawa.cs</DependentUpon>
     </EmbeddedResource>

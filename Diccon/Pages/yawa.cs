@@ -29,9 +29,9 @@ namespace Diccon.Pages
             panelMain.BringToFront();
             panelTop.Dock = DockStyle.Top;
             btAsk.BackColor = dicconProp.ColorA8;
+            btYourQuestion.BackColor = dicconProp.ColorA3;
             btInstantAsk.BackColor = dicconProp.ColorA8;
             btPeopleTop.BackColor = dicconProp.ColorA3;
-            btYoursTop.BackColor = dicconProp.ColorA3;
             btAskTop.BackColor = dicconProp.ColorA3;
             richQuestion.BackColor = dicconProp.ColorA9;
             globalExamplePanel.BackColor = dicconProp.ColorA9;
@@ -238,22 +238,18 @@ namespace Diccon.Pages
                 case "btAskTop":
                     btAskTop.Visible = false;
                     btPeopleTop.Visible = true;
-                    btYoursTop.Visible = true;
                     break;
                 case "btPeopleTop":
                     btAskTop.Visible = true;
                     btPeopleTop.Visible = false;
-                    btYoursTop.Visible = true;
                     break;
                 case "btYoursTop":
                     btAskTop.Visible = true;
                     btPeopleTop.Visible = true;
-                    btYoursTop.Visible = false;
                     break;
                 case "answerBox":
                     btAskTop.Visible = true;
                     btPeopleTop.Visible = true;
-                    btYoursTop.Visible = true;
                     break;
                 default:
                     break;
@@ -438,6 +434,19 @@ namespace Diccon.Pages
         private void lbQuestionTitle_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btYourQuestion_Click(object sender, EventArgs e)
+        {
+            listLoadedMessage = "";
+
+
+            TopControlSwitch("btYoursTop");
+            openPanel(panelYours);
+            btReloadYours_Click(null, null);
+            btReloadYours.BringToFront();
+            // Disable MessageChecker when going out of answer tab
+            newMessageChecker.Enabled = false;
         }
     }
 }
