@@ -176,7 +176,6 @@ namespace Diccon
             {
                 timeLineDetector.Enabled = false;
             }
-            btStar.Visible = false;
             string formName = targetForm.Text;
             title.Text = formName;
             string[] pagesName = { "Dictionary", "Yawa", "Notes", "Timeline" };
@@ -188,15 +187,18 @@ namespace Diccon
                 {
                     if (Properties.Settings.Default["staredForm"].ToString() == targetForm.Text)
                     {
+                        btStar.Visible = dicconProp.language == "english" ? true : false;
+
                         btStar.IconColor = Color.Gold;
                         btStar.IconFont = IconFont.Solid;
                     }
                     else
                     {
+                        btStar.Visible = dicconProp.language == "english" ? true : false;
+
                         btStar.IconColor = Color.Black;
                         btStar.IconFont = IconFont.Regular;
                     }
-                    btStar.Visible = true;
                     break;
                 }
             }

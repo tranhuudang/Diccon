@@ -50,6 +50,13 @@ namespace Diccon
             flowChatBox.HorizontalScroll.Enabled = false;
             flowChatBox.Padding = new Padding(10, 0, 0, 0);
 
+            // load up one single random translate in the first time go here 
+            if (dicconProp.firstTimeOpen == true)
+            {
+                searchTextBox.Text = Properties.Settings.Default["lastWord"].ToString()==""? "hello" : Properties.Settings.Default["lastWord"].ToString(); 
+                searchTextBox_KeyDown(null, null);
+            }
+            dicconProp.firstTimeOpen = false;
 
         }
 
@@ -108,7 +115,7 @@ namespace Diccon
 
                 // if user type in just one word, so the case is we will use userSingMessage instead of userLongMessage
                 int numberOfWord = word.countWord(searchTextBox.Text);
-
+                searchWord = searchTextBox.Text.Trim();
                 if (numberOfWord > 1)
                 {
                     bool isOnline = new connectivity().isOnline();
@@ -129,13 +136,15 @@ namespace Diccon
                 else if (numberOfWord == 1)
                 {
                     // display message 
-                    user.userSingleMessage(searchTextBox.Text, exampleShortText, exampleShortPanel, flowChatBox);
-                    bot.botSoundMessage(searchTextBox.Text, exampleTextHolder, examplePlayButton, examplePlayColoredPanel, examplePlayAlignPanel, examplePlayPanel, flowChatBox);
-                    string definitionResult = searchMatchWord(searchTextBox.Text);
+                    user.userSingleMessage(searchWord, exampleShortText, exampleShortPanel, flowChatBox);
+                    bot.botSoundMessage(searchWord, exampleTextHolder, examplePlayButton, examplePlayColoredPanel, examplePlayAlignPanel, examplePlayPanel, flowChatBox);
+                    string definitionResult = searchMatchWord(searchWord);
                     if(definitionResult != dicconProp.promptMissingWord)
                     {
                         // add word to history file if the word is exist in the dictionary database
-                        addHistory(searchTextBox.Text);
+                        addHistory(searchWord);
+                        Properties.Settings.Default["lastWord"] = searchWord;
+                        Properties.Settings.Default.Save();
                         bot.botAnswerLongMessage(definitionResult, exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
                     }
                     else
@@ -314,8 +323,10 @@ namespace Diccon
         {
             // Get correct form of word from Spelling Corrector library
             spellingCorrectorCurrentWord = spellingCorrector(dicconProp.currentWord);
-            if ((spellingCorrectorCurrentWord.Length > 1) && (spellingCorrectorCurrentWord.ToLower() != dicconProp.currentWord.ToLower()))
+            spellingCorrectorCurrentWord = spellingCorrectorCurrentWord.ToLower();
+            if ((spellingCorrectorCurrentWord.Length > 1) && (spellingCorrectorCurrentWord != dicconProp.currentWord.ToLower()))
             {
+
                 btSpellingCorrector.Text = spellingCorrectorCurrentWord.Replace(spellingCorrectorCurrentWord.Substring(0, 1), spellingCorrectorCurrentWord.Substring(0, 1).ToUpper());
                 btSpellingCorrector.Visible = true;
             }

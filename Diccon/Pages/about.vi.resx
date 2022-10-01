@@ -119,31 +119,25 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 13</value>
+    <value>70, 16</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Phiên bản:</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 13</value>
+    <value>56, 16</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
     <value>Tác giả:</value>
   </data>
+  <data name="lbVersion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>127, 244</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>57, 313</value>
+  </data>
   <data name="label8.Text" xml:space="preserve">
     <value>Lưu ý: Chương trình này được bảo vệ bởi luật bản quyền và luật pháp quốc tế. Việc sao chép và phân phối bất hợp pháp có thể dẫn tới sự can thiệt của cơ quan công quyền.</value>
-  </data>
-  <data name="label9.Text" xml:space="preserve">
-    <value>Đang tải..</value>
-  </data>
-  <data name="btUpdates.Location" type="System.Drawing.Point, System.Drawing">
-    <value>119, 328</value>
-  </data>
-  <data name="btUpdates.Size" type="System.Drawing.Size, System.Drawing">
-    <value>147, 34</value>
-  </data>
-  <data name="btUpdates.Text" xml:space="preserve">
-    <value>Kiểm tra cập nhật</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Thông tin</value>

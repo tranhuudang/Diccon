@@ -31,7 +31,7 @@ namespace Diccon.Pages
                 string[] contents = File.ReadAllText(dicconProp.historyFileName).Split(dicconProp.saparateCharactorInHistory);
                 foreach (var item in contents)
                 {
-                    listItem.Add("      " + item);
+                    listItem.Add("      " + item.ToLower());
                 }
                 listItem.Reverse();
                 List<string>filterdList= listItem.Distinct().ToList();

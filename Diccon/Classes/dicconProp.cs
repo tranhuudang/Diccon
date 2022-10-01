@@ -37,7 +37,7 @@ namespace Diccon
         // botton height use to control the panel when open bottom menu
         public static int bottomPanel_DefaultHeight = 60;
         public static int bottomPanel_ExpandedHeight = 140;
-
+        public static bool firstTimeOpen = true;
         public static string connectionString = "Server= 112.78.2.154;Database=zer42982_ZeroClubOne;Trusted_Connection=False;MultipleActiveResultSets=true;User ID=zer42982_study;Password=7wYi02_w";
 
         public static Color default_addNote_BackColor = Color.FromArgb(255, 192, 128);
