@@ -38,12 +38,12 @@ namespace Diccon
 
         }
 
-        private void writeSynonymToDatabse(string word, string synonym)
+        private async void writeSynonymToDatabse(string word, string synonym)
         {
             try
             {
                 SQLHandler sqlHandler = new SQLHandler();
-                sqlHandler.Insert($"INSERT INTO dbo.DicconSynonym VALUES('{word.ToLower()}','{synonym}')");
+                await sqlHandler.Insert($"INSERT INTO dbo.DicconSynonym VALUES('{word.ToLower()}','{synonym}')");
             }
             catch (Exception)
             {

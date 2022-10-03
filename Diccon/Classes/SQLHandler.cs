@@ -33,12 +33,12 @@ namespace Diccon
             sqlDataAdapter.Fill(dataTable);
             return dataTable;
         }
-        public void Insert(string insertString)
+        public async Task Insert(string insertString)
         {
             SqlConnection sqlConnection = new SqlConnection(dicconProp.connectionString);
-            sqlConnection.Open();
+            await sqlConnection.OpenAsync();
             SqlCommand cmd = new SqlCommand(insertString, sqlConnection);
-            cmd.ExecuteNonQuery();
+            await cmd.ExecuteNonQueryAsync();
             sqlConnection.Close();
         }
         public void Delete(string deleteString)
