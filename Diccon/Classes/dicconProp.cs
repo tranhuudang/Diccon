@@ -63,6 +63,10 @@ namespace Diccon
         public static string enableFlashClipboard = Properties.Settings.Default["FlashClipboard"].ToString();
         public static string userID = Properties.Settings.Default["userID"].ToString();
         /// <summary>
+        ///  WebBrowser used for html2Rtf Converter
+        /// </summary>
+
+        /// <summary>
         /// Duo language notifications
         /// </summary>
         public static string promptLogin =

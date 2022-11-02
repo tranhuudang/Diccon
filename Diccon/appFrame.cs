@@ -15,6 +15,7 @@ using System.Data.SqlClient;
 using System.Data;
 using System.Collections.Generic;
 using System.Linq;
+using Diccon.Classes;
 
 namespace Diccon
 {
@@ -29,6 +30,7 @@ namespace Diccon
         Form settingForm = null;
         Form yawaForm = null;
         Form loginForm = null;
+       
         public appFrame()
         {
             switch (Properties.Settings.Default["language"])
@@ -513,5 +515,11 @@ namespace Diccon
             Properties.Settings.Default.Save();
             Application.Restart();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+      
+        }
+
     }
 }

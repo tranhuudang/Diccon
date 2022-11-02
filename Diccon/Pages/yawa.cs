@@ -106,11 +106,11 @@ namespace Diccon.Pages
             dicconProp.RoundedLabel_Darker_MouseLeave(sender, e);
         }
 
-        private void btAsk_Click(object sender, EventArgs e)
+        private async void btAsk_Click(object sender, EventArgs e)
         {
 
             SQLHandler sqlHandler = new SQLHandler();
-            sqlHandler.Insert("Insert into dbo.DicconAsking(Question, AskUserId, AskDate) values(N'" + richQuestion.Text.Replace("'", "") + "','" + dicconProp.userID + "','" + DateTime.Today + "')");
+            await sqlHandler.Insert("Insert into dbo.DicconAsking(Question, AskUserId, AskDate) values(N'" + richQuestion.Text.Replace("'", "") + "','" + dicconProp.userID + "','" + DateTime.Today + "')");
             richQuestion.Text = "";
             btPeopleTop_Click(null, null);
         }

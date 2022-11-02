@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace Diccon
 {
-    public class SHA256Encrypt
+    public class sha256Encrypt
     {
         private string _key;
         private int _salt=100;
 
-        public SHA256Encrypt(string password)
+        public sha256Encrypt(string password)
         {
             _key = password;
         }

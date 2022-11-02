@@ -53,7 +53,7 @@ namespace Diccon
             // load up one single random translate in the first time go here 
             if (dicconProp.firstTimeOpen == true)
             {
-                searchTextBox.Text = Properties.Settings.Default["lastWord"].ToString()==""? "hello" : Properties.Settings.Default["lastWord"].ToString(); 
+                searchTextBox.Text = Properties.Settings.Default["lastWord"].ToString() == "" ? "hello" : Properties.Settings.Default["lastWord"].ToString();
                 searchTextBox_KeyDown(null, null);
             }
             dicconProp.firstTimeOpen = false;
@@ -112,11 +112,24 @@ namespace Diccon
             if (dicconProp.currentWord != "")
             {
                 wordRelated word = new wordRelated();
-
-                // if user type in just one word, so the case is we will use userSingMessage instead of userLongMessage
                 int numberOfWord = word.countWord(searchTextBox.Text);
-                searchWord = searchTextBox.Text.Trim();
-                if (numberOfWord > 1)
+                if (numberOfWord > 3)
+                    user.userLongMessage(searchTextBox.Text + "\n", exampleAskLongText, exampleAskLongColoredPanel, exampleAskLongPanel, flowChatBox);
+                else
+                    user.userSingleMessage(searchWord, exampleShortText, exampleShortPanel, flowChatBox);
+
+
+                bot.botSoundMessage(searchWord, exampleTextHolder, examplePlayButton, examplePlayColoredPanel, examplePlayAlignPanel, examplePlayPanel, flowChatBox);
+                string definitionResult = await searchMatchWord(searchWord);
+                if (definitionResult != dicconProp.promptMissingWord)
+                {
+                    // add word to history file if the word is exist in the dictionary database
+                    addHistory(searchWord);
+                    Properties.Settings.Default["lastWord"] = searchWord;
+                    Properties.Settings.Default.Save();
+                    bot.botAnswerLongMessage(definitionResult, exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
+                }
+                else
                 {
                     bool isOnline = new connectivity().isOnline();
                     if (isOnline)
@@ -124,35 +137,19 @@ namespace Diccon
                         // add word to history file
                         addHistory(searchTextBox.Text);
                         // display message
-                        user.userLongMessage(searchTextBox.Text + "\n", exampleAskLongText, exampleAskLongColoredPanel, exampleAskLongPanel, flowChatBox);
-                        dicconProp.currentTranslatedWord = await bot.getTranslatedTextAsync(dicconProp.currentWord);
+                        dicconProp.currentTranslatedWord = await bot.getEnViTranslatedTextAsync(dicconProp.currentWord);
+                        if (dicconProp.currentTranslatedWord == dicconProp.currentWord)
+                            dicconProp.currentTranslatedWord = await bot.getViEnTranslatedTextAsync(dicconProp.currentWord);
                         bot.botAnswerLongMessage(dicconProp.currentTranslatedWord + "\n", exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
                     }
                     else
                     {
                         MessageBox.Show(dicconProp.errorInternet, dicconProp.caption);
                     }
+                    //bot.botAnswerLongMessage(definitionResult, exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
                 }
-                else if (numberOfWord == 1)
-                {
-                    // display message 
-                    user.userSingleMessage(searchWord, exampleShortText, exampleShortPanel, flowChatBox);
-                    bot.botSoundMessage(searchWord, exampleTextHolder, examplePlayButton, examplePlayColoredPanel, examplePlayAlignPanel, examplePlayPanel, flowChatBox);
-                    string definitionResult = searchMatchWord(searchWord);
-                    if(definitionResult != dicconProp.promptMissingWord)
-                    {
-                        // add word to history file if the word is exist in the dictionary database
-                        addHistory(searchWord);
-                        Properties.Settings.Default["lastWord"] = searchWord;
-                        Properties.Settings.Default.Save();
-                        bot.botAnswerLongMessage(definitionResult, exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
-                    }
-                    else
-                    {
-                        bot.botAnswerLongMessage(definitionResult, exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
-                    }
-                    suggestionTimer.Enabled = true;
-                }
+                suggestionTimer.Enabled = true;
+
                 searchTextBox.Text = "";
             }
         }
@@ -172,7 +169,7 @@ namespace Diccon
                 history.Close();
             }
         }
-        public string searchMatchWord(string wordsToSearch) // THIS IS FUNCTION TO SEARCH TEXT 
+        public async Task<string> searchMatchWord(string wordsToSearch) // THIS IS FUNCTION TO SEARCH TEXT 
         {
 
             // xử lí từ ngữ được người dùng nhập vào------------------
@@ -202,9 +199,9 @@ namespace Diccon
             {
                 SQLHandler sqlHandler = new SQLHandler();
                 if (wordsToSearch.Length > 9)
-                    sqlHandler.Insert("Insert into dbo.DicconMissing values(N'" + dicconProp.userID + "',N'" + wordsToSearch.Substring(0, 9) + "')");
+                    await sqlHandler.Insert("Insert into dbo.DicconMissing values(N'" + dicconProp.userID + "',N'" + wordsToSearch.Substring(0, 9) + "')");
                 else
-                    sqlHandler.Insert("Insert into dbo.DicconMissing values(N'" + dicconProp.userID + "',N'" + wordsToSearch + "')");
+                    await sqlHandler.Insert("Insert into dbo.DicconMissing values(N'" + dicconProp.userID + "',N'" + wordsToSearch + "')");
 
 
 

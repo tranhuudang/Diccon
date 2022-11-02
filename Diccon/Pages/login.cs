@@ -21,7 +21,7 @@ namespace Diccon.Pages
 
         private void btLogin_Click(object sender, EventArgs e)
         {
-            string encryptPass = new SHA256Encrypt(tbPassword.Text.Trim()).Hash();
+            string encryptPass = new sha256Encrypt(tbPassword.Text.Trim()).Hash();
             string queryString = "Select * from dbo.DicconUser where Email='" + tbEmail.Text.Trim() + "' and Password='" + encryptPass + "'";
             SQLHandler sqlHandler = new SQLHandler();
             DataTable dataTable = sqlHandler.Select(queryString);
@@ -150,12 +150,12 @@ namespace Diccon.Pages
             }
         }
 
-        private void btCreateNow_Click(object sender, EventArgs e)
+        private async void btCreateNow_Click(object sender, EventArgs e)
         {
-            string encryptPass = new SHA256Encrypt(createPass_1.Text.Trim()).Hash();
+            string encryptPass = new sha256Encrypt(createPass_1.Text.Trim()).Hash();
             string queryString = "Insert into dbo.DicconUser(Email, Password) values ('"+createEmail.Text+"','"+encryptPass+"')";
             SQLHandler sql = new SQLHandler();
-            sql.Insert(queryString);
+            await sql.Insert(queryString);
             // Close create form and open login form
             this.Text = loginText.Text;
             panelManage.Visible = false;

@@ -121,9 +121,6 @@
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
     <value>148, 261</value>
   </data>
-  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>50, 364</value>
-  </data>
   <data name="aboutToolStripMenuItem.Text" xml:space="preserve">
     <value>Thông tin</value>
   </data>

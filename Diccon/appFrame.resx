@@ -397,7 +397,7 @@
     <value>btDictionary</value>
   </data>
   <data name="&gt;&gt;btDictionary.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.1.1.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=6.1.5.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btDictionary.Parent" xml:space="preserve">
     <value>panelHome</value>
@@ -430,7 +430,7 @@
     <value>btTimeline</value>
   </data>
   <data name="&gt;&gt;btTimeline.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.1.1.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=6.1.5.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btTimeline.Parent" xml:space="preserve">
     <value>panelHome</value>
@@ -571,7 +571,7 @@
     <value>btCommunity</value>
   </data>
   <data name="&gt;&gt;btCommunity.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.1.1.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=6.1.5.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btCommunity.Parent" xml:space="preserve">
     <value>panelHome</value>
@@ -604,7 +604,7 @@
     <value>btDonate</value>
   </data>
   <data name="&gt;&gt;btDonate.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=6.1.1.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=6.1.5.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btDonate.Parent" xml:space="preserve">
     <value>panelHome</value>
@@ -773,9 +773,6 @@
   </data>
   <metadata name="timeLineDetector.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>254, 17</value>
-  </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>vi-VN</value>
   </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -2661,6 +2658,9 @@
         AADwDwAAwAMAAIABAACAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAQAAgAEAAMAD
         AADwDwAA
 </value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>371, 10000</value>

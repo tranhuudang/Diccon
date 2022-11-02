@@ -220,7 +220,7 @@ namespace Diccon
         /// </summary>
         /// <param name="text"></param>
         /// <returns></returns>
-        public async Task<string> getTranslatedTextAsync(string text)
+        public async Task<string> getEnViTranslatedTextAsync(string text)
         {
             try
             {
@@ -268,6 +268,53 @@ namespace Diccon
 
         }
 
+        public async Task<string> getViEnTranslatedTextAsync(string text)
+        {
+            try
+            {
+                var client = new HttpClient();
+                var request = new HttpRequestMessage
+                {
+                    Method = HttpMethod.Post,
+                    RequestUri = new Uri("https://microsoft-translator-text.p.rapidapi.com/translate?to=en&api-version=3.0&profanityAction=NoAction&textType=plain&suggestedFrom=vi"),
+                    Headers ={
+                            { "x-rapidapi-host", "microsoft-translator-text.p.rapidapi.com" },
+                            { "x-rapidapi-key", "a10d63c67cmshd79f69a2d87629ap1e586djsna7cdee48e5de" },
+                         },
+                    Content = new StringContent("[\r\n    {\r\n        \"Text\": \"" + text + "\"\r\n    }\r\n]")
+                    {
+                        Headers =
+                        {
+                            ContentType = new MediaTypeHeaderValue("application/json")
+                        }
+                    }
+                };
+                string body;
+                using (var response = await client.SendAsync(request))
+                {
+                    if (response.IsSuccessStatusCode)
+                    {
+                        body = await response.Content.ReadAsStringAsync();
+                        JsonNode note = JsonNode.Parse(body);
+                        string translatedWord = note[0]["translations"][0]["text"].GetValue<string>();
+                        return translatedWord;
+                    }
+                    else
+                    {
+
+                        return dicconProp.errorInternet;
+
+                    }
+
+                }
+            }
+            catch (Exception)
+            {
+                return dicconProp.errorInternet;
+            }
+
+
+        }
 
         public async void botImageAnswer(PictureBox examplePixabayLogo, RoundedPictureBox examplePictureBox, RoundedPanel exampleColoredPanel, Panel examplePanel, FlowLayoutPanel targetFlowLayout)
         {
