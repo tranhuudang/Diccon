@@ -120,7 +120,7 @@ namespace Diccon
             playButton.Click += PlayButton_Click;
 
             textHolder.Text = textToPlay;
-
+            textHolder.MaximumSize = examplePlayButton.MaximumSize;
             textHolder.Location = exampleTextHolder.Location;
             textHolder.Font = exampleTextHolder.Font;
             textHolder.AutoSize = true;

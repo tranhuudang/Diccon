@@ -13,6 +13,7 @@ namespace Diccon.Pages
 {
     public partial class timeline : Form
     {
+        List<string> filterdList;
         public timeline()
         {
             InitializeComponent();
@@ -24,7 +25,7 @@ namespace Diccon.Pages
             loadUpTimeline();
         }
         private void loadUpTimeline()
-        {
+        { 
             List<string> listItem = new List<string>();
             if (File.Exists(dicconProp.historyFileName))
             {
@@ -34,7 +35,7 @@ namespace Diccon.Pages
                     listItem.Add("      " + item.ToLower());
                 }
                 listItem.Reverse();
-                List<string>filterdList= listItem.Distinct().ToList();
+                filterdList= listItem.Distinct().ToList();
                 listHistory.DataSource = filterdList;
             }
         }
@@ -71,14 +72,10 @@ namespace Diccon.Pages
             e.DrawFocusRectangle();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-               
-        }
-
 
         private void timeline_VisibleChanged(object sender, EventArgs e)
         {
+            listHistory.DataSource = null;
             loadUpTimeline();
         }
 
@@ -87,30 +84,5 @@ namespace Diccon.Pages
             dicconProp.wordFromTimeline = listHistory.SelectedItem.ToString();
         }
 
-        private void doubleClickDetector_Tick(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void btRemove_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (File.Exists(dicconProp.historyFileName))
-                {
-                    if (MessageBox.Show(dicconProp.promptDeleteHistoryFile, dicconProp.caption, MessageBoxButtons.YesNo) == DialogResult.Yes)
-                    {
-                        File.Delete(dicconProp.historyFileName);
-                        listHistory.Items.Clear();
-                    }
-
-                }
-            }
-            catch (Exception)
-            {
-                MessageBox.Show(dicconProp.errorDeleteHistoryFile, dicconProp.caption);
-            }
-           
-        }
     }
 }

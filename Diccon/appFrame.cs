@@ -308,6 +308,17 @@ namespace Diccon
 
         private void appFrame_FormClosing(object sender, FormClosingEventArgs e)
         {
+            try
+            {
+                if (Properties.Settings.Default["autoBackup"].ToString() != "False")
+
+                    backUpTimeline();
+
+            }
+            catch (Exception)
+            {
+
+            }
             Properties.Settings.Default.Save();
         }
 
@@ -437,13 +448,29 @@ namespace Diccon
 
         private void backUpSyncToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            try
+            {
+                backUpTimeline();
+                MessageBox.Show(dicconProp.promptSyncedSuccess, dicconProp.caption);
+            }
+            catch (Exception error)
+            {
+                //MessageBox.Show(dicconProp.errorBackup, dicconProp.caption);
+                MessageBox.Show(error.ToString(), dicconProp.caption);
+
+
+            }
+
+        }
+
+        private void backUpTimeline() {
+
             string timelineLocalContents = "";
             string timelineOnlineContents = "";
             connectivity connectivity = new connectivity();
             if (connectivity.isOnline())
             {
-                try
-                {
+                
                     if (File.Exists(dicconProp.historyFileName))
                     {
                         // Get both local and online data together, and then mix them up, filter out doulicate and push online and local
@@ -483,21 +510,14 @@ namespace Diccon
                         history.Write(timelineOnlineContents);
                         history.Close();
                     }
-                    MessageBox.Show(dicconProp.promptSyncedSuccess, dicconProp.caption);
-                }
-                catch (Exception)
-                {
-                    MessageBox.Show(dicconProp.errorBackup, dicconProp.caption);
-
-
-                }
+               
+               
 
             }
             else
             {
                 MessageBox.Show(dicconProp.errorInternet, dicconProp.caption);
             }
-
 
         }
 
@@ -521,5 +541,10 @@ namespace Diccon
       
         }
 
+        private void lbQuotation_Click(object sender, EventArgs e)
+        {
+            dicconProp.wordFromTimeline = lbQuotation.Text.Replace("\"","");
+            btDictionary_Click(null, null);
+        }
     }
 }
