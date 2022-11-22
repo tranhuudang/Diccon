@@ -269,6 +269,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\dictionary.vi.resx">
       <DependentUpon>dictionary.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\donate.vi-VN.resx">
       <DependentUpon>donate.cs</DependentUpon>
@@ -281,6 +282,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\dictionary.resx">
       <DependentUpon>dictionary.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\donate.resx">
       <DependentUpon>donate.cs</DependentUpon>
@@ -290,6 +292,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\ImageIndicatorMessage.resx">
       <DependentUpon>ImageIndicatorMessage.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\login.resx">
       <DependentUpon>login.cs</DependentUpon>

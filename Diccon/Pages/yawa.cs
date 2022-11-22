@@ -138,7 +138,7 @@ namespace Diccon.Pages
             }
 
         }
-        string listLoadedMessage ;
+        string listLoadedMessage;
         private void GoToAnswer_Click(object sender, EventArgs e)
         {
             newMessageChecker.Enabled = true;
@@ -146,7 +146,7 @@ namespace Diccon.Pages
             openPanel(panelAnswer);
             try
             {
-               
+
                 ///
                 /// Sample Answer from SQL: #đây là câu trả lời#?Đây là câu hỏi#?đây là câu hỏi kế#đây là câu trả lời
                 DataTable dataTable = sqlHandler.Select("Select Answer, AskUserId, Question from dbo.DicconAsking where Id=" + (sender as Label).Tag.ToString());
@@ -178,57 +178,54 @@ namespace Diccon.Pages
             catch (Exception)
             {
 
-               
+
             }
         }
 
 
         private void ReloadInChat()
         {
-
             try
             {
-                if (connectivity.isOnline())
+                /// Sample Answer from SQL: #đây là câu trả lời#?Đây là câu hỏi#?đây là câu hỏi kế#đây là câu trả lời
+                DataTable dataTable = sqlHandler.Select("Select Answer, AskUserId from dbo.DicconAsking where Id=" + currentQuestionID);
+                if (currentAnswerString != dataTable.Rows[0][0].ToString())
                 {
-                    /// Sample Answer from SQL: #đây là câu trả lời#?Đây là câu hỏi#?đây là câu hỏi kế#đây là câu trả lời
-                    DataTable dataTable = sqlHandler.Select("Select Answer, AskUserId from dbo.DicconAsking where Id=" + currentQuestionID);
-                    if (currentAnswerString != dataTable.Rows[0][0].ToString())
+                    // clear flowchatbox for a new bunch of conversasion
+                    //flowChatBox.Controls.Clear();
+                    currentAnswerString = dataTable.Rows[0][0].ToString();
+                    string[] strings = dataTable.Rows[0][0].ToString().Split('#');
+                    foreach (var item in strings)
                     {
-                        // clear flowchatbox for a new bunch of conversasion
-                        //flowChatBox.Controls.Clear();
-                        currentAnswerString = dataTable.Rows[0][0].ToString();
-                        string[] strings = dataTable.Rows[0][0].ToString().Split('#');
-                        foreach (var item in strings)
-                        {
-                            if (!listLoadedMessage.Contains(item) && !listLoadedMessage.Contains("?" + item))
-                                if ((item.Trim() != "") && (item.StartsWith("?")))
-                                {
-                                    user.userLongMessage(item.Substring(1), exampleAskLongText, exampleAskLongColoredPanel, exampleAskLongPanel, flowChatBox);
-                                    listLoadedMessage += item;
-                                }
-                                else if ((item.Trim() != "") && (!item.StartsWith("?")))
-                                {
-                                    bot.botAnswerLongMessage(item, exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
-                                    listLoadedMessage += item;
+                        if (!listLoadedMessage.Contains(item) && !listLoadedMessage.Contains("?" + item))
+                            if ((item.Trim() != "") && (item.StartsWith("?")))
+                            {
+                                user.userLongMessage(item.Substring(1), exampleAskLongText, exampleAskLongColoredPanel, exampleAskLongPanel, flowChatBox);
+                                listLoadedMessage += item;
+                            }
+                            else if ((item.Trim() != "") && (!item.StartsWith("?")))
+                            {
+                                bot.botAnswerLongMessage(item, exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
+                                listLoadedMessage += item;
 
-                                }
-                        }
-                    }
-                    if (dicconProp.userID == dataTable.Rows[0][1].ToString()) // if userId == AskUserId -> this is the one who create this question
-                    {
-                        btRemove.Visible = true;
-                    }
-                    else
-                    {
-                        btRemove.Visible = false;
+                            }
                     }
                 }
+                if (dicconProp.userID == dataTable.Rows[0][1].ToString()) // if userId == AskUserId -> this is the one who create this question
+                {
+                    btRemove.Visible = true;
+                }
+                else
+                {
+                    btRemove.Visible = false;
+                }
+
             }
             catch (Exception)
             {
-                MessageBox.Show(dicconProp.errorUnknown+"- #165-435-996", dicconProp.caption);
+                MessageBox.Show(dicconProp.errorUnknown + "- #165-435-996", dicconProp.caption);
             }
-            
+
         }
 
         private void TopControlSwitch(string controlName)
@@ -331,7 +328,7 @@ namespace Diccon.Pages
                     }
                     answer_textBox.Text = "";
                 }
-                
+
             }
         }
 
@@ -389,7 +386,7 @@ namespace Diccon.Pages
         connectivity connectivity = new connectivity();
         private void newMessageChecker_Tick(object sender, EventArgs e)
         {
-            newMessageChecker.Enabled=false;
+            newMessageChecker.Enabled = false;
             if (connectivity.isOnline())
             {
                 ReloadInChat();
@@ -426,9 +423,9 @@ namespace Diccon.Pages
             catch (Exception)
             {
 
-                
+
             }
-             
+
         }
 
         private void lbQuestionTitle_Click(object sender, EventArgs e)
