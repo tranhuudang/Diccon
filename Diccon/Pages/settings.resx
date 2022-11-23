@@ -151,7 +151,7 @@
     <value>btDelete</value>
   </data>
   <data name="&gt;&gt;btDelete.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=7.0.0.4, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=22.11.0.7, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btDelete.Parent" xml:space="preserve">
     <value>$this</value>

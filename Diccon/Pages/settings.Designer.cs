@@ -56,6 +56,8 @@
             // btAutoBackup
             // 
             resources.ApplyResources(this.btAutoBackup, "btAutoBackup");
+            this.btAutoBackup.Checked = true;
+            this.btAutoBackup.CheckState = System.Windows.Forms.CheckState.Checked;
             this.btAutoBackup.Name = "btAutoBackup";
             this.btAutoBackup.UseVisualStyleBackColor = true;
             this.btAutoBackup.CheckedChanged += new System.EventHandler(this.btAutoBackup_CheckedChanged);
