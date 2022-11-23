@@ -202,6 +202,12 @@
     <Compile Include="Pages\login.Designer.cs">
       <DependentUpon>login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pages\release.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\release.Designer.cs">
+      <DependentUpon>release.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pages\timeline.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -297,6 +303,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\login.vi.resx">
       <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\release.resx">
+      <DependentUpon>release.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\settings.resx">
       <DependentUpon>settings.cs</DependentUpon>

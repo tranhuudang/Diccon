@@ -11,12 +11,6 @@
     <Setting Name="flashClipboard" Type="System.String" Scope="User">
       <Value Profile="(Default)">True</Value>
     </Setting>
-    <Setting Name="userEmail" Type="System.String" Scope="User">
-      <Value Profile="(Default)">none</Value>
-    </Setting>
-    <Setting Name="userID" Type="System.String" Scope="User">
-      <Value Profile="(Default)">none</Value>
-    </Setting>
     <Setting Name="language" Type="System.String" Scope="User">
       <Value Profile="(Default)">english</Value>
     </Setting>

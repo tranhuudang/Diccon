@@ -40,6 +40,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lbGithub = new System.Windows.Forms.Label();
+            this.btRelease = new Diccon.RoundedLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -102,11 +103,26 @@
             this.lbGithub.Name = "lbGithub";
             this.lbGithub.Click += new System.EventHandler(this.lbGithub_Click);
             // 
+            // btRelease
+            // 
+            resources.ApplyResources(this.btRelease, "btRelease");
+            this.btRelease.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btRelease.BorderColor = System.Drawing.Color.White;
+            this.btRelease.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btRelease.ForeColor = System.Drawing.Color.White;
+            this.btRelease.Name = "btRelease";
+            this.btRelease.Radius = 20;
+            this.btRelease.Thickness = 5F;
+            this.btRelease.Click += new System.EventHandler(this.btRelease_Click);
+            this.btRelease.MouseEnter += new System.EventHandler(this.btRelease_MouseEnter);
+            this.btRelease.MouseLeave += new System.EventHandler(this.btRelease_MouseLeave);
+            // 
             // about
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.btRelease);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label7);
@@ -140,5 +156,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lbGithub;
+        private RoundedLabel btRelease;
     }
 }

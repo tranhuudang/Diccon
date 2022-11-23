@@ -54,14 +54,15 @@ namespace Diccon
        
         public static char saparateCharactorInHistory = '#';
         public static string historyFileName = dicconApplicationDataPath + @"\History.ini";
+        public static string userInfoFileName = dicconApplicationDataPath + @"\UserInfo.ini";
         public static string noteFilePath = dicconApplicationDataPath + @"\Note.xml";
         public static string wordFromTimeline = "";
         public static string wordFromSynonym = "";
         public static string githubPath = "https://github.com/tranhuudang";
         public static string githubProjectPath = "https://github.com/zeroclubvn/Diccon";
         public static string githubIssuesPath = "https://github.com/tranhuudang/Diccon/issues";
-        public static string enableFlashClipboard = Properties.Settings.Default["FlashClipboard"].ToString();
-        public static string userID = Properties.Settings.Default["userID"].ToString();
+        public static string userID = "";
+        public static string userEmail = "";
         /// <summary>
         ///  WebBrowser used for html2Rtf Converter
         /// </summary>
@@ -93,6 +94,9 @@ namespace Diccon
         public static string errorUnknown =
             language == LanguageType.English ? "Unexpected error."
             : "Lỗi chưa xác định";
+        public static string logOutError =
+            language == LanguageType.English ? "Unexpected error when trying to log out."
+            : "Lỗi xảy ra khi đăng xuất, vui lòng thử lại sau";
         
         public static string pathAccentColor = @"HKEY_CURRENT_USER\Software\Microsoft\Windows\DWM";
         /// <summary>

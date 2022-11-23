@@ -88,7 +88,10 @@ namespace Diccon
 
                     break;
             }
-            if (Properties.Settings.Default["userID"].ToString() != "none")
+            //get userId and Email in UserInfoFile
+            dicconProp.userID = getUserInfo()[0];
+            dicconProp.userEmail = getUserInfo()[1];
+            if (dicconProp.userID != "")
             {
                 accountToolStripMenuItem.Visible = true;
                 backUpSyncToolStripMenuItem.Visible = true;
@@ -106,7 +109,19 @@ namespace Diccon
         }
 
 
-
+        private string[] getUserInfo()
+        {
+            string[] userInfo= new string[2];
+            userInfo[0] = "";
+            userInfo[1] = "";
+            if (File.Exists(dicconProp.userInfoFileName))
+            {
+                string userInfoFile = File.ReadAllText(dicconProp.userInfoFileName);
+                userInfo[0] = userInfoFile.Split('#')[0];
+                userInfo[1] = userInfoFile.Split('#')[1];
+            }
+            return userInfo;
+        }
 
 
       
@@ -359,7 +374,7 @@ namespace Diccon
 
         private void roundedLabel7_Click(object sender, EventArgs e)
         {
-            if (Properties.Settings.Default["userID"].ToString() != "none")
+            if (dicconProp.userID != "")
             {
                 if (yawaForm != null)
                 {

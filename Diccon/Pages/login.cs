@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.IO;
 
 namespace Diccon.Pages
 {
@@ -30,9 +31,7 @@ namespace Diccon.Pages
                 //dataTable.Rows[0][0]-Id
                 //dataTable.Rows[0][1]-Email
                 //dataTable.Rows[0][2]-Password
-                Properties.Settings.Default["userID"] = dataTable.Rows[0][0].ToString();
-                Properties.Settings.Default["userEmail"] = dataTable.Rows[0][1].ToString();
-                Properties.Settings.Default.Save();
+                addUserInfo(dataTable.Rows[0][0].ToString(), dataTable.Rows[0][1].ToString());
                 Application.Restart();
             }
             else
@@ -40,6 +39,14 @@ namespace Diccon.Pages
                 lbNotice.Visible = true;
             }
             
+        }
+
+        private void addUserInfo(string userId , string userEmail)
+        {
+            string content = userId.Trim()+"#"+userEmail.Trim(); 
+                StreamWriter userInfo = new StreamWriter(dicconProp.userInfoFileName, false);
+                userInfo.Write(content);
+                userInfo.Close();
         }
 
         private void tbEmail_TextChanged(object sender, EventArgs e)
@@ -77,7 +84,7 @@ namespace Diccon.Pages
             createPass_1.BackColor=dicconProp.ColorA9;
             createPass_2.BackColor = dicconProp.ColorA9;
            
-            if (Properties.Settings.Default["userID"].ToString() != "none")
+            if (dicconProp.userID != "")
             {
                 this.Text = manageAccountText.Text;
                 panelLogin.Visible = false;
@@ -85,7 +92,7 @@ namespace Diccon.Pages
                 panelManage.Visible = true;
                 panelManage.Dock = DockStyle.Fill;
                 panelManage.BringToFront();
-                editEmail.Text = Properties.Settings.Default["userEmail"].ToString();
+                editEmail.Text = dicconProp.userEmail;
             }
             else
             {
@@ -100,9 +107,17 @@ namespace Diccon.Pages
 
         private void btLogOut_Click(object sender, EventArgs e)
         {
-            Properties.Settings.Default["userID"] = "none";
-            Properties.Settings.Default["userEmail"] = "none";
-            Properties.Settings.Default.Save();
+            try
+            {
+                if (File.Exists(dicconProp.userInfoFileName))
+                {
+                    File.Delete(dicconProp.userInfoFileName);
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show(dicconProp.logOutError);
+            }
             Application.Restart();
         }
 
