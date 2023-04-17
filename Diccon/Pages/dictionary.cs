@@ -286,7 +286,7 @@ namespace Diccon
             if (isOnline)
             {
                 suggestionTimer.Enabled = false;
-                var synonyms = new Sysnonym();
+                var synonyms = new Synonym();
                 if (await synonyms.GetSynonymListAsync(DicconProp.CurrentWord) == null)
                 {
                     btSynonym.Visible = false;
@@ -314,7 +314,7 @@ namespace Diccon
         private async void btSynonym_Click(object sender, EventArgs e)
         {
             btSynonym.Visible = false;
-            var synonyms = new Sysnonym();
+            var synonyms = new Synonym();
             List<string> synonymList = await synonyms.GetSynonymListAsync(DicconProp.CurrentWord);
             bot.BotSynonym(synonymList, exampleItemSynonym, exampleflowLayoutSynonym, flowChatBox);
 

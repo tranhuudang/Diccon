@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
 using System.Linq;
 using System.Net.Http;
 using System.Text.Json.Nodes;
@@ -9,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Diccon
 {
-    internal class Sysnonym
+    internal class Synonym
     {
 
         private async Task<List<string>> GetSynonymFromDatabase(string word)
@@ -44,7 +43,7 @@ namespace Diccon
 
 
 
-        private async void WriteSynonymToDatabse(string word, string synonym)
+        private async void WriteSynonymToDatabase(string word, string synonym)
         {
             try
             {
@@ -66,7 +65,7 @@ namespace Diccon
                 list = await GetSynonymFromRapidAPIAsync(word);
                 if (list != null)
                 {
-                    WriteSynonymToDatabse(word, String.Join(",", list.ToArray()));
+                    WriteSynonymToDatabase(word, String.Join(",", list.ToArray()));
                 }
                 return list;
             }

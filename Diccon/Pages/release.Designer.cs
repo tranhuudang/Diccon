@@ -38,7 +38,8 @@
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(323, 523);
             this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "- Sửa lỗi người dùng bị đăng xuất khi cập nhật phiên bản mới";
+            this.richTextBox1.Text = "- Sửa lỗi người dùng bị đăng xuất khi cập nhật phiên bản mới\n- Tăng khả năng phản" +
+    " hồi, tránh giật lag khi sử dụng.\n";
             // 
             // release
             // 

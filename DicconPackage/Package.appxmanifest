@@ -8,8 +8,8 @@
 
   <Identity
     Name="24555Zeroboy.29088C99A5121"
-    Publisher="CN=DA7D2C99-987C-4B69-8953-17157F6E0E1A"
-    Version="1.0.41.0" />
+    Publisher="CN=zero"
+    Version="1.0.42.0" />
 
   <Properties>
     <DisplayName>Diccon Dictionary</DisplayName>
