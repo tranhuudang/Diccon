@@ -3,28 +3,28 @@ using System.Text.RegularExpressions;
 
 namespace Diccon
 {
-    public class wordRelated
+    public class WordRelated
     {
-        private string preWord;
-        private string outWord;
+        private string _preWord;
+        private string _outWord;
 
-        public string PreWord { get => preWord; set => preWord = value; }
-        public string OutWord { get => outWord; set => outWord = value; }
+        public string PreWord { get => _preWord; set => _preWord = value; }
+        public string OutWord { get => _outWord; set => _outWord = value; }
 
-        public wordRelated(string word)
+        public WordRelated(string word)
         {
-            preWord = word;
+            _preWord = word;
         }
-        public wordRelated()
+        public WordRelated()
         {
         }
         // Xử lí từ đầu vào thành một từ chuẩn cho quá trình tìm kiếm từ trong Database
         public string SearchWordProcess()
         {
-            outWord = preWord;
-            outWord = outWord.ToLower();
-            outWord = outWord.Replace("\n", "").Replace("\r", ""); // delete \n in c#
-            return outWord;
+            _outWord = _preWord;
+            _outWord = _outWord.ToLower();
+            _outWord = _outWord.Replace("\n", "").Replace("\r", ""); // delete \n in c#
+            return _outWord;
         }
         /// <summary>
         /// Create link to sound track file of a word in Github
@@ -40,7 +40,7 @@ namespace Diccon
             return url;
         }
 
-        public int countWord(string text)
+        public int CountWord(string text)
         {
             string pattern = "[^\\w]";
             //get all spaces and other signs, like: '.' '?' '!'

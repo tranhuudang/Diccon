@@ -9,7 +9,7 @@ using System.Windows.Forms;
 namespace Diccon
 {
 
-    class soundRelated
+    class SoundRelated
     {
 
         WMPLib.WindowsMediaPlayer player = new WMPLib.WindowsMediaPlayer();
@@ -21,12 +21,12 @@ namespace Diccon
         /// <returns></returns>
         public void OfflinePlay(string word)
         {
-            if (!Directory.Exists(dicconProp.resourcesFolder))
+            if (!Directory.Exists(DicconProp.ResourcesFolder))
             {
-                Directory.CreateDirectory(dicconProp.resourcesFolder);
+                Directory.CreateDirectory(DicconProp.ResourcesFolder);
             }
             currentWord = word;
-            string path = dicconProp.resourcesFolder + word + ".mp3";
+            string path = DicconProp.ResourcesFolder + word + ".mp3";
             FileInfo fileInfo = new FileInfo(path);
             if (fileInfo.Exists)
             {
@@ -42,7 +42,7 @@ namespace Diccon
             else
             {
                 // Download sound track if not exist in resources folder
-                wordRelated wordProcess = new wordRelated(word);
+                WordRelated wordProcess = new WordRelated(word);
                 string onlineUrl = wordProcess.OnlineUrlPath("us");
                 Thread thread = new Thread(() =>
                 {

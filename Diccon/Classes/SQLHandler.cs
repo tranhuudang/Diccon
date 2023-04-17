@@ -1,53 +1,55 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace Diccon
 {
     class SQLHandler
     {
-        public void Update(string updateQuery)
+        public async Task UpdateAsync(string updateQuery)
         {
-            SqlConnection sqlConnection = new SqlConnection(dicconProp.connectionString);
-            sqlConnection.Open();
-            SqlCommand cmd = new SqlCommand(updateQuery, sqlConnection);
-            cmd.ExecuteNonQuery();
-            sqlConnection.Close();
+            using (SqlConnection sqlConnection = new SqlConnection(DicconProp.ConnectionString))
+            using (SqlCommand cmd = new SqlCommand(updateQuery, sqlConnection))
+            {
+                await sqlConnection.OpenAsync();
+                await cmd.ExecuteNonQueryAsync();
+            }
         }
         /// <summary>
         /// Create a new connection with Insert Command and then return a DataTable contain returned value.
         /// </summary>
         /// <param name="selectQuery"></param>
         /// <returns></returns>
-        public DataTable Select(string selectQuery)
+        public async Task<DataTable> SelectAsync(string selectQuery)
         {
             DataTable dataTable = new DataTable();
-            SqlConnection sqlConnection = new SqlConnection(dicconProp.connectionString);
-            sqlConnection.Open();
-            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(selectQuery, sqlConnection);
-            sqlDataAdapter.Fill(dataTable);
+            using (SqlConnection sqlConnection = new SqlConnection(DicconProp.ConnectionString))
+            using (SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(selectQuery, sqlConnection))
+            {
+                await sqlConnection.OpenAsync();
+                sqlDataAdapter.Fill(dataTable);
+            }
             return dataTable;
         }
-        public async Task Insert(string insertString)
+
+        public async Task InsertAsync(string insertString)
         {
-            SqlConnection sqlConnection = new SqlConnection(dicconProp.connectionString);
-            await sqlConnection.OpenAsync();
-            SqlCommand cmd = new SqlCommand(insertString, sqlConnection);
-            await cmd.ExecuteNonQueryAsync();
-            sqlConnection.Close();
+            using (SqlConnection sqlConnection = new SqlConnection(DicconProp.ConnectionString))
+            using (SqlCommand cmd = new SqlCommand(insertString, sqlConnection))
+            {
+                await sqlConnection.OpenAsync();
+                await cmd.ExecuteNonQueryAsync();
+            }
         }
-        public void Delete(string deleteString)
+        public async Task DeleteAsync(string deleteString)
         {
-            SqlConnection sqlConnection = new SqlConnection(dicconProp.connectionString);
-            sqlConnection.Open();
-            SqlCommand cmd = new SqlCommand(deleteString, sqlConnection);
-            cmd.ExecuteNonQuery();
-            sqlConnection.Close();
+            using (SqlConnection sqlConnection = new SqlConnection(DicconProp.ConnectionString))
+            using (SqlCommand cmd = new SqlCommand(deleteString, sqlConnection))
+            {
+                await sqlConnection.OpenAsync();
+                await cmd.ExecuteNonQueryAsync();
+            }
         }
     }
 }

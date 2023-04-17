@@ -1,12 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Diccon.Pages
@@ -25,17 +21,17 @@ namespace Diccon.Pages
             loadUpTimeline();
         }
         private void loadUpTimeline()
-        { 
+        {
             List<string> listItem = new List<string>();
-            if (File.Exists(dicconProp.historyFileName))
+            if (File.Exists(DicconProp.HistoryFileName))
             {
-                string[] contents = File.ReadAllText(dicconProp.historyFileName).Split(dicconProp.saparateCharactorInHistory);
+                string[] contents = File.ReadAllText(DicconProp.HistoryFileName).Split(DicconProp.SaparateCharactorInHistory);
                 foreach (var item in contents)
                 {
                     listItem.Add("      " + item.ToLower());
                 }
                 listItem.Reverse();
-                filterdList= listItem.Distinct().ToList();
+                filterdList = listItem.Distinct().ToList();
                 listHistory.DataSource = filterdList;
             }
         }
@@ -52,8 +48,8 @@ namespace Diccon.Pages
             {
                 /* If the item is selected set the background color to SystemColors.Highlight 
                  or else set the color to either WhiteSmoke or White depending if the item index is even or odd */
-                Color color = isSelected ? dicconProp.ColorA3 :
-                    e.Index % 2 == 0 ? dicconProp.ColorA9  : Color.White;
+                Color color = isSelected ? DicconProp.ColorA3 :
+                    e.Index % 2 == 0 ? DicconProp.ColorA9 : Color.White;
 
                 // Background item brush
                 SolidBrush backgroundBrush = new SolidBrush(color);
@@ -81,7 +77,7 @@ namespace Diccon.Pages
 
         private void listHistory_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            dicconProp.wordFromTimeline = listHistory.SelectedItem.ToString();
+            DicconProp.WordFromTimeline = listHistory.SelectedItem.ToString();
         }
 
     }

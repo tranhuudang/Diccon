@@ -1,32 +1,25 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.Data.SqlClient;
 using System.IO;
+using System.Windows.Forms;
 
 namespace Diccon.Pages
 {
     public partial class login : Form
     {
-        
+
         public login()
         {
             InitializeComponent();
         }
 
-        private void btLogin_Click(object sender, EventArgs e)
+        private async void btLogin_Click(object sender, EventArgs e)
         {
-            string encryptPass = new sha256Encrypt(tbPassword.Text.Trim()).Hash();
+            string encryptPass = new Sha256Encrypt(tbPassword.Text.Trim()).Hash();
             string queryString = "Select * from dbo.DicconUser where Email='" + tbEmail.Text.Trim() + "' and Password='" + encryptPass + "'";
             SQLHandler sqlHandler = new SQLHandler();
-            DataTable dataTable = sqlHandler.Select(queryString);
-            if (dataTable.Rows.Count >=1)
+            DataTable dataTable = await sqlHandler.SelectAsync(queryString);
+            if (dataTable.Rows.Count >= 1)
             {
                 //dataTable.Rows[0][0]-Id
                 //dataTable.Rows[0][1]-Email
@@ -38,15 +31,15 @@ namespace Diccon.Pages
             {
                 lbNotice.Visible = true;
             }
-            
+
         }
 
-        private void addUserInfo(string userId , string userEmail)
+        private void addUserInfo(string userId, string userEmail)
         {
-            string content = userId.Trim()+"#"+userEmail.Trim(); 
-                StreamWriter userInfo = new StreamWriter(dicconProp.userInfoFileName, false);
-                userInfo.Write(content);
-                userInfo.Close();
+            string content = userId.Trim() + "#" + userEmail.Trim();
+            StreamWriter userInfo = new StreamWriter(DicconProp.UserInfoFileName, false);
+            userInfo.Write(content);
+            userInfo.Close();
         }
 
         private void tbEmail_TextChanged(object sender, EventArgs e)
@@ -62,29 +55,29 @@ namespace Diccon.Pages
         private void login_Load(object sender, EventArgs e)
         {
             // load theme
-            btLogin.BackColor = dicconProp.ColorA8;
-            btLogOut.BackColor = dicconProp.ColorA8;
-            btSave.BackColor = dicconProp.ColorA8;
-            btBack.BackColor = dicconProp.ColorA8;
-            btCreateNow.BackColor = dicconProp.ColorA8;
-            roundedPanel1.BackColor = dicconProp.ColorA9;
-            roundedPanel2.BackColor = dicconProp.ColorA9;
-            roundedPanel3.BackColor = dicconProp.ColorA9;
-            roundedPanel4.BackColor = dicconProp.ColorA9;
-            roundedPanel5.BackColor = dicconProp.ColorA9;
-            roundedPanel6.BackColor = dicconProp.ColorA9;
-            roundedPanel7.BackColor = dicconProp.ColorA9;
-            roundedPanel8.BackColor = dicconProp.ColorA9;
-            tbEmail.BackColor = dicconProp.ColorA9;
-            tbPassword.BackColor = dicconProp.ColorA9;
-            editEmail.BackColor = dicconProp.ColorA9;
-            editPass_1.BackColor = dicconProp.ColorA9;
-            editPass_2.BackColor = dicconProp.ColorA9;
-            createEmail.BackColor = dicconProp.ColorA9;
-            createPass_1.BackColor=dicconProp.ColorA9;
-            createPass_2.BackColor = dicconProp.ColorA9;
-           
-            if (dicconProp.userID != "")
+            btLogin.BackColor = DicconProp.ColorA8;
+            btLogOut.BackColor = DicconProp.ColorA8;
+            btSave.BackColor = DicconProp.ColorA8;
+            btBack.BackColor = DicconProp.ColorA8;
+            btCreateNow.BackColor = DicconProp.ColorA8;
+            roundedPanel1.BackColor = DicconProp.ColorA9;
+            roundedPanel2.BackColor = DicconProp.ColorA9;
+            roundedPanel3.BackColor = DicconProp.ColorA9;
+            roundedPanel4.BackColor = DicconProp.ColorA9;
+            roundedPanel5.BackColor = DicconProp.ColorA9;
+            roundedPanel6.BackColor = DicconProp.ColorA9;
+            roundedPanel7.BackColor = DicconProp.ColorA9;
+            roundedPanel8.BackColor = DicconProp.ColorA9;
+            tbEmail.BackColor = DicconProp.ColorA9;
+            tbPassword.BackColor = DicconProp.ColorA9;
+            editEmail.BackColor = DicconProp.ColorA9;
+            editPass_1.BackColor = DicconProp.ColorA9;
+            editPass_2.BackColor = DicconProp.ColorA9;
+            createEmail.BackColor = DicconProp.ColorA9;
+            createPass_1.BackColor = DicconProp.ColorA9;
+            createPass_2.BackColor = DicconProp.ColorA9;
+
+            if (DicconProp.UserID != "")
             {
                 this.Text = manageAccountText.Text;
                 panelLogin.Visible = false;
@@ -92,7 +85,7 @@ namespace Diccon.Pages
                 panelManage.Visible = true;
                 panelManage.Dock = DockStyle.Fill;
                 panelManage.BringToFront();
-                editEmail.Text = dicconProp.userEmail;
+                editEmail.Text = DicconProp.UserEmail;
             }
             else
             {
@@ -109,21 +102,21 @@ namespace Diccon.Pages
         {
             try
             {
-                if (File.Exists(dicconProp.userInfoFileName))
+                if (File.Exists(DicconProp.UserInfoFileName))
                 {
-                    File.Delete(dicconProp.userInfoFileName);
+                    File.Delete(DicconProp.UserInfoFileName);
                 }
             }
             catch (Exception)
             {
-                MessageBox.Show(dicconProp.logOutError);
+                MessageBox.Show(DicconProp.LogOutError);
             }
             Application.Restart();
         }
 
         private void editEmail_TextChanged(object sender, EventArgs e)
         {
-            if ((editEmail.Text.Contains("@") && editEmail.Text.Contains("."))&& ( editPass_1.Text.Length >= 8 && editPass_1.Text == editPass_2.Text))
+            if ((editEmail.Text.Contains("@") && editEmail.Text.Contains(".")) && (editPass_1.Text.Length >= 8 && editPass_1.Text == editPass_2.Text))
             {
                 btSave.Enabled = true;
             }
@@ -135,12 +128,12 @@ namespace Diccon.Pages
 
         private void btLogin_MouseEnter(object sender, EventArgs e)
         {
-            dicconProp.RoundedLabel_MouseEnter(sender, e);
+            DicconProp.RoundedLabel_MouseEnter(sender, e);
         }
 
         private void btLogin_MouseLeave(object sender, EventArgs e)
         {
-            dicconProp.RoundedLabel_MouseLeave(sender, e);
+            DicconProp.RoundedLabel_MouseLeave(sender, e);
         }
 
         private void btCreateAccount_Click(object sender, EventArgs e)
@@ -167,10 +160,10 @@ namespace Diccon.Pages
 
         private async void btCreateNow_Click(object sender, EventArgs e)
         {
-            string encryptPass = new sha256Encrypt(createPass_1.Text.Trim()).Hash();
-            string queryString = "Insert into dbo.DicconUser(Email, Password) values ('"+createEmail.Text+"','"+encryptPass+"')";
+            string encryptPass = new Sha256Encrypt(createPass_1.Text.Trim()).Hash();
+            string queryString = "Insert into dbo.DicconUser(Email, Password) values ('" + createEmail.Text + "','" + encryptPass + "')";
             SQLHandler sql = new SQLHandler();
-            await sql.Insert(queryString);
+            await sql.InsertAsync(queryString);
             // Close create form and open login form
             this.Text = loginText.Text;
             panelManage.Visible = false;
@@ -192,12 +185,12 @@ namespace Diccon.Pages
 
         private void btCreateAccount_MouseEnter(object sender, EventArgs e)
         {
-            dicconProp.Control_MouseEnter(sender, e);
+            DicconProp.Control_MouseEnter(sender, e);
         }
 
         private void btCreateAccount_MouseLeave(object sender, EventArgs e)
         {
-            dicconProp.Control_MouseLeave(sender, e);
+            DicconProp.Control_MouseLeave(sender, e);
         }
 
         private void login_SizeChanged(object sender, EventArgs e)
@@ -205,23 +198,23 @@ namespace Diccon.Pages
             this.Refresh();
         }
 
-        private void btDeleteOnline_Click(object sender, EventArgs e)
+        private async void btDeleteOnline_Click(object sender, EventArgs e)
         {
 
             if (MessageBox.Show("Do you want to delete your online data?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
-                string updateQueryString = "UPDATE dbo.DicconUser  SET Resources = NULL, Timeline = NULL, QA = NULL, FreeAsk = NULL, PayAsk = NULL  Where Id=" + dicconProp.userID;
+                string updateQueryString = "UPDATE dbo.DicconUser  SET Resources = NULL, Timeline = NULL, QA = NULL, FreeAsk = NULL, PayAsk = NULL  Where Id=" + DicconProp.UserID;
                 SQLHandler sql = new SQLHandler();
-                sql.Update(updateQueryString);
+                await sql.UpdateAsync(updateQueryString);
             }
         }
 
         private void tbPassword_KeyDown(object sender, KeyEventArgs e)
         {
-            if(e.KeyCode== Keys.Enter)
+            if (e.KeyCode == Keys.Enter)
             {
                 btLogin_Click(null, null);
-            }    
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

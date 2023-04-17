@@ -1,26 +1,21 @@
 ﻿using Diccon.Classes;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
 using System.IO;
-using System.Net;
-using System.Reflection;
-using System.Threading;
+using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Xml;
 
 namespace Diccon
 {
 
     public partial class dictionary : Form
     {
-        botBehavior bot = new botBehavior();
-        userAction user = new userAction();
-        connectivity connectivity = new connectivity();
+        BotBehavior bot = new BotBehavior();
+        UserAction user = new UserAction();
+        Connectivity connectivity = new Connectivity();
         string spellingCorrectorCurrentWord = "";
-        emoji emoji = new emoji();
+        Emoji emoji = new Emoji();
         [STAThreadAttribute]
         private void mainHall_Load(object sender, EventArgs e)
         {
@@ -28,21 +23,21 @@ namespace Diccon
             //searchTextBox.Text = Clipboard.GetText();
             ///////  T   H   E   M   E  ///////////////
             //panelNotice.BackColor = dicconProp.ColorA3;
-            exampleAnswerColoredPanel.BackColor = dicconProp.ColorA3;
-            exampleColoredPicturePanel.BackColor = dicconProp.ColorA3;
-            exampleItemSynonym.BackColor = dicconProp.ColorA5;
-            examplePlayColoredPanel.BackColor = dicconProp.ColorA5;
-            listeningPanel.BackColor = dicconProp.ColorA9;
-            btSynonym.BackColor = dicconProp.ColorA8;
-            btImage.BackColor = dicconProp.ColorA8;
-            addEmoji.BackColor = dicconProp.ColorA8;
-            examplePictureBox.BackColor = dicconProp.ColorA7;
-            roundedPanel1.BackColor = dicconProp.ColorA9;
-            searchTextBox.BackColor = dicconProp.ColorA9;
+            exampleAnswerColoredPanel.BackColor = DicconProp.ColorA3;
+            exampleColoredPicturePanel.BackColor = DicconProp.ColorA3;
+            exampleItemSynonym.BackColor = DicconProp.ColorA5;
+            examplePlayColoredPanel.BackColor = DicconProp.ColorA5;
+            listeningPanel.BackColor = DicconProp.ColorA9;
+            btSynonym.BackColor = DicconProp.ColorA8;
+            btImage.BackColor = DicconProp.ColorA8;
+            addEmoji.BackColor = DicconProp.ColorA8;
+            examplePictureBox.BackColor = DicconProp.ColorA7;
+            roundedPanel1.BackColor = DicconProp.ColorA9;
+            searchTextBox.BackColor = DicconProp.ColorA9;
 
             ///////////////////////////////////////////
             ///
-            panelBottom.Height = dicconProp.bottomPanel_DefaultHeight;
+            panelBottom.Height = DicconProp.BottomPanel_DefaultHeight;
             panelAdd.Visible = false;
 
             // setup flowchatbox to only show vertical scrollbar
@@ -51,12 +46,12 @@ namespace Diccon
             flowChatBox.Padding = new Padding(10, 0, 0, 0);
 
             // load up one single random translate in the first time go here 
-            if (dicconProp.firstTimeOpen == true)
+            if (DicconProp.FirstTimeOpen == true)
             {
-                searchTextBox.Text = Properties.Settings.Default["lastWord"].ToString() == "" ? "hello" : Properties.Settings.Default["lastWord"].ToString();
+                searchTextBox.Text = Properties.Settings.Default["lastWord"].ToString() ?? "hello";
                 searchTextBox_KeyDown(null, null);
             }
-            dicconProp.firstTimeOpen = false;
+            DicconProp.FirstTimeOpen = false;
 
         }
 
@@ -66,8 +61,8 @@ namespace Diccon
         {
             listeningPanel.Visible = true;
             listeningPanel.Refresh();
-            soundRelated sound = new soundRelated();
-            searchTextBox.Text = sound.SpeechToText(dicconProp.listenTimeInString);
+            SoundRelated sound = new SoundRelated();
+            searchTextBox.Text = sound.SpeechToText(DicconProp.ListenTimeInString);
             listeningPanel.Visible = false;
         }
 
@@ -79,135 +74,113 @@ namespace Diccon
         }
         private async void searchTextBox_KeyDown(object sender, KeyEventArgs e)
         {
-
             if (e == null)
             {
-
                 VisibleControlInSuggestionBar();
-
-                dicconProp.currentWord = searchTextBox.Text.Trim();
-                await searchAndShow(dicconProp.currentWord);
+                DicconProp.CurrentWord = searchTextBox.Text.Trim();
+                await SearchAndShow(DicconProp.CurrentWord);
             }
             else if (e.KeyCode == Keys.Enter)
             {
                 VisibleControlInSuggestionBar();
 
-                dicconProp.currentWord = searchTextBox.Text.Trim();
-                await searchAndShow(dicconProp.currentWord);
-
-
+                DicconProp.CurrentWord = searchTextBox.Text.Trim();
+                await SearchAndShow(DicconProp.CurrentWord);
             }
-
-
-
-
         }
-        private string spellingCorrector(string word)
+        private string SpellingCorrector(string word)
         {
-            Spelling spelling = new Spelling();
+            SpellingCorrector spelling = new SpellingCorrector();
             return spelling.Correct(word);
         }
-        private async Task searchAndShow(string searchWord)
+        private async Task SearchAndShow(string searchWord)
         {
-            if (dicconProp.currentWord != "")
+            if (string.IsNullOrEmpty(DicconProp.CurrentWord)) return;
+
+            WordRelated word = new WordRelated();
+            var numberOfWord = word.CountWord(searchWord);
+            if (numberOfWord > 3)
+                user.UserLongMessage($"{searchWord}\n", exampleAskLongText, exampleAskLongColoredPanel, exampleAskLongPanel, flowChatBox);
+            else
+                user.UserSingleMessage(searchWord, exampleShortText, exampleShortPanel, flowChatBox);
+
+
+            bot.BotSoundMessage(searchWord, exampleTextHolder, examplePlayButton, examplePlayColoredPanel, examplePlayAlignPanel, examplePlayPanel, flowChatBox);
+            var definitionResult = await SearchMatchWord(searchWord);
+
+            if (definitionResult != DicconProp.PromptMissingWord)
             {
-                wordRelated word = new wordRelated();
-                int numberOfWord = word.countWord(searchTextBox.Text);
-                if (numberOfWord > 3)
-                    user.userLongMessage(searchTextBox.Text + "\n", exampleAskLongText, exampleAskLongColoredPanel, exampleAskLongPanel, flowChatBox);
-                else
-                    user.userSingleMessage(searchWord, exampleShortText, exampleShortPanel, flowChatBox);
-
-
-                bot.botSoundMessage(searchWord, exampleTextHolder, examplePlayButton, examplePlayColoredPanel, examplePlayAlignPanel, examplePlayPanel, flowChatBox);
-                string definitionResult = await searchMatchWord(searchWord);
-                if (definitionResult != dicconProp.promptMissingWord)
-                {
-                    // add word to history file if the word is exist in the dictionary database
-                    addHistory(searchWord);
-                    Properties.Settings.Default["lastWord"] = searchWord;
-                    Properties.Settings.Default.Save();
-                    bot.botAnswerLongMessage(definitionResult, exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
-                }
-                else
-                {
-                    bool isOnline = new connectivity().isOnline();
-                    if (isOnline)
-                    {
-                        // add word to history file
-                        addHistory(searchTextBox.Text);
-                        // display message
-                        dicconProp.currentTranslatedWord = await bot.getEnViTranslatedTextAsync(dicconProp.currentWord);
-                        if (dicconProp.currentTranslatedWord == dicconProp.currentWord)
-                            dicconProp.currentTranslatedWord = await bot.getViEnTranslatedTextAsync(dicconProp.currentWord);
-                        bot.botAnswerLongMessage(dicconProp.currentTranslatedWord + "\n", exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
-                    }
-                    else
-                    {
-                        MessageBox.Show(dicconProp.errorInternet, dicconProp.caption);
-                    }
-                    //bot.botAnswerLongMessage(definitionResult, exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
-                }
-                suggestionTimer.Enabled = true;
-
-                searchTextBox.Text = "";
-            }
-        }
-        private void addHistory(string word)
-        {
-            if (!File.Exists(dicconProp.historyFileName))
-            {
-                StreamWriter history = new StreamWriter(dicconProp.historyFileName);
-                history.Write(word);
-                history.Close();
+                // add word to history file if the word is exist in the dictionary database
+                AddHistory(searchWord);
+                Properties.Settings.Default["lastWord"] = searchWord;
+                Properties.Settings.Default.Save();
+                bot.BotAnswerLongMessage(definitionResult, exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
             }
             else
             {
-                StreamWriter history = new StreamWriter(dicconProp.historyFileName, true);
-                history.Write(dicconProp.saparateCharactorInHistory);
-                history.Write(word);
-                history.Close();
+                bool isOnline = new Connectivity().IsOnline();
+                if (isOnline)
+                {
+                    // add word to history file
+                    AddHistory(searchWord);
+                    // display message
+                    DicconProp.CurrentTranslatedWord = await bot.GetEnViTranslatedTextAsync(DicconProp.CurrentWord);
+                    if (DicconProp.CurrentTranslatedWord == DicconProp.CurrentWord)
+                        DicconProp.CurrentTranslatedWord = await bot.GetViEnTranslatedTextAsync(DicconProp.CurrentWord);
+                    bot.BotAnswerLongMessage(DicconProp.CurrentTranslatedWord + "\n", exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
+                }
+                else
+                {
+                    MessageBox.Show(DicconProp.ErrorInternet, DicconProp.caption);
+                }
+            }
+            suggestionTimer.Enabled = true;
+
+            searchTextBox.Text = "";
+
+        }
+        private void AddHistory(string word)
+        {
+            if (!File.Exists(DicconProp.HistoryFileName))
+            {
+                using (StreamWriter history = new StreamWriter(DicconProp.HistoryFileName))
+                {
+                    history.Write(word);
+                }
+            }
+            else
+            {
+                using (StreamWriter history = new StreamWriter(DicconProp.HistoryFileName, true))
+                {
+                    history.Write(DicconProp.SaparateCharactorInHistory);
+                    history.Write(word);
+                }
             }
         }
-        public async Task<string> searchMatchWord(string wordsToSearch) // THIS IS FUNCTION TO SEARCH TEXT 
+        public async Task<string> SearchMatchWord(string wordsToSearch) // THIS IS FUNCTION TO SEARCH TEXT 
         {
-
             // xử lí từ ngữ được người dùng nhập vào------------------
-            wordRelated word = new wordRelated();
+            WordRelated word = new WordRelated();
             // Nạp từ vào đối tượng
             word.PreWord = wordsToSearch;
             // Xử lí từ và lấy kết quả
             wordsToSearch = word.SearchWordProcess();
-
-
-            int indexOfArray = 0;
-            // đọc từng dòng trong paragraph sau đó gán giá trị cho line 
-            // ** using class to improve searching speed
-            //string[] splitedText = TextDataFromResources.Split("@".ToCharArray());
-            foreach (string wordAndMeanning in dicconProp.splitedText)
+            var resultFromList = DicconProp.splitedText.FirstOrDefault(w => w.Contains("•" + wordsToSearch));
+            if (!string.IsNullOrEmpty(resultFromList))
             {
-
-                if (wordAndMeanning.Contains("•" + wordsToSearch))
+                return resultFromList.ToString();
+            }
+            else
+            {
+                // update missing word to database
+                if (connectivity.IsOnline())
                 {
-                    return dicconProp.splitedText[indexOfArray];
-
+                    var wordsToInsert = wordsToSearch.Length > 9 ? wordsToSearch.Substring(0, 9) : wordsToSearch;
+                    SQLHandler sqlHandler = new SQLHandler();
+                    await sqlHandler.InsertAsync($"Insert into dbo.DicconMissing values(N'{DicconProp.UserID}', N'{wordsToInsert}')");
                 }
-                indexOfArray++;
+                return DicconProp.PromptMissingWord;
             }
-            // update missing word to database
-            if (connectivity.isOnline())
-            {
-                SQLHandler sqlHandler = new SQLHandler();
-                if (wordsToSearch.Length > 9)
-                    await sqlHandler.Insert("Insert into dbo.DicconMissing values(N'" + dicconProp.userID + "',N'" + wordsToSearch.Substring(0, 9) + "')");
-                else
-                    await sqlHandler.Insert("Insert into dbo.DicconMissing values(N'" + dicconProp.userID + "',N'" + wordsToSearch + "')");
-
-
-
-            }
-            return dicconProp.promptMissingWord;
-
         }
 
         private void searchTextBox_TextChanged(object sender, EventArgs e)
@@ -227,23 +200,23 @@ namespace Diccon
 
         private void buttonAdd_Click(object sender, EventArgs e)
         {
-            if (panelBottom.Height == dicconProp.bottomPanel_ExpandedHeight)
+            if (panelBottom.Height == DicconProp.BottomPanel_ExpandedHeight)
             {
                 panelAdd.Visible = false;
-                panelBottom.Height = dicconProp.bottomPanel_DefaultHeight;
+                panelBottom.Height = DicconProp.BottomPanel_DefaultHeight;
 
             }
             else
             {
                 panelAdd.Visible = true;
-                panelBottom.Height = dicconProp.bottomPanel_ExpandedHeight;
+                panelBottom.Height = DicconProp.BottomPanel_ExpandedHeight;
 
             }
         }
 
         private void searchTextBox_Click(object sender, EventArgs e)
         {
-            panelBottom.Height = dicconProp.bottomPanel_DefaultHeight;
+            panelBottom.Height = DicconProp.BottomPanel_DefaultHeight;
         }
 
 
@@ -259,19 +232,19 @@ namespace Diccon
 
         private void RoundedLabel_MouseEnter(object sender, EventArgs e)
         {
-            dicconProp.RoundedLabel_MouseEnter(sender, e);
+            DicconProp.RoundedLabel_MouseEnter(sender, e);
         }
         private void RoundedLabel_MouseLeave(object sender, EventArgs e)
         {
-            dicconProp.RoundedLabel_MouseLeave(sender, e);
+            DicconProp.RoundedLabel_MouseLeave(sender, e);
         }
         private void PictureBox_MouseEnter(object sender, EventArgs e)
         {
-            dicconProp.Control_MouseEnter(sender, e);
+            DicconProp.Control_MouseEnter(sender, e);
         }
         private void PictureBox_MouseLeave(object sender, EventArgs e)
         {
-            dicconProp.Control_MouseLeave(sender, e);
+            DicconProp.Control_MouseLeave(sender, e);
         }
         private void tbFind_Leave(object sender, EventArgs e)
         {
@@ -288,29 +261,6 @@ namespace Diccon
             searchTextBox.Focus();
         }
 
-        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            about about = new about();
-            about.ShowDialog();
-        }
-
-        private void githubToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void checkForUpdatesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
-
-
-        private void exampleAnswerText_HScroll(object sender, EventArgs e)
-        {
-
-        }
         /// <summary>
         /// Suggest timer run when key down is triggered in search box
         /// </summary>
@@ -319,9 +269,9 @@ namespace Diccon
         private async void suggestionTimer_TickAsync(object sender, EventArgs e)
         {
             // Get correct form of word from Spelling Corrector library
-            spellingCorrectorCurrentWord = spellingCorrector(dicconProp.currentWord);
+            spellingCorrectorCurrentWord = SpellingCorrector(DicconProp.CurrentWord);
             spellingCorrectorCurrentWord = spellingCorrectorCurrentWord.ToLower();
-            if ((spellingCorrectorCurrentWord.Length > 1) && (spellingCorrectorCurrentWord != dicconProp.currentWord.ToLower()))
+            if ((spellingCorrectorCurrentWord.Length > 1) && (spellingCorrectorCurrentWord != DicconProp.CurrentWord.ToLower()))
             {
 
                 btSpellingCorrector.Text = spellingCorrectorCurrentWord.Replace(spellingCorrectorCurrentWord.Substring(0, 1), spellingCorrectorCurrentWord.Substring(0, 1).ToUpper());
@@ -332,12 +282,12 @@ namespace Diccon
                 btSpellingCorrector.Visible = false;
             }
             // Get other suggestions
-            bool isOnline = new connectivity().isOnline();
+            bool isOnline = new Connectivity().IsOnline();
             if (isOnline)
             {
                 suggestionTimer.Enabled = false;
-                sysnonym sysnonym = new sysnonym();
-                if (await sysnonym.getSynonymListAsync(dicconProp.currentWord) == null)
+                var synonyms = new Sysnonym();
+                if (await synonyms.GetSynonymListAsync(DicconProp.CurrentWord) == null)
                 {
                     btSynonym.Visible = false;
                 }
@@ -345,8 +295,8 @@ namespace Diccon
                 {
                     btSynonym.Visible = true;
                 }
-                imageRelated image = new imageRelated();
-                if (await image.getImageUrl(dicconProp.currentWord) == "none")
+                ImageRelated image = new ImageRelated();
+                if (await image.GetImageUrl(DicconProp.CurrentWord) == "none")
                 {
                     btImage.Visible = false;
                 }
@@ -364,9 +314,9 @@ namespace Diccon
         private async void btSynonym_Click(object sender, EventArgs e)
         {
             btSynonym.Visible = false;
-            sysnonym sysnonym = new sysnonym();
-            List<string> synonymList = await sysnonym.getSynonymListAsync(dicconProp.currentWord);
-            bot.botSynonym(synonymList, exampleItemSynonym, exampleflowLayoutSynonym, flowChatBox);
+            var synonyms = new Sysnonym();
+            List<string> synonymList = await synonyms.GetSynonymListAsync(DicconProp.CurrentWord);
+            bot.BotSynonym(synonymList, exampleItemSynonym, exampleflowLayoutSynonym, flowChatBox);
 
         }
 
@@ -386,8 +336,8 @@ namespace Diccon
 
         private async void btSend_Click(object sender, EventArgs e)
         {
-            dicconProp.currentWord = searchTextBox.Text;
-            await searchAndShow(dicconProp.currentWord);
+            DicconProp.CurrentWord = searchTextBox.Text;
+            await SearchAndShow(DicconProp.CurrentWord);
         }
 
 
@@ -398,13 +348,13 @@ namespace Diccon
 
         private void closeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show((sender as ToolStripMenuItem).Owner.TopLevelControl.Name, dicconProp.caption);
+            MessageBox.Show((sender as ToolStripMenuItem).Owner.TopLevelControl.Name, DicconProp.caption);
         }
 
         private void btImage_Click(object sender, EventArgs e)
         {
             btImage.Visible = false;
-            bot.botImageAnswer(examplePixabayLogo, examplePictureBox, exampleColoredPicturePanel, examplePicturePanel, flowChatBox);
+            bot.BotImageAnswer(examplePixabayLogo, examplePictureBox, exampleColoredPicturePanel, examplePicturePanel, flowChatBox);
 
         }
 
@@ -415,10 +365,10 @@ namespace Diccon
 
         private void dictionary_VisibleChanged(object sender, EventArgs e)
         {
-            if (dicconProp.wordFromTimeline != "")
+            if (DicconProp.WordFromTimeline != "")
             {
-                searchTextBox.Text = dicconProp.wordFromTimeline.Trim();
-                dicconProp.wordFromTimeline = "";
+                searchTextBox.Text = DicconProp.WordFromTimeline.Trim();
+                DicconProp.WordFromTimeline = "";
             }
             //enable event to listen to clipboard changes if enable
 
@@ -447,11 +397,11 @@ namespace Diccon
 
         private void synonymChecker_Tick(object sender, EventArgs e)
         {
-            if (dicconProp.wordFromSynonym != "")
+            if (DicconProp.WordFromSynonym != "")
             {
-                searchTextBox.Text = dicconProp.wordFromSynonym;
+                searchTextBox.Text = DicconProp.WordFromSynonym;
                 searchTextBox_KeyDown(null, null);
-                dicconProp.wordFromSynonym = "";
+                DicconProp.WordFromSynonym = "";
             }
         }
 

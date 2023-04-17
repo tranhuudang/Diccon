@@ -1,20 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Diccon.Pages
 {
     public partial class yawa : Form
     {
-        botBehavior bot = new botBehavior();
-        userAction user = new userAction();
+        BotBehavior bot = new BotBehavior();
+        UserAction user = new UserAction();
         SQLHandler sqlHandler = new SQLHandler();
+        Connectivity connectivity = new Connectivity();
+
         string currentAnswerString;
         string currentQuestionUserID; // ID of user who ask the question
         string currentQuestionID; // ID of current question displayed in flowchatbox
@@ -28,17 +24,17 @@ namespace Diccon.Pages
             panelMain.Dock = DockStyle.Fill;
             panelMain.BringToFront();
             panelTop.Dock = DockStyle.Top;
-            btAsk.BackColor = dicconProp.ColorA8;
-            btYourQuestion.BackColor = dicconProp.ColorA3;
-            btInstantAsk.BackColor = dicconProp.ColorA8;
-            btPeopleTop.BackColor = dicconProp.ColorA3;
-            btAskTop.BackColor = dicconProp.ColorA3;
-            richQuestion.BackColor = dicconProp.ColorA9;
-            globalExamplePanel.BackColor = dicconProp.ColorA9;
-            panelOfRichQuestion_1.BackColor = dicconProp.ColorA9;
-            exampleAnswerColoredPanel.BackColor = dicconProp.ColorA3;
-            answer_textBox.BackColor = dicconProp.ColorA9;
-            roundedPanelChatBox.BackColor = dicconProp.ColorA9;
+            btAsk.BackColor = DicconProp.ColorA8;
+            btYourQuestion.BackColor = DicconProp.ColorA3;
+            btInstantAsk.BackColor = DicconProp.ColorA8;
+            btPeopleTop.BackColor = DicconProp.ColorA3;
+            btAskTop.BackColor = DicconProp.ColorA3;
+            richQuestion.BackColor = DicconProp.ColorA9;
+            globalExamplePanel.BackColor = DicconProp.ColorA9;
+            panelOfRichQuestion_1.BackColor = DicconProp.ColorA9;
+            exampleAnswerColoredPanel.BackColor = DicconProp.ColorA3;
+            answer_textBox.BackColor = DicconProp.ColorA9;
+            roundedPanelChatBox.BackColor = DicconProp.ColorA9;
             /// load Global first 
             btPeopleTop_Click(null, null);
         }
@@ -62,21 +58,21 @@ namespace Diccon.Pages
 
         private void btGlobal_MouseEnter(object sender, EventArgs e)
         {
-            dicconProp.Control_MouseEnter(sender, e);
+            DicconProp.Control_MouseEnter(sender, e);
         }
 
         private void btGlobal_MouseLeave(object sender, EventArgs e)
         {
-            dicconProp.Control_MouseLeave(sender, e);
+            DicconProp.Control_MouseLeave(sender, e);
         }
         private void btRecent_MouseEnter(object sender, EventArgs e)
         {
-            dicconProp.RoundedLabel_MouseEnter(sender, e);
+            DicconProp.RoundedLabel_MouseEnter(sender, e);
         }
 
         private void btRecent_MouseLeave(object sender, EventArgs e)
         {
-            dicconProp.RoundedLabel_MouseLeave(sender, e);
+            DicconProp.RoundedLabel_MouseLeave(sender, e);
         }
 
         private void btRecent_Click(object sender, EventArgs e)
@@ -98,28 +94,28 @@ namespace Diccon.Pages
 
         private void btAskPanel_MouseEnter(object sender, EventArgs e)
         {
-            dicconProp.RoundedLabel_Darker_MouseEnter(sender, e);
+            DicconProp.RoundedLabel_Darker_MouseEnter(sender, e);
         }
 
         private void btAskPanel_MouseLeave(object sender, EventArgs e)
         {
-            dicconProp.RoundedLabel_Darker_MouseLeave(sender, e);
+            DicconProp.RoundedLabel_Darker_MouseLeave(sender, e);
         }
 
         private async void btAsk_Click(object sender, EventArgs e)
         {
 
             SQLHandler sqlHandler = new SQLHandler();
-            await sqlHandler.Insert("Insert into dbo.DicconAsking(Question, AskUserId, AskDate) values(N'" + richQuestion.Text.Replace("'", "") + "','" + dicconProp.userID + "','" + DateTime.Today + "')");
+            await sqlHandler.InsertAsync("Insert into dbo.DicconAsking(Question, AskUserId, AskDate) values(N'" + richQuestion.Text.Replace("'", "") + "','" + DicconProp.UserID + "','" + DateTime.Today + "')");
             richQuestion.Text = "";
             btPeopleTop_Click(null, null);
         }
 
 
-        private void btReload_Click(object sender, EventArgs e)
+        private async void btReload_Click(object sender, EventArgs e)
         {
             globalFlowPanel.Controls.Clear();
-            DataTable dataTable = sqlHandler.Select("Select Question, Id, AskDate from dbo.DicconAsking");
+            DataTable dataTable = await sqlHandler.SelectAsync("Select Question, Id, AskDate from dbo.DicconAsking");
             for (int index = dataTable.Rows.Count - 1; index >= 0; index--)
             {
                 RoundedPanel roundedPanel = new RoundedPanel();
@@ -139,7 +135,7 @@ namespace Diccon.Pages
 
         }
         string listLoadedMessage;
-        private void GoToAnswer_Click(object sender, EventArgs e)
+        private async void GoToAnswer_Click(object sender, EventArgs e)
         {
             newMessageChecker.Enabled = true;
             TopControlSwitch("answerBox");
@@ -149,7 +145,7 @@ namespace Diccon.Pages
 
                 ///
                 /// Sample Answer from SQL: #đây là câu trả lời#?Đây là câu hỏi#?đây là câu hỏi kế#đây là câu trả lời
-                DataTable dataTable = sqlHandler.Select("Select Answer, AskUserId, Question from dbo.DicconAsking where Id=" + (sender as Label).Tag.ToString());
+                DataTable dataTable = await sqlHandler.SelectAsync("Select Answer, AskUserId, Question from dbo.DicconAsking where Id=" + (sender as Label).Tag.ToString());
                 if (currentAnswerString != dataTable.Rows[0][0].ToString())
                 {
                     // clear flowchatbox for a new bunch of conversasion
@@ -166,11 +162,11 @@ namespace Diccon.Pages
                         if (item.StartsWith("?"))
                         {
 
-                            user.userLongMessage(item.Substring(1), exampleAskLongText, exampleAskLongColoredPanel, exampleAskLongPanel, flowChatBox);
+                            user.UserLongMessage(item.Substring(1), exampleAskLongText, exampleAskLongColoredPanel, exampleAskLongPanel, flowChatBox);
                         }
                         else if (item != "")
                         {
-                            bot.botAnswerLongMessage(item, exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
+                            bot.BotAnswerLongMessage(item, exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
                         }
                     }
                 }
@@ -183,12 +179,12 @@ namespace Diccon.Pages
         }
 
 
-        private void ReloadInChat()
+        private async void ReloadInChat()
         {
             try
             {
                 /// Sample Answer from SQL: #đây là câu trả lời#?Đây là câu hỏi#?đây là câu hỏi kế#đây là câu trả lời
-                DataTable dataTable = sqlHandler.Select("Select Answer, AskUserId from dbo.DicconAsking where Id=" + currentQuestionID);
+                DataTable dataTable = await sqlHandler.SelectAsync("Select Answer, AskUserId from dbo.DicconAsking where Id=" + currentQuestionID);
                 if (currentAnswerString != dataTable.Rows[0][0].ToString())
                 {
                     // clear flowchatbox for a new bunch of conversasion
@@ -200,18 +196,18 @@ namespace Diccon.Pages
                         if (!listLoadedMessage.Contains(item) && !listLoadedMessage.Contains("?" + item))
                             if ((item.Trim() != "") && (item.StartsWith("?")))
                             {
-                                user.userLongMessage(item.Substring(1), exampleAskLongText, exampleAskLongColoredPanel, exampleAskLongPanel, flowChatBox);
+                                user.UserLongMessage(item.Substring(1), exampleAskLongText, exampleAskLongColoredPanel, exampleAskLongPanel, flowChatBox);
                                 listLoadedMessage += item;
                             }
                             else if ((item.Trim() != "") && (!item.StartsWith("?")))
                             {
-                                bot.botAnswerLongMessage(item, exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
+                                bot.BotAnswerLongMessage(item, exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
                                 listLoadedMessage += item;
 
                             }
                     }
                 }
-                if (dicconProp.userID == dataTable.Rows[0][1].ToString()) // if userId == AskUserId -> this is the one who create this question
+                if (DicconProp.UserID == dataTable.Rows[0][1].ToString()) // if userId == AskUserId -> this is the one who create this question
                 {
                     btRemove.Visible = true;
                 }
@@ -223,7 +219,7 @@ namespace Diccon.Pages
             }
             catch (Exception)
             {
-                MessageBox.Show(dicconProp.errorUnknown + "- #165-435-996", dicconProp.caption);
+                MessageBox.Show(DicconProp.ErrorUnknown + "- #165-435-996", DicconProp.caption);
             }
 
         }
@@ -294,12 +290,12 @@ namespace Diccon.Pages
 
         private void btReload_MouseEnter(object sender, EventArgs e)
         {
-            dicconProp.Control_MouseEnter(sender, e);
+            DicconProp.Control_MouseEnter(sender, e);
         }
 
         private void btReload_MouseLeave(object sender, EventArgs e)
         {
-            dicconProp.Control_MouseLeave(sender, e);
+            DicconProp.Control_MouseLeave(sender, e);
         }
 
         private void globalExampleAsk_Click(object sender, EventArgs e)
@@ -307,23 +303,23 @@ namespace Diccon.Pages
 
         }
 
-        private void answer_textBox_KeyDown(object sender, KeyEventArgs e)
+        private async void answer_textBox_KeyDown(object sender, KeyEventArgs e)
         {
 
             if (e.KeyCode == Keys.Enter)
             {
-                if (connectivity.isOnline())
+                if (connectivity.IsOnline())
                 {
-                    if (dicconProp.userID == currentQuestionUserID)
+                    if (DicconProp.UserID == currentQuestionUserID)
                     {
                         //user.userLongMessage(answer_textBox.Text, exampleAskLongText, exampleAskLongColoredPanel, exampleAskLongPanel, flowChatBox);
-                        sqlHandler.Update("Update dbo.DicconAsking Set Answer=N'" + currentAnswerString + "#?" + answer_textBox.Text.Replace("'", "") + "' where Id=" + currentQuestionID);
+                        await sqlHandler.UpdateAsync("Update dbo.DicconAsking Set Answer=N'" + currentAnswerString + "#?" + answer_textBox.Text.Replace("'", "") + "' where Id=" + currentQuestionID);
 
                     }
                     else
                     {
                         //bot.botAnswerLongMessage(answer_textBox.Text, exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
-                        sqlHandler.Update("Update dbo.DicconAsking Set Answer=N'" + currentAnswerString + "#" + answer_textBox.Text.Replace("'", "") + "' where Id=" + currentQuestionID);
+                        await sqlHandler.UpdateAsync("Update dbo.DicconAsking Set Answer=N'" + currentAnswerString + "#" + answer_textBox.Text.Replace("'", "") + "' where Id=" + currentQuestionID);
 
                     }
                     answer_textBox.Text = "";
@@ -349,12 +345,12 @@ namespace Diccon.Pages
             answer_textBox.Focus();
         }
 
-        private void btReloadYours_Click(object sender, EventArgs e)
+        private async void btReloadYours_Click(object sender, EventArgs e)
         {
             flowYours.Controls.Clear();
-            if (connectivity.isOnline())
+            if (connectivity.IsOnline())
             {
-                DataTable yourDatatable = sqlHandler.Select("Select Question, Id from dbo.DicconAsking where AskUserId=" + dicconProp.userID);
+                DataTable yourDatatable = await sqlHandler.SelectAsync("Select Question, Id from dbo.DicconAsking where AskUserId=" + DicconProp.UserID);
                 for (int index = yourDatatable.Rows.Count - 1; index >= 0; index--)
                 {
                     RoundedPanel roundedPanel = new RoundedPanel();
@@ -383,11 +379,10 @@ namespace Diccon.Pages
         {
 
         }
-        connectivity connectivity = new connectivity();
         private void newMessageChecker_Tick(object sender, EventArgs e)
         {
             newMessageChecker.Enabled = false;
-            if (connectivity.isOnline())
+            if (connectivity.IsOnline())
             {
                 ReloadInChat();
             }
@@ -410,13 +405,13 @@ namespace Diccon.Pages
 
         }
 
-        private void btRemove_Click(object sender, EventArgs e)
+        private async void btRemove_Click(object sender, EventArgs e)
         {
             try
             {
-                if (connectivity.isOnline())
+                if (connectivity.IsOnline())
                 {
-                    sqlHandler.Delete("Delete from dbo.DicconAsking where Id=" + currentQuestionID);
+                    await sqlHandler.DeleteAsync("Delete from dbo.DicconAsking where Id=" + currentQuestionID);
                     btPeopleTop_Click(null, null);
                 }
             }

@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 
 namespace Diccon
 {
-    internal class connectivity
+    internal class Connectivity
     {
-        public bool isOnline()
+        public bool IsOnline()
         {
             try
             {
@@ -24,9 +24,9 @@ namespace Diccon
                 return false;
             }
         }
-        public async Task<bool> isWebsiteAlive(Uri url)
+        public async Task<bool> IsWebsiteAlive(Uri url)
         {
-            if (isOnline())
+            if (IsOnline())
             {
                 HttpClient client = new HttpClient();
                 var checkingResponse = await client.GetAsync(url);

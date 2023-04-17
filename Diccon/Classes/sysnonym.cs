@@ -1,27 +1,35 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Net.Http;
 using System.Text.Json.Nodes;
 using System.Threading.Tasks;
-using System.Windows;
 
 namespace Diccon
 {
-    internal class sysnonym
+    internal class Sysnonym
     {
 
-        private List<string> getSynonymFromDatabase(string word)
+        private async Task<List<string>> GetSynonymFromDatabase(string word)
         {
+            if (DicconProp.SynonymCache.ContainsKey(word))
+            {
+                return DicconProp.SynonymCache[word];
+            }
+
             try
             {
                 SQLHandler sqlHandler = new SQLHandler();
-                DataTable dataTable = sqlHandler.Select($"SELECT * FROM dbo.DicconSynonym WHERE Word='{word}'");
+                DataTable dataTable = await sqlHandler.SelectAsync($"SELECT * FROM dbo.DicconSynonym WHERE Word='{word}'");
                 if (dataTable != null)
                 {
                     string result = dataTable.Rows[0][1].ToString();
-                    return result.Split(',').ToList();
+                    List<string> synonyms = result.Split(',').ToList();
+                    DicconProp.SynonymCache[word] = synonyms;
+                    return synonyms;
+
                 }
                 else
                 {
@@ -30,37 +38,35 @@ namespace Diccon
             }
             catch (Exception)
             {
-
                 return null;
-
             }
-
-
         }
 
-        private async void writeSynonymToDatabse(string word, string synonym)
+
+
+        private async void WriteSynonymToDatabse(string word, string synonym)
         {
             try
             {
                 SQLHandler sqlHandler = new SQLHandler();
-                await sqlHandler.Insert($"INSERT INTO dbo.DicconSynonym VALUES('{word.ToLower()}','{synonym}')");
+                await sqlHandler.InsertAsync($"INSERT INTO dbo.DicconSynonym VALUES('{word.ToLower()}','{synonym}')");
             }
             catch (Exception)
             {
 
             }
-            
-     }
 
-        public async Task<List<string>> getSynonymListAsync(string word)
+        }
+
+        public async Task<List<string>> GetSynonymListAsync(string word)
         {
-            List<string> list = getSynonymFromDatabase(word);
-           if (list == null)
+            List<string> list = await GetSynonymFromDatabase(word);
+            if (list == null)
             {
-                list = await getSynonymFromRapidAPIAsync(word);
-                if(list!= null)
+                list = await GetSynonymFromRapidAPIAsync(word);
+                if (list != null)
                 {
-                    writeSynonymToDatabse(word, String.Join(",", list.ToArray()));
+                    WriteSynonymToDatabse(word, String.Join(",", list.ToArray()));
                 }
                 return list;
             }
@@ -70,7 +76,7 @@ namespace Diccon
             }
 
         }
-        public async Task<List<string>> getSynonymFromRapidAPIAsync(string word)
+        public async Task<List<string>> GetSynonymFromRapidAPIAsync(string word)
         {
 
             List<string> synonymList = new List<string>();
@@ -96,7 +102,7 @@ namespace Diccon
                         body = await response.Content.ReadAsStringAsync();
                         JsonNode JsonResponse = JsonNode.Parse(body);
 
-                        for (int i = 0; i < dicconProp.maximumSynonym; i++)
+                        for (int i = 0; i < DicconProp.MaximumSynonym; i++)
                         {
                             try
                             {

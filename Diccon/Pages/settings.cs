@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Diccon
@@ -22,7 +15,7 @@ namespace Diccon
 
         private void settings_Load(object sender, EventArgs e)
         {
-            btDelete.BackColor = dicconProp.ColorA3;
+            btDelete.BackColor = DicconProp.ColorA3;
         }
 
         private void btDeleteHistory_Click(object sender, EventArgs e)
@@ -35,11 +28,11 @@ namespace Diccon
         {
             try
             {
-                if (File.Exists(dicconProp.historyFileName))
+                if (File.Exists(DicconProp.HistoryFileName))
                 {
-                    if (MessageBox.Show(dicconProp.promptDeleteHistoryFile, dicconProp.caption, MessageBoxButtons.YesNo) == DialogResult.Yes)
+                    if (MessageBox.Show(DicconProp.PromptDeleteHistoryFile, DicconProp.caption, MessageBoxButtons.YesNo) == DialogResult.Yes)
                     {
-                        File.Delete(dicconProp.historyFileName);
+                        File.Delete(DicconProp.HistoryFileName);
                         //listHistory.DataSource = null;
                         //listHistory.Items.Clear();
 
@@ -49,26 +42,26 @@ namespace Diccon
             }
             catch (Exception)
             {
-                MessageBox.Show(dicconProp.errorDeleteHistoryFile, dicconProp.caption);
+                MessageBox.Show(DicconProp.ErrorDeleteHistoryFile, DicconProp.caption);
             }
         }
 
         private void btDelete_MouseEnter(object sender, EventArgs e)
         {
-            dicconProp.RoundedLabel_Darker_MouseEnter(sender, e);
+            DicconProp.RoundedLabel_Darker_MouseEnter(sender, e);
 
         }
 
         private void btDelete_MouseLeave(object sender, EventArgs e)
         {
-            dicconProp.RoundedLabel_Darker_MouseLeave(sender, e);
+            DicconProp.RoundedLabel_Darker_MouseLeave(sender, e);
         }
 
         private void btAutoBackup_CheckedChanged(object sender, EventArgs e)
         {
-            if (btAutoBackup.Checked == true) 
-            { 
-                Properties.Settings.Default["autoBackup"] = "True"; 
+            if (btAutoBackup.Checked == true)
+            {
+                Properties.Settings.Default["autoBackup"] = "True";
             }
             else
             {

@@ -1,18 +1,14 @@
 ﻿using Microsoft.AspNetCore.Cryptography.KeyDerivation;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Diccon
 {
-    public class sha256Encrypt
+    public class Sha256Encrypt
     {
         private string _key;
-        private int _salt=100;
+        private int _salt = 100;
 
-        public sha256Encrypt(string password)
+        public Sha256Encrypt(string password)
         {
             _key = password;
         }

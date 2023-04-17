@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.Drawing;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text.Json.Nodes;
@@ -10,7 +8,7 @@ using System.Windows.Forms;
 
 namespace Diccon
 {
-    internal class botBehavior
+    internal class BotBehavior
     {
         string Setting_ShortView = Properties.Settings.Default["shortView"].ToString();
         /// <summary>
@@ -21,7 +19,7 @@ namespace Diccon
         /// <param name="exampleColoredPanel"></param>
         /// <param name="exampleParentPanel"></param>
         /// <param name="targetFlowLayout"></param>
-        public void botAnswerLongMessage(string answerText, Label exampleLabel /*RichTextBox exampleRichTextBox*/, Panel exampleColoredPanel, Panel exampleParentPanel, FlowLayoutPanel targetFlowLayout)
+        public void BotAnswerLongMessage(string answerText, Label exampleLabel /*RichTextBox exampleRichTextBox*/, Panel exampleColoredPanel, Panel exampleParentPanel, FlowLayoutPanel targetFlowLayout)
         {
             Panel newAnswerPanel = new Panel();
             RoundedPanel newColoredPanel = new RoundedPanel();
@@ -29,15 +27,15 @@ namespace Diccon
             newColoredPanel.BackColor = exampleColoredPanel.BackColor;
             newColoredPanel.Width = exampleColoredPanel.Width;
 
-            Label newLabel= new Label();
+            Label newLabel = new Label();
             newLabel.Text = answerText;
             newLabel.MaximumSize = exampleLabel.MaximumSize;
             newLabel.Location = exampleLabel.Location;
             newLabel.AutoSize = false;
-            newLabel.Height= newColoredPanel.Height- 20;
+            newLabel.Height = newColoredPanel.Height - 20;
             newLabel.Width = exampleLabel.MaximumSize.Width;
             newLabel.Font = exampleLabel.Font;
-            newLabel.ForeColor= exampleLabel.ForeColor;
+            newLabel.ForeColor = exampleLabel.ForeColor;
             newLabel.Click += NewLabel_Click1;
             newLabel.Cursor = Cursors.Hand;
             newColoredPanel.Controls.Add(newLabel);
@@ -56,47 +54,14 @@ namespace Diccon
             Label lb = (sender as Label);
             FlowLayoutPanel grandFlowLayout = (lb.Parent.Parent.Parent as FlowLayoutPanel);
             lb.AutoSize = true;
-            lb.Parent.Height = lb.Height+20;
+            lb.Parent.Height = lb.Height + 20;
             lb.Parent.Parent.Height = lb.Height + 20;
             lb.Cursor = Cursors.Default;
             // refresh to get rid of unrendered design
             grandFlowLayout.Refresh();
         }
-
-        private void NewRichTextBox_MouseHover(object sender, EventArgs e)
-        {
-            (sender as RichTextBox).SelectNextControl((sender as RichTextBox).Parent.Parent.Parent, true,true,true,true);
-        }
-
-        private void newRichTextBox_ClickToExpand(object sender, EventArgs e)
-        {
-            RichTextBox textMessage = (sender as RichTextBox);
-            FlowLayoutPanel grandFlowLayout = (textMessage.Parent.Parent.Parent as FlowLayoutPanel);
-            Panel panel = (textMessage.Parent.Parent as Panel);
-            int lineHeight = 20;
-            int lineCount = textMessage.GetLineFromCharIndex(textMessage.TextLength);
-            textMessage.Height = lineHeight * lineCount;
-            textMessage.Parent.Parent.Height = textMessage.Height + 20;
-            grandFlowLayout.ScrollControlIntoView(panel);
-            // refresh to get rid of unrendered design
-            grandFlowLayout.Refresh();
-        }
-
-        private void newRichTextBox_TextChanged(object sender, EventArgs e)
-        {
-            RichTextBox textMessage = (sender as RichTextBox);
-            var parentPanel = textMessage.Parent.Parent;
-            parentPanel.Visible = false;
-
-            int lineHeight = 20;
-            int lineCount = textMessage.GetLineFromCharIndex(textMessage.TextLength);
-            textMessage.Height = lineHeight * lineCount;
-            parentPanel.Height = textMessage.Height + 20;
-            parentPanel.Visible = true;
-
-        }
         /// <summary>
-        /// Create a rounded bubble chat with a play button. These parametter bellow is the partern design for function to clone. 
+        /// Create a rounded bubble chat with a play button. These parameters bellow is the pattern design for function to clone. 
         /// </summary>
         /// <param name="textToPlay"></param>
         /// <param name="examplePlayButton"></param>
@@ -104,7 +69,7 @@ namespace Diccon
         /// <param name="examplePlayAlignPanel"></param>
         /// <param name="examplePanel"></param>
         /// <param name="targetFlowPanel"></param>
-        public void botSoundMessage(String textToPlay, Label exampleTextHolder, PictureBox examplePlayButton, RoundedPanel exampleColoredPanel, Panel examplePlayAlignPanel, Panel examplePanel, FlowLayoutPanel targetFlowPanel)
+        public void BotSoundMessage(String textToPlay, Label exampleTextHolder, PictureBox examplePlayButton, RoundedPanel exampleColoredPanel, Panel examplePlayAlignPanel, Panel examplePanel, FlowLayoutPanel targetFlowPanel)
         {
             Panel newPanel = new Panel();
             Panel newAlignPanel = new Panel();
@@ -153,7 +118,7 @@ namespace Diccon
         private void PlayButton_Click(object sender, EventArgs e)
         {
             string text = (sender as PictureBox).Tag.ToString();
-            botSoundPlay(text, "us");
+            BotSoundPlay(text, "us");
         }
 
         /// <summary>
@@ -161,25 +126,14 @@ namespace Diccon
         /// </summary>
         /// <param name="text"></param>
         /// <param name="area"></param>
-        public void botSoundPlay(string text, string area)
+        public void BotSoundPlay(string text, string area)
         {
-            soundRelated player = new soundRelated();
-            wordRelated word = new wordRelated(text);
+            SoundRelated player = new SoundRelated();
+            WordRelated word = new WordRelated(text);
             word.SearchWordProcess();
             player.OfflinePlay(word.OutWord);
         }
-        /// <summary>
-        /// Play sound of a given word 
-        /// </summary>
-        /// <param name="text"></param>
-        public void botSoundPlay(string text)
-        {
-            soundRelated player = new soundRelated();
-            wordRelated word = new wordRelated(text);
-            word.SearchWordProcess();
-            player.OfflinePlay(word.OutWord);
-        }
-        public void botSynonym(List<string> synonymList, RoundedLabel exampleItem, FlowLayoutPanel examplePanelHaveSynonyms, FlowLayoutPanel targetFlowLayout)
+        public void BotSynonym(List<string> synonymList, RoundedLabel exampleItem, FlowLayoutPanel examplePanelHaveSynonyms, FlowLayoutPanel targetFlowLayout)
         {
             FlowLayoutPanel panelHaveSynonyms = new FlowLayoutPanel();
             panelHaveSynonyms.AutoSize = true;
@@ -211,7 +165,7 @@ namespace Diccon
 
         private void NewLabel_Click(object sender, EventArgs e)
         {
-            dicconProp.wordFromSynonym = (sender as RoundedLabel).Text;
+            DicconProp.WordFromSynonym = (sender as RoundedLabel).Text;
         }
 
         /// <summary>
@@ -220,7 +174,7 @@ namespace Diccon
         /// </summary>
         /// <param name="text"></param>
         /// <returns></returns>
-        public async Task<string> getEnViTranslatedTextAsync(string text)
+        public async Task<string> GetEnViTranslatedTextAsync(string text)
         {
             try
             {
@@ -254,7 +208,7 @@ namespace Diccon
                     else
                     {
 
-                        return dicconProp.errorInternet;
+                        return DicconProp.ErrorInternet;
 
                     }
 
@@ -262,13 +216,13 @@ namespace Diccon
             }
             catch (Exception)
             {
-                return dicconProp.errorInternet;
+                return DicconProp.ErrorInternet;
             }
 
 
         }
 
-        public async Task<string> getViEnTranslatedTextAsync(string text)
+        public async Task<string> GetViEnTranslatedTextAsync(string text)
         {
             try
             {
@@ -302,7 +256,7 @@ namespace Diccon
                     else
                     {
 
-                        return dicconProp.errorInternet;
+                        return DicconProp.ErrorInternet;
 
                     }
 
@@ -310,26 +264,26 @@ namespace Diccon
             }
             catch (Exception)
             {
-                return dicconProp.errorInternet;
+                return DicconProp.ErrorInternet;
             }
 
 
         }
 
-        public async void botImageAnswer(PictureBox examplePixabayLogo, RoundedPictureBox examplePictureBox, RoundedPanel exampleColoredPanel, Panel examplePanel, FlowLayoutPanel targetFlowLayout)
+        public async void BotImageAnswer(PictureBox examplePixabayLogo, RoundedPictureBox examplePictureBox, RoundedPanel exampleColoredPanel, Panel examplePanel, FlowLayoutPanel targetFlowLayout)
         {
             RoundedPictureBox pictureBox = new RoundedPictureBox();
             RoundedPanel roundedPanel = new RoundedPanel();
             PictureBox pixabayLogo = new PictureBox();
             Panel panel = new Panel();
-            imageRelated img = new imageRelated();
+            ImageRelated img = new ImageRelated();
 
             pixabayLogo.Image = examplePixabayLogo.Image;
             pixabayLogo.Location = examplePixabayLogo.Location;
             pixabayLogo.Size = examplePixabayLogo.Size;
             pixabayLogo.Click += PixabayLogo_Click;
             pixabayLogo.Cursor = examplePixabayLogo.Cursor;
-            pixabayLogo.Visible = dicconProp.isFromPixabay;
+            pixabayLogo.Visible = DicconProp.IsFromPixabay;
 
             roundedPanel.Size = exampleColoredPanel.Size;
             roundedPanel.Location = exampleColoredPanel.Location;
@@ -341,13 +295,13 @@ namespace Diccon
             pictureBox.BorderColor = roundedPanel.BackColor;
             pictureBox.BackColor = examplePictureBox.BackColor;
             pictureBox.ErrorImage = examplePictureBox.ErrorImage;
-            pictureBox.InitialImage= examplePictureBox.InitialImage;
+            pictureBox.InitialImage = examplePictureBox.InitialImage;
 
             panel.Size = examplePanel.Size;
 
-            pictureBox.ImageLocation = await img.getImageUrl(dicconProp.currentWord);
+            pictureBox.ImageLocation = await img.GetImageUrl(DicconProp.CurrentWord);
             pictureBox.Click += PictureBox_Click;
-            pictureBox.Tag = dicconProp.currentWord;
+            pictureBox.Tag = DicconProp.CurrentWord;
 
             roundedPanel.Controls.Add(pictureBox);
 
@@ -363,14 +317,14 @@ namespace Diccon
 
         private void PixabayLogo_Click(object sender, EventArgs e)
         {
-           
+
         }
 
         private async void PictureBox_Click(object sender, EventArgs e)
         {
 
-            imageRelated img = new imageRelated();
-            (sender as PictureBox).ImageLocation = await img.getImageUrl((sender as PictureBox).Tag.ToString());
+            ImageRelated img = new ImageRelated();
+            (sender as PictureBox).ImageLocation = await img.GetImageUrl((sender as PictureBox).Tag.ToString());
         }
     }
 }

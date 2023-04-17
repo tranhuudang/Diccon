@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Windows.Forms;
-using System.Runtime.InteropServices;
 namespace Diccon
 {
     internal static class Program
@@ -13,12 +12,12 @@ namespace Diccon
         private static extern bool SetProcessDpiAwarenessContext();
         static void Main()
         {
-            
+
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new appFrame());
-            
+
         }
     }
 }

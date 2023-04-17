@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Diccon.Pages
@@ -24,16 +17,16 @@ namespace Diccon.Pages
         }
         private void RoundedLabel_MouseEnter(object sender, EventArgs e)
         {
-            dicconProp.RoundedLabel_MouseEnter(sender, e);
+            DicconProp.RoundedLabel_MouseEnter(sender, e);
         }
         private void RoundedLabel_MouseLeave(object sender, EventArgs e)
         {
-            dicconProp.RoundedLabel_MouseLeave(sender, e);
+            DicconProp.RoundedLabel_MouseLeave(sender, e);
         }
 
         private void donate_Load(object sender, EventArgs e)
         {
-            btOpenQr.BackColor = dicconProp.ColorA5;
+            btOpenQr.BackColor = DicconProp.ColorA5;
         }
     }
 }

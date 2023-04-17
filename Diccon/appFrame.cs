@@ -1,21 +1,15 @@
 ﻿using Diccon.Pages;
 using FontAwesome.Sharp;
+using QuoteBank;
 using System;
+using System.Collections.Generic;
+using System.Data;
 using System.Drawing;
 using System.IO;
+using System.Linq;
 using System.Media;
-using System.Net;
-using System.Reflection;
-using System.Runtime.InteropServices;
 using System.Threading;
 using System.Windows.Forms;
-using QuoteBank;
-using System.Xml;
-using System.Data.SqlClient;
-using System.Data;
-using System.Collections.Generic;
-using System.Linq;
-using Diccon.Classes;
 
 namespace Diccon
 {
@@ -30,7 +24,7 @@ namespace Diccon
         Form settingForm = null;
         Form yawaForm = null;
         Form loginForm = null;
-       
+
         public appFrame()
         {
             switch (Properties.Settings.Default["language"])
@@ -49,18 +43,18 @@ namespace Diccon
         }
         private void AppFrame_Load(object sender, EventArgs e)
         {
-           
+
             // Stack up quotation
-            switch (dicconProp.language)
+            switch (DicconProp.Language)
             {
 
-                case dicconProp.LanguageType.English:
+                case DicconProp.LanguageType.English:
                     englishToolStripMenuItem.Checked = true;
                     vietnameseToolStripMenuItem.Checked = false;
                     Quotes.English quote = new Quotes.English();
                     lbQuotation.Text = quote.Wisdom;
                     break;
-                case dicconProp.LanguageType.Vietnamese:
+                case DicconProp.LanguageType.Vietnamese:
                     englishToolStripMenuItem.Checked = false;
                     vietnameseToolStripMenuItem.Checked = true;
                     Quotes.Vietnamese quote_vi = new Quotes.Vietnamese();
@@ -70,9 +64,9 @@ namespace Diccon
                     break;
             }
             //Determine data folder existen in ApplicationData
-            if (!Directory.Exists(dicconProp.dicconApplicationDataPath))
+            if (!Directory.Exists(DicconProp.DicconApplicationDataPath))
             {
-                Directory.CreateDirectory(dicconProp.dicconApplicationDataPath);
+                Directory.CreateDirectory(DicconProp.DicconApplicationDataPath);
             };
             switch (Properties.Settings.Default["staredForm"])
             {
@@ -89,9 +83,9 @@ namespace Diccon
                     break;
             }
             //get userId and Email in UserInfoFile
-            dicconProp.userID = getUserInfo()[0];
-            dicconProp.userEmail = getUserInfo()[1];
-            if (dicconProp.userID != "")
+            DicconProp.UserID = getUserInfo()[0];
+            DicconProp.UserEmail = getUserInfo()[1];
+            if (DicconProp.UserID != "")
             {
                 accountToolStripMenuItem.Visible = true;
                 backUpSyncToolStripMenuItem.Visible = true;
@@ -99,24 +93,24 @@ namespace Diccon
             }
 
 
-            
+
             //topControlPanel.BackColor = dicconProp.AccentColor;
-            btDictionary.BackColor = dicconProp.ColorA8;
-            btDonate.BackColor = dicconProp.ColorA8;
-            btTimeline.BackColor = dicconProp.ColorA8;
-            btCommunity.BackColor = dicconProp.ColorA8;
-            topPanel.BackColor = dicconProp.AccentColor;
+            btDictionary.BackColor = DicconProp.ColorA8;
+            btDonate.BackColor = DicconProp.ColorA8;
+            btTimeline.BackColor = DicconProp.ColorA8;
+            btCommunity.BackColor = DicconProp.ColorA8;
+            topPanel.BackColor = DicconProp.AccentColor;
         }
 
 
         private string[] getUserInfo()
         {
-            string[] userInfo= new string[2];
+            string[] userInfo = new string[2];
             userInfo[0] = "";
             userInfo[1] = "";
-            if (File.Exists(dicconProp.userInfoFileName))
+            if (File.Exists(DicconProp.UserInfoFileName))
             {
-                string userInfoFile = File.ReadAllText(dicconProp.userInfoFileName);
+                string userInfoFile = File.ReadAllText(DicconProp.UserInfoFileName);
                 userInfo[0] = userInfoFile.Split('#')[0];
                 userInfo[1] = userInfoFile.Split('#')[1];
             }
@@ -124,9 +118,9 @@ namespace Diccon
         }
 
 
-      
-          
-        
+
+
+
 
 
 
@@ -139,7 +133,7 @@ namespace Diccon
         /// <param name="e"></param>
         private void RoundedLabel_MouseEnter(object sender, EventArgs e)
         {
-            dicconProp.RoundedLabel_MouseEnter(sender, e);
+            DicconProp.RoundedLabel_MouseEnter(sender, e);
         }
         /// <summary>
         /// Change Red and Green background of Rounded-Label to a lighter shade of  color
@@ -148,7 +142,7 @@ namespace Diccon
         /// <param name="e"></param>
         private void RoundedLabel_MouseLeave(object sender, EventArgs e)
         {
-            dicconProp.RoundedLabel_MouseLeave(sender, e);
+            DicconProp.RoundedLabel_MouseLeave(sender, e);
         }
         /// <summary>
         /// Change position of PictureBox to create a illusion that the box is lift up a little bit
@@ -204,14 +198,14 @@ namespace Diccon
                 {
                     if (Properties.Settings.Default["staredForm"].ToString() == targetForm.Text)
                     {
-                        btStar.Visible = dicconProp.language == "english" ? true : false;
+                        btStar.Visible = DicconProp.Language == DicconProp.LanguageType.English ? true : false;
 
                         btStar.IconColor = Color.Gold;
                         btStar.IconFont = IconFont.Solid;
                     }
                     else
                     {
-                        btStar.Visible = dicconProp.language == "english" ? true : false;
+                        btStar.Visible = DicconProp.Language == DicconProp.LanguageType.English ? true : false;
 
                         btStar.IconColor = Color.Black;
                         btStar.IconFont = IconFont.Regular;
@@ -293,7 +287,7 @@ namespace Diccon
         }
 
 
-    
+
 
         private void playGroundPanel_ControlAdded(object sender, ControlEventArgs e)
         {
@@ -374,7 +368,7 @@ namespace Diccon
 
         private void roundedLabel7_Click(object sender, EventArgs e)
         {
-            if (dicconProp.userID != "")
+            if (DicconProp.UserID != "")
             {
                 if (yawaForm != null)
                 {
@@ -389,13 +383,13 @@ namespace Diccon
             }
             else
             {
-                MessageBox.Show(dicconProp.promptLogin, dicconProp.caption);
+                MessageBox.Show(DicconProp.PromptLogin, DicconProp.caption);
             }
         }
 
         private void timeLineDetector_Tick(object sender, EventArgs e)
         {
-            if (dicconProp.wordFromTimeline != "")
+            if (DicconProp.WordFromTimeline != "")
             {
                 btDictionary_Click(null, null);
             }
@@ -403,7 +397,7 @@ namespace Diccon
 
         private void githubToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           
+
         }
 
         private void toolStripMenuItem3_Click(object sender, EventArgs e)
@@ -466,72 +460,73 @@ namespace Diccon
             try
             {
                 backUpTimeline();
-                MessageBox.Show(dicconProp.promptSyncedSuccess, dicconProp.caption);
+                MessageBox.Show(DicconProp.PromptSyncedSuccess, DicconProp.caption);
             }
             catch (Exception error)
             {
                 //MessageBox.Show(dicconProp.errorBackup, dicconProp.caption);
-                MessageBox.Show(error.ToString(), dicconProp.caption);
+                MessageBox.Show(error.ToString(), DicconProp.caption);
 
 
             }
 
         }
 
-        private void backUpTimeline() {
+        private async void backUpTimeline()
+        {
 
             string timelineLocalContents = "";
             string timelineOnlineContents = "";
-            connectivity connectivity = new connectivity();
-            if (connectivity.isOnline())
+            var connectivity = new Connectivity();
+            if (connectivity.IsOnline())
             {
-                
-                    if (File.Exists(dicconProp.historyFileName))
+
+                if (File.Exists(DicconProp.HistoryFileName))
+                {
+                    // Get both local and online data together, and then mix them up, filter out doulicate and push online and local
+                    timelineLocalContents = File.ReadAllText(DicconProp.HistoryFileName);
+                    string getOnlineQueryString = @"Select Timeline from dbo.DicconUser where Id=" + DicconProp.UserID;
+                    SQLHandler sqlHandler = new SQLHandler();
+                    DataTable dataTable = await sqlHandler.SelectAsync(getOnlineQueryString);
+                    timelineOnlineContents = dataTable.Rows[0][0].ToString();
+                    // Combine two string
+                    string combinedContents = timelineLocalContents + "#" + timelineOnlineContents;
+                    string[] rawList = combinedContents.Split('#');
+                    List<string> rawList_1 = new List<string>();
+                    foreach (var item in rawList)
                     {
-                        // Get both local and online data together, and then mix them up, filter out doulicate and push online and local
-                        timelineLocalContents = File.ReadAllText(dicconProp.historyFileName);
-                        string getOnlineQueryString = @"Select Timeline from dbo.DicconUser where Id=" + dicconProp.userID;
-                        SQLHandler sqlHandler = new SQLHandler();
-                        DataTable dataTable = sqlHandler.Select(getOnlineQueryString);
-                        timelineOnlineContents = dataTable.Rows[0][0].ToString();
-                        // Combine two string
-                        string combinedContents = timelineLocalContents + "#" + timelineOnlineContents;
-                        string[] rawList = combinedContents.Split('#');
-                        List<string> rawList_1 = new List<string>();
-                        foreach (var item in rawList)
-                        {
-                            rawList_1.Add(item.ToString());
-                        }
-                        // Remove doublicate by Distinct() function in LINQ
-                        List<string> rawList_2 = rawList_1.Distinct().ToList();
-                        string outList = string.Join("#", rawList_2);
-                        // Update new data to online disk
-                        string updateQueryString = "UPDATE dbo.DicconUser  SET Timeline = '" + outList + "' Where Id=" + dicconProp.userID;
-                        sqlHandler.Update(updateQueryString);
-                        // Update new data to local disk
-                        StreamWriter history = new StreamWriter(dicconProp.historyFileName);
-                        history.Write(outList);
-                        history.Close();
+                        rawList_1.Add(item.ToString());
                     }
-                    else
-                    {
-                        // If local file not exist, we get online data and write it to local
-                        string getOnlineQueryString = @"Select Timeline from dbo.DicconResources where Id=" + dicconProp.userID;
-                        SQLHandler sqlHandler = new SQLHandler();
-                        DataTable dataTable = sqlHandler.Select(getOnlineQueryString);
-                        timelineOnlineContents = dataTable.Rows[0][1].ToString();
-                        // Update new data to local disk
-                        StreamWriter history = new StreamWriter(dicconProp.historyFileName);
-                        history.Write(timelineOnlineContents);
-                        history.Close();
-                    }
-               
-               
+                    // Remove doublicate by Distinct() function in LINQ
+                    List<string> rawList_2 = rawList_1.Distinct().ToList();
+                    string outList = string.Join("#", rawList_2);
+                    // Update new data to online disk
+                    string updateQueryString = "UPDATE dbo.DicconUser  SET Timeline = '" + outList + "' Where Id=" + DicconProp.UserID;
+                    await sqlHandler.UpdateAsync(updateQueryString);
+                    // Update new data to local disk
+                    StreamWriter history = new StreamWriter(DicconProp.HistoryFileName);
+                    history.Write(outList);
+                    history.Close();
+                }
+                else
+                {
+                    // If local file not exist, we get online data and write it to local
+                    string getOnlineQueryString = @"Select Timeline from dbo.DicconResources where Id=" + DicconProp.UserID;
+                    SQLHandler sqlHandler = new SQLHandler();
+                    DataTable dataTable = await sqlHandler.SelectAsync(getOnlineQueryString);
+                    timelineOnlineContents = dataTable.Rows[0][1].ToString();
+                    // Update new data to local disk
+                    StreamWriter history = new StreamWriter(DicconProp.HistoryFileName);
+                    history.Write(timelineOnlineContents);
+                    history.Close();
+                }
+
+
 
             }
             else
             {
-                MessageBox.Show(dicconProp.errorInternet, dicconProp.caption);
+                MessageBox.Show(DicconProp.ErrorInternet, DicconProp.caption);
             }
 
         }
@@ -541,7 +536,7 @@ namespace Diccon
             Properties.Settings.Default["language"] = "english";
             Properties.Settings.Default.Save();
             Application.Restart();
-            
+
         }
 
         private void vietnameseToolStripMenuItem_Click(object sender, EventArgs e)
@@ -553,12 +548,12 @@ namespace Diccon
 
         private void button1_Click(object sender, EventArgs e)
         {
-      
+
         }
 
         private void lbQuotation_Click(object sender, EventArgs e)
         {
-            dicconProp.wordFromTimeline = lbQuotation.Text.Replace("\"","");
+            DicconProp.WordFromTimeline = lbQuotation.Text.Replace("\"", "");
             btDictionary_Click(null, null);
         }
     }

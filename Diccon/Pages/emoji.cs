@@ -4,9 +4,9 @@ using System.Windows.Forms;
 
 namespace Diccon
 {
-    public partial class emoji : Form
+    public partial class Emoji : Form
     {
-        public emoji()
+        public Emoji()
         {
             InitializeComponent();
             /// With dropShadow Class to create a shadow for this form
@@ -48,7 +48,7 @@ namespace Diccon
 
         private void emoji_Load(object sender, EventArgs e)
         {
-            lbEmojiText.BackColor = dicconProp.ColorA8;
+            lbEmojiText.BackColor = DicconProp.ColorA8;
         }
     }
 }

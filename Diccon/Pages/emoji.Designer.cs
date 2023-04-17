@@ -1,6 +1,6 @@
 ﻿namespace Diccon
 {
-    partial class emoji
+    partial class Emoji
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(emoji));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Emoji));
             this.roundedPanel1 = new Diccon.RoundedPanel();
             this.lbEmojiText = new Diccon.RoundedLabel();
             this.laugh = new System.Windows.Forms.PictureBox();
