@@ -9,7 +9,7 @@ namespace Diccon.Pages
     {
         BotBehavior bot = new BotBehavior();
         UserAction user = new UserAction();
-        SQLHandler sqlHandler = new SQLHandler();
+        private readonly SQLHandler _sqlHandler = new SQLHandler();
         Connectivity connectivity = new Connectivity();
 
         string currentAnswerString;
@@ -106,8 +106,7 @@ namespace Diccon.Pages
         private async void btAsk_Click(object sender, EventArgs e)
         {
 
-            SQLHandler sqlHandler = new SQLHandler();
-            await sqlHandler.InsertAsync("Insert into dbo.DicconAsking(Question, AskUserId, AskDate) values(N'" + richQuestion.Text.Replace("'", "") + "','" + DicconProp.UserID + "','" + DateTime.Today + "')");
+            await _sqlHandler.InsertAsync("Insert into dbo.DicconAsking(Question, AskUserId, AskDate) values(N'" + richQuestion.Text.Replace("'", "") + "','" + DicconProp.UserID + "','" + DateTime.Today + "')");
             richQuestion.Text = "";
             btPeopleTop_Click(null, null);
         }
@@ -116,7 +115,7 @@ namespace Diccon.Pages
         private async void btReload_Click(object sender, EventArgs e)
         {
             globalFlowPanel.Controls.Clear();
-            DataTable dataTable = await sqlHandler.SelectAsync("Select Question, Id, AskDate from dbo.DicconAsking");
+            DataTable dataTable = await _sqlHandler.SelectAsync("Select Question, Id, AskDate from dbo.DicconAsking");
             for (int index = dataTable.Rows.Count - 1; index >= 0; index--)
             {
                 RoundedPanel roundedPanel = new RoundedPanel();
@@ -146,7 +145,7 @@ namespace Diccon.Pages
 
                 ///
                 /// Sample Answer from SQL: #đây là câu trả lời#?Đây là câu hỏi#?đây là câu hỏi kế#đây là câu trả lời
-                DataTable dataTable = await sqlHandler.SelectAsync("Select Answer, AskUserId, Question from dbo.DicconAsking where Id=" + (sender as Label).Tag.ToString());
+                DataTable dataTable = await _sqlHandler.SelectAsync("Select Answer, AskUserId, Question from dbo.DicconAsking where Id=" + (sender as Label).Tag.ToString());
                 if (currentAnswerString != dataTable.Rows[0][0].ToString())
                 {
                     // clear flowchatbox for a new bunch of conversasion
@@ -185,7 +184,7 @@ namespace Diccon.Pages
             try
             {
                 /// Sample Answer from SQL: #đây là câu trả lời#?Đây là câu hỏi#?đây là câu hỏi kế#đây là câu trả lời
-                DataTable dataTable = await sqlHandler.SelectAsync("Select Answer, AskUserId from dbo.DicconAsking where Id=" + currentQuestionID);
+                DataTable dataTable = await _sqlHandler.SelectAsync("Select Answer, AskUserId from dbo.DicconAsking where Id=" + currentQuestionID);
                 if (currentAnswerString != dataTable.Rows[0][0].ToString())
                 {
                     // clear flowchatbox for a new bunch of conversasion
@@ -220,7 +219,7 @@ namespace Diccon.Pages
             }
             catch (Exception)
             {
-                MessageBox.Show(DicconProp.ErrorUnknown + "- #165-435-996", DicconProp.caption);
+                MessageBox.Show(DicconProp.ErrorUnknown + "- #165-435-996", DicconProp.Caption);
             }
 
         }
@@ -315,13 +314,13 @@ namespace Diccon.Pages
                     if (DicconProp.UserID == currentQuestionUserID)
                     {
                         //user.userLongMessage(answer_textBox.Text, exampleAskLongText, exampleAskLongColoredPanel, exampleAskLongPanel, flowChatBox);
-                        await sqlHandler.UpdateAsync("Update dbo.DicconAsking Set Answer=N'" + currentAnswerString + "#?" + answer_textBox.Text.Replace("'", "") + "' where Id=" + currentQuestionID);
+                        await _sqlHandler.UpdateAsync("Update dbo.DicconAsking Set Answer=N'" + currentAnswerString + "#?" + answer_textBox.Text.Replace("'", "") + "' where Id=" + currentQuestionID);
 
                     }
                     else
                     {
                         //bot.botAnswerLongMessage(answer_textBox.Text, exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
-                        await sqlHandler.UpdateAsync("Update dbo.DicconAsking Set Answer=N'" + currentAnswerString + "#" + answer_textBox.Text.Replace("'", "") + "' where Id=" + currentQuestionID);
+                        await _sqlHandler.UpdateAsync("Update dbo.DicconAsking Set Answer=N'" + currentAnswerString + "#" + answer_textBox.Text.Replace("'", "") + "' where Id=" + currentQuestionID);
 
                     }
                     answer_textBox.Text = "";
@@ -352,7 +351,7 @@ namespace Diccon.Pages
             flowYours.Controls.Clear();
             if (connectivity.IsOnline())
             {
-                DataTable yourDatatable = await sqlHandler.SelectAsync("Select Question, Id from dbo.DicconAsking where AskUserId=" + DicconProp.UserID);
+                DataTable yourDatatable = await _sqlHandler.SelectAsync("Select Question, Id from dbo.DicconAsking where AskUserId=" + DicconProp.UserID);
                 for (int index = yourDatatable.Rows.Count - 1; index >= 0; index--)
                 {
                     RoundedPanel roundedPanel = new RoundedPanel();
@@ -413,7 +412,7 @@ namespace Diccon.Pages
             {
                 if (connectivity.IsOnline())
                 {
-                    await sqlHandler.DeleteAsync("Delete from dbo.DicconAsking where Id=" + currentQuestionID);
+                    await _sqlHandler.DeleteAsync("Delete from dbo.DicconAsking where Id=" + currentQuestionID);
                     btPeopleTop_Click(null, null);
                 }
             }

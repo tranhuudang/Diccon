@@ -17,6 +17,8 @@ namespace Diccon
         Connectivity connectivity = new Connectivity();
         string spellingCorrectorCurrentWord = "";
         Emoji emoji = new Emoji();
+        private readonly SQLHandler _sqlHandler = new SQLHandler();
+
         [STAThreadAttribute]
         private void mainHall_Load(object sender, EventArgs e)
         {
@@ -132,7 +134,7 @@ namespace Diccon
                 }
                 else
                 {
-                    MessageBox.Show(DicconProp.ErrorInternet, DicconProp.caption);
+                    MessageBox.Show(DicconProp.ErrorInternet, DicconProp.Caption);
                 }
             }
             suggestionTimer.Enabled = true;
@@ -153,7 +155,7 @@ namespace Diccon
             {
                 using (StreamWriter history = new StreamWriter(DicconProp.HistoryFileName, true))
                 {
-                    history.Write(DicconProp.SaparateCharactorInHistory);
+                    history.Write(DicconProp.SeparateCharacterInHistory);
                     history.Write(word);
                 }
             }
@@ -166,7 +168,7 @@ namespace Diccon
             word.PreWord = wordsToSearch;
             // Xử lí từ và lấy kết quả
             wordsToSearch = word.SearchWordProcess();
-            var resultFromList = DicconProp.splitedText.FirstOrDefault(w => w.Contains("•" + wordsToSearch));
+            var resultFromList = DicconProp.SplitedText.FirstOrDefault(w => w.Contains("•" + wordsToSearch));
             if (!string.IsNullOrEmpty(resultFromList))
             {
                 return resultFromList.ToString();
@@ -177,8 +179,7 @@ namespace Diccon
                 if (connectivity.IsOnline())
                 {
                     var wordsToInsert = wordsToSearch.Length > 9 ? wordsToSearch.Substring(0, 9) : wordsToSearch;
-                    SQLHandler sqlHandler = new SQLHandler();
-                    await sqlHandler.InsertAsync($"Insert into dbo.DicconMissing values(N'{DicconProp.UserID}', N'{wordsToInsert}')");
+                    await _sqlHandler.InsertAsync($"Insert into dbo.DicconMissing values(N'{DicconProp.UserID}', N'{wordsToInsert}')");
 
                 }
                 return DicconProp.PromptMissingWord;
@@ -350,7 +351,7 @@ namespace Diccon
 
         private void closeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show((sender as ToolStripMenuItem).Owner.TopLevelControl.Name, DicconProp.caption);
+            MessageBox.Show((sender as ToolStripMenuItem).Owner.TopLevelControl.Name, DicconProp.Caption);
         }
 
         private void btImage_Click(object sender, EventArgs e)

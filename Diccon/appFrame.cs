@@ -24,7 +24,7 @@ namespace Diccon
         Form settingForm = null;
         Form yawaForm = null;
         Form loginForm = null;
-
+        private readonly SQLHandler _sqlHandler = new SQLHandler();
         public appFrame()
         {
             switch (Properties.Settings.Default["language"])
@@ -383,7 +383,7 @@ namespace Diccon
             }
             else
             {
-                MessageBox.Show(DicconProp.PromptLogin, DicconProp.caption);
+                MessageBox.Show(DicconProp.PromptLogin, DicconProp.Caption);
             }
         }
 
@@ -460,12 +460,12 @@ namespace Diccon
             try
             {
                 backUpTimeline();
-                MessageBox.Show(DicconProp.PromptSyncedSuccess, DicconProp.caption);
+                MessageBox.Show(DicconProp.PromptSyncedSuccess, DicconProp.Caption);
             }
             catch (Exception error)
             {
                 //MessageBox.Show(dicconProp.errorBackup, dicconProp.caption);
-                MessageBox.Show(error.ToString(), DicconProp.caption);
+                MessageBox.Show(error.ToString(), DicconProp.Caption);
 
 
             }
@@ -486,8 +486,7 @@ namespace Diccon
                     // Get both local and online data together, and then mix them up, filter out doulicate and push online and local
                     timelineLocalContents = File.ReadAllText(DicconProp.HistoryFileName);
                     string getOnlineQueryString = @"Select Timeline from dbo.DicconUser where Id=" + DicconProp.UserID;
-                    SQLHandler sqlHandler = new SQLHandler();
-                    DataTable dataTable = await sqlHandler.SelectAsync(getOnlineQueryString);
+                    DataTable dataTable = await _sqlHandler.SelectAsync(getOnlineQueryString);
                     timelineOnlineContents = dataTable.Rows[0][0].ToString();
                     // Combine two string
                     string combinedContents = timelineLocalContents + "#" + timelineOnlineContents;
@@ -502,7 +501,7 @@ namespace Diccon
                     string outList = string.Join("#", rawList_2);
                     // Update new data to online disk
                     string updateQueryString = "UPDATE dbo.DicconUser  SET Timeline = '" + outList + "' Where Id=" + DicconProp.UserID;
-                    await sqlHandler.UpdateAsync(updateQueryString);
+                    await _sqlHandler.UpdateAsync(updateQueryString);
                     // Update new data to local disk
                     StreamWriter history = new StreamWriter(DicconProp.HistoryFileName);
                     history.Write(outList);
@@ -512,8 +511,7 @@ namespace Diccon
                 {
                     // If local file not exist, we get online data and write it to local
                     string getOnlineQueryString = @"Select Timeline from dbo.DicconResources where Id=" + DicconProp.UserID;
-                    SQLHandler sqlHandler = new SQLHandler();
-                    DataTable dataTable = await sqlHandler.SelectAsync(getOnlineQueryString);
+                    DataTable dataTable = await _sqlHandler.SelectAsync(getOnlineQueryString);
                     timelineOnlineContents = dataTable.Rows[0][1].ToString();
                     // Update new data to local disk
                     StreamWriter history = new StreamWriter(DicconProp.HistoryFileName);
@@ -526,7 +524,7 @@ namespace Diccon
             }
             else
             {
-                MessageBox.Show(DicconProp.ErrorInternet, DicconProp.caption);
+                MessageBox.Show(DicconProp.ErrorInternet, DicconProp.Caption);
             }
 
         }

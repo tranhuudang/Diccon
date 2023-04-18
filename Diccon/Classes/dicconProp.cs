@@ -7,7 +7,7 @@ namespace Diccon
 {
     static class DicconProp
     {
-        public static string caption = "Diccon";
+        private static string caption = "Diccon";
         public enum LanguageType
         {
             English,
@@ -28,43 +28,63 @@ namespace Diccon
         public static Color ColorA1 = Color.FromArgb((int)(R + (0.1 * (255 - R))), (int)(G + Math.Floor(0.1 * (255 - G))), (int)(B + Math.Floor(0.1 * (255 - B))));
 
         //Cache the results of the database query in memory to avoid querying the database every time the method is called for the same word
-        public static Dictionary<string, List<string>> SynonymCache = new Dictionary<string, List<string>>();
-        public static Dictionary<string, string> CachedImageUrls = new Dictionary<string, string>();
+        private static Dictionary<string, List<string>> synonymCache = new Dictionary<string, List<string>>();
+        private static Dictionary<string, string> cachedImageUrls = new Dictionary<string, string>();
 
-        public static string ApplicationDataPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-        public static string DicconApplicationDataPath = ApplicationDataPath + @"\Diccon";
-        public static string TextDataFromResources = Properties.Resources.Envi;
-        public static string SpellingCorrectorDictionary = Properties.Resources.spellingCorrectorDictionary;
-        public static string[] splitedText = TextDataFromResources.Split("@".ToCharArray());
+        private static string applicationDataPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+        private static string dicconApplicationDataPath = ApplicationDataPath + @"\Diccon";
+        private static string textDataFromResources = Properties.Resources.Envi;
+        private static string spellingCorrectorDictionary = Properties.Resources.spellingCorrectorDictionary;
+        private static string[] splitedText = TextDataFromResources.Split("@".ToCharArray());
         // botton height use to control the panel when open bottom menu
-        public static int BottomPanel_DefaultHeight = 60;
-        public static int BottomPanel_ExpandedHeight = 140;
-        public static bool FirstTimeOpen = true;
-        public static string ConnectionString = "Server= 112.78.2.154;Database=zer42982_ZeroClubOne;Trusted_Connection=False;MultipleActiveResultSets=true;User ID=zer42982_study;Password=7wYi02_w";
+        private static int bottomPanel_DefaultHeight = 60;
+        private static int bottomPanel_ExpandedHeight = 140;
+        private static bool firstTimeOpen = true;
+        private static string connectionString = "Server= 112.78.2.154;Database=zer42982_ZeroClubOne;Trusted_Connection=False;MultipleActiveResultSets=true;User ID=zer42982_study;Password=7wYi02_w";
 
-        public static Color Default_addNote_BackColor = Color.FromArgb(255, 192, 128);
-        public static Color Hover_addNote_BackColor = Color.FromArgb(242, 203, 164);
-        public static string ResourcesFolder = DicconApplicationDataPath + @"\Resources\";
-        public static string CurrentWord;
-        public static string CurrentTranslatedWord;
-        public static int MaximumSynonym = 10;
-        public static List<string> CurrentSynonymList = new List<string>();
-        public static int ListenTimeInNumber = 7;
-        public static string ListenTimeInString = "00:00:07";
-        public static string CurrentImageLink = "none";
-        public static bool IsFromPixabay = true;
 
-        public static char SaparateCharactorInHistory = '#';
-        public static string HistoryFileName = DicconApplicationDataPath + @"\History.ini";
-        public static string UserInfoFileName = DicconApplicationDataPath + @"\UserInfo.ini";
-        public static string NoteFilePath = DicconApplicationDataPath + @"\Note.xml";
-        public static string WordFromTimeline = "";
-        public static string WordFromSynonym = "";
-        public static string GithubPath = "https://github.com/tranhuudang";
-        public static string GithubProjectPath = "https://github.com/zeroclubvn/Diccon";
-        public static string GithubIssuesPath = "https://github.com/tranhuudang/Diccon/issues";
-        public static string UserID = "";
-        public static string UserEmail = "";
+        private static string resourcesFolder = DicconApplicationDataPath + @"\Resources\";
+        private static string currentWord;
+        private static string currentTranslatedWord;
+        private static int maximumSynonym = 10;
+        private static string listenTimeInString = "00:00:07";
+        private static bool isFromPixabay = true;
+
+        private const char separateCharacterInHistory = '#';
+        private static string historyFileName = DicconApplicationDataPath + @"\History.ini";
+        private static string userInfoFileName = DicconApplicationDataPath + @"\UserInfo.ini";
+        private static string wordFromTimeline = "";
+        private static string wordFromSynonym = "";
+        private static string userID = "";
+        private static string userEmail = "";
+
+        public static char SeparateCharacterInHistory => separateCharacterInHistory;
+
+        public static string HistoryFileName { get => historyFileName; set => historyFileName = value; }
+        public static string UserInfoFileName { get => userInfoFileName; set => userInfoFileName = value; }
+        public static string WordFromTimeline { get => wordFromTimeline; set => wordFromTimeline = value; }
+        public static string WordFromSynonym { get => wordFromSynonym; set => wordFromSynonym = value; }
+        public static string UserID { get => userID; set => userID = value; }
+        public static string UserEmail { get => userEmail; set => userEmail = value; }
+        public static string ResourcesFolder { get => resourcesFolder; set => resourcesFolder = value; }
+        public static string CurrentWord { get => currentWord; set => currentWord = value; }
+        public static string CurrentTranslatedWord { get => currentTranslatedWord; set => currentTranslatedWord = value; }
+        public static int MaximumSynonym { get => maximumSynonym; set => maximumSynonym = value; }
+        public static string ListenTimeInString { get => listenTimeInString; set => listenTimeInString = value; }
+        public static bool IsFromPixabay { get => isFromPixabay; set => isFromPixabay = value; }
+        public static string ApplicationDataPath { get => applicationDataPath; set => applicationDataPath = value; }
+        public static string DicconApplicationDataPath { get => dicconApplicationDataPath; set => dicconApplicationDataPath = value; }
+        public static string TextDataFromResources { get => textDataFromResources; set => textDataFromResources = value; }
+        public static string SpellingCorrectorDictionary { get => spellingCorrectorDictionary; set => spellingCorrectorDictionary = value; }
+        public static string[] SplitedText { get => splitedText; set => splitedText = value; }
+        public static int BottomPanel_DefaultHeight { get => bottomPanel_DefaultHeight; set => bottomPanel_DefaultHeight = value; }
+        public static int BottomPanel_ExpandedHeight { get => bottomPanel_ExpandedHeight; set => bottomPanel_ExpandedHeight = value; }
+        public static bool FirstTimeOpen { get => firstTimeOpen; set => firstTimeOpen = value; }
+        public static string ConnectionString { get => connectionString; set => connectionString = value; }
+        public static Dictionary<string, List<string>> SynonymCache { get => synonymCache; set => synonymCache = value; }
+        public static Dictionary<string, string> CachedImageUrls { get => cachedImageUrls; set => cachedImageUrls = value; }
+        public static string Caption { get => caption; set => caption = value; }
+
         /// <summary>
         ///  WebBrowser used for html2Rtf Converter
         /// </summary>
@@ -100,7 +120,8 @@ namespace Diccon
             Language == LanguageType.English ? "Unexpected error when trying to log out."
             : "Lỗi xảy ra khi đăng xuất, vui lòng thử lại sau";
 
-        public static string PathAccentColor = @"HKEY_CURRENT_USER\Software\Microsoft\Windows\DWM";
+
+
         /// <summary>
         /// Gets the currently applied Windows accent color.
         /// </summary>

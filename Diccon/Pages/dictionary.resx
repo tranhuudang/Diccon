@@ -166,7 +166,7 @@
     <value>addEmoji</value>
   </data>
   <data name="&gt;&gt;addEmoji.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=22.11.0.8, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=23.4.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;addEmoji.Parent" xml:space="preserve">
     <value>panelAdd</value>
@@ -358,7 +358,7 @@
     <value>roundedPanel1</value>
   </data>
   <data name="&gt;&gt;roundedPanel1.Type" xml:space="preserve">
-    <value>Diccon.RoundedPanel, Diccon, Version=22.11.0.8, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedPanel, Diccon, Version=23.4.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;roundedPanel1.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -469,7 +469,7 @@
     <value>exampleAnswerColoredPanel</value>
   </data>
   <data name="&gt;&gt;exampleAnswerColoredPanel.Type" xml:space="preserve">
-    <value>Diccon.RoundedPanel, Diccon, Version=22.11.0.8, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedPanel, Diccon, Version=23.4.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;exampleAnswerColoredPanel.Parent" xml:space="preserve">
     <value>exampleAnswerPanel</value>
@@ -538,7 +538,7 @@
     <value>exampleItemSynonym</value>
   </data>
   <data name="&gt;&gt;exampleItemSynonym.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=22.11.0.8, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=23.4.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;exampleItemSynonym.Parent" xml:space="preserve">
     <value>exampleflowLayoutSynonym</value>
@@ -577,7 +577,7 @@
     <value>roundedLabel3</value>
   </data>
   <data name="&gt;&gt;roundedLabel3.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=22.11.0.8, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=23.4.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;roundedLabel3.Parent" xml:space="preserve">
     <value>exampleflowLayoutSynonym</value>
@@ -652,7 +652,7 @@
     <value>exampleShortText</value>
   </data>
   <data name="&gt;&gt;exampleShortText.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=22.11.0.8, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=23.4.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;exampleShortText.Parent" xml:space="preserve">
     <value>exampleShortPanel</value>
@@ -736,7 +736,7 @@
     <value>exampleAskLongColoredPanel</value>
   </data>
   <data name="&gt;&gt;exampleAskLongColoredPanel.Type" xml:space="preserve">
-    <value>Diccon.RoundedPanel, Diccon, Version=22.11.0.8, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedPanel, Diccon, Version=23.4.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;exampleAskLongColoredPanel.Parent" xml:space="preserve">
     <value>exampleAskLongPanel</value>
@@ -870,7 +870,7 @@
     <value>examplePlayColoredPanel</value>
   </data>
   <data name="&gt;&gt;examplePlayColoredPanel.Type" xml:space="preserve">
-    <value>Diccon.RoundedPanel, Diccon, Version=22.11.0.8, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedPanel, Diccon, Version=23.4.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;examplePlayColoredPanel.Parent" xml:space="preserve">
     <value>examplePlayAlignPanel</value>
@@ -3149,7 +3149,7 @@
     <value>examplePictureBox</value>
   </data>
   <data name="&gt;&gt;examplePictureBox.Type" xml:space="preserve">
-    <value>Diccon.RoundedPictureBox, Diccon, Version=22.11.0.8, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedPictureBox, Diccon, Version=23.4.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;examplePictureBox.Parent" xml:space="preserve">
     <value>exampleColoredPicturePanel</value>
@@ -3170,7 +3170,7 @@
     <value>exampleColoredPicturePanel</value>
   </data>
   <data name="&gt;&gt;exampleColoredPicturePanel.Type" xml:space="preserve">
-    <value>Diccon.RoundedPanel, Diccon, Version=22.11.0.8, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedPanel, Diccon, Version=23.4.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;exampleColoredPicturePanel.Parent" xml:space="preserve">
     <value>examplePicturePanel</value>
@@ -3272,7 +3272,7 @@
     <value>btSpellingCorrector</value>
   </data>
   <data name="&gt;&gt;btSpellingCorrector.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=22.11.0.8, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=23.4.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btSpellingCorrector.Parent" xml:space="preserve">
     <value>flowSuggestion</value>
@@ -3314,7 +3314,7 @@
     <value>btSynonym</value>
   </data>
   <data name="&gt;&gt;btSynonym.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=22.11.0.8, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=23.4.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btSynonym.Parent" xml:space="preserve">
     <value>flowSuggestion</value>
@@ -3356,7 +3356,7 @@
     <value>roundedLabel9</value>
   </data>
   <data name="&gt;&gt;roundedLabel9.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=22.11.0.8, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=23.4.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;roundedLabel9.Parent" xml:space="preserve">
     <value>flowSuggestion</value>
@@ -3398,7 +3398,7 @@
     <value>roundedLabel12</value>
   </data>
   <data name="&gt;&gt;roundedLabel12.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=22.11.0.8, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=23.4.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;roundedLabel12.Parent" xml:space="preserve">
     <value>flowSuggestion</value>
@@ -3440,7 +3440,7 @@
     <value>btImage</value>
   </data>
   <data name="&gt;&gt;btImage.Type" xml:space="preserve">
-    <value>Diccon.RoundedLabel, Diccon, Version=22.11.0.8, Culture=neutral, PublicKeyToken=null</value>
+    <value>Diccon.RoundedLabel, Diccon, Version=23.4.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;btImage.Parent" xml:space="preserve">
     <value>flowSuggestion</value>

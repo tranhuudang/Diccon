@@ -8,6 +8,7 @@ namespace Diccon.Pages
 {
     public partial class login : Form
     {
+        private readonly SQLHandler _sqlHandler = new SQLHandler();
 
         public login()
         {
@@ -18,8 +19,7 @@ namespace Diccon.Pages
         {
             string encryptPass = new Sha256Encrypt(tbPassword.Text.Trim()).Hash();
             string queryString = "Select * from dbo.DicconUser where Email='" + tbEmail.Text.Trim() + "' and Password='" + encryptPass + "'";
-            SQLHandler sqlHandler = new SQLHandler();
-            DataTable dataTable = await sqlHandler.SelectAsync(queryString);
+            DataTable dataTable = await _sqlHandler.SelectAsync(queryString);
             if (dataTable.Rows.Count >= 1)
             {
                 //dataTable.Rows[0][0]-Id
@@ -163,8 +163,7 @@ namespace Diccon.Pages
         {
             string encryptPass = new Sha256Encrypt(createPass_1.Text.Trim()).Hash();
             string queryString = "Insert into dbo.DicconUser(Email, Password) values ('" + createEmail.Text + "','" + encryptPass + "')";
-            SQLHandler sql = new SQLHandler();
-            await sql.InsertAsync(queryString);
+            await _sqlHandler.InsertAsync(queryString);
             // Close create form and open login form
             this.Text = loginText.Text;
             panelManage.Visible = false;
@@ -205,8 +204,7 @@ namespace Diccon.Pages
             if (MessageBox.Show("Do you want to delete your online data?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
                 string updateQueryString = "UPDATE dbo.DicconUser  SET Resources = NULL, Timeline = NULL, QA = NULL, FreeAsk = NULL, PayAsk = NULL  Where Id=" + DicconProp.UserID;
-                SQLHandler sql = new SQLHandler();
-                await sql.UpdateAsync(updateQueryString);
+                await _sqlHandler.UpdateAsync(updateQueryString);
             }
         }
 

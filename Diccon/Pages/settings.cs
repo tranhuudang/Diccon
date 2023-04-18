@@ -30,7 +30,7 @@ namespace Diccon
             {
                 if (File.Exists(DicconProp.HistoryFileName))
                 {
-                    if (MessageBox.Show(DicconProp.PromptDeleteHistoryFile, DicconProp.caption, MessageBoxButtons.YesNo) == DialogResult.Yes)
+                    if (MessageBox.Show(DicconProp.PromptDeleteHistoryFile, DicconProp.Caption, MessageBoxButtons.YesNo) == DialogResult.Yes)
                     {
                         File.Delete(DicconProp.HistoryFileName);
                         //listHistory.DataSource = null;
@@ -42,7 +42,7 @@ namespace Diccon
             }
             catch (Exception)
             {
-                MessageBox.Show(DicconProp.ErrorDeleteHistoryFile, DicconProp.caption);
+                MessageBox.Show(DicconProp.ErrorDeleteHistoryFile, DicconProp.Caption);
             }
         }
 

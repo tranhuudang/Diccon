@@ -25,7 +25,7 @@ namespace Diccon.Pages
             List<string> listItem = new List<string>();
             if (File.Exists(DicconProp.HistoryFileName))
             {
-                string[] contents = File.ReadAllText(DicconProp.HistoryFileName).Split(DicconProp.SaparateCharactorInHistory);
+                string[] contents = File.ReadAllText(DicconProp.HistoryFileName).Split(DicconProp.SeparateCharacterInHistory);
                 foreach (var item in contents)
                 {
                     listItem.Add("      " + item.ToLower());

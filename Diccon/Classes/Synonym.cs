@@ -11,6 +11,7 @@ namespace Diccon
 {
     internal class Synonym
     {
+        private readonly SQLHandler _sqlHandler = new SQLHandler();
 
         private async Task<List<string>> GetSynonymFromDatabase(string word)
         {
@@ -21,8 +22,7 @@ namespace Diccon
 
             try
             {
-                SQLHandler sqlHandler = new SQLHandler();
-                DataTable dataTable = await sqlHandler.SelectAsync($"SELECT * FROM dbo.DicconSynonym WHERE Word='{word}'");
+                DataTable dataTable = await _sqlHandler.SelectAsync($"SELECT * FROM dbo.DicconSynonym WHERE Word='{word}'");
                 if (dataTable != null)
                 {
                     string result = dataTable.Rows[0][1].ToString();
@@ -48,8 +48,7 @@ namespace Diccon
         {
             try
             {
-                SQLHandler sqlHandler = new SQLHandler();
-                await sqlHandler.InsertAsync($"INSERT INTO dbo.DicconSynonym VALUES('{word.ToLower()}','{synonym}')");
+                await _sqlHandler.InsertAsync($"INSERT INTO dbo.DicconSynonym VALUES('{word.ToLower()}','{synonym}')");
             }
             catch (Exception)
             {
