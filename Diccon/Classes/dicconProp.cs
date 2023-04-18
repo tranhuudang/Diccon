@@ -29,6 +29,7 @@ namespace Diccon
 
         //Cache the results of the database query in memory to avoid querying the database every time the method is called for the same word
         public static Dictionary<string, List<string>> SynonymCache = new Dictionary<string, List<string>>();
+        public static Dictionary<string, string> CachedImageUrls = new Dictionary<string, string>();
 
         public static string ApplicationDataPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
         public static string DicconApplicationDataPath = ApplicationDataPath + @"\Diccon";

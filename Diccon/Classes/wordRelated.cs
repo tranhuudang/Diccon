@@ -21,9 +21,7 @@ namespace Diccon
         // Xử lí từ đầu vào thành một từ chuẩn cho quá trình tìm kiếm từ trong Database
         public string SearchWordProcess()
         {
-            _outWord = _preWord;
-            _outWord = _outWord.ToLower();
-            _outWord = _outWord.Replace("\n", "").Replace("\r", ""); // delete \n in c#
+            _outWord = _preWord.ToLower().Trim();
             return _outWord;
         }
         /// <summary>
@@ -33,10 +31,10 @@ namespace Diccon
         /// <returns></returns>
         public string OnlineUrlPath(string UsOrUk)
         {
-            // https://github.com/zeroclubvn/US-Pronunciation/raw/main/A/us/Affected.mp3
-            string firstLetter = PreWord.Substring(0, 1).ToUpper();
+            // Sample link's format: https://github.com/zeroclubvn/US-Pronunciation/raw/main/A/us/Affected.mp3
+            char firstLetter = char.ToUpper(PreWord[0]);
             string afterFirstLetter = PreWord.Substring(1);
-            string url = "https://github.com/zeroclubvn/US-Pronunciation/raw/main/" + firstLetter + "/us/" + firstLetter + afterFirstLetter + ".mp3";
+            string url = $"https://github.com/zeroclubvn/US-Pronunciation/raw/main/{firstLetter}/us/{firstLetter}{afterFirstLetter}.mp3";
             return url;
         }
 
@@ -52,7 +50,7 @@ namespace Diccon
             words = Regex.Split(input, pattern, RegexOptions.IgnoreCase);
             for (i = words.GetLowerBound(0); i <= words.GetUpperBound(0); i++)
             {
-                if (words[i].ToString() == string.Empty)
+                if (string.IsNullOrEmpty(words[i].ToString()))
                     count = count - 1;
                 count = count + 1;
             }

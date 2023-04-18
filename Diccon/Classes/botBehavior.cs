@@ -21,29 +21,33 @@ namespace Diccon
         /// <param name="targetFlowLayout"></param>
         public void BotAnswerLongMessage(string answerText, Label exampleLabel /*RichTextBox exampleRichTextBox*/, Panel exampleColoredPanel, Panel exampleParentPanel, FlowLayoutPanel targetFlowLayout)
         {
-            Panel newAnswerPanel = new Panel();
-            RoundedPanel newColoredPanel = new RoundedPanel();
-            newColoredPanel.Dock = exampleColoredPanel.Dock;
-            newColoredPanel.BackColor = exampleColoredPanel.BackColor;
-            newColoredPanel.Width = exampleColoredPanel.Width;
-
-            Label newLabel = new Label();
-            newLabel.Text = answerText;
-            newLabel.MaximumSize = exampleLabel.MaximumSize;
-            newLabel.Location = exampleLabel.Location;
-            newLabel.AutoSize = false;
-            newLabel.Height = newColoredPanel.Height - 20;
-            newLabel.Width = exampleLabel.MaximumSize.Width;
-            newLabel.Font = exampleLabel.Font;
-            newLabel.ForeColor = exampleLabel.ForeColor;
+            RoundedPanel newColoredPanel = new RoundedPanel()
+            {
+                Dock = exampleColoredPanel.Dock,
+                BackColor = exampleColoredPanel.BackColor,
+                Width = exampleColoredPanel.Width
+            };
+            Label newLabel = new Label()
+            {
+                Text = answerText,
+                MaximumSize = exampleLabel.MaximumSize,
+                Location = exampleLabel.Location,
+                AutoSize = false,
+                Height = newColoredPanel.Height - 20,
+                Width = exampleLabel.MaximumSize.Width,
+                Font = exampleLabel.Font,
+                ForeColor = exampleLabel.ForeColor,
+                Cursor = Cursors.Hand,
+                Parent = newColoredPanel,
+            };
             newLabel.Click += NewLabel_Click1;
-            newLabel.Cursor = Cursors.Hand;
+            Panel newAnswerPanel = new Panel()
+            {
+                Width = exampleParentPanel.Width,
+
+            };
             newColoredPanel.Controls.Add(newLabel);
-            newLabel.Parent = newColoredPanel;
-
-            newAnswerPanel.Width = exampleParentPanel.Width;
             newAnswerPanel.Controls.Add(newColoredPanel);
-
             targetFlowLayout.Controls.Add(newAnswerPanel);
             targetFlowLayout.ScrollControlIntoView(newAnswerPanel);
         }
@@ -71,42 +75,48 @@ namespace Diccon
         /// <param name="targetFlowPanel"></param>
         public void BotSoundMessage(String textToPlay, Label exampleTextHolder, PictureBox examplePlayButton, RoundedPanel exampleColoredPanel, Panel examplePlayAlignPanel, Panel examplePanel, FlowLayoutPanel targetFlowPanel)
         {
-            Panel newPanel = new Panel();
-            Panel newAlignPanel = new Panel();
-            RoundedPanel newColoredPanel = new RoundedPanel();
-            PictureBox playButton = new PictureBox();
-            Label textHolder = new Label();
-
-            playButton.Location = examplePlayButton.Location;
-            playButton.Size = examplePlayButton.Size;
-            playButton.Image = examplePlayButton.Image;
-            playButton.Tag = textToPlay;
-            playButton.Cursor = examplePlayButton.Cursor;
+            PictureBox playButton = new PictureBox()
+            {
+                Location = examplePlayButton.Location,
+                Size = examplePlayButton.Size,
+                Image = examplePlayButton.Image,
+                Tag = textToPlay,
+                Cursor = examplePlayButton.Cursor,
+            };
             playButton.Click += PlayButton_Click;
 
-            textHolder.Text = textToPlay;
-            textHolder.MaximumSize = examplePlayButton.MaximumSize;
-            textHolder.Location = exampleTextHolder.Location;
-            textHolder.Font = exampleTextHolder.Font;
-            textHolder.AutoSize = true;
-            // change text color equal to its parent background to invisible it
-            newColoredPanel.BackColor = exampleColoredPanel.BackColor;
-            textHolder.ForeColor = newColoredPanel.BackColor;
+            Label textHolder = new Label()
+            {
+                Text = textToPlay,
+                MaximumSize = examplePlayButton.MaximumSize,
+                Location = exampleTextHolder.Location,
+                Font = exampleTextHolder.Font,
+                AutoSize = true,
 
+            };
+            // change text color equal to its parent background to invisible it
+            RoundedPanel newColoredPanel = new RoundedPanel()
+            {
+                BackColor = exampleColoredPanel.BackColor,
+                AutoSize = true,
+                Size = exampleColoredPanel.Size,
+                Location = exampleColoredPanel.Location
+            };
+            textHolder.ForeColor = newColoredPanel.BackColor;
 
             newColoredPanel.Controls.Add(playButton);
             newColoredPanel.Controls.Add(textHolder);
             // add control before resize panel
-            newColoredPanel.AutoSize = true;
-            newColoredPanel.Size = exampleColoredPanel.Size;
 
-            newColoredPanel.Location = exampleColoredPanel.Location;
-
-            newAlignPanel.Dock = examplePlayAlignPanel.Dock;
-            newAlignPanel.Size = examplePlayAlignPanel.Size;
-
-            newPanel.Size = examplePanel.Size;
-
+            Panel newAlignPanel = new Panel()
+            {
+                Dock = examplePlayAlignPanel.Dock,
+                Size = examplePlayAlignPanel.Size,
+            };
+            Panel newPanel = new Panel()
+            {
+                Size = examplePanel.Size,
+            };
 
             newPanel.Refresh();
             newAlignPanel.Controls.Add(newColoredPanel);
@@ -145,15 +155,16 @@ namespace Diccon
             targetFlowLayout.Controls.Add(panelHaveSynonyms);
             foreach (string word in synonymList)
             {
-                // if (++index >= 10) break;
-                RoundedLabel newLabel = new RoundedLabel();
-                newLabel.BackColor = exampleItem.BackColor;
-                newLabel.Cursor = exampleItem.Cursor;
-                newLabel.ForeColor = exampleItem.ForeColor;
-                newLabel.Padding = exampleItem.Padding;
-                newLabel.Text = word;
-                newLabel.AutoSize = true;
-                newLabel.Font = exampleItem.Font;
+                RoundedLabel newLabel = new RoundedLabel()
+                {
+                    BackColor = exampleItem.BackColor,
+                    Cursor = exampleItem.Cursor,
+                    ForeColor = exampleItem.ForeColor,
+                    Padding = exampleItem.Padding,
+                    Text = word,
+                    AutoSize = true,
+                    Font = exampleItem.Font,
+                };
                 newLabel.Click += NewLabel_Click;
 
                 panelHaveSynonyms.Controls.Add(newLabel);
@@ -272,44 +283,46 @@ namespace Diccon
 
         public async void BotImageAnswer(PictureBox examplePixabayLogo, RoundedPictureBox examplePictureBox, RoundedPanel exampleColoredPanel, Panel examplePanel, FlowLayoutPanel targetFlowLayout)
         {
-            RoundedPictureBox pictureBox = new RoundedPictureBox();
-            RoundedPanel roundedPanel = new RoundedPanel();
-            PictureBox pixabayLogo = new PictureBox();
-            Panel panel = new Panel();
             ImageRelated img = new ImageRelated();
-
-            pixabayLogo.Image = examplePixabayLogo.Image;
-            pixabayLogo.Location = examplePixabayLogo.Location;
-            pixabayLogo.Size = examplePixabayLogo.Size;
+            PictureBox pixabayLogo = new PictureBox()
+            {
+                Image = examplePixabayLogo.Image,
+                Location = examplePixabayLogo.Location,
+                Size = examplePixabayLogo.Size,
+                Cursor = examplePixabayLogo.Cursor,
+                Visible = DicconProp.IsFromPixabay,
+            };
             pixabayLogo.Click += PixabayLogo_Click;
-            pixabayLogo.Cursor = examplePixabayLogo.Cursor;
-            pixabayLogo.Visible = DicconProp.IsFromPixabay;
-
-            roundedPanel.Size = exampleColoredPanel.Size;
-            roundedPanel.Location = exampleColoredPanel.Location;
-            roundedPanel.BackColor = exampleColoredPanel.BackColor;
-
-            pictureBox.Size = examplePictureBox.Size;
-            pictureBox.Location = examplePictureBox.Location;
-            pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox.BorderColor = roundedPanel.BackColor;
-            pictureBox.BackColor = examplePictureBox.BackColor;
-            pictureBox.ErrorImage = examplePictureBox.ErrorImage;
-            pictureBox.InitialImage = examplePictureBox.InitialImage;
-
-            panel.Size = examplePanel.Size;
-
-            pictureBox.ImageLocation = await img.GetImageUrl(DicconProp.CurrentWord);
+            RoundedPanel roundedPanel = new RoundedPanel()
+            {
+                Size = exampleColoredPanel.Size,
+                Location = exampleColoredPanel.Location,
+                BackColor = exampleColoredPanel.BackColor,
+            };
+            RoundedPictureBox pictureBox = new RoundedPictureBox()
+            {
+                Size = examplePictureBox.Size,
+                Location = examplePictureBox.Location,
+                SizeMode = PictureBoxSizeMode.Zoom,
+                BorderColor = roundedPanel.BackColor,
+                BackColor = examplePictureBox.BackColor,
+                ErrorImage = examplePictureBox.ErrorImage,
+                InitialImage = examplePictureBox.InitialImage,
+                ImageLocation = await img.GetImageUrl(DicconProp.CurrentWord),
+                Tag = DicconProp.CurrentWord,
+            };
             pictureBox.Click += PictureBox_Click;
-            pictureBox.Tag = DicconProp.CurrentWord;
+            Panel panel = new Panel()
+            {
+                Size = examplePanel.Size,
+                Visible = true,
+
+            };
 
             roundedPanel.Controls.Add(pictureBox);
 
             panel.Controls.Add(pixabayLogo);
             panel.Controls.Add(roundedPanel);
-
-            panel.Visible = true;
-
             targetFlowLayout.Controls.Add(panel);
 
             targetFlowLayout.ScrollControlIntoView(panel);

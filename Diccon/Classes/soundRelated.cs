@@ -36,7 +36,7 @@ namespace Diccon
                     player.controls.play();
                 }
                 else
-                    // Pronouce word by machine if sound track not exist in the internet and the file size is 0KB
+                    // Pronounce word by machine if sound track not exist in the internet and the file size is 0KB
                     MachinePlay(word);
             }
             else

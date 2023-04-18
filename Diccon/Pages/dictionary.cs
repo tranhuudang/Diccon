@@ -1,6 +1,7 @@
 ﻿using Diccon.Classes;
 using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
@@ -178,6 +179,7 @@ namespace Diccon
                     var wordsToInsert = wordsToSearch.Length > 9 ? wordsToSearch.Substring(0, 9) : wordsToSearch;
                     SQLHandler sqlHandler = new SQLHandler();
                     await sqlHandler.InsertAsync($"Insert into dbo.DicconMissing values(N'{DicconProp.UserID}', N'{wordsToInsert}')");
+
                 }
                 return DicconProp.PromptMissingWord;
             }

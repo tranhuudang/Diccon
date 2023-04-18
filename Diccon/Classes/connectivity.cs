@@ -7,6 +7,7 @@ namespace Diccon
 {
     internal class Connectivity
     {
+        private static readonly HttpClient _client = new HttpClient();
         public bool IsOnline()
         {
             try
@@ -28,8 +29,7 @@ namespace Diccon
         {
             if (IsOnline())
             {
-                HttpClient client = new HttpClient();
-                var checkingResponse = await client.GetAsync(url);
+                var checkingResponse = await _client.GetAsync(url);
                 if (checkingResponse.IsSuccessStatusCode)
                 {
                     return true;

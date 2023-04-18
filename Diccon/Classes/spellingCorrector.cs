@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Text.RegularExpressions;
 
 namespace Diccon.Classes
@@ -9,24 +10,30 @@ namespace Diccon.Classes
     {
         private Dictionary<String, int> _dictionary = new Dictionary<String, int>();
         private static Regex _wordRegex = new Regex("[a-z]+", RegexOptions.Compiled);
-
         public SpellingCorrector()
         {
             string fileContent = DicconProp.SpellingCorrectorDictionary;
-            List<string> wordList = fileContent.Split(new string[] { "\n" }, StringSplitOptions.RemoveEmptyEntries).ToList();
+            HashSet<string> wordSet = new HashSet<string>(fileContent.Split(new string[] { "\n" }, StringSplitOptions.RemoveEmptyEntries)
+                                                                     .Select(w => w.Trim().ToLower()));
 
-            foreach (var word in wordList)
+            StringBuilder wordRegexBuilder = new StringBuilder();
+            wordRegexBuilder.Append("^[a-z]+$");
+            _wordRegex = new Regex(wordRegexBuilder.ToString());
+
+            _dictionary = new Dictionary<string, int>();
+
+            foreach (var word in wordSet)
             {
-                string trimmedWord = word.Trim().ToLower();
-                if (_wordRegex.IsMatch(trimmedWord))
+                if (_wordRegex.IsMatch(word))
                 {
-                    if (_dictionary.ContainsKey(trimmedWord))
-                        _dictionary[trimmedWord]++;
+                    if (_dictionary.TryGetValue(word, out int count))
+                        _dictionary[word] = count + 1;
                     else
-                        _dictionary.Add(trimmedWord, 1);
+                        _dictionary.Add(word, 1);
                 }
             }
         }
+
 
         public string Correct(string word)
         {

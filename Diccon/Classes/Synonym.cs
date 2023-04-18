@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Net.Http;
 using System.Text.Json.Nodes;
@@ -59,20 +60,12 @@ namespace Diccon
 
         public async Task<List<string>> GetSynonymListAsync(string word)
         {
-            List<string> list = await GetSynonymFromDatabase(word);
-            if (list == null)
+            List<string> list = await GetSynonymFromDatabase(word) ?? await GetSynonymFromRapidAPIAsync(word);
+            if (list != null)
             {
-                list = await GetSynonymFromRapidAPIAsync(word);
-                if (list != null)
-                {
-                    WriteSynonymToDatabase(word, String.Join(",", list.ToArray()));
-                }
-                return list;
+                WriteSynonymToDatabase(word, String.Join(",", list.ToArray()));
             }
-            else
-            {
-                return list;
-            }
+            return list;
 
         }
         public async Task<List<string>> GetSynonymFromRapidAPIAsync(string word)
