@@ -12,7 +12,7 @@ namespace Diccon
     {
         string Setting_ShortView = Properties.Settings.Default["shortView"].ToString();
         /// <summary>
-        /// Create a bubble message base on the example design pattern
+        /// Create a bubble message based on the example design pattern
         /// </summary>
         /// <param name="answerText"></param>
         /// <param name="exampleRichTextBox"></param>
