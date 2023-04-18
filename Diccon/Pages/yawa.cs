@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Data;
-using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace Diccon.Pages
@@ -310,7 +309,7 @@ namespace Diccon.Pages
             {
                 if (connectivity.IsOnline())
                 {
-                   
+
                     if (DicconProp.UserID == currentQuestionUserID)
                     {
                         //user.userLongMessage(answer_textBox.Text, exampleAskLongText, exampleAskLongColoredPanel, exampleAskLongPanel, flowChatBox);
