@@ -238,7 +238,7 @@ namespace Diccon
 
         }
 
-        private void logo_Click(object sender, EventArgs e)
+        private void logo_Click(object sender, EventArgs e) 
         {
             btStar.Visible = false;
             title.Text = "Diccon";
