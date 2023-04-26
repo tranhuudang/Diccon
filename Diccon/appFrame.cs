@@ -23,7 +23,7 @@ namespace Diccon
         Form donateForm = null;
         Form timelineForm = null;
         Form settingForm = null;
-        Form yawaForm = null;
+        Form yawaForm = new yawa();
         Form loginForm = null;
         private readonly SQLHandler _sqlHandler = new SQLHandler();
         public appFrame()
@@ -181,73 +181,27 @@ namespace Diccon
             if (targetForm == timelineForm)
             {
                 timeLineDetector.Enabled = true;
-
             }
             else
             {
                 timeLineDetector.Enabled = false;
             }
-            string formName = targetForm.Text;
-            title.Text = formName;
-            string[] pagesName = { "Dictionary", "Yawa", "Notes", "Timeline" };
-            logo.Image = Properties.Resources.back_24;
-            ///Star button
-            foreach (string item in pagesName)
             {
-                if (formName == item)
-                {
-                    if (Properties.Settings.Default["staredForm"].ToString() == targetForm.Text)
-                    {
-                        btStar.Visible = DicconProp.Language == DicconProp.LanguageType.English ? true : false;
-
-                        btStar.IconColor = Color.Gold;
-                        btStar.IconFont = IconFont.Solid;
-                    }
-                    else
-                    {
-                        btStar.Visible = DicconProp.Language == DicconProp.LanguageType.English ? true : false;
-
-                        btStar.IconColor = Color.Black;
-                        btStar.IconFont = IconFont.Regular;
-                    }
-                    break;
-                }
-            }
-            ///
-            if (currentForm != null)
-            {
-                currentForm.Hide();
-                panelHome.Visible = false;
                 currentForm = targetForm;
                 currentForm.TopLevel = false;
                 currentForm.FormBorderStyle = FormBorderStyle.None;
                 currentForm.Dock = DockStyle.Fill;
-                playGroundPanel.Controls.Add(currentForm);
+                this.Controls.Add(currentForm);
                 currentForm.Show();
-            }
-            else
-            {
-                panelHome.Visible = false;
-                currentForm = targetForm;
-                currentForm.TopLevel = false;
-                currentForm.FormBorderStyle = FormBorderStyle.None;
-                currentForm.Dock = DockStyle.Fill;
-                playGroundPanel.Controls.Add(currentForm);
-                currentForm.Show();
+                currentForm.BringToFront();
+
             }
 
         }
 
-        private void logo_Click(object sender, EventArgs e) 
+        private void logo_Click(object sender, EventArgs e)
         {
-            btStar.Visible = false;
-            title.Text = "Diccon";
-            logo.Image = Properties.Resources.diccon_32_2;
-            if (currentForm != null)
-            {
-                currentForm.Hide();
-                panelHome.Visible = true;
-            }
+           
         }
 
         private void buttonMenu_Click(object sender, EventArgs e)

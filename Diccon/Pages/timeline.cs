@@ -17,7 +17,7 @@ namespace Diccon.Pages
 
         private void timeline_Load(object sender, EventArgs e)
         {
-
+            topPanel.BackColor = DicconProp.AccentColor;
             loadUpTimeline();
         }
         private void loadUpTimeline()
@@ -80,5 +80,9 @@ namespace Diccon.Pages
             DicconProp.WordFromTimeline = listHistory.SelectedItem.ToString();
         }
 
+        private void logo_Click(object sender, EventArgs e)
+        {
+            Hide();
+        }
     }
 }

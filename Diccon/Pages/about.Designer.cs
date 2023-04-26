@@ -41,7 +41,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lbGithub = new System.Windows.Forms.Label();
             this.btRelease = new Diccon.RoundedLabel();
+            this.topPanel = new System.Windows.Forms.Panel();
+            this.title = new System.Windows.Forms.Label();
+            this.logo = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.topPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -117,6 +122,31 @@
             this.btRelease.MouseEnter += new System.EventHandler(this.btRelease_MouseEnter);
             this.btRelease.MouseLeave += new System.EventHandler(this.btRelease_MouseLeave);
             // 
+            // topPanel
+            // 
+            resources.ApplyResources(this.topPanel, "topPanel");
+            this.topPanel.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.topPanel.Controls.Add(this.title);
+            this.topPanel.Controls.Add(this.logo);
+            this.topPanel.Name = "topPanel";
+            // 
+            // title
+            // 
+            resources.ApplyResources(this.title, "title");
+            this.title.BackColor = System.Drawing.Color.Transparent;
+            this.title.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.title.Name = "title";
+            // 
+            // logo
+            // 
+            resources.ApplyResources(this.logo, "logo");
+            this.logo.BackColor = System.Drawing.Color.Transparent;
+            this.logo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.logo.Image = global::Diccon.Properties.Resources.back_24;
+            this.logo.Name = "logo";
+            this.logo.TabStop = false;
+            this.logo.Click += new System.EventHandler(this.logo_Click);
+            // 
             // about
             // 
             resources.ApplyResources(this, "$this");
@@ -134,10 +164,13 @@
             this.Controls.Add(this.lbVersion);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.topPanel);
             this.Name = "about";
             this.ShowIcon = false;
             this.Load += new System.EventHandler(this.about_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.topPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -157,5 +190,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lbGithub;
         private RoundedLabel btRelease;
+        private System.Windows.Forms.Panel topPanel;
+        private System.Windows.Forms.Label title;
+        private System.Windows.Forms.PictureBox logo;
     }
 }

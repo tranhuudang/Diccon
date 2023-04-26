@@ -124,18 +124,6 @@
   <data name="labelTypeToSearch.Text" xml:space="preserve">
     <value>Nhập để tìm kiếm</value>
   </data>
-  <data name="issueLink.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 77</value>
-  </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 122</value>
-  </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Sự đóng góp của bạn giúp ứng dụng ngày càng phát triển và tốt hơn trong những phiên bản sắp tới.</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Nếu bạn thấy từ điển còn thiếu sót, xin vui lòng báo lỗi cho bộ phận kĩ thuật ở địa chỉ bên dưới.</value>
-  </data>
   <data name="examplePlayButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -2327,9 +2315,6 @@
   <data name="btSynonym.Text" xml:space="preserve">
     <value>Đồng nghĩa</value>
   </data>
-  <data name="roundedLabel9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>122, 5</value>
-  </data>
   <data name="roundedLabel9.Size" type="System.Drawing.Size, System.Drawing">
     <value>57, 28</value>
   </data>
@@ -2337,13 +2322,25 @@
     <value>Ví dụ</value>
   </data>
   <data name="roundedLabel12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>185, 5</value>
+    <value>76, 33</value>
+  </data>
+  <data name="btImage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>144, 33</value>
   </data>
   <data name="btImage.Size" type="System.Drawing.Size, System.Drawing">
     <value>85, 28</value>
   </data>
   <data name="btImage.Text" xml:space="preserve">
     <value>Hình ảnh</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 30</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Đang lắng nghe...</value>
+  </data>
+  <data name="title.Text" xml:space="preserve">
+    <value>Từ điển</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

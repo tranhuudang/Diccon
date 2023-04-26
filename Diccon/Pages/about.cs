@@ -19,6 +19,7 @@ namespace Diccon
         private void about_Load(object sender, EventArgs e)
         {
             btRelease.BackColor = DicconProp.ColorA3;
+            topPanel.BackColor = DicconProp.AccentColor;
 
             lbVersion.Text = Application.ProductVersion.ToString();
         }
@@ -55,6 +56,7 @@ namespace Diccon
         {
             release release = new release();
             release.Show();
+            
         }
 
         private void btRelease_MouseEnter(object sender, EventArgs e)
@@ -67,6 +69,11 @@ namespace Diccon
         {
             DicconProp.RoundedLabel_Darker_MouseLeave(sender, e);
 
+        }
+
+        private void logo_Click(object sender, EventArgs e)
+        {
+            Hide();
         }
     }
 }

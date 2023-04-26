@@ -21,7 +21,8 @@ namespace Diccon
         [STAThreadAttribute]
         private void mainHall_Load(object sender, EventArgs e)
         {
-            
+            topPanel.BackColor = DicconProp.AccentColor;
+
             synonymChecker.Enabled = true;
             //searchTextBox.Text = Clipboard.GetText();
             ///////  T   H   E   M   E  ///////////////
@@ -411,6 +412,11 @@ namespace Diccon
         private void dictionary_Leave(object sender, EventArgs e)
         {
 
+        }
+
+        private void logo_Click(object sender, EventArgs e)
+        {
+            Hide();
         }
     }
 

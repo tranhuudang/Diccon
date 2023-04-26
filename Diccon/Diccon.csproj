@@ -308,6 +308,9 @@
     <EmbeddedResource Include="Pages\release.resx">
       <DependentUpon>release.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pages\release.vi.resx">
+      <DependentUpon>release.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pages\settings.resx">
       <DependentUpon>settings.cs</DependentUpon>
     </EmbeddedResource>

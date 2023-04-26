@@ -31,14 +31,24 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(timeline));
             this.panelList = new System.Windows.Forms.Panel();
             this.listHistory = new System.Windows.Forms.ListBox();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.topPanel = new System.Windows.Forms.Panel();
+            this.title = new System.Windows.Forms.Label();
+            this.topControlPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.buttonMenu = new System.Windows.Forms.PictureBox();
+            this.btStar = new FontAwesome.Sharp.IconPictureBox();
+            this.logo = new System.Windows.Forms.PictureBox();
             this.panelList.SuspendLayout();
+            this.topPanel.SuspendLayout();
+            this.topControlPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.buttonMenu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btStar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.SuspendLayout();
             // 
             // panelList
             // 
             this.panelList.Controls.Add(this.listHistory);
-            this.panelList.Controls.Add(this.panel2);
+            this.panelList.Controls.Add(this.topPanel);
             resources.ApplyResources(this.panelList, "panelList");
             this.panelList.Name = "panelList";
             // 
@@ -52,11 +62,61 @@
             this.listHistory.SelectedIndexChanged += new System.EventHandler(this.listHistory_SelectedIndexChanged);
             this.listHistory.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listHistory_MouseDoubleClick);
             // 
-            // panel2
+            // topPanel
             // 
-            resources.ApplyResources(this.panel2, "panel2");
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Name = "panel2";
+            this.topPanel.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.topPanel.Controls.Add(this.title);
+            this.topPanel.Controls.Add(this.topControlPanel);
+            this.topPanel.Controls.Add(this.logo);
+            resources.ApplyResources(this.topPanel, "topPanel");
+            this.topPanel.Name = "topPanel";
+            // 
+            // title
+            // 
+            this.title.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.title, "title");
+            this.title.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.title.Name = "title";
+            // 
+            // topControlPanel
+            // 
+            this.topControlPanel.BackColor = System.Drawing.Color.Transparent;
+            this.topControlPanel.Controls.Add(this.buttonMenu);
+            this.topControlPanel.Controls.Add(this.btStar);
+            resources.ApplyResources(this.topControlPanel, "topControlPanel");
+            this.topControlPanel.Name = "topControlPanel";
+            // 
+            // buttonMenu
+            // 
+            resources.ApplyResources(this.buttonMenu, "buttonMenu");
+            this.buttonMenu.BackColor = System.Drawing.Color.Transparent;
+            this.buttonMenu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonMenu.Image = global::Diccon.Properties.Resources.menu_24;
+            this.buttonMenu.Name = "buttonMenu";
+            this.buttonMenu.TabStop = false;
+            // 
+            // btStar
+            // 
+            resources.ApplyResources(this.btStar, "btStar");
+            this.btStar.BackColor = System.Drawing.Color.Transparent;
+            this.btStar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btStar.ForeColor = System.Drawing.Color.Black;
+            this.btStar.IconChar = FontAwesome.Sharp.IconChar.Star;
+            this.btStar.IconColor = System.Drawing.Color.Black;
+            this.btStar.IconFont = FontAwesome.Sharp.IconFont.Regular;
+            this.btStar.IconSize = 28;
+            this.btStar.Name = "btStar";
+            this.btStar.TabStop = false;
+            // 
+            // logo
+            // 
+            this.logo.BackColor = System.Drawing.Color.Transparent;
+            this.logo.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.logo, "logo");
+            this.logo.Image = global::Diccon.Properties.Resources.back_24;
+            this.logo.Name = "logo";
+            this.logo.TabStop = false;
+            this.logo.Click += new System.EventHandler(this.logo_Click);
             // 
             // timeline
             // 
@@ -67,6 +127,11 @@
             this.Load += new System.EventHandler(this.timeline_Load);
             this.VisibleChanged += new System.EventHandler(this.timeline_VisibleChanged);
             this.panelList.ResumeLayout(false);
+            this.topPanel.ResumeLayout(false);
+            this.topControlPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.buttonMenu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btStar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -74,6 +139,11 @@
         #endregion
         private System.Windows.Forms.Panel panelList;
         private System.Windows.Forms.ListBox listHistory;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel topPanel;
+        private System.Windows.Forms.Label title;
+        private System.Windows.Forms.FlowLayoutPanel topControlPanel;
+        private System.Windows.Forms.PictureBox buttonMenu;
+        private FontAwesome.Sharp.IconPictureBox btStar;
+        private System.Windows.Forms.PictureBox logo;
     }
 }

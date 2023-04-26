@@ -8,5 +8,16 @@ namespace Diccon.Pages
         {
             InitializeComponent();
         }
+
+        private void logo_Click(object sender, System.EventArgs e)
+        {
+            Hide();
+        }
+
+        private void release_Load(object sender, System.EventArgs e)
+        {
+            topPanel.BackColor = DicconProp.AccentColor;
+
+        }
     }
 }

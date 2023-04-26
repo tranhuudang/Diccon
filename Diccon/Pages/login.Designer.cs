@@ -75,6 +75,9 @@
             this.createEmail = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.topPanel = new System.Windows.Forms.Panel();
+            this.title = new System.Windows.Forms.Label();
+            this.logo = new System.Windows.Forms.PictureBox();
             this.panelLogin.SuspendLayout();
             this.roundedPanel2.SuspendLayout();
             this.roundedPanel1.SuspendLayout();
@@ -87,6 +90,8 @@
             this.roundedPanel6.SuspendLayout();
             this.roundedPanel7.SuspendLayout();
             this.roundedPanel8.SuspendLayout();
+            this.topPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.SuspendLayout();
             // 
             // label7
@@ -511,11 +516,37 @@
             this.label10.ForeColor = System.Drawing.Color.Gray;
             this.label10.Name = "label10";
             // 
+            // topPanel
+            // 
+            resources.ApplyResources(this.topPanel, "topPanel");
+            this.topPanel.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.topPanel.Controls.Add(this.title);
+            this.topPanel.Controls.Add(this.logo);
+            this.topPanel.Name = "topPanel";
+            // 
+            // title
+            // 
+            resources.ApplyResources(this.title, "title");
+            this.title.BackColor = System.Drawing.Color.Transparent;
+            this.title.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.title.Name = "title";
+            // 
+            // logo
+            // 
+            resources.ApplyResources(this.logo, "logo");
+            this.logo.BackColor = System.Drawing.Color.Transparent;
+            this.logo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.logo.Image = global::Diccon.Properties.Resources.back_24;
+            this.logo.Name = "logo";
+            this.logo.TabStop = false;
+            this.logo.Click += new System.EventHandler(this.logo_Click);
+            // 
             // login
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.topPanel);
             this.Controls.Add(this.panelCreateAccount);
             this.Controls.Add(this.panelManage);
             this.Controls.Add(this.panelLogin);
@@ -546,6 +577,8 @@
             this.roundedPanel7.PerformLayout();
             this.roundedPanel8.ResumeLayout(false);
             this.roundedPanel8.PerformLayout();
+            this.topPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -598,5 +631,8 @@
         private RoundedLabel btBack;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Panel topPanel;
+        private System.Windows.Forms.Label title;
+        private System.Windows.Forms.PictureBox logo;
     }
 }

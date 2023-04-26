@@ -166,6 +166,9 @@
   <data name="manageAccountText.Text" xml:space="preserve">
     <value>Quản lý</value>
   </data>
+  <data name="panelLogin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 76</value>
+  </data>
   <data name="createText.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 20</value>
   </data>
@@ -181,51 +184,11 @@
   <data name="btLogin.Text" xml:space="preserve">
     <value>Tiếp tục</value>
   </data>
+  <data name="panelManage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>342, 76</value>
+  </data>
   <data name="groupBox1.Text" xml:space="preserve">
     <value>Dữ liệu người dùng</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>96, 469</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>147, 31</value>
-  </data>
-  <data name="roundedPanel5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>34, 103</value>
-  </data>
-  <data name="btSave.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 34</value>
-  </data>
-  <data name="btSave.Text" xml:space="preserve">
-    <value>Lưu</value>
-  </data>
-  <data name="btLogOut.Location" type="System.Drawing.Point, System.Drawing">
-    <value>206, 427</value>
-  </data>
-  <data name="btLogOut.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 34</value>
-  </data>
-  <data name="btLogOut.Text" xml:space="preserve">
-    <value>Đăng xuất</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="editEmail.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 16</value>
-  </data>
-  <data name="label8.Text" xml:space="preserve">
-    <value>Thay đổi mật khẩu</value>
-  </data>
-  <data name="editPass_1.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="roundedPanel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>34, 147</value>
-  </data>
-  <data name="roundedPanel4.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
   </data>
   <data name="btDeleteLocal.Size" type="System.Drawing.Size, System.Drawing">
     <value>67, 34</value>
@@ -245,8 +208,54 @@
   <data name="label11.Text" xml:space="preserve">
     <value>Dữ liệu cục bộ của bạn bao gồm những bản cập nhật và tài liệu tải về.</value>
   </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>96, 469</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 31</value>
+  </data>
+  <data name="roundedPanel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 103</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="editPass_2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
+  </data>
+  <data name="btSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 34</value>
+  </data>
+  <data name="btSave.Text" xml:space="preserve">
+    <value>Lưu</value>
+  </data>
+  <data name="btLogOut.Location" type="System.Drawing.Point, System.Drawing">
+    <value>206, 427</value>
+  </data>
+  <data name="btLogOut.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 34</value>
+  </data>
+  <data name="btLogOut.Text" xml:space="preserve">
+    <value>Đăng xuất</value>
+  </data>
+  <data name="editEmail.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 16</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Thay đổi mật khẩu</value>
+  </data>
+  <data name="roundedPanel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 147</value>
+  </data>
+  <data name="roundedPanel4.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="editPass_1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="panelCreateAccount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>684, 76</value>
   </data>
   <data name="btBack.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 34</value>
@@ -286,5 +295,48 @@
   </data>
   <data name="label10.Text" xml:space="preserve">
     <value>Mật khẩu</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="title.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="title.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 15.75pt, style=Bold</value>
+  </data>
+  <data name="title.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="title.Size" type="System.Drawing.Size, System.Drawing">
+    <value>954, 70</value>
+  </data>
+  <data name="title.Text" xml:space="preserve">
+    <value>Tài khoản</value>
+  </data>
+  <data name="title.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="logo.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="logo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="logo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 70</value>
+  </data>
+  <data name="logo.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>CenterImage</value>
+  </data>
+  <data name="topPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="topPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1024, 70</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1024, 630</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Inherit</value>
   </data>
 </root>

@@ -55,6 +55,7 @@ namespace Diccon.Pages
         private void login_Load(object sender, EventArgs e)
         {
             // load theme
+            topPanel.BackColor = DicconProp.AccentColor;
             btLogin.BackColor = DicconProp.ColorA8;
             btLogOut.BackColor = DicconProp.ColorA8;
             btSave.BackColor = DicconProp.ColorA8;
@@ -218,6 +219,11 @@ namespace Diccon.Pages
         private void button1_Click(object sender, EventArgs e)
         {
             panelLogin.Dock = DockStyle.Fill;
+        }
+
+        private void logo_Click(object sender, EventArgs e)
+        {
+            Hide();
         }
     }
 }

@@ -16,6 +16,8 @@ namespace Diccon
         private void settings_Load(object sender, EventArgs e)
         {
             btDelete.BackColor = DicconProp.ColorA3;
+            topPanel.BackColor = DicconProp.AccentColor;
+
         }
 
         private void btDeleteHistory_Click(object sender, EventArgs e)
@@ -68,6 +70,11 @@ namespace Diccon
                 Properties.Settings.Default["autoBackup"] = "False";
             }
             Properties.Settings.Default.Save();
+        }
+
+        private void logo_Click(object sender, EventArgs e)
+        {
+            Hide();
         }
     }
 }

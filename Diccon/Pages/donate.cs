@@ -27,6 +27,13 @@ namespace Diccon.Pages
         private void donate_Load(object sender, EventArgs e)
         {
             btOpenQr.BackColor = DicconProp.ColorA5;
+            topPanel.BackColor = DicconProp.AccentColor;
+
+        }
+
+        private void logo_Click(object sender, EventArgs e)
+        {
+            Hide();
         }
     }
 }

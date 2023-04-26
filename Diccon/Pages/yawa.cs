@@ -25,6 +25,7 @@ namespace Diccon.Pages
             panelMain.Dock = DockStyle.Fill;
             panelMain.BringToFront();
             panelTop.Dock = DockStyle.Top;
+            topPanel.BackColor = DicconProp.AccentColor;
             btAsk.BackColor = DicconProp.ColorA8;
             btYourQuestion.BackColor = DicconProp.ColorA3;
             btInstantAsk.BackColor = DicconProp.ColorA8;
@@ -137,8 +138,8 @@ namespace Diccon.Pages
         string listLoadedMessage;
         private async void GoToAnswer_Click(object sender, EventArgs e)
         {
+            panelGlobal.Visible = false;
             newMessageChecker.Enabled = true;
-            TopControlSwitch("answerBox");
             openPanel(panelAnswer);
             try
             {
@@ -166,7 +167,19 @@ namespace Diccon.Pages
                         }
                         else if (item != "")
                         {
-                            bot.BotAnswerLongMessage(item, exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
+                            if (item.Contains("++"))
+                            {
+                                var answerEmail = item.Substring(0, item.IndexOf("++"));
+                                exampleAnswerColoredPanel.BackColor = BackgroundGenerator.GenerateColorFromText(answerEmail);
+                                var newItem = item.Substring(item.IndexOf("++") + 2);
+                                bot.BotAnswerLongMessage(newItem, exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
+                                listLoadedMessage += item;
+                            }
+                            else
+                            {
+                                bot.BotAnswerLongMessage(item, exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
+                                listLoadedMessage += item;
+                            }
                         }
                     }
                 }
@@ -237,37 +250,13 @@ namespace Diccon.Pages
 
         }
 
-        private void TopControlSwitch(string controlName)
-        {
-            switch (controlName)
-            {
-                case "btAskTop":
-                    btAskTop.Visible = false;
-                    btPeopleTop.Visible = true;
-                    break;
-                case "btPeopleTop":
-                    btAskTop.Visible = true;
-                    btPeopleTop.Visible = false;
-                    break;
-                case "btYoursTop":
-                    btAskTop.Visible = true;
-                    btPeopleTop.Visible = true;
-                    break;
-                case "answerBox":
-                    btAskTop.Visible = true;
-                    btPeopleTop.Visible = true;
-                    break;
-                default:
-                    break;
-            }
-        }
+        
 
         private void btAskTop_Click(object sender, EventArgs e)
         {
 
             listLoadedMessage = "";
-
-            TopControlSwitch("btAskTop");
+            panelGlobal.Visible=false;
             openPanel(panelAsk);
             btReload_Click(null, null);
             btReload.BringToFront();
@@ -275,12 +264,10 @@ namespace Diccon.Pages
             newMessageChecker.Enabled = false;
         }
 
-        private void btPeopleTop_Click(object sender, EventArgs e)
+        public void btPeopleTop_Click(object sender, EventArgs e)
         {
+            btAskTop.Visible = true;
             listLoadedMessage = "";
-
-
-            TopControlSwitch("btPeopleTop");
             openPanel(panelGlobal);
             btReload_Click(null, null);
             btReload.BringToFront();
@@ -291,9 +278,6 @@ namespace Diccon.Pages
         private void btYoursTop_Click(object sender, EventArgs e)
         {
             listLoadedMessage = "";
-
-
-            TopControlSwitch("btYoursTop");
             openPanel(panelYours);
             btReloadYours_Click(null, null);
             btReloadYours.BringToFront();
@@ -445,14 +429,28 @@ namespace Diccon.Pages
         private void btYourQuestion_Click(object sender, EventArgs e)
         {
             listLoadedMessage = "";
-
-
-            TopControlSwitch("btYoursTop");
             openPanel(panelYours);
             btReloadYours_Click(null, null);
             btReloadYours.BringToFront();
             // Disable MessageChecker when going out of answer tab
             newMessageChecker.Enabled = false;
+        }
+
+        private void logo_Click(object sender, EventArgs e)
+        {
+            if (panelGlobal.Visible)
+            {
+                Hide();
+            }
+            else
+            {
+                btPeopleTop_Click(null, null);
+            }
+        }
+
+        private void globalExamplePanel_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
