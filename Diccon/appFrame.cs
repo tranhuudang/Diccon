@@ -1,11 +1,8 @@
-﻿using Diccon.Classes;
-using Diccon.Pages;
-using FontAwesome.Sharp;
+﻿using Diccon.Pages;
 using QuoteBank;
 using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Media;
@@ -201,7 +198,7 @@ namespace Diccon
 
         private void logo_Click(object sender, EventArgs e)
         {
-           
+
         }
 
         private void buttonMenu_Click(object sender, EventArgs e)

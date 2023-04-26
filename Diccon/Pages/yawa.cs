@@ -215,7 +215,7 @@ namespace Diccon.Pages
                             else if ((item.Trim() != "") && (!item.StartsWith("?")))
                             {
 
-                                if(item.Contains("++"))
+                                if (item.Contains("++"))
                                 {
                                     var answerEmail = item.Substring(0, item.IndexOf("++"));
                                     exampleAnswerColoredPanel.BackColor = BackgroundGenerator.GenerateColorFromText(answerEmail);
@@ -228,7 +228,7 @@ namespace Diccon.Pages
                                     bot.BotAnswerLongMessage(item, exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
                                     listLoadedMessage += item;
                                 }
-                                
+
 
                             }
                     }
@@ -250,13 +250,13 @@ namespace Diccon.Pages
 
         }
 
-        
+
 
         private void btAskTop_Click(object sender, EventArgs e)
         {
 
             listLoadedMessage = "";
-            panelGlobal.Visible=false;
+            panelGlobal.Visible = false;
             openPanel(panelAsk);
             btReload_Click(null, null);
             btReload.BringToFront();
@@ -317,7 +317,7 @@ namespace Diccon.Pages
                     else
                     {
                         //bot.botAnswerLongMessage(answer_textBox.Text, exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
-                        await _sqlHandler.UpdateAsync("Update dbo.DicconAsking Set Answer=N'" + currentAnswerString + "#"+ DicconProp.UserEmail + "++" + answer_textBox.Text.Replace("'", "") + "' where Id=" + currentQuestionID);
+                        await _sqlHandler.UpdateAsync("Update dbo.DicconAsking Set Answer=N'" + currentAnswerString + "#" + DicconProp.UserEmail + "++" + answer_textBox.Text.Replace("'", "") + "' where Id=" + currentQuestionID);
 
                     }
                     answer_textBox.Text = "";

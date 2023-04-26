@@ -56,7 +56,7 @@ namespace Diccon
         {
             release release = new release();
             release.Show();
-            
+
         }
 
         private void btRelease_MouseEnter(object sender, EventArgs e)
