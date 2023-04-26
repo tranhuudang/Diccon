@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Diccon.Classes;
+using System;
 using System.Data;
 using System.Windows.Forms;
 
@@ -143,7 +144,7 @@ namespace Diccon.Pages
             {
 
                 ///
-                /// Sample Answer from SQL: #đây là câu trả lời#?Đây là câu hỏi#?đây là câu hỏi kế#đây là câu trả lời
+                /// Sample Answer from SQL: #tranhuudang@gmail.comđây là câu trả lời#?Đây là câu hỏi#?tranhuudang@gmail.comđây là câu hỏi kế#đây là câu trả lời
                 DataTable dataTable = await _sqlHandler.SelectAsync("Select Answer, AskUserId, Question from dbo.DicconAsking where Id=" + (sender as Label).Tag.ToString());
                 if (currentAnswerString != dataTable.Rows[0][0].ToString())
                 {
@@ -200,8 +201,21 @@ namespace Diccon.Pages
                             }
                             else if ((item.Trim() != "") && (!item.StartsWith("?")))
                             {
-                                bot.BotAnswerLongMessage(item, exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
-                                listLoadedMessage += item;
+
+                                if(item.Contains("++"))
+                                {
+                                    var answerEmail = item.Substring(0, item.IndexOf("++"));
+                                    exampleAnswerColoredPanel.BackColor = BackgroundGenerator.GenerateColorFromText(answerEmail);
+                                    var newItem = item.Substring(item.IndexOf("++") + 2);
+                                    bot.BotAnswerLongMessage(newItem, exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
+                                    listLoadedMessage += item;
+                                }
+                                else
+                                {
+                                    bot.BotAnswerLongMessage(item, exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
+                                    listLoadedMessage += item;
+                                }
+                                
 
                             }
                     }
@@ -319,7 +333,7 @@ namespace Diccon.Pages
                     else
                     {
                         //bot.botAnswerLongMessage(answer_textBox.Text, exampleAnswerText, exampleAnswerColoredPanel, exampleAnswerPanel, flowChatBox);
-                        await _sqlHandler.UpdateAsync("Update dbo.DicconAsking Set Answer=N'" + currentAnswerString + "#" + answer_textBox.Text.Replace("'", "") + "' where Id=" + currentQuestionID);
+                        await _sqlHandler.UpdateAsync("Update dbo.DicconAsking Set Answer=N'" + currentAnswerString + "#"+ DicconProp.UserEmail + "++" + answer_textBox.Text.Replace("'", "") + "' where Id=" + currentQuestionID);
 
                     }
                     answer_textBox.Text = "";

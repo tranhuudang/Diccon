@@ -21,6 +21,7 @@ namespace Diccon
         [STAThreadAttribute]
         private void mainHall_Load(object sender, EventArgs e)
         {
+            
             synonymChecker.Enabled = true;
             //searchTextBox.Text = Clipboard.GetText();
             ///////  T   H   E   M   E  ///////////////

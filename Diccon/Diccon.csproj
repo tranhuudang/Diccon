@@ -149,6 +149,7 @@
   <ItemGroup>
     <Compile Include="Classes\Sha256Encrypt.cs" />
     <Compile Include="Classes\SpellingCorrector.cs" />
+    <Compile Include="Classes\BackgroundGenerator.cs" />
     <Compile Include="Controls\timeLineItem.cs">
       <SubType>UserControl</SubType>
     </Compile>

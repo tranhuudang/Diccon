@@ -35,7 +35,6 @@ namespace Diccon
                 Parent = newColoredPanel,
             };
             newLabel.Click += NewLabel_Click;
-            newLabel.Controls.Add(newLabel);
 
             Panel newAnswerPanel = new Panel()
             {

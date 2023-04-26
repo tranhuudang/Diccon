@@ -1,4 +1,5 @@
-﻿using Diccon.Pages;
+﻿using Diccon.Classes;
+using Diccon.Pages;
 using FontAwesome.Sharp;
 using QuoteBank;
 using System;
@@ -43,7 +44,6 @@ namespace Diccon
         }
         private void AppFrame_Load(object sender, EventArgs e)
         {
-
             // Stack up quotation
             switch (DicconProp.Language)
             {
