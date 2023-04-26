@@ -112,15 +112,14 @@
             // 
             // panelBottom
             // 
-            resources.ApplyResources(this.panelBottom, "panelBottom");
             this.panelBottom.Controls.Add(this.btAdd);
             this.panelBottom.Controls.Add(this.panelAdd);
             this.panelBottom.Controls.Add(this.panel1);
+            resources.ApplyResources(this.panelBottom, "panelBottom");
             this.panelBottom.Name = "panelBottom";
             // 
             // btAdd
             // 
-            resources.ApplyResources(this.btAdd, "btAdd");
             this.btAdd.BackColor = System.Drawing.Color.Transparent;
             this.btAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btAdd.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -128,6 +127,7 @@
             this.btAdd.IconColor = System.Drawing.SystemColors.ControlText;
             this.btAdd.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btAdd.IconSize = 28;
+            resources.ApplyResources(this.btAdd, "btAdd");
             this.btAdd.Name = "btAdd";
             this.btAdd.TabStop = false;
             this.btAdd.UseGdi = true;
@@ -137,16 +137,16 @@
             // 
             // panelAdd
             // 
-            resources.ApplyResources(this.panelAdd, "panelAdd");
             this.panelAdd.Controls.Add(this.addEmoji);
+            resources.ApplyResources(this.panelAdd, "panelAdd");
             this.panelAdd.Name = "panelAdd";
             // 
             // addEmoji
             // 
-            resources.ApplyResources(this.addEmoji, "addEmoji");
             this.addEmoji.BackColor = System.Drawing.Color.Silver;
             this.addEmoji.BorderColor = System.Drawing.Color.White;
             this.addEmoji.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.addEmoji, "addEmoji");
             this.addEmoji.Image = global::Diccon.Properties.Resources.emoji_36;
             this.addEmoji.Name = "addEmoji";
             this.addEmoji.Radius = 50;
@@ -157,8 +157,8 @@
             // 
             // panel1
             // 
-            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Controls.Add(this.roundedPanel1);
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
             // roundedPanel1
@@ -261,16 +261,16 @@
             // 
             // exampleAnswerPanel
             // 
-            resources.ApplyResources(this.exampleAnswerPanel, "exampleAnswerPanel");
             this.exampleAnswerPanel.Controls.Add(this.exampleAnswerColoredPanel);
+            resources.ApplyResources(this.exampleAnswerPanel, "exampleAnswerPanel");
             this.exampleAnswerPanel.Name = "exampleAnswerPanel";
             // 
             // exampleAnswerColoredPanel
             // 
-            resources.ApplyResources(this.exampleAnswerColoredPanel, "exampleAnswerColoredPanel");
             this.exampleAnswerColoredPanel.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.exampleAnswerColoredPanel.BorderColor = System.Drawing.Color.White;
             this.exampleAnswerColoredPanel.Controls.Add(this.exampleAnswerText);
+            resources.ApplyResources(this.exampleAnswerColoredPanel, "exampleAnswerColoredPanel");
             this.exampleAnswerColoredPanel.Name = "exampleAnswerColoredPanel";
             this.exampleAnswerColoredPanel.Radius = 20;
             this.exampleAnswerColoredPanel.Thickness = 5F;
@@ -310,8 +310,8 @@
             // 
             // exampleShortPanel
             // 
-            resources.ApplyResources(this.exampleShortPanel, "exampleShortPanel");
             this.exampleShortPanel.Controls.Add(this.exampleShortText);
+            resources.ApplyResources(this.exampleShortPanel, "exampleShortPanel");
             this.exampleShortPanel.Name = "exampleShortPanel";
             // 
             // exampleShortText
@@ -325,16 +325,16 @@
             // 
             // exampleAskLongPanel
             // 
-            resources.ApplyResources(this.exampleAskLongPanel, "exampleAskLongPanel");
             this.exampleAskLongPanel.Controls.Add(this.exampleAskLongColoredPanel);
+            resources.ApplyResources(this.exampleAskLongPanel, "exampleAskLongPanel");
             this.exampleAskLongPanel.Name = "exampleAskLongPanel";
             // 
             // exampleAskLongColoredPanel
             // 
-            resources.ApplyResources(this.exampleAskLongColoredPanel, "exampleAskLongColoredPanel");
             this.exampleAskLongColoredPanel.BackColor = System.Drawing.Color.LightGray;
             this.exampleAskLongColoredPanel.BorderColor = System.Drawing.Color.White;
             this.exampleAskLongColoredPanel.Controls.Add(this.exampleAskLongText);
+            resources.ApplyResources(this.exampleAskLongColoredPanel, "exampleAskLongColoredPanel");
             this.exampleAskLongColoredPanel.Name = "exampleAskLongColoredPanel";
             this.exampleAskLongColoredPanel.Radius = 20;
             this.exampleAskLongColoredPanel.Thickness = 5F;
@@ -346,14 +346,14 @@
             // 
             // examplePlayPanel
             // 
-            resources.ApplyResources(this.examplePlayPanel, "examplePlayPanel");
             this.examplePlayPanel.Controls.Add(this.examplePlayAlignPanel);
+            resources.ApplyResources(this.examplePlayPanel, "examplePlayPanel");
             this.examplePlayPanel.Name = "examplePlayPanel";
             // 
             // examplePlayAlignPanel
             // 
-            resources.ApplyResources(this.examplePlayAlignPanel, "examplePlayAlignPanel");
             this.examplePlayAlignPanel.Controls.Add(this.examplePlayColoredPanel);
+            resources.ApplyResources(this.examplePlayAlignPanel, "examplePlayAlignPanel");
             this.examplePlayAlignPanel.Name = "examplePlayAlignPanel";
             // 
             // examplePlayColoredPanel
@@ -374,43 +374,43 @@
             // 
             // examplePlayButton
             // 
-            resources.ApplyResources(this.examplePlayButton, "examplePlayButton");
             this.examplePlayButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.examplePlayButton, "examplePlayButton");
             this.examplePlayButton.Name = "examplePlayButton";
             this.examplePlayButton.TabStop = false;
             // 
             // examplePicturePanel
             // 
-            resources.ApplyResources(this.examplePicturePanel, "examplePicturePanel");
             this.examplePicturePanel.Controls.Add(this.examplePixabayLogo);
             this.examplePicturePanel.Controls.Add(this.exampleColoredPicturePanel);
+            resources.ApplyResources(this.examplePicturePanel, "examplePicturePanel");
             this.examplePicturePanel.Name = "examplePicturePanel";
             // 
             // examplePixabayLogo
             // 
-            resources.ApplyResources(this.examplePixabayLogo, "examplePixabayLogo");
             this.examplePixabayLogo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.examplePixabayLogo.Image = global::Diccon.Properties.Resources.pixabay_logo;
+            resources.ApplyResources(this.examplePixabayLogo, "examplePixabayLogo");
             this.examplePixabayLogo.Name = "examplePixabayLogo";
             this.examplePixabayLogo.TabStop = false;
             this.examplePixabayLogo.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // exampleColoredPicturePanel
             // 
-            resources.ApplyResources(this.exampleColoredPicturePanel, "exampleColoredPicturePanel");
             this.exampleColoredPicturePanel.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.exampleColoredPicturePanel.BorderColor = System.Drawing.Color.White;
             this.exampleColoredPicturePanel.Controls.Add(this.examplePictureBox);
+            resources.ApplyResources(this.exampleColoredPicturePanel, "exampleColoredPicturePanel");
             this.exampleColoredPicturePanel.Name = "exampleColoredPicturePanel";
             this.exampleColoredPicturePanel.Radius = 20;
             this.exampleColoredPicturePanel.Thickness = 5F;
             // 
             // examplePictureBox
             // 
-            resources.ApplyResources(this.examplePictureBox, "examplePictureBox");
             this.examplePictureBox.BackColor = System.Drawing.Color.White;
             this.examplePictureBox.BorderColor = System.Drawing.Color.MediumSlateBlue;
             this.examplePictureBox.ErrorImage = global::Diccon.Properties.Resources.doubtful;
+            resources.ApplyResources(this.examplePictureBox, "examplePictureBox");
             this.examplePictureBox.InitialImage = global::Diccon.Properties.Resources.reluctant;
             this.examplePictureBox.Name = "examplePictureBox";
             this.examplePictureBox.Radius = 20;
@@ -489,7 +489,6 @@
             // 
             // contextMenuNote
             // 
-            resources.ApplyResources(this.contextMenuNote, "contextMenuNote");
             this.contextMenuNote.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.contextMenuNote.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.saveToolStripMenuItem,
@@ -497,26 +496,27 @@
             this.e,
             this.closeToolStripMenuItem});
             this.contextMenuNote.Name = "contextMenuNote";
+            resources.ApplyResources(this.contextMenuNote, "contextMenuNote");
             // 
             // saveToolStripMenuItem
             // 
-            resources.ApplyResources(this.saveToolStripMenuItem, "saveToolStripMenuItem");
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
+            resources.ApplyResources(this.saveToolStripMenuItem, "saveToolStripMenuItem");
             // 
             // addToFavouriteToolStripMenuItem
             // 
-            resources.ApplyResources(this.addToFavouriteToolStripMenuItem, "addToFavouriteToolStripMenuItem");
             this.addToFavouriteToolStripMenuItem.Name = "addToFavouriteToolStripMenuItem";
+            resources.ApplyResources(this.addToFavouriteToolStripMenuItem, "addToFavouriteToolStripMenuItem");
             // 
             // e
             // 
-            resources.ApplyResources(this.e, "e");
             this.e.Name = "e";
+            resources.ApplyResources(this.e, "e");
             // 
             // closeToolStripMenuItem
             // 
-            resources.ApplyResources(this.closeToolStripMenuItem, "closeToolStripMenuItem");
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
+            resources.ApplyResources(this.closeToolStripMenuItem, "closeToolStripMenuItem");
             this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
             // 
             // synonymChecker
@@ -526,9 +526,9 @@
             // 
             // listeningPanel
             // 
-            resources.ApplyResources(this.listeningPanel, "listeningPanel");
             this.listeningPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.listeningPanel.Controls.Add(this.label3);
+            resources.ApplyResources(this.listeningPanel, "listeningPanel");
             this.listeningPanel.Name = "listeningPanel";
             // 
             // label3
@@ -539,24 +539,24 @@
             // 
             // topPanel
             // 
-            resources.ApplyResources(this.topPanel, "topPanel");
             this.topPanel.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.topPanel.Controls.Add(this.title);
             this.topPanel.Controls.Add(this.logo);
+            resources.ApplyResources(this.topPanel, "topPanel");
             this.topPanel.Name = "topPanel";
             // 
             // title
             // 
-            resources.ApplyResources(this.title, "title");
             this.title.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.title, "title");
             this.title.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.title.Name = "title";
             // 
             // logo
             // 
-            resources.ApplyResources(this.logo, "logo");
             this.logo.BackColor = System.Drawing.Color.Transparent;
             this.logo.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.logo, "logo");
             this.logo.Image = global::Diccon.Properties.Resources.back_24;
             this.logo.Name = "logo";
             this.logo.TabStop = false;

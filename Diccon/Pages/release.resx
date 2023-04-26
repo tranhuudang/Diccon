@@ -156,29 +156,28 @@
   <data name="&gt;&gt;logo.Parent" xml:space="preserve">
     <value>topPanel</value>
   </data>
-  <data name="&gt;&gt;topPanel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Release Note</value>
   </data>
   <data name="title.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>- Sửa lỗi người dùng bị đăng xuất khi cập nhật phiên bản mới
+- Tăng khả năng phản hồi, tránh giật lag khi sử dụng.
+</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>release</value>
+  </data>
+  <data name="&gt;&gt;title.Parent" xml:space="preserve">
+    <value>topPanel</value>
   </data>
   <data name="title.Text" xml:space="preserve">
     <value>Release Notes</value>
   </data>
   <data name="&gt;&gt;logo.Name" xml:space="preserve">
     <value>logo</value>
-  </data>
-  <data name="&gt;&gt;richTextBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;richTextBox1.Name" xml:space="preserve">
     <value>richTextBox1</value>
@@ -201,22 +200,20 @@
   <data name="logo.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Left</value>
   </data>
-  <data name="title.Size" type="System.Drawing.Size, System.Drawing">
-    <value>285, 70</value>
-  </data>
   <data name="title.Location" type="System.Drawing.Point, System.Drawing">
     <value>70, 0</value>
   </data>
   <data name="&gt;&gt;logo.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;richTextBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="richTextBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 70</value>
   </data>
-  <data name="richTextBox1.Text" xml:space="preserve">
-    <value>- Sửa lỗi người dùng bị đăng xuất khi cập nhật phiên bản mới
-- Tăng khả năng phản hồi, tránh giật lag khi sử dụng.
-</value>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
   </data>
   <data name="logo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -233,22 +230,25 @@
   <data name="&gt;&gt;title.Name" xml:space="preserve">
     <value>title</value>
   </data>
-  <data name="&gt;&gt;title.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="title.Size" type="System.Drawing.Size, System.Drawing">
+    <value>285, 70</value>
   </data>
   <data name="richTextBox1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
-  <data name="&gt;&gt;title.Parent" xml:space="preserve">
-    <value>topPanel</value>
+  <data name="&gt;&gt;richTextBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;topPanel.Name" xml:space="preserve">
     <value>topPanel</value>
   </data>
+  <data name="&gt;&gt;title.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="title.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;richTextBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;topPanel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;topPanel.Type" xml:space="preserve">
@@ -262,8 +262,5 @@
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
-  </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>vi</value>
   </metadata>
 </root>

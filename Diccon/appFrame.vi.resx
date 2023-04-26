@@ -166,6 +166,9 @@
   <data name="label6.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
+  <data name="contextMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>175, 154</value>
+  </data>
   <data name="accountToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>174, 22</value>
   </data>
@@ -210,9 +213,6 @@
   </data>
   <data name="aboutToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Thông tin</value>
-  </data>
-  <data name="contextMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>175, 154</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

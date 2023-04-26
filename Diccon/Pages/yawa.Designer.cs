@@ -77,9 +77,6 @@
             this.newMessageChecker = new System.Windows.Forms.Timer(this.components);
             this.topPanel = new System.Windows.Forms.Panel();
             this.title = new System.Windows.Forms.Label();
-            this.topControlPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.buttonMenu = new System.Windows.Forms.PictureBox();
-            this.btStar = new FontAwesome.Sharp.IconPictureBox();
             this.logo = new System.Windows.Forms.PictureBox();
             this.panelAsk.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
@@ -108,20 +105,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.btReloadYours)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btReload)).BeginInit();
             this.topPanel.SuspendLayout();
-            this.topControlPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.buttonMenu)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btStar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.SuspendLayout();
             // 
             // panelAsk
             // 
-            resources.ApplyResources(this.panelAsk, "panelAsk");
             this.panelAsk.Controls.Add(this.btYourQuestion);
             this.panelAsk.Controls.Add(this.flowLayoutPanel2);
             this.panelAsk.Controls.Add(this.panelOfRichQuestion_1);
             this.panelAsk.Controls.Add(this.countWord);
             this.panelAsk.Controls.Add(this.label1);
+            resources.ApplyResources(this.panelAsk, "panelAsk");
             this.panelAsk.Name = "panelAsk";
             // 
             // btYourQuestion
@@ -172,19 +166,19 @@
             // 
             // panelOfRichQuestion_1
             // 
-            resources.ApplyResources(this.panelOfRichQuestion_1, "panelOfRichQuestion_1");
             this.panelOfRichQuestion_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.panelOfRichQuestion_1.BorderColor = System.Drawing.Color.White;
             this.panelOfRichQuestion_1.Controls.Add(this.richQuestion);
+            resources.ApplyResources(this.panelOfRichQuestion_1, "panelOfRichQuestion_1");
             this.panelOfRichQuestion_1.Name = "panelOfRichQuestion_1";
             this.panelOfRichQuestion_1.Radius = 20;
             this.panelOfRichQuestion_1.Thickness = 5F;
             // 
             // richQuestion
             // 
-            resources.ApplyResources(this.richQuestion, "richQuestion");
             this.richQuestion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.richQuestion.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.richQuestion, "richQuestion");
             this.richQuestion.Name = "richQuestion";
             this.richQuestion.TextChanged += new System.EventHandler(this.richQuestion_TextChanged);
             // 
@@ -202,8 +196,8 @@
             // 
             // panelYours
             // 
-            resources.ApplyResources(this.panelYours, "panelYours");
             this.panelYours.Controls.Add(this.flowYours);
+            resources.ApplyResources(this.panelYours, "panelYours");
             this.panelYours.Name = "panelYours";
             // 
             // flowYours
@@ -217,11 +211,11 @@
             // 
             // yourPanel
             // 
-            resources.ApplyResources(this.yourPanel, "yourPanel");
             this.yourPanel.BackColor = System.Drawing.Color.DarkGray;
             this.yourPanel.BorderColor = System.Drawing.Color.White;
             this.yourPanel.Controls.Add(this.yourTime);
             this.yourPanel.Controls.Add(this.yourLabel);
+            resources.ApplyResources(this.yourPanel, "yourPanel");
             this.yourPanel.Name = "yourPanel";
             this.yourPanel.Radius = 20;
             this.yourPanel.Thickness = 5F;
@@ -239,10 +233,10 @@
             // 
             // panelAnswer
             // 
-            resources.ApplyResources(this.panelAnswer, "panelAnswer");
             this.panelAnswer.Controls.Add(this.flowChatBox);
             this.panelAnswer.Controls.Add(this.answerTopPanel);
             this.panelAnswer.Controls.Add(this.panel1);
+            resources.ApplyResources(this.panelAnswer, "panelAnswer");
             this.panelAnswer.Name = "panelAnswer";
             // 
             // flowChatBox
@@ -257,16 +251,16 @@
             // 
             // exampleAnswerPanel
             // 
-            resources.ApplyResources(this.exampleAnswerPanel, "exampleAnswerPanel");
             this.exampleAnswerPanel.Controls.Add(this.exampleAnswerColoredPanel);
+            resources.ApplyResources(this.exampleAnswerPanel, "exampleAnswerPanel");
             this.exampleAnswerPanel.Name = "exampleAnswerPanel";
             // 
             // exampleAnswerColoredPanel
             // 
-            resources.ApplyResources(this.exampleAnswerColoredPanel, "exampleAnswerColoredPanel");
             this.exampleAnswerColoredPanel.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.exampleAnswerColoredPanel.BorderColor = System.Drawing.Color.White;
             this.exampleAnswerColoredPanel.Controls.Add(this.exampleAnswerText);
+            resources.ApplyResources(this.exampleAnswerColoredPanel, "exampleAnswerColoredPanel");
             this.exampleAnswerColoredPanel.Name = "exampleAnswerColoredPanel";
             this.exampleAnswerColoredPanel.Radius = 20;
             this.exampleAnswerColoredPanel.Thickness = 5F;
@@ -279,16 +273,16 @@
             // 
             // exampleAskLongPanel
             // 
-            resources.ApplyResources(this.exampleAskLongPanel, "exampleAskLongPanel");
             this.exampleAskLongPanel.Controls.Add(this.exampleAskLongColoredPanel);
+            resources.ApplyResources(this.exampleAskLongPanel, "exampleAskLongPanel");
             this.exampleAskLongPanel.Name = "exampleAskLongPanel";
             // 
             // exampleAskLongColoredPanel
             // 
-            resources.ApplyResources(this.exampleAskLongColoredPanel, "exampleAskLongColoredPanel");
             this.exampleAskLongColoredPanel.BackColor = System.Drawing.Color.LightGray;
             this.exampleAskLongColoredPanel.BorderColor = System.Drawing.Color.White;
             this.exampleAskLongColoredPanel.Controls.Add(this.exampleAskLongText);
+            resources.ApplyResources(this.exampleAskLongColoredPanel, "exampleAskLongColoredPanel");
             this.exampleAskLongColoredPanel.Name = "exampleAskLongColoredPanel";
             this.exampleAskLongColoredPanel.Radius = 20;
             this.exampleAskLongColoredPanel.Thickness = 5F;
@@ -300,10 +294,10 @@
             // 
             // answerTopPanel
             // 
-            resources.ApplyResources(this.answerTopPanel, "answerTopPanel");
             this.answerTopPanel.BackColor = System.Drawing.Color.Gainsboro;
             this.answerTopPanel.Controls.Add(this.lbQuestionTitle);
             this.answerTopPanel.Controls.Add(this.flowLayoutPanel3);
+            resources.ApplyResources(this.answerTopPanel, "answerTopPanel");
             this.answerTopPanel.Name = "answerTopPanel";
             // 
             // lbQuestionTitle
@@ -335,8 +329,8 @@
             // 
             // panel1
             // 
-            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Controls.Add(this.roundedPanelChatBox);
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
             // roundedPanelChatBox
@@ -394,8 +388,8 @@
             // 
             // panelGlobal
             // 
-            resources.ApplyResources(this.panelGlobal, "panelGlobal");
             this.panelGlobal.Controls.Add(this.globalFlowPanel);
+            resources.ApplyResources(this.panelGlobal, "panelGlobal");
             this.panelGlobal.Name = "panelGlobal";
             // 
             // globalFlowPanel
@@ -406,11 +400,11 @@
             // 
             // globalExamplePanel
             // 
-            resources.ApplyResources(this.globalExamplePanel, "globalExamplePanel");
             this.globalExamplePanel.BackColor = System.Drawing.Color.DarkGray;
             this.globalExamplePanel.BorderColor = System.Drawing.Color.White;
             this.globalExamplePanel.Controls.Add(this.globalExampleDatetime);
             this.globalExamplePanel.Controls.Add(this.globalExampleAsk);
+            resources.ApplyResources(this.globalExamplePanel, "globalExamplePanel");
             this.globalExamplePanel.Name = "globalExamplePanel";
             this.globalExamplePanel.Radius = 20;
             this.globalExamplePanel.Thickness = 5F;
@@ -430,9 +424,9 @@
             // 
             // flowLayoutPanel1
             // 
-            resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
             this.flowLayoutPanel1.Controls.Add(this.btAskTop);
             this.flowLayoutPanel1.Controls.Add(this.btPeopleTop);
+            resources.ApplyResources(this.flowLayoutPanel1, "flowLayoutPanel1");
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             // 
             // btAskTop
@@ -470,10 +464,10 @@
             // 
             // panelTop
             // 
-            resources.ApplyResources(this.panelTop, "panelTop");
             this.panelTop.Controls.Add(this.flowLayoutPanel1);
             this.panelTop.Controls.Add(this.btReloadYours);
             this.panelTop.Controls.Add(this.btReload);
+            resources.ApplyResources(this.panelTop, "panelTop");
             this.panelTop.Name = "panelTop";
             // 
             // btReloadYours
@@ -523,55 +517,24 @@
             // 
             // topPanel
             // 
-            resources.ApplyResources(this.topPanel, "topPanel");
             this.topPanel.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.topPanel.Controls.Add(this.title);
-            this.topPanel.Controls.Add(this.topControlPanel);
             this.topPanel.Controls.Add(this.logo);
+            resources.ApplyResources(this.topPanel, "topPanel");
             this.topPanel.Name = "topPanel";
             // 
             // title
             // 
-            resources.ApplyResources(this.title, "title");
             this.title.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.title, "title");
             this.title.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.title.Name = "title";
             // 
-            // topControlPanel
-            // 
-            resources.ApplyResources(this.topControlPanel, "topControlPanel");
-            this.topControlPanel.BackColor = System.Drawing.Color.Transparent;
-            this.topControlPanel.Controls.Add(this.buttonMenu);
-            this.topControlPanel.Controls.Add(this.btStar);
-            this.topControlPanel.Name = "topControlPanel";
-            // 
-            // buttonMenu
-            // 
-            resources.ApplyResources(this.buttonMenu, "buttonMenu");
-            this.buttonMenu.BackColor = System.Drawing.Color.Transparent;
-            this.buttonMenu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonMenu.Image = global::Diccon.Properties.Resources.menu_24;
-            this.buttonMenu.Name = "buttonMenu";
-            this.buttonMenu.TabStop = false;
-            // 
-            // btStar
-            // 
-            resources.ApplyResources(this.btStar, "btStar");
-            this.btStar.BackColor = System.Drawing.Color.Transparent;
-            this.btStar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btStar.ForeColor = System.Drawing.Color.Black;
-            this.btStar.IconChar = FontAwesome.Sharp.IconChar.Star;
-            this.btStar.IconColor = System.Drawing.Color.Black;
-            this.btStar.IconFont = FontAwesome.Sharp.IconFont.Regular;
-            this.btStar.IconSize = 28;
-            this.btStar.Name = "btStar";
-            this.btStar.TabStop = false;
-            // 
             // logo
             // 
-            resources.ApplyResources(this.logo, "logo");
             this.logo.BackColor = System.Drawing.Color.Transparent;
             this.logo.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.logo, "logo");
             this.logo.Image = global::Diccon.Properties.Resources.back_24;
             this.logo.Name = "logo";
             this.logo.TabStop = false;
@@ -627,9 +590,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btReloadYours)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btReload)).EndInit();
             this.topPanel.ResumeLayout(false);
-            this.topControlPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.buttonMenu)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btStar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             this.ResumeLayout(false);
 
@@ -684,9 +644,6 @@
         private RoundedLabel btYourQuestion;
         private System.Windows.Forms.Panel topPanel;
         private System.Windows.Forms.Label title;
-        private System.Windows.Forms.FlowLayoutPanel topControlPanel;
-        private System.Windows.Forms.PictureBox buttonMenu;
-        private FontAwesome.Sharp.IconPictureBox btStar;
         private System.Windows.Forms.PictureBox logo;
     }
 }

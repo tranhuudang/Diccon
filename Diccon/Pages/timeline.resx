@@ -166,13 +166,13 @@
     <value>70, 0</value>
   </data>
   <data name="title.Size" type="System.Drawing.Size, System.Drawing">
-    <value>187, 70</value>
+    <value>269, 70</value>
   </data>
   <data name="title.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="title.Text" xml:space="preserve">
-    <value>Lịch sử</value>
+    <value>Timeline</value>
   </data>
   <data name="title.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -188,99 +188,6 @@
   </data>
   <data name="&gt;&gt;title.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="buttonMenu.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="buttonMenu.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="buttonMenu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>52, 18</value>
-  </data>
-  <data name="buttonMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>22, 24</value>
-  </data>
-  <data name="buttonMenu.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="buttonMenu.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;buttonMenu.Name" xml:space="preserve">
-    <value>buttonMenu</value>
-  </data>
-  <data name="&gt;&gt;buttonMenu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;buttonMenu.Parent" xml:space="preserve">
-    <value>topControlPanel</value>
-  </data>
-  <data name="&gt;&gt;buttonMenu.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btStar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="btStar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="btStar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 18</value>
-  </data>
-  <data name="btStar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>28, 28</value>
-  </data>
-  <data name="btStar.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="btStar.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="btStar.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;btStar.Name" xml:space="preserve">
-    <value>btStar</value>
-  </data>
-  <data name="&gt;&gt;btStar.Type" xml:space="preserve">
-    <value>FontAwesome.Sharp.IconPictureBox, FontAwesome.Sharp, Version=6.1.1.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
-  </data>
-  <data name="&gt;&gt;btStar.Parent" xml:space="preserve">
-    <value>topControlPanel</value>
-  </data>
-  <data name="&gt;&gt;btStar.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="topControlPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="topControlPanel.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
-    <value>RightToLeft</value>
-  </data>
-  <data name="topControlPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>257, 0</value>
-  </data>
-  <data name="topControlPanel.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 15, 5, 0</value>
-  </data>
-  <data name="topControlPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 70</value>
-  </data>
-  <data name="topControlPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;topControlPanel.Name" xml:space="preserve">
-    <value>topControlPanel</value>
-  </data>
-  <data name="&gt;&gt;topControlPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;topControlPanel.Parent" xml:space="preserve">
-    <value>topPanel</value>
-  </data>
-  <data name="&gt;&gt;topControlPanel.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="logo.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Left</value>
@@ -310,7 +217,7 @@
     <value>topPanel</value>
   </data>
   <data name="&gt;&gt;logo.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="topPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -373,7 +280,7 @@
     <value>355, 350</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Lịch sử</value>
+    <value>Timeline</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>timeline</value>

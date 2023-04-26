@@ -146,6 +146,9 @@
   <data name="btAutoBackup.Text" xml:space="preserve">
     <value>Tự động sao lưu dữ liệu.</value>
   </data>
+  <data name="title.Size" type="System.Drawing.Size, System.Drawing">
+    <value>285, 70</value>
+  </data>
   <data name="title.Text" xml:space="preserve">
     <value>Cài đặt</value>
   </data>

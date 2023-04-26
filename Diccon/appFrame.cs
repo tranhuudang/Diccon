@@ -248,26 +248,6 @@ namespace Diccon
 
         }
 
-        private void btStar_Click(object sender, EventArgs e)
-        {
-            string staredForm = Properties.Settings.Default["staredForm"].ToString();
-            if (staredForm == "default")
-            {
-                btStar.IconColor = Color.Gold;
-                btStar.IconFont = IconFont.Solid;
-                Properties.Settings.Default["staredForm"] = title.Text;
-                Properties.Settings.Default.Save();
-            }
-            else
-            {
-                btStar.IconColor = Color.Black;
-                btStar.IconFont = IconFont.Regular;
-                Properties.Settings.Default["staredForm"] = "default";
-                Properties.Settings.Default.Save();
-
-            }
-
-        }
 
         private void appFrame_FormClosing(object sender, FormClosingEventArgs e)
         {

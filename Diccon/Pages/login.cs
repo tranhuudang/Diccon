@@ -225,5 +225,10 @@ namespace Diccon.Pages
         {
             Hide();
         }
+
+        private void logo_Click_1(object sender, EventArgs e)
+        {
+            Hide();
+        }
     }
 }
